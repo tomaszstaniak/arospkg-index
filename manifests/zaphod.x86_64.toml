@@ -1,0 +1,31 @@
+# APPROVED 2026-09-07. Reviewed by hand against the downloaded archive.
+#
+# id: the catalogue filename was "zaphod-v1.3-.x86_64-aros-v11.zip", which the
+# importer suggested as the id "zaphod-v1.3". Versions do not belong in an id --
+# it has to stay stable across releases -- so this is "zaphod" and the version
+# moved to its own field. This is exactly the review the importer cannot do.
+
+status          = "approved"
+id              = "zaphod"
+version         = "1.3"
+summary         = "A simple binary file editor"
+arch            = "x86_64"
+abi             = "v11"
+category        = "development/edit"
+url             = "https://archives.arosworld.org/share/development/edit/zaphod-v1.3-.x86_64-aros-v11.zip"
+size            = 218782
+upload_date     = "20251030-16.24"
+selected_by     = "only-candidate"
+
+sha256          = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+
+# 13 library references, all in the mainline base system (tools/deps.py).
+depends         = []
+depends_checked = true
+
+kind            = "app"
+subdir          = "ZapHod"
+
+# Ships its own fonts under ZapHod/fonts/ with a fontcache beside them, so they
+# are program-local and are NOT installed into Fonts:. Nothing here writes
+# outside the package directory.

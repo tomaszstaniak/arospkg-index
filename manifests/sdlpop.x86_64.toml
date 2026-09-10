@@ -1,0 +1,37 @@
+# APPROVED 2026-09-07. Reviewed by hand against the downloaded archive.
+
+status          = "approved"
+id              = "sdlpop"
+version         = "1.23"
+summary         = "SDLPoP, an open-source port of Prince of Persia"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/platform"
+url             = "https://archives.arosworld.org/share/game/platform/sdlpop.x86_64-aros-v11.zip"
+size            = 1413476
+upload_date     = "20260310-21.23"
+selected_by     = "only-candidate"
+
+sha256          = "e841a0936330d7d4944bc10169fe4f9b7c2713cb4fe2757cc4d4c277a51ffe51"
+
+# 17 library references, all base system. Notably it does NOT reference
+# SDL.library or sdl2.library despite the name -- SDL2 is linked statically.
+# It does reference cybergraphics.library, which the parent repo records as
+# optional and absent on some real machines; that is a runtime risk this
+# manifest cannot express and the index cannot check.
+depends         = []
+depends_checked = true
+
+kind            = "app"
+subdir          = "SDLPoP"
+
+# The archive root holds SDLPoP.info beside the SDLPoP/ directory, because on
+# Amiga a drawer's icon is a sibling of the drawer, never inside it. The earlier
+# workaround here was subdir = "", which merely stopped the icon being lost --
+# the installed directory still had none. Section 2's drawer-icon amendment
+# makes it an explicit managed file instead.
+icon            = "SDLPoP.info"
+
+# SDLPoP.ini is a configuration file: it must survive an upgrade. Section 2
+# can only warn that it changed; the proposed package standard's
+# kind = "config" is what would express this properly.
