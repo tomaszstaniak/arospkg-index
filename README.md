@@ -29,6 +29,21 @@ entries, of which 168 are built for x86_64 or aarch64 — but a candidate is not
 an installable package, and publishing a list of things that fail to install
 would be worse than publishing a short list that works.
 
+## Installing is not running
+
+Both entries currently in this index **install correctly on mainline AROS and
+do not run there**. The same binaries run on AROS One. They are published as
+test cases for the package manager, which is a different claim from "works".
+
+Each manifest records this explicitly — `installs_on`, `runs_on`,
+`does_not_run_on` — and the generated index carries the same fields, so a
+client can refuse a package on a system where it is known not to start.
+
+Why that is stated so prominently: an index that lists a package implies you
+can use it. These two were measured on our own mainline build, on the official
+nightly of 2026-09-10 and on AROS One, and the boundary is real. The mechanism
+is not identified and is not guessed at here.
+
 ## Verification
 
 Every entry carries a `sha256` and a `size`, and the client refuses to install
