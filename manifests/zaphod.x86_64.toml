@@ -40,10 +40,14 @@ subdir          = "ZapHod"
 # different qualification from "works". A client that can express environment
 # requirements should refuse it on mainline rather than offering it.
 #
-# Running on AROS One does not prove it was built for that distribution; it may
-# have been built for an older shared environment that mainline has since
-# diverged from. The mechanism is not identified and is deliberately not named
-# here. See docs/spikes/do-they-run/.
-installs_on     = ["mainline-x86_64", "aros-one"]
+# ANSWERED 2026-09-11 by deadwood, an AROS developer, on the forum: the "-v11"
+# in the filename is an ABI marker. ABIv11 is for current distributions such as
+# AROS One; archives WITHOUT it are ABIv1, which is mainline. This package is
+# ABIv11, we target mainline, and that is the whole explanation.
+#
+# (The abi field near the top of this file already says "v11"; it was written
+# there when it was thought to be an architecture variant, and it was right
+# for the wrong reason.)
+installs_on     = ["mainline-x86_64", "aros-one"]   # installing is not running
 runs_on         = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]

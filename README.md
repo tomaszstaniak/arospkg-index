@@ -29,6 +29,17 @@ entries, of which 168 are built for x86_64 or aarch64 — but a candidate is not
 an installable package, and publishing a list of things that fail to install
 would be worse than publishing a short list that works.
 
+## ABIv1 and ABIv11
+
+AROS x86_64 has two incompatible ABIs, and the archives distinguish them by
+filename. A `-v11` suffix means **ABIv11**, used by current distributions such
+as AROS One. A name without it means **ABIv1**, which is what mainline AROS
+builds. A binary for one does not run on the other, however correctly it is
+installed.
+
+Each manifest records `abi`, so a client can tell before downloading anything.
+Of the archives' x86_64 entries, 171 are ABIv11 and a handful are ABIv1.
+
 ## Installing is not running
 
 Both entries currently in this index **install correctly on mainline AROS and
