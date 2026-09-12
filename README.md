@@ -68,9 +68,11 @@ It is not rounded up to "satisfied".
 do not run there**. The same binaries run on AROS One. They are published as
 test cases for the package manager, which is a different claim from "works".
 
-`sdllopan` is not listed as installing on mainline at all: its requirements
-are not met there, so the client refuses it rather than installing something
-that cannot start.
+`sdllopan` is not listed as installing on mainline at all. Two separate reasons
+would each refuse it there, and the ABI gate is the one that fires first,
+because it is the earlier check: the package is ABIv11 and mainline is ABIv1.
+Its system requirements are also unmet on mainline, but a client never gets
+that far. Both facts are recorded; only one of them is what a user would see.
 
 Each manifest records this explicitly — `installs_on`, `runs_on`,
 `does_not_run_on` — and the generated index carries the same fields, so a
