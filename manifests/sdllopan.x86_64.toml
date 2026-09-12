@@ -1,0 +1,60 @@
+# APPROVED 2026-09-12. The first manifest with system requirements, and the
+# reason requires_system exists at all.
+#
+# lopan references SDL.library, crt.library and stdlib.library. None of the
+# three is a package in this catalogue and none can be made one: they are
+# parts of a distribution. AROS One 1.3 ships all three; mainline ships none
+# of them. So the same archive is installable on one machine and not on the
+# other, and that is a fact about the machine, not about the index.
+#
+# This is what the earlier EXCLUDED note left unsettled. "No provider for
+# SDL.library was found in this catalogue" was true and beside the point --
+# the provider is the system, so the requirement belongs in requires_system
+# and not in depends.
+
+status          = "approved"
+id              = "sdllopan"
+version         = "1.0"
+summary         = "Lopan - MahJong clone"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/board"
+url             = "https://archives.arosworld.org/share/game/board/sdllopan.x86_64-aros-v11.zip"
+size            = 490689
+upload_date     = "20250123-18.34"
+selected_by     = "only-candidate"
+
+sha256          = "5291f44af0f38d43c8bc357d1e23a3ab68da6f14ab1a9ee1974b6324a968fd39"
+
+# No package in the index is needed to install this.
+depends         = []
+depends_checked = true
+
+kind            = "app"
+subdir          = "sdllopan-10"
+icon            = "lopan.info"
+
+installs_on     = ["aros-one"]
+runs_on         = []            # not yet run anywhere; see the VM reports
+does_not_run_on = ["mainline-x86_64"]
+
+# What the MACHINE must already provide. Established by reading the library
+# references out of the binary with `strings` and checking each against the
+# 84 libraries on the AROS One 1.3 ISO and mainline's own Libs/. dos.library
+# and intuition.library are also referenced and are deliberately absent from
+# this list: they exist on every AROS, and a requirement nothing can fail is
+# noise in a refusal message.
+#
+# No min_version anywhere. The versions these were built against are not
+# recorded in the archive and guessing one would refuse installs that work.
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -3,6 +3,43 @@
   "source": "https://archives.arosworld.org/share/FULLINDEX.readme",
   "packages": [
     {
+      "id": "sdllopan",
+      "version": "1.0",
+      "summary": "Lopan - MahJong clone",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "game/board",
+      "url": "https://archives.arosworld.org/share/game/board/sdllopan.x86_64-aros-v11.zip",
+      "size": 490689,
+      "sha256": "5291f44af0f38d43c8bc357d1e23a3ab68da6f14ab1a9ee1974b6324a968fd39",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "SDL.library"
+        },
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [],
+      "does_not_run_on": [
+        "mainline-x86_64"
+      ],
+      "kind": "app",
+      "subdir": "sdllopan-10",
+      "icon": "lopan.info",
+      "install": {}
+    },
+    {
       "id": "sdlpop",
       "version": "1.23",
       "summary": "SDLPoP, an open-source port of Prince of Persia",

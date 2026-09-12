@@ -39,12 +39,38 @@ installed.
 
 Each manifest records `abi`, so a client can tell before downloading anything.
 Of the archives' x86_64 entries, 171 are ABIv11 and a handful are ABIv1.
+That is a count of candidates marked for an ABI, not of programs confirmed to
+run.
+
+## Dependencies and system requirements are different fields
+
+`depends` names other packages in this index. `requires_system` names things
+the machine must already provide — a library that ships with the distribution,
+for example. They are separate because the failures are separate: "no package
+in the index provides X" can be fixed by publishing a package, and "this
+machine does not have X" cannot. The client says which of the two it hit, and
+refuses before downloading anything.
+
+`sdllopan` is the first entry with system requirements. It needs
+`SDL.library`, `crt.library` and `stdlib.library`, none of which is a package
+anywhere — they are parts of a distribution. AROS One 1.3 ships all three;
+mainline ships none. So the same archive is installable on one machine and
+not on the other, and that is a fact about the machine rather than about this
+index.
+
+A requirement the client cannot decide is reported as **undetermined**: the
+install proceeds, says so, and the doubt is written into the local registry.
+It is not rounded up to "satisfied".
 
 ## Installing is not running
 
-Both entries currently in this index **install correctly on mainline AROS and
+`sdlpop` and `zaphod` **install correctly on mainline AROS and
 do not run there**. The same binaries run on AROS One. They are published as
 test cases for the package manager, which is a different claim from "works".
+
+`sdllopan` is not listed as installing on mainline at all: its requirements
+are not met there, so the client refuses it rather than installing something
+that cannot start.
 
 Each manifest records this explicitly — `installs_on`, `runs_on`,
 `does_not_run_on` — and the generated index carries the same fields, so a
