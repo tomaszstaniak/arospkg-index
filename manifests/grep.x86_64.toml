@@ -1,0 +1,40 @@
+# APPROVED 2026-09-20 for v0.1.
+#
+# Searches files for an AmigaDOS pattern. Matched lines in its own readme during the trial.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 in QEMU; see
+# docs/reports/2026-09-19-v01/. A hash and a clean unpack do not qualify a
+# package -- it has to have run.
+
+status          = "approved"
+id              = "grep"
+version         = "2.0"
+summary         = "GNU Grep"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/misc"
+url             = "https://archives.arosworld.org/share/utility/misc/grep.x86_64-aros-v11.zip"
+size            = 58437
+
+sha256          = "bd3a6561c93d3adff82c8d9cceb08c636e55b6efbb556892dde2582e7379fd3d"
+
+depends         = []
+depends_checked = true     # no package in the index is needed to install this
+
+kind            = "app"
+subdir          = "Grep"
+icon            = "Grep.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+# What the MACHINE must already provide: libraries AROS One ships and mainline
+# does not, read out of the binaries and checked against both systems' Libs/.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

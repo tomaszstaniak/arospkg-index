@@ -24,6 +24,13 @@ recorded its SHA-256, looked inside it to establish what the package actually
 installs, and formed a view on its dependencies. An entry that has not had that
 done to it is not here.
 
+**Since 2026-09-20, approval also requires that the package has been started.**
+Every entry here was installed by `pkg`, started, and removed again on AROS One
+1.3 x86_64. A hash and a clean unpack do not qualify a package: they say the
+archive arrived intact, not that the program runs. "Started" means it opened
+its window or printed its output and was still running; it is not a claim that
+every feature works.
+
 That is why this index is small. The AROS Archives catalogue holds 1895
 entries, of which 168 are built for x86_64 or aarch64 — but a candidate is not
 an installable package, and publishing a list of things that fail to install

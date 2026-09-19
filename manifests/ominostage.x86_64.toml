@@ -1,0 +1,40 @@
+# APPROVED 2026-09-20 for v0.1.
+#
+# A coin-collecting platform game. Readme: requires no installation.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 in QEMU; see
+# docs/reports/2026-09-19-v01/. A hash and a clean unpack do not qualify a
+# package -- it has to have run.
+
+status          = "approved"
+id              = "ominostage"
+version         = "1.1"
+summary         = "collect all the coins and avoid the enemies"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/platform"
+url             = "https://archives.arosworld.org/share/game/platform/ominostage.x86_64-aros-v11.zip"
+size            = 1645762
+
+sha256          = "2a60c078accba2e796d85dbd83640ef9f2c0537d6cf38e4693990039060bfccf"
+
+depends         = []
+depends_checked = true     # no package in the index is needed to install this
+
+kind            = "app"
+subdir          = "Omino1.1"
+icon            = "Omino1.1.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+# What the MACHINE must already provide: libraries AROS One ships and mainline
+# does not, read out of the binaries and checked against both systems' Libs/.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

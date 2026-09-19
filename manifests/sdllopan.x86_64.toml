@@ -32,10 +32,14 @@ depends_checked = true
 
 kind            = "app"
 subdir          = "sdllopan-10"
-icon            = "lopan.info"
+icon            = "sdllopan-10.info"   # the DRAWER icon, beside sdllopan-10/ at the archive root
 
 installs_on     = ["aros-one"]
-runs_on         = []            # not yet run anywhere; see the VM reports
+runs_on         = ["aros-one"]   # started and drew its board, 2026-09-12 and 2026-09-20
+
+# Observed while running it: lopan prints "Failed to load sound NN" for each
+# sound it wants. It plays; the sounds are not in the archive. Its author's
+# concern, recorded here so nobody reports it as a packaging fault.
 does_not_run_on = ["mainline-x86_64"]
 
 # What the MACHINE must already provide. Established by reading the library
