@@ -10,7 +10,7 @@ software itself lives. Nothing here is mirrored from there.
 
 ## What is in here
 
-- `index.json` — the generated index the client downloads with `pkg update`.
+- `index.json` — the generated index the client downloads with `apkg update`.
 - `manifests/` — one file per approved package, `<id>.<arch>.toml`.
 
 `index.json` is generated from the manifests, so the manifests are the source

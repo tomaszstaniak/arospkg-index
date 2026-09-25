@@ -1,0 +1,54 @@
+# APPROVED 2026-09-23. Our own port, published by its author, and the first
+# package in this index whose url is not AROS Archives: the exact archive is a
+# GitHub release asset until the same bytes are uploaded to the Archives, at
+# which point only url changes.
+#
+# Checked on AROS One 1.3 x86_64 (ABIv11) under QEMU, apkg 0.1 (ca010440):
+# install downloaded from url (HTTPS, followed GitHub's redirect), verified the
+# hash, installed SYS:Packages/micropolis plus micropolis.info; the installed
+# Micropolis opened CITY.CTY and quit cleanly; remove deleted the drawer and
+# its icon and `apkg list` no longer showed it. mkindex checked subdir and icon
+# inside the LHA.
+
+status          = "approved"
+id              = "micropolis"
+version         = "0.1.0-rc3"
+revision        = 1
+summary         = "Classic city-building simulation for AROS"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/strategy"
+url             = "https://github.com/tomaszstaniak/aros-micropolis/releases/download/v0.1.0-rc3/micropolis.x86_64-aros-v11.lha"
+size            = 2593505
+sha256          = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+kind            = "app"
+
+depends         = []
+depends_checked = true
+subdir          = "Micropolis"
+icon            = "Micropolis.info"   # the drawer icon, beside Micropolis/ at the archive root
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]        # installed, started and removed 2026-09-23
+does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
+
+# The binary names crt.library, m.library and stdlib.library, which AROS One
+# supplies and mainline does not. AHI is optional: without it the game is
+# silent, not broken.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-micropolis"
+revision   = "v0.1.0-rc3"
+archive    = "Micropolis-AROS-0.1.0-rc3-source.zip"
+sha256     = "969be5094991e8c57b9689da06e68c4082daf4491a907411db0972aa3635e5e5"
+built_with = "abiv11-x86_64, GCC 10.5.0"
