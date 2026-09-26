@@ -1,0 +1,58 @@
+# APPROVED 2026-09-26. Our own program, published by its author as a GitHub
+# release. The archive carries its own .arospkg/manifest.toml; this entry
+# agrees with it (id, version, subdir, icon) and adds the requirements, which
+# the embedded manifest does not state.
+#
+# Needs an 8 MiB stack. The program icon inside the drawer carries it, so a
+# start from Wanderer works; from a Shell, `stack 8388608` first (Folio/README says
+# so). Started from a 40960-byte Shell, Folio crashes: on 2026-09-26 GrafX2
+# hung the whole test machine that way.
+#
+# Checked on AROS One 1.3 x86_64 (ABIv11) under QEMU with apkg 0.2 (a513aea7),
+# from a Shell at 40960 bytes: install downloaded from url over HTTPS through
+# GitHub's redirect, verified the hash, installed the drawer and its icon;
+# started with an 8 MiB stack, running after 20 s; remove deleted what it
+# installed. Evidence: docs/reports/2026-09-26-catalogue/.
+
+status          = "approved"
+id              = "folio"
+version         = "0.3.8"
+summary         = "PDF reader with thumbnails, search and highlighting, on MuPDF"
+arch            = "x86_64"
+abi             = "v11"
+category        = "office/misc"
+url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.3.8/Folio-0.3.8.x86_64-aros-v11.lha"
+size            = 29363297
+sha256          = "e46f8c09562899bd41315c08eae47632c5316ae696c6785414989401a6531ecf"
+kind            = "app"
+
+depends         = []
+depends_checked = true
+subdir          = "Folio"
+icon            = "Folio.info"        # the drawer icon, beside Folio/ at the archive root
+installs_on     = ["aros-one"]        # apkg 0.2 (a513aea7), AROS One 1.3, 2026-09-26
+runs_on         = ["aros-one"]        # started and running after 20 s, then removed
+does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
+
+# The binary names crt.library, m.library and stdlib.library, the ABIv11
+# runtime. muimaster, asl, iffparse and cybergraphics are in every AROS.
+# openurl.library is optional: it is opened only when a link in a PDF is
+# clicked, and without it Folio says so in the status line.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-foliopdf"
+revision   = "v0.3.8"
+archive    = "Folio-0.3.8-source.zip"
+sha256     = "f28a71f6cd77ab8f73a8d1a4049dc8dd9222cea010678860fe8347fa09ef3f34"
+built_with = "abiv11-x86_64, GCC 10.5.0"
