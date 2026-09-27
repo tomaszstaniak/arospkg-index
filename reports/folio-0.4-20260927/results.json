@@ -1,0 +1,46 @@
+[
+  {
+    "run_id": "folio04-install",
+    "machine": "v11-1",
+    "binary_sha256": "a513aea7d8b066911a88466ac83d166f9c30578fb80768b0961d14df426040fc",
+    "source_id": "354e780509e8fe36",
+    "cc": "10.5.0",
+    "command": "install",
+    "argument": "folio",
+    "status": 0,
+    "status_text": "ok"
+  },
+  {
+    "run_id": "folio04-remove",
+    "machine": "v11-1",
+    "binary_sha256": "a513aea7d8b066911a88466ac83d166f9c30578fb80768b0961d14df426040fc",
+    "source_id": "354e780509e8fe36",
+    "cc": "10.5.0",
+    "command": "remove",
+    "argument": "folio",
+    "status": 0,
+    "status_text": "ok"
+  },
+  {
+    "run_id": "folio04-net",
+    "machine": "v11-1",
+    "binary_sha256": "a513aea7d8b066911a88466ac83d166f9c30578fb80768b0961d14df426040fc",
+    "source_id": "354e780509e8fe36",
+    "cc": "10.5.0",
+    "command": "install",
+    "argument": "folio",
+    "status": 0,
+    "status_text": "ok"
+  },
+  {
+    "run_id": "folio04-net-remove",
+    "machine": "v11-1",
+    "binary_sha256": "a513aea7d8b066911a88466ac83d166f9c30578fb80768b0961d14df426040fc",
+    "source_id": "354e780509e8fe36",
+    "cc": "10.5.0",
+    "command": "remove",
+    "argument": "folio",
+    "status": 0,
+    "status_text": "ok"
+  }
+]
