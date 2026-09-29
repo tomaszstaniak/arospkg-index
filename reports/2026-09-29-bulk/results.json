@@ -1,0 +1,703 @@
+{
+ "date": "2026-09-29",
+ "apkg_sha256": "40c2ba9350bc10e6da294d0cf0675aefb8f3dc86c519fd8c992bb4bf675609e0",
+ "base_image_sha256": "c766559f856b39bde0c83e7af2119424e448e2260d3007a30170dc00a7e5acaf",
+ "published": [
+  {
+   "id": "ab3dhd",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 500000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "alac",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "amiberry",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 2000000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "apotris",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 100000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "arrakis",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "badapple",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "boy",
+   "batch": "s04",
+   "machine": "KVM",
+   "stack": 50000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "breakhack",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 200000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "cabextract",
+   "batch": "c05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 20",
+   "note": ""
+  },
+  {
+   "id": "ccd2cue",
+   "batch": "c10",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "davegnukem",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "daysleeper",
+   "batch": "r02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "delugem",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 400000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "demac",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "demoeffects",
+   "batch": "s02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "devilutionx",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 1000000,
+   "started": "window",
+   "note": "data message"
+  },
+  {
+   "id": "diskusage",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "dosbox",
+   "batch": "u01",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "dose2",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "fallout",
+   "batch": "s04",
+   "machine": "KVM",
+   "stack": 200000,
+   "started": "window",
+   "note": "data message"
+  },
+  {
+   "id": "fallout2",
+   "batch": "r09",
+   "machine": "KVM",
+   "stack": 200000,
+   "started": "window",
+   "note": "data message"
+  },
+  {
+   "id": "fheroes2",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 200000,
+   "started": "window",
+   "note": "data message"
+  },
+  {
+   "id": "finder",
+   "batch": "r02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "fireoftheapes",
+   "batch": "t02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "flx_play",
+   "batch": "v01",
+   "machine": "TCG",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "ft2clone",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 4096000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "gicriptofilex",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "giddy3",
+   "batch": "v01",
+   "machine": "TCG",
+   "stack": 400000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "giocodel15",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "gisplita",
+   "batch": "s04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 2",
+   "note": ""
+  },
+  {
+   "id": "gnurobbo",
+   "batch": "s05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "hexen2",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 2000000,
+   "started": "window",
+   "note": "data message"
+  },
+  {
+   "id": "hivelyreplay",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "hostile-takeover",
+   "batch": "r02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "hydracastle",
+   "batch": "t03",
+   "machine": "KVM",
+   "stack": 102400,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "isomaker-gui",
+   "batch": "s02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "isotools-gui",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "keen4",
+   "batch": "c05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "lbreakouthd",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 500000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "ledblur",
+   "batch": "s04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "mcamiga",
+   "batch": "c05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "metemp3",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "minislug",
+   "batch": "s05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "mplayer",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 512000,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "nano",
+   "batch": "r02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "nomarch",
+   "batch": "c05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "ominoarcade",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "opentyrian",
+   "batch": "s02",
+   "machine": "KVM",
+   "stack": 300000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "openxcom",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": "data message"
+  },
+  {
+   "id": "pekkakana2",
+   "batch": "t02",
+   "machine": "KVM",
+   "stack": 1000000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "pkg-54321",
+   "batch": "t02",
+   "machine": "KVM",
+   "stack": 72000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "pkg-7mezzoplus",
+   "batch": "c05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "pkg-7zdec",
+   "batch": "s04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "planethively",
+   "batch": "s05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "potrace",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 2",
+   "note": ""
+  },
+  {
+   "id": "prboom-plus",
+   "batch": "r02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": "data message"
+  },
+  {
+   "id": "protrekkr",
+   "batch": "v01",
+   "machine": "TCG",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "qlview",
+   "batch": "c10",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "residualvm",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "rtf-riddle",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 22",
+   "note": ""
+  },
+  {
+   "id": "scopagame",
+   "batch": "w01",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "screentest",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "sfsobject",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 10",
+   "note": ""
+  },
+  {
+   "id": "siddump",
+   "batch": "s05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "sokobangp2x",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 1000000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "sploiner",
+   "batch": "c09",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "stercus",
+   "batch": "t01",
+   "machine": "KVM",
+   "stack": 50000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "stratagus",
+   "batch": "s02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": "data message"
+  },
+  {
+   "id": "super-haxagon",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 400000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "super_trevor_land",
+   "batch": "u01",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "tbftss",
+   "batch": "r01",
+   "machine": "KVM",
+   "stack": 400000,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "tiltnroll",
+   "batch": "r02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "timeless",
+   "batch": "t02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "tinysid",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "tinytris",
+   "batch": "s02",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "tressette",
+   "batch": "r05",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "window",
+   "note": ""
+  },
+  {
+   "id": "unrar",
+   "batch": "w01",
+   "machine": "KVM",
+   "stack": 800000,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "unshield",
+   "batch": "c04",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "untarka",
+   "batch": "c07",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 0",
+   "note": ""
+  },
+  {
+   "id": "wildmidi",
+   "batch": "c10",
+   "machine": "KVM",
+   "stack": 40960,
+   "started": "rc 1",
+   "note": ""
+  },
+  {
+   "id": "zgloom",
+   "batch": "v03",
+   "machine": "TCG",
+   "stack": 200000,
+   "started": "window",
+   "note": ""
+  }
+ ],
+ "held": {
+  "playsid-gui": "frontend for SYS:C/PlaySid, which AROS One does not have",
+  "ffmpegvideotool": "frontend for an ffmpeg command that AROS One does not have",
+  "ffmpegaudioextractor": "frontend for an ffmpeg command that AROS One does not have",
+  "smb2-gui": "frontend for SMB2 tools; needs a share to exercise",
+  "wgetgui": "frontend only; the wget command it drives is not checked",
+  "flexcat-gui": "frontend only; the FlexCat command it drives is not checked",
+  "cls": "clears the console; nothing a log can capture",
+  "timeit": "prints only an argument error",
+  "lzop": "no readable output with input from NIL:",
+  "zunearc": "frontend for archivers; ships none and names none, so what it drives is not checked",
+  "unmount": "prints only an argument error (Unmount: required argument missing) and returns 20"
+ },
+ "crashed": {
+  "rman": "Illegal address access",
+  "biniax2": "Privilege violation (Exec AddTail)",
+  "scummvm": "Stack extends out of range at 40960"
+ },
+ "client_limit": {
+  "thextech": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "vim": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "owb": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "gemrb": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "cavestory": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "augustusandjulius": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "dethrace": "over ~1160 files: plan exceeds 8192 JSON tokens",
+  "arxlibertatis": "member over size limit (arx binary)"
+ },
+ "refused": {
+  "dclock": "unsafe member path ram:dclock/ in the LHA"
+ },
+ "person": {
+  "hex2": "no window seen",
+  "leu": "no window seen",
+  "muimapparium": "no window seen",
+  "muiplot": "no window seen, two runs",
+  "amigakeyremaper": "no window (keymap tool)",
+  "joytest": "no window seen",
+  "zapperng": "no window seen",
+  "switch": "no window seen",
+  "amishockolate": "black screen only",
+  "adoom3": "exits rc=20 without a message",
+  "soniccd": "exits rc=0, no window, no output",
+  "reminiscence": "exits rc=-1",
+  "csid": "tries a default tune, fails, exits",
+  "openjazz": "exits rc=-1, data missing only in log",
+  "targa_datatype": "a datatype, not a program: belongs in SYS:Classes"
+ }
+}

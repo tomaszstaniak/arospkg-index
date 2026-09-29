@@ -1,0 +1,41 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/arrakis with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r05).
+
+status          = "approved"
+id              = "arrakis"
+version         = "1.0"
+summary         = "Arrakis demo x86_64 by Kakiarts/trbl"
+arch            = "x86_64"
+abi             = "v11"
+category        = "demo/scene"
+url             = "https://archives.arosworld.org/share/demo/scene/arrakis.x86_64-aros-v11.zip"
+size            = 3475491
+upload_date     = "20250529-06.23"
+selected_by     = "only-candidate"
+
+sha256          = "c444c127bfbeb98868a594eafa412355ce1b699c3c4728539a0514a2fa54b8fb"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "arrakis"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,563 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8810
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8810
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== ccd2cue"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install ccd2cue
+Echo >>RAM:L/a.txt "install ccd2cue: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info ccd2cue
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== ffmpegvideotool"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install ffmpegvideotool
+Echo >>RAM:L/a.txt "install ffmpegvideotool: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info ffmpegvideotool
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== giddy3"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install giddy3
+Echo >>RAM:L/a.txt "install giddy3: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info giddy3
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== leu"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install leu
+Echo >>RAM:L/a.txt "install leu: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info leu
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== minislug"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install minislug
+Echo >>RAM:L/a.txt "install minislug: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info minislug
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== muimapparium"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install muimapparium
+Echo >>RAM:L/a.txt "install muimapparium: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info muimapparium
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== protrekkr"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install protrekkr
+Echo >>RAM:L/a.txt "install protrekkr: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info protrekkr
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== qlview"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install qlview
+Echo >>RAM:L/a.txt "install qlview: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info qlview
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== residualvm"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install residualvm
+Echo >>RAM:L/a.txt "install residualvm: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info residualvm
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== stercus"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install stercus
+Echo >>RAM:L/a.txt "install stercus: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info stercus
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== unmount"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install unmount
+Echo >>RAM:L/a.txt "install unmount: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info unmount
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== wgetgui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install wgetgui
+Echo >>RAM:L/a.txt "install wgetgui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info wgetgui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >>RAM:L/a.txt "*N==== wildmidi"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install wildmidi
+Echo >>RAM:L/a.txt "install wildmidi: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info wildmidi
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8810
+Echo >RAM:L/b-ccd2cue.txt "==== ccd2cue: Ccd2Cue, stack 40960"
+Date >>RAM:L/b-ccd2cue.txt
+If NOT EXISTS SYS:Batch/ccd2cue
+  Echo >>RAM:L/b-ccd2cue.txt "ccd2cue: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start ccd2cue "SYS:Batch/ccd2cue" Ccd2Cue 40960
+  Wait 15
+  Echo >>RAM:L/b-ccd2cue.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-ccd2cue.txt COMMAND=Ccd2Cue
+  If EXISTS RAM:L/r-ccd2cue.txt
+    Type >>RAM:L/b-ccd2cue.txt RAM:L/r-ccd2cue.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "ccd2cue"
+RAM:b/putfile >NIL: RAM:L/m shot-ccd2cue 8810
+Wait 4
+Status >NIL: COMMAND=Ccd2Cue
+If NOT WARN
+  Break >NIL: `Status COMMAND=Ccd2Cue` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-ccd2cue.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-ccd2cue.txt COMMAND=Ccd2Cue
+If EXISTS RAM:L/r-ccd2cue.txt
+  Type >>RAM:L/b-ccd2cue.txt RAM:L/r-ccd2cue.txt
+EndIf
+Date >>RAM:L/b-ccd2cue.txt
+RAM:b/putfile >NIL: RAM:L/b-ccd2cue.txt b-ccd2cue.txt 8810
+If EXISTS RAM:L/o-ccd2cue.txt
+RAM:b/putfile >NIL: RAM:L/o-ccd2cue.txt o-ccd2cue.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-ccd2cue 8810
+Wait 3
+Echo >RAM:L/b-ffmpegvideotool.txt "==== ffmpegvideotool: FFmpegVideoTool.exe, stack 40960"
+Date >>RAM:L/b-ffmpegvideotool.txt
+If NOT EXISTS SYS:Batch/ffmpegvideotool
+  Echo >>RAM:L/b-ffmpegvideotool.txt "ffmpegvideotool: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start ffmpegvideotool "SYS:Batch/ffmpegvideotool" FFmpegVideoTool.exe 40960
+  Wait 15
+  Echo >>RAM:L/b-ffmpegvideotool.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-ffmpegvideotool.txt COMMAND=FFmpegVideoTool.exe
+  If EXISTS RAM:L/r-ffmpegvideotool.txt
+    Type >>RAM:L/b-ffmpegvideotool.txt RAM:L/r-ffmpegvideotool.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "ffmpegvideotool"
+RAM:b/putfile >NIL: RAM:L/m shot-ffmpegvideotool 8810
+Wait 4
+Status >NIL: COMMAND=FFmpegVideoTool.exe
+If NOT WARN
+  Break >NIL: `Status COMMAND=FFmpegVideoTool.exe` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-ffmpegvideotool.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-ffmpegvideotool.txt COMMAND=FFmpegVideoTool.exe
+If EXISTS RAM:L/r-ffmpegvideotool.txt
+  Type >>RAM:L/b-ffmpegvideotool.txt RAM:L/r-ffmpegvideotool.txt
+EndIf
+Date >>RAM:L/b-ffmpegvideotool.txt
+RAM:b/putfile >NIL: RAM:L/b-ffmpegvideotool.txt b-ffmpegvideotool.txt 8810
+If EXISTS RAM:L/o-ffmpegvideotool.txt
+RAM:b/putfile >NIL: RAM:L/o-ffmpegvideotool.txt o-ffmpegvideotool.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-ffmpegvideotool 8810
+Wait 3
+Echo >RAM:L/b-giddy3.txt "==== giddy3: giddy3, stack 400000"
+Date >>RAM:L/b-giddy3.txt
+If NOT EXISTS SYS:Batch/giddy3
+  Echo >>RAM:L/b-giddy3.txt "giddy3: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start giddy3 "SYS:Batch/giddy3" giddy3 400000
+  Wait 15
+  Echo >>RAM:L/b-giddy3.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-giddy3.txt COMMAND=giddy3
+  If EXISTS RAM:L/r-giddy3.txt
+    Type >>RAM:L/b-giddy3.txt RAM:L/r-giddy3.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "giddy3"
+RAM:b/putfile >NIL: RAM:L/m shot-giddy3 8810
+Wait 4
+Status >NIL: COMMAND=giddy3
+If NOT WARN
+  Break >NIL: `Status COMMAND=giddy3` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-giddy3.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-giddy3.txt COMMAND=giddy3
+If EXISTS RAM:L/r-giddy3.txt
+  Type >>RAM:L/b-giddy3.txt RAM:L/r-giddy3.txt
+EndIf
+Date >>RAM:L/b-giddy3.txt
+RAM:b/putfile >NIL: RAM:L/b-giddy3.txt b-giddy3.txt 8810
+If EXISTS RAM:L/o-giddy3.txt
+RAM:b/putfile >NIL: RAM:L/o-giddy3.txt o-giddy3.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-giddy3 8810
+Wait 3
+Echo >RAM:L/b-leu.txt "==== leu: Leu, stack 40960"
+Date >>RAM:L/b-leu.txt
+If NOT EXISTS SYS:Batch/leu
+  Echo >>RAM:L/b-leu.txt "leu: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start leu "SYS:Batch/leu" Leu 40960
+  Wait 15
+  Echo >>RAM:L/b-leu.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-leu.txt COMMAND=Leu
+  If EXISTS RAM:L/r-leu.txt
+    Type >>RAM:L/b-leu.txt RAM:L/r-leu.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "leu"
+RAM:b/putfile >NIL: RAM:L/m shot-leu 8810
+Wait 4
+Status >NIL: COMMAND=Leu
+If NOT WARN
+  Break >NIL: `Status COMMAND=Leu` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-leu.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-leu.txt COMMAND=Leu
+If EXISTS RAM:L/r-leu.txt
+  Type >>RAM:L/b-leu.txt RAM:L/r-leu.txt
+EndIf
+Date >>RAM:L/b-leu.txt
+RAM:b/putfile >NIL: RAM:L/b-leu.txt b-leu.txt 8810
+If EXISTS RAM:L/o-leu.txt
+RAM:b/putfile >NIL: RAM:L/o-leu.txt o-leu.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-leu 8810
+Wait 3
+Echo >RAM:L/b-minislug.txt "==== minislug: minislug, stack 40960"
+Date >>RAM:L/b-minislug.txt
+If NOT EXISTS SYS:Batch/minislug
+  Echo >>RAM:L/b-minislug.txt "minislug: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start minislug "SYS:Batch/minislug" minislug 40960
+  Wait 15
+  Echo >>RAM:L/b-minislug.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-minislug.txt COMMAND=minislug
+  If EXISTS RAM:L/r-minislug.txt
+    Type >>RAM:L/b-minislug.txt RAM:L/r-minislug.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "minislug"
+RAM:b/putfile >NIL: RAM:L/m shot-minislug 8810
+Wait 4
+Status >NIL: COMMAND=minislug
+If NOT WARN
+  Break >NIL: `Status COMMAND=minislug` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-minislug.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-minislug.txt COMMAND=minislug
+If EXISTS RAM:L/r-minislug.txt
+  Type >>RAM:L/b-minislug.txt RAM:L/r-minislug.txt
+EndIf
+Date >>RAM:L/b-minislug.txt
+RAM:b/putfile >NIL: RAM:L/b-minislug.txt b-minislug.txt 8810
+If EXISTS RAM:L/o-minislug.txt
+RAM:b/putfile >NIL: RAM:L/o-minislug.txt o-minislug.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-minislug 8810
+Wait 3
+Echo >RAM:L/b-muimapparium.txt "==== muimapparium: MUIMapparium, stack 40960"
+Date >>RAM:L/b-muimapparium.txt
+If NOT EXISTS SYS:Batch/muimapparium
+  Echo >>RAM:L/b-muimapparium.txt "muimapparium: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start muimapparium "SYS:Batch/muimapparium" MUIMapparium 40960
+  Wait 15
+  Echo >>RAM:L/b-muimapparium.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-muimapparium.txt COMMAND=MUIMapparium
+  If EXISTS RAM:L/r-muimapparium.txt
+    Type >>RAM:L/b-muimapparium.txt RAM:L/r-muimapparium.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "muimapparium"
+RAM:b/putfile >NIL: RAM:L/m shot-muimapparium 8810
+Wait 4
+Status >NIL: COMMAND=MUIMapparium
+If NOT WARN
+  Break >NIL: `Status COMMAND=MUIMapparium` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-muimapparium.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-muimapparium.txt COMMAND=MUIMapparium
+If EXISTS RAM:L/r-muimapparium.txt
+  Type >>RAM:L/b-muimapparium.txt RAM:L/r-muimapparium.txt
+EndIf
+Date >>RAM:L/b-muimapparium.txt
+RAM:b/putfile >NIL: RAM:L/b-muimapparium.txt b-muimapparium.txt 8810
+If EXISTS RAM:L/o-muimapparium.txt
+RAM:b/putfile >NIL: RAM:L/o-muimapparium.txt o-muimapparium.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-muimapparium 8810
+Wait 3
+Echo >RAM:L/b-protrekkr.txt "==== protrekkr: Protrekkr, stack 40960"
+Date >>RAM:L/b-protrekkr.txt
+If NOT EXISTS SYS:Batch/protrekkr
+  Echo >>RAM:L/b-protrekkr.txt "protrekkr: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start protrekkr "SYS:Batch/protrekkr" Protrekkr 40960
+  Wait 15
+  Echo >>RAM:L/b-protrekkr.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-protrekkr.txt COMMAND=Protrekkr
+  If EXISTS RAM:L/r-protrekkr.txt
+    Type >>RAM:L/b-protrekkr.txt RAM:L/r-protrekkr.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "protrekkr"
+RAM:b/putfile >NIL: RAM:L/m shot-protrekkr 8810
+Wait 4
+Status >NIL: COMMAND=Protrekkr
+If NOT WARN
+  Break >NIL: `Status COMMAND=Protrekkr` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-protrekkr.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-protrekkr.txt COMMAND=Protrekkr
+If EXISTS RAM:L/r-protrekkr.txt
+  Type >>RAM:L/b-protrekkr.txt RAM:L/r-protrekkr.txt
+EndIf
+Date >>RAM:L/b-protrekkr.txt
+RAM:b/putfile >NIL: RAM:L/b-protrekkr.txt b-protrekkr.txt 8810
+If EXISTS RAM:L/o-protrekkr.txt
+RAM:b/putfile >NIL: RAM:L/o-protrekkr.txt o-protrekkr.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-protrekkr 8810
+Wait 3
+Echo >RAM:L/b-qlview.txt "==== qlview: QL-View, stack 40960"
+Date >>RAM:L/b-qlview.txt
+If NOT EXISTS SYS:Batch/qlview
+  Echo >>RAM:L/b-qlview.txt "qlview: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start qlview "SYS:Batch/qlview" QL-View 40960
+  Wait 15
+  Echo >>RAM:L/b-qlview.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-qlview.txt COMMAND=QL-View
+  If EXISTS RAM:L/r-qlview.txt
+    Type >>RAM:L/b-qlview.txt RAM:L/r-qlview.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "qlview"
+RAM:b/putfile >NIL: RAM:L/m shot-qlview 8810
+Wait 4
+Status >NIL: COMMAND=QL-View
+If NOT WARN
+  Break >NIL: `Status COMMAND=QL-View` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-qlview.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-qlview.txt COMMAND=QL-View
+If EXISTS RAM:L/r-qlview.txt
+  Type >>RAM:L/b-qlview.txt RAM:L/r-qlview.txt
+EndIf
+Date >>RAM:L/b-qlview.txt
+RAM:b/putfile >NIL: RAM:L/b-qlview.txt b-qlview.txt 8810
+If EXISTS RAM:L/o-qlview.txt
+RAM:b/putfile >NIL: RAM:L/o-qlview.txt o-qlview.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-qlview 8810
+Wait 3
+Echo >RAM:L/b-residualvm.txt "==== residualvm: residualvm, stack 40960"
+Date >>RAM:L/b-residualvm.txt
+If NOT EXISTS SYS:Batch/residualvm
+  Echo >>RAM:L/b-residualvm.txt "residualvm: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start residualvm "SYS:Batch/residualvm" residualvm 40960
+  Wait 15
+  Echo >>RAM:L/b-residualvm.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-residualvm.txt COMMAND=residualvm
+  If EXISTS RAM:L/r-residualvm.txt
+    Type >>RAM:L/b-residualvm.txt RAM:L/r-residualvm.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "residualvm"
+RAM:b/putfile >NIL: RAM:L/m shot-residualvm 8810
+Wait 4
+Status >NIL: COMMAND=residualvm
+If NOT WARN
+  Break >NIL: `Status COMMAND=residualvm` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-residualvm.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-residualvm.txt COMMAND=residualvm
+If EXISTS RAM:L/r-residualvm.txt
+  Type >>RAM:L/b-residualvm.txt RAM:L/r-residualvm.txt
+EndIf
+Date >>RAM:L/b-residualvm.txt
+RAM:b/putfile >NIL: RAM:L/b-residualvm.txt b-residualvm.txt 8810
+If EXISTS RAM:L/o-residualvm.txt
+RAM:b/putfile >NIL: RAM:L/o-residualvm.txt o-residualvm.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-residualvm 8810
+Wait 3
+Echo >RAM:L/b-stercus.txt "==== stercus: Stercus, stack 50000"
+Date >>RAM:L/b-stercus.txt
+If NOT EXISTS SYS:Batch/stercus
+  Echo >>RAM:L/b-stercus.txt "stercus: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start stercus "SYS:Batch/stercus" Stercus 50000
+  Wait 15
+  Echo >>RAM:L/b-stercus.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-stercus.txt COMMAND=Stercus
+  If EXISTS RAM:L/r-stercus.txt
+    Type >>RAM:L/b-stercus.txt RAM:L/r-stercus.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "stercus"
+RAM:b/putfile >NIL: RAM:L/m shot-stercus 8810
+Wait 4
+Status >NIL: COMMAND=Stercus
+If NOT WARN
+  Break >NIL: `Status COMMAND=Stercus` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-stercus.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-stercus.txt COMMAND=Stercus
+If EXISTS RAM:L/r-stercus.txt
+  Type >>RAM:L/b-stercus.txt RAM:L/r-stercus.txt
+EndIf
+Date >>RAM:L/b-stercus.txt
+RAM:b/putfile >NIL: RAM:L/b-stercus.txt b-stercus.txt 8810
+If EXISTS RAM:L/o-stercus.txt
+RAM:b/putfile >NIL: RAM:L/o-stercus.txt o-stercus.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-stercus 8810
+Wait 3
+Echo >RAM:L/b-unmount.txt "==== unmount: UnMount, stack 40960"
+Date >>RAM:L/b-unmount.txt
+If NOT EXISTS SYS:Batch/unmount
+  Echo >>RAM:L/b-unmount.txt "unmount: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start unmount "SYS:Batch/unmount" UnMount 40960
+  Wait 15
+  Echo >>RAM:L/b-unmount.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-unmount.txt COMMAND=UnMount
+  If EXISTS RAM:L/r-unmount.txt
+    Type >>RAM:L/b-unmount.txt RAM:L/r-unmount.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "unmount"
+RAM:b/putfile >NIL: RAM:L/m shot-unmount 8810
+Wait 4
+Status >NIL: COMMAND=UnMount
+If NOT WARN
+  Break >NIL: `Status COMMAND=UnMount` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-unmount.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-unmount.txt COMMAND=UnMount
+If EXISTS RAM:L/r-unmount.txt
+  Type >>RAM:L/b-unmount.txt RAM:L/r-unmount.txt
+EndIf
+Date >>RAM:L/b-unmount.txt
+RAM:b/putfile >NIL: RAM:L/b-unmount.txt b-unmount.txt 8810
+If EXISTS RAM:L/o-unmount.txt
+RAM:b/putfile >NIL: RAM:L/o-unmount.txt o-unmount.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-unmount 8810
+Wait 3
+Echo >RAM:L/b-wgetgui.txt "==== wgetgui: WGetGUI, stack 40960"
+Date >>RAM:L/b-wgetgui.txt
+If NOT EXISTS SYS:Batch/wgetgui
+  Echo >>RAM:L/b-wgetgui.txt "wgetgui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start wgetgui "SYS:Batch/wgetgui" WGetGUI 40960
+  Wait 15
+  Echo >>RAM:L/b-wgetgui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-wgetgui.txt COMMAND=WGetGUI
+  If EXISTS RAM:L/r-wgetgui.txt
+    Type >>RAM:L/b-wgetgui.txt RAM:L/r-wgetgui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "wgetgui"
+RAM:b/putfile >NIL: RAM:L/m shot-wgetgui 8810
+Wait 4
+Status >NIL: COMMAND=WGetGUI
+If NOT WARN
+  Break >NIL: `Status COMMAND=WGetGUI` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-wgetgui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-wgetgui.txt COMMAND=WGetGUI
+If EXISTS RAM:L/r-wgetgui.txt
+  Type >>RAM:L/b-wgetgui.txt RAM:L/r-wgetgui.txt
+EndIf
+Date >>RAM:L/b-wgetgui.txt
+RAM:b/putfile >NIL: RAM:L/b-wgetgui.txt b-wgetgui.txt 8810
+If EXISTS RAM:L/o-wgetgui.txt
+RAM:b/putfile >NIL: RAM:L/o-wgetgui.txt o-wgetgui.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-wgetgui 8810
+Wait 3
+Echo >RAM:L/b-wildmidi.txt "==== wildmidi: WildMidi, stack 40960"
+Date >>RAM:L/b-wildmidi.txt
+If NOT EXISTS SYS:Batch/wildmidi
+  Echo >>RAM:L/b-wildmidi.txt "wildmidi: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start wildmidi "SYS:Batch/wildmidi" WildMidi 40960
+  Wait 15
+  Echo >>RAM:L/b-wildmidi.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-wildmidi.txt COMMAND=WildMidi
+  If EXISTS RAM:L/r-wildmidi.txt
+    Type >>RAM:L/b-wildmidi.txt RAM:L/r-wildmidi.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "wildmidi"
+RAM:b/putfile >NIL: RAM:L/m shot-wildmidi 8810
+Wait 4
+Status >NIL: COMMAND=WildMidi
+If NOT WARN
+  Break >NIL: `Status COMMAND=WildMidi` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-wildmidi.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-wildmidi.txt COMMAND=WildMidi
+If EXISTS RAM:L/r-wildmidi.txt
+  Type >>RAM:L/b-wildmidi.txt RAM:L/r-wildmidi.txt
+EndIf
+Date >>RAM:L/b-wildmidi.txt
+RAM:b/putfile >NIL: RAM:L/b-wildmidi.txt b-wildmidi.txt 8810
+If EXISTS RAM:L/o-wildmidi.txt
+RAM:b/putfile >NIL: RAM:L/o-wildmidi.txt o-wildmidi.txt 8810
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-wildmidi 8810
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove ccd2cue
+Echo >>RAM:L/c.txt "remove ccd2cue: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove ffmpegvideotool
+Echo >>RAM:L/c.txt "remove ffmpegvideotool: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove giddy3
+Echo >>RAM:L/c.txt "remove giddy3: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove leu
+Echo >>RAM:L/c.txt "remove leu: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove minislug
+Echo >>RAM:L/c.txt "remove minislug: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove muimapparium
+Echo >>RAM:L/c.txt "remove muimapparium: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove protrekkr
+Echo >>RAM:L/c.txt "remove protrekkr: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove qlview
+Echo >>RAM:L/c.txt "remove qlview: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove residualvm
+Echo >>RAM:L/c.txt "remove residualvm: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove stercus
+Echo >>RAM:L/c.txt "remove stercus: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove unmount
+Echo >>RAM:L/c.txt "remove unmount: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove wgetgui
+Echo >>RAM:L/c.txt "remove wgetgui: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove wildmidi
+Echo >>RAM:L/c.txt "remove wildmidi: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8810
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8810

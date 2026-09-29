@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/isotools-gui
+# with Run and input from NIL:, stack 40960 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-09-29-bulk/ (batch r05).
+
+status          = "approved"
+id              = "isotools-gui"
+version         = "1.0"
+summary         = "Boot Extraction ISO And Rename Volume"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility"
+url             = "https://archives.arosworld.org/share/utility/isotools-gui.x86_64-aros-v11.zip"
+size            = 210116
+upload_date     = "20260911-19.42"
+selected_by     = "only-candidate"
+
+sha256          = "ac95316427a414631248892d5adcc65461f4a9eb7ce706e8d4426a0a430de891"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "IsoTools-GUI"
+icon            = "IsoTools-GUI.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

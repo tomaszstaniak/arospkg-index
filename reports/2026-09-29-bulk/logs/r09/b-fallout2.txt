@@ -1,0 +1,7 @@
+==== fallout2: Fallout2, stack 200000
+Tuesday 29-Sep-26 17:53:28
+after 15 s (a number means it is running):
+ 9
+after Ctrl-C (empty means it has ended):
+ 9
+Tuesday 29-Sep-26 17:53:52

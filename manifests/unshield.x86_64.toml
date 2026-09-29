@@ -1,0 +1,36 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/unshield/aros
+# with Run and input from NIL:, stack 40960 bytes: it printed its usage or
+# output and returned 1. Evidence: reports/2026-09-29-bulk/ (batch c04).
+
+status          = "approved"
+id              = "unshield"
+version         = "1.6.2"
+summary         = "Utility to extract files from InstallShield CAB"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/archive"
+url             = "https://archives.arosworld.org/share/utility/archive/unshield1.6.2.x86_64-aros-v11.zip"
+size            = 2287208
+upload_date     = "20250605-07.04"
+selected_by     = "only-candidate"
+
+sha256          = "d8c755fec92b27ab675a8dab83e2eb1bb8749d529955d0d3410b94279a6b7225"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "unshield-1.6.2"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,7 @@
+==== sokobangp2x: Sokoban, stack 1000000
+Tuesday 29-Sep-26 17:55:16
+after 15 s (a number means it is running):
+ 12
+after Ctrl-C (empty means it has ended):
+ 12
+Tuesday 29-Sep-26 17:55:40

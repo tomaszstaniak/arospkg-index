@@ -1,0 +1,7 @@
+==== joytest: JoyTest, stack 40960
+Tuesday 29-Sep-26 18:18:22
+after 15 s (a number means it is running):
+ 11
+after Ctrl-C (empty means it has ended):
+JoyTest returned: rc=0
+Tuesday 29-Sep-26 18:18:53

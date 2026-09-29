@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/pkg-7mezzoplus
+# with Run and input from NIL:, stack 40960 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-09-29-bulk/ (batch c05).
+
+status          = "approved"
+id              = "pkg-7mezzoplus"
+version         = "1.0"
+summary         = "Popular Italian Christmas game"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/card"
+url             = "https://archives.arosworld.org/share/game/card/7mezzoplus.x86_64-aros-v11.zip"
+size            = 668674
+upload_date     = "20260902-14.26"
+selected_by     = "only-candidate"
+
+sha256          = "1ea0d16ce4016d6d2a329e6d03db6871fb0184a694d929ab9eeeeb629f717baf"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "7MezzoPlus1.0"
+icon            = "7MezzoPlus1.0.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

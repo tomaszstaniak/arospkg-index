@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/rtf-riddle/C
+# with Run and input from NIL:, stack 40960 bytes: it printed its usage or
+# output and returned 22. Evidence: reports/2026-09-29-bulk/ (batch c07).
+
+status          = "approved"
+id              = "rtf-riddle"
+version         = "3.97b"
+summary         = "Rich Text Format to HTML5 converter"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/text/convert"
+url             = "https://archives.arosworld.org/share/utility/text/convert/rtf-riddle-v3.97b.x86_64-aros-v11.zip"
+size            = 166679
+upload_date     = "20250607-18.39"
+selected_by     = "only-candidate"
+
+sha256          = "ad9f2cf132615957e82064e9dd4f9062c6e3f3e7feab836cca70a5882b43816f"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "RTF2HTML"
+icon            = "RTF2HTML.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

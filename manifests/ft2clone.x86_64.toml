@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/ft2clone with
+# Run and input from NIL:, stack 4096000 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-09-29-bulk/ (batch c07).
+
+status          = "approved"
+id              = "ft2clone"
+version         = "2.19"
+summary         = "FastTracker II Clone is a music tracker program"
+arch            = "x86_64"
+abi             = "v11"
+category        = "audio/tracker"
+url             = "https://archives.arosworld.org/share/audio/tracker/ft2clone.x86_64-aros-v11.zip"
+size            = 4090439
+upload_date     = "20260527-06.11"
+selected_by     = "only-candidate"
+
+sha256          = "cbd330bb3b9a084f9ff068b1e0b2e8384873ce8cec61c9b71a244751ee160c70"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "FastTracker2-Clone"
+icon            = "FastTracker2-Clone.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

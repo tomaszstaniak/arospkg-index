@@ -1,0 +1,7 @@
+==== openjazz: OpenJazz, stack 1000000
+Tuesday 29-Sep-26 18:31:45
+after 15 s (a number means it is running):
+OpenJazz returned: rc=-1
+after Ctrl-C (empty means it has ended):
+OpenJazz returned: rc=-1
+Tuesday 29-Sep-26 18:32:04

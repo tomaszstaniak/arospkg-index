@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/delugem with
+# Run and input from NIL:, stack 400000 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch c04).
+
+status          = "approved"
+id              = "delugem"
+version         = "1.1"
+summary         = "puzzle game"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/puzzle"
+url             = "https://archives.arosworld.org/share/game/puzzle/delugem.x86_64-aros-v11.zip"
+size            = 10309121
+upload_date     = "20260308-20.04"
+selected_by     = "only-candidate"
+
+sha256          = "a956ad8543902cf41c51d28fdba04387e62c51b6c8ddb7ac848fde96b400bb78"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Delugem"
+icon            = "Delugem.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

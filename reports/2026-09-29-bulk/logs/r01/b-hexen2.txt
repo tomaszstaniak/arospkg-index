@@ -1,0 +1,7 @@
+==== hexen2: Hexen2, stack 2000000
+Tuesday 29-Sep-26 17:53:59
+after 15 s (a number means it is running):
+ 10
+after Ctrl-C (empty means it has ended):
+ 10
+Tuesday 29-Sep-26 17:54:23

@@ -1,0 +1,24 @@
+lbreakouthd 1.2.2
+Copyright 2018-2024 Michael Speck
+Published under GNU GPL
+---
+Loading configuration AROS:Batch/lbreakouthd/lbreakouthd.conf
+No hiscores file AROS:Batch/lbreakouthd/lbreakouthd.hscr yet
+Initializing SDL
+Mixer opened (16 channels, 1024 buf size)
+Theme Standard has index 1
+No game controller found...
+Initializing View (Theme=Standard, Resolution=0)
+Using display 0
+Modern theme, using 16:9 layout
+Using fullscreen, resolution 1024x768
+Scale factor x100: 120
+Brick screen size: 48x24
+Using viewport x=0,y=96,w=1024,h=576
+Creating main window with 1024x768, fullscreen=1 hw=0
+Created software renderer
+Loading theme AROS:Batch/lbreakouthd/themes/Standard
+Mixer closed
+Finalizing SDL
+Hiscores saved to AROS:Batch/lbreakouthd/lbreakouthd.hscr
+Configuration saved to AROS:Batch/lbreakouthd/lbreakouthd.conf

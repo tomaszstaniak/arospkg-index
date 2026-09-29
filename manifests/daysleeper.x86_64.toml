@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/daysleeper with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r02).
+
+status          = "approved"
+id              = "daysleeper"
+version         = "0.9r2"
+summary         = "Shutdown/Reboot at a selected time"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/text/misc"
+url             = "https://archives.arosworld.org/share/utility/text/misc/daysleeper-v0.9r2.x86_64-aros-v11.zip"
+size            = 125256
+upload_date     = "20250611-09.54"
+selected_by     = "only-candidate"
+
+sha256          = "3706787f3e4c338f8cb96fa3e0f2cc49c709e7f905bb74cb26809fe8e245a27a"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "DaySleeper"
+icon            = "DaySleeper.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

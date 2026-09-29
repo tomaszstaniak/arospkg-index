@@ -1,0 +1,7 @@
+==== zgloom: ZGloom, stack 200000
+Tuesday 29-Sep-26 19:39:36
+after 15 s (a number means it is running):
+ 9
+after Ctrl-C (empty means it has ended):
+ZGloom returned: rc=0
+Tuesday 29-Sep-26 19:40:00

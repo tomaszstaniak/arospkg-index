@@ -1,0 +1,38 @@
+==== stage A: install
+
+==== fallout2
+Tuesday 29-Sep-26 17:53:27
+fetching https://archives.arosworld.org/share/game/roleplaying/fallout2.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/roleplaying/fallout2.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/fallout2.zip
+installed fallout2
+install fallout2: rc=0
+{
+  "schema":1,
+  "name":"fallout2",
+  "version":"1.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Fallout2",
+  "installed":"2026-09-29T17:53:28Z",
+  "origin":"https://archives.arosworld.org/share/game/roleplaying/fallout2.x86_64-aros-v11.zip",
+  "archive_sha256":"271389bf92a5e8902bbf464810e00a02521b7ebe648f969ea8dc4049694c76e0",
+  "archive_size":2003597,
+  "reason":"explicit",
+  "dir":"fallout2",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5671622ce9506fb4c9bd9c7842ea2cfba48a99b26f8e115f39867f8572c6b032", "size":11932, "member":"Fallout2.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"README.md", "sha256":"4f0d30c41f440d3a2b14992443f1f8701c40365b71b22ead4259517220d6250e", "size":11662 },
+    { "path":"README.aros", "sha256":"716465bc051bf6a38ada3273eeeaa03d2d95910ee4f3dc241c4458231ab3c7ae", "size":957 },
+    { "path":"LICENSE.md", "sha256":"3c260f537a0c7c3d140e5524551e5743c836cca8d819216a6934aa4669d9abec", "size":3601 },
+    { "path":"Fallout2.info", "sha256":"6e248b402b3120d88dd0bde8501b2efd5f8d51ef419901a47b5bc23d7e50e1d8", "size":11085 },
+    { "path":"fallout2.cfg", "sha256":"626dae3744a801876d9afe752000f74ad8625de1dcabd45f0321a3781bda21a7", "size":1589 },
+    { "path":"Fallout2", "sha256":"7366d999cebb84d86d20e89be0a8ea8430ad8dc91c031c9a3fdc58e3294e0192", "size":8024032 }
+  ]
+}

@@ -1,0 +1,7 @@
+==== dose2: Dose2, stack 40960
+Tuesday 29-Sep-26 17:40:14
+after 15 s (a number means it is running):
+ 10
+after Ctrl-C (empty means it has ended):
+Dose2 returned: rc=0
+Tuesday 29-Sep-26 17:40:39

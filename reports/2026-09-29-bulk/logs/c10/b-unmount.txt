@@ -1,0 +1,7 @@
+==== unmount: UnMount, stack 40960
+Tuesday 29-Sep-26 17:41:50
+after 15 s (a number means it is running):
+UnMount returned: rc=20
+after Ctrl-C (empty means it has ended):
+UnMount returned: rc=20
+Tuesday 29-Sep-26 17:42:09

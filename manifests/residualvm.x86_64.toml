@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/residualvm with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r05).
+
+status          = "approved"
+id              = "residualvm"
+version         = "0.3.1-1"
+summary         = "ResidualVM x86_64 abiv11"
+arch            = "x86_64"
+abi             = "v11"
+category        = "emulation/misc"
+url             = "https://archives.arosworld.org/share/emulation/misc/residualvm-0.3.1-1.x86_64-aros-v11.zip"
+size            = 4588171
+upload_date     = "20241101-09.27"
+selected_by     = "only-candidate"
+
+sha256          = "bffb6ddc9a784509ad0fb3f89aca745bf81ab60a9e9dbcc532d7d9413c921e9b"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Residualvm"
+icon            = "Residualvm.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

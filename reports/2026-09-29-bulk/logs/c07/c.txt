@@ -1,0 +1,85 @@
+==== stage C: remove
+apkg: not installed
+     amishockolate
+remove amishockolate: rc=10
+removed apotris
+remove apotris: rc=0
+removed badapple
+remove badapple: rc=0
+note: 1 file(s) changed locally were kept in SYS:Batch/breakhack:
+      .data.db
+removed breakhack
+remove breakhack: rc=0
+removed dose2
+remove dose2: rc=0
+removed ft2clone
+remove ft2clone: rc=0
+removed lzop
+remove lzop: rc=0
+apkg: not installed
+     planethively
+remove planethively: rc=10
+removed potrace
+remove potrace: rc=0
+removed rtf-riddle
+remove rtf-riddle: rc=0
+removed sfsobject
+remove sfsobject: rc=0
+removed timeit
+remove timeit: rc=0
+removed untarka
+remove untarka: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:43:29
+ft2clone                     Dir ---rwed Today       17:43:29
+breakhack                    Dir ---rwed Today       17:43:29
+badapple                     Dir ---rwed Today       17:43:28
+apotris                      Dir ---rwed Today       17:43:28
+cache                        Dir ---rwed Today       17:38:46
+db                           Dir ---rwed Today       17:43:29
+7 directories - 7 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/ft2clone" on Tuesday 09/29/26:
+audiodev.ini                  45 ---rwed Today       17:41:01
+1 file - 1 block used
+Directory "SYS:Batch/breakhack" on Tuesday 09/29/26:
+.data.db                   32768 ---rwed Today       17:40:07
+1 file - 64 blocks used
+Directory "SYS:Batch/badapple" is empty
+Directory "SYS:Batch/apotris" on Tuesday 09/29/26:
+Apotris.sav                32768 ---rwed Today       17:38:53
+1 file - 64 blocks used
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+untarka.zip                64136 ---rwed Today       17:38:46
+timeit.zip                 47271 ---rwed Today       17:38:46
+sfsobject.zip              79038 ---rwed Today       17:38:46
+rtf-riddle.zip            166679 ---rwed Today       17:38:45
+potrace.zip              1173531 ---rwed Today       17:38:45
+lzop.zip                  639377 ---rwed Today       17:38:44
+ft2clone.zip             4090439 ---rwed Today       17:38:44
+dose2.zip                5712711 ---rwed Today       17:38:43
+breakhack.zip            16058465 ---rwed Today       17:38:41
+badapple.zip             2653398 ---rwed Today       17:38:39
+apotris.zip              9330924 ---rwed Today       17:38:38
+11 files - 78163 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:43:29
+transactions                 Dir ---rwed Today       17:43:29
+installed                    Dir ---rwed Today       17:43:29
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+ft2clone-6abbf8c1.json       146 ---rwed Today       17:43:29
+breakhack-6abbf8c1.json      157 ---rwed Today       17:43:29
+badapple-6abbf8c0.json       146 ---rwed Today       17:43:28
+apotris-6abbf8c0.json        144 ---rwed Today       17:43:28
+4 files - 4 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 18 files - 10 directories - 78306 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:43:29

@@ -1,0 +1,33 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/diskusage with
+# Run and input from NIL:, stack 40960 bytes: it printed its usage or output
+# and returned 0. Evidence: reports/2026-09-29-bulk/ (batch r05).
+
+status          = "approved"
+id              = "diskusage"
+version         = "40.8"
+summary         = "Estimates file space usage"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/shell"
+url             = "https://archives.arosworld.org/share/utility/shell/diskusage.x86_64-aros-v11.zip"
+size            = 50048
+upload_date     = "20250116-17.30"
+selected_by     = "only-candidate"
+
+sha256          = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "DiskUsage"
+icon            = "DiskUsage.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,102 @@
+==== stage C: remove
+apkg: not installed
+     adoom3
+remove adoom3: rc=10
+apkg: not installed
+     boy
+remove boy: rc=10
+removed cabextract
+remove cabextract: rc=0
+apkg: not installed
+     dclock
+remove dclock: rc=10
+apkg: not installed
+     demoeffects
+remove demoeffects: rc=10
+removed keen4
+remove keen4: rc=0
+removed mcamiga
+remove mcamiga: rc=0
+removed nomarch
+remove nomarch: rc=0
+removed pkg-7mezzoplus
+remove pkg-7mezzoplus: rc=0
+removed rman
+remove rman: rc=0
+removed smb2-gui
+remove smb2-gui: rc=0
+removed unrar
+remove unrar: rc=0
+apkg: not installed
+     vim
+remove vim: rc=10
+removed zapperng
+remove zapperng: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:42:53
+smb2-gui                     Dir ---rwed Today       17:42:53
+rman                         Dir ---rwed Today       17:42:53
+pkg-7mezzoplus               Dir ---rwed Today       17:42:53
+mcamiga                      Dir ---rwed Today       17:42:53
+keen4                        Dir ---rwed Today       17:42:53
+cache                        Dir ---rwed Today       17:38:29
+db                           Dir ---rwed Today       17:42:53
+8 directories - 8 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/smb2-gui" is empty
+Directory "SYS:Batch/rman" on Tuesday 09/29/26:
+C                            Dir ---rwed Today       17:42:53
+1 directory - 1 block used
+Directory "SYS:Batch/rman/C" is empty
+Directory "SYS:Batch/pkg-7mezzoplus" on Tuesday 09/29/26:
+Settings                     Dir ---rwed Today       17:40:36
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings" on Tuesday 09/29/26:
+7Mezzo                       Dir ---rwed Today       17:40:36
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings/7Mezzo" on Tuesday 09/29/26:
+Dati                         Dir ---rwed Today       17:40:36
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings/7Mezzo/Dati" on Tuesday 09/29/26:
+Score                          6 ---rwed Today       17:40:36
+1 file - 1 block used
+Directory "SYS:Batch/mcamiga" is empty
+Directory "SYS:Batch/keen4" on Tuesday 09/29/26:
+Keen.cfg                     290 ---rwed Today       17:39:39
+CONFIG.CK4                   557 ---rwed Today       17:39:39
+2 files - 3 blocks used
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+zapperng.zip               55986 ---rwed Today       17:38:29
+vim.lha                  16945535 ---rwed Today       17:38:26
+unrar.zip                3291979 ---rwed Today       17:38:25
+smb2-gui.zip               67221 ---rwed Today       17:38:24
+rman.zip                  225125 ---rwed Today       17:38:24
+pkg-7mezzoplus.zip        668674 ---rwed Today       17:38:24
+nomarch.zip                81413 ---rwed Today       17:38:23
+mcamiga.lha               302308 ---rwed Today       17:38:23
+keen4.lha                2064705 ---rwed Today       17:38:22
+dclock.lha                 32123 ---rwed Today       17:38:22
+cabextract.zip           1244096 ---rwed Today       17:38:21
+11 files - 48793 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:42:53
+transactions                 Dir ---rwed Today       17:42:53
+installed                    Dir ---rwed Today       17:42:53
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+smb2-gui-6abbf89d.json       145 ---rwed Today       17:42:53
+rman-6abbf89d.json           138 ---rwed Today       17:42:53
+pkg-7mezzoplus-6abbf89d.json     157 ---rwed Today       17:42:53
+mcamiga-6abbf89d.json        143 ---rwed Today       17:42:53
+keen4-6abbf89d.json          140 ---rwed Today       17:42:53
+5 files - 5 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 19 files - 15 directories - 48817 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:42:53

@@ -1,0 +1,38 @@
+==== stage C: remove
+removed scopagame
+remove scopagame: rc=0
+removed switch
+remove switch: rc=0
+removed unrar
+remove unrar: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       19:52:35
+scopagame                    Dir ---rwed Today       19:52:35
+cache                        Dir ---rwed Today       19:51:18
+db                           Dir ---rwed Today       19:52:35
+4 directories - 4 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/scopagame" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+unrar.zip                3291979 ---rwed Today       19:51:18
+switch.zip                 80089 ---rwed Today       19:51:18
+scopagame.zip             651617 ---rwed Today       19:51:17
+3 files - 7860 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       19:52:35
+transactions                 Dir ---rwed Today       19:52:35
+installed                    Dir ---rwed Today       19:52:35
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+scopagame-6abc1703.json      147 ---rwed Today       19:52:35
+1 file - 1 block used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 4 files - 7 directories - 7868 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 19:52:35

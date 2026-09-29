@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/ledblur with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch s04).
+
+status          = "approved"
+id              = "ledblur"
+version         = "20260904"
+summary         = "Port of oldskool GP32 Demo from '06."
+arch            = "x86_64"
+abi             = "v11"
+category        = "demo/scene"
+url             = "https://archives.arosworld.org/share/demo/scene/ledblur.x86_64-aros-v11.zip"
+size            = 364186
+upload_date     = "20260904-06.37"
+selected_by     = "only-candidate"
+
+sha256          = "31ee4e7f1ac8282b418a4ff2653fb1bea6d4723eec9242ab56a861e5daf1de16"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "LedBlur"
+icon            = "LedBlur.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

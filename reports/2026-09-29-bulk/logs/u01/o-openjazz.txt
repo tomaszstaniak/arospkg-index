@@ -1,0 +1,8 @@
+18:31:45 INFO  This is OpenJazz git, built on Mar 19 2025. (main.cpp:579)
+18:31:45 WARN  Could not open file: openjazz.cfg (file.cpp:70)
+18:31:45 INFO  Configuration file not found. Using defaults. (setup.cpp:91)
+18:31:45 WARN  Could not open file: SOUNDS.000 (file.cpp:70)
+18:31:45 WARN  Could not open file: PANEL.000 (file.cpp:70)
+18:31:45 FATAL Unable to find game data files. When launching OpenJazz, 
+               pass the location of the original game data, eg:
+                 OpenJazz ~/jazz1 (main.cpp:269)

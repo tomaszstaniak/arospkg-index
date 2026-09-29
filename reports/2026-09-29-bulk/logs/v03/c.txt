@@ -1,0 +1,51 @@
+==== stage C: remove
+removed zapperng
+remove zapperng: rc=0
+removed zgloom
+remove zgloom: rc=0
+removed zunearc
+remove zunearc: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       19:40:32
+zunearc                      Dir ---rwed Today       19:40:32
+zgloom                       Dir ---rwed Today       19:40:32
+cache                        Dir ---rwed Today       19:39:09
+db                           Dir ---rwed Today       19:40:32
+5 directories - 5 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/zunearc" on Tuesday 09/29/26:
+Icons                        Dir ---rwed Today       19:39:09
+1 directory - 1 block used
+Directory "SYS:Batch/zunearc/Icons" on Tuesday 09/29/26:
+Remove.png                  4514 ---rwed Today       19:39:09
+Open.png                    4454 ---rwed Today       19:39:09
+ExtractSel.png              4655 ---rwed Today       19:39:09
+ExtractAll.png              4655 ---rwed Today       19:39:09
+Create.png                  4590 ---rwed Today       19:39:09
+Add.png                     4454 ---rwed Today       19:39:09
+6 files - 56 blocks used
+Directory "SYS:Batch/zgloom" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+zunearc.zip               295778 ---rwed Today       19:39:09
+zgloom.zip               20763795 ---rwed Today       19:38:52
+zapperng.zip               55986 ---rwed Today       19:38:44
+3 files - 41243 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       19:40:32
+transactions                 Dir ---rwed Today       19:40:32
+installed                    Dir ---rwed Today       19:40:32
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+zunearc-6abc1430.json        265 ---rwed Today       19:40:32
+zgloom-6abc1430.json         144 ---rwed Today       19:40:32
+2 files - 2 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 11 files - 9 directories - 41310 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 19:40:32

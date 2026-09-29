@@ -1,0 +1,7 @@
+==== super-haxagon: Super-Haxagon, stack 400000
+Tuesday 29-Sep-26 17:55:44
+after 15 s (a number means it is running):
+ 12
+after Ctrl-C (empty means it has ended):
+Super-Haxagon returned: rc=0
+Tuesday 29-Sep-26 17:56:08

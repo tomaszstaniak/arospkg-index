@@ -1,0 +1,706 @@
+==== stage A: install
+
+==== delugem
+Tuesday 29-Sep-26 17:38:13
+fetching https://archives.arosworld.org/share/game/puzzle/delugem.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/puzzle/delugem.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/delugem.zip
+installed delugem
+install delugem: rc=0
+{
+  "schema":1,
+  "name":"delugem",
+  "version":"1.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Delugem",
+  "installed":"2026-09-29T17:38:15Z",
+  "origin":"https://archives.arosworld.org/share/game/puzzle/delugem.x86_64-aros-v11.zip",
+  "archive_sha256":"a956ad8543902cf41c51d28fdba04387e62c51b6c8ddb7ac848fde96b400bb78",
+  "archive_size":10309121,
+  "reason":"explicit",
+  "dir":"delugem",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"7df7262c04e771138c14a3fbd393eead5a7080927eb6e05e4d39b7e4474780c8", "size":8368, "member":"Delugem.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"delugem.info", "sha256":"cd5c103261fbbe77c9344e717411a6e947dfc6cfba82259538d091526980b2de", "size":2957 },
+    { "path":"res/images/bigbutton.png", "sha256":"2c2116a2fda796fcd8a4c4cc9ff4a97fdffbc527f007ab01343f6fdb62114d54", "size":679 },
+    { "path":"res/images/iconpause.png", "sha256":"960a4e1c79d9ab7cabfef5412e5e526492424c47cf4bab2fe456b4d3f6f03632", "size":127 },
+    { "path":"res/images/smallbutton.png", "sha256":"b00363fa9ad293a2d54ad599ab3da8269e9271b770d4a3d7613467efb5961899", "size":367 },
+    { "path":"res/images/iconpush.png", "sha256":"425ad1067e2a4c676bb694a3d2d9847785a6595a16ba205841ca2f1ef0c2d492", "size":131 },
+    { "path":"res/images/iconfill.png", "sha256":"392d755892379070be086114c6c69059926bdecf0ce9681271553ca16b2eed92", "size":134 },
+    { "path":"res/images/clock.png", "sha256":"8d8b47641fb05bf82234942a72664a26820fefb062281e1a038ffe6ea7cadbbf", "size":601 },
+    { "path":"res/images/title.png", "sha256":"4680b6d0c498552b1c6bb06ce51a1cbf0a1961ae2fd6be387af962b32936c8be", "size":797 },
+    { "path":"res/images/endline.png", "sha256":"0761c1be4c5967cfaa5f3c4fbc9e655f0ca4b0b8d9393bb5100bbd2cce8cc60c", "size":178 },
+    { "path":"res/images/iconexit.png", "sha256":"30bc616f168c3bf49932c5d5978cac6f2bffa70d7611dcd4b04c346cd713a6fc", "size":143 },
+    { "path":"res/images/foregroundstrip.png", "sha256":"0cd9cc5db50262831b6f7171045a6a3d0d30528c951af8722102ea17be6db26a", "size":222 },
+    { "path":"res/images/gems.png", "sha256":"9af6cf731b82f357e7f387b671d3530981694c6e6233406c811b3a77858308db", "size":1983 },
+    { "path":"res/images/background.png", "sha256":"f0e82ab4154036650cfd3c375c3f6b6b3dff815c3855a0555bdfea3c6ee55815", "size":879 },
+    { "path":"res/sounds/select.wav", "sha256":"be7d83e56ca04b8d554c6c2ce8e300cb5bbe8f85f294188607d1b4fbe2851919", "size":8462 },
+    { "path":"res/sounds/start.wav", "sha256":"57080b08db366ead50257468b1648ec263d1a8673a709237d43a7f17fd12cbf9", "size":43648 },
+    { "path":"res/sounds/levelup.wav", "sha256":"427573e1a80588cf0c3ea72fefa75e9b3aeef9a06d87051837235dd8288af6f9", "size":47142 },
+    { "path":"res/sounds/game.wav", "sha256":"1841000359f3a7cc7b8e5c865e2fabf6008023d35401406d687b9a82e89a3896", "size":9525838 },
+    { "path":"res/sounds/titlefall.wav", "sha256":"0e77cb4297c8422835fa2a39d85d2c19f60a398631febd419233190ca5defe86", "size":87128 },
+    { "path":"res/sounds/lose.wav", "sha256":"b8e2768f1b1a8d3321286f95a02affeac58663ef59dae50af25651f4a1ea3cf7", "size":64388 },
+    { "path":"res/sounds/fill.wav", "sha256":"3349e0f42d7754553682eb364accf2a12ea8d39bd8369024cdf9df5d87e49914", "size":82956 },
+    { "path":"res/sounds/break.wav", "sha256":"1251387b2507f3c77423d3b6e17b743c7b1e9a7281ffe4ce8f0c4b4ca6948598", "size":25050 },
+    { "path":"res/sounds/push.wav", "sha256":"1ac0d6319ef528f8f60b490b949d91882f1dfca22fe67f3f262a1a3fef7faa9d", "size":25376 },
+    { "path":"res/fonts/m6x11.ttf", "sha256":"64697c6fefd4a084dbe28f3df3e658b1f72bd148f81c4ec10fd1f8f944f18a20", "size":13068 },
+    { "path":"res/fonts/m3x6.ttf", "sha256":"28c3c6a48d75a9e0b9c72b0ee99fbdc2ffc2cba669498fd5354da3dfee04c8e9", "size":10044 },
+    { "path":"LICENSE.txt", "sha256":"8e60d1eb52de2c69b67914a1557e4a0274147a2a095bb831e931aaf898c1b22b", "size":544 },
+    { "path":"README.md", "sha256":"bc695af769d312906a61f4cf9485a0203c7d1f9d3926d262fb8db20d91f0a091", "size":1534 },
+    { "path":"delugem", "sha256":"537926e913e21dce0a1d4a52880e7739c2e9f6ce5e7665ceb61ce1eac7cb8b67", "size":6694008 }
+  ]
+}
+
+==== dosbox
+Tuesday 29-Sep-26 17:38:15
+apkg: this system does not provide what the package needs
+     dosbox
+     sdl.library (LIBS:sdl.library exists but would not open)
+install dosbox: rc=10
+apkg: not installed
+     dosbox
+
+==== flexcat-gui
+Tuesday 29-Sep-26 17:38:15
+fetching https://archives.arosworld.org/share/utility/flexcat-gui.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/flexcat-gui.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/flexcat-gui.zip
+installed flexcat-gui
+install flexcat-gui: rc=0
+{
+  "schema":1,
+  "name":"flexcat-gui",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"FlexCat-GUI",
+  "installed":"2026-09-29T17:38:15Z",
+  "origin":"https://archives.arosworld.org/share/utility/flexcat-gui.x86_64-aros-v11.zip",
+  "archive_sha256":"725d7372ac6b5b43680b7b42ab3839e6301da852b65b4309c52efc39ba281faf",
+  "archive_size":58038,
+  "reason":"explicit",
+  "dir":"flexcat-gui",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"7c8e6d468ceff742d23cb6cdffd5970715c373f919474d321b36dd8f51fdfd47", "size":9088, "member":"FlexCat-GUI.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"bca89af17aa3791551530717cf51d5a5c5c6a5358ee3dc6cd6653d90fcc7c324", "size":9120 },
+    { "path":"Source/FlexCatGUI.c", "sha256":"84fed4c322955518572a3e4cd421ca3d8deb4a2921848d341d3ee33189e4d5da", "size":19585 },
+    { "path":"FlexCat-GUI.info", "sha256":"8bcbebe6a42f60e537a54eb1422d252a5c54dbf81cb865c69ae7efd2678154c3", "size":8278 },
+    { "path":"FlexCat-GUI.guide.info", "sha256":"a35de4b75e912957e84ba4715df47e8a6f4d7c596b6a4b2738f8df6054e1e727", "size":8518 },
+    { "path":"FlexCat-GUI.guide", "sha256":"d0fd39c64eebdc18039a09fd255f2ff20e5768a2b22ae98e7495e6b36c914ea8", "size":6419 },
+    { "path":"FlexCat-GUI", "sha256":"b928bf5434f4718fc3eb37ee56b79973bd3fa853aaa989a1dd6bc7d8279aa488", "size":51576 },
+    { "path":".flexcatgui.cfg", "sha256":"4c73ff5131c4a99f6fac13b0668cd0d39c0b82861979e2f768add4876a7f1d7b", "size":7 }
+  ]
+}
+
+==== gnurobbo
+Tuesday 29-Sep-26 17:38:15
+apkg: this system does not provide what the package needs
+     gnurobbo
+     sdl.library (LIBS:sdl.library exists but would not open)
+install gnurobbo: rc=10
+apkg: not installed
+     gnurobbo
+
+==== hex2
+Tuesday 29-Sep-26 17:38:15
+fetching https://archives.arosworld.org/share/utility/misc/hex2.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/hex2.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/hex2.lha
+installed hex2
+install hex2: rc=0
+{
+  "schema":1,
+  "name":"hex2",
+  "version":"0.2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Hex2",
+  "installed":"2026-09-29T17:38:15Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/hex2.x86_64-aros-v11.lha",
+  "archive_sha256":"7c401a29713ca9eb106a41879017fb517134013bfb22fd572f2ee67e6567bd58",
+  "archive_size":248685,
+  "reason":"explicit",
+  "dir":"hex2",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"39a33f90ee1b1f2adf96a071517db15bcd1cbd7de143b5aac1b591b366f8d5b1", "size":1679, "member":"Hex2.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.txt.info", "sha256":"24334a30ea6b63fb9fffe8b043794e696bdb426c4e0f4e9cd53e483c54401181", "size":1091 },
+    { "path":"Readme.txt", "sha256":"ee4fdfeb135809bf6446ed95742a0916a8a0fb5f442336fddd06f97ff04d0d3b", "size":3611 },
+    { "path":"Hex2.info", "sha256":"31cd12882c12c4a38a8b3a0ae9ba469f188615948b4255e92b58f35efbfea0ca", "size":796 },
+    { "path":"Hex2", "sha256":"c4fc1754a6ea0dfca00522571270a47ff71543b4e3791d04a421b86f776286da", "size":1069920 }
+  ]
+}
+
+==== hivelyreplay
+Tuesday 29-Sep-26 17:38:15
+fetching https://archives.arosworld.org/share/audio/play/hivelyreplay.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/play/hivelyreplay.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/hivelyreplay.zip
+installed hivelyreplay
+install hivelyreplay: rc=0
+{
+  "schema":1,
+  "name":"hivelyreplay",
+  "version":"0.2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"HivelyReplayer",
+  "installed":"2026-09-29T17:38:16Z",
+  "origin":"https://archives.arosworld.org/share/audio/play/hivelyreplay.x86_64-aros-v11.zip",
+  "archive_sha256":"b7f06bcaf1db17665fcb125b1de0f2d13f57e40858f28f2583da1c6d718d117a",
+  "archive_size":90714,
+  "reason":"explicit",
+  "dir":"hivelyreplay",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Test.info", "sha256":"670d85fb5ac1ea5826c82d30f348da7e5c3290d68ac1ca8fd57f9d154f512f53", "size":8500 },
+    { "path":"Test", "sha256":"6ca84e09995531aefbf873b6ee020f21d071324782506027529f58c031cb5087", "size":130 },
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"b401dbdb74b090d77c66c51614948ce03f56e76655cd047388dacc1b650dfa2d", "size":24540 },
+    { "path":"Readme.info", "sha256":"2c801e936231290cd3c5edac8c8d7e19d022c3d25246e97cb7eb8f981673dcf1", "size":8785 },
+    { "path":"Readme", "sha256":"a66053c18d0a816698667f3c97823bd5ea71fd6334ebd818507f3249d5b152a5", "size":1428 },
+    { "path":"Install.info", "sha256":"a66d669963a1e24c214909883587341f3986e3085a31a9fc15fe90e5cd344443", "size":7962 },
+    { "path":"Install", "sha256":"45640fd1462637d496a069c6cb7fa0da0e7f82b90ae573e5e1c16e65e0729bb6", "size":991 },
+    { "path":"Example/testing123.hvl", "sha256":"269dd5ab0d79740f4a311105a468ed46b55847977df4966db111bc5658dbe3ec", "size":2598 },
+    { "path":"C/Play_hvl", "sha256":"028795b9aad9ef45796ae2c080cc8799a75573d8d2c1376916a516d14ea5985a", "size":48336 }
+  ]
+}
+
+==== lbreakouthd
+Tuesday 29-Sep-26 17:38:16
+fetching https://archives.arosworld.org/share/game/misc/lbreakouthd.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/misc/lbreakouthd.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/lbreakouthd.zip
+installed lbreakouthd
+install lbreakouthd: rc=0
+{
+  "schema":1,
+  "name":"lbreakouthd",
+  "version":"1.2.2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"LBreakoutHD",
+  "installed":"2026-09-29T17:38:17Z",
+  "origin":"https://archives.arosworld.org/share/game/misc/lbreakouthd.x86_64-aros-v11.zip",
+  "archive_sha256":"9c65456190109728f1be08c73312222eb7355e2369ee35a2346e70cf36c2c58c",
+  "archive_size":7682130,
+  "reason":"explicit",
+  "dir":"lbreakouthd",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5671622ce9506fb4c9bd9c7842ea2cfba48a99b26f8e115f39867f8572c6b032", "size":11932, "member":"LBreakoutHD.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"themes/Standard/weapon.png", "sha256":"9fe54fdb450c8738e6a8f29e96b67d40dadec102181e55c84bbb0c608ad594d9", "size":4582 },
+    { "path":"themes/Standard/weakball.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/warp.png", "sha256":"93509d272a04e7701db604af736fc0abb36944e4e34940a78e23bed6441c1919", "size":2658 },
+    { "path":"themes/Standard/wall.wav", "sha256":"29457fadc17a0986b8fe5963bd65cbc2c8a8aaf42b34f25dc6e57d8fe70dff7b", "size":15938 },
+    { "path":"themes/Standard/verygood.wav", "sha256":"8c5a81a83ab406ba34572b906588d87917664f5690e88f19b09dd35b8de173e4", "size":31214 },
+    { "path":"themes/Standard/timeadd.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/theme.ini", "sha256":"1a5938bfc6709095136a38980f1a806a86667718d60ae8b2048c9afffae9f29b", "size":702 },
+    { "path":"themes/Standard/standard.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/speedup.wav", "sha256":"e2e7a86a7068eb18821755f1433a6e0e676a0829d8641bd411339f196dd81904", "size":18396 },
+    { "path":"themes/Standard/speeddown.wav", "sha256":"a36e91b5d118581574ab34a6b36127f91435d6ee4b00b47a6bd2b44c22c35e01", "size":26152 },
+    { "path":"themes/Standard/SIL-OFL.txt", "sha256":"d73f22c5f15342b572fee0ef98ff7fdfa8cd3832cb37eff44b0c6ffe3bcd96e2", "size":4525 },
+    { "path":"themes/Standard/shrink.wav", "sha256":"44ac3481a10cc71f3d51276490c742a6d2c61b0c820e55e42ef59ad4d6da2ef5", "size":4462 },
+    { "path":"themes/Standard/shot.wav", "sha256":"61c7203a508b42f3f44d12c85e82e8dc3e32ae239729675f1c92fe28248737b3", "size":13222 },
+    { "path":"themes/Standard/shot.png", "sha256":"effe186b4bd7fc060792ecc15fb20422687101095570fa1ad559822bd8045955", "size":3092 },
+    { "path":"themes/Standard/shine.png", "sha256":"c76b8d2957c81865bee5789b7194c1ed0c9e91c441c2a5b85949c67ab3949bd5", "size":7048 },
+    { "path":"themes/Standard/score.wav", "sha256":"03b87b7f1d4983a95363b61d23d3edc7ca6114e8542f0f16269a9b250c65f0a2", "size":2898 },
+    { "path":"themes/Standard/reflectpaddle.wav", "sha256":"24854e1f1d49d94f66740b91c828185f87acd67e036afb73fe4ea35922204af3", "size":298 },
+    { "path":"themes/Standard/reflectbrick.wav", "sha256":"92970ba4450b7c9ddd7ded4d656946687409d7b57220ec3eda0134858fce2b28", "size":298 },
+    { "path":"themes/Standard/paddle.png", "sha256":"bc7a1e1fc0eb0dedb7b858762dbf70b9bcae4c178938fefb46166d34ecc2d038", "size":5932 },
+    { "path":"themes/Standard/menumotion.wav", "sha256":"275f91d69081d0e3958fbdff5949e1dc6978b978e93f2793d584051affab8f36", "size":3556 },
+    { "path":"themes/Standard/menuclick.wav", "sha256":"fd295372e36ae78c589bb3e26615f67bb02df179d62e612630f4e9d319c6101a", "size":3056 },
+    { "path":"themes/Standard/menuback.jpg", "sha256":"49353fc21641272105d1b6978ac5b03b80944a88fc499fce5bbe27a7902950db", "size":316157 },
+    { "path":"themes/Standard/malusmagnet.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/Makefile.in", "sha256":"ee8c5c66a1710e3902c54855c813e94a352a0382c5384e314f234f3bf73958a8", "size":13427 },
+    { "path":"themes/Standard/Makefile.am", "sha256":"d314bf3d3719cc8d9e7b5d7aa02ee7ae44fb11aa6e189817cc9007382471b9ca", "size":1029 },
+    { "path":"themes/Standard/looselife.wav", "sha256":"aebe41f55827061df587fdd57ac8e85da7aebb9932023bc82ce9e6f76622ed5b", "size":6708 },
+    { "path":"themes/Standard/life.png", "sha256":"26f1329ecd6e144441a0bbedc4913e8790f9463ec080790efeac064699cec72e", "size":10756 },
+    { "path":"themes/Standard/joker.wav", "sha256":"f7bf3e58fbdbcc16090ee800de26e0c0ee16d106d5c64898342f1f16f62376b6", "size":18168 },
+    { "path":"themes/Standard/goldshower.wav", "sha256":"1dfd88ae8a1574c7fc9bccbe5598e3122094fa371d9299e3cf94b39753f17fc8", "size":23652 },
+    { "path":"themes/Standard/ghost.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/gainlife.wav", "sha256":"aebe41f55827061df587fdd57ac8e85da7aebb9932023bc82ce9e6f76622ed5b", "size":6708 },
+    { "path":"themes/Standard/fsmall.otf", "sha256":"6b096b47206d8f78a2c49af2f2ae46b35d93b0e3cf105a9febef59144aa2eae2", "size":229588 },
+    { "path":"themes/Standard/freeze.wav", "sha256":"673d73efc11b4a9b4fcda604d8d578f3ea2c0dd29ff908905b7c52b89e304306", "size":13704 },
+    { "path":"themes/Standard/frame.png", "sha256":"f5a9b02f85fa741505f8c4262d521a073e0a09b80055e7e9149939d9ea33774a", "size":853664 },
+    { "path":"themes/Standard/fnormal.otf", "sha256":"9b8bd174f97413334e317be808d14d0ff8f6efed79a69299d84384c7e10e9312", "size":235128 },
+    { "path":"themes/Standard/extras.png", "sha256":"7be855ed124f0914581f5df2b91ae4114a33bc1308552d5ba5491dd059903804", "size":63413 },
+    { "path":"themes/Standard/extraball.wav", "sha256":"2a3439b3bbd3436aff58f9c1b393c0a8f33f2a815510d4dd79d34f4f7bee047f", "size":582 },
+    { "path":"themes/Standard/explosions.png", "sha256":"34eedb313b4777d9ef0ab218868d54fcbd4c73df2d5cd2d163e5c754ee6c04b0", "size":388632 },
+    { "path":"themes/Standard/explosion.wav", "sha256":"63f0e3113e21f34d9ee90ac6ea12ff6dc67a33d9196434ddddbbeb120bd57b3d", "size":35716 },
+    { "path":"themes/Standard/explball.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/expand.wav", "sha256":"44ac3481a10cc71f3d51276490c742a6d2c61b0c820e55e42ef59ad4d6da2ef5", "size":4462 },
+    { "path":"themes/Standard/excellent.wav", "sha256":"2765b07d350463e7a6381c4bd4c30631dc7f7844066c59f3c9de349dafd467f3", "size":24794 },
+    { "path":"themes/Standard/energyhit.wav", "sha256":"325db990bfab243a9f8013c551b5c73447328c9a67543dd8f742951362fb8bfd", "size":25940 },
+    { "path":"themes/Standard/disable.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/darkness.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/damn.wav", "sha256":"3a3dda479a559c3549d04602a9a41266f187d0f3cc846be4b457127488a5ada9", "size":16982 },
+    { "path":"themes/Standard/dammit.wav", "sha256":"6d8b9acdbe99d8a92e07d9b7146554c45bf969ac88ad737382676f079bc594aa", "size":17064 },
+    { "path":"themes/Standard/cursor.png", "sha256":"ffa923c20933315651b65c44dff55297e1a4e43ec3114ac0e6165e3f6f5c415d", "size":15610 },
+    { "path":"themes/Standard/CREDITS", "sha256":"6ee86870e601e3d9122dd63845d6204dad64252f7ff50c2a0f167d43c96c492a", "size":286 },
+    { "path":"themes/Standard/click.wav", "sha256":"fd295372e36ae78c589bb3e26615f67bb02df179d62e612630f4e9d319c6101a", "size":3056 },
+    { "path":"themes/Standard/chaos.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/bricks.png", "sha256":"dbbfdb831c014cba968a78eedb379d2f5ed29440d3bf996929252523a06f74e3", "size":63503 },
+    { "path":"themes/Standard/brickhit.wav", "sha256":"00f52b06741ec0599f5a19a62ab7578d670f7500c1fce7515bbfb6324d80ea43", "size":25092 },
+    { "path":"themes/Standard/bonusmagnet.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Standard/ball.png", "sha256":"c8bc85d8f547a66b8082b8b5f329896fe2f2fe79913a1c6c65cf9cbdfd21d1cd", "size":15159 },
+    { "path":"themes/Standard/back4.jpg", "sha256":"70945c2930f79287632416ecdbf763ed1b933e5a3fdb580b3c5d2dc8a58d9b6f", "size":140549 },
+    { "path":"themes/Standard/back3.jpg", "sha256":"2572fd02f5fb0f2df92179aae3251f790f63f815e3f09e1577448aae97a5c779", "size":107591 },
+    { "path":"themes/Standard/back2.jpg", "sha256":"635d8c2184a477acded7481de155b9e865cac5da9d9e6b1b39758c1751039055", "size":392658 },
+    { "path":"themes/Standard/back1.jpg", "sha256":"8d909ce8c47afbf35dab0f2b5f2a3b488b46c8cc4a35a3f5317c632229bdeef7", "size":351560 },
+    { "path":"themes/Standard/back0.jpg", "sha256":"67db44c015771f8f39623efba50d35f9b08ed99f7da36cec7e6ac78d797739fd", "size":206079 },
+    { "path":"themes/Standard/attach.wav", "sha256":"cd03acaf5bb3c1d6fd866ff2d01fc291783ce64ca385375c7a1e956969c6580d", "size":666 },
+    { "path":"themes/Makefile.in", "sha256":"b45759ae57ba554ea61fc8cc3c277480f3d1b40ba46149acd9c05753b4c91584", "size":18830 },
+    { "path":"themes/Makefile.am", "sha256":"159b95133fd04cc9724c90262a3bc0670cf5dd1c92b54c658bf02858f89d0d8b", "size":93 },
+    { "path":"themes/Classic/weapon.png", "sha256":"395da61af69314adfec82c873a91283e7414152a3e300ff32c6331d48a581e8f", "size":768 },
+    { "path":"themes/Classic/weakball.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/warp.png", "sha256":"ef49f70ba3ae7768a031c59c9021782bead54c943f1f4ab255dc18f72566a930", "size":838 },
+    { "path":"themes/Classic/wall.wav", "sha256":"29457fadc17a0986b8fe5963bd65cbc2c8a8aaf42b34f25dc6e57d8fe70dff7b", "size":15938 },
+    { "path":"themes/Classic/verygood.wav", "sha256":"8c5a81a83ab406ba34572b906588d87917664f5690e88f19b09dd35b8de173e4", "size":31214 },
+    { "path":"themes/Classic/timeadd.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/theme.ini", "sha256":"78746709f1dd75cf42eea1bd3ee310156d87fcc920665c58ebc7242117799c26", "size":715 },
+    { "path":"themes/Classic/standard.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/speedup.wav", "sha256":"e2e7a86a7068eb18821755f1433a6e0e676a0829d8641bd411339f196dd81904", "size":18396 },
+    { "path":"themes/Classic/speeddown.wav", "sha256":"a36e91b5d118581574ab34a6b36127f91435d6ee4b00b47a6bd2b44c22c35e01", "size":26152 },
+    { "path":"themes/Classic/SIL-OFL.txt", "sha256":"d73f22c5f15342b572fee0ef98ff7fdfa8cd3832cb37eff44b0c6ffe3bcd96e2", "size":4525 },
+    { "path":"themes/Classic/shrink.wav", "sha256":"44ac3481a10cc71f3d51276490c742a6d2c61b0c820e55e42ef59ad4d6da2ef5", "size":4462 },
+    { "path":"themes/Classic/shot.wav", "sha256":"61c7203a508b42f3f44d12c85e82e8dc3e32ae239729675f1c92fe28248737b3", "size":13222 },
+    { "path":"themes/Classic/shot.png", "sha256":"1b90c1fd51f3985b76b74e9aae98bbe252e325d6ac5ec77f24e97608b7911dd5", "size":265 },
+    { "path":"themes/Classic/shine.png", "sha256":"16fb8a2cda9fd2736869563431be5fdad7d691224ce4ccd33f25289371147bfc", "size":435 },
+    { "path":"themes/Classic/score.wav", "sha256":"03b87b7f1d4983a95363b61d23d3edc7ca6114e8542f0f16269a9b250c65f0a2", "size":2898 },
+    { "path":"themes/Classic/reflectpaddle.wav", "sha256":"24854e1f1d49d94f66740b91c828185f87acd67e036afb73fe4ea35922204af3", "size":298 },
+    { "path":"themes/Classic/reflectbrick.wav", "sha256":"92970ba4450b7c9ddd7ded4d656946687409d7b57220ec3eda0134858fce2b28", "size":298 },
+    { "path":"themes/Classic/paddle.png", "sha256":"b93253f29f4e3e52ad4788cfc6c412ea27369863164b42d4a58df488a33251fc", "size":6613 },
+    { "path":"themes/Classic/menumotion.wav", "sha256":"275f91d69081d0e3958fbdff5949e1dc6978b978e93f2793d584051affab8f36", "size":3556 },
+    { "path":"themes/Classic/menuclick.wav", "sha256":"fd295372e36ae78c589bb3e26615f67bb02df179d62e612630f4e9d319c6101a", "size":3056 },
+    { "path":"themes/Classic/menuback.jpg", "sha256":"de86715d629cc13bed10ab7a66b42de2c0aad3476a1a8bad46b25d6f6f5245cb", "size":158268 },
+    { "path":"themes/Classic/malusmagnet.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/Makefile.in", "sha256":"8d52f007cd022f3547691122213e8aed2711197a2a315f01635a6bd52708d297", "size":13600 },
+    { "path":"themes/Classic/Makefile.am", "sha256":"e5b1478c9aa8c8b7e986195b8d775a977d3362c3c868b86e3ec2351b25764e8d", "size":1206 },
+    { "path":"themes/Classic/looselife.wav", "sha256":"aebe41f55827061df587fdd57ac8e85da7aebb9932023bc82ce9e6f76622ed5b", "size":6708 },
+    { "path":"themes/Classic/life.png", "sha256":"1d50e24fdba0576eb0ac068f0906f7ba36ebfb82d1c5651c90c9c8ecaf329e87", "size":2794 },
+    { "path":"themes/Classic/joker.wav", "sha256":"f7bf3e58fbdbcc16090ee800de26e0c0ee16d106d5c64898342f1f16f62376b6", "size":18168 },
+    { "path":"themes/Classic/goldshower.wav", "sha256":"1dfd88ae8a1574c7fc9bccbe5598e3122094fa371d9299e3cf94b39753f17fc8", "size":23652 },
+    { "path":"themes/Classic/ghost.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/gainlife.wav", "sha256":"aebe41f55827061df587fdd57ac8e85da7aebb9932023bc82ce9e6f76622ed5b", "size":6708 },
+    { "path":"themes/Classic/f_yellow.png", "sha256":"4ce07fa046c0ec51255b7d60df05e55aba024f87d1ef01b693a36874971fe83e", "size":5392 },
+    { "path":"themes/Classic/f_white.png", "sha256":"a4b9bc5e39ec42daf3e21d29f42aeb835de6e2faa2870643c9d2361f93c55a39", "size":4575 },
+    { "path":"themes/Classic/f_tiny_black.png", "sha256":"7b703378933ec04825fd4edc89e8a13600b8da120158340dbfc2431f85b49e59", "size":645 },
+    { "path":"themes/Classic/f_small_yellow.png", "sha256":"db1c1dd9a595347cbfed5f43eb85a30f1e6c3ead9f898368cea135619d33d452", "size":3301 },
+    { "path":"themes/Classic/f_small_white.png", "sha256":"53a40f229835313539ff4950d6b2e2b80d9552d1ae8e52e8b661044aaf9c267d", "size":2110 },
+    { "path":"themes/Classic/f_small_red.png", "sha256":"0892f2ec6033b239dd59adf638594e4783b9c95de783122b268ae8064024cd3d", "size":1954 },
+    { "path":"themes/Classic/f_game.png", "sha256":"d9f864ea85e4e0eff79af7b1cd74b8b6fb5b65bb1c185b4b15d2e93c87cc6602", "size":5392 },
+    { "path":"themes/Classic/f_frame.png", "sha256":"fe5efcd91f5031300fe96a009901cac7016ababb67804257a25194c51cfca655", "size":3811 },
+    { "path":"themes/Classic/fsmall.otf", "sha256":"6b096b47206d8f78a2c49af2f2ae46b35d93b0e3cf105a9febef59144aa2eae2", "size":229588 },
+    { "path":"themes/Classic/fr_top.png", "sha256":"b3f0f836ccc17152d48d13b188bdef229d961702f65a336234b535b1a358c2a6", "size":7013 },
+    { "path":"themes/Classic/fr_right.png", "sha256":"35a97423c6f0b42373aaaba2017e88cabc119710ca456dd996fd177042ef74c7", "size":11265 },
+    { "path":"themes/Classic/fr_left.png", "sha256":"64af9e24700c24a2786744a1c7ae47ea2b76d7fe3380cf52170864346208ff47", "size":9984 },
+    { "path":"themes/Classic/freeze.wav", "sha256":"673d73efc11b4a9b4fcda604d8d578f3ea2c0dd29ff908905b7c52b89e304306", "size":13704 },
+    { "path":"themes/Classic/fnormal.otf", "sha256":"9b8bd174f97413334e317be808d14d0ff8f6efed79a69299d84384c7e10e9312", "size":235128 },
+    { "path":"themes/Classic/extras.png", "sha256":"9dd04a23dbbb6cbc941fd5b8e8071acf8e09654cc740749081b62c97d9468d71", "size":34187 },
+    { "path":"themes/Classic/extraball.wav", "sha256":"2a3439b3bbd3436aff58f9c1b393c0a8f33f2a815510d4dd79d34f4f7bee047f", "size":582 },
+    { "path":"themes/Classic/explosions_dark.png", "sha256":"182bcefdf96ba27eddcad20a08915d1dcd7857a530a424470279d2e08ec0239b", "size":116601 },
+    { "path":"themes/Classic/explosions.png", "sha256":"47e9c1707d09c763eba2dad608839f1780c4a6f059f5b6c3aed2586b752fdbea", "size":92807 },
+    { "path":"themes/Classic/explosion.wav", "sha256":"63f0e3113e21f34d9ee90ac6ea12ff6dc67a33d9196434ddddbbeb120bd57b3d", "size":35716 },
+    { "path":"themes/Classic/explball.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/expand.wav", "sha256":"44ac3481a10cc71f3d51276490c742a6d2c61b0c820e55e42ef59ad4d6da2ef5", "size":4462 },
+    { "path":"themes/Classic/excellent.wav", "sha256":"2765b07d350463e7a6381c4bd4c30631dc7f7844066c59f3c9de349dafd467f3", "size":24794 },
+    { "path":"themes/Classic/energyhit.wav", "sha256":"325db990bfab243a9f8013c551b5c73447328c9a67543dd8f742951362fb8bfd", "size":25940 },
+    { "path":"themes/Classic/disable.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/darkness.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/damn.wav", "sha256":"3a3dda479a559c3549d04602a9a41266f187d0f3cc846be4b457127488a5ada9", "size":16982 },
+    { "path":"themes/Classic/dammit.wav", "sha256":"6d8b9acdbe99d8a92e07d9b7146554c45bf969ac88ad737382676f079bc594aa", "size":17064 },
+    { "path":"themes/Classic/cursor.png", "sha256":"ffa923c20933315651b65c44dff55297e1a4e43ec3114ac0e6165e3f6f5c415d", "size":15610 },
+    { "path":"themes/Classic/click.wav", "sha256":"fd295372e36ae78c589bb3e26615f67bb02df179d62e612630f4e9d319c6101a", "size":3056 },
+    { "path":"themes/Classic/chaos.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/bricks.png", "sha256":"f153fb6515b59be7390ab5c58b9e76b2b8824f08644e75faafb8666a160a7ec3", "size":22350 },
+    { "path":"themes/Classic/brickhit.wav", "sha256":"00f52b06741ec0599f5a19a62ab7578d670f7500c1fce7515bbfb6324d80ea43", "size":25092 },
+    { "path":"themes/Classic/bonusmagnet.wav", "sha256":"b4d6bbd65440e70fac3ac93c37d758f95b99697fcee2b16a1c96fb0ec6baf482", "size":5332 },
+    { "path":"themes/Classic/ball.png", "sha256":"d544a84848ce42675ac514774796dbe7afb30f0107070acfc8d2976ffa0c81e5", "size":1425 },
+    { "path":"themes/Classic/back5.png", "sha256":"1d4a074d6ac89b80ea7ca36a528c81029a364e1f39bc3a2deebec0912f6da982", "size":47019 },
+    { "path":"themes/Classic/back4.png", "sha256":"4681486dbecbb2851b7a5f7e049d6565eb1061470d9df3af716600019178938e", "size":64186 },
+    { "path":"themes/Classic/back3.png", "sha256":"7c037ecddc59681c2316bd051df36c0e1f0ab7d63cf24dad76599004727aeec5", "size":54217 },
+    { "path":"themes/Classic/back2.png", "sha256":"dc8861fccaa34cd9668394a54581b06dfaccd3770a154fb5007ba64927b11d2f", "size":36991 },
+    { "path":"themes/Classic/back1.png", "sha256":"9b5400ec53b909cfcd6da99c448456c80ffff5aa09f54cc6f34afd0804bd6fc1", "size":58342 },
+    { "path":"themes/Classic/back0.png", "sha256":"0be00f05be7102c0b7480d594b4818a85b59d541b72825469b2edfe2e07217e2", "size":7449 },
+    { "path":"themes/Classic/attach.wav", "sha256":"cd03acaf5bb3c1d6fd866ff2d01fc291783ce64ca385375c7a1e956969c6580d", "size":666 },
+    { "path":"themes/Classic/ABOUT", "sha256":"de5caed00c65a08733cba08762a7e89bff75a0e3a9a7c310d90f041bd326a823", "size":219 },
+    { "path":"README", "sha256":"715be9cabfe9e7a60f543e4fb4b207f91c250afc73febafa344f9bf8082c538c", "size":9232 },
+    { "path":"levels/Zufallswelt", "sha256":"6607e4606363fe8922b596d1e1d61f70ae93fb9ad8ae4b078d61c0e798309862", "size":12226 },
+    { "path":"levels/Zooligan", "sha256":"6a6fb4f91bf76b70cec070d166a3f4b5168f6d2dceb2c1d6b072705a4e7a7a75", "size":9366 },
+    { "path":"levels/Zigies", "sha256":"9372b8579a14fad963b1caa646d7ff9e58feb8c95be91f67726f08442371aae8", "size":5822 },
+    { "path":"levels/Yoda", "sha256":"26ffede2e5be2e425b85fb154d54913e58ebd59e87cddd470adf258342cf6880", "size":1784 },
+    { "path":"levels/Yexter", "sha256":"24e69ec9d76346cb901fa43bf2d318b182470f10ad877028784538bb7ed3306d", "size":23054 },
+    { "path":"levels/X", "sha256":"6a271eabbf7a5285f86e88852ca5f0de1b741e1114a2d1403ec9536b0e30fbd5", "size":6902 },
+    { "path":"levels/WTF", "sha256":"ceb2c9e56a2c7e91173860135fae9dac69d55c7e75be146ed3e8c23f00a62f16", "size":20223 },
+    { "path":"levels/WonderWalls", "sha256":"c6f8639b8c9df00e231751919f9b8976e064c72b84416101e09d354f3493be1b", "size":8159 },
+    { "path":"levels/Wolvie", "sha256":"12871b0578a38aad09974db252e2d4c13ac8a0e733b0c6a1beb11b47aba4a7f4", "size":6008 },
+    { "path":"levels/Wizi", "sha256":"e6ec674369792935ee5585476fe95481eaa1e3cfd7eaf9e0d9994b4bb2592e54", "size":5797 },
+    { "path":"levels/Weirdness", "sha256":"cd184662c5a5d2c3c78167bec4e4512f4a284a71731b117d4e3593b0ba48b8f1", "size":19549 },
+    { "path":"levels/WallBricks", "sha256":"03d64f974b5d55ef955d5dbedd7179bac31981985ed1ff5de0fb506a89be896e", "size":23189 },
+    { "path":"levels/Vader", "sha256":"e374ab0f65d55a9239638a1fececd7bfc1ab02f70dab6384eb8652b95698fa89", "size":5923 },
+    { "path":"levels/Twilight", "sha256":"1c5ff351e424daafdbe0f9b9cc372c3504dd74dabeaa87237a23ebe6c403fd4b", "size":15216 },
+    { "path":"levels/Tricky", "sha256":"8777abcfc8a9a6fb478167e68ae28122e1bd2cb9be64e1b69538397700074078", "size":8720 },
+    { "path":"levels/TrickShot", "sha256":"912ea21ca16803972e6f753411f1abb538832358792bdfeebffbcd9f08a874d4", "size":9817 },
+    { "path":"levels/TimeWaster", "sha256":"e5866c87f56f9e80b51d52529f4b39103812a9e94d40fa0d8fce1c8f8f26deb7", "size":23312 },
+    { "path":"levels/TheGauntlet", "sha256":"234aa7c98122f8622e25241aa1dd8f6237ee1c23bfe0a6ee0e32c7cd4d1ebbbe", "size":4099 },
+    { "path":"levels/TheEnd", "sha256":"dc5a632fbfdfa56b6b6a2e95af54881410c9357033d456d6e92f1a94b31890a0", "size":8688 },
+    { "path":"levels/Symmetry-MKII", "sha256":"d2d7ca29abf9cc52254240dc0f52b86d8f8494f57694102e1efff2c1fb2e4d2b", "size":5851 },
+    { "path":"levels/Symmetry", "sha256":"5f1e300a0038c26b994faa71958c0bf0faacac9f299933ef1a007d5a97ff7e98", "size":5260 },
+    { "path":"levels/StarWars", "sha256":"e68a1e3322226f3bb8eed776ae65670ac9e9b2377aa529b903ad211392731f99", "size":4055 },
+    { "path":"levels/SnyMaxx", "sha256":"1cbeb36e5729ff671cbad5710da6df0cfe1a41866d153be37039fee009cfd4e7", "size":13328 },
+    { "path":"levels/Smilies", "sha256":"b9d9600474542d47e1bcbb0a08f5e191191a09149e57fc3fc8b64d5d4f542afc", "size":11534 },
+    { "path":"levels/SkillShot", "sha256":"bbaff83a0950210a17fca9c68e5888354c78bbf04e45b8a7d6e7245c437eaf3c", "size":10442 },
+    { "path":"levels/Silly", "sha256":"4e4bb3661abaa9facd670d4bab4876802c101803af15672847938455d9389b23", "size":8624 },
+    { "path":"levels/Sadistic", "sha256":"b79c2360baa3744e127b36777aba025bd8e227ba47577da0a7e3ebf8cca47569", "size":3516 },
+    { "path":"levels/Runes", "sha256":"37ef9164ab7c5dfd44fdd3cc520a7865d64f93e73b4ceac758b7e01866ea7ad8", "size":13860 },
+    { "path":"levels/RichQuick", "sha256":"164edb66e512494ba09ac55866083337a4e5db2adb314c824409d2eeda4dd233", "size":5354 },
+    { "path":"levels/R-World", "sha256":"bfb5f92388b4d560e77acdf14cf697c702a51941b66adbeeff501c3f9ba8a9e8", "size":13884 },
+    { "path":"levels/Popcorn", "sha256":"734e7af90802592cfb98b511d8289467efce41aec826e356728c110cff38206f", "size":11669 },
+    { "path":"levels/PlayAgain", "sha256":"c3fe88196f1d5b2c49a287fee305ffd985a002ec6f6291a758fb729faaaed4e5", "size":14622 },
+    { "path":"levels/Picky", "sha256":"eff22ce8aff5dfdb79022c2b7cc20e259f6b2fa035418ae7f36fb0f5613b39bd", "size":5971 },
+    { "path":"levels/Ph33r", "sha256":"8e11114e396963946494ce185d2369c112b5f46e21a837ae486b1215c21e95c1", "size":5740 },
+    { "path":"levels/PCGames", "sha256":"e6146796edc025818a419b704d3bb64805260d39d43ad8489c4ed980535ce454", "size":15064 },
+    { "path":"levels/Pawset", "sha256":"14e10c047412dc35137a2a01a93d0a44494e65fc35d626dec367807d482a0db1", "size":7043 },
+    { "path":"levels/Patience", "sha256":"f7c83127a177a2db7149a8f943b67bb8fe306caa3a28c07def833e15fe440942", "size":13887 },
+    { "path":"levels/Pabelo", "sha256":"38db21fc5a77bb9e5b5cee96f7ef882590b51ff363512a7407ad74945ccd6d13", "size":5799 },
+    { "path":"levels/OurWorld", "sha256":"7691a3fce615610099445824ae6951967fd9a5cdf19560e35a91979e110c452b", "size":11603 },
+    { "path":"levels/OpenSource", "sha256":"05ee8f085698b9db1283f5868bd10ae13a652841a109be363164369cad290fad", "size":8926 },
+    { "path":"levels/Shimitar", "sha256":"c92b97e892b67ae9a9f472b35bda0e2d7bd970f2ce4ef9cecb511768db58819f", "size":9325 },
+    { "path":"levels/Oceania", "sha256":"e9e7665104d3703c966708d41f33fe17a7e9ef6ad16008dfccfdd3c485082fa2", "size":11526 },
+    { "path":"levels/ObiWan", "sha256":"1ec51ffeadc21883fdbd12b7ff57bcc9f6ae2b655a1232cf4897f1951e61843f", "size":2999 },
+    { "path":"levels/NewOERG1", "sha256":"26bad76a54e34fa65c41bc8437b61b8477253b979cad16d78b6bcfb74f15d53c", "size":16942 },
+    { "path":"levels/NewBricks", "sha256":"938c89dad99d30ccc7228e3027fcb7b2b178dd112a7469ec8bdb349496a9e2a3", "size":23027 },
+    { "path":"levels/NES", "sha256":"476d1ab770e2f2a68fb02493c51d8143564e5df42a1875ee79291fbd094f1fad", "size":5805 },
+    { "path":"levels/Negundoid", "sha256":"40aef8155ee2c749fea7f0f15af9e6e5a404924539c793fd43dcdbeae135392e", "size":12285 },
+    { "path":"levels/Nations", "sha256":"150cd02a70315090523beb950439ea8aa5a09992f170f81129f32c44ce4d8f49", "size":7657 },
+    { "path":"levels/MontyHall", "sha256":"db12002c6d0b94d27747783cf6539e089aa261a7222efe240d204f4f8738af73", "size":15735 },
+    { "path":"levels/Memory", "sha256":"a3818ddea66ff6a363b222a85352ce2ce8b562f0ffa9d12e58ebdc5ceca456c9", "size":15250 },
+    { "path":"levels/MegaMan2", "sha256":"7d570cbdd7c3544a2a4050460b520b677e986fa45e48316608e194326d4ab991", "size":6997 },
+    { "path":"levels/Megadoomer", "sha256":"3fdeff3bb4326cf835cf7ddf346a5869f088586596b7c6e0ea05b5cf9d0eb5b7", "size":24844 },
+    { "path":"levels/Maze", "sha256":"a5bbfbebd4751c4c2aa68e3f9eb6b73bece7f3d9ae229e357bceaabefbe67485", "size":5208 },
+    { "path":"levels/Madness", "sha256":"df095d66a941902b79f2bd918ff7720c1fa28350b4f63a71ab37bdf19a9a9b47", "size":24789 },
+    { "path":"levels/Lord", "sha256":"bc2795b26d1906a1c0dcbb867f565e7ad7210f273d7b58151db2339ce7b090d2", "size":23169 },
+    { "path":"levels/LinuxFun", "sha256":"fcabe06368ff13371e5bd383d359b2c0c5f7063ec69e073053404d9749b6fe20", "size":8881 },
+    { "path":"levels/LBreakoutHD", "sha256":"772a38c23e00a5fc652a2f2d01e6cc53d3978cd5a276bae2b7447ca307d3943a", "size":17621 },
+    { "path":"levels/LBreakout2", "sha256":"e80a493cd957bd02b3b41b59f8cd6e6f2955c02ac978b94e9c343b83e9127f7c", "size":14697 },
+    { "path":"levels/LBreakout1", "sha256":"1a20f6f7460a73fdff2998e71dd7a5a195d3c7221b806ec7d6c5d73cde170d0e", "size":17532 },
+    { "path":"levels/Lattsville", "sha256":"7dd5bd30fbb40c118feda14cfdc05645e52937193cb25b025ded329c5ca000a5", "size":23119 },
+    { "path":"levels/Lattices", "sha256":"0221870d632669f39ae87df3a74d4eccbb576304a6998ccc9e2d207cfe40ec8c", "size":8666 },
+    { "path":"levels/Lapis", "sha256":"8da88719617cfcc7a04384fe947d3908e66aba48c141fe22435750a1cd29b084", "size":5276 },
+    { "path":"levels/KungFu", "sha256":"046dacd76e82df294b11c39dfad8e55528de8441be3c40cb887aa76834902e6b", "size":9361 },
+    { "path":"levels/Kevin", "sha256":"cff4b34eb4f004b62a53425c0e876e63c0f850c34ab2f3c0f00a070b91248c78", "size":11510 },
+    { "path":"levels/Kazan-1", "sha256":"9c1d912e236115ea8af045635c3dc77ca5b34710f2e375fad5a7cd2b3af1aaa4", "size":8919 },
+    { "path":"levels/Karnickel", "sha256":"78aca0aa167347eb2e4b1182698f5e948dd79fa36438de80982298fa5bfaf114", "size":3507 },
+    { "path":"levels/JustGoForIt", "sha256":"aae622bf0ffe656b3cc17fb5963b73fa85887048a05619b3a400aa18753279f4", "size":34392 },
+    { "path":"levels/JustForFun", "sha256":"0ed257e1264ca9558e599813b1a1332b5b0e013b5357f12e1d290128583e71ff", "size":25172 },
+    { "path":"levels/JediAdventure", "sha256":"ac1ca9c4d008f2cbc6b2bd48fbfc58706315f073fbd9d6943ff587406793e01c", "size":6400 },
+    { "path":"levels/Izusiowe", "sha256":"1eeb4ef7137ce641b2c2e44159f13ccd31f0629932f56d201bb300eb336a6075", "size":8102 },
+    { "path":"levels/IrrenhausAh", "sha256":"a048153c1a4ace4ebecd94d1916cc1c27711849cd342509352cac610c8e0e1f8", "size":22791 },
+    { "path":"levels/Iris", "sha256":"d99fac55c13affcc6224b1a6db9ee965001447e2553c6ff94158786330393e75", "size":23565 },
+    { "path":"levels/IoriYagami", "sha256":"f51a3f6303dc8ee7e5998f15a46ffccc08292485ca8323231c3309593d5ff719", "size":8340 },
+    { "path":"levels/Invisible", "sha256":"f62ba2f89adf65e0690cb99f69b72298d02fc56023882fd737269da762b666d3", "size":2378 },
+    { "path":"levels/Impossibility", "sha256":"e29f86dcbc6deee71d5f7677a53007de7e87e9a3406fd9c71d2e253388334692", "size":5829 },
+    { "path":"levels/Horror", "sha256":"e1b7a032498181d9d7b4ccdb76d819ca218db0a56b703b20bddb8f2553ec944e", "size":5285 },
+    { "path":"levels/Hommage", "sha256":"e590b63fad933be4b2ea95178ead808335f041354f30056841bdf274c92a0cbe", "size":11660 },
+    { "path":"levels/Holidays", "sha256":"191cf8fe9428f97d7c6b7cc5551866c03509d1d2c42b5a91f1c9f5b3619b3ead", "size":9208 },
+    { "path":"levels/HighBall", "sha256":"539204c23a5d6f895876d76c1b443ba79d108bcd0830775519dcde0cb490aa26", "size":4086 },
+    { "path":"levels/Hieroglyphs", "sha256":"a6d7610e9f9b78c3892baf42166dd45d0dfa8c0b97fd08b414db4eb53fb16c9f", "size":23409 },
+    { "path":"levels/Heroes", "sha256":"f54304590bca3806cb4ae051f7978ae20bb2af85fc9ced5459f0d152b3d55409", "size":8854 },
+    { "path":"levels/HereWeGo", "sha256":"91e4d6f63b9eb91862a24c8c668e98801e9f8d466c373155f91ffe995d7f3429", "size":7271 },
+    { "path":"levels/HartzIV", "sha256":"309edd962c855fa10323df9b6ed701300d31905f347f7b3b606da8ad70c28d62", "size":19143 },
+    { "path":"levels/Hans", "sha256":"ade7fa11d2c470ed40bdc7739cd68c817811b3f7dc1f3acb9e1ed72125bd488d", "size":11533 },
+    { "path":"levels/GreenWall4", "sha256":"e6ea17f7a8690268350ee594af3cd590bcfc2af4a7beb0fd9f95f502454460b4", "size":23023 },
+    { "path":"levels/GreenWall3", "sha256":"017e718419c49d10ae7319d68c551ac79a9e7d677f432862f687a71e2ba7a811", "size":23114 },
+    { "path":"levels/GreenWall2", "sha256":"d62ba07c11c7e648384108c0a532f2068a54942286090854759c07a8821eddd6", "size":23081 },
+    { "path":"levels/GreenWall", "sha256":"a760937350349471a2227de56cf08b4c53f5a56c39115daca73b19ed45ada445", "size":23095 },
+    { "path":"levels/Germany", "sha256":"6c36baa112228d7121a319ea717f49277dbd76f2454cf9e40e9a4d6bca591c6d", "size":11135 },
+    { "path":"levels/Gatinha", "sha256":"614ca5928b1964b64bc2a7905464b7703be129ea29645924a5ad67103c130584", "size":41069 },
+    { "path":"levels/FunCity", "sha256":"3ff0457e28248e16d539dbc125fa151660a050a3db06c86bec4246578fed7778", "size":9908 },
+    { "path":"levels/Frozen", "sha256":"484e020aeb2b0daff06568a59bc8b7beb081c280a57461c83f8309dc1dfec156", "size":7507 },
+    { "path":"levels/Freek", "sha256":"b1a7cc74d22726c5de80c3b44880b42ea5ea6fef14cb08b0f9fdfad8b61ee64f", "size":22255 },
+    { "path":"levels/Football", "sha256":"764918118353a3925f9dc4144d902f6f7a978c48f76cd5dc892f48cd38e149c6", "size":19602 },
+    { "path":"levels/Fly", "sha256":"c0e5591be67e2e2e654022909a9c6997b3605950c1b05cb8478adfbdcd68b189", "size":11531 },
+    { "path":"levels/Flower", "sha256":"1768a1814cbf5464251df9522fb60c65c6771f32b26b5f24aba4870aeea4cf44", "size":2892 },
+    { "path":"levels/FatalDoomsday2", "sha256":"5c4fa2b9c19cf60560dfabdff24a39a2ab18671219a2d39b3f249149ea946d0d", "size":9961 },
+    { "path":"levels/FatalDoomsday", "sha256":"2c571bad8d4812cbdd5e542e590fe50cad7c149dd9523108e08e5db02caafab6", "size":23232 },
+    { "path":"levels/Fantaisie", "sha256":"a5262328d5693070db2bf47a9cf81a06bc76a7bf49dc4d6e1f722c486856cce6", "size":11790 },
+    { "path":"levels/Family", "sha256":"56bb419b7cb241c36163daa8b09e32e3c5ad1e1999b2397053e3df68d6e03fcd", "size":11559 },
+    { "path":"levels/Europe", "sha256":"4eb0b3dfa89a2df20528ce57de519dd13e74db5e77834d6ca12490820dc7a6ac", "size":27621 },
+    { "path":"levels/Demons", "sha256":"07beabe35dfecc357b187372ae9ad0a77375a372a50ce031c20e58b7e3f5bba2", "size":6989 },
+    { "path":"levels/Daves", "sha256":"4cdb1258fc442216dc88925b59aab775b55db3449d0d3e50737d1cde362e6542", "size":9890 },
+    { "path":"levels/D2K", "sha256":"ed09ab1296ea63d1335f8bf87e2149664af04b918a9f2317699ee61113a3e9f2", "size":14453 },
+    { "path":"levels/Crossing", "sha256":"3d4805a4e5ba4de5b95cf2625565a7873eb9908833d365baf4370f2295961e80", "size":12026 },
+    { "path":"levels/Cool", "sha256":"568e5f00bb4c2e9d3368e7a4e90787ea9b5d50ceb5debc84b1acada761301033", "size":19088 },
+    { "path":"levels/Composers", "sha256":"9eee93c64063b329ccf00f3e1b346134e6b6b408efb71415e018896b36a96c07", "size":6973 },
+    { "path":"levels/Color", "sha256":"d6d4425e4558020e2b2eeeeb28406fe782b8670236c1017d80ff5d0e47b0c4b0", "size":23018 },
+    { "path":"levels/Classique", "sha256":"bb459b7f08b9f2a9dd8a5e8720a799de37e268a29198dd8a43663b0c3760708f", "size":2956 },
+    { "path":"levels/Circle", "sha256":"eef54415eb461016a8dacdd27812c78d2bfcff44b2e903389c5d325ca15bb044", "size":9742 },
+    { "path":"levels/Choices", "sha256":"596660d9be699d213b5dcb4eaf94992152f4650007c73e2cc28ccc933ebd654f", "size":9364 },
+    { "path":"levels/Chaos", "sha256":"b496cc0e32c9da2ddee4e0826997f97ee756161cf953bc17f0558188c607e421", "size":7649 },
+    { "path":"levels/Celine", "sha256":"5555fdbcea47c5cea4463edda106f554f0d6ce612d9557e1ad383e44ac443b75", "size":2969 },
+    { "path":"levels/CalendarFun", "sha256":"bd6f6e5811503993b796487f2a3fa96e6a7b5f2525220ab0b689ae2568b4e07b", "size":9378 },
+    { "path":"levels/Bombs", "sha256":"46d8a19c4541e44e5bae238634f6e893c39f94d93e18d230359fb6fc2d74ffb0", "size":14727 },
+    { "path":"levels/Blues", "sha256":"e6d97fd2cd59b0018475e42146f17ad63eb17924ad5f886df00c0659f17584aa", "size":11643 },
+    { "path":"levels/Biolab428", "sha256":"f3f6f020fdffe0044b527591e10615f1c9aca32583c93554f79094e32a7388c8", "size":11651 },
+    { "path":"levels/BigBang", "sha256":"c2d06560415ce687871425f64ff23ef4bb45289a05f5f7475fc6d7e6a6130068", "size":2336 },
+    { "path":"levels/Bertrand", "sha256":"cd33d48b025534b13553be5f3c1242eef39e23ff037b1feac1c1ec071f334288", "size":4131 },
+    { "path":"levels/BeOS-4ever", "sha256":"2361daab834bddd6357af2c4273532109f142698965116e883703e61876bac14", "size":5754 },
+    { "path":"levels/Belief", "sha256":"8c1f8aff33543d4170b0b444a878bbe8a7b0ed43a9a9d65384d95cf56ab05595", "size":23358 },
+    { "path":"levels/Astro", "sha256":"e4c8063a5539f37668d3c656103f2caf26c9ca61691e332a73c14e8f10e7fe78", "size":23280 },
+    { "path":"levels/Astra", "sha256":"a8c35a89e556dc217d82809fd3e4c2c57a17635787067bf1a2798989a7a5cd02", "size":55502 },
+    { "path":"levels/Asia", "sha256":"cdf9b0b3be1d050828210f91a573081c12e4274a153ae571da639be923e7a4dc", "size":29963 },
+    { "path":"levels/Arkanoid", "sha256":"682e3023949feee76f4841cd38e42ece89494579b29bd30731ca10f062f2d0ac", "size":4641 },
+    { "path":"levels/Arcade", "sha256":"070c9928ff3ad4b25435e1f8684202bf186919716097e4522faba6a8c61ba70d", "size":7561 },
+    { "path":"levels/America", "sha256":"96d259174bdadc5ddc3e8f000c4570a47e5f54dc330bf5e492228a8d34e8b4d4", "size":21935 },
+    { "path":"levels/AllWorld", "sha256":"b3a99e4dcc21582f978568d2e79179512b167e1b507d7c14a168614c23a7a418", "size":123850 },
+    { "path":"levels/AllNighter", "sha256":"42333736a23cbf523a26f7f6f25a4cc3c534362c430414b74439ba87f2525fc3", "size":160716 },
+    { "path":"levels/Alexandre", "sha256":"a8419aa60c5f0e0f51a2231afd49001461ddfd16678df96275e279295e0245f3", "size":2896 },
+    { "path":"levels/Alex", "sha256":"27e0e24dd60de1f992f740bb0d34f0bbe1838b848dcc1a9ca325dd10e0129234", "size":4632 },
+    { "path":"levels/Africa", "sha256":"0689660047d83a20bd0d61a089af772efb675542d8f059eeb0259022fd4a9624", "size":33405 },
+    { "path":"levels/Afl", "sha256":"a7729f688c4c600c01760fbd95accd35dd939aad7d29d215d6a8e7a906ec8949", "size":11070 },
+    { "path":"levels/Abc", "sha256":"f58d654d098f2ac14798670aef0fbb07d2893f4780c58719884125db83a855d0", "size":19016 },
+    { "path":"levels/1010011010", "sha256":"350adcc50c0b3665563b840ef4b545ac36f2867deebebe6a3065698fa468ff98", "size":4018 },
+    { "path":"LBreakoutHD.info", "sha256":"25274a980fb2d38ccebd8d41215a2a70fe5a9a5b7924bacd6e7192f7e1f1ea97", "size":4127 },
+    { "path":"LBreakoutHD", "sha256":"c1bfa2c31899751d96dfcb85749e11cec5f6cc52d318c4887db311a7746ae8e8", "size":8627224 },
+    { "path":"COPYING", "sha256":"3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986", "size":35149 },
+    { "path":"Changelog", "sha256":"7a21ef08769f3ef8f7de33e6e10989e5ca919f751a93484bde7926d4200b2c8e", "size":5732 }
+  ]
+}
+
+==== metemp3
+Tuesday 29-Sep-26 17:38:17
+fetching https://archives.arosworld.org/share/audio/play/metemp3.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/play/metemp3.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/metemp3.zip
+installed metemp3
+install metemp3: rc=0
+{
+  "schema":1,
+  "name":"metemp3",
+  "version":"1.5",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"MeteMP3_v1.5",
+  "installed":"2026-09-29T17:38:17Z",
+  "origin":"https://archives.arosworld.org/share/audio/play/metemp3.x86_64-aros-v11.zip",
+  "archive_sha256":"3db75f6b14f6090c4ac8617dd71b563e390733dc7d2c93b19f8c435e81169eb8",
+  "archive_size":682499,
+  "reason":"explicit",
+  "dir":"metemp3",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"meteMP3.info", "sha256":"13e17b3fbca2471d7d514679aead661a0763e049c941971771369dc1465176c4", "size":3851 },
+    { "path":"meteMP3", "sha256":"8b8c0915b0a3a74338d0e5d3d44cd4325bfed0e18a4765ada63fccb0c3da0dfc", "size":1283400 },
+    { "path":"metemp3_Guide.png", "sha256":"8001a81301f63fc199a4ad183c1236640846b97f3bf5bf83702c8aae901ecc7f", "size":80240 },
+    { "path":"lstloc.cache", "sha256":"027f963e279d067a4d06c758fc0eecad8ad99e42bbd669839808771784d438e2", "size":12 },
+    { "path":"_CoverArts/notavailable.png", "sha256":"6d8233bb7d37b9f0975ed1f4c4f4bda17fd0d7206585017c0a4353004064c125", "size":2268 },
+    { "path":"plists.info", "sha256":"fd4a652c6712f7786c3198995db210a415a879e73e54d825cf06ac7901c3d93e", "size":7526 },
+    { "path":"music_files.info", "sha256":"47e438880241b399a30751be91fdd37df0de3ab8bc8c461f084932e5ba68655a", "size":7463 },
+    { "path":"music_files/CoverFront.mp3", "sha256":"3173722c1fcda494f487bc1320f03c836c2dd37537f070e720fef0dde27ea811", "size":122087 },
+    { "path":"music_files/StudioLogo.mp3", "sha256":"93170d45b8d8bb9b6e2a8c75afd8be0e32e821aeb7b44b5a628fd65616a9c429", "size":121834 },
+    { "path":"Img/tbar.png", "sha256":"73b61087e7e7718c9592060de8d7c76fcbecc097805d8c7b61a7125e59e2306c", "size":1477 },
+    { "path":"Img/stop_g.png", "sha256":"dd8c9f3a1b1a5c043b3d3056a867608429a18e823715128b1648c372c3fd2d41", "size":1305 },
+    { "path":"Img/stop.png", "sha256":"5a4dab3ec5b0f0a37d0ce25599fa4c41f63c0628bafc1464305d1fc62a8bd38c", "size":1319 },
+    { "path":"Img/rw_g.png", "sha256":"ce7595cf4d70072528fea6d86a4c2d269f4983f097e21a3bf0e4034824252412", "size":1398 },
+    { "path":"Img/rw.png", "sha256":"564a21a7bc63729549817ce541ee43d7a8e9ab1f863fdbe3aa5a0052da138f97", "size":1394 },
+    { "path":"Img/play_g.png", "sha256":"9fae98352260a402f759034c7f921b0f832092a1a545d62653b28c8e282ed9fb", "size":1430 },
+    { "path":"Img/play.png", "sha256":"34881dcd16ffe30424d9bcf426a9ba8f95b807d6dd3ea4c361e8bb702c70f304", "size":1442 },
+    { "path":"Img/pause_g.png", "sha256":"b4bfc13770262d003667274cfb49b408cfa13777018b215a325331f7304451e5", "size":1404 },
+    { "path":"Img/pause.png", "sha256":"114fe0ebc915a8a47042b5e076cba6e6fabe8241bbaffa2e0af82cfb96bb568d", "size":1399 },
+    { "path":"Img/open_g.png", "sha256":"d77ba5d731ef9a20e93fc303a9501c83fdaf21eca7bfaeb8d653e4da0c1f480b", "size":1318 },
+    { "path":"Img/open.png", "sha256":"08edb41b9320f22cc7e3e45ccf69235b5d3fd1e89e566db114a235a89cf6d42d", "size":1319 },
+    { "path":"Img/ok.png", "sha256":"66ee60bbdcbfb1470b039aba911f9da8d8e34d219986c8c1b4175e073d4c85ec", "size":1391 },
+    { "path":"Img/listview_g.png", "sha256":"129002b6eeb36da185b4b9ee15151057f2156c4233f80b036a785a670cdb8808", "size":1201 },
+    { "path":"Img/listview.png", "sha256":"3483843c6820c19d079a16c591379c0448a358d0bd796a89e00d72ef9fc56506", "size":1203 },
+    { "path":"Img/ff_g.png", "sha256":"2ae3c35dce667cfb0ef6d037dcf514abf6901537c3d8ba0e9294f2508ef6cd77", "size":1418 },
+    { "path":"Img/ff.png", "sha256":"1d00255836e9fcc493abf81a2267b6b18833195b6562acb6947e4992d5a5e2fa", "size":1421 },
+    { "path":"Img/exit_g.png", "sha256":"8e4344515795a629669e7e2cb5b67bf842c237435b78b125ae962f1dcff43145", "size":1541 },
+    { "path":"Img/exit.png", "sha256":"aa940df6b55c60956a6d27a2121f7f45a9edd4c6ae68186fb1091a5c0cabc0b6", "size":1522 },
+    { "path":"Img/disk_g.png", "sha256":"da6455850bbf1ad7f2fa7fca26ff50fb022be8cb974117a6ec9d01049064074e", "size":1051 },
+    { "path":"Img/disk.png", "sha256":"1255979cf67a62ed1e3520d03b1d2ff916b3b0e226e1c1c66eef3214443e86fa", "size":1054 },
+    { "path":"Img/del_g.png", "sha256":"82f6681b32b9704ca8c1163e4162513ffdde258621a3cc37c839a9113c7ebdb1", "size":1325 },
+    { "path":"Img/del.png", "sha256":"79728ce19b97d449dad04cf5baca401d4dbacc49a64686e8775fa76f0ea1ed8e", "size":1363 },
+    { "path":"Img/back.png", "sha256":"b8c248d304bcebcde77cc13df3ed8c6a4aaf10ebbd28fdcda8e4bc262fb5d1bc", "size":1285 },
+    { "path":"Img/add_g.png", "sha256":"638cc8cc217071c3d3da96bd6946ec038df19573f6ae773248ed783efa70d273", "size":1319 },
+    { "path":"Img/add.png", "sha256":"ab685e38fe1e3092fd5c2c73a60a369cc281629494d2bb2b5dbcef27949656a8", "size":1387 },
+    { "path":"Img/DskSave_g.png", "sha256":"06dbf05edf162d61c9a1772903f2d3e86e549980477d3953484fb12430297663", "size":1055 },
+    { "path":"Img/DskSave.png", "sha256":"c3f58b9725405573b05d1f15d171c9f02172f6d8f6f7a13bec008c17a2631a7f", "size":1062 },
+    { "path":"Img/scan.png", "sha256":"845e0cfd01ca74d6144ed799aec5b4df5704a2408b0561438bc474a69fec7eea", "size":1544 },
+    { "path":"Img/scan_g.png", "sha256":"cd328bfb9916e92b0ea53c6bb8350761060871505f774498495e1872951c8c9b", "size":1548 },
+    { "path":"Img/id3.png", "sha256":"354118571ca7b2579106a05c55c96ab7311942f7ca1fa4376140b1e30406f966", "size":1580 },
+    { "path":"Img/tlogo.png", "sha256":"4402fdbd3fd035e4f7739d407049d20619853fc3b872289d4f67cb8ee59f1f66", "size":2387 },
+    { "path":"Img/home.png", "sha256":"243bc0f6072fa42b91114564c565fd3c5ae94d9f856ebbb71f5ed806b227aca2", "size":1130 },
+    { "path":"meteMP3.Readme", "sha256":"57b9f639d34f8e9e841f89430991580d21da4a3b283798db1172d1cc9e327ef5", "size":3642 }
+  ]
+}
+
+==== reminiscence
+Tuesday 29-Sep-26 17:38:17
+apkg: this system does not provide what the package needs
+     reminiscence
+     sdl.library (LIBS:sdl.library exists but would not open)
+install reminiscence: rc=10
+apkg: not installed
+     reminiscence
+
+==== screentest
+Tuesday 29-Sep-26 17:38:17
+fetching https://archives.arosworld.org/share/demo/misc/screentest-v1.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=demo/misc/screentest-v1.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/screentest.zip
+installed screentest
+install screentest: rc=0
+{
+  "schema":1,
+  "name":"screentest",
+  "version":"1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Screentest",
+  "installed":"2026-09-29T17:38:18Z",
+  "origin":"https://archives.arosworld.org/share/demo/misc/screentest-v1.x86_64-aros-v11.zip",
+  "archive_sha256":"7c2bdf49788dccd2eab9e0f7ad8ac77b56a9520557dccd742bc718fc255840ef",
+  "archive_size":34054,
+  "reason":"explicit",
+  "dir":"screentest",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"63e799ae3a328c1e0205694af4435b6748a3f3337d1a2e3679f3f11ed8b37e9a", "size":7968, "member":"Screentest.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"e963ed334ba5d3f2d7787f303b4007d26e5b0db0baa99b86b1258a77e4a502ca", "size":9136 },
+    { "path":"Source/screentest.zip", "sha256":"5d8b62dad1ac8649644c146b7570c5fc24611b5c7e430d9725e0f480ff618b7d", "size":1021 },
+    { "path":"ScreenTest.info", "sha256":"e9f8dcb09c67c876532ddff0a98c51b2bb2d7d3713953cc09f74ad5f5c1481de", "size":6956 },
+    { "path":"ScreenTest", "sha256":"1a3ca879f90ee00baa3e8c4d68bb58e23caac485e64a97109d4f9e87d6e07b41", "size":26584 }
+  ]
+}
+
+==== scummvm
+Tuesday 29-Sep-26 17:38:18
+apkg: this system does not provide what the package needs
+     scummvm
+     sdl.library (LIBS:sdl.library exists but would not open)
+install scummvm: rc=10
+apkg: not installed
+     scummvm
+
+==== timeless
+Tuesday 29-Sep-26 17:38:18
+apkg: this system does not provide what the package needs
+     timeless
+     sdl.library (LIBS:sdl.library exists but would not open)
+install timeless: rc=10
+apkg: not installed
+     timeless
+
+==== tinysid
+Tuesday 29-Sep-26 17:38:18
+fetching https://archives.arosworld.org/share/audio/play/tinysid.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/play/tinysid.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/tinysid.zip
+installed tinysid
+install tinysid: rc=0
+{
+  "schema":1,
+  "name":"tinysid",
+  "version":"0.94",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"TinySID",
+  "installed":"2026-09-29T17:38:18Z",
+  "origin":"https://archives.arosworld.org/share/audio/play/tinysid.x86_64-aros-v11.zip",
+  "archive_sha256":"d9279a7b540f5c43d45c1fa540bd0455755a3bfbb3214d11e040770bc1e9d996",
+  "archive_size":67846,
+  "reason":"explicit",
+  "dir":"tinysid",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"cc95502fecead80c761e48d44cdbf61f1e7d58ca223a9764a6a98b9cd2de6543", "size":8344, "member":"TinySID.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"TinySID.info", "sha256":"893f31d2df9ca6c2578b8c61a1635630397d893e000e0d57f5ae4cfbb57c526b", "size":8529 },
+    { "path":"TinySID", "sha256":"ee2facc1c7cd1896babca70bcec35057a6745827c56fc6fb184ebae4bfda3d9f", "size":64992 },
+    { "path":"Source.info", "sha256":"adaef2d13e3a3880f8a8b4e5c9f798a843a5083a49b0e7293bc2877e0167746c", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"fb0dabe78c4bd658e321a98634882ba191a3e1f20c1ebe853fc87f2089aa1a50", "size":13734 },
+    { "path":"Readme.info", "sha256":"b60e791657be14686e0433154eb5f496f3a4174fdc2652bd2cc70df4490bcbfa", "size":8788 },
+    { "path":"Readme", "sha256":"a09ab164e61523c6e5cd8ae08f6137bd5bdd6ad24e7f3d3144ef43fe8a9ac9c0", "size":416 }
+  ]
+}
+
+==== unshield
+Tuesday 29-Sep-26 17:38:18
+fetching https://archives.arosworld.org/share/utility/archive/unshield1.6.2.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/unshield1.6.2.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/unshield.zip
+installed unshield
+install unshield: rc=0
+{
+  "schema":1,
+  "name":"unshield",
+  "version":"1.6.2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"unshield-1.6.2",
+  "installed":"2026-09-29T17:38:19Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/unshield1.6.2.x86_64-aros-v11.zip",
+  "archive_sha256":"d8c755fec92b27ab675a8dab83e2eb1bb8749d529955d0d3410b94279a6b7225",
+  "archive_size":2287208,
+  "reason":"explicit",
+  "dir":"unshield",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"unshield-1.6.2_x86_64-src.zip", "sha256":"b7f51045401c93896d7e0e0b807a1cf4dce8e6a1a34424f9ba00cff16b5fd7fd", "size":49889 },
+    { "path":"aros/unshield-deobfuscate", "sha256":"a131beb931fed221c8b44ecd61ab76d95e0214d1225599d5cfbaed455e619e02", "size":2743312 },
+    { "path":"aros/unshield", "sha256":"cac5ab37af5a9ebc9e1a39f92c236eee13a87cd3ceea63457cd2866be02eff06", "size":3798328 },
+    { "path":"aros/lib/libunshield.pc", "sha256":"12c58c5745660d9590d3ba872484b86b65326e6c19fb668106b82ad52d144f5c", "size":264 },
+    { "path":"aros/lib/libunshield.a", "sha256":"66cf132126772c9cee5f6deec71fb7e1192c1361bf8b33b5e0f24aef31c3813a", "size":65766 },
+    { "path":"aros/include/libunshield.h", "sha256":"69376260c3c5dd8c4a6973f3a531317bde572c1cd1dca2745353cdff808013d5", "size":3920 },
+    { "path":"ReadMe_Aros.txt", "sha256":"0a23a355551839c80be84d5611682eeab1f2f9fb3d41940db8d5384d83e94e27", "size":1418 },
+    { "path":"README.md", "sha256":"3bd818684da61efe53de0f64006e91c146983b26a5177fba6754d67747453ce1", "size":2990 }
+  ]
+}

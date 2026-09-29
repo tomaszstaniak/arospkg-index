@@ -1,0 +1,7 @@
+==== hivelyreplay: Play_hvl, stack 40960
+Tuesday 29-Sep-26 17:39:54
+after 15 s (a number means it is running):
+Play_hvl returned: rc=0
+after Ctrl-C (empty means it has ended):
+Play_hvl returned: rc=0
+Tuesday 29-Sep-26 17:40:13

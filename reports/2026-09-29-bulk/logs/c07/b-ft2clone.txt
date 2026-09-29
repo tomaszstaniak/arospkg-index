@@ -1,0 +1,7 @@
+==== ft2clone: ft2-clone, stack 4096000
+Tuesday 29-Sep-26 17:40:42
+after 15 s (a number means it is running):
+ 10
+after Ctrl-C (empty means it has ended):
+ft2-clone returned: rc=0
+Tuesday 29-Sep-26 17:41:06

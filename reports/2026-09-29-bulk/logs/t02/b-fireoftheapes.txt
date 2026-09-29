@@ -1,0 +1,7 @@
+==== fireoftheapes: FireOfTheApes, stack 40960
+Tuesday 29-Sep-26 18:17:29
+after 15 s (a number means it is running):
+ 10
+after Ctrl-C (empty means it has ended):
+FireOfTheApes returned: rc=0
+Tuesday 29-Sep-26 18:17:53

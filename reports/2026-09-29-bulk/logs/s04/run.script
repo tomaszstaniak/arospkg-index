@@ -1,0 +1,358 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8804
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8804
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== boy"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install boy
+Echo >>RAM:L/a.txt "install boy: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info boy
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== fallout"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install fallout
+Echo >>RAM:L/a.txt "install fallout: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info fallout
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== gisplita"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install gisplita
+Echo >>RAM:L/a.txt "install gisplita: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info gisplita
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== ledblur"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install ledblur
+Echo >>RAM:L/a.txt "install ledblur: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info ledblur
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== pkg-7zdec"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install pkg-7zdec
+Echo >>RAM:L/a.txt "install pkg-7zdec: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info pkg-7zdec
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== scummvm"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install scummvm
+Echo >>RAM:L/a.txt "install scummvm: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info scummvm
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== switch"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install switch
+Echo >>RAM:L/a.txt "install switch: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info switch
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== zunearc"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install zunearc
+Echo >>RAM:L/a.txt "install zunearc: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info zunearc
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >RAM:L/b-boy.txt "==== boy: Boy, stack 50000"
+Date >>RAM:L/b-boy.txt
+If NOT EXISTS SYS:Batch/boy
+  Echo >>RAM:L/b-boy.txt "boy: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start boy "SYS:Batch/boy" Boy 50000
+  Wait 15
+  Echo >>RAM:L/b-boy.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-boy.txt COMMAND=Boy
+  If EXISTS RAM:L/r-boy.txt
+    Type >>RAM:L/b-boy.txt RAM:L/r-boy.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "boy"
+RAM:b/putfile >NIL: RAM:L/m shot-boy 8804
+Wait 4
+Status >NIL: COMMAND=Boy
+If NOT WARN
+  Break >NIL: `Status COMMAND=Boy` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-boy.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-boy.txt COMMAND=Boy
+If EXISTS RAM:L/r-boy.txt
+  Type >>RAM:L/b-boy.txt RAM:L/r-boy.txt
+EndIf
+Date >>RAM:L/b-boy.txt
+RAM:b/putfile >NIL: RAM:L/b-boy.txt b-boy.txt 8804
+If EXISTS RAM:L/o-boy.txt
+RAM:b/putfile >NIL: RAM:L/o-boy.txt o-boy.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-boy 8804
+Wait 3
+Echo >RAM:L/b-fallout.txt "==== fallout: Fallout, stack 200000"
+Date >>RAM:L/b-fallout.txt
+If NOT EXISTS SYS:Batch/fallout
+  Echo >>RAM:L/b-fallout.txt "fallout: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start fallout "SYS:Batch/fallout" Fallout 200000
+  Wait 15
+  Echo >>RAM:L/b-fallout.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-fallout.txt COMMAND=Fallout
+  If EXISTS RAM:L/r-fallout.txt
+    Type >>RAM:L/b-fallout.txt RAM:L/r-fallout.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "fallout"
+RAM:b/putfile >NIL: RAM:L/m shot-fallout 8804
+Wait 4
+Status >NIL: COMMAND=Fallout
+If NOT WARN
+  Break >NIL: `Status COMMAND=Fallout` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-fallout.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-fallout.txt COMMAND=Fallout
+If EXISTS RAM:L/r-fallout.txt
+  Type >>RAM:L/b-fallout.txt RAM:L/r-fallout.txt
+EndIf
+Date >>RAM:L/b-fallout.txt
+RAM:b/putfile >NIL: RAM:L/b-fallout.txt b-fallout.txt 8804
+If EXISTS RAM:L/o-fallout.txt
+RAM:b/putfile >NIL: RAM:L/o-fallout.txt o-fallout.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-fallout 8804
+Wait 3
+Echo >RAM:L/b-gisplita.txt "==== gisplita: split, stack 40960"
+Date >>RAM:L/b-gisplita.txt
+If NOT EXISTS SYS:Batch/gisplita
+  Echo >>RAM:L/b-gisplita.txt "gisplita: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start gisplita "SYS:Batch/gisplita" split 40960
+  Wait 15
+  Echo >>RAM:L/b-gisplita.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-gisplita.txt COMMAND=split
+  If EXISTS RAM:L/r-gisplita.txt
+    Type >>RAM:L/b-gisplita.txt RAM:L/r-gisplita.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "gisplita"
+RAM:b/putfile >NIL: RAM:L/m shot-gisplita 8804
+Wait 4
+Status >NIL: COMMAND=split
+If NOT WARN
+  Break >NIL: `Status COMMAND=split` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-gisplita.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-gisplita.txt COMMAND=split
+If EXISTS RAM:L/r-gisplita.txt
+  Type >>RAM:L/b-gisplita.txt RAM:L/r-gisplita.txt
+EndIf
+Date >>RAM:L/b-gisplita.txt
+RAM:b/putfile >NIL: RAM:L/b-gisplita.txt b-gisplita.txt 8804
+If EXISTS RAM:L/o-gisplita.txt
+RAM:b/putfile >NIL: RAM:L/o-gisplita.txt o-gisplita.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-gisplita 8804
+Wait 3
+Echo >RAM:L/b-ledblur.txt "==== ledblur: opti_ledblur, stack 40960"
+Date >>RAM:L/b-ledblur.txt
+If NOT EXISTS SYS:Batch/ledblur
+  Echo >>RAM:L/b-ledblur.txt "ledblur: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start ledblur "SYS:Batch/ledblur" opti_ledblur 40960
+  Wait 15
+  Echo >>RAM:L/b-ledblur.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-ledblur.txt COMMAND=opti_ledblur
+  If EXISTS RAM:L/r-ledblur.txt
+    Type >>RAM:L/b-ledblur.txt RAM:L/r-ledblur.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "ledblur"
+RAM:b/putfile >NIL: RAM:L/m shot-ledblur 8804
+Wait 4
+Status >NIL: COMMAND=opti_ledblur
+If NOT WARN
+  Break >NIL: `Status COMMAND=opti_ledblur` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-ledblur.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-ledblur.txt COMMAND=opti_ledblur
+If EXISTS RAM:L/r-ledblur.txt
+  Type >>RAM:L/b-ledblur.txt RAM:L/r-ledblur.txt
+EndIf
+Date >>RAM:L/b-ledblur.txt
+RAM:b/putfile >NIL: RAM:L/b-ledblur.txt b-ledblur.txt 8804
+If EXISTS RAM:L/o-ledblur.txt
+RAM:b/putfile >NIL: RAM:L/o-ledblur.txt o-ledblur.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-ledblur 8804
+Wait 3
+Echo >RAM:L/b-pkg-7zdec.txt "==== pkg-7zdec: 7zDec, stack 40960"
+Date >>RAM:L/b-pkg-7zdec.txt
+If NOT EXISTS SYS:Batch/pkg-7zdec
+  Echo >>RAM:L/b-pkg-7zdec.txt "pkg-7zdec: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start pkg-7zdec "SYS:Batch/pkg-7zdec" 7zDec 40960
+  Wait 15
+  Echo >>RAM:L/b-pkg-7zdec.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-pkg-7zdec.txt COMMAND=7zDec
+  If EXISTS RAM:L/r-pkg-7zdec.txt
+    Type >>RAM:L/b-pkg-7zdec.txt RAM:L/r-pkg-7zdec.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "pkg-7zdec"
+RAM:b/putfile >NIL: RAM:L/m shot-pkg-7zdec 8804
+Wait 4
+Status >NIL: COMMAND=7zDec
+If NOT WARN
+  Break >NIL: `Status COMMAND=7zDec` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-pkg-7zdec.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-pkg-7zdec.txt COMMAND=7zDec
+If EXISTS RAM:L/r-pkg-7zdec.txt
+  Type >>RAM:L/b-pkg-7zdec.txt RAM:L/r-pkg-7zdec.txt
+EndIf
+Date >>RAM:L/b-pkg-7zdec.txt
+RAM:b/putfile >NIL: RAM:L/b-pkg-7zdec.txt b-pkg-7zdec.txt 8804
+If EXISTS RAM:L/o-pkg-7zdec.txt
+RAM:b/putfile >NIL: RAM:L/o-pkg-7zdec.txt o-pkg-7zdec.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-pkg-7zdec 8804
+Wait 3
+Echo >RAM:L/b-scummvm.txt "==== scummvm: scummvm, stack 40960"
+Date >>RAM:L/b-scummvm.txt
+If NOT EXISTS SYS:Batch/scummvm
+  Echo >>RAM:L/b-scummvm.txt "scummvm: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start scummvm "SYS:Batch/scummvm" scummvm 40960
+  Wait 15
+  Echo >>RAM:L/b-scummvm.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-scummvm.txt COMMAND=scummvm
+  If EXISTS RAM:L/r-scummvm.txt
+    Type >>RAM:L/b-scummvm.txt RAM:L/r-scummvm.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "scummvm"
+RAM:b/putfile >NIL: RAM:L/m shot-scummvm 8804
+Wait 4
+Status >NIL: COMMAND=scummvm
+If NOT WARN
+  Break >NIL: `Status COMMAND=scummvm` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-scummvm.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-scummvm.txt COMMAND=scummvm
+If EXISTS RAM:L/r-scummvm.txt
+  Type >>RAM:L/b-scummvm.txt RAM:L/r-scummvm.txt
+EndIf
+Date >>RAM:L/b-scummvm.txt
+RAM:b/putfile >NIL: RAM:L/b-scummvm.txt b-scummvm.txt 8804
+If EXISTS RAM:L/o-scummvm.txt
+RAM:b/putfile >NIL: RAM:L/o-scummvm.txt o-scummvm.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-scummvm 8804
+Wait 3
+Echo >RAM:L/b-switch.txt "==== switch: SWitch, stack 40960"
+Date >>RAM:L/b-switch.txt
+If NOT EXISTS SYS:Batch/switch
+  Echo >>RAM:L/b-switch.txt "switch: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start switch "SYS:Batch/switch" SWitch 40960
+  Wait 15
+  Echo >>RAM:L/b-switch.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-switch.txt COMMAND=SWitch
+  If EXISTS RAM:L/r-switch.txt
+    Type >>RAM:L/b-switch.txt RAM:L/r-switch.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "switch"
+RAM:b/putfile >NIL: RAM:L/m shot-switch 8804
+Wait 4
+Status >NIL: COMMAND=SWitch
+If NOT WARN
+  Break >NIL: `Status COMMAND=SWitch` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-switch.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-switch.txt COMMAND=SWitch
+If EXISTS RAM:L/r-switch.txt
+  Type >>RAM:L/b-switch.txt RAM:L/r-switch.txt
+EndIf
+Date >>RAM:L/b-switch.txt
+RAM:b/putfile >NIL: RAM:L/b-switch.txt b-switch.txt 8804
+If EXISTS RAM:L/o-switch.txt
+RAM:b/putfile >NIL: RAM:L/o-switch.txt o-switch.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-switch 8804
+Wait 3
+Echo >RAM:L/b-zunearc.txt "==== zunearc: ZuneARC, stack 40960"
+Date >>RAM:L/b-zunearc.txt
+If NOT EXISTS SYS:Batch/zunearc
+  Echo >>RAM:L/b-zunearc.txt "zunearc: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start zunearc "SYS:Batch/zunearc" ZuneARC 40960
+  Wait 15
+  Echo >>RAM:L/b-zunearc.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-zunearc.txt COMMAND=ZuneARC
+  If EXISTS RAM:L/r-zunearc.txt
+    Type >>RAM:L/b-zunearc.txt RAM:L/r-zunearc.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "zunearc"
+RAM:b/putfile >NIL: RAM:L/m shot-zunearc 8804
+Wait 4
+Status >NIL: COMMAND=ZuneARC
+If NOT WARN
+  Break >NIL: `Status COMMAND=ZuneARC` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-zunearc.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-zunearc.txt COMMAND=ZuneARC
+If EXISTS RAM:L/r-zunearc.txt
+  Type >>RAM:L/b-zunearc.txt RAM:L/r-zunearc.txt
+EndIf
+Date >>RAM:L/b-zunearc.txt
+RAM:b/putfile >NIL: RAM:L/b-zunearc.txt b-zunearc.txt 8804
+If EXISTS RAM:L/o-zunearc.txt
+RAM:b/putfile >NIL: RAM:L/o-zunearc.txt o-zunearc.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-zunearc 8804
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove boy
+Echo >>RAM:L/c.txt "remove boy: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove fallout
+Echo >>RAM:L/c.txt "remove fallout: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove gisplita
+Echo >>RAM:L/c.txt "remove gisplita: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove ledblur
+Echo >>RAM:L/c.txt "remove ledblur: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove pkg-7zdec
+Echo >>RAM:L/c.txt "remove pkg-7zdec: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove scummvm
+Echo >>RAM:L/c.txt "remove scummvm: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove switch
+Echo >>RAM:L/c.txt "remove switch: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove zunearc
+Echo >>RAM:L/c.txt "remove zunearc: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8804
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8804

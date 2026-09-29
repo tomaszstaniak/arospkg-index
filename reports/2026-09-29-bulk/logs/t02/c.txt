@@ -1,0 +1,67 @@
+==== stage C: remove
+removed leu
+remove leu: rc=0
+removed fireoftheapes
+remove fireoftheapes: rc=0
+removed timeless
+remove timeless: rc=0
+removed pkg-54321
+remove pkg-54321: rc=0
+removed pekkakana2
+remove pekkakana2: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       18:19:18
+pekkakana2                   Dir ---rwed Today       18:19:18
+pkg-54321                    Dir ---rwed Today       18:19:18
+timeless                     Dir ---rwed Today       18:19:18
+fireoftheapes                Dir ---rwed Today       18:19:18
+leu                          Dir ---rwed Today       18:19:18
+cache                        Dir ---rwed Today       18:17:01
+db                           Dir ---rwed Today       18:19:18
+8 directories - 8 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/pekkakana2" on Tuesday 09/29/26:
+res                          Dir ---rwed Today       18:19:18
+1 directory - 1 block used
+Directory "SYS:Batch/pekkakana2/res" on Tuesday 09/29/26:
+data                         Dir ---rwed Today       18:19:18
+1 directory - 1 block used
+Directory "SYS:Batch/pekkakana2/res/data" on Tuesday 09/29/26:
+settings.json               1605 ---rwed Today       18:18:51
+log.txt                     1569 ---rwed Today       18:19:10
+2 files - 8 blocks used
+Directory "SYS:Batch/pkg-54321" is empty
+Directory "SYS:Batch/timeless" is empty
+Directory "SYS:Batch/fireoftheapes" on Tuesday 09/29/26:
+log.txt                     1524 ---rwed Today       18:17:49
+1 file - 3 blocks used
+Directory "SYS:Batch/leu" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+pekkakana2.zip           14093424 ---rwed Today       18:17:01
+pkg-54321.zip             767258 ---rwed Today       18:16:59
+timeless.zip              340524 ---rwed Today       18:16:59
+fireoftheapes.zip        5216749 ---rwed Today       18:16:58
+leu.lha                  1565342 ---rwed Today       18:16:57
+5 files - 42939 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       18:19:18
+transactions                 Dir ---rwed Today       18:19:18
+installed                    Dir ---rwed Today       18:19:18
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+pekkakana2-6abc0126.json     151 ---rwed Today       18:19:18
+pkg-54321-6abc0126.json      149 ---rwed Today       18:19:18
+timeless-6abc0126.json       145 ---rwed Today       18:19:18
+fireoftheapes-6abc0126.json     156 ---rwed Today       18:19:18
+leu-6abc0126.json            135 ---rwed Today       18:19:18
+5 files - 5 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 13 files - 13 directories - 42968 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 18:19:18

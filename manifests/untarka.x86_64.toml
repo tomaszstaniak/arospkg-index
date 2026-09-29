@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/untarka with
+# Run and input from NIL:, stack 40960 bytes: it printed its usage or output
+# and returned 0. Evidence: reports/2026-09-29-bulk/ (batch c07).
+
+status          = "approved"
+id              = "untarka"
+version         = "0.34"
+summary         = "unpack tar file"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/archive"
+url             = "https://archives.arosworld.org/share/utility/archive/untarka.x86_64-aros-v11.zip"
+size            = 64136
+upload_date     = "20250120-18.21"
+selected_by     = "only-candidate"
+
+sha256          = "e0f549940adcce5e1fda06ae8f679c0d62f9253a6ed2d199f9703927aff3cfa8"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "UnTarka"
+icon            = "UnTarka.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

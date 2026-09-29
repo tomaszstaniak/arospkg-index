@@ -1,0 +1,84 @@
+==== stage C: remove
+removed amishockolate
+remove amishockolate: rc=0
+removed demoeffects
+remove demoeffects: rc=0
+removed flx_play.zip
+remove flx_play.zip: rc=0
+removed isomaker-gui
+remove isomaker-gui: rc=0
+removed opentyrian
+remove opentyrian: rc=0
+removed reminiscence
+remove reminiscence: rc=0
+removed stratagus
+remove stratagus: rc=0
+removed tinytris
+remove tinytris: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       18:10:06
+tinytris                     Dir ---rwed Today       18:10:06
+stratagus                    Dir ---rwed Today       18:10:06
+opentyrian                   Dir ---rwed Today       18:10:04
+isomaker-gui                 Dir ---rwed Today       18:10:04
+demoeffects                  Dir ---rwed Today       18:10:04
+amishockolate                Dir ---rwed Today       18:10:04
+cache                        Dir ---rwed Today       18:06:42
+db                           Dir ---rwed Today       18:10:06
+9 directories - 9 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/tinytris" on Tuesday 09/29/26:
+SND                          Dir ---rwed Today       18:10:06
+1 directory - 1 block used
+Directory "SYS:Batch/tinytris/SND" on Tuesday 09/29/26:
+Eternam2.ogg              694030 ---rwed Today       18:06:42
+1 file - 1356 blocks used
+Directory "SYS:Batch/stratagus" is empty
+Directory "SYS:Batch/opentyrian" on Tuesday 09/29/26:
+data                         Dir ---rwed Today       18:10:04
+1 directory - 1 block used
+Directory "SYS:Batch/opentyrian/data" on Tuesday 09/29/26:
+music.mus                 153482 ---rwed Today       18:06:38
+1 file - 300 blocks used
+Directory "SYS:Batch/isomaker-gui" is empty
+Directory "SYS:Batch/demoeffects" on Tuesday 09/29/26:
+Plasma                       Dir ---rwed Today       18:10:04
+1 directory - 1 block used
+Directory "SYS:Batch/demoeffects/Plasma" is empty
+Directory "SYS:Batch/amishockolate" on Tuesday 09/29/26:
+keybinds.txt                7961 ---rwed Today       18:06:42
+prefs.txt                    303 ---rwed Today       18:06:42
+2 files - 17 blocks used
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+tinytris.zip             2533852 ---rwed Today       18:06:42
+stratagus.zip            5849826 ---rwed Today       18:06:40
+reminiscence.zip         1251359 ---rwed Today       18:06:39
+opentyrian.zip           4591126 ---rwed Today       18:06:38
+isomaker-gui.zip          276822 ---rwed Today       18:06:37
+flx_play.zip.zip           75602 ---rwed Today       18:06:37
+demoeffects.zip          4469454 ---rwed Today       18:06:36
+amishockolate.zip        1815215 ---rwed Today       18:06:35
+8 files - 40753 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       18:10:06
+transactions                 Dir ---rwed Today       18:10:06
+installed                    Dir ---rwed Today       18:10:06
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+tinytris-6abbfefe.json       164 ---rwed Today       18:10:06
+stratagus-6abbfefe.json      147 ---rwed Today       18:10:06
+opentyrian-6abbfefc.json     167 ---rwed Today       18:10:04
+isomaker-gui-6abbfefc.json     154 ---rwed Today       18:10:04
+demoeffects-6abbfefc.json     153 ---rwed Today       18:10:04
+amishockolate-6abbfefc.json     155 ---rwed Today       18:10:04
+6 files - 6 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 18 files - 15 directories - 42447 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 18:10:06

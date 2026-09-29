@@ -1,0 +1,7 @@
+M_LoadDefaults: Load system defaults.
+ default file: PROGDIR:prboom-plus.cfg
+ found PROGDIR:prboom-plus.wad
+
+PrBoom-Plus v2.6.66 (https://github.com/coelckers/prboom-plus)
+IdentifyVersion: IWAD not found
+

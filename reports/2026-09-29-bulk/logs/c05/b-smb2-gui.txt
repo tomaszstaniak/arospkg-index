@@ -1,0 +1,7 @@
+==== smb2-gui: SMB2-GUI, stack 40960
+Tuesday 29-Sep-26 17:41:30
+after 15 s (a number means it is running):
+ 12
+after Ctrl-C (empty means it has ended):
+ 12
+Tuesday 29-Sep-26 17:41:54

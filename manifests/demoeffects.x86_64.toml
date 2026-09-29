@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from
+# SYS:Batch/demoeffects/Plasma with Run and input from NIL:, stack 40960
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-09-29-bulk/ (batch s02).
+
+status          = "approved"
+id              = "demoeffects"
+version         = "20250131"
+summary         = "Many Demo Effects"
+arch            = "x86_64"
+abi             = "v11"
+category        = "demo/misc"
+url             = "https://archives.arosworld.org/share/demo/misc/demoeffects.x86_64-aros-v11.zip"
+size            = 4469454
+upload_date     = "20250131-12.13"
+selected_by     = "only-candidate"
+
+sha256          = "dab8b219c28a5ae0aab336a130d34059b002bf5f59fc40b1463adc24db966549"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "DemoEffects"
+icon            = "DemoEffects.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

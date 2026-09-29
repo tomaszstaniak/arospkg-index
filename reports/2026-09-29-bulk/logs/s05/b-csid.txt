@@ -1,0 +1,7 @@
+==== csid: cSID, stack 40960
+Tuesday 29-Sep-26 18:07:04
+after 15 s (a number means it is running):
+cSID returned: rc=0
+after Ctrl-C (empty means it has ended):
+cSID returned: rc=0
+Tuesday 29-Sep-26 18:07:23

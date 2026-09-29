@@ -1,0 +1,153 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8801
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8801
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== scopagame"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install scopagame
+Echo >>RAM:L/a.txt "install scopagame: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info scopagame
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== switch"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install switch
+Echo >>RAM:L/a.txt "install switch: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info switch
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== unrar"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install unrar
+Echo >>RAM:L/a.txt "install unrar: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info unrar
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >RAM:L/b-scopagame.txt "==== scopagame: Scopa, stack 40960"
+Date >>RAM:L/b-scopagame.txt
+If NOT EXISTS SYS:Batch/scopagame
+  Echo >>RAM:L/b-scopagame.txt "scopagame: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start scopagame "SYS:Batch/scopagame" "Scopa" 40960
+  Wait 15
+  Echo >>RAM:L/b-scopagame.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-scopagame.txt COMMAND="Scopa"
+  If EXISTS RAM:L/r-scopagame.txt
+    Type >>RAM:L/b-scopagame.txt RAM:L/r-scopagame.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "scopagame"
+RAM:b/putfile >NIL: RAM:L/m shot-scopagame 8801
+Wait 4
+Status >NIL: COMMAND="Scopa"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Scopa"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-scopagame.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-scopagame.txt COMMAND="Scopa"
+If EXISTS RAM:L/r-scopagame.txt
+  Type >>RAM:L/b-scopagame.txt RAM:L/r-scopagame.txt
+EndIf
+Date >>RAM:L/b-scopagame.txt
+RAM:b/putfile >NIL: RAM:L/b-scopagame.txt b-scopagame.txt 8801
+If EXISTS RAM:L/o-scopagame.txt
+RAM:b/putfile >NIL: RAM:L/o-scopagame.txt o-scopagame.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-scopagame 8801
+Wait 3
+Echo >RAM:L/b-switch.txt "==== switch: SWitch, stack 40960"
+Date >>RAM:L/b-switch.txt
+If NOT EXISTS SYS:Batch/switch
+  Echo >>RAM:L/b-switch.txt "switch: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start switch "SYS:Batch/switch" "SWitch" 40960
+  Wait 15
+  Echo >>RAM:L/b-switch.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-switch.txt COMMAND="SWitch"
+  If EXISTS RAM:L/r-switch.txt
+    Type >>RAM:L/b-switch.txt RAM:L/r-switch.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "switch"
+RAM:b/putfile >NIL: RAM:L/m shot-switch 8801
+Wait 4
+Status >NIL: COMMAND="SWitch"
+If NOT WARN
+  Break >NIL: `Status COMMAND="SWitch"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-switch.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-switch.txt COMMAND="SWitch"
+If EXISTS RAM:L/r-switch.txt
+  Type >>RAM:L/b-switch.txt RAM:L/r-switch.txt
+EndIf
+Date >>RAM:L/b-switch.txt
+RAM:b/putfile >NIL: RAM:L/b-switch.txt b-switch.txt 8801
+If EXISTS RAM:L/o-switch.txt
+RAM:b/putfile >NIL: RAM:L/o-switch.txt o-switch.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-switch 8801
+Wait 3
+Echo >RAM:L/b-unrar.txt "==== unrar: UnRAR, stack 800000"
+Date >>RAM:L/b-unrar.txt
+If NOT EXISTS SYS:Batch/unrar
+  Echo >>RAM:L/b-unrar.txt "unrar: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start unrar "SYS:Batch/unrar" "UnRAR" 800000
+  Wait 15
+  Echo >>RAM:L/b-unrar.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-unrar.txt COMMAND="UnRAR"
+  If EXISTS RAM:L/r-unrar.txt
+    Type >>RAM:L/b-unrar.txt RAM:L/r-unrar.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "unrar"
+RAM:b/putfile >NIL: RAM:L/m shot-unrar 8801
+Wait 4
+Status >NIL: COMMAND="UnRAR"
+If NOT WARN
+  Break >NIL: `Status COMMAND="UnRAR"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-unrar.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-unrar.txt COMMAND="UnRAR"
+If EXISTS RAM:L/r-unrar.txt
+  Type >>RAM:L/b-unrar.txt RAM:L/r-unrar.txt
+EndIf
+Date >>RAM:L/b-unrar.txt
+RAM:b/putfile >NIL: RAM:L/b-unrar.txt b-unrar.txt 8801
+If EXISTS RAM:L/o-unrar.txt
+RAM:b/putfile >NIL: RAM:L/o-unrar.txt o-unrar.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-unrar 8801
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove scopagame
+Echo >>RAM:L/c.txt "remove scopagame: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove switch
+Echo >>RAM:L/c.txt "remove switch: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove unrar
+Echo >>RAM:L/c.txt "remove unrar: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8801
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8801

@@ -1,0 +1,473 @@
+==== stage A: install
+
+==== adoom3
+Tuesday 29-Sep-26 17:52:30
+fetching https://archives.arosworld.org/share/game/fps/adoom3-1.5.3.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/fps/adoom3-1.5.3.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/adoom3.zip
+installed adoom3
+install adoom3: rc=0
+{
+  "schema":1,
+  "name":"adoom3",
+  "version":"1.5.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"ADoom3",
+  "installed":"2026-09-29T17:52:32Z",
+  "origin":"https://archives.arosworld.org/share/game/fps/adoom3-1.5.3.x86_64-aros-v11.zip",
+  "archive_sha256":"9c4f252edcc359640a29f29b24fb16d010dcf4b5dffafd8d7de05f4b48ac5f9a",
+  "archive_size":10123901,
+  "reason":"explicit",
+  "dir":"adoom3",
+  "requires_system": [
+    { "type":"library", "id":"SDL.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"opens, version 1" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5e7f5b9eee21d189df600156879182a54fdf800f7cbf63b437c93573275ea0b1", "size":9058, "member":"ADoom3.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"dhewm3log.txt", "sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "size":0 },
+    { "path":"dhewm3log-old.txt", "sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", "size":0 },
+    { "path":"d3xp.aros-x86_64", "sha256":"8c6670bf2590bf02de537d78d578095a136a9e77c9fca5b2f30eb2a00c1e9e13", "size":7360512 },
+    { "path":"d3xp/WHAT_TO_DO.txt", "sha256":"cb3fbd0b8ba2daf9023e0de83e9d5fe0c62984f0b45611ed8ceafc2f6c4d024f", "size":401 },
+    { "path":"base.aros-x86_64", "sha256":"e9c95d8d349f9ae5e59b66b552bcdfa4615d61727bfbb7fb134f925ca7690230", "size":6920280 },
+    { "path":"base/WHAT_TO_DO.txt", "sha256":"745a5856685e303f5692b330dfe4c3d9e93c96783af013c6434cc54916815a22", "size":1101 },
+    { "path":"ROE.info", "sha256":"e52eacad61547fc73a0b0f408eb3e19f8284461d9758e1f6ebeab5fdff316197", "size":7666 },
+    { "path":"README.md", "sha256":"532a8c1f59330cd8c6dc8d8ea7b08975f2bf21f1b62ea6c39200ee322a94d8b1", "size":10697 },
+    { "path":"Configuration.txt", "sha256":"8ae29a41c6b47fe739e7e99bccdf99efc260ebb2ab7184032b8b4c136505b41e", "size":3776 },
+    { "path":"ADoom3ded", "sha256":"adacd61cbc8971f082a40b1a5fa4e92c80cd9b9da580b95c1cc26c47b9f797f4", "size":11432040 },
+    { "path":"ADoom3.info", "sha256":"00cf2988397a84a45ce9c30fcd29da06ca0a8b3f001d921e6a2bfc57a01ac87a", "size":9476 },
+    { "path":"ADoom3", "sha256":"7680a04dac1c7eeac067cc529379c5f5277669f98c506fef6ce11b28a1f3f498", "size":11468064 }
+  ]
+}
+
+==== daysleeper
+Tuesday 29-Sep-26 17:52:32
+fetching https://archives.arosworld.org/share/utility/text/misc/daysleeper-v0.9r2.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/misc/daysleeper-v0.9r2.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/daysleeper.zip
+installed daysleeper
+install daysleeper: rc=0
+{
+  "schema":1,
+  "name":"daysleeper",
+  "version":"0.9r2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"DaySleeper",
+  "installed":"2026-09-29T17:52:32Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/misc/daysleeper-v0.9r2.x86_64-aros-v11.zip",
+  "archive_sha256":"3706787f3e4c338f8cb96fa3e0f2cc49c709e7f905bb74cb26809fe8e245a27a",
+  "archive_size":125256,
+  "reason":"explicit",
+  "dir":"daysleeper",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"02c5bfc7e1db351219cffdfe2ad892745a643a10978e0bf0c97c3471218c1fa4", "size":8619, "member":"DaySleeper.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Themes-Prefs.info", "sha256":"ea364c3cc0aa0031cdfb6bc8efdecb007ac8932221118cc83b307eb28a7588ee", "size":9153 },
+    { "path":"Themes-Prefs/Skins.info", "sha256":"93615cc3fae71162f415eaeebc425a426640ecf25373da5b5c66c9a82ef1c74e", "size":9153 },
+    { "path":"Themes-Prefs/Skins/White.info", "sha256":"ab49435a1eb96b09db14cb144e45cf433ade296472eddbfa85b98b11c6e31f52", "size":8020 },
+    { "path":"Themes-Prefs/Skins/White", "sha256":"3ae5926a8d87e66cca12be1270a0e78eb7f37484c01bc98968b73d2a83361a60", "size":401 },
+    { "path":"Themes-Prefs/Skins/No-Skin.info", "sha256":"3be2046075593d6b364409560ad39d68c31d27af6060eb2e1799b61794b4ce39", "size":8020 },
+    { "path":"Themes-Prefs/Skins/No-Skin", "sha256":"8c3b2560f3c5b1ecea7e0eb12e21bf1ef9d9837a66fa1d7bf84e105d7bcdd823", "size":409 },
+    { "path":"Themes-Prefs/Skins/Celestial.info", "sha256":"ca00e57c55601d910a2a51380b356e251684d0e9cd46f7fce71cbaa9c34fae03", "size":8020 },
+    { "path":"Themes-Prefs/Skins/Celestial", "sha256":"ea660cdde79944bc974278de0ad8360bc0aa5fe180f7b32dbb1f68a3a2c91137", "size":410 },
+    { "path":"Themes-Prefs/Skins/BlackWhite.info", "sha256":"c181d8173a35f7fdf3735f0f2ef6b2590fc0ec9a9ae45c179f610cb56004e2b0", "size":8020 },
+    { "path":"Themes-Prefs/Skins/BlackWhite", "sha256":"6d74bc8957d7bf2556ebceb3e1430179461885ee35b49329cd5890daa465c3c4", "size":411 },
+    { "path":"Themes-Prefs/Skins/Azure.info", "sha256":"0b55111eca24848f787188bb6df80849c84572b303352ca71783649a16aa6708", "size":8020 },
+    { "path":"Themes-Prefs/Skins/Azure", "sha256":"ae2b80dd477b68bfee32ee7ebe30d1af7b4b61042b93c6bee327e2d1a4bcdaf7", "size":401 },
+    { "path":"Themes-Prefs/Skins/ArosOne.info", "sha256":"656341e1ea41785deabc5026ef9ecdf10403bfddac2ef8cfa493c3a6497a0103", "size":8020 },
+    { "path":"Themes-Prefs/Skins/ArosOne", "sha256":"7fd56e2beb2ddc0a26b81d1da0975800c130beefd6ade007647604f3c1ef572c", "size":406 },
+    { "path":"Source.info", "sha256":"00d312a61b81efc707d10b0f8c316bde223f97ffe720badcba745fa9c44a5ebd", "size":9136 },
+    { "path":"Source/Daysleeper.zip", "sha256":"3e3b825c1fb54123f59f8d3ef0cba1ba8b47ec66ef1df5bef1a30bf2e1fc21a0", "size":4083 },
+    { "path":"Readme.info", "sha256":"45d74ce1020d0aee562c2088812ca17df03fb3bffdd161200cae0e97ecf5c42e", "size":8785 },
+    { "path":"Readme", "sha256":"b3711dacd5d9760a256d61f6b4cb616e6de081da3f3b52e02c357c82538a82a3", "size":3138 },
+    { "path":"Daysleeper.info", "sha256":"71e62866a637a36ea8decef4956d7cd4e68c43056b654a2cd3222c20aeeb91f2", "size":8288 },
+    { "path":"Daysleeper", "sha256":"62d80c47635701000b88e6213b11d5089644a4b390d63b5cab7d5107d60c4079", "size":51232 }
+  ]
+}
+
+==== finder
+Tuesday 29-Sep-26 17:52:32
+fetching https://archives.arosworld.org/share/utility/filetool/finder-v3.1.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/filetool/finder-v3.1.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/finder.zip
+installed finder
+install finder: rc=0
+{
+  "schema":1,
+  "name":"finder",
+  "version":"3.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Finder",
+  "installed":"2026-09-29T17:52:33Z",
+  "origin":"https://archives.arosworld.org/share/utility/filetool/finder-v3.1.x86_64-aros-v11.zip",
+  "archive_sha256":"f5b4630a33b799c31976b9305d67cd30c5b8d53a66869359724aa0893cdf9146",
+  "archive_size":63513,
+  "reason":"explicit",
+  "dir":"finder",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"bfa60a96730d6ff39a2c5213e649ad68ddcb34e2e31ef9a555082041c5ba9f5c", "size":9302, "member":"Finder.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"ddf9c057d33507496721af05ad9c555a57d1580c47381ed67283b86b2c545e8e", "size":8785 },
+    { "path":"Readme", "sha256":"265963c222f70751b28651bc972167974ceb007ceb6643ff1cb11e9d7ae001bc", "size":769 },
+    { "path":"FinderLogo.iff", "sha256":"1a03529b5619795043949a7b304ec495e12ce9343f7a56f56d167ce7e7dc1752", "size":860 },
+    { "path":"Finder.info", "sha256":"cfe1877f68f9ab076eea17007acefb514dddd3ea46aba2a53edd3253f1854ac7", "size":8568 },
+    { "path":"Finder.guide.info", "sha256":"95a98cf516d2c68fa03323102dd98b1b6fbbd910c0b8f6d10c89d8a4383633c1", "size":8518 },
+    { "path":"Finder.guide", "sha256":"1f1f188ec0a6680cee8c769fe42cd98d21c16f5dae544510ecc15f8523df4ea1", "size":26764 },
+    { "path":"Finder", "sha256":"5df9a05ba14e529aa77087ec4775c488235d156fcebecfcf22d8b2f44986de2b", "size":59920 }
+  ]
+}
+
+==== hostile-takeover
+Tuesday 29-Sep-26 17:52:33
+fetching https://archives.arosworld.org/share/game/strategy/hostile-takeover.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/strategy/hostile-takeover.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/hostile-takeover.zip
+installed hostile-takeover
+install hostile-takeover: rc=0
+{
+  "schema":1,
+  "name":"hostile-takeover",
+  "version":"1.6.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Hostile-Takeover",
+  "installed":"2026-09-29T17:52:35Z",
+  "origin":"https://archives.arosworld.org/share/game/strategy/hostile-takeover.x86_64-aros-v11.zip",
+  "archive_sha256":"4a6b575217972b4ea010f2b9a2f25cecbcd6143bddeaf90bad63e33df8478654",
+  "archive_size":9436754,
+  "reason":"explicit",
+  "dir":"hostile-takeover",
+  "requires_system": [
+    { "type":"library", "id":"SDL.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"screenshot.png", "sha256":"a803b06b74182153e38b5f9bbf92dd992f56edf61da61a19e9acadcc91087139", "size":172369 },
+    { "path":"htsfx.pdb", "sha256":"7194f57e4c12abb7a5a84f0e6e152367d96d663e0eded9b31212d18c3b4aacd5", "size":315694 },
+    { "path":"htdata832.pdb", "sha256":"b3413a039beab4ed99a225468ef76b4073d902ddea6c9a3fcc9e532e93012fec", "size":3155948 },
+    { "path":"ht.info", "sha256":"bb11285a46d0c446969db775a59716af7a5e49ddc168ed9f00c6ede0c2783186", "size":28035 },
+    { "path":"ht", "sha256":"ad10b85895be858da88615e4a04d6b423e596c686ce6f1e698bb2fbb394cf17f", "size":29078720 },
+    { "path":"README_Aros.txt", "sha256":"b0f512db719a50ef60c7bceb645c615c3e6aa9f1cce08b25755be825ebb1cd80", "size":2082 },
+    { "path":"README.md", "sha256":"11cfc80015a2b8e074bd773b917ce92f96d79d3daceebf694de1963c94a38bda", "size":4417 },
+    { "path":"LICENSE.txt", "sha256":"2c66d9e0704f551fabe357d6ea27196ac45f38eab39518fb150a7d135ae2d00d", "size":1515 },
+    { "path":".hostile-takeover/prefs.bin", "sha256":"b86c53dfb099014eb7a5b885954c1244d17a5fd64e5ea3c7a85a6dcb3080352a", "size":960 }
+  ]
+}
+
+==== nano
+Tuesday 29-Sep-26 17:52:35
+fetching https://archives.arosworld.org/share/demo/scene/nano.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=demo/scene/nano.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/nano.zip
+installed nano
+install nano: rc=0
+{
+  "schema":1,
+  "name":"nano",
+  "version":"1.2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"nano",
+  "installed":"2026-09-29T17:52:36Z",
+  "origin":"https://archives.arosworld.org/share/demo/scene/nano.x86_64-aros-v11.zip",
+  "archive_sha256":"a152ccaae2fb6d53bb5fd04fa0f7bef56eb3e683f732775d12ecfd188e440ee7",
+  "archive_size":3900507,
+  "reason":"explicit",
+  "dir":"nano",
+  "requires_system": [
+    { "type":"library", "id":"SDL.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"readme.txt", "sha256":"613a9beee53214a02c21d0349b0e950e136ec4dd11c71b9b7fd79cd7f0e30a0e", "size":9068 },
+    { "path":"nanologo.png", "sha256":"9775b0e39a79eda6020129884d35a3c59a31a02cc37bc8fffd9547208ac188e5", "size":14208 },
+    { "path":"nano_aros_readme.txt", "sha256":"324f8537f7c3d141b64a5a1385feb74aee3deddfb93a6313cee7763355d4376c", "size":672 },
+    { "path":"nano.nfo", "sha256":"84d1468c3d9cac7a3ddbe790c12ba08085b3453e0722ce6e99a889d3c7d08fa0", "size":440 },
+    { "path":"nano-aros-x86_64.info", "sha256":"70e342a2aa7c53a0abc9f98d01e6899007c7c0480300aea1771f8864831b4400", "size":3281 },
+    { "path":"nano-aros-x86_64", "sha256":"328ff74feb4ded4fa2625eebc9dc46303aac0a898ff6a2bf32e83300d6c973de", "size":550448 },
+    { "path":"data/water.mol", "sha256":"e07bbf30256027ec2fd01bdb0b7d55383ed6334cd23985133b30be14bc3f7af1", "size":72 },
+    { "path":"data/tunnel.sprite", "sha256":"c515fc79610761721a801a650c22558e76cca4050886c3534fb403765bf4c2eb", "size":262152 },
+    { "path":"data/t_plastic.sprite", "sha256":"fe304def9ebf6daab39cf3e2a429ebb45634112e3c9a1dd4de50197fe5c652aa", "size":10608 },
+    { "path":"data/t_misc.sprite", "sha256":"76f636fe32666fd501f631a0203c8a83dd0ced6d948e9c24946a40163861cabb", "size":66360 },
+    { "path":"data/t_mds.sprite", "sha256":"20a6eba2e63454885593b12fae645c392e3ea131bb1bfc6b3c0165f0b62e2226", "size":17608 },
+    { "path":"data/t_kat.sprite", "sha256":"74805ff1d8029b4f842eac2c3193723161fc77b6b3b48c9edec8cb694753f003", "size":12308 },
+    { "path":"data/t_drg.sprite", "sha256":"065f191b898f39cdb68ca9dbecc58f6cc6b338d69ad856228cd4831fca54ed85", "size":11508 },
+    { "path":"data/stars.sprite", "sha256":"0817e6852bf5940afdc6dd13275cdcef9247ebf0c42c6a85d592d79b9f89cfcd", "size":92936 },
+    { "path":"data/sparkle.sprite", "sha256":"3055304e72622c7ec8489789fc6383845f342e9770cf8642d974122850633c77", "size":204 },
+    { "path":"data/snowmap.sprite", "sha256":"0ae38661cbc6f364da04b042ee9a7d30a6f88b2aa3eb9b756fc817ed53ba5918", "size":262152 },
+    { "path":"data/snow_z.sprite", "sha256":"98d2c525b16be45d9ddcb879054919b8a25c7f34ff805838dab14caa200fe7f5", "size":492 },
+    { "path":"data/rohr.sprite", "sha256":"b4b005cd83a44569c1ba83a1348eff42e6854756b319c6235f2756c72b2313d3", "size":168968 },
+    { "path":"data/numbers.sprite", "sha256":"220b1ac5057e5369e92aa525e0df4646c553b10a6c3d97a936824456fccb0e51", "size":2888 },
+    { "path":"data/nanologo.sprite", "sha256":"941585aecee79fcee28bc7eefa2dde9e1d6e78a54188e3714122733d85f2e40f", "size":92936 },
+    { "path":"data/nano.music", "sha256":"c4711ae1c722b710e9e5ef8ac0a8f01c2a7f82abeae841b85899a9e7271b628b", "size":2906575 },
+    { "path":"data/lsdecal.sprite", "sha256":"586d63dde91e27f90c1912581e88105676723276c05abf54d7d5f46a875356c0", "size":92936 },
+    { "path":"data/loading.sprite", "sha256":"e9d7177df2148974078d130bcde36604b2f088222c1a0b2827b0e1519bc20fb6", "size":92936 },
+    { "path":"data/heightmap.sprite", "sha256":"3c87fc7741d3380a3fff4de7e5438d43cf716e497a04b7177e28183e5d479b97", "size":92936 },
+    { "path":"data/greetbg.sprite", "sha256":"b466bf70e36e88b32fc3296950fe15b622aca762829c15975de5841cef94526c", "size":270344 },
+    { "path":"data/frame320.raw", "sha256":"ef9200bc3c0726a28601fa0b0f95325386861576f0f93895fc05addc4bd6e62a", "size":76800 },
+    { "path":"data/final.sprite", "sha256":"a32fe0dbfc5ce85315999d394d9670d43b592f0b8d4a49b418e30b795d5d90bd", "size":92936 },
+    { "path":"data/ethanol.mol", "sha256":"dc182f063c99eaecc97ab7721ed3cdf53d034fe3855e9861530761fd13ec0526", "size":216 },
+    { "path":"data/earthmap.sprite", "sha256":"d68ca3e2b0a7313a55f1dd224c8a898307c65236eeb70339ed6b8c802231e1c0", "size":524296 },
+    { "path":"data/detector.sprite", "sha256":"5ae300eecc680d53dc2adbfc530e5cd210daab537122da2c4257c6abf0118b6a", "size":280584 },
+    { "path":"data/cyte.sprite", "sha256":"ce71adf610b50ca5eb57a05ce910505f259f040d551a4c3266095a7a055f6e24", "size":32776 },
+    { "path":"data/cubic.mol", "sha256":"bb6beb2ea302c63a4ab065bdd2f717be0ff7196b7635678c75f6d127b3ac5243", "size":2808 },
+    { "path":"data/cross.mol", "sha256":"4ae1ebcd5ff119f7881cde531bcc28a1085f47f0f8582d19df04f5bc07aac8f8", "size":168 },
+    { "path":"data/credits.sprite", "sha256":"e80c908bf0679c047569df21c40912e9a053df20a46fc499d6d81c70aa73ebe3", "size":50696 },
+    { "path":"data/core_u.mol", "sha256":"cdbd43c7561f8983e1bec1248fbb99b8f0d01e94e48b0dd3e9f7817fc2f0b457", "size":1912 },
+    { "path":"data/core_si.mol", "sha256":"55c469a08a37b0c4b97c2c558249d833400a8721f3fe0daa54beb2658feabfe1", "size":248 },
+    { "path":"data/core_he.mol", "sha256":"70eb27b368491a7a13c3de2ee42c20165ee5b7ef2d0138decbf2626b95c87910", "size":72 },
+    { "path":"data/core_h.mol", "sha256":"9fb4ffb203c72222dc69c0568007db606c065d7fbe7059837c5b99729532a689", "size":24 },
+    { "path":"data/core_c.mol", "sha256":"7bb84547b287dbfbcd39074e57661419ce4736d6987619386fcf59eb478887cf", "size":120 },
+    { "path":"data/core_au.mol", "sha256":"74ace4f4340fd07d646e24a237fc747e3ea9ef72dbf735a6a34626eaab8a44a9", "size":1560 },
+    { "path":"data/colormap.sprite", "sha256":"4d5783fa8926cfba1365228482a48298c839592ca2d7fddd6a339886a64f2be8", "size":1032 },
+    { "path":"data/cnt.mol", "sha256":"6481a90fbac313bde852447bd77609a553d693f4f84a0931d267b68f00c1f3fe", "size":1544 },
+    { "path":"data/cell_small.sprite", "sha256":"6ecda85f393a6d9ef5180e36f655dfb9e231897745f53671fffafce85362fbc2", "size":492 },
+    { "path":"data/cell_scale.sprite", "sha256":"2bf4126f92dc7ab836c64fe4acd85cd7b6ad366068db3af517b9c224a4ebc818", "size":4424 },
+    { "path":"data/cell_medium.sprite", "sha256":"b07a77dc0755eb95ee1169322f183c1e7b970e4839059ed352fbd7632ee4a102", "size":2508 },
+    { "path":"data/cell_big.sprite", "sha256":"ce27c12ebbc3c8ebb77c9db50ef46496de4b55b44da83041d0a7d03cd8006dfa", "size":16392 },
+    { "path":"data/cell_background.sprite", "sha256":"2809d5907c5c18e4991aacef71f789a1f91a18df993bf2ca49fdbbbef321262e", "size":92936 },
+    { "path":"data/buckyball.mol", "sha256":"1d3ed007832f893d316f4d397cbb5bd3e4cf2cee2d1d116c983e82afea582783", "size":968 },
+    { "path":"data/benzol.sprite", "sha256":"8bac6b9e8797bf6e160a77aac1a4b5d90b3f5314dfb8df06bf73ce8e3e8609df", "size":36676 },
+    { "path":"data/ball9c.sprite", "sha256":"4564ac26704fe1d13c83eafd252593aa363f5c2b654737ffa876acf318063c8e", "size":332 },
+    { "path":"data/ball9b.sprite", "sha256":"78b9c439e2b99c938c331f0f6d14968e1722b896ad95117bf1b6934268522228", "size":332 },
+    { "path":"data/ball9a.sprite", "sha256":"98ded12fe650dbb1e79c3b9836f3e4255c83ae559e9d4e7656d7161e9ee5429f", "size":332 },
+    { "path":"data/ball33b.sprite", "sha256":"101f504fe19e820925002597a368876d918ddaba2e32cf115811289332acfec8", "size":4364 },
+    { "path":"data/ball33a.sprite", "sha256":"6d25f7186599f0ca3a9635efe2ccc0944801a2f2ca920570809687bf9f31a350", "size":4364 },
+    { "path":"data/ball17gy.sprite", "sha256":"e8de06d2109562788368bcb8f861becd4b4c41d40f8f6f80ea02f12f3721a043", "size":1164 },
+    { "path":"data/ball17gc.sprite", "sha256":"be906a9af5aa33d57673b5c78026dbe8a3c393857a1ce61d3ae0f6f01e5a6db4", "size":1164 },
+    { "path":"data/ball17g.sprite", "sha256":"77f276634d61d5de2735ab9abe1050318bb60a6e35dc94613bba5ca70ce4ea63", "size":1164 },
+    { "path":"data/atombg.sprite", "sha256":"cdb26e2b7cfbdae3cddce6e93adcd72f2f9b3d02c211530da81948b543e81cab", "size":92936 },
+    { "path":"data/animalbg.sprite", "sha256":"c3ad096cf4dc15075aa9bb5fddc0ec69f928300768c7da2102a7bdd0f10eb3d1", "size":131080 },
+    { "path":"data/animalb.sprite", "sha256":"e3b9b0c054bf205c5702fa1b1880303d48892ed2d1a87ccb46ce75f6f042fa45", "size":40840 },
+    { "path":"data/aeffchen.mol", "sha256":"0e6f494661a2a39c5dc7182e1e20ad947a5e1551b8a59f3fd6c72030485ddadc", "size":4104 }
+  ]
+}
+
+==== prboom-plus
+Tuesday 29-Sep-26 17:52:36
+fetching https://archives.arosworld.org/share/game/fps/prboom-plus.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/fps/prboom-plus.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/prboom-plus.zip
+installed prboom-plus
+install prboom-plus: rc=0
+{
+  "schema":1,
+  "name":"prboom-plus",
+  "version":"2.6.66",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Prboom-plus",
+  "installed":"2026-09-29T17:52:38Z",
+  "origin":"https://archives.arosworld.org/share/game/fps/prboom-plus.x86_64-aros-v11.zip",
+  "archive_sha256":"97c135f98a8fbc82b02101a629ae6eb75212bf25e02d8bc01da90219a81ea49d",
+  "archive_size":4110698,
+  "reason":"explicit",
+  "dir":"prboom-plus",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5671622ce9506fb4c9bd9c7842ea2cfba48a99b26f8e115f39867f8572c6b032", "size":11932, "member":"Prboom-plus.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"README.aros", "sha256":"9c885cb7e0d87520ab1e189ed1c0efb70288fb465431caef582cbfb7bd29f010", "size":955 },
+    { "path":"README", "sha256":"a4d62f5bbba37f4841cbf236001e0c3e93225c63f0fb73da2ba229d11a694c73", "size":9207 },
+    { "path":"prboom-plus.wad", "sha256":"29e6e18023cf39319f9984107f5f0f796b2593b1c3a55fc79adf3ae12498a6ce", "size":357768 },
+    { "path":"prboom-plus.cfg", "sha256":"fae3c0799ed9afcc1eab0f02c3d9913cd075b1dac1731ab73b9d4c72c4f00d6e", "size":21884 },
+    { "path":"prboom-plus-game-server", "sha256":"61c9a34b5b294948968c75f4d6cb4fcfa2dca3dc20fa51a1ac5622ec66b1636e", "size":7945896 },
+    { "path":"prboom-plus", "sha256":"9a1e9356037c38e88ba6a0c9ce264d2394b82735b454e23b77d13311fc3c7bf5", "size":7464840 },
+    { "path":"NEWS", "sha256":"515121e30778e26d71408b3386476738b3513a87ec58357f4968540605f633b7", "size":19330 },
+    { "path":"music/readme.txt", "sha256":"c052c9e17feffeb515010f7c0a3ea6675e50e9249e3c5cb61e9926f144b6d80e", "size":46 },
+    { "path":"doom/readme.txt", "sha256":"cb2e1ed7dc0c8885a02130e232b4681ba343a656fa24fc68ed88201cdc1e1e9a", "size":38 },
+    { "path":"COPYING", "sha256":"1cba07ce0f6d1366d84b7cc62b76966ba79075e5f379c1e230c3ff0635fa789f", "size":18077 },
+    { "path":"AUTHORS", "sha256":"781b6ad8239102ab79feb70c8630d86158e62646f24197f6aeeb27c899e1149f", "size":5489 }
+  ]
+}
+
+==== soniccd
+Tuesday 29-Sep-26 17:52:38
+fetching https://archives.arosworld.org/share/game/platform/soniccd.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/platform/soniccd.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/soniccd.zip
+installed soniccd
+install soniccd: rc=0
+{
+  "schema":1,
+  "name":"soniccd",
+  "version":"1.3.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"SonicCD",
+  "installed":"2026-09-29T17:52:38Z",
+  "origin":"https://archives.arosworld.org/share/game/platform/soniccd.x86_64-aros-v11.zip",
+  "archive_sha256":"1bdbee9cd40971ef11d516aeb99c3429ec9025b020221118398b03d832558f5c",
+  "archive_size":1512590,
+  "reason":"explicit",
+  "dir":"soniccd",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5671622ce9506fb4c9bd9c7842ea2cfba48a99b26f8e115f39867f8572c6b032", "size":11932, "member":"SonicCD.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Sonic CD.info", "sha256":"041662ded7a574c7fa78b50798ed77061c9cf255965ec974cf1ed8e33196d588", "size":9952 },
+    { "path":"Sonic CD", "sha256":"412c5d105dcbd5f0f16a7100a3f16e8447d320feccfdc95445a3392e2aa90c02", "size":7716528 },
+    { "path":"settings.ini", "sha256":"cbb977d16d8aed83d90bce3b83da91973a59b37d5d532d7abe1afc797e0c1897", "size":3098 },
+    { "path":"README.md", "sha256":"c13e42c65dd02b05e7d110c7969703e525ee357b964574627fbb15bd09657926", "size":9384 },
+    { "path":"README.aros", "sha256":"a84b2dda24ec5a36f6e9f685696e54287b018d237162b31f044565e752b51e7f", "size":50 },
+    { "path":"LICENSE.md", "sha256":"246bd73e423fb53a1cbaed527b6677656d6f4ff3d4db53d23004d33712853eae", "size":1610 }
+  ]
+}
+
+==== tiltnroll
+Tuesday 29-Sep-26 17:52:38
+fetching https://archives.arosworld.org/share/game/action/tiltnroll.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/action/tiltnroll.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/tiltnroll.zip
+installed tiltnroll
+install tiltnroll: rc=0
+{
+  "schema":1,
+  "name":"tiltnroll",
+  "version":"1.2.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Tilt-N-Roll",
+  "installed":"2026-09-29T17:52:39Z",
+  "origin":"https://archives.arosworld.org/share/game/action/tiltnroll.x86_64-aros-v11.zip",
+  "archive_sha256":"5958ddfe6d0a9da13b2a6d3ce0d74c48bffacc65f7d12b47022f6808a688419e",
+  "archive_size":1609016,
+  "reason":"explicit",
+  "dir":"tiltnroll",
+  "requires_system": [
+    { "type":"library", "id":"SDL.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"e57e066877638d582ac11d59eb98c7d15d368e71c7269536a9986bc523b9764b", "size":10375, "member":"Tilt-N-Roll.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Vera.ttf", "sha256":"c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d", "size":65932 },
+    { "path":"doc/COPYING", "sha256":"ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6", "size":17987 },
+    { "path":"doc/README.txt", "sha256":"7b0f58527b26e79919e5a8cdb07984924089560ca99c4389ae7b557fac01b3db", "size":4635 },
+    { "path":"doc/tile-descriptions.txt", "sha256":"bae2c42c141eeed9e351ae336d52a22f96f67f81c288f2efbf40885a064bac29", "size":778 },
+    { "path":"tnr.ini", "sha256":"c8757ac97f3135f4d9cc48361d54796aa0b0d37a54e726b555f06b9da1d6d681", "size":15 },
+    { "path":"Tilt-n-Roll.info", "sha256":"439eef8f7f1ce559919a92bbdefac9783386972a20f07e98e21bbe16263085b7", "size":717 },
+    { "path":"levels/tough.lvl", "sha256":"b16c12002e8bb238e4c766f1cfe4973c9782de862b09936b924d17a80559271b", "size":69760 },
+    { "path":"levels/testing.lvl", "sha256":"4ee93c911fdccbc2c146d5d33b5534b44bb8fdc9dd237f22d7f423774f8f707f", "size":4208 },
+    { "path":"levels/easy.lvl", "sha256":"fe91565145846303da7308cacade99b3e85de2efd5621a38d24e9033119f728e", "size":69760 },
+    { "path":"Tilt-N-Roll", "sha256":"71526b3f3b41eb40ad00b040139f3b5805ef68e48528a3600ee8500bea5a51f0", "size":1641200 },
+    { "path":"img/boxtex/0.png", "sha256":"00d502058ed1e378fd2c9b4516e9cada05e9f90d73e15de8f962f2ed152dec61", "size":151 },
+    { "path":"img/boxtex/1.png", "sha256":"f127d531456c7355b19fcb352028b49ada6e15461bb556fadccce2005781a7ed", "size":235 },
+    { "path":"img/particle/4.png", "sha256":"6bc31c0d7a3786f5007e56f3536572e253b49302fba13962c23d1bba5253ff43", "size":261 },
+    { "path":"img/particle/0.png", "sha256":"ae09176748a4d38b957f52c60fe92fdc66f3428dffb7eeda35eba049e8bbe5c2", "size":1267 },
+    { "path":"img/particle/2.png", "sha256":"6fe2829dfabed2ff1481506685eaaccdcd133be8db267390ec161cd29d550d8d", "size":2522 },
+    { "path":"img/particle/1.png", "sha256":"eef8b04cf9d515cc4177d23f77f2247e93f7675adf1f064dbc9dac4913323514", "size":801 },
+    { "path":"img/particle/5.png", "sha256":"4e9c6eee4e5f65e1ccc43e3be17295f8368db0b56f703787529828dd3cc22f58", "size":261 },
+    { "path":"img/particle/3.png", "sha256":"59dc04bd5e153f7960676b5f7a100a72300d2a313ea7d2c68ca178a684494542", "size":264 },
+    { "path":"img/ui/title/4.png", "sha256":"0587caae14c51d7bf08ee402571ae20893e2dcecf285e05d8c6ba493ff4814a3", "size":209 },
+    { "path":"img/ui/title/7.png", "sha256":"1ac30b6dda6f0376cdaf4a03578ce57ba90413360ae7007468be0a81b7bd6401", "size":2313 },
+    { "path":"img/ui/title/0.png", "sha256":"6a8303e2590632188e4cc36674abec5597df17508bf82cf4ede503ced213a244", "size":204997 },
+    { "path":"img/ui/title/2.png", "sha256":"c43979f71d04636f9a7bfb4cea52635b213e7897a982879b8673ddd90922fc35", "size":141 },
+    { "path":"img/ui/title/6.png", "sha256":"bfa7166bd3732534b9cc95da4df2547c9cd1a60780d7b90542dd43deca1f4830", "size":211 },
+    { "path":"img/ui/title/1.png", "sha256":"865e4b48ffde400c9a51f9ce12be276c9ca601bd43a7324e5a850701829913f1", "size":53667 },
+    { "path":"img/ui/title/5.png", "sha256":"7d42ed31defb3403f64881801387058fbdd9da58dc34cb7c807a8ee99c7db87e", "size":186 },
+    { "path":"img/ui/title/3.png", "sha256":"57fa5113d047f71e70e740fd434872c9d6048d2108c1aa9c197c21766a5927aa", "size":133 },
+    { "path":"img/ui/editor/0.png", "sha256":"c60362a1cd5e70acb78e2cd852f25ecd245ce91c561f5fe6fdcd44564ebfd5d2", "size":634 },
+    { "path":"img/ui/options.xcf", "sha256":"67fb320e42668737fc67f49fb0106e43665e3df6e0860fcda9c2e79710d4883b", "size":190595 },
+    { "path":"img/ui/game/hud.png", "sha256":"d1d62fc2f13a94fd1e0d9aa8748ae5fa4dd40e6b018d8a3a6228343bb613038a", "size":8818 },
+    { "path":"img/cursor.png", "sha256":"d547d291ee50a62411df5d26de9db67d83e78c7596f7263e92636d5c929629a2", "size":210 },
+    { "path":"img/tiles/0/26.png", "sha256":"3b6b5767a0ca35213cd34cc2135b0a5adcd7bcc4e34eb9c55fd3d34d657b1b25", "size":697 },
+    { "path":"img/tiles/0/23.png", "sha256":"0d80040b0bd0f3ad66cde328392835adf28812accd8c26681ea4f88514f1ce67", "size":635 },
+    { "path":"img/tiles/0/4.png", "sha256":"8b3174e93b6bf44907545fe31b38f42e881fecc108f19b3cdade7a9539f5caba", "size":8431 },
+    { "path":"img/tiles/0/10.png", "sha256":"1acf87c57c0f715564253f24f51f6ed5aa448b9af0bea779bfa31feaa3ce0c34", "size":543 },
+    { "path":"img/tiles/0/29.png", "sha256":"5597894da215f4a8253f18c595d9fe15cfd42df6e61ddba37c13290a7723adee", "size":624 },
+    { "path":"img/tiles/0/25.png", "sha256":"fb3885c4e0b3891cc7217c4a2d42156e43b848b0d4c2f76be53e78ddb705652a", "size":664 },
+    { "path":"img/tiles/0/24.png", "sha256":"9db8316d81c01e4fa2d259a363e0482fa881327caae631b9dff845e75f338379", "size":609 },
+    { "path":"img/tiles/0/30.png", "sha256":"53cdb2587db7c7f7451c24d8cebbe314e0bc66e039ad8c84ce8b71279725fcf0", "size":710 },
+    { "path":"img/tiles/0/7.png", "sha256":"206d7bbf22d6595b021accd20f3555bed07ad1cca7e5f61bf5252bd381b7637e", "size":548 },
+    { "path":"img/tiles/0/0.png", "sha256":"7af2732461f22844f90357234e1022ef0aab5328a38631ae71a0b4dddbedd635", "size":475 },
+    { "path":"img/tiles/0/8.png", "sha256":"ad4caf1ae5ec657beff1980f3754d9cf6f71934c003b7c7834df1d3086a10bff", "size":706 },
+    { "path":"img/tiles/0/14.png", "sha256":"03dcda484181ff2c435b65f4cb0b32883137c93e89632f670b18672c1d9ee039", "size":547 },
+    { "path":"img/tiles/0/2.png", "sha256":"b90bacfa6d1e3dc6432dfa81e9fc64c7bf55c9403e800dc45030b168c04b085a", "size":481 },
+    { "path":"img/tiles/0/19.png", "sha256":"1ea2d579f2ebd3281c03cc1ac0dedc82e85c52e3c8cd0fd995ab764917c42972", "size":528 },
+    { "path":"img/tiles/0/11.png", "sha256":"ad20c1fff8b0dc618e2d28c7fc55117c64c70a1fc1df9a30ae9c8b0606d590aa", "size":659 },
+    { "path":"img/tiles/0/31.png", "sha256":"556b5613516b3f99415f0a0559b617a7a808d49f6a4472e6a920aad557c52ca7", "size":668 },
+    { "path":"img/tiles/0/27.png", "sha256":"c0570e2190d25faf44e711db0369f79a3855993eff5cde18105aaf672aa3d0d2", "size":703 },
+    { "path":"img/tiles/0/20.png", "sha256":"218d610ba950cd206b338a785556a28975d92c977e0bffcdb34e3a9c21525c52", "size":564 },
+    { "path":"img/tiles/0/6.png", "sha256":"e767615563c7f39df1fe9bb9248d7031bcc077d0a0f649ea470f73c0ac5a197c", "size":484 },
+    { "path":"img/tiles/0/17.png", "sha256":"b2a06459fe2c85deca19fb41f7e546cc1eb508c624824ee89d0e11f6fdd95879", "size":362 },
+    { "path":"img/tiles/0/15.png", "sha256":"724c89a09211aa82fc9bed38f2bed9f31363ee4a93de10b08c83893b110365e8", "size":362 },
+    { "path":"img/tiles/0/22.png", "sha256":"2601a9da8d55f420d08a0b05c3c0b18f78ab76bad0bbf11fac0e8d6fabab8be3", "size":578 },
+    { "path":"img/tiles/0/9.png", "sha256":"0d7bf9ec22240653088afacab74242415bc33e8508e3a4c24633d369f34454f5", "size":651 },
+    { "path":"img/tiles/0/18.png", "sha256":"fa9f1d416de3e14db11b68b270835f2b805079b7b5a06ced281d3b57fdf69ba4", "size":498 },
+    { "path":"img/tiles/0/16.png", "sha256":"637d1daa932e91f7b99854f259c08ffc88cdcbeb064350cb50082de291eebcbc", "size":362 },
+    { "path":"img/tiles/0/21.png", "sha256":"9f9c9d06c6de52aa3b8ba77bea17ad152af03e5c7180c4ede1081e0144512812", "size":570 },
+    { "path":"img/tiles/0/1.png", "sha256":"d1742df8f381f1ea4fe16fb353f998c515dc6cf02709e3e2d5cd38e06da65572", "size":443 },
+    { "path":"img/tiles/0/12.png", "sha256":"aa1088df6216bc43a209bf9a2825aac7b3ce40ac8c29904cc73c18b3c939294e", "size":547 },
+    { "path":"img/tiles/0/5.png", "sha256":"2068510eea994ae0320f7e744e082780171a959b679bae792090f99d1f9d379a", "size":4590 },
+    { "path":"img/tiles/0/13.png", "sha256":"edd17216caef0948b7959143392534c290fc78898ef39134b7c86eb53e1ef78c", "size":547 },
+    { "path":"img/tiles/0/3.png", "sha256":"26a5a94ccdff0d18e3fcd94877115803bc3fd1f48eba3760425597b8b369a4e7", "size":462 },
+    { "path":"img/tiles/0/28.png", "sha256":"323767b96b27f9b68481aefa96a9b4232d4fff1d557eddc597ef5881341d80c5", "size":619 },
+    { "path":"img/tiles/1/0.png", "sha256":"afe4437000827009561528b52b101d9844aead74db8b4b48d4acc797d43e0593", "size":3359 },
+    { "path":"img/starry.png", "sha256":"da9ac12eedccb1cb506af6ae9e27c7b6c816503ba894f37bec657eb982c14c71", "size":73892 },
+    { "path":"snd/game0.mod", "sha256":"6649a5fb9cae19a5def6e768b5c702867966a1a6bf3f901356221b1f4ef1e535", "size":23942 },
+    { "path":"snd/game2.mod", "sha256":"3a53ece2e570ab6154ec16d7dfe82b6cde5214c18140fc0ec88df2f3c218def3", "size":18888 },
+    { "path":"snd/title.mod", "sha256":"10b26ca41bfaf957fc0147ab146ea2141efe8aec27fba2413a169e61f3922cd4", "size":8254 },
+    { "path":"snd/editor.mod", "sha256":"6c15df37da4903d7c38e59f6639ca991029717de6f95b98a4553b14ac624499f", "size":20010 },
+    { "path":"snd/game3.mod", "sha256":"c4ecdae6ea852236379460f830f5a0c551c3a1a4cd07d6d99b06d4ad359c5e40", "size":11322 },
+    { "path":"snd/audio.txt", "sha256":"d4c2170fdb5dbcf2779ea5f38dff324f35dbe3e5a16a7cf9855706965e583f0d", "size":212 },
+    { "path":"snd/fx/1.wav", "sha256":"75a4bbe18938347c13f5ba168754e13439824d188d9e2403a80e72206e4f06c0", "size":24304 },
+    { "path":"snd/fx/12.wav", "sha256":"0d4bd2b923749e8f7a3cebeda724865dca138291b523ac511bd50d9c5c3f9379", "size":16278 },
+    { "path":"snd/fx/7.wav", "sha256":"998b1e818bed3dd0233ef23ce231328ab85d911e8179d914d32aae0a9bcc24c1", "size":23134 },
+    { "path":"snd/fx/14.wav", "sha256":"1ac2d6dca1863e1959dd3a054d52dc53dbc310282b9a5dc900ac62dda1bdf856", "size":7232 },
+    { "path":"snd/fx/11.wav", "sha256":"c742a63c6d08bf13b7fb7bfc307d84ba0e6ae8c9e577b4d3adf193a8353c6a28", "size":91222 },
+    { "path":"snd/fx/15.wav", "sha256":"e1acfa030fb158eb53abc3f6325d8cede83052ddd05c975ea269825d01a4bdb7", "size":17492 },
+    { "path":"snd/fx/17.wav", "sha256":"41cbc95ab7382b87cd7cea19f335230ca3c7153a8bbd49f47319a4d5f101233d", "size":47660 },
+    { "path":"snd/fx/6.wav", "sha256":"415e5d9246d4e4a96c0deff10f0b7ac6bff8378eb5b8978d33926f23e5b03d17", "size":42328 },
+    { "path":"snd/fx/9.wav", "sha256":"d5dbefe774901562165e8c23593046c70f3252b80fed30fc4024b8b12a67fd02", "size":24192 },
+    { "path":"snd/fx/8.wav", "sha256":"9dc4d9e2051e558533cd134c314e0ea681fb37ed9d4166679c88d8ffffce672c", "size":102320 },
+    { "path":"snd/fx/16.wav", "sha256":"a82812294393bd6e3e4b60281d08b8d45d5fe2d14050dbdd2985f903a7acec8c", "size":13644 },
+    { "path":"snd/fx/10.wav", "sha256":"a3c0d6f42f6f91586902a01c85528f833d816dd4731daa82a31d73ca049615f5", "size":19742 },
+    { "path":"snd/fx/0.wav", "sha256":"844b26ff1882bc4e01a826850b06b97cb65021e3133b755bfe8bf70928694d06", "size":73066 },
+    { "path":"snd/fx/18.wav", "sha256":"d56fcfb5fa1fd13173155dc4ac95214ab6272bc3625e1f7fdad091512a78eb27", "size":35502 },
+    { "path":"snd/fx/2.wav", "sha256":"3d1a0870ea62785df1a897c104725e77a67dd0a3d752da0224d274578a632732", "size":12530 },
+    { "path":"snd/fx/5.wav", "sha256":"dab868c3cd4087c371ac27e45018afecc3fc8faf0aa62912d279dd3334aa8c5e", "size":87924 },
+    { "path":"snd/fx/4.wav", "sha256":"206cddc5647b507cbc5bee09e0741de1b3c52ba150d410b2f2d060a6511a2923", "size":7602 },
+    { "path":"snd/fx/3.wav", "sha256":"cfad4ff1619f6f4e0be59daca1a6cc5153ff7b48bb54b2f99a06158fed5eb0f6", "size":5450 },
+    { "path":"snd/fx/13.wav", "sha256":"001a613534c57809b784ae6e5e8b909b80fce087e9e648eec883cb2932f360b3", "size":14296 },
+    { "path":"snd/game4.mod", "sha256":"df72bf37b3efeb9a3cdcf9acd0b84bebdad1856ef9c77ee52801aaedfafad68e", "size":15706 },
+    { "path":"snd/game1.mod", "sha256":"5ce47b66c0f2d205f9bf1de051fc4011db7f34e611c0a3178238b35417a6c058", "size":31996 },
+    { "path":"snd/game5.mod", "sha256":"3a85fd00a39f35a0ecd24c691b86e5077a3b18aad945cde4884a90cf1fbb1612", "size":12858 },
+    { "path":"snd/game7.mod", "sha256":"2198465393ed6827d580dd480168da9b791d70bd02960c031f50f7f3da657a3b", "size":22874 },
+    { "path":"snd/game6.mod", "sha256":"a3fb66920530e4a7d682d4944423f3f0c9ba64ef86bade9de20a63bcd5f971b4", "size":31860 }
+  ]
+}

@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/apotris with
+# Run and input from NIL:, stack 100000 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch c07).
+
+status          = "approved"
+id              = "apotris"
+version         = "4.2.0a"
+summary         = "Tetris-style block-stacking game"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/puzzle"
+url             = "https://archives.arosworld.org/share/game/puzzle/apotris.x86_64-aros-v11.zip"
+size            = 9330924
+upload_date     = "20260504-18.41"
+selected_by     = "only-candidate"
+
+sha256          = "f60006ee29ab8ad240768adb57f3a3b1b9d6097a6440d71d3dff24fd2f45efcf"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Apotris"
+icon            = "Apotris.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

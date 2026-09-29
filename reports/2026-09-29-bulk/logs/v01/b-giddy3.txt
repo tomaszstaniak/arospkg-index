@@ -1,0 +1,7 @@
+==== giddy3: giddy3, stack 400000
+Tuesday 29-Sep-26 19:39:32
+after 15 s (a number means it is running):
+ 9
+after Ctrl-C (empty means it has ended):
+ 9
+Tuesday 29-Sep-26 19:39:58

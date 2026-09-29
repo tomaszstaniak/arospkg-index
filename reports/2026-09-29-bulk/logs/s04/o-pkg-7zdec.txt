@@ -1,0 +1,10 @@
+7z ANSI-C Decoder 9.13 beta : Igor Pavlov : Public domain : 2010-04-15
+AROS port by David Bergantin - 17-may-2010
+
+Usage: 7zDec <command> <archive_name>
+
+<Commands>
+  e: Extract files from archive (without using directory names)
+  l: List contents of archive
+  t: Test integrity of archive
+  x: eXtract files with full paths

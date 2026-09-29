@@ -1,0 +1,36 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/gisplita with
+# Run and input from NIL:, stack 40960 bytes: it printed its usage or output
+# and returned 2. Evidence: reports/2026-09-29-bulk/ (batch s04).
+
+status          = "approved"
+id              = "gisplita"
+version         = "1.5"
+summary         = "little program to split large files"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/shell"
+url             = "https://archives.arosworld.org/share/utility/shell/gisplita.x86_64-aros-v11.zip"
+size            = 36387
+upload_date     = "20260829-20.47"
+selected_by     = "only-candidate"
+
+sha256          = "0ae2c8cd26b758cdcad446c3779f34d7ba0ca5bb50db09d47550a4ade7720bba"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Split1.5"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,358 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8802
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8802
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== adoom3"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install adoom3
+Echo >>RAM:L/a.txt "install adoom3: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info adoom3
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== daysleeper"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install daysleeper
+Echo >>RAM:L/a.txt "install daysleeper: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info daysleeper
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== finder"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install finder
+Echo >>RAM:L/a.txt "install finder: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info finder
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== hostile-takeover"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install hostile-takeover
+Echo >>RAM:L/a.txt "install hostile-takeover: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info hostile-takeover
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== nano"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install nano
+Echo >>RAM:L/a.txt "install nano: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info nano
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== prboom-plus"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install prboom-plus
+Echo >>RAM:L/a.txt "install prboom-plus: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info prboom-plus
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== soniccd"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install soniccd
+Echo >>RAM:L/a.txt "install soniccd: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info soniccd
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== tiltnroll"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install tiltnroll
+Echo >>RAM:L/a.txt "install tiltnroll: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info tiltnroll
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >RAM:L/b-adoom3.txt "==== adoom3: ADoom3, stack 10000000"
+Date >>RAM:L/b-adoom3.txt
+If NOT EXISTS SYS:Batch/adoom3
+  Echo >>RAM:L/b-adoom3.txt "adoom3: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start adoom3 "SYS:Batch/adoom3" ADoom3 10000000
+  Wait 15
+  Echo >>RAM:L/b-adoom3.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-adoom3.txt COMMAND=ADoom3
+  If EXISTS RAM:L/r-adoom3.txt
+    Type >>RAM:L/b-adoom3.txt RAM:L/r-adoom3.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "adoom3"
+RAM:b/putfile >NIL: RAM:L/m shot-adoom3 8802
+Wait 4
+Status >NIL: COMMAND=ADoom3
+If NOT WARN
+  Break >NIL: `Status COMMAND=ADoom3` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-adoom3.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-adoom3.txt COMMAND=ADoom3
+If EXISTS RAM:L/r-adoom3.txt
+  Type >>RAM:L/b-adoom3.txt RAM:L/r-adoom3.txt
+EndIf
+Date >>RAM:L/b-adoom3.txt
+RAM:b/putfile >NIL: RAM:L/b-adoom3.txt b-adoom3.txt 8802
+If EXISTS RAM:L/o-adoom3.txt
+RAM:b/putfile >NIL: RAM:L/o-adoom3.txt o-adoom3.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-adoom3 8802
+Wait 3
+Echo >RAM:L/b-daysleeper.txt "==== daysleeper: Daysleeper, stack 40960"
+Date >>RAM:L/b-daysleeper.txt
+If NOT EXISTS SYS:Batch/daysleeper
+  Echo >>RAM:L/b-daysleeper.txt "daysleeper: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start daysleeper "SYS:Batch/daysleeper" Daysleeper 40960
+  Wait 15
+  Echo >>RAM:L/b-daysleeper.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-daysleeper.txt COMMAND=Daysleeper
+  If EXISTS RAM:L/r-daysleeper.txt
+    Type >>RAM:L/b-daysleeper.txt RAM:L/r-daysleeper.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "daysleeper"
+RAM:b/putfile >NIL: RAM:L/m shot-daysleeper 8802
+Wait 4
+Status >NIL: COMMAND=Daysleeper
+If NOT WARN
+  Break >NIL: `Status COMMAND=Daysleeper` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-daysleeper.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-daysleeper.txt COMMAND=Daysleeper
+If EXISTS RAM:L/r-daysleeper.txt
+  Type >>RAM:L/b-daysleeper.txt RAM:L/r-daysleeper.txt
+EndIf
+Date >>RAM:L/b-daysleeper.txt
+RAM:b/putfile >NIL: RAM:L/b-daysleeper.txt b-daysleeper.txt 8802
+If EXISTS RAM:L/o-daysleeper.txt
+RAM:b/putfile >NIL: RAM:L/o-daysleeper.txt o-daysleeper.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-daysleeper 8802
+Wait 3
+Echo >RAM:L/b-finder.txt "==== finder: Finder, stack 40960"
+Date >>RAM:L/b-finder.txt
+If NOT EXISTS SYS:Batch/finder
+  Echo >>RAM:L/b-finder.txt "finder: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start finder "SYS:Batch/finder" Finder 40960
+  Wait 15
+  Echo >>RAM:L/b-finder.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-finder.txt COMMAND=Finder
+  If EXISTS RAM:L/r-finder.txt
+    Type >>RAM:L/b-finder.txt RAM:L/r-finder.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "finder"
+RAM:b/putfile >NIL: RAM:L/m shot-finder 8802
+Wait 4
+Status >NIL: COMMAND=Finder
+If NOT WARN
+  Break >NIL: `Status COMMAND=Finder` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-finder.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-finder.txt COMMAND=Finder
+If EXISTS RAM:L/r-finder.txt
+  Type >>RAM:L/b-finder.txt RAM:L/r-finder.txt
+EndIf
+Date >>RAM:L/b-finder.txt
+RAM:b/putfile >NIL: RAM:L/b-finder.txt b-finder.txt 8802
+If EXISTS RAM:L/o-finder.txt
+RAM:b/putfile >NIL: RAM:L/o-finder.txt o-finder.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-finder 8802
+Wait 3
+Echo >RAM:L/b-hostile-takeover.txt "==== hostile-takeover: ht, stack 40960"
+Date >>RAM:L/b-hostile-takeover.txt
+If NOT EXISTS SYS:Batch/hostile-takeover
+  Echo >>RAM:L/b-hostile-takeover.txt "hostile-takeover: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start hostile-takeover "SYS:Batch/hostile-takeover" ht 40960
+  Wait 15
+  Echo >>RAM:L/b-hostile-takeover.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-hostile-takeover.txt COMMAND=ht
+  If EXISTS RAM:L/r-hostile-takeover.txt
+    Type >>RAM:L/b-hostile-takeover.txt RAM:L/r-hostile-takeover.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "hostile-takeover"
+RAM:b/putfile >NIL: RAM:L/m shot-hostile-takeover 8802
+Wait 4
+Status >NIL: COMMAND=ht
+If NOT WARN
+  Break >NIL: `Status COMMAND=ht` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-hostile-takeover.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-hostile-takeover.txt COMMAND=ht
+If EXISTS RAM:L/r-hostile-takeover.txt
+  Type >>RAM:L/b-hostile-takeover.txt RAM:L/r-hostile-takeover.txt
+EndIf
+Date >>RAM:L/b-hostile-takeover.txt
+RAM:b/putfile >NIL: RAM:L/b-hostile-takeover.txt b-hostile-takeover.txt 8802
+If EXISTS RAM:L/o-hostile-takeover.txt
+RAM:b/putfile >NIL: RAM:L/o-hostile-takeover.txt o-hostile-takeover.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-hostile-takeover 8802
+Wait 3
+Echo >RAM:L/b-nano.txt "==== nano: nano-aros-x86_64, stack 40960"
+Date >>RAM:L/b-nano.txt
+If NOT EXISTS SYS:Batch/nano
+  Echo >>RAM:L/b-nano.txt "nano: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start nano "SYS:Batch/nano" nano-aros-x86_64 40960
+  Wait 15
+  Echo >>RAM:L/b-nano.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-nano.txt COMMAND=nano-aros-x86_64
+  If EXISTS RAM:L/r-nano.txt
+    Type >>RAM:L/b-nano.txt RAM:L/r-nano.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "nano"
+RAM:b/putfile >NIL: RAM:L/m shot-nano 8802
+Wait 4
+Status >NIL: COMMAND=nano-aros-x86_64
+If NOT WARN
+  Break >NIL: `Status COMMAND=nano-aros-x86_64` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-nano.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-nano.txt COMMAND=nano-aros-x86_64
+If EXISTS RAM:L/r-nano.txt
+  Type >>RAM:L/b-nano.txt RAM:L/r-nano.txt
+EndIf
+Date >>RAM:L/b-nano.txt
+RAM:b/putfile >NIL: RAM:L/b-nano.txt b-nano.txt 8802
+If EXISTS RAM:L/o-nano.txt
+RAM:b/putfile >NIL: RAM:L/o-nano.txt o-nano.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-nano 8802
+Wait 3
+Echo >RAM:L/b-prboom-plus.txt "==== prboom-plus: prboom-plus, stack 40960"
+Date >>RAM:L/b-prboom-plus.txt
+If NOT EXISTS SYS:Batch/prboom-plus
+  Echo >>RAM:L/b-prboom-plus.txt "prboom-plus: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start prboom-plus "SYS:Batch/prboom-plus" prboom-plus 40960
+  Wait 15
+  Echo >>RAM:L/b-prboom-plus.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-prboom-plus.txt COMMAND=prboom-plus
+  If EXISTS RAM:L/r-prboom-plus.txt
+    Type >>RAM:L/b-prboom-plus.txt RAM:L/r-prboom-plus.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "prboom-plus"
+RAM:b/putfile >NIL: RAM:L/m shot-prboom-plus 8802
+Wait 4
+Status >NIL: COMMAND=prboom-plus
+If NOT WARN
+  Break >NIL: `Status COMMAND=prboom-plus` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-prboom-plus.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-prboom-plus.txt COMMAND=prboom-plus
+If EXISTS RAM:L/r-prboom-plus.txt
+  Type >>RAM:L/b-prboom-plus.txt RAM:L/r-prboom-plus.txt
+EndIf
+Date >>RAM:L/b-prboom-plus.txt
+RAM:b/putfile >NIL: RAM:L/b-prboom-plus.txt b-prboom-plus.txt 8802
+If EXISTS RAM:L/o-prboom-plus.txt
+RAM:b/putfile >NIL: RAM:L/o-prboom-plus.txt o-prboom-plus.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-prboom-plus 8802
+Wait 3
+Echo >RAM:L/b-soniccd.txt "==== soniccd: Sonic CD, stack 200000"
+Date >>RAM:L/b-soniccd.txt
+If NOT EXISTS SYS:Batch/soniccd
+  Echo >>RAM:L/b-soniccd.txt "soniccd: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start soniccd "SYS:Batch/soniccd" Sonic CD 200000
+  Wait 15
+  Echo >>RAM:L/b-soniccd.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-soniccd.txt COMMAND=Sonic CD
+  If EXISTS RAM:L/r-soniccd.txt
+    Type >>RAM:L/b-soniccd.txt RAM:L/r-soniccd.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "soniccd"
+RAM:b/putfile >NIL: RAM:L/m shot-soniccd 8802
+Wait 4
+Status >NIL: COMMAND=Sonic CD
+If NOT WARN
+  Break >NIL: `Status COMMAND=Sonic CD` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-soniccd.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-soniccd.txt COMMAND=Sonic CD
+If EXISTS RAM:L/r-soniccd.txt
+  Type >>RAM:L/b-soniccd.txt RAM:L/r-soniccd.txt
+EndIf
+Date >>RAM:L/b-soniccd.txt
+RAM:b/putfile >NIL: RAM:L/b-soniccd.txt b-soniccd.txt 8802
+If EXISTS RAM:L/o-soniccd.txt
+RAM:b/putfile >NIL: RAM:L/o-soniccd.txt o-soniccd.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-soniccd 8802
+Wait 3
+Echo >RAM:L/b-tiltnroll.txt "==== tiltnroll: Tilt-N-Roll, stack 40960"
+Date >>RAM:L/b-tiltnroll.txt
+If NOT EXISTS SYS:Batch/tiltnroll
+  Echo >>RAM:L/b-tiltnroll.txt "tiltnroll: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start tiltnroll "SYS:Batch/tiltnroll" Tilt-N-Roll 40960
+  Wait 15
+  Echo >>RAM:L/b-tiltnroll.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-tiltnroll.txt COMMAND=Tilt-N-Roll
+  If EXISTS RAM:L/r-tiltnroll.txt
+    Type >>RAM:L/b-tiltnroll.txt RAM:L/r-tiltnroll.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "tiltnroll"
+RAM:b/putfile >NIL: RAM:L/m shot-tiltnroll 8802
+Wait 4
+Status >NIL: COMMAND=Tilt-N-Roll
+If NOT WARN
+  Break >NIL: `Status COMMAND=Tilt-N-Roll` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-tiltnroll.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-tiltnroll.txt COMMAND=Tilt-N-Roll
+If EXISTS RAM:L/r-tiltnroll.txt
+  Type >>RAM:L/b-tiltnroll.txt RAM:L/r-tiltnroll.txt
+EndIf
+Date >>RAM:L/b-tiltnroll.txt
+RAM:b/putfile >NIL: RAM:L/b-tiltnroll.txt b-tiltnroll.txt 8802
+If EXISTS RAM:L/o-tiltnroll.txt
+RAM:b/putfile >NIL: RAM:L/o-tiltnroll.txt o-tiltnroll.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-tiltnroll 8802
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove adoom3
+Echo >>RAM:L/c.txt "remove adoom3: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove daysleeper
+Echo >>RAM:L/c.txt "remove daysleeper: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove finder
+Echo >>RAM:L/c.txt "remove finder: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove hostile-takeover
+Echo >>RAM:L/c.txt "remove hostile-takeover: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove nano
+Echo >>RAM:L/c.txt "remove nano: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove prboom-plus
+Echo >>RAM:L/c.txt "remove prboom-plus: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove soniccd
+Echo >>RAM:L/c.txt "remove soniccd: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove tiltnroll
+Echo >>RAM:L/c.txt "remove tiltnroll: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8802
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8802

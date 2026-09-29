@@ -1,0 +1,7 @@
+JoyStick/GamePad test -- Usage: joytest <port>
+-Opening lowlevel.library...
+-Found lowlevel version 40.10
+-Reading JoyPort #1
+Use CTRL-C when ready to return to the CLI prompt.
+  TYPE     BTN      VERT   HORZ/HAT
+00000000 00000000 00000000 00000000 -NOT AVAILABLE-

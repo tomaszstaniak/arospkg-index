@@ -1,0 +1,1537 @@
+
+==== show ab3dhd
+ab3dhd v0.9.0b1
+  Alien Breed 3D HD Remaster
+  category:     game/fps
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2246 KB from https://archives.arosworld.org/share/game/fps/ab3dhd.x86_64-aros-v11.zip
+  sha256:       067e3bbc32de0407cd5c9dfe96ae688c526a7fc54ec80e54373704baa3a40bc5
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ab3dhd: rc=0
+
+==== show alac
+alac 0.1.3
+  Apple Lossless Audio Codec decoder
+  category:     audio/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     72 KB from https://archives.arosworld.org/share/audio/misc/alac.x86_64-aros-v11.zip
+  sha256:       053dc81ec9f81719900db1ed943f3559c67594b6d9c923f3e9e51f145536ebb3
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show alac: rc=0
+
+==== show amiberry
+amiberry 6.3.4
+  Amiberry preview v6.3.4 x86_64 abiv11
+  category:     emulation/computer
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     13153 KB from https://archives.arosworld.org/share/emulation/computer/amiberry-v6.3.4.x86_64-aros-v11.zip
+  sha256:       f4320cc8d7b2f3f540605241de0b8f5d29357926acf28379fed363f242be053e
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show amiberry: rc=0
+
+==== show antiword
+antiword 0.37
+  Convert Word documents to TXT/PDF/PS
+  category:     utility/text/convert
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     285 KB from https://archives.arosworld.org/share/utility/text/convert/antiword-v0.37.x86_64-aros-v11.zip
+  sha256:       5e4830f2f95af12bb93cd82f50074af68d7d871bbe7994d6fd776d1afff64477
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show antiword: rc=0
+
+==== show apotris
+apotris 4.2.0a
+  Tetris-style block-stacking game
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     9113 KB from https://archives.arosworld.org/share/game/puzzle/apotris.x86_64-aros-v11.zip
+  sha256:       f60006ee29ab8ad240768adb57f3a3b1b9d6097a6440d71d3dff24fd2f45efcf
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show apotris: rc=0
+
+==== show arrakis
+arrakis 1.0
+  Arrakis demo x86_64 by Kakiarts/trbl
+  category:     demo/scene
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3395 KB from https://archives.arosworld.org/share/demo/scene/arrakis.x86_64-aros-v11.zip
+  sha256:       c444c127bfbeb98868a594eafa412355ce1b699c3c4728539a0514a2fa54b8fb
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show arrakis: rc=0
+
+==== show badapple
+badapple 20250122
+  The famous Bad Apple animation with player and xm
+  category:     demo/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2592 KB from https://archives.arosworld.org/share/demo/misc/badapple.x86_64-aros-v11.zip
+  sha256:       ce74a0ebeebf40309cd2ada821dd4a746dcf671e081cd37a0fd2a6ffdbb2d26f
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show badapple: rc=0
+
+==== show bin2iso
+bin2iso 1.1
+  convert Bin File to ISO 9660
+  category:     utility/filetool
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     45 KB from https://archives.arosworld.org/share/utility/filetool/bin2iso.x86_64-aros-v11.zip
+  sha256:       aa15708fbc7ad763ac363dfc38a23675e2c39119111e68a31fc2a9e1f7dba54c
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show bin2iso: rc=0
+
+==== show blips
+blips 1.0
+  a sokoban style puzzle
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1376 KB from https://archives.arosworld.org/share/game/puzzle/blips.x86_64-aros-v11.zip
+  sha256:       bbd9576dfdedc2f3d508894f81c38ee22870804ae56cb9f0b37b91bcd1011362
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show blips: rc=0
+
+==== show boy
+boy 1.1
+  Port of OpenGL demo from Icons '08
+  category:     demo/scene/fit
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     6748 KB from https://archives.arosworld.org/share/demo/scene/fit/boy.x86_64-aros-v11.zip
+  sha256:       79f7235a667d402a7393e559a841dc0735a68e41856cdf7808a236f1c82e670e
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show boy: rc=0
+
+==== show breakhack
+breakhack 4.0.3
+  A casual coffee-break roguelike
+  category:     game/roleplaying
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     15683 KB from https://archives.arosworld.org/share/game/roleplaying/breakhack.x86_64-aros-v11.zip
+  sha256:       8f038366a39184a61443c2f1f0e6da70272b3c390b7f704294064f6fbf96cbad
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show breakhack: rc=0
+
+==== show cabextract
+cabextract 1.11
+  Utility to extract from CAB files
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1215 KB from https://archives.arosworld.org/share/utility/archive/cabextract1.11.x86_64-aros-v11.zip
+  sha256:       64b46474e626ad51f77328921b5bff908f217166d95a07086c4e80b9f43988b1
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show cabextract: rc=0
+
+==== show ccd2cue
+ccd2cue 0.1
+  Converts CloneCD CCD to CUE format
+  category:     utility/filetool
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     60 KB from https://archives.arosworld.org/share/utility/filetool/ccd2cue-v01.x86_64-aros-v11.zip
+  sha256:       c63e88c0a2aba462301a5e7ad2dcf2ff548ab199641216ec6ec00808f3e32c8a
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ccd2cue: rc=0
+
+==== show ccd2iso
+ccd2iso 0.3
+  Convert CloneCD (.ccd) to ISO Images
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     58 KB from https://archives.arosworld.org/share/utility/archive/ccd2iso.x86_64-aros-v11.zip
+  sha256:       5826015e739fdc261da0001f4a3af3ced1e239b6be9709a0231f2e2035db32dd
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ccd2iso: rc=0
+
+==== show davegnukem
+davegnukem 1.0.2
+  2D scrolling platform shooter
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     21305 KB from https://archives.arosworld.org/share/game/platform/davegnukem.x86_64-aros-v11.zip
+  sha256:       01bad7aec8027c08d8b9b4a1e61ce7819baef267c3f248eab72cb6448fcc8a60
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show davegnukem: rc=0
+
+==== show daysleeper
+daysleeper 0.9r2
+  Shutdown/Reboot at a selected time
+  category:     utility/text/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     123 KB from https://archives.arosworld.org/share/utility/text/misc/daysleeper-v0.9r2.x86_64-aros-v11.zip
+  sha256:       3706787f3e4c338f8cb96fa3e0f2cc49c709e7f905bb74cb26809fe8e245a27a
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show daysleeper: rc=0
+
+==== show delugem
+delugem 1.1
+  puzzle game
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     10068 KB from https://archives.arosworld.org/share/game/puzzle/delugem.x86_64-aros-v11.zip
+  sha256:       a956ad8543902cf41c51d28fdba04387e62c51b6c8ddb7ac848fde96b400bb78
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show delugem: rc=0
+
+==== show demac
+demac 0.1
+  Decoder for .ape files
+  category:     audio/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     108 KB from https://archives.arosworld.org/share/audio/misc/demac.x86_64-aros-v11.zip
+  sha256:       304c4f49fb68c04592a9863c2c68d56cff605576fe80342a660c71343e907d01
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show demac: rc=0
+
+==== show demoeffects
+demoeffects 20250131
+  Many Demo Effects
+  category:     demo/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4365 KB from https://archives.arosworld.org/share/demo/misc/demoeffects.x86_64-aros-v11.zip
+  sha256:       dab8b219c28a5ae0aab336a130d34059b002bf5f59fc40b1463adc24db966549
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show demoeffects: rc=0
+
+==== show devilutionx
+devilutionx 1.6.0-dev
+  Diablo build for modern operating systems
+  category:     game/roleplaying
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     8213 KB from https://archives.arosworld.org/share/game/roleplaying/devilutionx.x86_64-aros-v11.zip
+  sha256:       42857cc17063b5f0b8b96b8ec4eb894f3b5d5eab1f59cd9bddd4dd8d058198ee
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show devilutionx: rc=0
+
+==== show dirtree
+dirtree 40.8
+  Shell command displaying directory trees
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     49 KB from https://archives.arosworld.org/share/utility/misc/dirtree.x86_64-aros-v11.zip
+  sha256:       0776eb0ad5dd0e05757da2860aca3131d5fd06ca22b27c0b0506e7e2d3b4be3b
+  requirements: satisfied, probed now:
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show dirtree: rc=0
+
+==== show diskusage
+diskusage 40.8
+  Estimates file space usage
+  category:     utility/shell
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     49 KB from https://archives.arosworld.org/share/utility/shell/diskusage.x86_64-aros-v11.zip
+  sha256:       d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73
+  requirements: satisfied, probed now:
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show diskusage: rc=0
+
+==== show dosbox
+dosbox 0.74
+  Dosbox x86_64
+  category:     emulation/computer
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4407 KB from https://archives.arosworld.org/share/emulation/computer/dosbox.x86_64-aros-v11.zip
+  sha256:       5c48877a4722bee53dabd6e727c5bb8e7ebc2c394e9461034528328394c36a1c
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show dosbox: rc=0
+
+==== show dose2
+dose2 1.1
+  Pulsating demo with bawdy humor from Assembly '01.
+  category:     demo/scene
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     5579 KB from https://archives.arosworld.org/share/demo/scene/dose2.x86_64-aros-v11.zip
+  sha256:       78791100a0f4376e108357ea98fd8b4db8da192b626f040c4023a2ed2ebe6f7f
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show dose2: rc=0
+
+==== show fallout
+fallout 1.1
+  Fallout for modern operating systems
+  category:     game/roleplaying
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1202 KB from https://archives.arosworld.org/share/game/roleplaying/fallout.x86_64-aros-v11.zip
+  sha256:       6b403b59367c96ae8197134b89ebe90a8de48b84d042c181dc469669a3b8c261
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show fallout: rc=0
+
+==== show fallout2
+fallout2 1.3
+  Fallout 2 for modern operating systems
+  category:     game/roleplaying
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1957 KB from https://archives.arosworld.org/share/game/roleplaying/fallout2.x86_64-aros-v11.zip
+  sha256:       271389bf92a5e8902bbf464810e00a02521b7ebe648f969ea8dc4049694c76e0
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show fallout2: rc=0
+
+==== show fheroes2
+fheroes2 1.1.16
+  Heroes of the Might and Magic II engine
+  category:     game/strategy
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     16271 KB from https://archives.arosworld.org/share/game/strategy/fheroes2.x86_64-aros-v11.zip
+  sha256:       b647a6be58c11c271ea70dc508dcdcd0c6ccde4991fbabcf0bc7eee2c732b972
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show fheroes2: rc=0
+
+==== show finder
+finder 3.1
+  MUI File Search Tool
+  category:     utility/filetool
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     63 KB from https://archives.arosworld.org/share/utility/filetool/finder-v3.1.x86_64-aros-v11.zip
+  sha256:       f5b4630a33b799c31976b9305d67cd30c5b8d53a66869359724aa0893cdf9146
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show finder: rc=0
+
+==== show fireoftheapes
+fireoftheapes 1.3
+  Atypical FPS/survival horror game
+  category:     game/fps
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     5095 KB from https://archives.arosworld.org/share/game/fps/fireoftheapes.x86_64-aros-v11.zip
+  sha256:       e4cbdc470d805719a41db17e40744b1475f7e0ce2f0412939a824e75aed3eaa2
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show fireoftheapes: rc=0
+
+==== show flx_play
+flx_play 0.3
+  Simple FLI/FLC/FLX Animation Player
+  category:     video/play
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     74 KB from https://archives.arosworld.org/share/video/play/flx_play.x86_64-aros-v11.zip.zip
+  sha256:       d0797367f580d1b66f627e2217285485de764c8962a36227e3b35ada32e90fb2
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show flx_play: rc=0
+
+==== show folio
+folio 0.4
+  PDF reader with thumbnails, search and highlighting, on MuPDF
+  category:     office/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     28678 KB from https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4/Folio-0.4.x86_64-aros-v11.lha
+  sha256:       432298b9bc4abfe92cb573c6cc157d12b54ceef43888405796a7a6e68de186a2
+  source:       https://github.com/tomaszstaniak/aros-foliopdf
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show folio: rc=0
+
+==== show ft2clone
+ft2clone 2.19
+  FastTracker II Clone is a music tracker program
+  category:     audio/tracker
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3995 KB from https://archives.arosworld.org/share/audio/tracker/ft2clone.x86_64-aros-v11.zip
+  sha256:       cbd330bb3b9a084f9ff068b1e0b2e8384873ce8cec61c9b71a244751ee160c70
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ft2clone: rc=0
+
+==== show gicriptofilex
+gicriptofilex 1.0
+  Encrypt files using 128 bit algorithm
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     548 KB from https://archives.arosworld.org/share/utility/misc/gicriptofilex.x86_64-aros-v11.zip
+  sha256:       ee19c9c24337fe67de3f4160add60227be6e91fd9aca32f06807a4eb1e284c78
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show gicriptofilex: rc=0
+
+==== show giddy3
+giddy3 1.5
+  OpenGL puzzle-solving platform game.
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3608 KB from https://archives.arosworld.org/share/game/platform/giddy3.x86_64-aros-v11.zip
+  sha256:       796bcf1a1d84dc30433ace1b81d81dcf7b02a810ed4f3013b6394e98cb879bbf
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show giddy3: rc=0
+
+==== show giocodel15
+giocodel15 1.0
+  a classic puzzle game
+  category:     game/board
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     518 KB from https://archives.arosworld.org/share/game/board/giocodel15.x86_64-aros-v11.zip
+  sha256:       943e4099deb4cca1cca59997644e368fb8beb79cd0519f737446cde9e3bff9a5
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show giocodel15: rc=0
+
+==== show gisplita
+gisplita 1.5
+  little program to split large files
+  category:     utility/shell
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     36 KB from https://archives.arosworld.org/share/utility/shell/gisplita.x86_64-aros-v11.zip
+  sha256:       0ae2c8cd26b758cdcad446c3779f34d7ba0ca5bb50db09d47550a4ade7720bba
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show gisplita: rc=0
+
+==== show gmore
+gmore 1.2
+  Text viewer similar to MORE
+  category:     utility/text
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     35 KB from https://archives.arosworld.org/share/utility/text/gmore.x86_64-aros-v11.zip
+  sha256:       65ecebd838705d29ffdb05dbd4727aa8e9c8f49342923a73e30d60acb6427131
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show gmore: rc=0
+
+==== show gnurobbo
+gnurobbo 0.68
+  open source reimplementation of Robbo
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3310 KB from https://archives.arosworld.org/share/game/puzzle/gnurobbo.x86_64-aros-v11.zip
+  sha256:       27dae2c7cad34ee6c2d11aca81f8d647b1810b2fa9b5246fb98a09e567a7dfd2
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show gnurobbo: rc=0
+
+==== show grafx2
+grafx2 2.9-aros4
+  256-colour indexed paint program for AROS
+  category:     graphics/edit
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4110 KB from https://github.com/tomaszstaniak/aros-grafx2/releases/download/v2.9-r4/GrafX2-2.9-r4.x86_64-aros-v11.lha
+  sha256:       b037cb10dbdd7e2d527764a3b6f1d48bcf9876dd954ba7595fed3c55820d2d61
+  source:       https://github.com/tomaszstaniak/aros-grafx2
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show grafx2: rc=0
+
+==== show grep
+grep 2.0
+  GNU Grep
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     58 KB from https://archives.arosworld.org/share/utility/misc/grep.x86_64-aros-v11.zip
+  sha256:       bd3a6561c93d3adff82c8d9cceb08c636e55b6efbb556892dde2582e7379fd3d
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show grep: rc=0
+
+==== show hexen2
+hexen2 1.5.10
+  Hexen II: Hammer of Thyrion (uHexen2)
+  category:     game/fps
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3174 KB from https://archives.arosworld.org/share/game/fps/hexen2.x86_64-aros-v11.zip
+  sha256:       a442e90f8edcf3eff5c37e52dc7ffd3eb35f4b32b075b418df79921ca6caa6f8
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show hexen2: rc=0
+
+==== show hivelyreplay
+hivelyreplay 0.2
+  Replayer from HivelyTracker (AHI)
+  category:     audio/play
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     89 KB from https://archives.arosworld.org/share/audio/play/hivelyreplay.x86_64-aros-v11.zip
+  sha256:       b7f06bcaf1db17665fcb125b1de0f2d13f57e40858f28f2583da1c6d718d117a
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show hivelyreplay: rc=0
+
+==== show hocoslamfy
+hocoslamfy 2026
+  SDL Flappy Bird clone.
+  category:     game/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1602 KB from https://archives.arosworld.org/share/game/misc/hocoslamfy.x86_64-aros-v11.zip
+  sha256:       438173ee2ea27d765bef1e266cbe92aaf4261d54d40513fd8ce7034fda04e734
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show hocoslamfy: rc=0
+
+==== show hostile-takeover
+hostile-takeover 1.6.0
+  RTS game freeware/opensource
+  category:     game/strategy
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     9216 KB from https://archives.arosworld.org/share/game/strategy/hostile-takeover.x86_64-aros-v11.zip
+  sha256:       4a6b575217972b4ea010f2b9a2f25cecbcd6143bddeaf90bad63e33df8478654
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show hostile-takeover: rc=0
+
+==== show hydracastle
+hydracastle 02/2024
+  metroidvania-style action platformer
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     56898 KB from https://archives.arosworld.org/share/game/platform/hydracastle.x86_64-aros-v11.zip
+  sha256:       176dc699bcd347a5984860a70b670a395283e962c747841babecbd20c9a9b215
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show hydracastle: rc=0
+
+==== show iconmake
+iconmake 1.2
+  The DualPNG Icon Creator for AROS
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     59 KB from https://archives.arosworld.org/share/utility/misc/iconmake.x86_64-aros-v11.zip
+  sha256:       a0c5581412225f711fd8c2164867a4e49ec16a65c049592ee9537a3cf8441bb3
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show iconmake: rc=0
+
+==== show isomaker
+isomaker 1.0
+  Create an ISO CD from DOS
+  category:     utility
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     44 KB from https://archives.arosworld.org/share/utility/isomaker.x86_64-aros-v11.zip
+  sha256:       c9b16161ed6ccc737deac09004be2112dd635cfe2bdf841fd3cf80cda6aed47d
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show isomaker: rc=0
+
+==== show isomaker-gui
+isomaker-gui 1.1
+  A GUI that lets you create ISO files bootable
+  category:     utility
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     271 KB from https://archives.arosworld.org/share/utility/isomaker-gui.x86_64-aros-v11.zip
+  sha256:       195690d728f9fc2658a514087be5a8272912fce058732a4ef33441ef1f0e713e
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show isomaker-gui: rc=0
+
+==== show isotool
+isotool 1.0
+  Boot Extraction ISO And Rename Volume
+  category:     utility
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     38 KB from https://archives.arosworld.org/share/utility/isotool.x86_64-aros-v11.zip
+  sha256:       ab747f8eb6296957b4461d36561c1b3d5e9e17be805d26cf99a55d35579f5fad
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show isotool: rc=0
+
+==== show isotools-gui
+isotools-gui 1.0
+  Boot Extraction ISO And Rename Volume
+  category:     utility
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     206 KB from https://archives.arosworld.org/share/utility/isotools-gui.x86_64-aros-v11.zip
+  sha256:       ac95316427a414631248892d5adcc65461f4a9eb7ce706e8d4426a0a430de891
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show isotools-gui: rc=0
+
+==== show keen4
+keen4 1.0
+  Port of the famous DOS game Commander Keen IV.
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2017 KB from https://archives.arosworld.org/share/game/platform/keen4.x86_64-aros-v11.lha
+  sha256:       0dbb9c66e597c0451fca762421ba42a1352a509df996da17571f7bda16ff1f18
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show keen4: rc=0
+
+==== show lbreakouthd
+lbreakouthd 1.2.2
+  Breakout/Arkanoid-style game
+  category:     game/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     7503 KB from https://archives.arosworld.org/share/game/misc/lbreakouthd.x86_64-aros-v11.zip
+  sha256:       9c65456190109728f1be08c73312222eb7355e2369ee35a2346e70cf36c2c58c
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show lbreakouthd: rc=0
+
+==== show ledblur
+ledblur 20260904
+  Port of oldskool GP32 Demo from '06.
+  category:     demo/scene
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     356 KB from https://archives.arosworld.org/share/demo/scene/ledblur.x86_64-aros-v11.zip
+  sha256:       31ee4e7f1ac8282b418a4ff2653fb1bea6d4723eec9242ab56a861e5daf1de16
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ledblur: rc=0
+
+==== show mcamiga
+mcamiga 1.0
+  File Manager
+  category:     utility/filetool
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     296 KB from https://archives.arosworld.org/share/utility/filetool/mcamiga.x86_64-aros-v11.lha
+  sha256:       435ee5e1316fb6c86a79bc8908b175d83d53f04f67a4d0d8fa8c46b8b45ff61e
+  requirements: none stated
+  installed:    no
+show mcamiga: rc=0
+
+==== show metemp3
+metemp3 1.5
+  a Mp3,Flac,Wav Player
+  category:     audio/play
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     667 KB from https://archives.arosworld.org/share/audio/play/metemp3.x86_64-aros-v11.zip
+  sha256:       3db75f6b14f6090c4ac8617dd71b563e390733dc7d2c93b19f8c435e81169eb8
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show metemp3: rc=0
+
+==== show micropolis
+micropolis 0.1.0-rc3-aros1
+  Classic city-building simulation for AROS
+  category:     game/strategy
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2533 KB from https://github.com/tomaszstaniak/aros-micropolis/releases/download/v0.1.0-rc3/micropolis.x86_64-aros-v11.lha
+  sha256:       c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124
+  source:       https://github.com/tomaszstaniak/aros-micropolis
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show micropolis: rc=0
+
+==== show minislug
+minislug 2.0.0.04
+  a metal slug game
+  category:     game/action
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     8162 KB from https://archives.arosworld.org/share/game/action/minislug.x86_64-aros-v11.zip
+  sha256:       099be2178c946f769a1346d4f02e3f90a65a33e79165c1828d94978d613aec70
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show minislug: rc=0
+
+==== show mplayer
+mplayer 1.0-v6
+  Multimedia player with MUI user interface
+  category:     video/play
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     8967 KB from https://archives.arosworld.org/share/video/play/mplayer-1.0-v6.x86_64-aros-v11.zip
+  sha256:       ddc7ebd07d7b5ca3f31a0d0d52df1683f06f7fb985369fec328cc219b1bf7dfc
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show mplayer: rc=0
+
+==== show nano
+nano 1.2
+  nano demo x86_64 by Kakiarts
+  category:     demo/scene
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3810 KB from https://archives.arosworld.org/share/demo/scene/nano.x86_64-aros-v11.zip
+  sha256:       a152ccaae2fb6d53bb5fd04fa0f7bef56eb3e683f732775d12ecfd188e440ee7
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show nano: rc=0
+
+==== show nomarch
+nomarch 1.4
+  extract old .arc and .ark archives
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     80 KB from https://archives.arosworld.org/share/utility/archive/nomarch.x86_64-aros-v11.zip
+  sha256:       05fd654700ac323375ea89a352521430b17ff66c4a0ab7590fe3b439a6351864
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show nomarch: rc=0
+
+==== show ominoarcade
+ominoarcade 1.0
+  recover all the coins while avoiding the enemies
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2452 KB from https://archives.arosworld.org/share/game/platform/ominoarcade.x86_64-aros-v11.zip
+  sha256:       813ddb7d313cd2e5278f51dd86391f08b825fe3c4e0148be5fbcad7f7697a47d
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ominoarcade: rc=0
+
+==== show ominostage
+ominostage 1.1
+  collect all the coins and avoid the enemies
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1608 KB from https://archives.arosworld.org/share/game/platform/ominostage.x86_64-aros-v11.zip
+  sha256:       2a60c078accba2e796d85dbd83640ef9f2c0537d6cf38e4693990039060bfccf
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show ominostage: rc=0
+
+==== show openloco
+openloco 0.1.0-rc1-aros1
+  Open-source re-implementation of Chris Sawyer's Locomotion
+  category:     game/strategy
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     16600 KB from https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1/openloco.x86_64-aros-v11.lha
+  sha256:       59fb5f11a8fe848f249d2a3399b67d6d28f617d52c167307c3d2a596d320efe0
+  source:       https://github.com/tomaszstaniak/aros-openloco
+  requirements: satisfied, probed now:
+    openal.library: satisfied (already open, version 45)
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show openloco: rc=0
+
+==== show opentyrian
+opentyrian 2.1.x-AROS
+  open-source port of the DOS game Tyrian
+  category:     game/action
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4484 KB from https://archives.arosworld.org/share/game/action/opentyrian.x86_64-aros-v11.zip
+  sha256:       115d621c63f51c1c81069877b47fc7ab91fd74587e9e22d7828be8d76adf46b7
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show opentyrian: rc=0
+
+==== show openxcom
+openxcom 1.0
+  Open-source clone of UFO: Enemy Unknown
+  category:     game/strategy
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4452 KB from https://archives.arosworld.org/share/game/strategy/openxcom.x86_64-aros-v11.zip
+  sha256:       6683f06367971c9de19c6e5b953c535eb2f62f0746daa733581eff385be90bb4
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show openxcom: rc=0
+
+==== show pekkakana2
+pekkakana2 1.5.2
+  platformer game where you control a rooster
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     13764 KB from https://archives.arosworld.org/share/game/platform/pekkakana2.x86_64-aros-v11.zip
+  sha256:       e88a34720d2367f2a42ccb8b7925ea5c517abc93f7b77a103b8dfa6231bfe648
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show pekkakana2: rc=0
+
+==== show pkg-54321
+pkg-54321 1.0
+  Five common 2d puzzles in multiple dimensions
+  category:     game/board
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     750 KB from https://archives.arosworld.org/share/game/board/54321.x86_64-aros-v11.zip
+  sha256:       9bc09cf868ca1f576a2d4ce6efef34ed58cd2c106cdea5fe4ad1dab24dc8acd2
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show pkg-54321: rc=0
+
+==== show pkg-7mezzoplus
+pkg-7mezzoplus 1.0
+  Popular Italian Christmas game
+  category:     game/card
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     654 KB from https://archives.arosworld.org/share/game/card/7mezzoplus.x86_64-aros-v11.zip
+  sha256:       1ea0d16ce4016d6d2a329e6d03db6871fb0184a694d929ab9eeeeb629f717baf
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show pkg-7mezzoplus: rc=0
+
+==== show pkg-7zdec
+pkg-7zdec 9.13beta
+  Unarchive 7zip files (.7z)
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     248 KB from https://archives.arosworld.org/share/utility/archive/7zdec.x86_64-aros-v11.zip
+  sha256:       627118333924e9b350acc5e73f93dfaa4bf0d8d04eca4aac5cc3628575d8608f
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show pkg-7zdec: rc=0
+
+==== show planethively
+planethively 1.0
+  A musicdisk about HivelyTracker
+  category:     demo/music
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     275 KB from https://archives.arosworld.org/share/demo/music/planethively.x86_64-aros-v11.zip
+  sha256:       fc24cc45d5dc052da00d5d94cb49d8ce879b98b8b4c6bad79563d6087b1155f2
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show planethively: rc=0
+
+==== show potrace
+potrace 1.16
+  Transforming bitmaps into vector graphics
+  category:     graphics/convert
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1147 KB from https://archives.arosworld.org/share/graphics/convert/potrace.x86_64-aros-v11.zip
+  sha256:       2c6bac0fe4b8d84ab64e6558b6d8abe758b6911e3ebda5278df18f349f7923bb
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show potrace: rc=0
+
+==== show prboom-plus
+prboom-plus 2.6.66
+  a version of the classic 3D shoot'em'up game Doom
+  category:     game/fps
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4015 KB from https://archives.arosworld.org/share/game/fps/prboom-plus.x86_64-aros-v11.zip
+  sha256:       97c135f98a8fbc82b02101a629ae6eb75212bf25e02d8bc01da90219a81ea49d
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show prboom-plus: rc=0
+
+==== show protrekkr
+protrekkr 2.8.3PRE
+  Tracker Synth hybrid Program
+  category:     audio/edit
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     12951 KB from https://archives.arosworld.org/share/audio/edit/protrekkr.x86_64-aros-v11.zip
+  sha256:       0afb82a286d2104510be6e1856ce68e4d0bdb5b264eed7f6188561c9d4ae719e
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show protrekkr: rc=0
+
+==== show qlview
+qlview 25.09
+  Sinclair QL Screen viewer
+  category:     graphics/viewer
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     261 KB from https://archives.arosworld.org/share/graphics/viewer/qlview.x86_64-aros-v11.zip
+  sha256:       41501c28085f5faf710a132a5c926abe767dca16c65dc94b124b3bf38ab54e65
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show qlview: rc=0
+
+==== show rescode
+rescode 1.2
+  Calculates resistor values (4 and 5 band)
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     88 KB from https://archives.arosworld.org/share/utility/misc/rescode.x86_64-aros-v11.zip
+  sha256:       20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show rescode: rc=0
+
+==== show residualvm
+residualvm 0.3.1-1
+  ResidualVM x86_64 abiv11
+  category:     emulation/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     4481 KB from https://archives.arosworld.org/share/emulation/misc/residualvm-0.3.1-1.x86_64-aros-v11.zip
+  sha256:       bffb6ddc9a784509ad0fb3f89aca745bf81ab60a9e9dbcc532d7d9413c921e9b
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show residualvm: rc=0
+
+==== show rtf-riddle
+rtf-riddle 3.97b
+  Rich Text Format to HTML5 converter
+  category:     utility/text/convert
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     163 KB from https://archives.arosworld.org/share/utility/text/convert/rtf-riddle-v3.97b.x86_64-aros-v11.zip
+  sha256:       ad9f2cf132615957e82064e9dd4f9062c6e3f3e7feab836cca70a5882b43816f
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show rtf-riddle: rc=0
+
+==== show scopagame
+scopagame 1.0
+  Italian card game
+  category:     game/card
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     637 KB from https://archives.arosworld.org/share/game/card/scopagame.x86_64-aros-v11.zip
+  sha256:       598db4a58f619c4e2a77c8645489ea2f5f5bb9d5df0d65be8a6ceb1720780161
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show scopagame: rc=0
+
+==== show screentest
+screentest 1
+  Tests the stability of your screen
+  category:     demo/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     34 KB from https://archives.arosworld.org/share/demo/misc/screentest-v1.x86_64-aros-v11.zip
+  sha256:       7c2bdf49788dccd2eab9e0f7ad8ac77b56a9520557dccd742bc718fc255840ef
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show screentest: rc=0
+
+==== show sdllopan
+sdllopan 1.0
+  Lopan - MahJong clone
+  category:     game/board
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     480 KB from https://archives.arosworld.org/share/game/board/sdllopan.x86_64-aros-v11.zip
+  sha256:       5291f44af0f38d43c8bc357d1e23a3ab68da6f14ab1a9ee1974b6324a968fd39
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show sdllopan: rc=0
+
+==== show sdlpop
+sdlpop 1.23
+  SDLPoP, an open-source port of Prince of Persia
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1381 KB from https://archives.arosworld.org/share/game/platform/sdlpop.x86_64-aros-v11.zip
+  sha256:       e841a0936330d7d4944bc10169fe4f9b7c2713cb4fe2757cc4d4c277a51ffe51
+  requirements: none stated
+  installed:    no
+show sdlpop: rc=0
+
+==== show sfsobject
+sfsobject 1.6
+  Sets SFS object attributes
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     78 KB from https://archives.arosworld.org/share/utility/misc/sfsobject.x86_64-aros-v11.zip
+  sha256:       c1b19e5dc89c35dbc7ab9f7552f2586c63390366b180a015f5142a385baeb2bb
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show sfsobject: rc=0
+
+==== show shooterspace
+shooterspace 1.0
+  Avoid asteroids and deal with threatening UFOs
+  category:     game/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1157 KB from https://archives.arosworld.org/share/game/misc/shooterspace.x86_64-aros-v11.zip
+  sha256:       173a4f28870be7cc37c1865d0e9f58d6bec3a84df08123a5cc52461e6f9f0254
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show shooterspace: rc=0
+
+==== show siddump
+siddump 1.08
+  C64 music debug output utility
+  category:     audio/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     91 KB from https://archives.arosworld.org/share/audio/misc/siddump.x86_64-aros-v11.zip
+  sha256:       262f6c332d09195de470c846a5fdedd1a5c428f772b649f0cc6343400528b90d
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show siddump: rc=0
+
+==== show skandalfoclock
+skandalfoclock 1.1
+  Advanced Analog Clock
+  category:     utility/workbench
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     174 KB from https://archives.arosworld.org/share/utility/workbench/skandalfoclock.x86_64-aros-v11.zip
+  sha256:       d687ccb1d86163e866d1338b404c836dfc6544a01e1f7d3e33bb17ca2f35559b
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show skandalfoclock: rc=0
+
+==== show sokobangp2x
+sokobangp2x 08032025
+  a Sokoban engine
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     7511 KB from https://archives.arosworld.org/share/game/puzzle/sokobangp2x.x86_64-aros-v11.zip
+  sha256:       7357b8ad4e95ff4d9dafa86386588a85da617035429d350984e2b2a9840c8760
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show sokobangp2x: rc=0
+
+==== show soliton
+soliton 2.2
+  Klondike & Freecell card game
+  category:     game/card
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     219 KB from https://archives.arosworld.org/share/game/card/soliton.x86_64-aros-v11.zip
+  sha256:       62c9b8a9713d80ffc303f1b1ca83625ae54faf452a45442d048a45ef87a9115e
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show soliton: rc=0
+
+==== show sploiner
+sploiner 1.01
+  split, join and recover files + AROS build
+  category:     utility/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     62 KB from https://archives.arosworld.org/share/utility/misc/sploiner.x86_64-aros-v11.zip
+  sha256:       fcff93abca38c7277d81bcb4e108fa0f1789d3fe707905f081312da0a3dcd671
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show sploiner: rc=0
+
+==== show stercus
+stercus 1.1
+  Port of Amiga Demo from MI '06.
+  category:     demo/scene/fit
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2310 KB from https://archives.arosworld.org/share/demo/scene/fit/stercus.x86_64-aros-v11.zip
+  sha256:       b0885dc09a7c3a0658afde9c12b6a79cbc4599af3b1aaa7d49555a3a680e479d
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show stercus: rc=0
+
+==== show stratagus
+stratagus 3.3.2
+  Warcraft and Warcraft 2 game engine
+  category:     game/strategy
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     5713 KB from https://archives.arosworld.org/share/game/strategy/stratagus.x86_64-aros-v11.zip
+  sha256:       52a7f98fc9e8de2d3c54e6dfb113f9da972617c9362bf8aa960be71fa29ed201
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show stratagus: rc=0
+
+==== show super-haxagon
+super-haxagon 3.9.1
+  Open source Super Hexagon clone
+  category:     game/action
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     35595 KB from https://archives.arosworld.org/share/game/action/super-haxagon.x86_64-aros-v11.zip
+  sha256:       72eebefd0a02c1c28916b09a4c472de7334bdaa6707e52bb9951751f4e6bd576
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show super-haxagon: rc=0
+
+==== show super_trevor_land
+super_trevor_land 1.0
+  Super Trevor Land (x64, ABIv11)
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     63303 KB from https://archives.arosworld.org/share/game/platform/super_trevor_land.x86_64-aros-v11.zip
+  sha256:       bde1149d5036911fcfa7c269fc4cdb65f252c1db6c7223b83c9289f2d6302e4c
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show super_trevor_land: rc=0
+
+==== show tbftss
+tbftss 1.5.1
+  The Battle for the Solar System: the Pandora War
+  category:     game/action
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     46817 KB from https://archives.arosworld.org/share/game/action/tbftss.x86_64-aros-v11.zip
+  sha256:       68cbeb3901094f2a3cf21a33de20064cc546b9e74d1283004a5091fe8bc24464
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show tbftss: rc=0
+
+==== show tiltnroll
+tiltnroll 1.2.0
+  OpenGL and SDL ball-rolling game
+  category:     game/action
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1572 KB from https://archives.arosworld.org/share/game/action/tiltnroll.x86_64-aros-v11.zip
+  sha256:       5958ddfe6d0a9da13b2a6d3ce0d74c48bffacc65f7d12b47022f6808a688419e
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show tiltnroll: rc=0
+
+==== show timeless
+timeless 1.0.2
+  SDL port of Tran's Timeless MS-DOS demo.
+  category:     demo/scene
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     333 KB from https://archives.arosworld.org/share/demo/scene/timeless.x86_64-aros-v11.zip
+  sha256:       4540790fe3a0d3d6657364111e2ef8c59cf25409240fecaa49ac6aab82bf327e
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show timeless: rc=0
+
+==== show tinysid
+tinysid 0.94
+  A small, multiplatform SID player
+  category:     audio/play
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     67 KB from https://archives.arosworld.org/share/audio/play/tinysid.x86_64-aros-v11.zip
+  sha256:       d9279a7b540f5c43d45c1fa540bd0455755a3bfbb3214d11e040770bc1e9d996
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show tinysid: rc=0
+
+==== show tinytris
+tinytris 2.3
+  a clone of the classic game Tetris
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2475 KB from https://archives.arosworld.org/share/game/puzzle/tinytris.x86_64-aros-v11.zip
+  sha256:       55a2f9de5486a8db4f445b2901d44775baa3d193cdd694262377861f5e5f62c8
+  requirements: satisfied, probed now:
+    SDL.library: satisfied (already open, version 1)
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show tinytris: rc=0
+
+==== show tressette
+tressette 1.0
+  Is a popular Italian card game
+  category:     game/card
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     685 KB from https://archives.arosworld.org/share/game/card/tressette.x86_64-aros-v11.zip
+  sha256:       1c706f3344be3e9c5f036114bfba344356bf2bf06e23ef4bd34242036c2c1b6d
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show tressette: rc=0
+
+==== show unlzx
+unlzx 2.16
+  Unpack lzx files
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     60 KB from https://archives.arosworld.org/share/utility/archive/unlzx.x86_64-aros-v11.zip
+  sha256:       bc68cc880afd5f1044870a026cfb19dee98a2451a01812b7c0eef413df5b49b0
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show unlzx: rc=0
+
+==== show unrar
+unrar 6.11
+  UnRAR for AROS 64 v11
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3215 KB from https://archives.arosworld.org/share/utility/archive/unrar-v6.11.x86_64-aros-v11.zip
+  sha256:       0c6e0eca2aca95cfb76e8008429d73ff476c667bc89a34f9c693c5918cfb5896
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show unrar: rc=0
+
+==== show unshield
+unshield 1.6.2
+  Utility to extract files from InstallShield CAB
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     2234 KB from https://archives.arosworld.org/share/utility/archive/unshield1.6.2.x86_64-aros-v11.zip
+  sha256:       d8c755fec92b27ab675a8dab83e2eb1bb8749d529955d0d3410b94279a6b7225
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show unshield: rc=0
+
+==== show untangle
+untangle 1.2
+  Untangle set of dots joined by lines
+  category:     game/puzzle
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     60 KB from https://archives.arosworld.org/share/game/puzzle/untangle.x86_64-aros-v11.zip
+  sha256:       0c97bbf1b4aceb4eea66a91a6e94f00e2cffbc7318c652f334a367eefcc053dc
+  requirements: none stated
+  installed:    no
+show untangle: rc=0
+
+==== show untarka
+untarka 0.34
+  unpack tar file
+  category:     utility/archive
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     63 KB from https://archives.arosworld.org/share/utility/archive/untarka.x86_64-aros-v11.zip
+  sha256:       e0f549940adcce5e1fda06ae8f679c0d62f9253a6ed2d199f9703927aff3cfa8
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show untarka: rc=0
+
+==== show wildmidi
+wildmidi 0.4.6
+  Midi Player
+  category:     audio/play
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     447 KB from https://archives.arosworld.org/share/audio/play/wildmidi.x86_64-aros-v11.zip
+  sha256:       227d32f3929dc932a98d3c66bc570d8547c191bf80844b52b3ca00bacd58dec9
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show wildmidi: rc=0
+
+==== show xrick
+xrick 050500
+  a clone of Rick Dangerous
+  category:     game/platform
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     1996 KB from https://archives.arosworld.org/share/game/platform/xrick.x86_64-aros-v11.zip
+  sha256:       671d89c9b45c9358cd02faf379510ef8a49bf746119fa45f7b90c466575c3e98
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show xrick: rc=0
+
+==== show zaphod
+zaphod 1.3
+  A simple binary file editor
+  category:     development/edit
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     214 KB from https://archives.arosworld.org/share/development/edit/zaphod-v1.3-.x86_64-aros-v11.zip
+  sha256:       603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448
+  requirements: none stated
+  installed:    no
+show zaphod: rc=0
+
+==== show zgloom
+zgloom 052026v2
+  port of the Amiga FPS Gloom
+  category:     game/fps
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     20278 KB from https://archives.arosworld.org/share/game/fps/zgloom.x86_64-aros-v11.zip
+  sha256:       2173ef1de466434f3066f6ad7cf0693b866c9ceef448f580e950dd9d6d453643
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show zgloom: rc=0
+
+==== show zunecalc
+zunecalc 1.0
+  Simple Calculator
+  category:     office/misc
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     44 KB from https://archives.arosworld.org/share/office/misc/zunecalc.x86_64-aros-v11.zip
+  sha256:       e730fdbb86aa4190f91d78bd9e26a3291ff42e42d0caab9bd2a8bf6ef18150d4
+  requirements: satisfied, probed now:
+    stdlib.library: satisfied (already open, version 3)
+  installed:    no
+show zunecalc: rc=0

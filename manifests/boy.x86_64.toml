@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/boy with Run
+# and input from NIL:, stack 50000 bytes: its window or screen was open and
+# the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch s04).
+
+status          = "approved"
+id              = "boy"
+version         = "1.1"
+summary         = "Port of OpenGL demo from Icons '08"
+arch            = "x86_64"
+abi             = "v11"
+category        = "demo/scene/fit"
+url             = "https://archives.arosworld.org/share/demo/scene/fit/boy.x86_64-aros-v11.zip"
+size            = 6909377
+upload_date     = "20260308-20.04"
+selected_by     = "only-candidate"
+
+sha256          = "79f7235a667d402a7393e559a841dc0735a68e41856cdf7808a236f1c82e670e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Boy"
+icon            = "Boy.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,399 @@
+==== stage A: install
+
+==== ccd2cue
+Tuesday 29-Sep-26 17:39:01
+fetching https://archives.arosworld.org/share/utility/filetool/ccd2cue-v01.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/filetool/ccd2cue-v01.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/ccd2cue.zip
+installed ccd2cue
+install ccd2cue: rc=0
+{
+  "schema":1,
+  "name":"ccd2cue",
+  "version":"0.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Ccd2Cue",
+  "installed":"2026-09-29T17:39:01Z",
+  "origin":"https://archives.arosworld.org/share/utility/filetool/ccd2cue-v01.x86_64-aros-v11.zip",
+  "archive_sha256":"c63e88c0a2aba462301a5e7ad2dcf2ff548ab199641216ec6ec00808f3e32c8a",
+  "archive_size":61095,
+  "reason":"explicit",
+  "dir":"ccd2cue",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"d96b4e85cb345a610dbcca4e8bda5b5bcc7381af81dab128d7e3bcd15d9bb76b", "size":8344, "member":"Ccd2Cue.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"8dc2300ff22ba33ef77ccde041c30021c47fa890284c12302dd29c389f1bc1ba", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"1900b34e527e346205db1d5f5970001e76fdd08aef3571cb33319061a959ec7e", "size":3880 },
+    { "path":"Readme-Aros.info", "sha256":"2c801e936231290cd3c5edac8c8d7e19d022c3d25246e97cb7eb8f981673dcf1", "size":8785 },
+    { "path":"Readme-Aros", "sha256":"3502e4898c37fc558b7c1a565a6c40c34c7888159eededaabc8ee423807b7798", "size":290 },
+    { "path":"README", "sha256":"d99957e590b8462690d4900410503be8c2fd82baf9f61e71da20258d6befae9b", "size":236 },
+    { "path":"MANUAL", "sha256":"78ad08d24144633598f11334950a8cd0bee1757c4894b18bfc24b1066d16cbe0", "size":2573 },
+    { "path":"COPYING", "sha256":"8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903", "size":35147 },
+    { "path":"CHANGELOG", "sha256":"c6cb9d0400a918af11fe66e2132fc3f13642dd41bb177f7f1306c286da1c10b5", "size":91 },
+    { "path":"Ccd2Cue.info", "sha256":"1c851257b41581e070ec8766bb5c1d1c5a920ed5bcb3085f3136212b9e46f074", "size":8506 },
+    { "path":"Ccd2Cue", "sha256":"abfbd16c10c7b38513fee3e6df4e9e19a91fd79961555186eaaa00bb5b2d17d3", "size":23016 }
+  ]
+}
+
+==== ffmpegvideotool
+Tuesday 29-Sep-26 17:39:01
+fetching https://archives.arosworld.org/share/video/convert/ffmpegvideotool.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=video/convert/ffmpegvideotool.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/ffmpegvideotool.zip
+installed ffmpegvideotool
+install ffmpegvideotool: rc=0
+{
+  "schema":1,
+  "name":"ffmpegvideotool",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"FFmpegVideoTool",
+  "installed":"2026-09-29T17:39:02Z",
+  "origin":"https://archives.arosworld.org/share/video/convert/ffmpegvideotool.x86_64-aros-v11.zip",
+  "archive_sha256":"72197e7f8baa4f15a0525c0659caeb7a7ef2f682cf8b7441657792d64c814c8f",
+  "archive_size":70832,
+  "reason":"explicit",
+  "dir":"ffmpegvideotool",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"2467f623259a35e1984c90fed390578dfa0c2159eaa4e9519ad55befa7bfdf52", "size":9938, "member":"FFmpegVideoTool.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"1c04f8c2956f755878958765203cd141e7394559aa7d5467933e88d4ceeb3e43", "size":9104 },
+    { "path":"Source/FFmpegVideoTool.c", "sha256":"dd45891270603aa77f248cf73b13174a510a752332102a17bb85a4752c2dd606", "size":38857 },
+    { "path":"ffmpeg_editor.prefs", "sha256":"4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865", "size":2 },
+    { "path":"FFmpegVideoTool.info", "sha256":"26ecf302c77f4b31ae2d45be3bbaf1520a990c4bed63e8f633cfb72ac7577846", "size":9019 },
+    { "path":"FFmpegVideoTool.guide.info", "sha256":"a35de4b75e912957e84ba4715df47e8a6f4d7c596b6a4b2738f8df6054e1e727", "size":8518 },
+    { "path":"FFmpegVideoTool.guide", "sha256":"2cf1f7579aa869ff7115c587c86653f7a9b7867dc6852abc346c40c2b6754d55", "size":10456 },
+    { "path":"FFmpegVideoTool.exe", "sha256":"b8330da52ef9aa179ccdf7155ff84265790233cbea2d30e69cecdb07fcf2dfe5", "size":83240 },
+    { "path":"FFmpegVideoTool", "sha256":"e9750586633aecb2229109d8cb42f4abb1b659425cc02d3408b01446770a23e6", "size":44 }
+  ]
+}
+
+==== giddy3
+Tuesday 29-Sep-26 17:39:02
+apkg: this system does not provide what the package needs
+     giddy3
+     sdl.library (LIBS:sdl.library exists but would not open)
+install giddy3: rc=10
+apkg: not installed
+     giddy3
+
+==== leu
+Tuesday 29-Sep-26 17:39:02
+fetching https://archives.arosworld.org/share/office/spreadsheet/leu.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=office/spreadsheet/leu.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/leu.lha
+installed leu
+install leu: rc=0
+{
+  "schema":1,
+  "name":"leu",
+  "version":"0.8",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Leu0.08_ABIv11",
+  "installed":"2026-09-29T17:39:02Z",
+  "origin":"https://archives.arosworld.org/share/office/spreadsheet/leu.x86_64-aros-v11.lha",
+  "archive_sha256":"43ae0f78f324bd546eb1b7a8b764206a3179cf720fa8d95959e860123f1a3953",
+  "archive_size":1565342,
+  "reason":"explicit",
+  "dir":"leu",
+  "requires_system": [ ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"test.tcd", "sha256":"3b121fcb2aca67ed38807c5af32fefde944eac71d03bfaa435955ef7d1d97097", "size":1053 },
+    { "path":"test.ods", "sha256":"f1e63221c89ed72bbd1fbcd26d1dceca326b8f8b7e5561d19d9033e0ad6b87a2", "size":20095 },
+    { "path":"Leu.info", "sha256":"fcb27968b906f0a52885cdb2a1531ecfa963c800c78244267a7dcc6bccf3b6c3", "size":23184 },
+    { "path":"Leu", "sha256":"4abf7999981f06e71dcd46dda79825a8843849ae8fe1ee98056b9e8f6d5b9a2d", "size":5040328 },
+    { "path":"ColorTable.xlsx", "sha256":"d28b63e38c72f2d90a7be093d1857b63dde3f27d10a2c2ccb771f14f3f33cf77", "size":9162 }
+  ]
+}
+
+==== minislug
+Tuesday 29-Sep-26 17:39:02
+apkg: this system does not provide what the package needs
+     minislug
+     sdl.library (LIBS:sdl.library exists but would not open)
+install minislug: rc=10
+apkg: not installed
+     minislug
+
+==== muimapparium
+Tuesday 29-Sep-26 17:39:02
+fetching https://archives.arosworld.org/share/network/misc/muimapparium.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=network/misc/muimapparium.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/muimapparium.lha
+installed muimapparium
+install muimapparium: rc=0
+{
+  "schema":1,
+  "name":"muimapparium",
+  "version":"0.9",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"MUIMapparium",
+  "installed":"2026-09-29T17:39:03Z",
+  "origin":"https://archives.arosworld.org/share/network/misc/muimapparium.x86_64-aros-v11.lha",
+  "archive_sha256":"f80ba7674cbc3aeb1217cafa9f5090eb76c77db42e36fb9f42a1518234cfb159",
+  "archive_size":756858,
+  "reason":"explicit",
+  "dir":"muimapparium",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"5d2bfd6ef56a5f2c78dab88228bf0e481d086d82ccf7277ece26383027661f50", "size":8887, "member":"MUIMapparium.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"default.gpx", "sha256":"50f0472e60b14fac34cbf808760ca3070991f3eb163a12399b701c64a05fd596", "size":187 },
+    { "path":"OSM-Licence.txt", "sha256":"d9685b90fa7d223f5cb0e7f57d00d5b63de69638c9de0340be2e7cf4dc6ecab3", "size":25317 },
+    { "path":"MUIMapparium.prefs", "sha256":"be245f21ceee997e3edf46e545aacd64af1a9369630396c97318576c0f0b683b", "size":60 },
+    { "path":"MUIMapparium.info", "sha256":"a346945ed88532af505409f6875d70838a112cee528f0df07add14c7da37ddb9", "size":17324 },
+    { "path":"MUIMapparium.guide.info", "sha256":"4f4c3b338e05d5271ca44f025f0b18ffec72532d8eba06228403dda8b3ac7668", "size":3825 },
+    { "path":"MUIMapparium.guide", "sha256":"fdbe5d171ce7199928060f275f349f76895376cd4a1340945fe9cc93b2e659cf", "size":45113 },
+    { "path":"MUIMapparium", "sha256":"732663716261e6cc08fb0eddea0cdbe0e3f4621926a9c9da83628579136b3c2f", "size":2832504 },
+    { "path":"Catalogs/deutsch/MUIMapparium.catalog", "sha256":"0c81ff2c22b941fbc3d09df51ab8127e1ec9c55339861a14988447ca8f7dc286", "size":3424 },
+    { "path":"Catalogs/MUIMapparium.cd", "sha256":"fadb5adfec87cb1dfc5ad5312765f63c6b04907fa5281b0e41f0f880e33e2e18", "size":6931 }
+  ]
+}
+
+==== protrekkr
+Tuesday 29-Sep-26 17:39:03
+apkg: this system does not provide what the package needs
+     protrekkr
+     sdl.library (LIBS:sdl.library exists but would not open)
+install protrekkr: rc=10
+apkg: not installed
+     protrekkr
+
+==== qlview
+Tuesday 29-Sep-26 17:39:03
+fetching https://archives.arosworld.org/share/graphics/viewer/qlview.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=graphics/viewer/qlview.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/qlview.zip
+installed qlview
+install qlview: rc=0
+{
+  "schema":1,
+  "name":"qlview",
+  "version":"25.09",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"QLView",
+  "installed":"2026-09-29T17:39:03Z",
+  "origin":"https://archives.arosworld.org/share/graphics/viewer/qlview.x86_64-aros-v11.zip",
+  "archive_sha256":"41501c28085f5faf710a132a5c926abe767dca16c65dc94b124b3bf38ab54e65",
+  "archive_size":267148,
+  "reason":"explicit",
+  "dir":"qlview",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"4bbda22bdaaee9f4d03bff867095f4b6933c64be65378367eec1e48adb05d22f", "size":9678, "member":"QLView.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Worm_screen", "sha256":"17c22dbea60a63bbcc3bb80ce54aaeff3053bbe42e99f0cb2b1c5d7b7827ef2f", "size":32768 },
+    { "path":"WhatEver_Screen", "sha256":"a8591b81c73d06f8cf59d396c5cbbb18c96e3fd4c908402a34294022bb7985a6", "size":32768 },
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"70681cd6009db3db26a656ea96c3016b3b245e311e0853fb78462081fb837c9d", "size":13615 },
+    { "path":"SirClive_screen", "sha256":"468ab77ddbbacdff6afc8b28b85d9cb5ede103ddc765fb1178a8315777c0fed5", "size":32768 },
+    { "path":"Renault5_screen", "sha256":"b3bdf477ef8295b719776f2b073eabf8b2eb8056d81fb030614091b8eba2fa08", "size":32768 },
+    { "path":"Readme.info", "sha256":"0f4d63aa749580c02f22cf9e6f44de9770cca3a92bc0ff9b808ec38d46a98edb", "size":8785 },
+    { "path":"Readme", "sha256":"87daeef685522705428a3ee83f86c5e142abd69e959125674514a49a026902a7", "size":4768 },
+    { "path":"QLView.info", "sha256":"de86afaf913498d75747652886c14f9c33d0d600684690bc00e5a32cbb25960c", "size":8858 },
+    { "path":"QLView", "sha256":"d44632383b96564b45fefff6f980d73afcde57b2ad6a435ee56d44841e9fe1ce", "size":17 },
+    { "path":"QL-View", "sha256":"b3d509ab7d15558efc33b366f159add7aff6f5eca4c80470fce37f6346a4d11e", "size":66272 },
+    { "path":"PeaceFestival2000_Mode8", "sha256":"2cdb89c271536643785b3c2666cc789b85314ec13b02b7aacd18437c5a1d463a", "size":32768 },
+    { "path":"Lamp_screen", "sha256":"0da58bb129ee63a6769fb910ee6d7ab57313263e0619a980aed789dd20fe75e3", "size":32768 },
+    { "path":"Gwendoline_screen", "sha256":"d02032f785d69b5649649b10675080fe4675db7a483aeadcd3fe690bcbe7a982", "size":32768 },
+    { "path":"goodie2_screen", "sha256":"c002b7b2dcaf7f36446ec13bc5cab0418e524eb91fdbe6a000d6a47f605ada37", "size":32768 },
+    { "path":"Girl_screen", "sha256":"034129b3ba386dd3599c0a4b6c485ed023a62690e73bd660c83d8328af2bd1bf", "size":32768 },
+    { "path":"GChrome_screen", "sha256":"138f236f55056a9243a840d919bd4098969bfb5d7053b06e32e2d0f37d983dea", "size":32768 },
+    { "path":"Gatto_screen", "sha256":"3635e950657e8d7cc50cfd0f585c42fc60cf0e584cf659b38b8be274770054a2", "size":32768 },
+    { "path":"EandI_Mode4", "sha256":"1a3414755555c74f0ad40bdb690601ba9fc08d0767d4e6e6cf7952b770a30886", "size":32768 },
+    { "path":"Cervo_screen", "sha256":"98de53b81d6bf47b57d3cccc8c71498011a0f8a6d10142dfefe93bad45bd1a64", "size":32768 },
+    { "path":"Cat_screen", "sha256":"e9fe181ba22275eae6611210d04359ab3a71e6025f0127ae0912c1ae897e18ef", "size":32768 },
+    { "path":"ArcEd_Russian_screen", "sha256":"b97f3ab8f9d5d6bb58de83f56f61acf9dabbd214ddfa6e248c918d1523291ce1", "size":32768 }
+  ]
+}
+
+==== residualvm
+Tuesday 29-Sep-26 17:39:03
+apkg: this system does not provide what the package needs
+     residualvm
+     sdl.library (LIBS:sdl.library exists but would not open)
+install residualvm: rc=10
+apkg: not installed
+     residualvm
+
+==== stercus
+Tuesday 29-Sep-26 17:39:03
+apkg: this system does not provide what the package needs
+     stercus
+     sdl.library (LIBS:sdl.library exists but would not open)
+install stercus: rc=10
+apkg: not installed
+     stercus
+
+==== unmount
+Tuesday 29-Sep-26 17:39:03
+fetching https://archives.arosworld.org/share/utility/text/misc/unmount.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/misc/unmount.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/unmount.zip
+installed unmount
+install unmount: rc=0
+{
+  "schema":1,
+  "name":"unmount",
+  "version":"0.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"UnMount",
+  "installed":"2026-09-29T17:39:04Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/misc/unmount.x86_64-aros-v11.zip",
+  "archive_sha256":"33d6dac54f027dc157105b9a30530493b445204e0851600c7d04d119315f836a",
+  "archive_size":36467,
+  "reason":"explicit",
+  "dir":"unmount",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"d81bc8cf77b31dde1088c5f8ddd251991dcfa77acffa9a0a70d599b8832a5d7a", "size":8344, "member":"UnMount.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Unmount.info", "sha256":"07d4a78002133cdafb62b73b76141154e81019d06fe76755f6022c155f3be275", "size":8529 },
+    { "path":"UnMount", "sha256":"3978c31980355971589f7e2cea33c485b0548ee180141cadf2174c0ef1c5fa48", "size":23936 },
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/unmount.zip", "sha256":"64578821d294d6c46c5ce21c166fe26afbf0bc0ae091d2712eee1dfaea64452c", "size":2020 }
+  ]
+}
+
+==== wgetgui
+Tuesday 29-Sep-26 17:39:04
+fetching https://archives.arosworld.org/share/network/misc/wgetgui.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=network/misc/wgetgui.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/wgetgui.zip
+installed wgetgui
+install wgetgui: rc=0
+{
+  "schema":1,
+  "name":"wgetgui",
+  "version":"20070311",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"WGetGUI",
+  "installed":"2026-09-29T17:39:04Z",
+  "origin":"https://archives.arosworld.org/share/network/misc/wgetgui.x86_64-aros-v11.zip",
+  "archive_sha256":"9a1cd82332a7a0dd6c088784e3032a7e4e38770c2d8baaf0e6649cfbb3ff8a44",
+  "archive_size":97546,
+  "reason":"explicit",
+  "dir":"wgetgui",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"98b2e25cfa15ee54e4d4d4420ad4d57b7950261a6d0226b56b4580d89236b7db", "size":9263, "member":"WGetGUI.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"WgetGUI.info", "sha256":"1ccf4f3fc9b37b5582c0eee98edc258b545ae821eb1e939d6e0219caa4f5a975", "size":8032 },
+    { "path":"WGetGUI", "sha256":"28b1e71be9ce778a72e188661f04151b24376a7c534d8fbe3c7ee6996614a857", "size":33064 },
+    { "path":"Source.info", "sha256":"4258552cf785c60084d5d0ba28ea8c4e2d218bd3bbc57fd05289b601f5565272", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"10aba3cd462d4ce0f1efea78f68ef13f7742aae0348fe77ed0fd1e1d518625f8", "size":5424 },
+    { "path":"Readme.info", "sha256":"d76ddbcb3a26faa02a0c3c89a08c3e124ec5669b8c35aa4e2c9e6e0a57d5266c", "size":8788 },
+    { "path":"Readme", "sha256":"33a679780467cfe6896364461bcc8d957c6c03029230ef8f72991cee9611e640", "size":284 },
+    { "path":"Download.info", "sha256":"d5cc64df67d3cf585c4222eb8e2c008d957ce1594f28943fc486454b12050534", "size":9263 },
+    { "path":"dane/wgetGUI.banner.png", "sha256":"a8f435e83b4c3b8364ce073f7c68fdb3f47bbd3a35e8dc5b97aca255949f3a23", "size":5319 },
+    { "path":"Changelog", "sha256":"661c9531c3f887d699eb8e83a9d0e95f677272f631c4b3f4d57756172171a76e", "size":648 },
+    { "path":"Catalogs.info", "sha256":"734f2cdbd0e7b1053f9b5b836e951b1c7c086e6d883472d82e982a6c2c6c1600", "size":9617 },
+    { "path":"Catalogs/wgetGUI.cd", "sha256":"dd61161a5672e98fc4034b0344c560376ecc4840e3a77ff6715d24f3ce465d64", "size":845 },
+    { "path":"Catalogs/makeCatalog.shell", "sha256":"500186448ca9fcf26af2d7a68337688022851e83f3c085de540abb19eece478e", "size":74 },
+    { "path":"Catalogs/Italian.info", "sha256":"748a2648d84a73e97a5e5c56409fe4d8cfada5b872d7b917c9672be4fd2b7abf", "size":8186 },
+    { "path":"Catalogs/Italian/wgetGUI.catalog", "sha256":"5f0bc94ea142d196bfab108eb92a12a8e0e419e46154b9ba89b72a8150744271", "size":330 },
+    { "path":"Catalogs/English.info", "sha256":"7ad8d9762a1997c8640a27d016898049ba6a143958a1f111d80bf777c0096c55", "size":8922 },
+    { "path":"Catalogs/english.ct", "sha256":"fe3c935073705bc6145aad705ef135b5c2964c1fcbe596c95434eda5ff688e9d", "size":334 },
+    { "path":"Catalogs/English/wgetGUI.catalog", "sha256":"e1f1dbbd2155c30f6f430108a8e09e831bf6d2c061227ddffbf6d88f6e6af04f", "size":348 }
+  ]
+}
+
+==== wildmidi
+Tuesday 29-Sep-26 17:39:04
+fetching https://archives.arosworld.org/share/audio/play/wildmidi.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/play/wildmidi.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/wildmidi.zip
+installed wildmidi
+install wildmidi: rc=0
+{
+  "schema":1,
+  "name":"wildmidi",
+  "version":"0.4.6",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"WildMidi",
+  "installed":"2026-09-29T17:39:05Z",
+  "origin":"https://archives.arosworld.org/share/audio/play/wildmidi.x86_64-aros-v11.zip",
+  "archive_sha256":"227d32f3929dc932a98d3c66bc570d8547c191bf80844b52b3ca00bacd58dec9",
+  "archive_size":456882,
+  "reason":"explicit",
+  "dir":"wildmidi",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"WildMidi.info", "sha256":"f7035bfe746b5eda21adb53face6a64010f4e70b87c90afefb952c0c0d13dab5", "size":8501 },
+    { "path":"WildMidi.cfg", "sha256":"3af8687080b2af6eeadb235de59a5114873136d694db12bfc4b57f8d09c5445e", "size":3830 },
+    { "path":"WildMidi", "sha256":"2df3c5d0539df7411e2f09f5ae61264c989adbccd9dec289f9edf814baf1ee46", "size":211672 },
+    { "path":"Source.info", "sha256":"e787a95740a9b29ee71e8cb2e73f0f865abadd654e5d8554235c8c6a047d984e", "size":9136 },
+    { "path":"Source/wildmidi-0.4.6.zip", "sha256":"4be8cdf0bb9b497b95feea9b82d40762937e96a6b56332b575e8f92557fa6f7a", "size":290460 },
+    { "path":"Readme.info", "sha256":"70f6814d1ca548dd20e5b83b0150a2544dca74e49514a477b3014f98d219fc9c", "size":8788 },
+    { "path":"Readme", "sha256":"10096c1a9cab84fc936b6fe6555bc81f91e2f2a358c56520179ebb5362051c9b", "size":10944 },
+    { "path":"Docs.info", "sha256":"d6072ec9cce25fcfa6d782d833de0f4af45aa8bd9499b227f95d6d721744c1b3", "size":9125 },
+    { "path":"Docs/Man/man5/wildmidi.cfg.5", "sha256":"e8942e149fec01fa4f758b355188112e38aabe2ba800ef9980d3be9c9f243307", "size":5884 },
+    { "path":"Docs/Man/man3/WildMidi_SongSeek.3", "sha256":"f2582476229b2492cbe170f3f1edbb0f19ec8c8409a2a56cdb89b3fd00fbc797", "size":2351 },
+    { "path":"Docs/Man/man3/WildMidi_Shutdown.3", "sha256":"361ac75b4aee62576decafaf950c90e043960c83cd1e452a6ab6a34ab84f5d3d", "size":2118 },
+    { "path":"Docs/Man/man3/WildMidi_SetOption.3", "sha256":"bf11223791d063688181d4268dbf1cafe65ef0cdaed4f8ab5f7349457d50d772", "size":3881 },
+    { "path":"Docs/Man/man3/WildMidi_SetCvtOption.3", "sha256":"4af4058ab50aabd2e05a4bbe1ff871dcd86681a484ec4b6375fde4d341f648af", "size":2355 },
+    { "path":"Docs/Man/man3/WildMidi_OpenBuffer.3", "sha256":"785053b9294eb49f427abfcd9a54cd428bfedd1b19e53c2606b98e2693a0ed08", "size":2430 },
+    { "path":"Docs/Man/man3/WildMidi_Open.3", "sha256":"fa7daa7501cc2fd352754dec03c8cfc2adcd093404d6a8adc401c5d729f9cb9b", "size":2271 },
+    { "path":"Docs/Man/man3/WildMidi_MasterVolume.3", "sha256":"dbc62ca1b75890496b4200e85dfa3e77e261e6bf6e5273fd5ea3de794917c6fe", "size":2156 },
+    { "path":"Docs/Man/man3/WildMidi_InitVIO.3", "sha256":"eee93ea598423e89dded5ed6de409db55cbaad1162d925bbb2c515da9ef054eb", "size":4272 },
+    { "path":"Docs/Man/man3/WildMidi_Init.3", "sha256":"65d3b8df6da0300c93fd7c92397692a97abca6178d7a7304b32efed410b99365", "size":3628 },
+    { "path":"Docs/Man/man3/WildMidi_GetVersion.3", "sha256":"1d7864fcdb2d52d43df18a8e8379e8e37bd58c9edfa3e6e7046eb48be4854c95", "size":2185 },
+    { "path":"Docs/Man/man3/WildMidi_GetString.3", "sha256":"d8cd5a727816d9435e195f373f68c815eac9a95bb5007bc9b60eba53e353e990", "size":2260 },
+    { "path":"Docs/Man/man3/WildMidi_GetOutput.3", "sha256":"7ad058e405aa69515011e3ff0c4291c19c528c5568ea499069f347c89f7add38", "size":3177 },
+    { "path":"Docs/Man/man3/WildMidi_GetMidiOutput.3", "sha256":"907509b01aeee241d491208f95a3e0ff56c7ced95f23382926239e94a24d9928", "size":2790 },
+    { "path":"Docs/Man/man3/WildMidi_GetLyric.3", "sha256":"e3688afea3a725bfb54b3e459ac82bcdb0459247207ee0d038db12c472278a7c", "size":2370 },
+    { "path":"Docs/Man/man3/WildMidi_GetInfo.3", "sha256":"ac13a7437840b00eae4159cb48ec18cdb3e9e8f028c1a757f3541e73074eb00f", "size":4101 },
+    { "path":"Docs/Man/man3/WildMidi_GetError.3", "sha256":"069df2c0f14f5878b9db95b7ca7e4bfbc201fb055895d73b43976ca4886cce86", "size":1953 },
+    { "path":"Docs/Man/man3/WildMidi_FastSeek.3", "sha256":"e57402a7f10ae76ab3f2d51404e33196d1d27e32b2f1d5e54ef413d1abe53b25", "size":2678 },
+    { "path":"Docs/Man/man3/WildMidi_ConvertToMidi.3", "sha256":"b5f4028ffba7b6742b1a946b1d0b93cbf26952041877ea257acc5ebff287cfab", "size":2385 },
+    { "path":"Docs/Man/man3/WildMidi_ConvertBufferToMidi.3", "sha256":"d47257580ce292218b8dcf336a2f43b4b8b113bfc579a9750039ce36f439072a", "size":2490 },
+    { "path":"Docs/Man/man3/WildMidi_Close.3", "sha256":"eccd1d54b4866ea403c0d1a5fb86a28fb8d61cd0d55c24ea44b68f0ecdd3821e", "size":2135 },
+    { "path":"Docs/Man/man3/WildMidi_ClearError.3", "sha256":"ccc4b75fbe5241412b9528ff9e036138125a98ea0af2ef70874db2a8981b8825", "size":1935 },
+    { "path":"Docs/Man/man1/wildmidi.1", "sha256":"9b7df6c1b26189c0c9daeaed079692a800c1e639f8c3c73a6013e480f3c85ceb", "size":5520 },
+    { "path":"Docs/License/LGPLv3.txt", "sha256":"319917f5ccd09878db6f67c9a77dee846055644ca49eb535628b9e020a87261e", "size":7804 },
+    { "path":"Docs/License/GPLv3.txt", "sha256":"0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b", "size":35821 },
+    { "path":"Docs/Formats/XmiFileFormat.txt", "sha256":"e89df0e2bd22d39345232c81631395792bc5ea519639a2fe50c0bc133053bbf0", "size":2791 },
+    { "path":"Docs/Formats/XMIFileFormat-AIL.txt", "sha256":"9986c79f738195446c9c5333e109c67fd9047359ab95a1dfdbda6520378df0ba", "size":29298 },
+    { "path":"Docs/Formats/MUSFileFormat.txt", "sha256":"48365ec0273c1518db59ff28fbd5aef4b922ead36bc1a9a87b8e9cfbd2f0f179", "size":17507 },
+    { "path":"Docs/Formats/HmpFileFormat.txt", "sha256":"5dd3656a680d8bdd9a32ace450aff4051de4a0f86e7752ab3d62a8a792018dbb", "size":6145 },
+    { "path":"Docs/Formats/HmiFileFormat.txt", "sha256":"98b3f410b0fc06f0e66727944f7a8367183a15f68a2e019a52568e7045b646fb", "size":4803 },
+    { "path":"COPYING", "sha256":"17701a4d4cbe5fc36ada953d75c5bd979e4c9f0672c867b6840f5fb36739979b", "size":92 }
+  ]
+}

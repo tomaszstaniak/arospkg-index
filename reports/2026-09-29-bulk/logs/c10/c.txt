@@ -1,0 +1,77 @@
+==== stage C: remove
+removed ccd2cue
+remove ccd2cue: rc=0
+removed ffmpegvideotool
+remove ffmpegvideotool: rc=0
+apkg: not installed
+     giddy3
+remove giddy3: rc=10
+removed leu
+remove leu: rc=0
+apkg: not installed
+     minislug
+remove minislug: rc=10
+removed muimapparium
+remove muimapparium: rc=0
+apkg: not installed
+     protrekkr
+remove protrekkr: rc=10
+removed qlview
+remove qlview: rc=0
+apkg: not installed
+     residualvm
+remove residualvm: rc=10
+apkg: not installed
+     stercus
+remove stercus: rc=10
+removed unmount
+remove unmount: rc=0
+removed wgetgui
+remove wgetgui: rc=0
+removed wildmidi
+remove wildmidi: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:43:01
+qlview                       Dir ---rwed Today       17:43:01
+muimapparium                 Dir ---rwed Today       17:43:01
+leu                          Dir ---rwed Today       17:43:01
+ffmpegvideotool              Dir ---rwed Today       17:43:01
+cache                        Dir ---rwed Today       17:39:05
+db                           Dir ---rwed Today       17:43:01
+7 directories - 7 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/qlview" is empty
+Directory "SYS:Batch/muimapparium" is empty
+Directory "SYS:Batch/leu" is empty
+Directory "SYS:Batch/ffmpegvideotool" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+wildmidi.zip              456882 ---rwed Today       17:39:05
+wgetgui.zip                97546 ---rwed Today       17:39:04
+unmount.zip                36467 ---rwed Today       17:39:04
+qlview.zip                267148 ---rwed Today       17:39:03
+muimapparium.lha          756858 ---rwed Today       17:39:03
+leu.lha                  1565342 ---rwed Today       17:39:02
+ffmpegvideotool.zip        70832 ---rwed Today       17:39:02
+ccd2cue.zip                61095 ---rwed Today       17:39:01
+8 files - 6474 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:43:01
+transactions                 Dir ---rwed Today       17:43:01
+installed                    Dir ---rwed Today       17:43:01
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+qlview-6abbf8a5.json         142 ---rwed Today       17:43:01
+muimapparium-6abbf8a5.json     153 ---rwed Today       17:43:01
+leu-6abbf8a5.json            135 ---rwed Today       17:43:01
+ffmpegvideotool-6abbf8a5.json     159 ---rwed Today       17:43:01
+4 files - 4 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 12 files - 10 directories - 6488 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:43:01

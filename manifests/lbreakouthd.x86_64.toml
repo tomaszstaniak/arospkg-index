@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/lbreakouthd
+# with Run and input from NIL:, stack 500000 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-09-29-bulk/ (batch c04).
+
+status          = "approved"
+id              = "lbreakouthd"
+version         = "1.2.2"
+summary         = "Breakout/Arkanoid-style game"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/misc"
+url             = "https://archives.arosworld.org/share/game/misc/lbreakouthd.x86_64-aros-v11.zip"
+size            = 7682130
+upload_date     = "20260516-21.32"
+selected_by     = "only-candidate"
+
+sha256          = "9c65456190109728f1be08c73312222eb7355e2369ee35a2346e70cf36c2c58c"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "LBreakoutHD"
+icon            = "LBreakoutHD.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

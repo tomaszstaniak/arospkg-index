@@ -1,0 +1,7 @@
+==== nomarch: Nomarch, stack 40960
+Tuesday 29-Sep-26 17:40:14
+after 15 s (a number means it is running):
+Nomarch returned: rc=1
+after Ctrl-C (empty means it has ended):
+Nomarch returned: rc=1
+Tuesday 29-Sep-26 17:40:33

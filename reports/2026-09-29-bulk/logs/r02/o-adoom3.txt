@@ -1,0 +1,67 @@
+Failed to set SIGHUP handler: Function not implemented
+Failed to set SIGQUIT handler: Function not implemented
+Failed to set SIGILL handler: Function not implemented
+Failed to set SIGTRAP handler: Function not implemented
+Failed to set SIGBUS handler: Function not implemented
+Failed to set SIGFPE handler: Function not implemented
+Failed to set SIGSEGV handler: Function not implemented
+Failed to set SIGPIPE handler: Function not implemented
+Failed to set SIGABRT handler: Function not implemented
+dhewm3 1.5.3.1305 aros-x86_64 Apr 16 2024 19:53:55 using SDL v1.2.15
+terminal support disabled: stdin is not a tty
+pid: 000000004b90425c
+1920 MB System Memory
+Dumping SIOCGIFCONF data -:
+000000004f49e6e0:  FFFFFFCC 00 00 00 00 00 00 00 FFFFFFF0 FFFFFFE6
+000000004f49e6ea:  49 4F 00 00 00 00 6C 6F 30 00
+000000004f49e6f4:  73 25 75 00 72 61 77 5F 75 73
+000000004f49e6fe:  30 00 36 12 01 00 18 03 00 00
+000000004f49e708:  6C 6F 30 00 00 00 00 00 00 00
+000000004f49e712:  00 00 00 00 00 00 00 00 00 00
+000000004f49e71c:  00 00 00 00 00 00 00 00 00 00
+000000004f49e726:  00 00 00 00 00 00 00 00 00 00
+000000004f49e730:  00 00 00 00 00 00 6C 6F 30 00
+000000004f49e73a:  73 25 75 00 72 61 77 5F 75 73
+000000004f49e744:  30 00 10 02 00 00 7F 00 00 01
+000000004f49e74e:  00 00 00 00 00 00 00 00 6E 65
+000000004f49e758:  74 30 00 00 00 00 00 00 00 00
+000000004f49e762:  00 00 30 00 36 12 02 00 06 04
+000000004f49e76c:  06 00 6E 65 74 30 52 54 00 12
+000000004f49e776:  34 56 00 00 00 00 00 00 00 00
+000000004f49e780:  00 00 00 00 00 00 00 00 00 00
+000000004f49e78a:  00 00 00 00 00 00 00 00 00 00
+000000004f49e794:  00 00 00 00 00 00 00 00 6E 65
+000000004f49e79e:  74 30 00 00 00 00 00 00 00 00
+000000004f49e7a8:  00 00 30 00 10 02 00 00 0A 00
+interface @ 000000004f49e6f0 'lo0' - loopback
+interface @ 000000004f49e710 '' - SIOCGIFADDR failed: No such device or address
+interface @ 000000004f49e730 '' - SIOCGIFADDR failed: No such device or address
+interface @ 000000004f49e7b7 '' - SIOCGIFADDR failed: No such device or address
+doom using MMX & SSE & SSE2 for SIMD processing
+enabling Flush-To-Zero mode
+enabling Denormals-Are-Zero mode
+----- Initializing File System -----
+Current search path:
+AROS:Batch/adoom3/base
+Addon pk4s:
+WARNING: Couldn't find default.cfg in base/, trying again with demo/
+
+----- Initializing File System -----
+Current search path:
+AROS:Batch/adoom3/demo
+AROS:Batch/adoom3/base
+Addon pk4s:
+shutting down: Couldn't load default.cfg
+idRenderSystem::Shutdown()
+Shutting down OpenGL subsystem
+Sys_Error: Couldn't load default.cfg
+Failed to reset SIGHUP handler: Function not implemented
+Failed to reset SIGQUIT handler: Function not implemented
+Failed to reset SIGILL handler: Function not implemented
+Failed to reset SIGTRAP handler: Function not implemented
+Failed to reset SIGBUS handler: Function not implemented
+Failed to reset SIGFPE handler: Function not implemented
+Failed to reset SIGSEGV handler: Function not implemented
+Failed to reset SIGPIPE handler: Function not implemented
+Failed to reset SIGABRT handler: Function not implemented
+*** 'ADoom3' returned with unfreed signal 0x10000

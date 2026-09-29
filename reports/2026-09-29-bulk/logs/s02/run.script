@@ -1,0 +1,358 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8802
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8802
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== amishockolate"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install amishockolate
+Echo >>RAM:L/a.txt "install amishockolate: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info amishockolate
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== demoeffects"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install demoeffects
+Echo >>RAM:L/a.txt "install demoeffects: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info demoeffects
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== flx_play.zip"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install flx_play.zip
+Echo >>RAM:L/a.txt "install flx_play.zip: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info flx_play.zip
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== isomaker-gui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install isomaker-gui
+Echo >>RAM:L/a.txt "install isomaker-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info isomaker-gui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== opentyrian"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install opentyrian
+Echo >>RAM:L/a.txt "install opentyrian: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info opentyrian
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== reminiscence"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install reminiscence
+Echo >>RAM:L/a.txt "install reminiscence: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info reminiscence
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== stratagus"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install stratagus
+Echo >>RAM:L/a.txt "install stratagus: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info stratagus
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== tinytris"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install tinytris
+Echo >>RAM:L/a.txt "install tinytris: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info tinytris
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >RAM:L/b-amishockolate.txt "==== amishockolate: AmiShockolate, stack 40960"
+Date >>RAM:L/b-amishockolate.txt
+If NOT EXISTS SYS:Batch/amishockolate
+  Echo >>RAM:L/b-amishockolate.txt "amishockolate: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start amishockolate "SYS:Batch/amishockolate" AmiShockolate 40960
+  Wait 15
+  Echo >>RAM:L/b-amishockolate.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-amishockolate.txt COMMAND=AmiShockolate
+  If EXISTS RAM:L/r-amishockolate.txt
+    Type >>RAM:L/b-amishockolate.txt RAM:L/r-amishockolate.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "amishockolate"
+RAM:b/putfile >NIL: RAM:L/m shot-amishockolate 8802
+Wait 4
+Status >NIL: COMMAND=AmiShockolate
+If NOT WARN
+  Break >NIL: `Status COMMAND=AmiShockolate` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-amishockolate.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-amishockolate.txt COMMAND=AmiShockolate
+If EXISTS RAM:L/r-amishockolate.txt
+  Type >>RAM:L/b-amishockolate.txt RAM:L/r-amishockolate.txt
+EndIf
+Date >>RAM:L/b-amishockolate.txt
+RAM:b/putfile >NIL: RAM:L/b-amishockolate.txt b-amishockolate.txt 8802
+If EXISTS RAM:L/o-amishockolate.txt
+RAM:b/putfile >NIL: RAM:L/o-amishockolate.txt o-amishockolate.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-amishockolate 8802
+Wait 3
+Echo >RAM:L/b-demoeffects.txt "==== demoeffects: Plasma, stack 40960"
+Date >>RAM:L/b-demoeffects.txt
+If NOT EXISTS SYS:Batch/demoeffects
+  Echo >>RAM:L/b-demoeffects.txt "demoeffects: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start demoeffects "SYS:Batch/demoeffects/Plasma" Plasma 40960
+  Wait 15
+  Echo >>RAM:L/b-demoeffects.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-demoeffects.txt COMMAND=Plasma
+  If EXISTS RAM:L/r-demoeffects.txt
+    Type >>RAM:L/b-demoeffects.txt RAM:L/r-demoeffects.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "demoeffects"
+RAM:b/putfile >NIL: RAM:L/m shot-demoeffects 8802
+Wait 4
+Status >NIL: COMMAND=Plasma
+If NOT WARN
+  Break >NIL: `Status COMMAND=Plasma` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-demoeffects.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-demoeffects.txt COMMAND=Plasma
+If EXISTS RAM:L/r-demoeffects.txt
+  Type >>RAM:L/b-demoeffects.txt RAM:L/r-demoeffects.txt
+EndIf
+Date >>RAM:L/b-demoeffects.txt
+RAM:b/putfile >NIL: RAM:L/b-demoeffects.txt b-demoeffects.txt 8802
+If EXISTS RAM:L/o-demoeffects.txt
+RAM:b/putfile >NIL: RAM:L/o-demoeffects.txt o-demoeffects.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-demoeffects 8802
+Wait 3
+Echo >RAM:L/b-flx_play.zip.txt "==== flx_play.zip: FLX Play, stack 40960"
+Date >>RAM:L/b-flx_play.zip.txt
+If NOT EXISTS SYS:Batch/flx_play.zip
+  Echo >>RAM:L/b-flx_play.zip.txt "flx_play.zip: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start flx_play.zip "SYS:Batch/flx_play.zip" FLX Play 40960
+  Wait 15
+  Echo >>RAM:L/b-flx_play.zip.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-flx_play.zip.txt COMMAND=FLX Play
+  If EXISTS RAM:L/r-flx_play.zip.txt
+    Type >>RAM:L/b-flx_play.zip.txt RAM:L/r-flx_play.zip.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "flx_play.zip"
+RAM:b/putfile >NIL: RAM:L/m shot-flx_play.zip 8802
+Wait 4
+Status >NIL: COMMAND=FLX Play
+If NOT WARN
+  Break >NIL: `Status COMMAND=FLX Play` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-flx_play.zip.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-flx_play.zip.txt COMMAND=FLX Play
+If EXISTS RAM:L/r-flx_play.zip.txt
+  Type >>RAM:L/b-flx_play.zip.txt RAM:L/r-flx_play.zip.txt
+EndIf
+Date >>RAM:L/b-flx_play.zip.txt
+RAM:b/putfile >NIL: RAM:L/b-flx_play.zip.txt b-flx_play.zip.txt 8802
+If EXISTS RAM:L/o-flx_play.zip.txt
+RAM:b/putfile >NIL: RAM:L/o-flx_play.zip.txt o-flx_play.zip.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-flx_play.zip 8802
+Wait 3
+Echo >RAM:L/b-isomaker-gui.txt "==== isomaker-gui: IsoMaker-GUI, stack 40960"
+Date >>RAM:L/b-isomaker-gui.txt
+If NOT EXISTS SYS:Batch/isomaker-gui
+  Echo >>RAM:L/b-isomaker-gui.txt "isomaker-gui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start isomaker-gui "SYS:Batch/isomaker-gui" IsoMaker-GUI 40960
+  Wait 15
+  Echo >>RAM:L/b-isomaker-gui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-isomaker-gui.txt COMMAND=IsoMaker-GUI
+  If EXISTS RAM:L/r-isomaker-gui.txt
+    Type >>RAM:L/b-isomaker-gui.txt RAM:L/r-isomaker-gui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "isomaker-gui"
+RAM:b/putfile >NIL: RAM:L/m shot-isomaker-gui 8802
+Wait 4
+Status >NIL: COMMAND=IsoMaker-GUI
+If NOT WARN
+  Break >NIL: `Status COMMAND=IsoMaker-GUI` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-isomaker-gui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-isomaker-gui.txt COMMAND=IsoMaker-GUI
+If EXISTS RAM:L/r-isomaker-gui.txt
+  Type >>RAM:L/b-isomaker-gui.txt RAM:L/r-isomaker-gui.txt
+EndIf
+Date >>RAM:L/b-isomaker-gui.txt
+RAM:b/putfile >NIL: RAM:L/b-isomaker-gui.txt b-isomaker-gui.txt 8802
+If EXISTS RAM:L/o-isomaker-gui.txt
+RAM:b/putfile >NIL: RAM:L/o-isomaker-gui.txt o-isomaker-gui.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-isomaker-gui 8802
+Wait 3
+Echo >RAM:L/b-opentyrian.txt "==== opentyrian: OpenTyrian, stack 300000"
+Date >>RAM:L/b-opentyrian.txt
+If NOT EXISTS SYS:Batch/opentyrian
+  Echo >>RAM:L/b-opentyrian.txt "opentyrian: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start opentyrian "SYS:Batch/opentyrian" OpenTyrian 300000
+  Wait 15
+  Echo >>RAM:L/b-opentyrian.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-opentyrian.txt COMMAND=OpenTyrian
+  If EXISTS RAM:L/r-opentyrian.txt
+    Type >>RAM:L/b-opentyrian.txt RAM:L/r-opentyrian.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "opentyrian"
+RAM:b/putfile >NIL: RAM:L/m shot-opentyrian 8802
+Wait 4
+Status >NIL: COMMAND=OpenTyrian
+If NOT WARN
+  Break >NIL: `Status COMMAND=OpenTyrian` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-opentyrian.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-opentyrian.txt COMMAND=OpenTyrian
+If EXISTS RAM:L/r-opentyrian.txt
+  Type >>RAM:L/b-opentyrian.txt RAM:L/r-opentyrian.txt
+EndIf
+Date >>RAM:L/b-opentyrian.txt
+RAM:b/putfile >NIL: RAM:L/b-opentyrian.txt b-opentyrian.txt 8802
+If EXISTS RAM:L/o-opentyrian.txt
+RAM:b/putfile >NIL: RAM:L/o-opentyrian.txt o-opentyrian.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-opentyrian 8802
+Wait 3
+Echo >RAM:L/b-reminiscence.txt "==== reminiscence: rs, stack 40960"
+Date >>RAM:L/b-reminiscence.txt
+If NOT EXISTS SYS:Batch/reminiscence
+  Echo >>RAM:L/b-reminiscence.txt "reminiscence: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start reminiscence "SYS:Batch/reminiscence" rs 40960
+  Wait 15
+  Echo >>RAM:L/b-reminiscence.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-reminiscence.txt COMMAND=rs
+  If EXISTS RAM:L/r-reminiscence.txt
+    Type >>RAM:L/b-reminiscence.txt RAM:L/r-reminiscence.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "reminiscence"
+RAM:b/putfile >NIL: RAM:L/m shot-reminiscence 8802
+Wait 4
+Status >NIL: COMMAND=rs
+If NOT WARN
+  Break >NIL: `Status COMMAND=rs` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-reminiscence.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-reminiscence.txt COMMAND=rs
+If EXISTS RAM:L/r-reminiscence.txt
+  Type >>RAM:L/b-reminiscence.txt RAM:L/r-reminiscence.txt
+EndIf
+Date >>RAM:L/b-reminiscence.txt
+RAM:b/putfile >NIL: RAM:L/b-reminiscence.txt b-reminiscence.txt 8802
+If EXISTS RAM:L/o-reminiscence.txt
+RAM:b/putfile >NIL: RAM:L/o-reminiscence.txt o-reminiscence.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-reminiscence 8802
+Wait 3
+Echo >RAM:L/b-stratagus.txt "==== stratagus: stratagus, stack 40960"
+Date >>RAM:L/b-stratagus.txt
+If NOT EXISTS SYS:Batch/stratagus
+  Echo >>RAM:L/b-stratagus.txt "stratagus: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start stratagus "SYS:Batch/stratagus" stratagus 40960
+  Wait 15
+  Echo >>RAM:L/b-stratagus.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-stratagus.txt COMMAND=stratagus
+  If EXISTS RAM:L/r-stratagus.txt
+    Type >>RAM:L/b-stratagus.txt RAM:L/r-stratagus.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "stratagus"
+RAM:b/putfile >NIL: RAM:L/m shot-stratagus 8802
+Wait 4
+Status >NIL: COMMAND=stratagus
+If NOT WARN
+  Break >NIL: `Status COMMAND=stratagus` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-stratagus.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-stratagus.txt COMMAND=stratagus
+If EXISTS RAM:L/r-stratagus.txt
+  Type >>RAM:L/b-stratagus.txt RAM:L/r-stratagus.txt
+EndIf
+Date >>RAM:L/b-stratagus.txt
+RAM:b/putfile >NIL: RAM:L/b-stratagus.txt b-stratagus.txt 8802
+If EXISTS RAM:L/o-stratagus.txt
+RAM:b/putfile >NIL: RAM:L/o-stratagus.txt o-stratagus.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-stratagus 8802
+Wait 3
+Echo >RAM:L/b-tinytris.txt "==== tinytris: TinytrisAROS, stack 40960"
+Date >>RAM:L/b-tinytris.txt
+If NOT EXISTS SYS:Batch/tinytris
+  Echo >>RAM:L/b-tinytris.txt "tinytris: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start tinytris "SYS:Batch/tinytris" TinytrisAROS 40960
+  Wait 15
+  Echo >>RAM:L/b-tinytris.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-tinytris.txt COMMAND=TinytrisAROS
+  If EXISTS RAM:L/r-tinytris.txt
+    Type >>RAM:L/b-tinytris.txt RAM:L/r-tinytris.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "tinytris"
+RAM:b/putfile >NIL: RAM:L/m shot-tinytris 8802
+Wait 4
+Status >NIL: COMMAND=TinytrisAROS
+If NOT WARN
+  Break >NIL: `Status COMMAND=TinytrisAROS` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-tinytris.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-tinytris.txt COMMAND=TinytrisAROS
+If EXISTS RAM:L/r-tinytris.txt
+  Type >>RAM:L/b-tinytris.txt RAM:L/r-tinytris.txt
+EndIf
+Date >>RAM:L/b-tinytris.txt
+RAM:b/putfile >NIL: RAM:L/b-tinytris.txt b-tinytris.txt 8802
+If EXISTS RAM:L/o-tinytris.txt
+RAM:b/putfile >NIL: RAM:L/o-tinytris.txt o-tinytris.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-tinytris 8802
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove amishockolate
+Echo >>RAM:L/c.txt "remove amishockolate: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove demoeffects
+Echo >>RAM:L/c.txt "remove demoeffects: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove flx_play.zip
+Echo >>RAM:L/c.txt "remove flx_play.zip: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove isomaker-gui
+Echo >>RAM:L/c.txt "remove isomaker-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove opentyrian
+Echo >>RAM:L/c.txt "remove opentyrian: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove reminiscence
+Echo >>RAM:L/c.txt "remove reminiscence: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove stratagus
+Echo >>RAM:L/c.txt "remove stratagus: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove tinytris
+Echo >>RAM:L/c.txt "remove tinytris: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8802
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8802

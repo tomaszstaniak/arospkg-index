@@ -1,0 +1,39 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/stratagus with
+# Run and input from NIL:, stack 40960 bytes: it showed its own message that
+# it cannot find its data directory, and returned 1. The game data is not
+# part of the package; that message was checked, the game itself was not
+# played. Evidence: reports/2026-09-29-bulk/ (batch s02).
+
+status          = "approved"
+id              = "stratagus"
+version         = "3.3.2"
+summary         = "Warcraft and Warcraft 2 game engine"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/strategy"
+url             = "https://archives.arosworld.org/share/game/strategy/stratagus.x86_64-aros-v11.zip"
+size            = 5849826
+upload_date     = "20260611-17.42"
+selected_by     = "only-candidate"
+
+sha256          = "52a7f98fc9e8de2d3c54e6dfb113f9da972617c9362bf8aa960be71fa29ed201"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Stratagus"
+icon            = "Stratagus.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/tiltnroll with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r02).
+
+status          = "approved"
+id              = "tiltnroll"
+version         = "1.2.0"
+summary         = "OpenGL and SDL ball-rolling game"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/action"
+url             = "https://archives.arosworld.org/share/game/action/tiltnroll.x86_64-aros-v11.zip"
+size            = 1609016
+upload_date     = "20250824-18.37"
+selected_by     = "only-candidate"
+
+sha256          = "5958ddfe6d0a9da13b2a6d3ce0d74c48bffacc65f7d12b47022f6808a688419e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Tilt-N-Roll"
+icon            = "Tilt-N-Roll.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

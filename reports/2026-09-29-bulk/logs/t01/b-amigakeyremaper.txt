@@ -1,0 +1,7 @@
+==== amigakeyremaper: AmigaKeyRemapper, stack 40960
+Tuesday 29-Sep-26 18:17:19
+after 15 s (a number means it is running):
+ 10
+after Ctrl-C (empty means it has ended):
+AmigaKeyRemapper returned: rc=0
+Tuesday 29-Sep-26 18:17:43

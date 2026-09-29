@@ -1,0 +1,101 @@
+==== stage C: remove
+removed delugem
+remove delugem: rc=0
+apkg: not installed
+     dosbox
+remove dosbox: rc=10
+removed flexcat-gui
+remove flexcat-gui: rc=0
+apkg: not installed
+     gnurobbo
+remove gnurobbo: rc=10
+removed hex2
+remove hex2: rc=0
+removed hivelyreplay
+remove hivelyreplay: rc=0
+removed lbreakouthd
+remove lbreakouthd: rc=0
+removed metemp3
+remove metemp3: rc=0
+apkg: not installed
+     reminiscence
+remove reminiscence: rc=10
+removed screentest
+remove screentest: rc=0
+apkg: not installed
+     scummvm
+remove scummvm: rc=10
+apkg: not installed
+     timeless
+remove timeless: rc=10
+removed tinysid
+remove tinysid: rc=0
+removed unshield
+remove unshield: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:42:43
+metemp3                      Dir ---rwed Today       17:42:43
+lbreakouthd                  Dir ---rwed Today       17:42:43
+hex2                         Dir ---rwed Today       17:42:43
+flexcat-gui                  Dir ---rwed Today       17:42:43
+delugem                      Dir ---rwed Today       17:42:43
+cache                        Dir ---rwed Today       17:38:19
+db                           Dir ---rwed Today       17:42:43
+8 directories - 8 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/metemp3" on Tuesday 09/29/26:
+Img                          Dir ---rwed Today       17:42:43
+1 directory - 1 block used
+Directory "SYS:Batch/metemp3/Img" on Tuesday 09/29/26:
+stop.png                    1319 ---rwed Today       17:38:17
+rw.png                      1394 ---rwed Today       17:38:17
+play.png                    1442 ---rwed Today       17:38:17
+listview.png                1203 ---rwed Today       17:38:17
+ff.png                      1421 ---rwed Today       17:38:17
+exit.png                    1522 ---rwed Today       17:38:17
+add.png                     1387 ---rwed Today       17:38:17
+scan.png                    1544 ---rwed Today       17:38:17
+id3.png                     1580 ---rwed Today       17:38:17
+tlogo.png                   2387 ---rwed Today       17:38:17
+home.png                    1130 ---rwed Today       17:38:17
+11 files - 37 blocks used
+Directory "SYS:Batch/lbreakouthd" on Tuesday 09/29/26:
+lbreakouthd.conf             714 ---rwed Today       17:40:36
+lbreakouthd.hscr           empty ---rwed Today       17:40:36
+2 files - 2 blocks used
+Directory "SYS:Batch/hex2" is empty
+Directory "SYS:Batch/flexcat-gui" is empty
+Directory "SYS:Batch/delugem" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+unshield.zip             2287208 ---rwed Today       17:38:19
+tinysid.zip                67846 ---rwed Today       17:38:18
+screentest.zip             34054 ---rwed Today       17:38:18
+metemp3.zip               682499 ---rwed Today       17:38:17
+lbreakouthd.zip          7682130 ---rwed Today       17:38:16
+hivelyreplay.zip           90714 ---rwed Today       17:38:16
+hex2.lha                  248685 ---rwed Today       17:38:15
+flexcat-gui.zip            58038 ---rwed Today       17:38:15
+delugem.zip              10309121 ---rwed Today       17:38:14
+9 files - 41921 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:42:43
+transactions                 Dir ---rwed Today       17:42:43
+installed                    Dir ---rwed Today       17:42:43
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+metemp3-6abbf893.json        317 ---rwed Today       17:42:43
+lbreakouthd-6abbf893.json     153 ---rwed Today       17:42:43
+hex2-6abbf893.json           137 ---rwed Today       17:42:43
+flexcat-gui-6abbf893.json     151 ---rwed Today       17:42:43
+delugem-6abbf893.json        144 ---rwed Today       17:42:43
+5 files - 5 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 27 files - 12 directories - 41977 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:42:43

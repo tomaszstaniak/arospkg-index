@@ -1,0 +1,834 @@
+==== stage A: install
+
+==== amishockolate
+Tuesday 29-Sep-26 17:38:37
+apkg: this system does not provide what the package needs
+     amishockolate
+     sdl.library (LIBS:sdl.library exists but would not open)
+install amishockolate: rc=10
+apkg: not installed
+     amishockolate
+
+==== apotris
+Tuesday 29-Sep-26 17:38:37
+fetching https://archives.arosworld.org/share/game/puzzle/apotris.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/puzzle/apotris.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/apotris.zip
+installed apotris
+install apotris: rc=0
+{
+  "schema":1,
+  "name":"apotris",
+  "version":"4.2.0a",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Apotris",
+  "installed":"2026-09-29T17:38:39Z",
+  "origin":"https://archives.arosworld.org/share/game/puzzle/apotris.x86_64-aros-v11.zip",
+  "archive_sha256":"f60006ee29ab8ad240768adb57f3a3b1b9d6097a6440d71d3dff24fd2f45efcf",
+  "archive_size":9330924,
+  "reason":"explicit",
+  "dir":"apotris",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"993c4920eea941e5eb7906e0724f884496520134874f0111bd69ee98ba0160ad", "size":9378, "member":"Apotris.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Apotris", "sha256":"f4294fb2c8395a8a9d6854f1d5520d944dde50cf41ad3850ef61c8abe4bf1039", "size":23958472 },
+    { "path":"Apotris.info", "sha256":"9568b9df7423c1a693b507f619018063642f2e9a555f0d2f26ec5b478e1ec382", "size":8434 },
+    { "path":"LICENSE.txt", "sha256":"1ceb2bf6d62130a3a44d1a02c21c82a39615ee27ba5c51ec2acacbe09fb52774", "size":34543 },
+    { "path":"assets/towerScroll.wav", "sha256":"8e4d5bd092344fa7a7824e65fcb9a6265200c1faa8fd22289f78b2e3d0ce7e4f", "size":75452 },
+    { "path":"assets/GAME_f__detersive_.mod", "sha256":"449c9f068bd9aa7658cb2b27fa99dd7a691e062322155fbaaf6a8e64910eb108", "size":125138 },
+    { "path":"assets/hold.wav", "sha256":"866e4664b1b5862c720c5c28154c174a23fe12489171e5a903ae8513ec1f40ea", "size":40008 },
+    { "path":"assets/zoneStart.wav", "sha256":"740a85806e37cde235df112c91d5b25fa02bc4e5128a55802d8f90c189f41d7b", "size":606534 },
+    { "path":"assets/cool.wav", "sha256":"a6e83aa73fdb329a228378383a047d1a9f953e8edc05b459e6da79ed0a35c197", "size":32702 },
+    { "path":"assets/MENU_b_optikal-innovation.mod", "sha256":"06ea43d28eae29e45edcb3766c0012cd27ac65626177c2939419959ed12f7a1d", "size":94422 },
+    { "path":"assets/time.wav", "sha256":"5c8ff5b0e065bad6ffbd835f9d3049c89f04c1c20bd9e20afbca50d127516c48", "size":42850 },
+    { "path":"assets/double.wav", "sha256":"faf6c6b8248c1dc1ca3ffa6bb0d1dae91387b8eceefc067b79af34a054966785", "size":33016 },
+    { "path":"assets/initial.wav", "sha256":"d0b4fc53dd381a7c2efc1dc646a88836c7b53bcafc4f1f5f93eb37293cdfe80c", "size":25178 },
+    { "path":"assets/place.wav", "sha256":"4016c7d7d63adc09566f786d03665c21a6b0cb4e5375b97ca30bab539794e7f4", "size":29580 },
+    { "path":"assets/GAME_c_unsuspected_h.mod", "sha256":"47fb1755d06e53d9ae3a70f8f2ed39189e0e74fbf610143d94c5025979c868fe", "size":17202 },
+    { "path":"assets/shift.wav", "sha256":"770ae9a3c98a2486e1cf4831e98b8c8740aaf786e899d725300d8131945e7658", "size":1904 },
+    { "path":"assets/quad.wav", "sha256":"53f8de2e4de008212c52c63139c59f15838f0059afa48cc019ff3118130fa54b", "size":52922 },
+    { "path":"assets/favicon32.bmp", "sha256":"7724072caea66fb402231123d10ef030693f226cd17d24b3aeae34e021fdffe4", "size":2104 },
+    { "path":"assets/octoris.wav", "sha256":"88cdb8b19bb42e334c2f4e7c989557d4a09e46de108aa4147e7a6e81902f30af", "size":40622 },
+    { "path":"assets/triple.wav", "sha256":"d5b753bceccab59d1a45d37d5b7b28de445d1cbf9e1dec08c83c31f44425af66", "size":38152 },
+    { "path":"assets/levelUP.wav", "sha256":"b8863ead0ac7f2f7e7e7edc112e6487cb8d2b4d6ef921135ca04188ea12483ac", "size":181258 },
+    { "path":"assets/menuMove.wav", "sha256":"1ad83ae7b7920ff707e11e131ffcdba4ff99570f2ea13e364fbe5e160ae2559f", "size":6316 },
+    { "path":"assets/youWin.wav", "sha256":"92213a30f13a902b4cd30f4634f0f04ea32199fc48572cdbd1d4632421d25aed", "size":54162 },
+    { "path":"assets/regret.wav", "sha256":"12bef2da378a7a9de97ee046d70e8a0ee8001a9c73b41f8bc79c13f3b3bc7d50", "size":32350 },
+    { "path":"assets/GAME_d_warning_infected.mod", "sha256":"246641ff4c2941e3e941d5c541bd17f73d06ac9c8ad45a1a1c6f385eaf65f197", "size":98540 },
+    { "path":"assets/multiClear.wav", "sha256":"f8edeffd37ecc60b2923f41ae85218d6d224e9497cfbbbee59a9ef7f294140f8", "size":234634 },
+    { "path":"assets/tSpinMini.wav", "sha256":"512285f378d3081c3c7ea7b3f41d83154f19f0915dd01fa7820f9820cf258648", "size":55448 },
+    { "path":"assets/backToBackTSpin.wav", "sha256":"54796499bbb2f396f42dda0d507aac9f0a23bd5e3fe88fb2683b6aa82d0a89c8", "size":76974 },
+    { "path":"assets/GAME_a_thirno.it", "sha256":"39e3ff11ccec62884f0464564f02ba84fd10b372496f9e6c3a220e1cbb32d796", "size":48313 },
+    { "path":"assets/decahexatris.wav", "sha256":"c01ecc1fb193260f1aefbc1d378e253ead842ed5b3b89c491e865b405ad5e6f0", "size":59044 },
+    { "path":"assets/backToBackQuad.wav", "sha256":"ff42de698ed274ceb2ca19ffa77ea50c92c8e31eb5c1e5e339fc18f942e34466", "size":87344 },
+    { "path":"assets/ready.wav", "sha256":"8a424a51765afa103a1391f929febdfc585db2f17befe4d2925dacde4edb54af", "size":30430 },
+    { "path":"assets/youLose.wav", "sha256":"e268450795a63f4a20f5b793a5f9abebf9f8c07d346bd2fb076fea1a4afac975", "size":53622 },
+    { "path":"assets/shift2.wav", "sha256":"4208a00280a474f639a67d22a9f95d7da3ad672fbeabf9b7247e9af7cf941da8", "size":1776 },
+    { "path":"assets/GAME_b_oh_my_god.mod", "sha256":"c3e52c32bb7e59ead70e40c8c7b1eeff889173433329752985c380ab059cc830", "size":232768 },
+    { "path":"assets/menuConfirm.wav", "sha256":"771c365c04b3057d333195fba4cdc86d7af9dec3f3d600f71d29265d9ccab2cb", "size":23276 },
+    { "path":"assets/secret.wav", "sha256":"c6575ac600baa5f1ba5876171d394a440a5ebbe998a65f9543547b4a62c248d4", "size":5688 },
+    { "path":"assets/tSpin.wav", "sha256":"0078d2a2eb1f7815541d4f7b90482863bfbf59d53e8b669e56f1f42924d0c4a2", "size":45236 },
+    { "path":"assets/go.wav", "sha256":"ea8ffe48dee42b0669945153505ccae8356c055ff197c06f27d3d5584f668606", "size":28906 },
+    { "path":"assets/perfectClear.wav", "sha256":"af3ce680324ff2ad8cdd7409c73cc293875cd6537346c10871b23e7f6644a2ba", "size":65964 },
+    { "path":"assets/rotate.wav", "sha256":"e51178990033ce8d1dc543597d792e7a0ff12341c5392f2f067349e2f2d025e0", "size":5308 },
+    { "path":"assets/GAME_e_schizofrenium_long.mod", "sha256":"98e762dbf828bb804e8ddadea5a7f371db7f5708d79918afee090e2895306c14", "size":186010 },
+    { "path":"assets/win.wav", "sha256":"c7816ca25d15b8d32726ad9f137e650fd546481c6b24e4ac7a44ab12922188e8", "size":303274 },
+    { "path":"assets/ultimatris.wav", "sha256":"47a9891ef3311a5601908ae0f3488d858f45a16328fe568ed6bcfea363e6ea6a", "size":61064 },
+    { "path":"assets/menuCancel.wav", "sha256":"1bf2af1ffa8eb5a747e4c5211cee90b3b7e761bf68d5a2e4299e0524e42cbedb", "size":10736 },
+    { "path":"assets/dodecatris.wav", "sha256":"50ce8620793bdcc24401649d03c5450bc1a4498199d0c11628e768d69aa2e091", "size":56548 },
+    { "path":"assets/invalid.wav", "sha256":"9065de7cf746419645de52878a8224a52eaee7e42429edda724b3a4f2b1ec2a1", "size":16082 },
+    { "path":"assets/MENU_c_schmid-space_taxi.mod", "sha256":"77845c11ee0cbc510fe756a86bef0466845116990ef2468f9fff305b8c961e99", "size":60000 },
+    { "path":"assets/perfectris.wav", "sha256":"483d2b059ae4087c5cb41684e5d34b0014fe052de4fb018c5e40bb309aa9f7e2", "size":73476 },
+    { "path":"assets/perfectScroll.wav", "sha256":"0a41ef38abed3d4c0388f4adec442aa8b1f93b4b67ef2837bab40fb6dd1750cf", "size":66228 },
+    { "path":"assets/end.wav", "sha256":"e1a420d33ce1569cefd500dd937781039c5398a8b4cee7560951fd04267b3f65", "size":157758 },
+    { "path":"assets/gameover.wav", "sha256":"3eef74fa2b8c55753fd97c3943f44e654376820dfc84a645b534e9391bbef6db", "size":69000 },
+    { "path":"assets/clear.wav", "sha256":"1d90186ac8e4925d0c0ca1446fd092b777f7b9c46e2e4cb524c9e10037411121", "size":30054 },
+    { "path":"assets/levelUPsound.wav", "sha256":"c84419d3f9a655addcc072ada9cddc1794f921ac47a1f4231c1d904774db00cb", "size":380236 },
+    { "path":"assets/MENU_a_menu.it", "sha256":"185f9263a31bd26a51ce380fbac46369a82e95fbc7bb827aab2ca7c3f9ecf22a", "size":141374 },
+    { "path":"README.md", "sha256":"e0a8dc1f2321e6069e56b8575a73c24c66ad4769d6a142510ca0a6e1256204f4", "size":13152 },
+    { "path":"license/LICENSE.zlib.txt", "sha256":"86e5fef5a80cb66977614903e23f2d9c002a4db608e2028a1c086cf6d1653afd", "size":1427 },
+    { "path":"license/LICENSE.Tilengine.txt", "sha256":"1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5", "size":16725 },
+    { "path":"license/LICENSE.openmpt.txt", "sha256":"e6374c0159c4bdf56516c956a5c4bee3a2f1dae1bfa241e2e0b7271c0e36c180", "size":1596 },
+    { "path":"license/LICENSE.ogg-vorbis.txt", "sha256":"bfbb045b81532b38c798f0b46a992156bf3b8558df2abaa6063e12168c64c592", "size":1600 },
+    { "path":"license/LICENSE.SoLoud.txt", "sha256":"27e5dfcca945edeff8ed2ac9808baf53ab6c34cfae5d87b48410181b5af57968", "size":1170 },
+    { "path":"license/LICENSE.libutil.txt", "sha256":"1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5", "size":16725 },
+    { "path":"license/LICENSE.SDL2.txt", "sha256":"1e2de85b89cd1e6e3fe21495153700f70002fd33a152d5fb69011e00c879afd9", "size":883 },
+    { "path":"license/LICENSE.vorbisfile.txt", "sha256":"30b9beda950fadc350504c73c494a403dc6c5f4d54697bf46ce8babfaab47fde", "size":1617 },
+    { "path":"license/LICENSE.whisky.txt", "sha256":"34789ce8ea4c7c3cd57ec853d001420b61963257fa76a7e764b2bab7a1db20ac", "size":688 },
+    { "path":"license/LICENSE.opus.txt", "sha256":"0e5e291111f61d3e185ae0959cb66b7af7f6c1ef13d61016d43c4f9780082681", "size":2058 }
+  ]
+}
+
+==== badapple
+Tuesday 29-Sep-26 17:38:39
+fetching https://archives.arosworld.org/share/demo/misc/badapple.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=demo/misc/badapple.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/badapple.zip
+installed badapple
+install badapple: rc=0
+{
+  "schema":1,
+  "name":"badapple",
+  "version":"20250122",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Bad_Apple",
+  "installed":"2026-09-29T17:38:40Z",
+  "origin":"https://archives.arosworld.org/share/demo/misc/badapple.x86_64-aros-v11.zip",
+  "archive_sha256":"ce74a0ebeebf40309cd2ada821dd4a746dcf671e081cd37a0fd2a6ffdbb2d26f",
+  "archive_size":2653398,
+  "reason":"explicit",
+  "dir":"badapple",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"58200db0cfd5026c9884a48cdc11c6b6142424d2b90e312664ce6bd12dd0ce2a", "size":7542, "member":"Bad_Apple.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Player_src/mcc_SVGAnim.c", "sha256":"e3fac77e93c2b59bb47e772d847a97f4bb6b8c1e2e5044534969283d8009d611", "size":12198 },
+    { "path":"Player_src/miniz.c", "sha256":"e081651a604a9a3adbed70511f61dbabcee48ba4c4dd1fb69949b99f9d2528c6", "size":23659 },
+    { "path":"Player_src/mcc_SVGAnim.h", "sha256":"e9387bee2676aa8d84dccf960dec55eb2c2b2d213ef4c70135a4545145f31d56", "size":1286 },
+    { "path":"Player_src/mikmod_test.c", "sha256":"1d889f72263fe78b61992e9acab4ba15c5fffe829126b259b03eebfea44d603b", "size":898 },
+    { "path":"Player_src/miniz.h", "sha256":"e97721a0192fc1bc5e60b8761bafbf17006e23ad9636b92a52561a2061d8269a", "size":23235 },
+    { "path":"Player_src/miniz_tinfl.h", "sha256":"ba496b190ac93cb8dd441370c682c2beec405af3ac9e9ff6a8acde505c984c61", "size":8030 },
+    { "path":"Player_src/miniz_tdef.c", "sha256":"0b740ae87486a5caf0f71bf7b71c42de243b398672803f3b0e3353e999a3e2d4", "size":69822 },
+    { "path":"Player_src/miniz_tinfl.c", "sha256":"616c67eb011615875869051a72a4045e6151029eae8952944a74d9c2fa6e9ad1", "size":37591 },
+    { "path":"Player_src/miniz_common.h", "sha256":"87fa7aef5c11a143033251d12bbd23fe14c996d7d20f49e927e096a86ecd0255", "size":2516 },
+    { "path":"Player_src/SVGAnim_Play.c", "sha256":"464081ca338f311fd02975e655ee76f14565e68ab2118803b4c792197a0ab3a8", "size":5489 },
+    { "path":"Player_src/Makefile", "sha256":"7b2e9e85746d877a8353e21a1278c40b31b402c099cc8ae8523b09a06ed9e09c", "size":327 },
+    { "path":"Player_src/miniz_tdef.h", "sha256":"019bff304b9eda5e94598819ad37d2d6596f9840bcf8e51aeeb08c28d3620d20", "size":9871 },
+    { "path":"BadApple_pot.datz", "sha256":"1db7911c088aaa524cb8c2278bdbedb842545dd1538f5f9b67a8ecadd3751426", "size":1327246 },
+    { "path":"SVGAnim_play.info", "sha256":"3b005ff750054bb445f66241d3e3dafc08b9898a01dd467eed4442830ce8f697", "size":8712 },
+    { "path":"Create_Anim.lua", "sha256":"c0c262d0e635940a2ae441d416b4ac4122f03d76cc3229d59251b3bd859f2d00", "size":6154 },
+    { "path":"SVG2Anim_src/RamerDouglasPeuker.h", "sha256":"bdc0a64c0140e2e022d16bdc7935f4e47ec5ad9ca2d250dd93312d928c04f01b", "size":75 },
+    { "path":"SVG2Anim_src/path2poly.c", "sha256":"6353e337a60494d558b0c6723eeb7d94f6499f7606e8fc1954ac3387511ccd94", "size":13454 },
+    { "path":"SVG2Anim_src/SVG2Anim.c", "sha256":"8bc846d6035dbf5f56efeab390efc09de175ba85891a14770741898e77268538", "size":9186 },
+    { "path":"SVG2Anim_src/Makefile", "sha256":"7d81b2c2173e9d043307a0e291dbe6865e2852aa42dc6c17a5f3b6745c3b3e6c", "size":308 },
+    { "path":"SVG2Anim_src/path2poly.h", "sha256":"db6ba354325f752b25d00ef04b8bfbca47ae1c343c1317c1bf9a24db0bf74607", "size":459 },
+    { "path":"SVG2Anim_src/RamerDouglasPeuker.c", "sha256":"31084a1b9c2da5de366b13e27137caca74e246253588b8deac1a01b6fbd867b3", "size":2318 },
+    { "path":"SVG2Anim", "sha256":"04493bedbff2c338d678b815f5058cf45ee660c89e7582298585dd87a5d8189e", "size":51472 },
+    { "path":"Readme.txt", "sha256":"4b3777eade17abab9ec21070b21c9a63fd9b340b7e06c1ae8d1fc6d561a8e72f", "size":5017 },
+    { "path":"compress", "sha256":"aa8dc60c1f886a7865766ed9442bebc8d3bf34d8e7077abfba658514feb07125", "size":81944 },
+    { "path":"Compress_src/miniz.c", "sha256":"e081651a604a9a3adbed70511f61dbabcee48ba4c4dd1fb69949b99f9d2528c6", "size":23659 },
+    { "path":"Compress_src/miniz.h", "sha256":"e97721a0192fc1bc5e60b8761bafbf17006e23ad9636b92a52561a2061d8269a", "size":23235 },
+    { "path":"Compress_src/miniz_tinfl.h", "sha256":"ba496b190ac93cb8dd441370c682c2beec405af3ac9e9ff6a8acde505c984c61", "size":8030 },
+    { "path":"Compress_src/miniz_tdef.c", "sha256":"0b740ae87486a5caf0f71bf7b71c42de243b398672803f3b0e3353e999a3e2d4", "size":69822 },
+    { "path":"Compress_src/miniz_tinfl.c", "sha256":"616c67eb011615875869051a72a4045e6151029eae8952944a74d9c2fa6e9ad1", "size":37591 },
+    { "path":"Compress_src/compress.c", "sha256":"2778dae2835c129676e6bcead9ae19c40af9b22aa5b56414a1f84288c31c128a", "size":2331 },
+    { "path":"Compress_src/miniz_common.h", "sha256":"87fa7aef5c11a143033251d12bbd23fe14c996d7d20f49e927e096a86ecd0255", "size":2516 },
+    { "path":"Compress_src/Makefile", "sha256":"36f288a9198600d6837ccff5ceb14b76cb455b8311d768fdc4dd142b91225aa6", "size":300 },
+    { "path":"Compress_src/miniz_tdef.h", "sha256":"019bff304b9eda5e94598819ad37d2d6596f9840bcf8e51aeeb08c28d3620d20", "size":9871 },
+    { "path":"BadApple.datz", "sha256":"c1d1f6b5e1aafd9e3bec1f42a5e37e28a059e58d92032201b9c3e325cf3c4e37", "size":843824 },
+    { "path":"SVGAnim_play", "sha256":"2cd1be083a12f362aba91189b0d685d50bf49a5387cf59f56ccf4ef5be6521ed", "size":97256 },
+    { "path":"potrace", "sha256":"d4ba64679b3716e8039430cdda2f9c1681895213466f719ffa9ebb651c53e4be", "size":905624 },
+    { "path":"torvald_-_touhou_bad_apple.xm", "sha256":"6772a65e0edf00b484dc2f00423e70decb80e96149761105a548e36c6df37276", "size":133722 }
+  ]
+}
+
+==== breakhack
+Tuesday 29-Sep-26 17:38:40
+fetching https://archives.arosworld.org/share/game/roleplaying/breakhack.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/roleplaying/breakhack.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/breakhack.zip
+installed breakhack
+install breakhack: rc=0
+{
+  "schema":1,
+  "name":"breakhack",
+  "version":"4.0.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"BreakHack",
+  "installed":"2026-09-29T17:38:42Z",
+  "origin":"https://archives.arosworld.org/share/game/roleplaying/breakhack.x86_64-aros-v11.zip",
+  "archive_sha256":"8f038366a39184a61443c2f1f0e6da70272b3c390b7f704294064f6fbf96cbad",
+  "archive_size":16058465,
+  "reason":"explicit",
+  "dir":"breakhack",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5671622ce9506fb4c9bd9c7842ea2cfba48a99b26f8e115f39867f8572c6b032", "size":11932, "member":"BreakHack.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"README.md", "sha256":"25f3ab96fcd922bf75677995b9a6f67852bb5447ec60103877f2195479934340", "size":3694 },
+    { "path":"LICENSE.txt", "sha256":"c61f12da7cdad526bdcbed47a4c0a603e60dbbfdaf8b66933cd088e9132c303f", "size":32472 },
+    { "path":"data.pack", "sha256":"243f14bbb901a991769557af13cb4855bca3f7bd1f8bf8a44a3cf2099fd53734", "size":13925 },
+    { "path":"BreakHack.info", "sha256":"f67f824b07182c372e3d76fc02f41bee653248e1865e10b06aee839a2722c45d", "size":2984 },
+    { "path":"BreakHack", "sha256":"bf39baab17b534740d353c607a3015e37e32dbf2957a6a030fba1b3aae9d4fab", "size":7749128 },
+    { "path":"assets.pack", "sha256":"96cabcfd8f20f0aeac139921ad495b35c17274aff2da3dcda272acb28ff4b8a5", "size":13522005 },
+    { "path":".data.db", "sha256":"6a1563c4be7b99db9e3286354e82b8b7cfd4c0d4024859cc8ee73cde4c12f91d", "size":32768 }
+  ]
+}
+
+==== dose2
+Tuesday 29-Sep-26 17:38:42
+fetching https://archives.arosworld.org/share/demo/scene/dose2.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=demo/scene/dose2.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/dose2.zip
+installed dose2
+install dose2: rc=0
+{
+  "schema":1,
+  "name":"dose2",
+  "version":"1.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Dose2",
+  "installed":"2026-09-29T17:38:43Z",
+  "origin":"https://archives.arosworld.org/share/demo/scene/dose2.x86_64-aros-v11.zip",
+  "archive_sha256":"78791100a0f4376e108357ea98fd8b4db8da192b626f040c4023a2ed2ebe6f7f",
+  "archive_size":5712711,
+  "reason":"explicit",
+  "dir":"dose2",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"f23ed1ec0b9eb10dadbb11c35dca25bd6cc345ac84ac67473f170021c3dc65c8", "size":9898, "member":"Dose2.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Dose2.info", "sha256":"7bdf5930a2c229d5e81033ee73b526b7288eabbca15cc49e9a77481e45ffaeda", "size":8918 },
+    { "path":"Readme-Aros", "sha256":"e0f0a66bd29c33229b51509930f2dc37d7633f768da9cf77361defa873db71d4", "size":513 },
+    { "path":"Dose2", "sha256":"6e3d75dd8dc948ceeed274aaf1ec2eacf167280040d84ff3fbb19e3415799e11", "size":2584064 },
+    { "path":"docs/README", "sha256":"ef074d75b4cef308f433ca50546c2bdf9a2d3ad0ca29151e513bea975432a62e", "size":2579 },
+    { "path":"data/j0094.vec", "sha256":"0c1e00a5d75f9a80ad5760cf75b1ae4e0ab9f080103534258cfe1d3cf54ad3fa", "size":4596 },
+    { "path":"data/j0256.vec", "sha256":"fa90d919d5a1813ed79a113c37a8e1705dcdc87a2af6a1f650312cec3e15b5da", "size":5080 },
+    { "path":"data/j0110.vec", "sha256":"c8bfd74e9dcc1a5816e2d6a86a805f665ac168ffcf8f966a07fd2ec748b81874", "size":5076 },
+    { "path":"data/u4.vec", "sha256":"ca38b5486aeb3fa7167ba269f72eed2927849be159ebff6ff01217bac17ea496", "size":16632 },
+    { "path":"data/j0084.vec", "sha256":"cd0db63542c8dc80632145d96d1c449dfb04d6bf8d4b01779d55efbc2b3de9bf", "size":4712 },
+    { "path":"data/j0032.vec", "sha256":"d4fd0964fff0dfe787623d2d65a97dc450edfedefa364303edafdc08f970d0ee", "size":4576 },
+    { "path":"data/j0212.vec", "sha256":"9dc64bc9742b86a58cd54780c778c227ec2389fecf0b7abce02de38066d7a94b", "size":4904 },
+    { "path":"data/j0118.vec", "sha256":"b1508781822f14e924178a387981a6cda179d0ec47b7354be5552f4283b28980", "size":4100 },
+    { "path":"data/j0038.vec", "sha256":"438c2e91f57b899655b9c7f8112752370d6a88f1fde50c75c2f675ffa491e1b2", "size":4872 },
+    { "path":"data/man1.vec", "sha256":"1d8f1399b829668f088c2fc47d265af18217692eba143b73cf9fbc4c74517aee", "size":24208 },
+    { "path":"data/j0166.vec", "sha256":"32d3e4707565997c15758dfb7cd194943a7fb24619386c645cdf8af13c1a970b", "size":4532 },
+    { "path":"data/j0242.vec", "sha256":"89e6b11b68150efe833a7c4f1a82c39a319141ba12e468879bbcca9cbc8903b9", "size":5128 },
+    { "path":"data/j0020.vec", "sha256":"4aec0a7ee9bff106727aa81c11630aed8279a2ede05270ba20afe0a12a21bd79", "size":6876 },
+    { "path":"data/j0278.vec", "sha256":"bd0393c9e9a1efcbf3c21ef4b8cf2e881aee279a8b3a7ee07a9387581503e51a", "size":4624 },
+    { "path":"data/u7.vec", "sha256":"89a8badd884ac6dd0bc9b1b86cef154374b2316374db62b847eb65c2518ca827", "size":15164 },
+    { "path":"data/son.vec", "sha256":"e09d70da049c38eebd8101588634820b6535c497e25100eb4748c5cd1172eb3a", "size":33112 },
+    { "path":"data/u11.vec", "sha256":"30ee848e532c2a9dd5ea8c8956bd6f8d0a67d411cebe73e6f0ff5508420e9b00", "size":14524 },
+    { "path":"data/j0190.vec", "sha256":"591f8a5cb6341e895392f1378595c9eeb28edde0286af68b8c211befadbd7bab", "size":4744 },
+    { "path":"data/j0188.vec", "sha256":"19202dfef14ee3880468888a07e0af396f64ace4d863bdf8063edb68c4d35bb1", "size":4376 },
+    { "path":"data/pleit.vec", "sha256":"9b9c1b36ef78857a63edc03f24b698f275fb604c28e6cbcfbf88cc32a9651e3d", "size":10988 },
+    { "path":"data/j0204.vec", "sha256":"0c106f54549a9abb965388cf04f920155cd05b1b1dd1e7ef21164b9aeac9bcd2", "size":5120 },
+    { "path":"data/knaiv.vec", "sha256":"bde38812fd0859348ab40f6839954622508cf401beddf03e8a8bb78d07a98492", "size":10680 },
+    { "path":"data/j0244.vec", "sha256":"3f1bb71e3f0916059c4cf97e2ee2f4352fc30a1fe95dc013797f75642a48a627", "size":4872 },
+    { "path":"data/j0064.vec", "sha256":"74ccc063a40c276f7163cd0da553a3813430f3a83efc34325658536e3e52ddcb", "size":4884 },
+    { "path":"data/j0078.vec", "sha256":"f6fdefe8bc597283473fd1f8c460a17776d62c9213564f4513e7c0dbcab305b1", "size":4888 },
+    { "path":"data/man2.vec", "sha256":"d35762fe391f83a12f85571b6b450462d14d16bf7403cbdaabf578ed7980803f", "size":26104 },
+    { "path":"data/j0114.vec", "sha256":"78250e06dfd989e4efa735b1aade32ffbf993641b92900594cd81a633f45a3d3", "size":8020 },
+    { "path":"data/j0260.vec", "sha256":"5de9e7884f58622aced2ba4f07f33913080fae7c31d949412d3e26906ae19fbe", "size":4772 },
+    { "path":"data/u2.vec", "sha256":"b8604b2065a403c03a134b940a28f0dd3bdee070bd817714924c1e7d5933cd50", "size":16684 },
+    { "path":"data/j0208.vec", "sha256":"61b7587cfa044e444896ed50b4b59e9b61c03be32ff5872ce6697f87547ad4c3", "size":4512 },
+    { "path":"data/j0216.vec", "sha256":"d32e21ba38a9fd29b684998c4a8ef55d1704e13d4e437f1b0b52feee3072e26a", "size":4692 },
+    { "path":"data/j0054.vec", "sha256":"2670181df48e6acfe62a20f9958045ede196c760160ddff404145135adcfb553", "size":5228 },
+    { "path":"data/j0246.vec", "sha256":"c2b6d83a334dfe43c1bfe34a604aa1b9df321b81ee7746a0d61d0c34fa89761e", "size":5180 },
+    { "path":"data/j0128.vec", "sha256":"e73b8a1bd34ad401d9f23030d57a043a822450dd81e640b5c91fba5ce86bc74c", "size":4288 },
+    { "path":"data/j0210.vec", "sha256":"24ca74fb7b30ceb8ff2ff7c0946e1161dea7388e7b9f1cd5077f3d485900d668", "size":4724 },
+    { "path":"data/j0040.vec", "sha256":"8c98d41b66662aaed7adc507e5408dc2d1c8797866fbd699a1cace899bb54421", "size":4840 },
+    { "path":"data/j0224.vec", "sha256":"d0b8c8faa2ca18e4f4ae13bf5c9189c2a16620e708a1fe5df52769bb1602fc1d", "size":5024 },
+    { "path":"data/j0270.vec", "sha256":"04a31b64e3e88f7f3529d888063216bd2b9ef3ad2aef7c336a34074b16c5dc78", "size":4568 },
+    { "path":"data/j0250.vec", "sha256":"51cc34ad579aeb0fe549c6906f12d56a8ef06c24588f669a6e70534ed8304785", "size":4968 },
+    { "path":"data/j0266.vec", "sha256":"408c9e6dc167cd3f74a38e5f33c6a27efdf744bb780c87030a77efb7286c204c", "size":4552 },
+    { "path":"data/hotel.vec", "sha256":"94d223f9f9b0668b85af41542e34ba23b67b86d455d4a661cbc6c00a95a99f53", "size":41132 },
+    { "path":"data/2.vec", "sha256":"4e5b75783ec543a6cf4396005ac2bd230f3810fade79d70badbe78851d3123b2", "size":15392 },
+    { "path":"data/j0068.vec", "sha256":"43ba3105aeebd2b07d1b210e204298c596966a5a0e3b67caefd69ee9431895a6", "size":4768 },
+    { "path":"data/dose.vec", "sha256":"1c8557adbae445cf525ed7ae6a73a97095253c7fe87a8a457041f271faadd0a3", "size":25860 },
+    { "path":"data/j0218.vec", "sha256":"e3fe2841fd5ceb9db53fb2cd2d5e1638f4ce57bb74ac212fe76433588b6be82a", "size":5188 },
+    { "path":"data/dstairs.vec", "sha256":"8a00c9ce78355c20848b989e5a6dda6cbe34d8ce2a11c1197f2b3b50de0650b4", "size":20 },
+    { "path":"data/j0200.vec", "sha256":"dbeac64c671a2e53b17eb7583d2b081f723d5e6914518cf1e12a8ba9f4a8c4c1", "size":5248 },
+    { "path":"data/j0146.vec", "sha256":"0eed494e291a6296481584013491a04fe5874ba14109b953a0f3893939e822d8", "size":4692 },
+    { "path":"data/j0142.vec", "sha256":"240ec3df842d52550172cf827cbdb12b019f03b26ebbc5ebe20f0f54603e40bb", "size":4756 },
+    { "path":"data/j0274.vec", "sha256":"39048b6c6bde8230b88a6935bffb467b8ee1acc3011e6e2143a96302e464a924", "size":5028 },
+    { "path":"data/j0232.vec", "sha256":"810675fe2e50b0f1529d9915da704515cdcf48761730110d57562ff65c125454", "size":4992 },
+    { "path":"data/j0240.vec", "sha256":"3b256f184dbce651c0f2aa6a4abce75d5c5282fbc663527f4d231653aaf9c0f2", "size":4784 },
+    { "path":"data/j0226.vec", "sha256":"7275eef9ad9488df668ebc8aa8df7f4e8df5ece6e7e89ce18ee50192d76b246f", "size":4632 },
+    { "path":"data/j0172.vec", "sha256":"e701fc64075fcecb678129289943a9bfe832abeffd8ccc8891d0aeccff7d8775", "size":5316 },
+    { "path":"data/j0016.vec", "sha256":"dd6d8b3ac56df43fe902130abd0c8a469478f6208b47371da5b3cf82e0e3ee8c", "size":5140 },
+    { "path":"data/j0222.vec", "sha256":"d45befa09c4ad497267c17f169b7b9b4e7d6471a6118188b7193a3091261a49b", "size":5312 },
+    { "path":"data/j0098.vec", "sha256":"db093b480a64077af3e5f1bf49fbfe357b548ec4d1d734814b8156b1a11bdbe6", "size":4520 },
+    { "path":"data/j0138.vec", "sha256":"1aef05c43101eb3cff8cb593071476828f6723aa9e3ab00389d26c55ee2a2dc1", "size":4396 },
+    { "path":"data/j0052.vec", "sha256":"2a9299aea205364fbb928c03fbdec421add4fd0917553bde8ae4020b72c5f2f3", "size":4640 },
+    { "path":"data/u10.vec", "sha256":"4101f9bb30cd7c0e398283c3eb4c5ecaf9ff2cab53d8f19faf285fd42b64c98a", "size":15448 },
+    { "path":"data/j0140.vec", "sha256":"6f1fe61bfd4ebac23f38c912f728e11d8cd6130c22f980b5145a20f305d66219", "size":4576 },
+    { "path":"data/j0192.vec", "sha256":"9adea681c2cc5f05747e0eb2dfe5ed4869f35a2415d525544900ea843ab436f8", "size":5540 },
+    { "path":"data/u6.vec", "sha256":"3ef09961b3a39e0b56acfe8235a3404feac65d75fc38e1e4c8dfb9d2abd6e306", "size":16920 },
+    { "path":"data/j0130.vec", "sha256":"4aa99e599ef5ea553187bb0f4070e0f43498e908da0d43e6fac233d4d71705e1", "size":4508 },
+    { "path":"data/j0144.vec", "sha256":"b7800272334fa23444f2a411cc066a96f3669a4eb8983e1173199aa3e09343c2", "size":4724 },
+    { "path":"data/italy.vec", "sha256":"97be22149cf721e32d24e6edb4751848128c3a92f8a1cd7074d54b5d5dc784de", "size":22396 },
+    { "path":"data/j0276.vec", "sha256":"c79f0fa785605e75f05a8124677c53dd9046c80036cd4470d7aad455443509b0", "size":4888 },
+    { "path":"data/j0018.vec", "sha256":"db2cfaa546dffd3f0ac65b60df7c006fd6cf9b97d4862e405552ebb487c1bfea", "size":6972 },
+    { "path":"data/j0036.vec", "sha256":"5874b76ffa1fc7b30c2232b8323a7cfe8aefe3937ae77f8fc95b37105f135498", "size":5464 },
+    { "path":"data/j0124.vec", "sha256":"fcee67fc9a48599dbcbf3f9274810ac085c4b6b9b44df0b91ae968d7ade46e82", "size":4860 },
+    { "path":"data/j0042.vec", "sha256":"09e33950df7d73a19659389ba82ffdac0b3ee82118a658501e58972b03109590", "size":4820 },
+    { "path":"data/j0058.vec", "sha256":"9aca03306da55e59d21079106dd6363ee435299c964f44f9bce4b51860b51097", "size":4932 },
+    { "path":"data/j0082.vec", "sha256":"7d1bf62ec9159641c2e6976386318d6669e13ee8039a59d6275ec496bd2affe7", "size":4892 },
+    { "path":"data/j0100.vec", "sha256":"fd9692f60abd47930910174f9b3e1e7eab4713464dd5b228be6f97b3d8a52022", "size":5012 },
+    { "path":"data/j0268.vec", "sha256":"fc4e34cd0c5b522a31aeb427b06705259901b3e843a1ccada7c99a69a9585f43", "size":4660 },
+    { "path":"data/u5.vec", "sha256":"7552f7f4d32137e54805f3a7e28576d9f20d8f3e1e1468fe1c48d5b99ef5b743", "size":17544 },
+    { "path":"data/u9.vec", "sha256":"8e18d49790096230ecfcfcee63f9791c1656604391c43f3a5006a21c42bfaa9f", "size":15788 },
+    { "path":"data/j0080.vec", "sha256":"bb1fb30212d0dcc4b209486e9e79c03623947352a2b79160dee83e0ddcb636e6", "size":5028 },
+    { "path":"data/toilet.vec", "sha256":"5ea17631e8e3beeeb9fb778bf4234c9bb82da9ae6c74b53aeb65ddedc38f3c13", "size":39044 },
+    { "path":"data/j0030.vec", "sha256":"d475ffd34c17253a52b28d2d791ced70287efa264ed2cbc7615b32aa7ca855ff", "size":5236 },
+    { "path":"data/j0104.vec", "sha256":"833d9bac785608a6c606819183e6ea396e7e2fccab834246571a2fd4a19ce665", "size":4908 },
+    { "path":"data/j0026.vec", "sha256":"453d62ff8d96fc11e199d86f257ad665b7a99fcf8fa4a994a893a792499e973a", "size":7164 },
+    { "path":"data/j0002.vec", "sha256":"a76dcdfe896e849ab89465d894066df25250a60da1243c4520e3958d1b6666ff", "size":3976 },
+    { "path":"data/j0088.vec", "sha256":"b8d100602cabc73703369275f28e1ceb7f0c2386311884bb99497be62d7f8b7a", "size":4696 },
+    { "path":"data/j0134.vec", "sha256":"7f634093a0e607d947ad3798fa40081a9d2ce46f95acaf205cc7a13ad01363ac", "size":4648 },
+    { "path":"data/j0004.vec", "sha256":"8f00f31e894fa0f58720d1b3cfdaca1ccc74e36092e47c7489cae545f57aeb47", "size":4376 },
+    { "path":"data/biaaccth.vec", "sha256":"550f67dd52dbeb8b9730578d51571f6e9e7abf7f3359e60c1a2d683881e4315f", "size":32084 },
+    { "path":"data/j0148.vec", "sha256":"75cc0c929f17d17fbcfdbb081287d149f25c45cb6b65377956b49b8706b0b5ac", "size":4472 },
+    { "path":"data/j0248.vec", "sha256":"8c990184f531bd608f8bb28691a3500229a8ba910c6eb2112f1f557d10bd66ab", "size":5172 },
+    { "path":"data/j0184.vec", "sha256":"7d407ded0b15c52e3fd6aa4461aee030fa892e829389db60117a83abeaa0cc97", "size":4880 },
+    { "path":"data/j0262.vec", "sha256":"63e1a341ad5f8033a751398ff5e16bf2d4dd2141fc6ef15a517676cc0977e9f9", "size":4616 },
+    { "path":"data/malta.vec", "sha256":"ae912c1bb35cb7fadba4e04bc3108fbf9062e3353ec29143693d517a0e339823", "size":24856 },
+    { "path":"data/j0070.vec", "sha256":"82c093b7d6788ab6dbe768f767df55fd8ece2a0385485961fad195df351e9be4", "size":4628 },
+    { "path":"data/j0072.vec", "sha256":"71179542baf8b9545c2d65d44e835e6f0dc053a36c9ad28ca58bbb7c0f79f5a6", "size":4728 },
+    { "path":"data/bed.vec", "sha256":"1ef63ccdd15323c153107eee1ec306135fe6f8473bf2109828c87d85ce888356", "size":16676 },
+    { "path":"data/j0086.vec", "sha256":"a63e3cdc0fd2d693e717e5a5d2f819aefa4cc0b0532360eb9c7a64f85cd88032", "size":4776 },
+    { "path":"data/j0254.vec", "sha256":"776f48bb77247c36f7b673e55b351df86110260e7467cc6c108c1ea8e91e55fe", "size":5216 },
+    { "path":"data/j0164.vec", "sha256":"c2d894a1bab270fe6b6c6aaf795ab1b627198988c83e028f077565836d929e57", "size":4220 },
+    { "path":"data/j0022.vec", "sha256":"5a550051802da4949896058aae9b71c1c07127ca6989792e76bc70cf4e7bf83b", "size":6656 },
+    { "path":"data/j0156.vec", "sha256":"7fcfa918bed3a03b80027f7eb2e6ab4642ed24de29b2a8449bbe2ab4f58c4911", "size":4516 },
+    { "path":"data/j0116.vec", "sha256":"2e55e88d5cb1111e4ce4e54af39f29fc7a2977b41b3cec6079bdc4e383f93ffe", "size":8408 },
+    { "path":"data/j0236.vec", "sha256":"ffeea8f6be18e21d319feecf14e07a5eaf9344c2baaf41f4151951ecc637187d", "size":5576 },
+    { "path":"data/resto.vec", "sha256":"98c3e9b36d9e360b0f315b199492592d6d457037866f07acfe55101e086b62bf", "size":19512 },
+    { "path":"data/j0170.vec", "sha256":"282858195f519d27503fcf2935999bfa01dfcb4081915e9372c74fcc51188e39", "size":5128 },
+    { "path":"data/j0062.vec", "sha256":"2e1284a23d1bc724c4df45c66cf52e1912a2daac1198ef21c698ae4193d88b22", "size":5060 },
+    { "path":"data/j0136.vec", "sha256":"defb51f8a2fd51b1e2064df4eb2ddbcdeb04b7a059e0e60dd4cb11b5af036eb2", "size":4192 },
+    { "path":"data/tupiss.vec", "sha256":"8a7b087f47065621c2e63618cd1c3cae57fd3a776c7376d0e95121df42f766a5", "size":31192 },
+    { "path":"data/j0198.vec", "sha256":"05f370eadde8d8616a47869deaf8bafb3480727acb8cc098dcc2b3fe42af98e1", "size":5464 },
+    { "path":"data/j0234.vec", "sha256":"f82790821f15008eef8db5cb2a65a55b4409a245dac40a45d00e6d92eceb59e2", "size":4836 },
+    { "path":"data/j0202.vec", "sha256":"bd54de90113b02d1d2e3f88a4b181c4b2a4458179cf86535ebbd0af4fede40b0", "size":5060 },
+    { "path":"data/j0238.vec", "sha256":"e06fd9b3353282e625c9114f0bd322366f868571bcf59e9f276f67a292d6c8c3", "size":5560 },
+    { "path":"data/j0152.vec", "sha256":"7e9f4626d89d678317c2809b6a878fa07dd5d2060477a04cec81106a4df0e32e", "size":4372 },
+    { "path":"data/j0206.vec", "sha256":"c82dfc2b5123843c58ab8000eafc1ee6e77b7ecc599d54a77be4713c4b8637ff", "size":4616 },
+    { "path":"data/u8.vec", "sha256":"675b824999a5973664d55250b32edd8d763f21e7faaf74c31d45ac5f2a8e4034", "size":14664 },
+    { "path":"data/j0066.vec", "sha256":"b5b937bd3d8e671a60c0c7852462203c6d41e6db3e98d53c8834d9967203754d", "size":5136 },
+    { "path":"data/teibl.vec", "sha256":"8a00c9ce78355c20848b989e5a6dda6cbe34d8ce2a11c1197f2b3b50de0650b4", "size":20 },
+    { "path":"data/j0028.vec", "sha256":"3cf04a7778714a795eb2054f2c35564f0d29c7be7a123a106b4312303a73851c", "size":5836 },
+    { "path":"data/j0126.vec", "sha256":"d62e738a5fca564307ecb808cc5e09cef7b4a3e96352a9455d42165094aab23c", "size":4000 },
+    { "path":"data/j0014.vec", "sha256":"e9df78b70314377f9ed9487ad006ddc6ae84be6e84329f4e558928928399ccaf", "size":4264 },
+    { "path":"data/j0034.vec", "sha256":"04cfbf7adf49f6c59e5dd5af408ae94e4e16a2873645bbe434d763646f3bd13a", "size":4724 },
+    { "path":"data/mfxlogo.vec", "sha256":"0dc1b58818ef05ef6cdeec2ca176cf3bffe6e8779f53b82d08848eaf7cac74cc", "size":28888 },
+    { "path":"data/j0048.vec", "sha256":"f03484dee664d8dbe456c2ddfba20163c7c164f29c3b59a3758ad42c5016671f", "size":4528 },
+    { "path":"data/j0158.vec", "sha256":"f758cd3a999a319488801337873179cfa5295c9de11029f645bdcba3504f2c8a", "size":4444 },
+    { "path":"data/j0050.vec", "sha256":"28923577f1749f995a9c71571c8e8d7f59a840d1ab9785ff5608f9614f8723bc", "size":5096 },
+    { "path":"data/j0102.vec", "sha256":"02823308cfaf1e26e02929090bf9cf8e6bf76d0e7c1acc695a62a9119361d8e4", "size":4588 },
+    { "path":"data/j0162.vec", "sha256":"52dcd96ebda60bb1abc1691a9024a58b7ba8f902a290c3d4f87444b7d59748e0", "size":4916 },
+    { "path":"data/spuun.vec", "sha256":"329c86bbd26e75948e5bca5fc8eef85dec48ca98ca19e03e657c055d5727b149", "size":11624 },
+    { "path":"data/j0160.vec", "sha256":"acde2f63ee813f35e3a7e0d3f83202f1cc934de517b0cd0130bdbb2679451586", "size":4700 },
+    { "path":"data/j0092.vec", "sha256":"6853b473292b18a298736d3a4cfacae617d5a4c836135f47f42e25e3005c656f", "size":5484 },
+    { "path":"data/fok.vec", "sha256":"0866d16dd8e553548fb34dc47d32b7cdc7844d636cb25bf8d095aca0e5ce2235", "size":13988 },
+    { "path":"data/j0056.vec", "sha256":"ab63f6e7183ae975f454cd25c7a383ae57feb0767593676fdb495d85070ebda1", "size":4996 },
+    { "path":"data/j0180.vec", "sha256":"603a303384e2c2c3d0ad6537405f6e1c28b67fcf762b1430abca416bc701381f", "size":5324 },
+    { "path":"data/j0264.vec", "sha256":"a6cd6bb03d938f7beb7ea3061ceffbfccf21aa4447823419f6b02ea6d69e22c7", "size":4728 },
+    { "path":"data/j0178.vec", "sha256":"0ec50f9f04420e492ed4941deadb9d5e70f36500a472c6b8a2830ff99638c04a", "size":4232 },
+    { "path":"data/j0196.vec", "sha256":"0db9443f011a1e481be7b42633fac0116424a1053a8dd415f3c57bbb5b6819e0", "size":4664 },
+    { "path":"data/j0214.vec", "sha256":"edd9c56cef4710fd65508d44ac48dbe3638931cec2ba8447cc40850c7e7f975e", "size":4684 },
+    { "path":"data/j0074.vec", "sha256":"d09720e91cc182808b7152ba47eeb3b54ae49be04efe5e9e15bbe5084bcdb5fc", "size":4908 },
+    { "path":"data/onepiss.vec", "sha256":"1092fb35f57d41144ddf97115ee1cdfdb10d8c6a4e24101666300ffb3b6f67bf", "size":17188 },
+    { "path":"data/j0046.vec", "sha256":"3970f62eaddd050e1e8ac6aa08bff7f0366d8420d0bffcf2e0b7cf8b85121069", "size":4792 },
+    { "path":"data/j0008.vec", "sha256":"338400cd2c83bf92a5e7864e9e478f06fe21f3877c801f2e3e391518ef5c40a1", "size":4556 },
+    { "path":"data/j0230.vec", "sha256":"78003a8433571a15faaec29267a058bb04cb27f48b21d1e846bf6103cf4f05fd", "size":5212 },
+    { "path":"data/j0012.vec", "sha256":"ce1786c0a5abb61958d381bb58cfd89a9a81fb5b6d2d1328f4559babd541ab58", "size":4688 },
+    { "path":"data/j0132.vec", "sha256":"af29f629ae4c4070ee0d9f292a29d2d99056e6999359d86c59c6e51f3a7ad452", "size":4424 },
+    { "path":"data/j0108.vec", "sha256":"cb6cd1c55cdd124896c976a7fa3f259adb0454b6806dcfd68bc8d420a1f92b6d", "size":4268 },
+    { "path":"data/j0258.vec", "sha256":"7aa16647435268ed59a709ec11fa833a3b878928856033815a208d48640bf3df", "size":5232 },
+    { "path":"data/j0120.vec", "sha256":"dce3535253038d86330196d15a3231786d3feeb87c1c84072694a8503e86bc01", "size":4492 },
+    { "path":"data/j0076.vec", "sha256":"4bdb2d22405e9e70f06a25f233f9babc8af852379f5f3f0acded79c90a254683", "size":4452 },
+    { "path":"data/j0228.vec", "sha256":"569c79c55c05447625092539ffa64f25cf2339974f9858a1b2d2238a05920d39", "size":4476 },
+    { "path":"data/italo160.ogg", "sha256":"747f4e6cc51cfde8059f284bee4f83b2d00ebb035af10d83c0ae06177c9265af", "size":4317767 },
+    { "path":"data/weitross.vec", "sha256":"f3c0d1d1997e743a8d3e51ac53f3573e5a389021b7c711cd51e57849587752c1", "size":24024 },
+    { "path":"data/j0154.vec", "sha256":"4b53f3c098664640d1418fea19cb16294a6b8857314889161d93d4ba1bbd1e61", "size":4048 },
+    { "path":"data/j0060.vec", "sha256":"25e8ac74bdaf7deca8f77b95aee3c7d08ed5de24d5e351ee9fb159acaa087679", "size":5176 },
+    { "path":"data/j0112.vec", "sha256":"52f724e1382584119190c1fd365a97e9edddaaf71f329742a0167834db922675", "size":5116 },
+    { "path":"data/j0182.vec", "sha256":"6b0f5f8b9648b12d5eb6c46d83de1e297b9341aa1bdbf50260e9d38f3bba92ed", "size":4424 },
+    { "path":"data/j0252.vec", "sha256":"9bb10ece42269a4794b386c43f6162d87d0954f8ec3f34d3c80a860b352cd001", "size":4736 },
+    { "path":"data/j0168.vec", "sha256":"74bb0b21e37810e7a109670101e31c03dd7de2ae73bcca829b360061abda8ece", "size":4784 },
+    { "path":"data/j0150.vec", "sha256":"7ca08b835ac605547fa8c769e2ffdc76b08a90bee9f00722e57e126981fed264", "size":4652 },
+    { "path":"data/teibl2.vec", "sha256":"8d187a04a28b784071b379ef8f9ea47c0babd7a9e81fb790500e9ace417d2615", "size":34440 },
+    { "path":"data/j0090.vec", "sha256":"00a76c21deac2f756cd09c657cdb8e5fb7680e4b1b30212253d2dbdd04886b6b", "size":5512 },
+    { "path":"data/j0176.vec", "sha256":"9bcce0e50ddba0adb914357de12e5e9d9b5253f4da3ed671d8fa0efb99cb742d", "size":4600 },
+    { "path":"data/j0006.vec", "sha256":"448a7d6ec1e40ce494c800587bc96315452db41aea47c84f18902a848e004bf1", "size":4384 },
+    { "path":"data/j0186.vec", "sha256":"f110ae02ad63939fb47a3c29af1426548d5ad8748d74a2eb51dae0b9b62969a9", "size":4444 },
+    { "path":"data/j0194.vec", "sha256":"4526614eca5a3e6615c2c235bbcd30a789a900bfd4e616cc19d1591ec79c9823", "size":4828 },
+    { "path":"data/u3.vec", "sha256":"4c3eac51a26aa8f0801da5bedc0a501a921f1735b08cf55c1847c4fb0419a438", "size":16372 },
+    { "path":"data/j0024.vec", "sha256":"25883c972053ba3e102c9077bbc864a650c010a7c9f86f49894b60efbee63306", "size":6056 },
+    { "path":"data/luigi.vec", "sha256":"05839393e8a02f93ff2af11b6346bbfc59b9c8e8950108960cc5b67ef66a18ac", "size":74964 },
+    { "path":"data/phoyn.vec", "sha256":"78a5bced736867e3dcd3214d6227318615e5f64d613c09117ab18c733ac451b8", "size":27708 },
+    { "path":"data/j0010.vec", "sha256":"2f01b7cba957c87e56feb277501a8210db190123348ecae0579ff502ac4077ff", "size":4504 },
+    { "path":"data/j0272.vec", "sha256":"8b5a0d1031378153c17255629e2611a5fb63b2498ce2c6f2405f80fc3fe4dc59", "size":4672 },
+    { "path":"data/j0220.vec", "sha256":"ea63bab26a898f0d972c46ace1a516b305800f20793227d4184bb5c5b93dad07", "size":5216 },
+    { "path":"data/j0174.vec", "sha256":"635b8fb9e4b3edc02ef34d23e879df23a90df6215c20fd2f0137eb16b440ffe6", "size":4908 },
+    { "path":"data/j0044.vec", "sha256":"42e55b1ed2e2ad468ba40b88ec0cb2e2b289279cb33492d5862697739e705531", "size":4904 },
+    { "path":"data/manitsor.vec", "sha256":"34cb03ed537031c1158a333802aef658c746a596b421a32ce3dab38389c0e409", "size":31072 },
+    { "path":"data/j0096.vec", "sha256":"be2f00e7b43b4dbaff4c94da8e163a8a766fa2e7d631daa0eb564936e5a888df", "size":5028 },
+    { "path":"data/j0106.vec", "sha256":"0f74e9d5103281372dc59e40a646e7d97b879166d519b35324f2bff1f7a6633b", "size":4692 },
+    { "path":"data/j0122.vec", "sha256":"6a5a30378b8de74160aab4ccf1278ffa9861668a93f519b28e141d3a34f6a93a", "size":4392 },
+    { "path":"data/shits.vec", "sha256":"c7c1692292b5707191ddfdf6e67cd1625a89b0f2149ea064378d98eee0b9766e", "size":37820 }
+  ]
+}
+
+==== ft2clone
+Tuesday 29-Sep-26 17:38:43
+fetching https://archives.arosworld.org/share/audio/tracker/ft2clone.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/tracker/ft2clone.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/ft2clone.zip
+installed ft2clone
+install ft2clone: rc=0
+{
+  "schema":1,
+  "name":"ft2clone",
+  "version":"2.19",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"FastTracker2-Clone",
+  "installed":"2026-09-29T17:38:44Z",
+  "origin":"https://archives.arosworld.org/share/audio/tracker/ft2clone.x86_64-aros-v11.zip",
+  "archive_sha256":"cbd330bb3b9a084f9ff068b1e0b2e8384873ce8cec61c9b71a244751ee160c70",
+  "archive_size":4090439,
+  "reason":"explicit",
+  "dir":"ft2clone",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"b8c37665df3a7a2c11ff477fdee88415d576ac6cb685255faddbf7d0135e6a2f", "size":8801, "member":"FastTracker2-Clone.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"space-debris.mod", "sha256":"25f1f4b1f146918f79e8b9941e3363cd4b4a426715d8ca502e383c0fe497e060", "size":343608 },
+    { "path":"soda7_-_keep_it_real.mod", "sha256":"1f4209bb5ee3208bada822addc5abc9efbbf1c476742e0397fece3cae0d27529", "size":681344 },
+    { "path":"ft2-clone.info", "sha256":"f3f1a3e995fe45220b99844c9d8c62535e74249a25fac2f3bb660ed4f990b863", "size":8675 },
+    { "path":"ft2-clone", "sha256":"ffcb46afa9027dcda6a787684196f1525acb5d3101d1ec9c1882ec77ffe8cb71", "size":3906424 },
+    { "path":"extra/FastTracker2.info", "sha256":"329a0540605dd7643bfa314a9008b6b4f3868cf0a0cb30b24066a2121753962f", "size":7979 },
+    { "path":"elw-sick.xm", "sha256":"e24b0253f243cd78d9730397423213cbcdbd7a13df277edd85600d4a95f2277a", "size":802116 },
+    { "path":"WHEN.S3M", "sha256":"f630f78ec32920310d284411f6f72daebf5ea496d260e861ca940121c9dfdb59", "size":846302 },
+    { "path":"UnreaL ][ PM.s3m", "sha256":"bfea2ed867cb1893882c61c64222de488789a8596b13a9db4716d148a8cead07", "size":600640 },
+    { "path":"ReadMe_Aros.txt", "sha256":"60c117fd0fc18e5b1a1ec3291998ef1b9d3abdaa8a3a47522b528d5914e8bb55", "size":1776 },
+    { "path":"Minute waltz Chopin.MOD", "sha256":"aefa432a75162f6096350d0874352a08bc90914ed9d605fd60bd53e7a1f1d862", "size":275792 },
+    { "path":"Lunatic_1.MOD", "sha256":"33bdc875aada23a61fb4ab18fbf7319568a538e0d4f6469174c2e6f6742c0779", "size":114316 },
+    { "path":"I like Chopin.s3M", "sha256":"8b6c8e493bc64ac6845fbdf4f89630b5de9e381dc5f783203acb6daf856387c5", "size":196050 },
+    { "path":"FT2.CFG", "sha256":"f11d11a96d0462a05d7c79f96c9d3c5dab4f734cfcb643c46ad9cdad9aed58c9", "size":1736 }
+  ]
+}
+
+==== lzop
+Tuesday 29-Sep-26 17:38:44
+fetching https://archives.arosworld.org/share/utility/archive/lzop-1.04.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/lzop-1.04.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/lzop.zip
+installed lzop
+install lzop: rc=0
+{
+  "schema":1,
+  "name":"lzop",
+  "version":"1.04",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"lzop-1.04",
+  "installed":"2026-09-29T17:38:44Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/lzop-1.04.x86_64-aros-v11.zip",
+  "archive_sha256":"674b267bad2a9b6c9f4782a2274679d9ee8ece07d8c157ad171464ddd4ee29e3",
+  "archive_size":639377,
+  "reason":"explicit",
+  "dir":"lzop",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"stamp-h1", "sha256":"24fdde0aee1f49666fc7a5bd7f422dc0118e4db128bc1f606f7f047c9b245bb4", "size":23 },
+    { "path":"src/version.h", "sha256":"669498f53930102deaaac10a6dfad03ffd13bc41a81bbd63fca64a48ba23e161", "size":155 },
+    { "path":"src/util.c", "sha256":"cb1558a76d072952789ba1ba6e175ba19a14730ccbb0267fe48ea9aa56d682c1", "size":17139 },
+    { "path":"src/screen.h", "sha256":"f8fd92af757d2f5683ca7bfb438a433bda6170491ca2f7e24dbdf77f9c8cb752", "size":2920 },
+    { "path":"src/s_vcsa.c", "sha256":"f20c6dbc9d91b8e8a89105a13f3266aded26cf9b204cc5fa7077204b122a0a76", "size":10274 },
+    { "path":"src/s_object.c", "sha256":"8c8e299d096c1ac733fd127890cac5844d5c0d456b796ed83cfc40565e081bed", "size":2043 },
+    { "path":"src/s_djgpp2.c", "sha256":"ef7446576ee9160c69e215244bd465dfa3ca5f8563503e2272e5d128b167c898", "size":7557 },
+    { "path":"src/s_curses.c", "sha256":"53b915ca16a88203e3dac84dcff044ab487184978c69a1395acf0a7d93c11548", "size":8201 },
+    { "path":"src/p_lzo.c", "sha256":"716105ac110327002206c404025d2953bc2e7134662be5dd377a2978781be134", "size":15480 },
+    { "path":"src/miniacc.h", "sha256":"76d80211352455daf642c5e0442cf147d01d4526d4543f1587e2e79606636809", "size":288637 },
+    { "path":"src/mblock.c", "sha256":"f33b7c6b36164b6ba3fe6af55302180e673f0bb4abe1c27d57f93e1a42d690c5", "size":2290 },
+    { "path":"src/lzop.c", "sha256":"09d06d748efb45abe6dcd7f764b90b1a5ae7e9b5039c97ba1f960eb846ef3dca", "size":77938 },
+    { "path":"src/help.c", "sha256":"df869b1aa8890fdec2b0fe8dcc2ab95f502a99fc46152b31203160cdf4dc691d", "size":7611 },
+    { "path":"src/frames.h", "sha256":"51a0b56d308b66e1c28cb5ec2772e1f9c21c135b9888485f25b55f09c9964ee3", "size":22403 },
+    { "path":"src/frames.c", "sha256":"aa0c093d17f5b324532715c2bdf547b3b341478443903dc36825f6139ad42b21", "size":6185 },
+    { "path":"src/filter.c", "sha256":"5c64933e3668c97abcf053c8335f28f7511515ff282b323a31db6a1a8fec8bb6", "size":3479 },
+    { "path":"src/djgpp2.c", "sha256":"5c1a9e2baaef1ab4361f09c000173e0f23d9ec444d439467bf7ac580f43430de", "size":4683 },
+    { "path":"src/console.h", "sha256":"65d56fcd77fc92936db33289df89f8b42dc3eecc5492cafa6c570d6bcaa36c9a", "size":4432 },
+    { "path":"src/conf.h", "sha256":"c376672768882affa7379d09d9b6f6a3e0ded7653d00edfb12bfa9391e665c04", "size":19035 },
+    { "path":"src/compress.c", "sha256":"fe36bf4d6ef59da7171f13f3e911492dd27f48905b7367772c129e166f065522", "size":8657 },
+    { "path":"src/c_screen.c", "sha256":"d348a72fbf63c82981597fdca80112f61cb2c2222cc3410cfc6a0464870bf5d6", "size":4777 },
+    { "path":"src/c_none.c", "sha256":"948a4e1025db9ff101259e755e01e5bddf5e715241092f33b0827c31c1a8dbb8", "size":1943 },
+    { "path":"src/c_init.c", "sha256":"8e937f8cbf03c250228f5c67be789edc8e8824fb7c9d6f70c4c38ae49c9f867b", "size":3650 },
+    { "path":"src/c_ansim.c", "sha256":"af12de44c10af78c79696324cbe274e399eeae471dfa16fd5412d5bdabfad61d", "size":1720 },
+    { "path":"src/c_ansic.c", "sha256":"288575261934e96e07d6b5669268291b0ee25f8e2c5dfc45d972f617343e9976", "size":2208 },
+    { "path":"lzop", "sha256":"fc28ff08f4c8d9bf78d7d4d08773f2b8073aa7e30d6bf57b7e0c9e03d642ade6", "size":709104 },
+    { "path":"doc/magic", "sha256":"56ca3bca442997e31b70242077f19df83b0e1be4a8a93191fa3b1248ac4d0f2b", "size":1256 },
+    { "path":"doc/lzop.txt", "sha256":"6980eff39e0bbf6cd55cf10b3ced27276171635e9c625ae9590ac57003178c8e", "size":15802 },
+    { "path":"doc/lzop.tex", "sha256":"217181f89f0acb625acd2a061484c8de67d50bbbdfc04782d8239b53e4d0b372", "size":17425 },
+    { "path":"doc/lzop.ps", "sha256":"75402e521516b258235911440ba9eb74e8cc5e4183924221b060cfcbdda240ca", "size":32216 },
+    { "path":"doc/lzop.pod", "sha256":"38ecdf391aeba0736e0caff4f61efb1e5896592a2d4e54f915ceb53b6e4fe596", "size":14833 },
+    { "path":"doc/lzop.man", "sha256":"ca6bb884b60c779751058b994f18357ab05f268cc8b0d58950e3f790b6f7b28f", "size":17796 },
+    { "path":"doc/lzop.html", "sha256":"7e2ae707a171ea0e5a22546492b8f160419d13bafb535097428b0814c6fb75c5", "size":18952 },
+    { "path":"doc/lzop.1", "sha256":"cea2e525dcc0093b0536ee60e31ccb527d7248daae0dc0fea9b343ec84cd21d0", "size":21323 },
+    { "path":"configure.ac", "sha256":"ec382ea52c0eb348f42a3b314cddf5d4dcd74e87f0502c584610a5200b493158", "size":7912 },
+    { "path":"configure", "sha256":"a1911013c8700bec35058f272d6b0d9f5ec2d6b126beb6bd0e7a116534ff7c3b", "size":255723 },
+    { "path":"config.status", "sha256":"a22de523f6b2ce5dceeee11d7c8b4f47043d7cfb928df0eb30340dd33827cc58", "size":39013 },
+    { "path":"config.log", "sha256":"292d90d82126cab9b2b56e0e2573efd7d7e8dcb2d612fe818f1ec1cf7cc6106e", "size":490257 },
+    { "path":"config.hin", "sha256":"86afd9e7f280b309f0cd849d53eed121f2adb6cc9e521cab5c844c91cd305aad", "size":13960 },
+    { "path":"config.h", "sha256":"3d59be109f7d726c63070bd7946fc40d49bf10f211239d85edcf3f8aab17e591", "size":14717 },
+    { "path":"autoconf/ylwrap", "sha256":"45e042362ad6a964eea9f777d643b5bccad130a49316deb63de07e0864bac7de", "size":6422 },
+    { "path":"autoconf/shtool", "sha256":"7ca925f54935b5e42d417e398fa9bb6b0bc1ef1cb945414cecafbf30536e553a", "size":141930 },
+    { "path":"autoconf/py-compile", "sha256":"4d546ccace042d0076b5092991163196c970b4a8d3fae23bf31524c69fa7407b", "size":4671 },
+    { "path":"autoconf/mkinstalldirs", "sha256":"faa386250d18a9e1dc39b27a7c9162b68ea34f3b0de7fa57f4b2217c21f54e78", "size":3539 },
+    { "path":"autoconf/missing", "sha256":"2964c9849ee7437665cd86bc13e2018cd4c7d88ad405730c645a88dc3add6d14", "size":6873 },
+    { "path":"autoconf/mdate-sh", "sha256":"2dc0995df6475244e0d12151499c74b00dbf988a663c1d071adb035b6e183da5", "size":6048 },
+    { "path":"autoconf/ltmain.sh", "sha256":"500c7ad1f77b73218ba8dd93227999c1b11ec1dda0d3d9e035c37a120a36af60", "size":317994 },
+    { "path":"autoconf/local.m4", "sha256":"f35caf6ed11f68f5e81eb7adca25c791797fc3c16094861955bd2d3f94a34fc8", "size":21429 },
+    { "path":"autoconf/install-sh", "sha256":"cba2fc55db32a081d81991172dd7b31ef95476eec7fdd887490f7de832215d4e", "size":14676 },
+    { "path":"autoconf/depcomp", "sha256":"e143e89fca1ee021597543149b3e37de8681d9883c9568741c0d6f54aeb16e0d", "size":22465 },
+    { "path":"autoconf/config.sub", "sha256":"52d7418817df4a0bd139446cf014f9dfd5bb3406a95c3109ca6fd578068be472", "size":36515 },
+    { "path":"autoconf/config.rpath", "sha256":"79ec6c3c2125b7c4989442b9ca01cf0f9b0b625f161ff8d997de688e50129a76", "size":18574 },
+    { "path":"autoconf/config.guess", "sha256":"74864f1132e27449adb18f2ace0a1d738efc412217ea538e9b4d3c61dda63e83", "size":44338 },
+    { "path":"autoconf/compile", "sha256":"2dd0914838c05c6094e2d2348607f5d8fcdce7dafed37d19344adcc4aaca7a5b", "size":7382 },
+    { "path":"autoconf/ar-lib", "sha256":"534c7f463f702faddd50389afcbbe2615abbd436ccdfb6c2c62e148e015c9088", "size":5826 },
+    { "path":"aros64config.sh", "sha256":"960cc151672214cec13d38590d46357b858158d0cf461e96c91ec9d09fe1358a", "size":860 },
+    { "path":"aclocal.m4", "sha256":"edb8e592c12cecf6243edbbcdeed7b298093fc33580a48a5ff0ad71a57b4a58a", "size":44566 },
+    { "path":"THANKS", "sha256":"8561b14875de3888aecdcbca1516de4cc8c742d21cee138822815068c56ce039", "size":618 },
+    { "path":"README", "sha256":"aea69a89fa233eace5f731420a051c871502f94d4f9b3b1a442bb1b5052c7018", "size":1614 },
+    { "path":"NEWS", "sha256":"3156ab01819362d062c7fb51ba20c3de647766872abe15be3c31b3aed690481e", "size":2512 },
+    { "path":"Makefile.in", "sha256":"ec661827c4f57be69818baa229597d126c985317fae38fdc8a8602405fed7698", "size":34711 },
+    { "path":"Makefile.am", "sha256":"c00cd651a72a7b231dcac5a4806de595d5addba07225eabeb598019ce36c663d", "size":2514 },
+    { "path":"Makefile", "sha256":"3d4fcc2d74d5b347117ee486b84f80335e9c972943da2a7e0ee1dea2869bebaf", "size":34140 },
+    { "path":"INSTALL", "sha256":"12f97cb1db6722092a4a41c71caaad512e047c01b4be955a05d3adebeff55c66", "size":10057 },
+    { "path":"ChangeLog", "sha256":"7f7b9c59ec2ae93e08c1b7e2d5d5a4baec241d262643979678c1bd045886ea35", "size":106 },
+    { "path":"COPYING", "sha256":"8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643", "size":18092 },
+    { "path":"CMakeLists.txt", "sha256":"f5a3505ebf391e48b2a7db9fea36785d2b5921153f6c23ecfef5af6b09f222de", "size":7089 },
+    { "path":"B/win64/vc.bat", "sha256":"bac9785224b7cdfde0cc56d337ffd07779d4e6c175ae8ba3d65fc2ba2efb2b48", "size":423 },
+    { "path":"B/win64/ic.bat", "sha256":"5b112383b1acfae3b700eac841da9e912a25296d7c8ff9e10c06216973bffc5e", "size":404 },
+    { "path":"B/win32/wc.bat", "sha256":"402be0a130ab7553750e1fafc0b6c775e9f1b3e4200ef43680bcc59c66fea1d9", "size":402 },
+    { "path":"B/win32/vc.bat", "sha256":"271418962165422e3537477f2ad722eab4e9741273dc6076b326356cd3548b7e", "size":404 },
+    { "path":"B/win32/sc.rsp", "sha256":"34f631a8e7907abafde753d3306620ea22eb8dd4f31dd93a4d892772a28816fc", "size":204 },
+    { "path":"B/win32/sc.bat", "sha256":"c1e271f30cb8c4ec134eca7acb73216cbb1ae71a869fbdb02a24bf27557c6995", "size":430 },
+    { "path":"B/win32/rsxnt.bat", "sha256":"624cd45cb6e080cd4ca71c8b105ac3ffd8f398784ec91a7d824a6bd1be92e3dd", "size":383 },
+    { "path":"B/win32/pw32.bat", "sha256":"efcb97963a05bf1d4c43b93d13532451eb4f44cd0945ce39ba45faf250859fb8", "size":383 },
+    { "path":"B/win32/pgi.bat", "sha256":"eaa96b51e983d95d7b38bcf824628b80c08ef77892eec1ff8210880fd14605ed", "size":365 },
+    { "path":"B/win32/pellesc.bat", "sha256":"0002c0612282992dbe7f23ab57e4ab47c5595cc78a5ec636223d0dd1d0452f13", "size":375 },
+    { "path":"B/win32/mingw.bat", "sha256":"2fa54b4de1a1538281815070c1ae6ba1935a37484f7846b70149f3745ae1ea39", "size":384 },
+    { "path":"B/win32/lccwin32.bat", "sha256":"977654954f9113ada233aa3e8c3f9bf8f9c67272cbe93a6a02d72c6deecc0699", "size":505 },
+    { "path":"B/win32/ic.bat", "sha256":"bb987e47327a7f1d20a62b679e84be4dcb37490787828e4908b62aaf1d3704de", "size":394 },
+    { "path":"B/win32/dm.bat", "sha256":"0a54a4493378cf8dc16a2d469c607c61237141ebe52a25b6078aa08dc6c7f093", "size":371 },
+    { "path":"B/win32/cygwin.bat", "sha256":"30415bd7100a624c11d826184b29770947728f40901f7778dc5310161ef2fba1", "size":388 },
+    { "path":"B/win32/bc.bat", "sha256":"00952f063f3173ceb6055b9b2500dfc05c24001a7b1e1342747f81213ad8d24d", "size":383 },
+    { "path":"B/win16/wc.bat", "sha256":"0602584a930aa9c03c7c8bc13c0789749f36277f89cfa892fdb37cf2523c744b", "size":409 },
+    { "path":"B/win16/vc.bat", "sha256":"e16b72cf3128e17c07480e235ab8c3709bb5651e36b5ea06127dda89d77776ea", "size":473 },
+    { "path":"B/win16/sc.bat", "sha256":"57eb3ca0ad62ddf6890924e7a9e819b16037bc0f6eb35801f600126f3e2ec1e3", "size":467 },
+    { "path":"B/win16/bc.bat", "sha256":"4bbd25a310d3836b0579daa28dbaa0e3f46b813ff7a12feebfd28d61ac05dbf4", "size":378 },
+    { "path":"B/unset.cmd", "sha256":"9cbe7e87da0a8021c72274dbae429908d3e7cbda099d9a4148b656c9cbdb75f3", "size":131 },
+    { "path":"B/unset.bat", "sha256":"9cbe7e87da0a8021c72274dbae429908d3e7cbda099d9a4148b656c9cbdb75f3", "size":131 },
+    { "path":"B/src.rsp", "sha256":"e3c30465d8f035eeb95b1824995abe3f485a9f842ea4e9125f2220a33015d6f8", "size":257 },
+    { "path":"B/prepare.cmd", "sha256":"2d7bdcaaf730c94c62f041ed7b16854168d9eb5fe0187915be407d43ed1b0d84", "size":289 },
+    { "path":"B/prepare.bat", "sha256":"9a53ee93f892f7d0bef86ea17a79f42722a5d65002aa311bdd41df12bcf4a32b", "size":289 },
+    { "path":"B/os2_16/wc.cmd", "sha256":"36c50b49d83ee4d119281c080b20ea48ce371fecfa4ee129bb8e835bc8f1c162", "size":403 },
+    { "path":"B/os2_16/wc.bat", "sha256":"893cbe3d5d081d6478dd97e87738da5dc5cfa71f04522b67c846da519a28164e", "size":403 },
+    { "path":"B/os2_16/sc.cmd", "sha256":"f7f54decbdf2f5b01b9416db497d3e09265049ed4a418a9345ef4535143ff7ea", "size":415 },
+    { "path":"B/os2_16/mc.bat", "sha256":"a9e964a2943816bbe0d5bc395d6a105840d22827e44261cbc10d8e354951b356", "size":461 },
+    { "path":"B/os2/zc.bat", "sha256":"44eb5ca60fd1074bac809935c75b325b9e244c0bd898d9cde05924f74af27f98", "size":421 },
+    { "path":"B/os2/wc.cmd", "sha256":"e4e8a98a8327390d8d0592fb4c2ed6ef5b2e0bbf92a0e5529e9b48258fbc19ab", "size":403 },
+    { "path":"B/os2/wc.bat", "sha256":"28be4531d62f5d8464c89c8c8b5e5478f49de83255db1cbec0b2572659704928", "size":403 },
+    { "path":"B/os2/va.cmd", "sha256":"c660a73b5dde28490bd38b8e218db4961a4efe25675ac7c19427808e4489764f", "size":365 },
+    { "path":"B/os2/emx.cmd", "sha256":"9e807ea390993c98c107cc0801fc1849328752977103cd4d12cbce6f5f09fc6e", "size":356 },
+    { "path":"B/os2/emx.bat", "sha256":"9fcebd31a3151bb5504b75bcb14f777b923c665ddf97efe4977fd3360b17b531", "size":356 },
+    { "path":"B/os2/bc.cmd", "sha256":"a5ed02dd458bb1ab9cf19ee84a22c243b4915802287aec7a4d123352e92cc8b9", "size":378 },
+    { "path":"B/generic/clean.sh", "sha256":"3af7324697d4741ace08fb10839aad38848e749860ebb14424ccda2eddeb9c02", "size":112 },
+    { "path":"B/generic/build_gcc.sh", "sha256":"56001c8afaa4d1965716a234dc23d5f91d665d6619f725f0aa91159e563edd2e", "size":300 },
+    { "path":"B/generic/build.sh", "sha256":"fba165d0ea20f0bcfd5fa225fe7b969a0e08e9a9d6bc22309c1fbcb78101a931", "size":968 },
+    { "path":"B/dos32/zc.bat", "sha256":"38f7c16f5745b17847d6d16d21225e257b81e0b9e52c1b4b409518e955cccd64", "size":420 },
+    { "path":"B/dos32/wc_p.bat", "sha256":"8c122fa84b17c4e131988a54a5a0e1e46ad4db2c2c5eee34316d2e5b76cc34de", "size":428 },
+    { "path":"B/dos32/wc_d.bat", "sha256":"0ab107bf8a54c21aee5b0adbdbf780ec85ada21be65396047821fef861c90892", "size":436 },
+    { "path":"B/dos32/wc_c.bat", "sha256":"f047891ad7382833244a44ab75212a37642b18ae196d024ba4268022e4abc879", "size":431 },
+    { "path":"B/dos32/wc.bat", "sha256":"2c09bfff00e8ec1e360e57c81ba322b292777d9187f43176199c6b1e265becce", "size":426 },
+    { "path":"B/dos32/sc.bat", "sha256":"d3c2c20bb20e24967645dad2950ee519ec6cbe12fea61e27283a1f9f04122dd7", "size":410 },
+    { "path":"B/dos32/ndp.bat", "sha256":"e3b8f9a9710bc08215f21b53750fcdb848ca19047941d55410759874f8f51be7", "size":385 },
+    { "path":"B/dos32/highc.bat", "sha256":"54b17949cfe2f49af8379fe75a80ccc332ea7ae7bf7e4f1d3ec5e8573c883955", "size":396 },
+    { "path":"B/dos32/emx.bat", "sha256":"65beca4dd15d328286d5dcca37ee3d0d3fe41fe483012e8ff1e11969ecbf6896", "size":355 },
+    { "path":"B/dos32/dm.bat", "sha256":"47909107bb9e6f91ad0c8c2a08fdc31f1634ee1c3ec9eeb6de1b88edcfc254fb", "size":375 },
+    { "path":"B/dos32/dj2.opt", "sha256":"46777bd1efc816fde58666ad88afc1109d02e9ffd245db86021945f42c2fa7c3", "size":149 },
+    { "path":"B/dos32/dj2.bat", "sha256":"94ec16d39d4d93ca883f79190d6a5c8172e60af60f3cbf3190137c844c556f87", "size":437 },
+    { "path":"B/dos16/wc.bat", "sha256":"42588e5977de1b1cd00dc79033d137c5922280d2d30ed16bf3c9663fc95fa723", "size":399 },
+    { "path":"B/dos16/vc.bat", "sha256":"d0f0f2fd82a73ff35a131bb13543e90189448673b748af6b22b8d45117270a4f", "size":452 },
+    { "path":"B/dos16/tc.bat", "sha256":"539371e8d9ee634c072c7c026d3f2e6c0007b5c08142b07c0b901582dbada049", "size":368 },
+    { "path":"B/dos16/sc.bat", "sha256":"0e327d7c0c8cd217234224c6ad7f4d9eacaeb60483f8b1710104daa668ad26db", "size":410 },
+    { "path":"B/dos16/mc.bat", "sha256":"56906eb1bf66ad7fb3cf19c6d18fec22a7f44166c12b8fe7a6b2cefc6f8d3a87", "size":442 },
+    { "path":"B/dos16/dm.bat", "sha256":"e8c121e804026eaf6208772ef05e600835bb3bd2240205a87f59d32a81d5fac2", "size":370 },
+    { "path":"B/dos16/bc_pp.bat", "sha256":"4983e60e50ac49946a019e81afc6cfff4bdcf100438be2e657c25d38f334e544", "size":407 },
+    { "path":"B/dos16/bc_286.bat", "sha256":"39b542c729ebc85852d85ed1792002531c056b3cbc12d912f14d0e735a208741", "size":403 },
+    { "path":"B/dos16/bc.bat", "sha256":"926632926a8e27295d7aa023d3e67f95aadb9d6345d0e6f1abbddaa675028d49", "size":371 },
+    { "path":"B/done.cmd", "sha256":"fb87940a2086c6122e1c998a020d673007d37e24c33f9b20b6300dcd8567b4b2", "size":62 },
+    { "path":"B/done.bat", "sha256":"fb87940a2086c6122e1c998a020d673007d37e24c33f9b20b6300dcd8567b4b2", "size":62 },
+    { "path":"B/clean.cmd", "sha256":"b8b771e12ec5c9ccc812ee2ae351b4a3a6f58e159b9ec53c936c8db897830d6b", "size":99 },
+    { "path":"B/clean.bat", "sha256":"b8b771e12ec5c9ccc812ee2ae351b4a3a6f58e159b9ec53c936c8db897830d6b", "size":99 },
+    { "path":"B/00README.TXT", "sha256":"797fbaacb9b51e14943e6f1ba7f466dca251d9851f7be07d3385240c4cbe1ff6", "size":2452 },
+    { "path":"AUTHORS", "sha256":"492860c5629952d400f5eed46d193459730e58d694c1a0b80b7385f3351511a6", "size":101 },
+    { "path":"AROS_Readme.txt", "sha256":"d14cb8e88f88d1134730e9d1e03903b5a264c6a30e3cad136525eefb3f819a15", "size":1089 }
+  ]
+}
+
+==== planethively
+Tuesday 29-Sep-26 17:38:44
+apkg: this system does not provide what the package needs
+     planethively
+     sdl.library (LIBS:sdl.library exists but would not open)
+install planethively: rc=10
+apkg: not installed
+     planethively
+
+==== potrace
+Tuesday 29-Sep-26 17:38:44
+fetching https://archives.arosworld.org/share/graphics/convert/potrace.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=graphics/convert/potrace.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/potrace.zip
+installed potrace
+install potrace: rc=0
+{
+  "schema":1,
+  "name":"potrace",
+  "version":"1.16",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Potrace",
+  "installed":"2026-09-29T17:38:45Z",
+  "origin":"https://archives.arosworld.org/share/graphics/convert/potrace.x86_64-aros-v11.zip",
+  "archive_sha256":"2c6bac0fe4b8d84ab64e6558b6d8abe758b6911e3ebda5278df18f349f7923bb",
+  "archive_size":1173531,
+  "reason":"explicit",
+  "dir":"potrace",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"ab402af9c103865355e4f9665032ddcdfae46399be09f58309b85784a341c9e0", "size":9659, "member":"Potrace.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"21f99dc19d422d6b23016a1b25dd5395b190798a05684f040547760eef445d87", "size":9659 },
+    { "path":"Source/Source.zip", "sha256":"37cb5612818677d0c1c66459c1676e3745956c9130e85c533dfb210b0060bbcf", "size":881179 },
+    { "path":"Readme.info", "sha256":"289920c373617779b42f14711108f1a7d5303cd0d55dc87937eda56a7bb69aa2", "size":8785 },
+    { "path":"Readme", "sha256":"211c46dd00992a26aa0430e71a0d11d002c0766496eab965beff5023177f231d", "size":1021 },
+    { "path":"PotraceGUI.info", "sha256":"68a71368a26ad4da3312df6234c4881e2b1b06cbbce559d70edfe2265f70b08b", "size":9133 },
+    { "path":"PotraceGUI", "sha256":"b050726d3281d56ab7b636822010a7ecf6e8ab22286a64bd06142115e55a4b34", "size":4339 },
+    { "path":"Potrace", "sha256":"d4ba64679b3716e8039430cdda2f9c1681895213466f719ffa9ebb651c53e4be", "size":905624 },
+    { "path":"mkbitmap", "sha256":"9419fa3e3b44e2139a47832c3530b0cf093a396e7269d71546c12845fe786260", "size":53104 }
+  ]
+}
+
+==== rtf-riddle
+Tuesday 29-Sep-26 17:38:45
+fetching https://archives.arosworld.org/share/utility/text/convert/rtf-riddle-v3.97b.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/convert/rtf-riddle-v3.97b.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/rtf-riddle.zip
+installed rtf-riddle
+install rtf-riddle: rc=0
+{
+  "schema":1,
+  "name":"rtf-riddle",
+  "version":"3.97b",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"RTF2HTML",
+  "installed":"2026-09-29T17:38:45Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/convert/rtf-riddle-v3.97b.x86_64-aros-v11.zip",
+  "archive_sha256":"ad9f2cf132615957e82064e9dd4f9062c6e3f3e7feab836cca70a5882b43816f",
+  "archive_size":166679,
+  "reason":"explicit",
+  "dir":"rtf-riddle",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"34cece555d4a1e34132176ad490dc39ef0c3d3eb9f25bcf2f39d28d50a0da43c", "size":8287, "member":"RTF2HTML.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"4ad5f7c1277cce6c0a9e13d67fbce4aefa6dba67107158115f3c9f3c01b2e8e4", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"5d5f76949bf7643cc1f54e2036f570c621990d96a0723cb0e11cc24700bbb8b8", "size":69112 },
+    { "path":"RTFs/RTF-Riddle-User.rtf", "sha256":"fd2af84ca2c9e6966869ae2fef462b65a1682918296f486075f2834ad9b6a4e1", "size":84859 },
+    { "path":"RTFs/RTF-Riddle-Dev.rtf", "sha256":"6b0169af456f2fbbf87ac2a74af1da96f684714be3f0bb2c66186d18a8636e92", "size":141981 },
+    { "path":"RTF2HTML.info", "sha256":"269c0b877f06931009d6b520cc27a797bb0b230e1f9b797444bb6cd4837b7e84", "size":8405 },
+    { "path":"RTF2HTML", "sha256":"361051d8aa0131baaf08bd766d146d4dfc4b1a4c2e1b2e45da9008854c4ad102", "size":1724 },
+    { "path":"HTMLs/RTF-Riddle-User.html", "sha256":"5fe3f2f86fda12cce0580bace2e140bcadbb107dfbbab91c432f6e4db70d94c7", "size":8496 },
+    { "path":"HTMLs/RTF-Riddle-Dev.html", "sha256":"c5497b61694265e8c8935f5aa053f3c480561ff058f85e819d080116a29801f8", "size":18453 },
+    { "path":"C/rtfriddle", "sha256":"70c4cb68889fa27b5cfb70a2afc6f4a1c805cf2e6113a73c6b3b9ff2817b0903", "size":87448 }
+  ]
+}
+
+==== sfsobject
+Tuesday 29-Sep-26 17:38:45
+fetching https://archives.arosworld.org/share/utility/misc/sfsobject.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/sfsobject.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/sfsobject.zip
+installed sfsobject
+install sfsobject: rc=0
+{
+  "schema":1,
+  "name":"sfsobject",
+  "version":"1.6",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"SFSobject",
+  "installed":"2026-09-29T17:38:46Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/sfsobject.x86_64-aros-v11.zip",
+  "archive_sha256":"c1b19e5dc89c35dbc7ab9f7552f2586c63390366b180a015f5142a385baeb2bb",
+  "archive_size":79038,
+  "reason":"explicit",
+  "dir":"sfsobject",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"660efbaecf3c276bfc8a5dbe22b17504be2a495d8b1a69bc1fef4a534cdaa954", "size":8344, "member":"SFSobject.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"e791ef8e90df6683d200cf0bf0331305b9018bbf38c04bfb8f9bb99acf52ca04", "size":25282 },
+    { "path":"SFSobject.info", "sha256":"0913a5b792fb8dcac129e58c606f379b5925c1bd85d6463456889a3ef56b0758", "size":8501 },
+    { "path":"SFSobject.guide.info", "sha256":"8d84e588052c87fba11a3d8ae90f2a9de323d925808157248454d8b5efcec6e8", "size":7963 },
+    { "path":"SFSobject.guide", "sha256":"9af5d3a6e9e77a423a63a825cc0aff64212980520155cedeacf285868ac302e4", "size":4848 },
+    { "path":"SFSobject", "sha256":"749d32e6b3430645b91f5f2af5f9ab0ff2800e2f4d99282b0fae1e388221c111", "size":21872 },
+    { "path":"Readme.info", "sha256":"2c801e936231290cd3c5edac8c8d7e19d022c3d25246e97cb7eb8f981673dcf1", "size":8785 },
+    { "path":"Readme", "sha256":"5c2a04273121295e6180a7e0f5638c9a8a4bc676563a8e5b1e326a3f66294516", "size":680 }
+  ]
+}
+
+==== timeit
+Tuesday 29-Sep-26 17:38:46
+fetching https://archives.arosworld.org/share/utility/shell/timeit.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/shell/timeit.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/timeit.zip
+installed timeit
+install timeit: rc=0
+{
+  "schema":1,
+  "name":"timeit",
+  "version":"40.4",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"TimeIt",
+  "installed":"2026-09-29T17:38:46Z",
+  "origin":"https://archives.arosworld.org/share/utility/shell/timeit.x86_64-aros-v11.zip",
+  "archive_sha256":"35c4adbb7e98e904194e44bcb671b05df59b0428bb9a5c821dee9ba645f9bceb",
+  "archive_size":47271,
+  "reason":"explicit",
+  "dir":"timeit",
+  "requires_system": [
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"64d148a99a961e5fa67d41c77cfc6c3c63897c96e5ae071152a77d99c7868c4b", "size":8344, "member":"TimeIt.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"TimeIt.info", "sha256":"26a34e64dea5b21ef82b0d7b00f06bacc65bb6d0a942577e5f255315c17a6e9f", "size":8529 },
+    { "path":"TimeIt", "sha256":"c925deefcd1128d35601609863ef06416d5da725fc289698b4b04f424939d2dc", "size":22216 },
+    { "path":"Source.info", "sha256":"cc7a690a0d316ad9871a5556f38b98f1b9c6b23361590cb1381d7a25cf2c944f", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"9555c046d6a1e82f49718e515f74c810147bdc83327f0e7e201d34d9ffcd88d9", "size":2906 },
+    { "path":"Readme.info", "sha256":"2a1a9fe5173a0793df9d215d3d454a0ee724be5fcac96aff1d5105ebec453751", "size":8785 },
+    { "path":"Readme", "sha256":"d1f69089adf5ba02fd9d0ed796a9a0d4846d576a52aefd706cdbbdc05085aecb", "size":552 },
+    { "path":"COPYING", "sha256":"79ef0a0d92fedfc2e4f03cc807ac99229137dc9bdf2c26ad661af8b95d3fe4e5", "size":1524 }
+  ]
+}
+
+==== untarka
+Tuesday 29-Sep-26 17:38:46
+fetching https://archives.arosworld.org/share/utility/archive/untarka.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/untarka.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/untarka.zip
+installed untarka
+install untarka: rc=0
+{
+  "schema":1,
+  "name":"untarka",
+  "version":"0.34",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"UnTarka",
+  "installed":"2026-09-29T17:38:46Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/untarka.x86_64-aros-v11.zip",
+  "archive_sha256":"e0f549940adcce5e1fda06ae8f679c0d62f9253a6ed2d199f9703927aff3cfa8",
+  "archive_size":64136,
+  "reason":"explicit",
+  "dir":"untarka",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"6235dab613adccdf67bb056d1ebdaf5ea6506ab55575cb1697675d02805de754", "size":8344, "member":"UnTarka.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"UnTarka.info", "sha256":"c4494aaf88d6fbb8dd26f4188e425b0cf31621ffc9b94cf189ae04c59b6d54ad", "size":8529 },
+    { "path":"UnTarka", "sha256":"4c0e951e5530f75c815c110a1019a0828d6a52245e605d677490a28e366e1bbe", "size":48896 },
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/untarka.zip", "sha256":"1b58493fdd4ae3cee96b669095be5e37ed89487e7ec5b46c546e2b4711eec74a", "size":13075 },
+    { "path":"Readme.info", "sha256":"b4d7abc31db3f5faeb7ab9ad4c1aa9a40aedbbce6002ade9f528747d221a22b6", "size":8785 },
+    { "path":"Readme", "sha256":"06ee8eb3c8dd0d15cffdade19437b74d98ad0111164fde452c1fdfbed0e8e10f", "size":2223 }
+  ]
+}

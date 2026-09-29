@@ -1,0 +1,7 @@
+==== boy: Boy, stack 50000
+Tuesday 29-Sep-26 18:06:59
+after 15 s (a number means it is running):
+ 9
+after Ctrl-C (empty means it has ended):
+ 9
+Tuesday 29-Sep-26 18:07:25

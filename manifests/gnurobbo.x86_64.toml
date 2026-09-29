@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/gnurobbo with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch s05).
+
+status          = "approved"
+id              = "gnurobbo"
+version         = "0.68"
+summary         = "open source reimplementation of Robbo"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/puzzle"
+url             = "https://archives.arosworld.org/share/game/puzzle/gnurobbo.x86_64-aros-v11.zip"
+size            = 3389410
+upload_date     = "20250321-06.30"
+selected_by     = "only-candidate"
+
+sha256          = "27dae2c7cad34ee6c2d11aca81f8d647b1810b2fa9b5246fb98a09e567a7dfd2"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "GNURobbo"
+icon            = "GNURobbo.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

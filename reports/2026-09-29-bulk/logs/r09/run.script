@@ -1,0 +1,71 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8809
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8809
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== fallout2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install fallout2
+Echo >>RAM:L/a.txt "install fallout2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info fallout2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >RAM:L/b-fallout2.txt "==== fallout2: Fallout2, stack 200000"
+Date >>RAM:L/b-fallout2.txt
+If NOT EXISTS SYS:Batch/fallout2
+  Echo >>RAM:L/b-fallout2.txt "fallout2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start fallout2 "SYS:Batch/fallout2" Fallout2 200000
+  Wait 15
+  Echo >>RAM:L/b-fallout2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-fallout2.txt COMMAND=Fallout2
+  If EXISTS RAM:L/r-fallout2.txt
+    Type >>RAM:L/b-fallout2.txt RAM:L/r-fallout2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "fallout2"
+RAM:b/putfile >NIL: RAM:L/m shot-fallout2 8809
+Wait 4
+Status >NIL: COMMAND=Fallout2
+If NOT WARN
+  Break >NIL: `Status COMMAND=Fallout2` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-fallout2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-fallout2.txt COMMAND=Fallout2
+If EXISTS RAM:L/r-fallout2.txt
+  Type >>RAM:L/b-fallout2.txt RAM:L/r-fallout2.txt
+EndIf
+Date >>RAM:L/b-fallout2.txt
+RAM:b/putfile >NIL: RAM:L/b-fallout2.txt b-fallout2.txt 8809
+If EXISTS RAM:L/o-fallout2.txt
+RAM:b/putfile >NIL: RAM:L/o-fallout2.txt o-fallout2.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-fallout2 8809
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove fallout2
+Echo >>RAM:L/c.txt "remove fallout2: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8809
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8809

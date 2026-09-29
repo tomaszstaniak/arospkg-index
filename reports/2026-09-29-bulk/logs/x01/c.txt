@@ -1,0 +1,34 @@
+==== stage C: remove
+removed scummvm
+remove scummvm: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       21:09:38
+scummvm                      Dir ---rwed Today       21:09:38
+cache                        Dir ---rwed Today       21:09:08
+db                           Dir ---rwed Today       21:09:38
+4 directories - 4 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/scummvm" on Tuesday 09/29/26:
+scummvm.ini                   55 ---rwed Today       21:09:10
+1 file - 1 block used
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+scummvm.zip              17719470 ---rwed Today       21:09:08
+1 file - 34609 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       21:09:38
+transactions                 Dir ---rwed Today       21:09:38
+installed                    Dir ---rwed Today       21:09:38
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+scummvm-6abc2912.json        157 ---rwed Today       21:09:38
+1 file - 1 block used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 3 files - 7 directories - 34618 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 21:09:38

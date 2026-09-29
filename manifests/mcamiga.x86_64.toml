@@ -1,0 +1,31 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/mcamiga with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch c05).
+
+status          = "approved"
+id              = "mcamiga"
+version         = "1.0"
+summary         = "File Manager"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/filetool"
+url             = "https://archives.arosworld.org/share/utility/filetool/mcamiga.x86_64-aros-v11.lha"
+size            = 302308
+upload_date     = "20230317-20.44"
+selected_by     = "only-candidate"
+
+sha256          = "435ee5e1316fb6c86a79bc8908b175d83d53f04f67a4d0d8fa8c46b8b45ff61e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "MCAmiga"
+icon            = "MCAmiga.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+

@@ -1,0 +1,52 @@
+==== stage C: remove
+removed joytest
+remove joytest: rc=0
+removed flx_play.zip
+remove flx_play.zip: rc=0
+removed giddy3
+remove giddy3: rc=0
+removed protrekkr
+remove protrekkr: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       19:40:56
+protrekkr                    Dir ---rwed Today       19:41:28
+giddy3                       Dir ---rwed Today       19:40:54
+cache                        Dir ---rwed Today       19:38:40
+db                           Dir ---rwed Today       19:41:29
+5 directories - 5 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/protrekkr" on Tuesday 09/29/26:
+Modules                      Dir ---rwed Today       19:41:25
+1 directory - 1 block used
+Directory "SYS:Batch/protrekkr/Modules" is empty
+Directory "SYS:Batch/giddy3" on Tuesday 09/29/26:
+hats                         Dir ---rwed Today       19:40:47
+1 directory - 1 block used
+Directory "SYS:Batch/giddy3/hats" on Tuesday 09/29/26:
+ttune.mod                  19910 ---rwed Today       19:38:36
+1 file - 39 blocks used
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+protrekkr.zip            13261598 ---rwed Today       19:38:40
+giddy3.zip               3693964 ---rwed Today       19:38:36
+flx_play.zip.zip           75602 ---rwed Today       19:38:34
+joytest.zip                46242 ---rwed Today       19:38:33
+4 files - 33356 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       19:41:29
+transactions                 Dir ---rwed Today       19:41:29
+installed                    Dir ---rwed Today       19:41:29
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+protrekkr-6abc1468.json      149 ---rwed Today       19:41:29
+giddy3-6abc1446.json         159 ---rwed Today       19:40:55
+2 files - 2 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 7 files - 10 directories - 33407 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 19:41:31

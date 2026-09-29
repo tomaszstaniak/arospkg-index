@@ -1,0 +1,6 @@
+SFSobject: required argument missing
+
+
+SFSobject 1.6 AROS x86 ABIv0 version 
+based on M68k Version by Jean-Marie COAT 
+based on SFSobject 1.6 PPC version (C) by Martin Steigerwald.

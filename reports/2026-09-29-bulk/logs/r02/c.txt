@@ -1,0 +1,82 @@
+==== stage C: remove
+note: 1 file(s) changed locally were kept in SYS:Batch/adoom3:
+      dhewm3log.txt
+removed adoom3
+remove adoom3: rc=0
+removed daysleeper
+remove daysleeper: rc=0
+removed finder
+remove finder: rc=0
+removed hostile-takeover
+remove hostile-takeover: rc=0
+removed nano
+remove nano: rc=0
+removed prboom-plus
+remove prboom-plus: rc=0
+removed soniccd
+remove soniccd: rc=0
+removed tiltnroll
+remove tiltnroll: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:56:36
+tiltnroll                    Dir ---rwed Today       17:56:37
+prboom-plus                  Dir ---rwed Today       17:56:33
+hostile-takeover             Dir ---rwed Today       17:56:26
+finder                       Dir ---rwed Today       17:56:15
+daysleeper                   Dir ---rwed Today       17:56:15
+adoom3                       Dir ---rwed Today       17:56:15
+cache                        Dir ---rwed Today       17:52:39
+db                           Dir ---rwed Today       17:56:37
+9 directories - 9 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/tiltnroll" on Tuesday 09/29/26:
+Vera.ttf                   65932 ---rwed Today       17:52:39
+snd                          Dir ---rwed Today       17:56:37
+1 file - 1 directory - 130 blocks used
+Directory "SYS:Batch/tiltnroll/snd" on Tuesday 09/29/26:
+title.mod                   8254 ---rwed Today       17:52:39
+1 file - 17 blocks used
+Directory "SYS:Batch/prboom-plus" is empty
+Directory "SYS:Batch/hostile-takeover" is empty
+Directory "SYS:Batch/finder" is empty
+Directory "SYS:Batch/daysleeper" is empty
+Directory "SYS:Batch/adoom3" on Tuesday 09/29/26:
+demo                         Dir ---rwed Today       17:52:39
+dhewm3log.txt               3091 ---rwed Today       17:52:39
+1 file - 1 directory - 8 blocks used
+Directory "SYS:Batch/adoom3/demo" on Tuesday 09/29/26:
+consolehistory.dat         empty ---rwed Today       17:52:39
+1 file
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+tiltnroll.zip            1609016 ---rwed Today       17:52:39
+soniccd.zip              1512590 ---rwed Today       17:52:38
+prboom-plus.zip          4110698 ---rwed Today       17:52:37
+nano.zip                 3900507 ---rwed Today       17:52:36
+hostile-takeover.zip     9436754 ---rwed Today       17:52:34
+finder.zip                 63513 ---rwed Today       17:52:33
+daysleeper.zip            125256 ---rwed Today       17:52:32
+adoom3.zip               10123901 ---rwed Today       17:52:31
+8 files - 60322 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:56:37
+transactions                 Dir ---rwed Today       17:56:37
+installed                    Dir ---rwed Today       17:56:37
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+tiltnroll-6abbfbd5.json      175 ---rwed Today       17:56:37
+prboom-plus-6abbfbd1.json     152 ---rwed Today       17:56:33
+hostile-takeover-6abbfbca.json     161 ---rwed Today       17:56:26
+finder-6abbfbbf.json         141 ---rwed Today       17:56:15
+daysleeper-6abbfbbf.json     150 ---rwed Today       17:56:15
+adoom3-6abbfbbf.json         157 ---rwed Today       17:56:15
+6 files - 6 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 18 files - 14 directories - 60495 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:56:38

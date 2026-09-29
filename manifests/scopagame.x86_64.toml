@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/scopagame with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch w01).
+
+status          = "approved"
+id              = "scopagame"
+version         = "1.0"
+summary         = "Italian card game"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/card"
+url             = "https://archives.arosworld.org/share/game/card/scopagame.x86_64-aros-v11.zip"
+size            = 651617
+upload_date     = "20260816-17.12"
+selected_by     = "only-candidate"
+
+sha256          = "598db4a58f619c4e2a77c8645489ea2f5f5bb9d5df0d65be8a6ceb1720780161"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "ScopaGame1.0"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

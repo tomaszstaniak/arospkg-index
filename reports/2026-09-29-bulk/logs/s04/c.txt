@@ -1,0 +1,77 @@
+==== stage C: remove
+removed boy
+remove boy: rc=0
+removed fallout
+remove fallout: rc=0
+removed gisplita
+remove gisplita: rc=0
+removed ledblur
+remove ledblur: rc=0
+removed pkg-7zdec
+remove pkg-7zdec: rc=0
+removed scummvm
+remove scummvm: rc=0
+removed switch
+remove switch: rc=0
+removed zunearc
+remove zunearc: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       18:11:55
+zunearc                      Dir ---rwed Today       18:11:58
+scummvm                      Dir ---rwed Today       18:11:53
+ledblur                      Dir ---rwed Today       18:11:07
+fallout                      Dir ---rwed Today       18:11:03
+boy                          Dir ---rwed Today       18:10:58
+cache                        Dir ---rwed Today       18:06:59
+db                           Dir ---rwed Today       18:11:58
+8 directories - 8 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/zunearc" on Tuesday 09/29/26:
+Icons                        Dir ---rwed Today       18:06:59
+1 directory - 1 block used
+Directory "SYS:Batch/zunearc/Icons" on Tuesday 09/29/26:
+Remove.png                  4514 ---rwed Today       18:06:59
+Open.png                    4454 ---rwed Today       18:06:59
+ExtractSel.png              4655 ---rwed Today       18:06:59
+ExtractAll.png              4655 ---rwed Today       18:06:59
+Create.png                  4590 ---rwed Today       18:06:59
+Add.png                     4454 ---rwed Today       18:06:59
+6 files - 56 blocks used
+Directory "SYS:Batch/scummvm" on Tuesday 09/29/26:
+scummvm.ini                   55 ---rwed Today       18:06:58
+1 file - 1 block used
+Directory "SYS:Batch/ledblur" is empty
+Directory "SYS:Batch/fallout" is empty
+Directory "SYS:Batch/boy" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+zunearc.zip               295778 ---rwed Today       18:06:59
+switch.zip                 80089 ---rwed Today       18:06:59
+scummvm.zip              17719470 ---rwed Today       18:06:56
+pkg-7zdec.zip             253465 ---rwed Today       18:06:55
+ledblur.zip               364186 ---rwed Today       18:06:54
+gisplita.zip               36387 ---rwed Today       18:06:54
+fallout.zip              1230066 ---rwed Today       18:06:53
+boy.zip                  6909377 ---rwed Today       18:06:52
+8 files - 52522 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       18:11:58
+transactions                 Dir ---rwed Today       18:11:58
+installed                    Dir ---rwed Today       18:11:58
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+zunearc-6abbff6e.json        265 ---rwed Today       18:11:58
+scummvm-6abbff69.json        157 ---rwed Today       18:11:53
+ledblur-6abbff3b.json        143 ---rwed Today       18:11:07
+fallout-6abbff37.json        143 ---rwed Today       18:11:03
+boy-6abbff32.json            136 ---rwed Today       18:10:58
+5 files - 5 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 20 files - 12 directories - 52596 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 18:12:00

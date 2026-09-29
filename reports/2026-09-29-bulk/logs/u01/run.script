@@ -1,0 +1,235 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8801
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8801
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== muiplot"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install muiplot
+Echo >>RAM:L/a.txt "install muiplot: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info muiplot
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== openjazz"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install openjazz
+Echo >>RAM:L/a.txt "install openjazz: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info openjazz
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== dosbox"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install dosbox
+Echo >>RAM:L/a.txt "install dosbox: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info dosbox
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== super_trevor_land"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install super_trevor_land
+Echo >>RAM:L/a.txt "install super_trevor_land: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info super_trevor_land
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== smb2-gui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install smb2-gui
+Echo >>RAM:L/a.txt "install smb2-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info smb2-gui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >RAM:L/b-muiplot.txt "==== muiplot: MUIPlot, stack 40960"
+Date >>RAM:L/b-muiplot.txt
+If NOT EXISTS SYS:Batch/muiplot
+  Echo >>RAM:L/b-muiplot.txt "muiplot: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start muiplot "SYS:Batch/muiplot" "MUIPlot" 40960
+  Wait 15
+  Echo >>RAM:L/b-muiplot.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-muiplot.txt COMMAND="MUIPlot"
+  If EXISTS RAM:L/r-muiplot.txt
+    Type >>RAM:L/b-muiplot.txt RAM:L/r-muiplot.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "muiplot"
+RAM:b/putfile >NIL: RAM:L/m shot-muiplot 8801
+Wait 4
+Status >NIL: COMMAND="MUIPlot"
+If NOT WARN
+  Break >NIL: `Status COMMAND="MUIPlot"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-muiplot.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-muiplot.txt COMMAND="MUIPlot"
+If EXISTS RAM:L/r-muiplot.txt
+  Type >>RAM:L/b-muiplot.txt RAM:L/r-muiplot.txt
+EndIf
+Date >>RAM:L/b-muiplot.txt
+RAM:b/putfile >NIL: RAM:L/b-muiplot.txt b-muiplot.txt 8801
+If EXISTS RAM:L/o-muiplot.txt
+RAM:b/putfile >NIL: RAM:L/o-muiplot.txt o-muiplot.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-muiplot 8801
+Wait 3
+Echo >RAM:L/b-openjazz.txt "==== openjazz: OpenJazz, stack 1000000"
+Date >>RAM:L/b-openjazz.txt
+If NOT EXISTS SYS:Batch/openjazz
+  Echo >>RAM:L/b-openjazz.txt "openjazz: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start openjazz "SYS:Batch/openjazz" "OpenJazz" 1000000
+  Wait 15
+  Echo >>RAM:L/b-openjazz.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-openjazz.txt COMMAND="OpenJazz"
+  If EXISTS RAM:L/r-openjazz.txt
+    Type >>RAM:L/b-openjazz.txt RAM:L/r-openjazz.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "openjazz"
+RAM:b/putfile >NIL: RAM:L/m shot-openjazz 8801
+Wait 4
+Status >NIL: COMMAND="OpenJazz"
+If NOT WARN
+  Break >NIL: `Status COMMAND="OpenJazz"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-openjazz.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-openjazz.txt COMMAND="OpenJazz"
+If EXISTS RAM:L/r-openjazz.txt
+  Type >>RAM:L/b-openjazz.txt RAM:L/r-openjazz.txt
+EndIf
+Date >>RAM:L/b-openjazz.txt
+RAM:b/putfile >NIL: RAM:L/b-openjazz.txt b-openjazz.txt 8801
+If EXISTS RAM:L/o-openjazz.txt
+RAM:b/putfile >NIL: RAM:L/o-openjazz.txt o-openjazz.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-openjazz 8801
+Wait 3
+Echo >RAM:L/b-dosbox.txt "==== dosbox: dosbox, stack 40960"
+Date >>RAM:L/b-dosbox.txt
+If NOT EXISTS SYS:Batch/dosbox
+  Echo >>RAM:L/b-dosbox.txt "dosbox: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start dosbox "SYS:Batch/dosbox" "dosbox" 40960
+  Wait 15
+  Echo >>RAM:L/b-dosbox.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-dosbox.txt COMMAND="dosbox"
+  If EXISTS RAM:L/r-dosbox.txt
+    Type >>RAM:L/b-dosbox.txt RAM:L/r-dosbox.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "dosbox"
+RAM:b/putfile >NIL: RAM:L/m shot-dosbox 8801
+Wait 4
+Status >NIL: COMMAND="dosbox"
+If NOT WARN
+  Break >NIL: `Status COMMAND="dosbox"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-dosbox.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-dosbox.txt COMMAND="dosbox"
+If EXISTS RAM:L/r-dosbox.txt
+  Type >>RAM:L/b-dosbox.txt RAM:L/r-dosbox.txt
+EndIf
+Date >>RAM:L/b-dosbox.txt
+RAM:b/putfile >NIL: RAM:L/b-dosbox.txt b-dosbox.txt 8801
+If EXISTS RAM:L/o-dosbox.txt
+RAM:b/putfile >NIL: RAM:L/o-dosbox.txt o-dosbox.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-dosbox 8801
+Wait 3
+Echo >RAM:L/b-super_trevor_land.txt "==== super_trevor_land: game, stack 40960"
+Date >>RAM:L/b-super_trevor_land.txt
+If NOT EXISTS SYS:Batch/super_trevor_land
+  Echo >>RAM:L/b-super_trevor_land.txt "super_trevor_land: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start super_trevor_land "SYS:Batch/super_trevor_land" "game" 40960
+  Wait 15
+  Echo >>RAM:L/b-super_trevor_land.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-super_trevor_land.txt COMMAND="game"
+  If EXISTS RAM:L/r-super_trevor_land.txt
+    Type >>RAM:L/b-super_trevor_land.txt RAM:L/r-super_trevor_land.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "super_trevor_land"
+RAM:b/putfile >NIL: RAM:L/m shot-super_trevor_land 8801
+Wait 4
+Status >NIL: COMMAND="game"
+If NOT WARN
+  Break >NIL: `Status COMMAND="game"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-super_trevor_land.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-super_trevor_land.txt COMMAND="game"
+If EXISTS RAM:L/r-super_trevor_land.txt
+  Type >>RAM:L/b-super_trevor_land.txt RAM:L/r-super_trevor_land.txt
+EndIf
+Date >>RAM:L/b-super_trevor_land.txt
+RAM:b/putfile >NIL: RAM:L/b-super_trevor_land.txt b-super_trevor_land.txt 8801
+If EXISTS RAM:L/o-super_trevor_land.txt
+RAM:b/putfile >NIL: RAM:L/o-super_trevor_land.txt o-super_trevor_land.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-super_trevor_land 8801
+Wait 3
+Echo >RAM:L/b-smb2-gui.txt "==== smb2-gui: SMB2-GUI, stack 40960"
+Date >>RAM:L/b-smb2-gui.txt
+If NOT EXISTS SYS:Batch/smb2-gui
+  Echo >>RAM:L/b-smb2-gui.txt "smb2-gui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start smb2-gui "SYS:Batch/smb2-gui" "SMB2-GUI" 40960
+  Wait 15
+  Echo >>RAM:L/b-smb2-gui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-smb2-gui.txt COMMAND="SMB2-GUI"
+  If EXISTS RAM:L/r-smb2-gui.txt
+    Type >>RAM:L/b-smb2-gui.txt RAM:L/r-smb2-gui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "smb2-gui"
+RAM:b/putfile >NIL: RAM:L/m shot-smb2-gui 8801
+Wait 4
+Status >NIL: COMMAND="SMB2-GUI"
+If NOT WARN
+  Break >NIL: `Status COMMAND="SMB2-GUI"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-smb2-gui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-smb2-gui.txt COMMAND="SMB2-GUI"
+If EXISTS RAM:L/r-smb2-gui.txt
+  Type >>RAM:L/b-smb2-gui.txt RAM:L/r-smb2-gui.txt
+EndIf
+Date >>RAM:L/b-smb2-gui.txt
+RAM:b/putfile >NIL: RAM:L/b-smb2-gui.txt b-smb2-gui.txt 8801
+If EXISTS RAM:L/o-smb2-gui.txt
+RAM:b/putfile >NIL: RAM:L/o-smb2-gui.txt o-smb2-gui.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-smb2-gui 8801
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove muiplot
+Echo >>RAM:L/c.txt "remove muiplot: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove openjazz
+Echo >>RAM:L/c.txt "remove openjazz: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove dosbox
+Echo >>RAM:L/c.txt "remove dosbox: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove super_trevor_land
+Echo >>RAM:L/c.txt "remove super_trevor_land: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove smb2-gui
+Echo >>RAM:L/c.txt "remove smb2-gui: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8801
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8801

@@ -1,0 +1,7 @@
+==== diskusage: DiskUsage, stack 40960
+Tuesday 29-Sep-26 17:53:34
+after 15 s (a number means it is running):
+DiskUsage returned: rc=0
+after Ctrl-C (empty means it has ended):
+DiskUsage returned: rc=0
+Tuesday 29-Sep-26 17:53:53

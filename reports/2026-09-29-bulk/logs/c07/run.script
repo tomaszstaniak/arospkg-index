@@ -1,0 +1,563 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8807
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8807
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== amishockolate"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install amishockolate
+Echo >>RAM:L/a.txt "install amishockolate: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info amishockolate
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== apotris"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install apotris
+Echo >>RAM:L/a.txt "install apotris: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info apotris
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== badapple"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install badapple
+Echo >>RAM:L/a.txt "install badapple: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info badapple
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== breakhack"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install breakhack
+Echo >>RAM:L/a.txt "install breakhack: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info breakhack
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== dose2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install dose2
+Echo >>RAM:L/a.txt "install dose2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info dose2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== ft2clone"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install ft2clone
+Echo >>RAM:L/a.txt "install ft2clone: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info ft2clone
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== lzop"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install lzop
+Echo >>RAM:L/a.txt "install lzop: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info lzop
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== planethively"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install planethively
+Echo >>RAM:L/a.txt "install planethively: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info planethively
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== potrace"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install potrace
+Echo >>RAM:L/a.txt "install potrace: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info potrace
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== rtf-riddle"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install rtf-riddle
+Echo >>RAM:L/a.txt "install rtf-riddle: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info rtf-riddle
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== sfsobject"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install sfsobject
+Echo >>RAM:L/a.txt "install sfsobject: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info sfsobject
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== timeit"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install timeit
+Echo >>RAM:L/a.txt "install timeit: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info timeit
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >>RAM:L/a.txt "*N==== untarka"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install untarka
+Echo >>RAM:L/a.txt "install untarka: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info untarka
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8807
+Echo >RAM:L/b-amishockolate.txt "==== amishockolate: AmiShockolate, stack 40960"
+Date >>RAM:L/b-amishockolate.txt
+If NOT EXISTS SYS:Batch/amishockolate
+  Echo >>RAM:L/b-amishockolate.txt "amishockolate: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start amishockolate "SYS:Batch/amishockolate" AmiShockolate 40960
+  Wait 15
+  Echo >>RAM:L/b-amishockolate.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-amishockolate.txt COMMAND=AmiShockolate
+  If EXISTS RAM:L/r-amishockolate.txt
+    Type >>RAM:L/b-amishockolate.txt RAM:L/r-amishockolate.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "amishockolate"
+RAM:b/putfile >NIL: RAM:L/m shot-amishockolate 8807
+Wait 4
+Status >NIL: COMMAND=AmiShockolate
+If NOT WARN
+  Break >NIL: `Status COMMAND=AmiShockolate` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-amishockolate.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-amishockolate.txt COMMAND=AmiShockolate
+If EXISTS RAM:L/r-amishockolate.txt
+  Type >>RAM:L/b-amishockolate.txt RAM:L/r-amishockolate.txt
+EndIf
+Date >>RAM:L/b-amishockolate.txt
+RAM:b/putfile >NIL: RAM:L/b-amishockolate.txt b-amishockolate.txt 8807
+If EXISTS RAM:L/o-amishockolate.txt
+RAM:b/putfile >NIL: RAM:L/o-amishockolate.txt o-amishockolate.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-amishockolate 8807
+Wait 3
+Echo >RAM:L/b-apotris.txt "==== apotris: Apotris, stack 100000"
+Date >>RAM:L/b-apotris.txt
+If NOT EXISTS SYS:Batch/apotris
+  Echo >>RAM:L/b-apotris.txt "apotris: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start apotris "SYS:Batch/apotris" Apotris 100000
+  Wait 15
+  Echo >>RAM:L/b-apotris.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-apotris.txt COMMAND=Apotris
+  If EXISTS RAM:L/r-apotris.txt
+    Type >>RAM:L/b-apotris.txt RAM:L/r-apotris.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "apotris"
+RAM:b/putfile >NIL: RAM:L/m shot-apotris 8807
+Wait 4
+Status >NIL: COMMAND=Apotris
+If NOT WARN
+  Break >NIL: `Status COMMAND=Apotris` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-apotris.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-apotris.txt COMMAND=Apotris
+If EXISTS RAM:L/r-apotris.txt
+  Type >>RAM:L/b-apotris.txt RAM:L/r-apotris.txt
+EndIf
+Date >>RAM:L/b-apotris.txt
+RAM:b/putfile >NIL: RAM:L/b-apotris.txt b-apotris.txt 8807
+If EXISTS RAM:L/o-apotris.txt
+RAM:b/putfile >NIL: RAM:L/o-apotris.txt o-apotris.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-apotris 8807
+Wait 3
+Echo >RAM:L/b-badapple.txt "==== badapple: SVGAnim_play, stack 40960"
+Date >>RAM:L/b-badapple.txt
+If NOT EXISTS SYS:Batch/badapple
+  Echo >>RAM:L/b-badapple.txt "badapple: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start badapple "SYS:Batch/badapple" SVGAnim_play 40960
+  Wait 15
+  Echo >>RAM:L/b-badapple.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-badapple.txt COMMAND=SVGAnim_play
+  If EXISTS RAM:L/r-badapple.txt
+    Type >>RAM:L/b-badapple.txt RAM:L/r-badapple.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "badapple"
+RAM:b/putfile >NIL: RAM:L/m shot-badapple 8807
+Wait 4
+Status >NIL: COMMAND=SVGAnim_play
+If NOT WARN
+  Break >NIL: `Status COMMAND=SVGAnim_play` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-badapple.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-badapple.txt COMMAND=SVGAnim_play
+If EXISTS RAM:L/r-badapple.txt
+  Type >>RAM:L/b-badapple.txt RAM:L/r-badapple.txt
+EndIf
+Date >>RAM:L/b-badapple.txt
+RAM:b/putfile >NIL: RAM:L/b-badapple.txt b-badapple.txt 8807
+If EXISTS RAM:L/o-badapple.txt
+RAM:b/putfile >NIL: RAM:L/o-badapple.txt o-badapple.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-badapple 8807
+Wait 3
+Echo >RAM:L/b-breakhack.txt "==== breakhack: BreakHack, stack 200000"
+Date >>RAM:L/b-breakhack.txt
+If NOT EXISTS SYS:Batch/breakhack
+  Echo >>RAM:L/b-breakhack.txt "breakhack: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start breakhack "SYS:Batch/breakhack" BreakHack 200000
+  Wait 15
+  Echo >>RAM:L/b-breakhack.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-breakhack.txt COMMAND=BreakHack
+  If EXISTS RAM:L/r-breakhack.txt
+    Type >>RAM:L/b-breakhack.txt RAM:L/r-breakhack.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "breakhack"
+RAM:b/putfile >NIL: RAM:L/m shot-breakhack 8807
+Wait 4
+Status >NIL: COMMAND=BreakHack
+If NOT WARN
+  Break >NIL: `Status COMMAND=BreakHack` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-breakhack.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-breakhack.txt COMMAND=BreakHack
+If EXISTS RAM:L/r-breakhack.txt
+  Type >>RAM:L/b-breakhack.txt RAM:L/r-breakhack.txt
+EndIf
+Date >>RAM:L/b-breakhack.txt
+RAM:b/putfile >NIL: RAM:L/b-breakhack.txt b-breakhack.txt 8807
+If EXISTS RAM:L/o-breakhack.txt
+RAM:b/putfile >NIL: RAM:L/o-breakhack.txt o-breakhack.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-breakhack 8807
+Wait 3
+Echo >RAM:L/b-dose2.txt "==== dose2: Dose2, stack 40960"
+Date >>RAM:L/b-dose2.txt
+If NOT EXISTS SYS:Batch/dose2
+  Echo >>RAM:L/b-dose2.txt "dose2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start dose2 "SYS:Batch/dose2" Dose2 40960
+  Wait 15
+  Echo >>RAM:L/b-dose2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-dose2.txt COMMAND=Dose2
+  If EXISTS RAM:L/r-dose2.txt
+    Type >>RAM:L/b-dose2.txt RAM:L/r-dose2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "dose2"
+RAM:b/putfile >NIL: RAM:L/m shot-dose2 8807
+Wait 4
+Status >NIL: COMMAND=Dose2
+If NOT WARN
+  Break >NIL: `Status COMMAND=Dose2` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-dose2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-dose2.txt COMMAND=Dose2
+If EXISTS RAM:L/r-dose2.txt
+  Type >>RAM:L/b-dose2.txt RAM:L/r-dose2.txt
+EndIf
+Date >>RAM:L/b-dose2.txt
+RAM:b/putfile >NIL: RAM:L/b-dose2.txt b-dose2.txt 8807
+If EXISTS RAM:L/o-dose2.txt
+RAM:b/putfile >NIL: RAM:L/o-dose2.txt o-dose2.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-dose2 8807
+Wait 3
+Echo >RAM:L/b-ft2clone.txt "==== ft2clone: ft2-clone, stack 4096000"
+Date >>RAM:L/b-ft2clone.txt
+If NOT EXISTS SYS:Batch/ft2clone
+  Echo >>RAM:L/b-ft2clone.txt "ft2clone: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start ft2clone "SYS:Batch/ft2clone" ft2-clone 4096000
+  Wait 15
+  Echo >>RAM:L/b-ft2clone.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-ft2clone.txt COMMAND=ft2-clone
+  If EXISTS RAM:L/r-ft2clone.txt
+    Type >>RAM:L/b-ft2clone.txt RAM:L/r-ft2clone.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "ft2clone"
+RAM:b/putfile >NIL: RAM:L/m shot-ft2clone 8807
+Wait 4
+Status >NIL: COMMAND=ft2-clone
+If NOT WARN
+  Break >NIL: `Status COMMAND=ft2-clone` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-ft2clone.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-ft2clone.txt COMMAND=ft2-clone
+If EXISTS RAM:L/r-ft2clone.txt
+  Type >>RAM:L/b-ft2clone.txt RAM:L/r-ft2clone.txt
+EndIf
+Date >>RAM:L/b-ft2clone.txt
+RAM:b/putfile >NIL: RAM:L/b-ft2clone.txt b-ft2clone.txt 8807
+If EXISTS RAM:L/o-ft2clone.txt
+RAM:b/putfile >NIL: RAM:L/o-ft2clone.txt o-ft2clone.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-ft2clone 8807
+Wait 3
+Echo >RAM:L/b-lzop.txt "==== lzop: lzop, stack 40960"
+Date >>RAM:L/b-lzop.txt
+If NOT EXISTS SYS:Batch/lzop
+  Echo >>RAM:L/b-lzop.txt "lzop: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start lzop "SYS:Batch/lzop" lzop 40960
+  Wait 15
+  Echo >>RAM:L/b-lzop.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-lzop.txt COMMAND=lzop
+  If EXISTS RAM:L/r-lzop.txt
+    Type >>RAM:L/b-lzop.txt RAM:L/r-lzop.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "lzop"
+RAM:b/putfile >NIL: RAM:L/m shot-lzop 8807
+Wait 4
+Status >NIL: COMMAND=lzop
+If NOT WARN
+  Break >NIL: `Status COMMAND=lzop` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-lzop.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-lzop.txt COMMAND=lzop
+If EXISTS RAM:L/r-lzop.txt
+  Type >>RAM:L/b-lzop.txt RAM:L/r-lzop.txt
+EndIf
+Date >>RAM:L/b-lzop.txt
+RAM:b/putfile >NIL: RAM:L/b-lzop.txt b-lzop.txt 8807
+If EXISTS RAM:L/o-lzop.txt
+RAM:b/putfile >NIL: RAM:L/o-lzop.txt o-lzop.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-lzop 8807
+Wait 3
+Echo >RAM:L/b-planethively.txt "==== planethively: PlanetHively, stack 40960"
+Date >>RAM:L/b-planethively.txt
+If NOT EXISTS SYS:Batch/planethively
+  Echo >>RAM:L/b-planethively.txt "planethively: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start planethively "SYS:Batch/planethively" PlanetHively 40960
+  Wait 15
+  Echo >>RAM:L/b-planethively.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-planethively.txt COMMAND=PlanetHively
+  If EXISTS RAM:L/r-planethively.txt
+    Type >>RAM:L/b-planethively.txt RAM:L/r-planethively.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "planethively"
+RAM:b/putfile >NIL: RAM:L/m shot-planethively 8807
+Wait 4
+Status >NIL: COMMAND=PlanetHively
+If NOT WARN
+  Break >NIL: `Status COMMAND=PlanetHively` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-planethively.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-planethively.txt COMMAND=PlanetHively
+If EXISTS RAM:L/r-planethively.txt
+  Type >>RAM:L/b-planethively.txt RAM:L/r-planethively.txt
+EndIf
+Date >>RAM:L/b-planethively.txt
+RAM:b/putfile >NIL: RAM:L/b-planethively.txt b-planethively.txt 8807
+If EXISTS RAM:L/o-planethively.txt
+RAM:b/putfile >NIL: RAM:L/o-planethively.txt o-planethively.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-planethively 8807
+Wait 3
+Echo >RAM:L/b-potrace.txt "==== potrace: Potrace, stack 40960"
+Date >>RAM:L/b-potrace.txt
+If NOT EXISTS SYS:Batch/potrace
+  Echo >>RAM:L/b-potrace.txt "potrace: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start potrace "SYS:Batch/potrace" Potrace 40960
+  Wait 15
+  Echo >>RAM:L/b-potrace.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-potrace.txt COMMAND=Potrace
+  If EXISTS RAM:L/r-potrace.txt
+    Type >>RAM:L/b-potrace.txt RAM:L/r-potrace.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "potrace"
+RAM:b/putfile >NIL: RAM:L/m shot-potrace 8807
+Wait 4
+Status >NIL: COMMAND=Potrace
+If NOT WARN
+  Break >NIL: `Status COMMAND=Potrace` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-potrace.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-potrace.txt COMMAND=Potrace
+If EXISTS RAM:L/r-potrace.txt
+  Type >>RAM:L/b-potrace.txt RAM:L/r-potrace.txt
+EndIf
+Date >>RAM:L/b-potrace.txt
+RAM:b/putfile >NIL: RAM:L/b-potrace.txt b-potrace.txt 8807
+If EXISTS RAM:L/o-potrace.txt
+RAM:b/putfile >NIL: RAM:L/o-potrace.txt o-potrace.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-potrace 8807
+Wait 3
+Echo >RAM:L/b-rtf-riddle.txt "==== rtf-riddle: rtfriddle, stack 40960"
+Date >>RAM:L/b-rtf-riddle.txt
+If NOT EXISTS SYS:Batch/rtf-riddle
+  Echo >>RAM:L/b-rtf-riddle.txt "rtf-riddle: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start rtf-riddle "SYS:Batch/rtf-riddle/C" rtfriddle 40960
+  Wait 15
+  Echo >>RAM:L/b-rtf-riddle.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-rtf-riddle.txt COMMAND=rtfriddle
+  If EXISTS RAM:L/r-rtf-riddle.txt
+    Type >>RAM:L/b-rtf-riddle.txt RAM:L/r-rtf-riddle.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "rtf-riddle"
+RAM:b/putfile >NIL: RAM:L/m shot-rtf-riddle 8807
+Wait 4
+Status >NIL: COMMAND=rtfriddle
+If NOT WARN
+  Break >NIL: `Status COMMAND=rtfriddle` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-rtf-riddle.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-rtf-riddle.txt COMMAND=rtfriddle
+If EXISTS RAM:L/r-rtf-riddle.txt
+  Type >>RAM:L/b-rtf-riddle.txt RAM:L/r-rtf-riddle.txt
+EndIf
+Date >>RAM:L/b-rtf-riddle.txt
+RAM:b/putfile >NIL: RAM:L/b-rtf-riddle.txt b-rtf-riddle.txt 8807
+If EXISTS RAM:L/o-rtf-riddle.txt
+RAM:b/putfile >NIL: RAM:L/o-rtf-riddle.txt o-rtf-riddle.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-rtf-riddle 8807
+Wait 3
+Echo >RAM:L/b-sfsobject.txt "==== sfsobject: SFSobject, stack 40960"
+Date >>RAM:L/b-sfsobject.txt
+If NOT EXISTS SYS:Batch/sfsobject
+  Echo >>RAM:L/b-sfsobject.txt "sfsobject: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start sfsobject "SYS:Batch/sfsobject" SFSobject 40960
+  Wait 15
+  Echo >>RAM:L/b-sfsobject.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-sfsobject.txt COMMAND=SFSobject
+  If EXISTS RAM:L/r-sfsobject.txt
+    Type >>RAM:L/b-sfsobject.txt RAM:L/r-sfsobject.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "sfsobject"
+RAM:b/putfile >NIL: RAM:L/m shot-sfsobject 8807
+Wait 4
+Status >NIL: COMMAND=SFSobject
+If NOT WARN
+  Break >NIL: `Status COMMAND=SFSobject` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-sfsobject.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-sfsobject.txt COMMAND=SFSobject
+If EXISTS RAM:L/r-sfsobject.txt
+  Type >>RAM:L/b-sfsobject.txt RAM:L/r-sfsobject.txt
+EndIf
+Date >>RAM:L/b-sfsobject.txt
+RAM:b/putfile >NIL: RAM:L/b-sfsobject.txt b-sfsobject.txt 8807
+If EXISTS RAM:L/o-sfsobject.txt
+RAM:b/putfile >NIL: RAM:L/o-sfsobject.txt o-sfsobject.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-sfsobject 8807
+Wait 3
+Echo >RAM:L/b-timeit.txt "==== timeit: TimeIt, stack 40960"
+Date >>RAM:L/b-timeit.txt
+If NOT EXISTS SYS:Batch/timeit
+  Echo >>RAM:L/b-timeit.txt "timeit: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start timeit "SYS:Batch/timeit" TimeIt 40960
+  Wait 15
+  Echo >>RAM:L/b-timeit.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-timeit.txt COMMAND=TimeIt
+  If EXISTS RAM:L/r-timeit.txt
+    Type >>RAM:L/b-timeit.txt RAM:L/r-timeit.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "timeit"
+RAM:b/putfile >NIL: RAM:L/m shot-timeit 8807
+Wait 4
+Status >NIL: COMMAND=TimeIt
+If NOT WARN
+  Break >NIL: `Status COMMAND=TimeIt` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-timeit.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-timeit.txt COMMAND=TimeIt
+If EXISTS RAM:L/r-timeit.txt
+  Type >>RAM:L/b-timeit.txt RAM:L/r-timeit.txt
+EndIf
+Date >>RAM:L/b-timeit.txt
+RAM:b/putfile >NIL: RAM:L/b-timeit.txt b-timeit.txt 8807
+If EXISTS RAM:L/o-timeit.txt
+RAM:b/putfile >NIL: RAM:L/o-timeit.txt o-timeit.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-timeit 8807
+Wait 3
+Echo >RAM:L/b-untarka.txt "==== untarka: UnTarka, stack 40960"
+Date >>RAM:L/b-untarka.txt
+If NOT EXISTS SYS:Batch/untarka
+  Echo >>RAM:L/b-untarka.txt "untarka: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start untarka "SYS:Batch/untarka" UnTarka 40960
+  Wait 15
+  Echo >>RAM:L/b-untarka.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-untarka.txt COMMAND=UnTarka
+  If EXISTS RAM:L/r-untarka.txt
+    Type >>RAM:L/b-untarka.txt RAM:L/r-untarka.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "untarka"
+RAM:b/putfile >NIL: RAM:L/m shot-untarka 8807
+Wait 4
+Status >NIL: COMMAND=UnTarka
+If NOT WARN
+  Break >NIL: `Status COMMAND=UnTarka` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-untarka.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-untarka.txt COMMAND=UnTarka
+If EXISTS RAM:L/r-untarka.txt
+  Type >>RAM:L/b-untarka.txt RAM:L/r-untarka.txt
+EndIf
+Date >>RAM:L/b-untarka.txt
+RAM:b/putfile >NIL: RAM:L/b-untarka.txt b-untarka.txt 8807
+If EXISTS RAM:L/o-untarka.txt
+RAM:b/putfile >NIL: RAM:L/o-untarka.txt o-untarka.txt 8807
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-untarka 8807
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove amishockolate
+Echo >>RAM:L/c.txt "remove amishockolate: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove apotris
+Echo >>RAM:L/c.txt "remove apotris: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove badapple
+Echo >>RAM:L/c.txt "remove badapple: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove breakhack
+Echo >>RAM:L/c.txt "remove breakhack: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove dose2
+Echo >>RAM:L/c.txt "remove dose2: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove ft2clone
+Echo >>RAM:L/c.txt "remove ft2clone: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove lzop
+Echo >>RAM:L/c.txt "remove lzop: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove planethively
+Echo >>RAM:L/c.txt "remove planethively: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove potrace
+Echo >>RAM:L/c.txt "remove potrace: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove rtf-riddle
+Echo >>RAM:L/c.txt "remove rtf-riddle: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove sfsobject
+Echo >>RAM:L/c.txt "remove sfsobject: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove timeit
+Echo >>RAM:L/c.txt "remove timeit: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove untarka
+Echo >>RAM:L/c.txt "remove untarka: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8807
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8807

@@ -1,0 +1,747 @@
+==== stage A: install
+
+==== alac
+Tuesday 29-Sep-26 17:38:53
+fetching https://archives.arosworld.org/share/audio/misc/alac.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/misc/alac.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/alac.zip
+installed alac
+install alac: rc=0
+{
+  "schema":1,
+  "name":"alac",
+  "version":"0.1.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"ALAC",
+  "installed":"2026-09-29T17:38:53Z",
+  "origin":"https://archives.arosworld.org/share/audio/misc/alac.x86_64-aros-v11.zip",
+  "archive_sha256":"053dc81ec9f81719900db1ed943f3559c67594b6d9c923f3e9e51f145536ebb3",
+  "archive_size":73149,
+  "reason":"explicit",
+  "dir":"alac",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"1069ad98ebbefa01a9c0d66ea2550112eb7c3e011282b0e9cad8e0295703be2a", "size":8344, "member":"ALAC.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"f5ed74e68a354b4e044882d24b813bed4b4748b9cb9996aafd1264c1cd78a1ac", "size":19301 },
+    { "path":"Readme.info", "sha256":"2c801e936231290cd3c5edac8c8d7e19d022c3d25246e97cb7eb8f981673dcf1", "size":8785 },
+    { "path":"Readme", "sha256":"3c3691875748c1428e8dc1e612ebf17a8733cd94ce7d4f9c215a883c96bc1cf9", "size":1120 },
+    { "path":"ALAC.info", "sha256":"fee65b86107bdc40b385f91da01cdba2a65faacde011f4283ffa89839b091a43", "size":8501 },
+    { "path":"ALAC", "sha256":"31b4c139c068b49ed74c0caac79067d9e6e6f28b0e22ee7365ae9b79f0b374a1", "size":61264 }
+  ]
+}
+
+==== amiberry
+Tuesday 29-Sep-26 17:38:53
+fetching https://archives.arosworld.org/share/emulation/computer/amiberry-v6.3.4.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=emulation/computer/amiberry-v6.3.4.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/amiberry.zip
+installed amiberry
+install amiberry: rc=0
+{
+  "schema":1,
+  "name":"amiberry",
+  "version":"6.3.4",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"amiberry",
+  "installed":"2026-09-29T17:38:57Z",
+  "origin":"https://archives.arosworld.org/share/emulation/computer/amiberry-v6.3.4.x86_64-aros-v11.zip",
+  "archive_sha256":"f4320cc8d7b2f3f540605241de0b8f5d29357926acf28379fed363f242be053e",
+  "archive_size":13468412,
+  "reason":"explicit",
+  "dir":"amiberry",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"32223fdb82b5df1cfe028b2a926803fdee3dd2b29ee8d7ccdefb8d289bedafd4", "size":5809, "member":"amiberry.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"whdboot/WHDLoad", "sha256":"852657ff1304ee3ce5cc0f98e9fd259945af6a1d021b89cc524e92ad370bafac", "size":151390 },
+    { "path":"whdboot/save-data/Savegames/foo.txt", "sha256":"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b", "size":1 },
+    { "path":"whdboot/save-data/Kickstarts/kick40068.A4000.RTB", "sha256":"7cedf931e8b30620ba69954a30f037260325ff57282833fa557b4b0f2a2689f9", "size":4976 },
+    { "path":"whdboot/save-data/Kickstarts/kick40068.A1200.RTB", "sha256":"c1176e7b7b9860a8cded820e824677163cf1cc7c674883896a7f32dca5437736", "size":5008 },
+    { "path":"whdboot/save-data/Kickstarts/kick40063.A600.RTB", "sha256":"69809575d9f631eccb3f6d7b3dfa23017a33d9c1a911a5f7f8e5a4246cf8cbac", "size":5000 },
+    { "path":"whdboot/save-data/Kickstarts/kick34005.A500.RTB", "sha256":"644bda440d30919e5b4aa9d24b95c6b72a709c871d3a1a5d746d99bd41d08986", "size":4020 },
+    { "path":"whdboot/save-data/Kickstarts/kick33192.A500.RTB", "sha256":"703637372f6cfec06dc802759bf8907c9a01ba259e0fae5f347d13d4265b0216", "size":3882 },
+    { "path":"whdboot/save-data/Kickstarts/kick33180.A500.RTB", "sha256":"703637372f6cfec06dc802759bf8907c9a01ba259e0fae5f347d13d4265b0216", "size":3882 },
+    { "path":"whdboot/save-data/Kickstarts/foo.txt", "sha256":"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b", "size":1 },
+    { "path":"whdboot/save-data/Debugs/foo.txt", "sha256":"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b", "size":1 },
+    { "path":"whdboot/save-data/Autoboots/foo.txt", "sha256":"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b", "size":1 },
+    { "path":"whdboot/game-data/whdload_db.xml", "sha256":"69f8747f6caa313128e5dc4f8139096b7e256359bf900c631f58392752d96409", "size":8157448 },
+    { "path":"whdboot/boot-data.zip", "sha256":"3a241bbb835cf6c89139ad19c02024096bb6da3f2f02d29dd06af860723f4c30", "size":702843 },
+    { "path":"whdboot/AmiQuit", "sha256":"40acff2a2425a223e4e2ad2e3c16ad76ce7ed303d9801835aaf028db0e96f0b0", "size":76 },
+    { "path":"screenshots/dir.txt", "sha256":"3b9b3ad95aac24d60cd60efab5e697ece4634194c5c136b6da26f97f18f16bf3", "size":49 },
+    { "path":"savestates/dir.txt", "sha256":"d50350d3b110ab7b962b84d83dd134f733548eed0db16bc0cdcf5c2db9e091cd", "size":37 },
+    { "path":"roms/mt32-roms/dir.txt", "sha256":"4e4d64a133a6629dabeaab9e2ea93efb040fd137463bc0268875da8db601777b", "size":31 },
+    { "path":"roms/dir.txt", "sha256":"522728a5645fd0969d13020c154ecc94f56cc1d095f9027ba5fd1cb714305682", "size":135 },
+    { "path":"roms/aros-rom.bin", "sha256":"0b4a0b3bc3826e317d699fac9dbac9a8e93102d8c357e8b5eb32cf9315694bdd", "size":524288 },
+    { "path":"roms/aros-ext.bin", "sha256":"f1b465b9019d45853792820f9dcca60926965ab4e60c077518061b1779adea6b", "size":524288 },
+    { "path":"plugins/dir.txt", "sha256":"9624ac3425e325918bf171a4bd90d2bc91842ed1e17c0a3b27b2ba867294396c", "size":73 },
+    { "path":"plugins/abr/catlist.xml", "sha256":"f53019461aeffa2536b92a5c1406922dfadc7700d73bcbbca27dcad55c443904", "size":1681 },
+    { "path":"plugins/abr/brainfile.xml", "sha256":"9b3f298f9a4825ca95c57f1dc7dccd613766df631a8b8837e80f4aafafa6bce5", "size":542451 },
+    { "path":"nvram/dir.txt", "sha256":"10d7eec0528a2eaa4ca2ac666b3885ba89f0b414ac199e267beff3013b359c0e", "size":25 },
+    { "path":"lha/dir.txt", "sha256":"69f9eb78490687f1924f96d388e7483ee7eb6c1e7a4de450dc7f47756e94ead1", "size":34 },
+    { "path":"harddrives/dir.txt", "sha256":"3d4296dd25ce61966ec103b2bb78a1f9706eae84ef754136ea6eb21606115572", "size":55 },
+    { "path":"floppies/dir.txt", "sha256":"d33a1c4eaf6776294a80db1b183c5fd9b3779eaa2ae34db648667699c9261b95", "size":32 },
+    { "path":"data/vkbd/vkbdWarmUSLargeShiftHires.png", "sha256":"069cf54e7affab195c4815125988bb668b78fad4eb05aa2314c504ac9fc15e81", "size":1220 },
+    { "path":"data/vkbd/vkbdWarmUSLargeShift.png", "sha256":"5fe9a55d786d2580643f0f76e55fd292429029c205306d522f7332f5d957d296", "size":1215 },
+    { "path":"data/vkbd/vkbdWarmUSLargeHires.png", "sha256":"17da107d13ca955a41043004ecd7b2d3780b48b049e8ad369dc414d03e875a33", "size":1200 },
+    { "path":"data/vkbd/vkbdWarmUSLarge.png", "sha256":"e97307d3ce3277d2ba60415ba883665fda21a57493bc011ac2101863d2ca59d1", "size":1203 },
+    { "path":"data/vkbd/vkbdWarmUKLargeShiftHires.png", "sha256":"7c4fde36612462dcb1a9f2a224dbe4439973b53455fded9fe53366337ba78be4", "size":1229 },
+    { "path":"data/vkbd/vkbdWarmUKLargeShift.png", "sha256":"de8887b4f188edd79be5df558906fb70becd7bd134a5e7dccb3e48df0307712d", "size":1224 },
+    { "path":"data/vkbd/vkbdWarmUKLargeHires.png", "sha256":"5e0bb618c65bb76dee6e2d5566101dab50f2c08cce18ea5a51e7e15d5693e0ca", "size":1213 },
+    { "path":"data/vkbd/vkbdWarmUKLarge.png", "sha256":"33348250c7e69e58c7bd0e113a06c5ae3115ec75b0e6d668405ffc6a8c277fd2", "size":1212 },
+    { "path":"data/vkbd/vkbdWarmQuitHires.png", "sha256":"b1435b076a0d3261944d1fd7081aaaf29b75ca5395cccfcf1bbde097e7b354f1", "size":1493 },
+    { "path":"data/vkbd/vkbdWarmQuit.png", "sha256":"509ffa1b367e0f7fbc5d8b760e7aae6dadc28f8608d61bcc9fe90ba9529e45ef", "size":1423 },
+    { "path":"data/vkbd/vkbdWarmGerLargeShiftHires.png", "sha256":"5fcbbdb52ac96489dcec632f6fae702d47990df6f62a87d6862ec35247eeea6c", "size":1230 },
+    { "path":"data/vkbd/vkbdWarmGerLargeShift.png", "sha256":"9ec54ba3edad1387107a3f7877f77dc2777322a71fa0ebec6c50e9ba35bc4ad0", "size":1203 },
+    { "path":"data/vkbd/vkbdWarmGerLargeHires.png", "sha256":"12ed5a5218cc42a58a4d532ec94c39d32c24c3ddc4914ba1dd91915021e561d7", "size":1211 },
+    { "path":"data/vkbd/vkbdWarmGerLarge.png", "sha256":"d43de31eb7013b6625f647aa21dcb165a975ef191f23c4ba09f40de7f1a0ff32", "size":1204 },
+    { "path":"data/vkbd/vkbdWarmFRLargeShiftHires.png", "sha256":"9ba191fe2f3071f083fbb2c22d2af2c54a6f7ac6822dd294df1a8945b23faf38", "size":1234 },
+    { "path":"data/vkbd/vkbdWarmFRLargeShift.png", "sha256":"3b873c4c0f555fa5f7d5aaaf25ef14a7a7f071834509f13aade848aa0a2f62b7", "size":1223 },
+    { "path":"data/vkbd/vkbdWarmFRLargeHires.png", "sha256":"fd1017e9e69528b9ab0753634e3553d2c7dd1be0ba36e53385bf59e0c8fb5639", "size":1221 },
+    { "path":"data/vkbd/vkbdWarmFRLarge.png", "sha256":"766c351d6a64606691236e5c5d01c8afcd0b24ec0d377eaf9b867973212f7116", "size":1224 },
+    { "path":"data/vkbd/vkbdOrigUSLargeShiftHires.png", "sha256":"0be3deef69d6766f47164c958e6af985d0549c2d8937c77fd1a7df8b1067c6f5", "size":2206 },
+    { "path":"data/vkbd/vkbdOrigUSLargeShift.png", "sha256":"c6ac96371afbfb8f34ca81a7e03254c3ba5ff71f6fad964f2eedb305dad33507", "size":2124 },
+    { "path":"data/vkbd/vkbdOrigUSLargeHires.png", "sha256":"a56cb6624aca2047697e2b97ae41f26c5afc450469d5ad6411a7ad1cabe8a426", "size":2009 },
+    { "path":"data/vkbd/vkbdOrigUSLarge.png", "sha256":"1231ce4a4196d20a7f897fefe9f2b7693d4c18fd7568dd8c85fddbcb81d59507", "size":1931 },
+    { "path":"data/vkbd/vkbdOrigUKLargeShiftHires.png", "sha256":"7e0cd4ea7a027fe91705040759e3a253a2ffbb8e688c197a1b650215cd1b47ca", "size":2255 },
+    { "path":"data/vkbd/vkbdOrigUKLargeShift.png", "sha256":"d5724aa14069b2f41b5ce39dd5237dd927012acfad8efa9c003f92b230106978", "size":2169 },
+    { "path":"data/vkbd/vkbdOrigUKLargeHires.png", "sha256":"0be5f100ca9345e5eb06dbc792adeed2eb7323707eab19fb6f03cd3ebe8acaad", "size":2004 },
+    { "path":"data/vkbd/vkbdOrigUKLarge.png", "sha256":"64ea129cde80c57be4daa7f27fecede7880c082f942999c5c74c392ad5a90f6f", "size":1943 },
+    { "path":"data/vkbd/vkbdOrigQuitHires.png", "sha256":"74c525434efc037416597c78e2a8bf23fd18eccc6485e0b6bd5841f7d495456d", "size":1539 },
+    { "path":"data/vkbd/vkbdOrigQuit.png", "sha256":"809394fdcaeba9ba9f959ee15e07747165efc8ba6cfdfe0ed45d7ea28056470d", "size":1432 },
+    { "path":"data/vkbd/vkbdOrigGerLargeShiftHires.png", "sha256":"0a91765d29a47b7a8ecaeaa8127cf79165f1f45cc0e39a740c63bd8b092dc129", "size":2298 },
+    { "path":"data/vkbd/vkbdOrigGerLargeShift.png", "sha256":"ae6fd4cd8c14d8eacf4d65f6583ad02456030d53cb02006a8daed5590a494ce4", "size":2239 },
+    { "path":"data/vkbd/vkbdOrigGerLargeHires.png", "sha256":"b1a53ca48758d151e4c5ddbea9a39d4d592dfb4f59a5649f1b493bf35538b059", "size":2042 },
+    { "path":"data/vkbd/vkbdOrigGerLarge.png", "sha256":"7eff255e5fdf969d9309317f80c5a1be98ed78590f85e75e78c058c4cc1c7d4f", "size":1974 },
+    { "path":"data/vkbd/vkbdOrigFRLargeShiftHires.png", "sha256":"78b4b7d5593d9278314b7b67d2a2d175fb1e5acc9cd9101b3e99bb0c2aa6c216", "size":2279 },
+    { "path":"data/vkbd/vkbdOrigFRLargeShift.png", "sha256":"88470ded2677c4b6924f8aa44e25f2ef3631f412498457fd8173bb1acb712f32", "size":2235 },
+    { "path":"data/vkbd/vkbdOrigFRLargeHires.png", "sha256":"b5c66bafeaa9faf2e8e738a5931aba4ee0dcfaa4157ab0a43f0a9ce4e2333228", "size":2063 },
+    { "path":"data/vkbd/vkbdOrigFRLarge.png", "sha256":"1fb94efb703f0121d71e30f7e8b01835690ca305b83c8cf523b321dd0a5c805c", "size":2002 },
+    { "path":"data/vkbd/vkbdDarkUSLargeShiftHires.png", "sha256":"b26dd64263e74ffd66fe1d4166f7fdd45b6dc93a5ddb31aadd0c24bc58410943", "size":1212 },
+    { "path":"data/vkbd/vkbdDarkUSLargeShift.png", "sha256":"fdf998c35ceccaf0c1a2b1ea0fa15acbcccb0ab3f0bb215ea9ddbc6e1584756c", "size":1187 },
+    { "path":"data/vkbd/vkbdDarkUSLargeHires.png", "sha256":"ee15986ec60b66e82ac13040673017ef03f5919753148deebd7a85e148d151d4", "size":1192 },
+    { "path":"data/vkbd/vkbdDarkUSLarge.png", "sha256":"64dbfee3c62121127fb0a063c2fa916e088854ed1ace5b7235a449629c1e6c68", "size":1174 },
+    { "path":"data/vkbd/vkbdDarkUKLargeShiftHires.png", "sha256":"3bc483f9dd3d20e8b4b837aebcc5f8026f1c02645029e24684fd3a3e792de3f7", "size":1222 },
+    { "path":"data/vkbd/vkbdDarkUKLargeShift.png", "sha256":"d1908e002b80c44e5ed3faf01df8d18182dee12ec669ad3e84bae08fc5915b68", "size":1196 },
+    { "path":"data/vkbd/vkbdDarkUKLargeHires.png", "sha256":"110023b372f2e4219efb6ae706a6b253e8db0e6e440427ea0e3bbb5e5d2fb58b", "size":1205 },
+    { "path":"data/vkbd/vkbdDarkUKLarge.png", "sha256":"45e30fd22c730642b9249a4faaf50eedd9d0e24099780d95e421cb95e1ba3499", "size":1186 },
+    { "path":"data/vkbd/vkbdDarkQuitHires.png", "sha256":"8f665fe7acba5e3a8813f0db66db7078897014e31b0dcf67b06019e7c48d1db9", "size":1477 },
+    { "path":"data/vkbd/vkbdDarkQuit.png", "sha256":"2fe10b5a0a3fe20e441291e741054128e7145c81cdabeae98e5ce2079d7b0945", "size":1413 },
+    { "path":"data/vkbd/vkbdDarkGerLargeShiftHires.png", "sha256":"aa51d5df0a02822e07a9301dcd4a1ec4b90249d774cd24eece3656dfb2804b0f", "size":1216 },
+    { "path":"data/vkbd/vkbdDarkGerLargeShift.png", "sha256":"68ce4e567e34a531e21e2119f8f101a4142d5d4f7ee36948cdbc6a28aaeba694", "size":1176 },
+    { "path":"data/vkbd/vkbdDarkGerLargeHires.png", "sha256":"b97a40fa7cd15e88d8648278d11c54b14935c53f7b55052e3e8cdaa440110c61", "size":1204 },
+    { "path":"data/vkbd/vkbdDarkGerLarge.png", "sha256":"91f4b71910a43d4ed402aeea30215bc14b24025fe92739b4bd82f6f135ff9e0b", "size":1180 },
+    { "path":"data/vkbd/vkbdDarkFRLargeShiftHires.png", "sha256":"0dc395879b5a84dfd0a877f54a9f89ebf4356a6598e064a6d4546729cd828061", "size":1225 },
+    { "path":"data/vkbd/vkbdDarkFRLargeShift.png", "sha256":"862a24cc81f7cee8e3def61ab7d255b0ebeb315e79b16090d3148d0fbcda37b3", "size":1198 },
+    { "path":"data/vkbd/vkbdDarkFRLargeHires.png", "sha256":"dc545faf14fd8d66b7eb53f5d03b573c0feef2fcf70933cbf95bbcc866615582", "size":1215 },
+    { "path":"data/vkbd/vkbdDarkFRLarge.png", "sha256":"da18a0c226390fed2abfd380097e2df7615c3804e70f2baf398d806051bcacc9", "size":1202 },
+    { "path":"data/vkbd/vkbdCoolUSLargeShiftHires.png", "sha256":"7c100861d7b4a2235d5af3b1927309029d9aa25631f31837e541e1ed28b475bb", "size":1220 },
+    { "path":"data/vkbd/vkbdCoolUSLargeShift.png", "sha256":"565813108c9746b1f34b5e9c559c19dcfd4a14076094dfb2c447076d952053d7", "size":1215 },
+    { "path":"data/vkbd/vkbdCoolUSLargeHires.png", "sha256":"1b6324c2d581c27032fba4e9977c3a0e942a695712d6716c87d6f1a26539e418", "size":1200 },
+    { "path":"data/vkbd/vkbdCoolUSLarge.png", "sha256":"724cc34577a8040ee3101474c1b4383798b67fc40b039457f6ce47c5d5e633a3", "size":1203 },
+    { "path":"data/vkbd/vkbdCoolUKLargeShiftHires.png", "sha256":"69b495a87e89a5fb869711264cd0bbb42745529504e0b27e0a69913561748272", "size":1229 },
+    { "path":"data/vkbd/vkbdCoolUKLargeShift.png", "sha256":"ce984fc7622fd87f83d6c60d15bf6e849bc41b2771310c1f53e6a11dd2985e41", "size":1224 },
+    { "path":"data/vkbd/vkbdCoolUKLargeHires.png", "sha256":"8306e3702a3dbb032de87bd579704ac82ec0cd2fa600d9f0c38b32139d46be79", "size":1213 },
+    { "path":"data/vkbd/vkbdCoolUKLarge.png", "sha256":"9b88a5b0f56ca0d5cf7b54ca674acf1fc71b0e35be90933a7e1cb7fe3ff61ebe", "size":1212 },
+    { "path":"data/vkbd/vkbdCoolQuitHires.png", "sha256":"2f10d53901fe4d9774425511983434682c6746f7faa62356b72ab594f87d78e2", "size":1489 },
+    { "path":"data/vkbd/vkbdCoolQuit.png", "sha256":"df19d9556d3fdd9f35c282dc0788857b33d24ccbac1508d18d1978faffb28450", "size":1418 },
+    { "path":"data/vkbd/vkbdCoolGerLargeShiftHires.png", "sha256":"a939222b9b72c623672949a29fcf5ef03fad5d9c183849fa81cee7c4a7cf3d35", "size":1230 },
+    { "path":"data/vkbd/vkbdCoolGerLargeShift.png", "sha256":"f3d58cbbbee4eda42743ead95e7b7f1fe2387b55670b6ff4d959bd01e48ee931", "size":1203 },
+    { "path":"data/vkbd/vkbdCoolGerLargeHires.png", "sha256":"1f2aeae9bb81e1c05d90c22051bc86851e09ea9fad4feaae51d08d74ab269b68", "size":1211 },
+    { "path":"data/vkbd/vkbdCoolGerLarge.png", "sha256":"e0430aff0715911e7ed9257032fd721dad58b27a7220f9672e43ee9f4d17fe59", "size":1204 },
+    { "path":"data/vkbd/vkbdCoolFRLargeShiftHires.png", "sha256":"acdd6a7d31573e9eae7c2f78d1163fb3e6c70fd9cc7d423768ac3ef3354f9fda", "size":1234 },
+    { "path":"data/vkbd/vkbdCoolFRLargeShift.png", "sha256":"1fd5be186c74458e074a880c180c9b7a8a7127925f5203fe7bd9206a65248075", "size":1223 },
+    { "path":"data/vkbd/vkbdCoolFRLargeHires.png", "sha256":"819ba0fddd299a0a7fe4fb1d5c0104ade6b489b489c5cdbe3d3b347eec74b95f", "size":1221 },
+    { "path":"data/vkbd/vkbdCoolFRLarge.png", "sha256":"d9b3f370d3c024668f3fbb15f0ea0f658717831be5071ecd3f6fcb2c45b9c43c", "size":1224 },
+    { "path":"data/sound.ico", "sha256":"ed9d3f22b4e85928a5430bda3e512dc32c756c75762ab87e7d294877750744d7", "size":1406 },
+    { "path":"data/screen.ico", "sha256":"15237704b590f2b98cc398996f4248013850e8fd2bae8bcef5e0e7cc241ac252", "size":1406 },
+    { "path":"data/savestate.png", "sha256":"91f0a3eae6638cc324ff3a4326fede890cbe09145e4dd8e84e50bff35fe85fa5", "size":528 },
+    { "path":"data/rpgfont.png", "sha256":"f3d403b67ae235f46a027b8ef825750bab4b6244cb157892d6b4d8bf0d4165b9", "size":1768 },
+    { "path":"data/quickstart.ico", "sha256":"95f53853d8f34be512d851bd2fcce300b6d02ab7857b22a25678e2f426b9b41b", "size":1406 },
+    { "path":"data/port.ico", "sha256":"88edb15c5b908e04f7a06ed512f6573d39599118e6413f6adeb86ade7cad59e0", "size":1406 },
+    { "path":"data/paths.ico", "sha256":"4016df147125f42c9407f84d28e4e9e242934cfc0dc26f3ab4901b384396b81b", "size":318 },
+    { "path":"data/misc.ico", "sha256":"cb22ed52bbb861facdbb505b366b42a0a61a0a9aece01fc3585072cdc1b5a12a", "size":1406 },
+    { "path":"data/keyboard.png", "sha256":"2e078bcf49a7b4ec696c53ceb428ac4bf2f6b59fa0376e56e0da94b2cfecd97b", "size":446 },
+    { "path":"data/joystick.ico", "sha256":"61138b02e6cbb46dd50134f5c388ccc25f03bfe85ed1212f4e595add230af600", "size":1406 },
+    { "path":"data/floppy_sounds/drive_startup.wav", "sha256":"db98bbdea142379ed60466cd3a9d8d0160f91d9549cf155e8f320d7d1ddde29c", "size":43492 },
+    { "path":"data/floppy_sounds/drive_spinnd.wav", "sha256":"b53f0f063c418ba5eec19d5f7ab3fe97df146e951127631aee5765a1a441486b", "size":20180 },
+    { "path":"data/floppy_sounds/drive_spin.wav", "sha256":"b53f0f063c418ba5eec19d5f7ab3fe97df146e951127631aee5765a1a441486b", "size":20180 },
+    { "path":"data/floppy_sounds/drive_snatch.wav", "sha256":"d533bf4c79ddbc73d2c7a7eeb4be3107507b3160ad5b75ceaec87c00fe0f4de8", "size":39828 },
+    { "path":"data/floppy_sounds/drive_click.wav", "sha256":"5af419a5d606a1f0c23205f1f0a3ae27718bf0c01ad8bcc77b539e186280bc5e", "size":17998 },
+    { "path":"data/fixedfont.png", "sha256":"672561ba52f47a77c5b728973ca4671aaeb328a9bbdcf4c84e99bb23a54d8d7b", "size":568 },
+    { "path":"data/file.ico", "sha256":"ae9e36dad2fb093bf883a27ee91a351712bc49402b11a0fa35ffb3a274a7769f", "size":318 },
+    { "path":"data/expansion.ico", "sha256":"3eb273aff84a8bdaf563008a0d8a8a7dd627a196e173c0a189bb7a32822d3e7c", "size":1406 },
+    { "path":"data/drive.ico", "sha256":"ac9f19e5a5b3a8cd667baed7372bb8f2352e6e60082a8eb862b1ca0d5de8f2f7", "size":1406 },
+    { "path":"data/delete.png", "sha256":"ac7ddcce40e73beb73d9c32c91c5e64eae4779c104c545f29c66026363e570c0", "size":597 },
+    { "path":"data/cursor.bmp", "sha256":"2849fe3a45b9d4bff9a58ab62cc3b3bec3661e833ee9a30be2a45103c6f25cfa", "size":2006 },
+    { "path":"data/cpu.ico", "sha256":"c6193dfa39c6ee5cb8de71ad99dba47ceef53538d319b65892cb7d283f3a6a1a", "size":318 },
+    { "path":"data/controllermap_back.png", "sha256":"9bf892a446dd1c9b0edd18bfc25c83fa06c34f7ee817f7436cf007338aff0a28", "size":12032 },
+    { "path":"data/controllermap.png", "sha256":"17b05b12df2f8948a3674db45d6284d6a8f03b034c72dc6115514181b1d5e4c4", "size":26420 },
+    { "path":"data/controller.png", "sha256":"eea7d77cf1af8994036741c3085ed85422fba37df1f5f4a8fa3dc7fdeddd0e51", "size":665 },
+    { "path":"data/chip.ico", "sha256":"b18e646403551c7595b4fe2786a43e0628ac073a959acd2eaa150b041a39f46d", "size":318 },
+    { "path":"data/button.png", "sha256":"b3fd4f22931d27e1773b05810e0efdcc4ec138c0c03d115cc39333d6f777a4ef", "size":1375 },
+    { "path":"data/axis.png", "sha256":"4ce1e4c1f041c7005794a31af63277c616328ab89f7976448f7d97fc6d931781", "size":238 },
+    { "path":"data/AmigaTopaz.ttf", "sha256":"db10383cbf2d9b18924217f6a3d89bf7beeb27586eb1ef01870ff307598d01e8", "size":31724 },
+    { "path":"data/amigainfo.ico", "sha256":"d55c46e4fb927af7b469cd73f2593acf5ca1a7d52eeb338289e712710307c433", "size":1406 },
+    { "path":"data/amiberry.png", "sha256":"0a34fab8864e2b7578382478e1ca624943101acae256601fed496d2e4fb30aee", "size":42525 },
+    { "path":"data/amiberry-logo.png", "sha256":"a815dcc017639b2f8ba7e3e7fa761f51ee821dbed3e0e2727f406ba7a9332418", "size":102430 },
+    { "path":"data/35floppy.ico", "sha256":"a991bb090653079a43c5d4069e7f02901cb61d6f61e5d831ce9d59b8ee58fab8", "size":1406 },
+    { "path":"controllers/gamecontrollerdb_user.txt", "sha256":"e397d0773a56b50c423ddf8d576494ecb4eb38e40cdb583a7d509fac5f55d6f2", "size":319 },
+    { "path":"controllers/dir.txt", "sha256":"cbcb111b78103737c394084a7dbcde74209b903b2e4b231d245ee30e023db1b6", "size":27 },
+    { "path":"conf/gamecontrollerdb.txt", "sha256":"e41caa6e1648912a0722a5efbd617c822df4458d280266e6aa01112e42166a35", "size":547216 },
+    { "path":"conf/dir.txt", "sha256":"5f909564ca84ef3098b95ba29a9bace570b1468edc5e3e4494cefa21d619ffb3", "size":45 },
+    { "path":"conf/amiberry.conf", "sha256":"0d60b1b491b431aeac00cfcef600b066f5dcc702e3b59be47652b9fee23b5204", "size":1328 },
+    { "path":"conf/amiberry-osx.conf", "sha256":"f457677b6de2dc85e58980198dbca5aad112cebbd8e7b8c931e8904ee9735a3b", "size":1951 },
+    { "path":"cdroms/dir.txt", "sha256":"43ba520d202d157e1d122b060fdedf2ecd6f5ea80be54ecad5e25bbcaa91a366", "size":25 },
+    { "path":"amiberry.info", "sha256":"82b3eb26be5796460f4bd140c4a6ca99c605996d261865a31db4eafdb1db8e15", "size":10297 },
+    { "path":"amiberry", "sha256":"b4cce99a41a6b76bddbd58026652037461cbf970f46cc8406c18a9fa50e5e41d", "size":51705520 }
+  ]
+}
+
+==== cls
+Tuesday 29-Sep-26 17:38:57
+fetching https://archives.arosworld.org/share/utility/shell/cls.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/shell/cls.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/cls.zip
+installed cls
+install cls: rc=0
+{
+  "schema":1,
+  "name":"cls",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"CLS",
+  "installed":"2026-09-29T17:38:57Z",
+  "origin":"https://archives.arosworld.org/share/utility/shell/cls.x86_64-aros-v11.zip",
+  "archive_sha256":"b26acfba89258de4a39a77bbab52e34e655c999c2669fa2b493e5f86040bc024",
+  "archive_size":41871,
+  "reason":"explicit",
+  "dir":"cls",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" }
+  ],
+  "icon": { "state":"installed", "sha256":"eb1ede2257d410213c6f5f78ff4ddd99edb41d0c5123425d864463b0427f3360", "size":8344, "member":"CLS.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/cls.zip", "sha256":"4dd76feb463fd85f817552d77024b53121d408d5388bb0d70d55f11e8f2219b6", "size":203 },
+    { "path":"Readme.info", "sha256":"2c801e936231290cd3c5edac8c8d7e19d022c3d25246e97cb7eb8f981673dcf1", "size":8785 },
+    { "path":"Readme", "sha256":"3720dc26917aedb3a616def63b02360a5713e63be6e97e8077ec2b00032633f7", "size":649 },
+    { "path":"CLS.info", "sha256":"3d367e682fb9275ed5cb899fbfdd1d05badc93e8a279fd1ab3a8555cddb272e4", "size":8501 },
+    { "path":"CLS", "sha256":"a5727b41ab1b8382f22ac460fa20ab9c4ab0e3e1adb00edec0060398de359a9f", "size":16904 }
+  ]
+}
+
+==== demac
+Tuesday 29-Sep-26 17:38:57
+fetching https://archives.arosworld.org/share/audio/misc/demac.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/misc/demac.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/demac.zip
+installed demac
+install demac: rc=0
+{
+  "schema":1,
+  "name":"demac",
+  "version":"0.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Demac",
+  "installed":"2026-09-29T17:38:57Z",
+  "origin":"https://archives.arosworld.org/share/audio/misc/demac.x86_64-aros-v11.zip",
+  "archive_sha256":"304c4f49fb68c04592a9863c2c68d56cff605576fe80342a660c71343e907d01",
+  "archive_size":110298,
+  "reason":"explicit",
+  "dir":"demac",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"6a107d93544773e6cdd2dcb433e41cca4b1ffe122f4700a6267064d070880ded", "size":8344, "member":"Demac.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"9c66f671ef3ec5bd93b81a795bc6ab0ebb8df1f47faa1e3c1eadee243dd3a9c1", "size":31154 },
+    { "path":"Readme.info", "sha256":"e0ca41b6c9b073d0fc7914abeb42807dc1e67cc0057ab63bbf89b400d116a3f3", "size":8774 },
+    { "path":"Readme", "sha256":"987c3c0fcb62902152520dc4382998ea2517ca08fac330ee21970af9cf5d12d2", "size":709 },
+    { "path":"Demac.info", "sha256":"0913a5b792fb8dcac129e58c606f379b5925c1bd85d6463456889a3ef56b0758", "size":8501 },
+    { "path":"Demac", "sha256":"17043d1f4239b20b9623f9677c7bbc93226fe184245e070dfebca18d1f9fd534", "size":110600 },
+    { "path":"COPYING", "sha256":"ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6", "size":17987 }
+  ]
+}
+
+==== devilutionx
+Tuesday 29-Sep-26 17:38:57
+fetching https://archives.arosworld.org/share/game/roleplaying/devilutionx.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/roleplaying/devilutionx.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/devilutionx.zip
+installed devilutionx
+install devilutionx: rc=0
+{
+  "schema":1,
+  "name":"devilutionx",
+  "version":"1.6.0-dev",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Diablo",
+  "installed":"2026-09-29T17:38:59Z",
+  "origin":"https://archives.arosworld.org/share/game/roleplaying/devilutionx.x86_64-aros-v11.zip",
+  "archive_sha256":"42857cc17063b5f0b8b96b8ec4eb894f3b5d5eab1f59cd9bddd4dd8d058198ee",
+  "archive_size":8409190,
+  "reason":"explicit",
+  "dir":"devilutionx",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"5671622ce9506fb4c9bd9c7842ea2cfba48a99b26f8e115f39867f8572c6b032", "size":11932, "member":"Diablo.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"LICENSE.md", "sha256":"049382c17367e384c622369abbeda0cab1d65658c28611717e18afead341e586", "size":3629 },
+    { "path":"README.aros", "sha256":"040caa1c4dbefbf42423fe4154d798b235d2a32912f60cbe6de0f592cf32649c", "size":200 },
+    { "path":"mods/Hellfire/ui_art/supportw.clx", "sha256":"f12980a91c94931342bd111da00b4adabe8061264cb8ecbdb7fb3a82895c1514", "size":237573 },
+    { "path":"mods/Hellfire/ui_art/mainmenuw.clx", "sha256":"bbbc8b4dd2ac7f2a76855e087c70639b17aea1282efc7f7a410d8dcbae4f98c9", "size":26082 },
+    { "path":"mods/Hellfire/ui_art/hf_titlew.clx", "sha256":"c8626e0034babfc6ca20d7e646e5acc035554d584de0b17cac18bf17aefdfe5a", "size":108089 },
+    { "path":"mods/Hellfire/ui_art/diablo.pal", "sha256":"3b6a6806f100a85a5328e3b9dc196ba3efb29553d67eb9a9de14969ec6e69478", "size":768 },
+    { "path":"mods/Hellfire/txtdata/towners/towners.tsv", "sha256":"0bd1cc1eec867f81ccc1a27390e3a1c8e1b266826b36f56f54ffd0bb3f9193f2", "size":3589 },
+    { "path":"mods/Hellfire/txtdata/towners/quest_dialog.tsv", "sha256":"9376c67e7b27766199d3439d7b4062da3cd3bca80a2707d5ad56a8961317b8d6", "size":3709 },
+    { "path":"mods/Hellfire/txtdata/spells/spelldat.tsv", "sha256":"3a158f1591638ebd0e9647f43a2c8b07577289ac8ab7118dfbb2c450b3778532", "size":4339 },
+    { "path":"mods/Hellfire/txtdata/sound/effects.tsv", "sha256":"f626c44cd5d3bbff62b1c84f70c39b745e60859f6755062504676ebfb118dff6", "size":38892 },
+    { "path":"mods/Hellfire/txtdata/monsters/monstdat.tsv", "sha256":"a80f06b572e900c2a0f8415e52a15d7cf3c5e4de7d30a091702938c8f4b05034", "size":33787 },
+    { "path":"mods/Hellfire/txtdata/missiles/missile_sprites.tsv", "sha256":"cfabaa9175f81e05d00330e37df5cbc72304126a053ccd45c96ab2f2801e0010", "size":6488 },
+    { "path":"mods/Hellfire/txtdata/missiles/misdat.tsv", "sha256":"e0f27fdaed09a5aa4623fb06a9ec79d5f25c27ac13332fdae2467ec58a5186a8", "size":7774 },
+    { "path":"mods/Hellfire/txtdata/items/unique_itemdat.tsv", "sha256":"e31ae7a01f7f9634116c67558990614ad7c9e4a6c9f8f521517edbcb9d9e593c", "size":10938 },
+    { "path":"mods/Hellfire/txtdata/items/item_suffixes.tsv", "sha256":"9a773002e88074ed2fba82f8024817a4c30cac50a86c198e0bf4c368c160d280", "size":6552 },
+    { "path":"mods/Hellfire/txtdata/items/item_prefixes.tsv", "sha256":"8ed2f203e453649df2d0ecae94a095db23e0549650124b4f8fb6755807910a14", "size":5791 },
+    { "path":"mods/Hellfire/txtdata/classes/sorcerer/starting_loadout.tsv", "sha256":"074e63a0284f7c7c96aec61e052f99e5735f5ebd591a2b3381887799a86e0400", "size":161 },
+    { "path":"mods/Hellfire/txtdata/classes/classdat.tsv", "sha256":"6bd58c9b79f7443849d11e2d5b2a376219e88466ddadd823cd63c1c2779e2246", "size":179 },
+    { "path":"mods/Hellfire/nlevels/l5data/uberroom.dun", "sha256":"62417a4c2e590ff1dfe8393b866e10bf8eccc09c842f727d71168ad11ec1e56d", "size":820 },
+    { "path":"mods/Hellfire/nlevels/l5data/cornerstone.dun", "sha256":"5b196e21b959464e8ea5c9d4f7f677d964037237acedd5e8944b093707f28473", "size":854 },
+    { "path":"mods/Hellfire/nlevels/cutl6w.clx", "sha256":"ee1c9814fa8f1f3683865f0878df2808f1803bab18f891fb0e70780ad4965cab", "size":278710 },
+    { "path":"mods/Hellfire/nlevels/cutl5w.clx", "sha256":"43e8d59e3318776793643383770bdf4dc4c748d7bac5a5d3f07747da9b454808", "size":224753 },
+    { "path":"mods/Hellfire/lua/mods/Hellfire/init.lua", "sha256":"f753830b78835d06945f906afc9b18f54a5e3a113005e02e3f3cb3a5f1a155e8", "size":88 },
+    { "path":"mods/Hellfire/data/inv/objcurs2-widths.txt", "sha256":"02dbbce821a78c421f33584709afd9a634b7abb73fcf31e48c0c0899e953bd36", "size":244 },
+    { "path":"diablo.ini", "sha256":"4cb6a46c5ebe73c61beed5091b8542b080b871a57a9447542f3c569ed9fa4d28", "size":4308 },
+    { "path":"Diablo.info", "sha256":"afba133dbb7cf77fd4f40e3f7e9996c745f459acf0a301150ce4a40e8f16cc7d", "size":9259 },
+    { "path":"Diablo", "sha256":"3c6df4c8ad642d9fc8d2af9b60ffcc043db382ac6964e8227060a596dfb751d8", "size":12264624 },
+    { "path":"assets/zh_TW.gmo", "sha256":"8cc3bc8dd802ddaaafa2eff4444f8bacd393360322b73fa2f52f699abcb8a435", "size":245059 },
+    { "path":"assets/zh_CN.gmo", "sha256":"a1b7e09dd6a24c659746ae446fa65ff2a91d5e3970bc9d0da87c99c79c2cd64a", "size":302528 },
+    { "path":"assets/uk.gmo", "sha256":"6b0e7dc9ee8d57568e5a5eaa00229e1d553a4928f5a1f44014188136727ef6f2", "size":350799 },
+    { "path":"assets/ui_art/menu.png", "sha256":"5934e1d8c73d97695546712427c25188a5ba7652941ea900d44f8081ee32cec4", "size":12001 },
+    { "path":"assets/ui_art/menu-levelup.png", "sha256":"efcbc48319993bbcb1dc1265b8ff95bbbd8b2b7a3f145816496f6d288c49496f", "size":18062 },
+    { "path":"assets/ui_art/mainmenuw.clx", "sha256":"ca2262b6c0fb3092363e0567a2601cf27f5abbf81b2376e9fa17b906b33e06ad", "size":20178 },
+    { "path":"assets/ui_art/dvl_lrpopup.clx", "sha256":"da30186d61f08d450ebe63bbf8bad6ecd683bbb1e90551f9bedc5ed5b2bd1e55", "size":96214 },
+    { "path":"assets/ui_art/dvl_but_sml.clx", "sha256":"e53f6f8def20e616d178b57cfc9952d227339af7f1bcf56ecd1d04df6cd6bf8c", "size":4131 },
+    { "path":"assets/ui_art/directions2.png", "sha256":"8ea799b46e62830c63c0f79c114108acd12d7ce20a580f2b8ba50db1c0541dca", "size":17812 },
+    { "path":"assets/ui_art/directions.png", "sha256":"452876db2b7a172d6f0a1ee673301c2b88ead081c3754c33311de773de599839", "size":50803 },
+    { "path":"assets/ui_art/diablo.pal", "sha256":"8f28d972ce6b5a36d8ef88b78441f996f7c10c3b73bd548b9277500b97a79400", "size":768 },
+    { "path":"assets/ui_art/creditsw.clx", "sha256":"dd024bdc790497fd4b9c3fe1e5ae69f2ae5942d096cb2ad1aa467cc887571d1f", "size":172340 },
+    { "path":"assets/ui_art/button.png", "sha256":"eba6f4a6952ee38e8e59b01e41af8d9f1fd61db969c3490d98f11ce0d4d1cd7f", "size":156262 },
+    { "path":"assets/txtdata/towners/towners.tsv", "sha256":"398495e071b989b666249e14d9cb6a6688c3bac43f7df68110b33606aa42c9cd", "size":3378 },
+    { "path":"assets/txtdata/towners/quest_dialog.tsv", "sha256":"e16e33aaef4401c0e53cef4e025ba3cafc4ca1593e9273bf5027e842a5fc4020", "size":2300 },
+    { "path":"assets/txtdata/text/textdat.tsv", "sha256":"864ae3a07774f3454729df9fd1a72decba94c3a2b8188157c148482c4677064b", "size":84589 },
+    { "path":"assets/txtdata/spells/spelldat.tsv", "sha256":"e83b9fd27038a12d9a9fadcd472b5610c9a55c0f11e1dd25667eac608e840dfa", "size":3065 },
+    { "path":"assets/txtdata/sound/effects.tsv", "sha256":"54e9c1dbc66a6c3a68ef90221ebf38bf824e9db854f3ff83f1a8c2c3363f27cc", "size":34753 },
+    { "path":"assets/txtdata/quests/questdat.tsv", "sha256":"29ad7832efb373241253eadfca0eab81a91af803cdb23340b59c025c1b125017", "size":1472 },
+    { "path":"assets/txtdata/objects/objdat.tsv", "sha256":"8a93166d81ca3b3a76ef8d2dbaed78e004f871e95573bcc57e61a1d2b9ae9272", "size":8212 },
+    { "path":"assets/txtdata/monsters/unique_monstdat.tsv", "sha256":"988cedfd23ab4076c60ced2951c814da762c3e9854b51502394bbd32f7e4f641", "size":10676 },
+    { "path":"assets/txtdata/monsters/monstdat.tsv", "sha256":"3ffc0d9aad41164ec4bfff385ae6ac3e24ab53759fa3c025747dc5580935f371", "size":27239 },
+    { "path":"assets/txtdata/missiles/missile_sprites.tsv", "sha256":"6479d39ea80a4e398ece99ac10c58eb9f0f425e038be0d790cd719675bfb2f51", "size":4958 },
+    { "path":"assets/txtdata/missiles/misdat.tsv", "sha256":"31cf618be54dd365c69cc78b368d4501a57fff627cbea49e758f9c377fe29710", "size":4821 },
+    { "path":"assets/txtdata/items/unique_itemdat.tsv", "sha256":"844cf765e94db032353c1fc6b14a45c246e39b27f2f13b5a33d656b4578ac380", "size":9020 },
+    { "path":"assets/txtdata/items/item_suffixes.tsv", "sha256":"ec7e2a79be2ab5b93c1cdb1554f29bf876aaf8b4e9038c057b0bb3a617abaa21", "size":6263 },
+    { "path":"assets/txtdata/items/item_prefixes.tsv", "sha256":"ac9ebf09b44181309b35437dd798fa8a9c0888b10de912ce623e3936a3f4ee79", "size":5545 },
+    { "path":"assets/txtdata/items/itemdat.tsv", "sha256":"56daa0e75806f2a9cb83eac4ea9549e432d0da30f2b9e31d6a5d0a73a4567e38", "size":17994 },
+    { "path":"assets/txtdata/Experience.tsv", "sha256":"c10290c4258a50794bcec0daa866c223f21f2b3cad0ff3469935060fb6705be3", "size":567 },
+    { "path":"assets/txtdata/classes/warrior/starting_loadout.tsv", "sha256":"f744ef0b5118c12917d7d129790139154ac13784626b430d647e96e1950bc931", "size":161 },
+    { "path":"assets/txtdata/classes/warrior/sprites.tsv", "sha256":"7307cf3bcff5d0713a43bd521f2bcc2a11441b5f1b34dd79429e522ac694f592", "size":164 },
+    { "path":"assets/txtdata/classes/warrior/sounds.tsv", "sha256":"9a4a361e454141003f52f6691fa3bd73919955fcc27bbb321a023c6f6c267221", "size":2951 },
+    { "path":"assets/txtdata/classes/warrior/attributes.tsv", "sha256":"31bbcaa49f184e2f757e39fdc1a6f341cda44dab352b0a854004077bb9da29e9", "size":301 },
+    { "path":"assets/txtdata/classes/warrior/animations.tsv", "sha256":"99e026c45b78d2bd45c5042592e4e78dd762efc9f8629571d25bcb0fbf545c7b", "size":540 },
+    { "path":"assets/txtdata/classes/sorcerer/starting_loadout.tsv", "sha256":"b084ff17e3a15b6f7d20e7549c04e9acbed6e30d106ab5bfe5fd3e4f5fd86125", "size":168 },
+    { "path":"assets/txtdata/classes/sorcerer/sprites.tsv", "sha256":"1daf31adb4b2348d0513148f9b2cfbd9a92dbb9ef3fba2c7eb9d98b09a1df86a", "size":170 },
+    { "path":"assets/txtdata/classes/sorcerer/sounds.tsv", "sha256":"a07b4249b59d99a457c876e68d9d69f56bbe55e117a2c9b772008c7578c3822b", "size":3050 },
+    { "path":"assets/txtdata/classes/sorcerer/attributes.tsv", "sha256":"05902013111470c0c7057d835009ff76afad2e7fb4407a197d6ba8ecf9ca9b49", "size":285 },
+    { "path":"assets/txtdata/classes/sorcerer/animations.tsv", "sha256":"5141e442097635fee3e1201b878c07e1b4f7f01e85b46f6fdeaf6b25e182d33b", "size":543 },
+    { "path":"assets/txtdata/classes/rogue/starting_loadout.tsv", "sha256":"3de35f59211af6f4bb5b3da4ded85612468ed32dc7a9a7c06799138faf00266d", "size":151 },
+    { "path":"assets/txtdata/classes/rogue/sprites.tsv", "sha256":"9c26a91f7eca5b5dcf039b39978c94e5c6bee1b213a59d2925762c229602517e", "size":161 },
+    { "path":"assets/txtdata/classes/rogue/sounds.tsv", "sha256":"75afd8eb2d156cb35bab69d407fdf8dc7f46a5549d4ca5c028182416a17f4401", "size":2741 },
+    { "path":"assets/txtdata/classes/rogue/attributes.tsv", "sha256":"ec7bba6ea437a70ff90cb16fe809ce8e587cb904e10424d4a62c8743edea44f5", "size":300 },
+    { "path":"assets/txtdata/classes/rogue/animations.tsv", "sha256":"9c19ed4326616e2c58c52d0f529dd0b038604fdd6def8f1ea66b2b4f1c47ff6e", "size":544 },
+    { "path":"assets/txtdata/classes/monk/starting_loadout.tsv", "sha256":"e3ec4013948fe9d7518601881c1db8d73717ae3e89d01b42f5334582bab7d8e0", "size":152 },
+    { "path":"assets/txtdata/classes/monk/sprites.tsv", "sha256":"a4033aadb03cbb9aa16929f9f2bd22ee438406c818b9120ccfbc733abd82cacc", "size":164 },
+    { "path":"assets/txtdata/classes/monk/sounds.tsv", "sha256":"8eb470f6cbdf51cc4b0ff3bbd7ea61ab723a8c0b59eac9a3f1e24e07cbde0e12", "size":2525 },
+    { "path":"assets/txtdata/classes/monk/attributes.tsv", "sha256":"191ee35f2b34e994ea177d52214f1741ab3d50a91ddbd156088b35ca87d23804", "size":292 },
+    { "path":"assets/txtdata/classes/monk/animations.tsv", "sha256":"34d4336cd6d6f9675d18546916276122f6c7f82ec8d816cb7a797f6608d3886a", "size":542 },
+    { "path":"assets/txtdata/classes/classdat.tsv", "sha256":"5948137f62df73e8f0d6d33c7fcda079e4c059c4d5b0d2fa1548960324358347", "size":179 },
+    { "path":"assets/txtdata/classes/bard/starting_loadout.tsv", "sha256":"709e9b427dca58a8f80f167e227681c3c90f135fddb42e2115b6eb73ad96a4c3", "size":159 },
+    { "path":"assets/txtdata/classes/bard/sprites.tsv", "sha256":"f33f02e41f911e95aa8d34186cb99cf4a4d432f1768ecb24d55db4e0126d9469", "size":160 },
+    { "path":"assets/txtdata/classes/bard/sounds.tsv", "sha256":"75afd8eb2d156cb35bab69d407fdf8dc7f46a5549d4ca5c028182416a17f4401", "size":2741 },
+    { "path":"assets/txtdata/classes/bard/attributes.tsv", "sha256":"00251b8e606636ec95eaf0bb37d0b0e51bbe6700b59e379fbf736633fb78c1b2", "size":304 },
+    { "path":"assets/txtdata/classes/bard/animations.tsv", "sha256":"82642a61b488d5d56d191b00dc80e55c34ec346c4049f870f9bcd4c4c71f63c7", "size":545 },
+    { "path":"assets/txtdata/classes/barbarian/starting_loadout.tsv", "sha256":"93bd1ee77a3f65e6b09d0eb72e750d0b2638e5795ee0527d24760cd08cd1e4d4", "size":153 },
+    { "path":"assets/txtdata/classes/barbarian/sprites.tsv", "sha256":"6f597ec5720f4e023a41f26c4d42c7d879412f326b598ea28986602ed7a22922", "size":166 },
+    { "path":"assets/txtdata/classes/barbarian/sounds.tsv", "sha256":"e5ac7990cf200940ca79e289723b1dfcbe4a7e804dd04c8f4aea7ad10737f135", "size":2948 },
+    { "path":"assets/txtdata/classes/barbarian/attributes.tsv", "sha256":"1a1715ce91c005b43b38091ff08fc6b91011233d33e6007b5c9ae6ad92c2aabe", "size":327 },
+    { "path":"assets/txtdata/classes/barbarian/animations.tsv", "sha256":"3fe452fca0203a2987efdc72bbeb0522b73776a3841bcecdd8a379a1e113a69e", "size":539 },
+    { "path":"assets/tr.gmo", "sha256":"65508391eb93b63b7d35ad92695a7f87bd15f5aa8da710f70234a9da6f3930c5", "size":277054 },
+    { "path":"assets/sv.gmo", "sha256":"d01e682042fc366a7b52c9ce4aea56a74ee33c50147c47a366a4e0dc33409ac9", "size":258993 },
+    { "path":"assets/ru.gmo", "sha256":"0fbb078268252f9dbb768b10ce719204c7db3ada982c066be91f6ce663504ccf", "size":357003 },
+    { "path":"assets/ro.gmo", "sha256":"dbae7e1a3c284bd6f3fa5d025756d7cc4806e248fbf72aee207e173d6f87c971", "size":38941 },
+    { "path":"assets/pt_BR.gmo", "sha256":"64ccf2b6fd6b6bff5b31947eae6cf57205740ea0fcbe07e974bcf96c4086a699", "size":275467 },
+    { "path":"assets/plrgfx/warrior/whu/whuqm.trn", "sha256":"a2f0c9b53396aa7192a770551bc2b60562fd29b5b71196c0a0c7a80bb013c240", "size":256 },
+    { "path":"assets/plrgfx/warrior/whu/whulm.trn", "sha256":"a2f0c9b53396aa7192a770551bc2b60562fd29b5b71196c0a0c7a80bb013c240", "size":256 },
+    { "path":"assets/plrgfx/warrior/whu/whufm.trn", "sha256":"a2f0c9b53396aa7192a770551bc2b60562fd29b5b71196c0a0c7a80bb013c240", "size":256 },
+    { "path":"assets/pl.gmo", "sha256":"ea7362a7eb5b8ed04d2f49edf2fffd1c8c51e5e693650ec2b6bec5de09c75f6d", "size":268499 },
+    { "path":"assets/lua_internal/get_lua_function_signature.lua", "sha256":"5baa6aadf16817e48dbaa9dbb9b22672602ca0ed5bccbab757ed58c6df227dd6", "size":1050 },
+    { "path":"assets/lua/repl_prelude.lua", "sha256":"4d16ca94fd29bdf593b42cda2fd812c0b6a09f24f92e51ff9f91ad925ecded6b", "size":791 },
+    { "path":"assets/lua/mods/Floating Numbers - XP/init.lua", "sha256":"b24e83dc68da440ab112bb87345062c2015e79227f2353c53dc6766df1543cf1", "size":979 },
+    { "path":"assets/lua/mods/Floating Numbers - Damage/init.lua", "sha256":"fe46a423d33d85fe9f0dbe4eb0d2ad65daa7e6c6d11d987edbda4db431b6425d", "size":2824 },
+    { "path":"assets/lua/mods/clock/init.lua", "sha256":"7dffb8eae874384173b56fa871a3b5204deb8de1895ac0d0a084ded22ee28186", "size":214 },
+    { "path":"assets/lua/mods/adria_refills_mana/init.lua", "sha256":"deb0288da9bf40894775d38753c8d8a7328e70f8009d0294d80d6b67c6ecc0ae", "size":578 },
+    { "path":"assets/lua/inspect.lua", "sha256":"060a1490d675ee60aafc82e4f2f9ff3ceec76550d4869f43b01afafeda054549", "size":9072 },
+    { "path":"assets/lua/devilutionx/events.lua", "sha256":"b770706f67e91fe338c59552428fa5161c51d91a4e25a3cc3ecb658681696a5a", "size":3015 },
+    { "path":"assets/levels/towndata/automap.dun", "sha256":"4525f2e543d4f9969ebff1ff91584ffd94e95c5ace690822f5d3534d92cdcd93", "size":54404 },
+    { "path":"assets/levels/towndata/automap.amp", "sha256":"02aebca5cbc381c800f64c23c99c3fa620850f5734af0c9e0213ebb798eb13a0", "size":312 },
+    { "path":"assets/levels/l2data/bonechat.dun", "sha256":"5c21f2247c70445ff2379377ac98eca9171b26164aae8af83833981876d1ed51", "size":19588 },
+    { "path":"assets/levels/l1data/sklkngt.dun", "sha256":"2d5c1ed527a62636e08fa81fdd81a66db65cda585806d48a8f6f769cb2e5ac68", "size":31454 },
+    { "path":"assets/ko.gmo", "sha256":"d73862e2712f99c19c054b75649cfc201a72042f486b0f322411ea1ac7c11ee6", "size":277350 },
+    { "path":"assets/ja.gmo", "sha256":"891d38dca2b9f402d7c4cbed9b2d3f5ada9becaf465e23bf776252611fe4e84e", "size":355056 },
+    { "path":"assets/it.gmo", "sha256":"55b81da6f0111da84af8a3b4a35312d19f960848f6b4637e2e09af9cbd246158", "size":270211 },
+    { "path":"assets/hu.gmo", "sha256":"eef4aae10442fc7a6fc1e008b78009cc15b86ca4ee694af11471a321593ce3b7", "size":273919 },
+    { "path":"assets/hr.gmo", "sha256":"9d1e1fb6269c93c96e8d61fc123775e9d3d691b164070de4ca22b4e1a04df654", "size":126012 },
+    { "path":"assets/gendata/pause.trn", "sha256":"6efd80223719c22995185e565b6e1a2eb4f22d7d41dac594d19e549b107fd421", "size":256 },
+    { "path":"assets/gendata/cutttw.clx", "sha256":"34afdb7514ef2e3259f3ce1517e4d360b8aa5cafcb5a2dee4f5420291d3fa2d0", "size":154536 },
+    { "path":"assets/gendata/cutstartw.clx", "sha256":"87d1224f8f4f196c1f1b22eab416f6274833e91dd8298df1d3acdec5a8c88386", "size":325305 },
+    { "path":"assets/gendata/cutportrw.clx", "sha256":"17a14d454ef9d3570cf2ac0657982f2aca82522ccba0b60d5db879730dc966da", "size":190141 },
+    { "path":"assets/gendata/cutportlw.clx", "sha256":"c5168f95a976c76b65e08fdcdf5993f4de432d8065e783fc6a20a65eb3b08414", "size":230459 },
+    { "path":"assets/gendata/cutl1dw.clx", "sha256":"bd4b4de8d31a3c48bef3cb6835e66586a7e8d9add5da2de6a21184e01927a8ca", "size":225974 },
+    { "path":"assets/gendata/cutgatew.clx", "sha256":"24b86e87e59436ccb5c34cd113b62575772978e076154228620f431e46379a99", "size":155429 },
+    { "path":"assets/gendata/cut4w.clx", "sha256":"a8df8d6568c4496af82a680d188ae7f4f61a0adf7e8e0cbc4df95472b83e74d0", "size":156060 },
+    { "path":"assets/gendata/cut3w.clx", "sha256":"e15c6d264d04eba51fd5ca17c1729196f28a1f1f19106d9cc040391b97e678e2", "size":333754 },
+    { "path":"assets/gendata/cut2w.clx", "sha256":"2816b692f08731cae45c6b5d2a726a81c0af7ae543669504dd2a22097f55f188", "size":179896 },
+    { "path":"assets/fr.gmo", "sha256":"9420c506f01dc5023de83bc7e2c0648617e5dad290160523847c72bc35ff90c4", "size":273823 },
+    { "path":"assets/fonts/yellow.trn", "sha256":"fad889f83e4b02b8b5eb8a79490a739eef61d360ac595dddd551cce2cf386a59", "size":256 },
+    { "path":"assets/fonts/whitegold.trn", "sha256":"49562f773f976c3a63be50f1826e41feb24048968b26580681151b6fb542dba4", "size":256 },
+    { "path":"assets/fonts/white.trn", "sha256":"0f1d11c14c212603913efad0dcc944e38bb751ad3d8a6c145fd61c17041626b8", "size":256 },
+    { "path":"assets/fonts/tr/46-00.clx", "sha256":"4b39402567f37430306ee4d7de2ca0667388a40ab24286cae3a4707e0668b8b7", "size":2848 },
+    { "path":"assets/fonts/tr/42-00.clx", "sha256":"b9b6cc2e84f2371a699931c86a11e83802cb63cfed68b5e5f9f4fc7d28b23314", "size":2791 },
+    { "path":"assets/fonts/tr/30-00.clx", "sha256":"b3344e2b68786f74db5980c594c111afbe42d09ab9d3f64f4c82ea29643b4249", "size":2686 },
+    { "path":"assets/fonts/tr/24-00.clx", "sha256":"1574393436e6c968e0419f6125ee1183e50a8257d05df20edee1404910fa9361", "size":2676 },
+    { "path":"assets/fonts/tr/12-00.clx", "sha256":"b2a816f5e1d8b0cbe9d7c1851b540d717fe6f91a0db1b3e5d34e157edb0f31be", "size":2615 },
+    { "path":"assets/fonts/red.trn", "sha256":"a22400b6230646cd079e8249323ea01005d6ef0aea0875ad0e8d7b501b54e076", "size":256 },
+    { "path":"assets/fonts/orange.trn", "sha256":"45cae4704fa9dd27551c241bb9605e5dedbd5d53fa483ee6e7a0051ec912692d", "size":256 },
+    { "path":"assets/fonts/grayuis.trn", "sha256":"c7248910fa70989908528db0491397238417afa961dd2caa034e7669ed1dcfff", "size":256 },
+    { "path":"assets/fonts/grayui.trn", "sha256":"87184330377d2a9dfc2d181e276c565461a7d1796d0cc11f72ec0fa6d436e463", "size":256 },
+    { "path":"assets/fonts/golduis.trn", "sha256":"4498a68b19c7cf0a1b063b309f28d8aaec7d61a78465be4db0e9d4406f1081cd", "size":256 },
+    { "path":"assets/fonts/goldui.trn", "sha256":"939fec47ff8926a0ad5f262c92c9a462bd539340fbde116d46acdae36d97c8d7", "size":256 },
+    { "path":"assets/fonts/gamedialogyellow.trn", "sha256":"b80182b68657f62f6c7ab7da281e98f45480bf36d20a9fe8ea694565039ee593", "size":256 },
+    { "path":"assets/fonts/gamedialogwhite.trn", "sha256":"cd5321f5acf4f3f2044d07d80f97ef3fe973cd78b2f3a2e660b158e245ed76c4", "size":256 },
+    { "path":"assets/fonts/gamedialogred.trn", "sha256":"5771bae28a1b97f0f5d01e534241b2acae8194a01681f6edc020e876779404a0", "size":256 },
+    { "path":"assets/fonts/buttonpushed.trn", "sha256":"dfddd5a767e961e232cfbc7c809124b1173aeb7112bc14677ad4d6ce8e1580f2", "size":256 },
+    { "path":"assets/fonts/buttonface.trn", "sha256":"2dd236c8b1c31321b15306190b8c0beff86fe4e05cd5a93d0150d757a9de85b8", "size":256 },
+    { "path":"assets/fonts/blue.trn", "sha256":"848500de26880e8b255ad545cdf95ebc2427f5f88791af70d13a057c37ae1bbe", "size":256 },
+    { "path":"assets/fonts/black.trn", "sha256":"c769682608ffadebede7b21f8ce3a3d9a1b86da454f1830a0215508439124d75", "size":256 },
+    { "path":"assets/fonts/46-20.clx", "sha256":"7491e6ec52de3ee066cbec635c01357941ce201974a5d6ef4a3a55e61b42dcc4", "size":80888 },
+    { "path":"assets/fonts/46-05.clx", "sha256":"355a234c813a8c86ea153a07ac2baa320b407a5af5e9861fb1f1f95209299bf5", "size":14575 },
+    { "path":"assets/fonts/46-04.clx", "sha256":"d0674c8dc74e92c6933199e75942cb01a1079f8591353d8dec0968967846f41b", "size":149190 },
+    { "path":"assets/fonts/46-03.clx", "sha256":"c4db8c5a25c138549d581bb4ba53bffadb96686c4aacd23bf61046b6187a9fe2", "size":72124 },
+    { "path":"assets/fonts/46-02.clx", "sha256":"5255a94ece76acb2f22c6ac9f69b67859a726706906514d1474da959dfb1138f", "size":48047 },
+    { "path":"assets/fonts/46-01.clx", "sha256":"1792269107561cbddefefb5f3d45199dd218e18fae346b089d800c931523caf4", "size":151625 },
+    { "path":"assets/fonts/46-00.clx", "sha256":"53377a15d5babb4a55f4bd1514dee7515f569d1986f5c11a3b3d6756dad7aacc", "size":90468 },
+    { "path":"assets/fonts/42-20.clx", "sha256":"b4eb61e5a9b2ae39ba91d504984e2b42902944b30fdfec503faee793302d147b", "size":13597 },
+    { "path":"assets/fonts/42-05.clx", "sha256":"17d2e5be88a6d46cd562dc84b921b534d546f4197627784354e78ac01a0b2029", "size":12066 },
+    { "path":"assets/fonts/42-04.clx", "sha256":"77e62a9bf8d89b246f56fb32797ecf735062a313c849ca37ca3db2ac0f77baba", "size":117240 },
+    { "path":"assets/fonts/42-03.clx", "sha256":"85f4c5cac537442d6eb99bf602d33bde7df183c37261cac6c97dbb34c60d1c41", "size":57457 },
+    { "path":"assets/fonts/42-02.clx", "sha256":"b3ad02e2319a98d59ae83c632eda0f02593238bc2edf0ad671c24ce2a103ee88", "size":38242 },
+    { "path":"assets/fonts/42-01.clx", "sha256":"54cb8256c9f75f7b28ee1c0d074274837d68f1b50d635dc007a9fbbea53f851e", "size":117394 },
+    { "path":"assets/fonts/42-00.clx", "sha256":"1420a602ae0bc82bd668e1461035f4e05a86ac25da0a0000436b365e30d3de92", "size":71476 },
+    { "path":"assets/fonts/30-e0.clx", "sha256":"b08e1b690b1b7d0827d95fc9935dcabe96d94c977e10ab1432890d0d8cdef5ac", "size":30339 },
+    { "path":"assets/fonts/30-20.clx", "sha256":"e28924c0ac83f8a5cbf3bae124e87bd08335af424b0b01cd9d5232dec6129c61", "size":9190 },
+    { "path":"assets/fonts/30-05.clx", "sha256":"412d0ca85132b98902829934358aeb0a30d58363438d32d86ca8357c022153ce", "size":7698 },
+    { "path":"assets/fonts/30-04.clx", "sha256":"56c6e060eba74c5173ac16f72660e6b928791fe45c14a4fe3485b8f41b67e17d", "size":66828 },
+    { "path":"assets/fonts/30-03.clx", "sha256":"702755ccaed442ae083f7529b9a61c629ac448baac85c8041ff7dcda2634045a", "size":33750 },
+    { "path":"assets/fonts/30-02.clx", "sha256":"25cfd726cfc165c04845e4ecfa61cd62e6420956ac19083dc639f100911e622f", "size":22599 },
+    { "path":"assets/fonts/30-01.clx", "sha256":"641ed82c21308b49188b64abb315d9b683394fd7f03151dbcfa80beb0e4fa6b6", "size":67697 },
+    { "path":"assets/fonts/30-00.clx", "sha256":"2cf8a3014c0c159fa97d5a051da2cba828f18ca0d62b9d25408c4ef65c84af01", "size":41201 },
+    { "path":"assets/fonts/24-e0.clx", "sha256":"a6271d1592d880aca844d1a22ef3a2f107633fa5f6ff001d40d1fbffe9de9d73", "size":18875 },
+    { "path":"assets/fonts/24-26.clx", "sha256":"65d0bcde2b37f03a0ffc3aac2400af3c7dcb2aa072f975e8b3c8de99fc0b269f", "size":18302 },
+    { "path":"assets/fonts/24-20.clx", "sha256":"6712638cfb814f93ed32ea39b1653d2ee02ddc2fb1ec6f7a65abb96467e25cfe", "size":7885 },
+    { "path":"assets/fonts/24-1f9.clx", "sha256":"245ded81573af3e71896964f44f72289e4933ba0c34bd2885ebbb23e747f4059", "size":45606 },
+    { "path":"assets/fonts/24-1f6.clx", "sha256":"82ff895e73e4e4570cca607b7f44b8107f4167310e297c8924bc57768a1a84b5", "size":37171 },
+    { "path":"assets/fonts/24-1f4.clx", "sha256":"5cfe706260836426f6d3c7ff75bc9b9ec6da7c741f30a0f3af655defb5688a43", "size":48412 },
+    { "path":"assets/fonts/24-05.clx", "sha256":"b4af8decc124b6eb7378f334d8638eeb35bcdeb30af89eea64d558cef7daf95c", "size":6304 },
+    { "path":"assets/fonts/24-04.clx", "sha256":"0ac1d782baafbfe3a689eb39a1120e11a61fff43cfafeb5f07ccac1b463af999", "size":51553 },
+    { "path":"assets/fonts/24-03.clx", "sha256":"eb9ef6666e5bc471d69f889445f068cce793164d4bf8170eac951367bcc962f3", "size":25796 },
+    { "path":"assets/fonts/24-02.clx", "sha256":"cd5a0104941eaa17ea0e73cb7669173d3ea13dcb5961c4f140c401e70445c50d", "size":17738 },
+    { "path":"assets/fonts/24-01.clx", "sha256":"dc808e83b880c0c7cefc5369703bafcb9c67433cda8c0b0afd8e767f44e3b743", "size":52260 },
+    { "path":"assets/fonts/24-00.clx", "sha256":"cc12555a326367c36984a15fe448264a4c6ecef78182a453c8c5088f957c1b96", "size":31958 },
+    { "path":"assets/fonts/22-20.clx", "sha256":"8090054c3ce0b34238e549b51429d53af05a31bfd562438e174580aba794f9d3", "size":13037 },
+    { "path":"assets/fonts/22-05.clx", "sha256":"0760b996d61a42f6e566358fddce6c985061f23fb636c9f3046ec825c729704b", "size":20732 },
+    { "path":"assets/fonts/22-04.clx", "sha256":"cb80f1e841f51e1f116e6a599141eb3a62274eb9fcaf44ba5f205537c1537dc9", "size":28848 },
+    { "path":"assets/fonts/22-03.clx", "sha256":"66773125dd6f273c9136d73d1a74d3a4ebe83b2e31ec13889f4320c03b1e65eb", "size":16412 },
+    { "path":"assets/fonts/22-02.clx", "sha256":"d9a74f824a767413b433427fe8f485434a81bea9c793baf901301de7a9a52602", "size":22829 },
+    { "path":"assets/fonts/22-01.clx", "sha256":"57c02001d743190245b3c496fd3ba13973d06cba1c2d503d2cc29646d0b9bf1f", "size":31156 },
+    { "path":"assets/fonts/22-00.clx", "sha256":"837163ca83f1baa217d7c675ae0c3e2a39879ebca919627c657e7021bdd117d0", "size":19296 },
+    { "path":"assets/fonts/12-e0.clx", "sha256":"2e7cd4b521f8b8bd9ee1c39a3a5e2af9cef880331120ca72b2e44ef366070e74", "size":18412 },
+    { "path":"assets/fonts/12-26.clx", "sha256":"91aa932c36ea0ea70ef4698a9244885aae825bff81ba71c6db17d04c53836a77", "size":10480 },
+    { "path":"assets/fonts/12-20.clx", "sha256":"0a3bff1afad498f2ece4e995d48924c56d68a58b27d1b6c7a85b065009ddef89", "size":15135 },
+    { "path":"assets/fonts/12-1f9.clx", "sha256":"867f55f6db8bc8f400a99322fd215ffeaedc07a991ac8ac2a62dc80ebc62e56b", "size":23370 },
+    { "path":"assets/fonts/12-1f6.clx", "sha256":"b8b300a5297917adf39e4374723d8c1f81abb6cdf78543b58bdc4ddcd1f1abf8", "size":19848 },
+    { "path":"assets/fonts/12-1f4.clx", "sha256":"6c78362e91c009fd4424718ac1176de0d360ce3ebcfa17cd40d677dbea0e8f19", "size":25512 },
+    { "path":"assets/fonts/12-05.clx", "sha256":"212ac1f734609b2633e1a8239d860e5cde129e9507d0df78f1ceb08d5bd0f6eb", "size":4304 },
+    { "path":"assets/fonts/12-04.clx", "sha256":"a3809877554525a09a6f8cd82b8b524b5a3e55794fda7486ff9fbea5c9e3dd52", "size":26927 },
+    { "path":"assets/fonts/12-03.clx", "sha256":"e91fd10989966d0953011973da909f9f9cb2da79dcd4fcf6212b8ec4c2bd56cd", "size":14439 },
+    { "path":"assets/fonts/12-02.clx", "sha256":"8c8bf6a65be55fe8b374ebeda64f931c4a60de71dafa835adfdb6ab396de8503", "size":10113 },
+    { "path":"assets/fonts/12-01.clx", "sha256":"b8899084ef35279940327c04edd4d8c6119c32e84f2aced28eeab80f20bf41f7", "size":27309 },
+    { "path":"assets/fonts/12-00.clx", "sha256":"4903e421b6c0bd50d859fb0cd7b3ae6574c004a3aa4b7e972f7a39807d7a1d1f", "size":17383 },
+    { "path":"assets/fi.gmo", "sha256":"9650c8c1b7df663badb385ffaccb1829a5b0c4e8020e43172a92369f7a14c9a4", "size":278956 },
+    { "path":"assets/et.gmo", "sha256":"84a5b21d13015b2ae31218db6d655b8b5dcb061f2615b60ef5f2f3f354582883", "size":267572 },
+    { "path":"assets/es.gmo", "sha256":"1d8cca0fb2e1f71f8d0d78f7d94453d01dc3d1c44ddf8b4c717f0c808cc23d4d", "size":283833 },
+    { "path":"assets/el.gmo", "sha256":"e404820e7f890489c1e01a0d5535f46dad56fd9f026c544022c271ecb4dd1439", "size":382756 },
+    { "path":"assets/de.gmo", "sha256":"dc63a971a044c1d6c09638452630279997fb894780038114d87b31b475cde660", "size":282736 },
+    { "path":"assets/data/xpbar.clx", "sha256":"ece8c985b165c9174f8606eb57071d5a5b3914889d272892715caf4892727bab", "size":1531 },
+    { "path":"assets/data/talkbutton.clx", "sha256":"7038468a0564fa9f72d28ad60ecddccd8660daf183b652120bfc79badae64e6d", "size":1484 },
+    { "path":"assets/data/tabBtnUp.clx", "sha256":"dd588130583baf20fc171ecdab61307fe271d6c499ba474891d53e69b44b020c", "size":2622 },
+    { "path":"assets/data/store.clx", "sha256":"89ea5b94312f5aae67c4f05837fa73dd2da5ce15752c9bcc7a4f9545314c53a6", "size":71513 },
+    { "path":"assets/data/stashnavbtns.clx", "sha256":"df39c7a252e53994d03dddc98387b6deed48caf086c98378327af5da353b148b", "size":1574 },
+    { "path":"assets/data/stash.clx", "sha256":"436023ea51595376a425d4a6dc309dd7edc83ee3decd170bcc4d5f57c2b9e399", "size":67390 },
+    { "path":"assets/data/resistance.clx", "sha256":"19cdb3eee72424566af774238ab346ddcd341cf20adae9a9163ad795bada48ba", "size":1879 },
+    { "path":"assets/data/repairSingleBtn.clx", "sha256":"030b76c7fd680c52d43d9fbecaae7eba17c7438915c1a36d107059ece02c1f26", "size":1074 },
+    { "path":"assets/data/repairAllBtn.clx", "sha256":"10d0547974508c878fd69d39e040f48dc07cee0326a4493027bf323cb9c009c5", "size":1898 },
+    { "path":"assets/data/panel8bucp.clx", "sha256":"65e18f40b62ab1b1dca2bff0c987f10477a47df264380f686d8c49317e4e3958", "size":4601 },
+    { "path":"assets/data/panel8buc.clx", "sha256":"95e36de6e01b22d47585b51f6093819738ed143f7e2f829b677c513f3b84ac07", "size":1951 },
+    { "path":"assets/data/monstertags.clx", "sha256":"f2710387fafb5e8493efe1cc635dac7014310ee1d72b2f7cb062cfb4778e756d", "size":484 },
+    { "path":"assets/data/inv/objcurs-widths.txt", "sha256":"33c406e009e35fedbb697e80c0c1a1419e74001d2d08e88eb9a038641ed90212", "size":716 },
+    { "path":"assets/data/hinticons.clx", "sha256":"d5a03602a7f0f3d14c0a6ba0e870ebf638743879fbbe21a77919e381457da7bd", "size":2722 },
+    { "path":"assets/data/hintboxbackground.clx", "sha256":"7f89a864a7144bd5a522c884b2462ce86a5499c24067137952fb4477d454946c", "size":1326 },
+    { "path":"assets/data/hintbox.clx", "sha256":"61f03b259fea079190cc00854d02d6a1794e06b023db0f04082a26122df1534f", "size":407 },
+    { "path":"assets/data/healthbox.clx", "sha256":"57469e2c770c3ed4a05913208f8a8e5f438f7dc6af491fe4fa05906583b65d46", "size":1253 },
+    { "path":"assets/data/health.clx", "sha256":"ec909f8c135a3b5ff2418de3751fc0663d8833c19795f3356eb72c0c24320b95", "size":2024 },
+    { "path":"assets/data/dirtybucp.clx", "sha256":"5659b48f8931a8490713aaf05190826ebc5bba912c792658c1a65ac5821539d4", "size":1122 },
+    { "path":"assets/data/dirtybuc.clx", "sha256":"aa2d1756f2904d9dba4ac04624688432af79022af0938474513621ec5c59f142", "size":1244 },
+    { "path":"assets/data/charbg.clx", "sha256":"6acc664e91075f05587b9f032977d16932783014844e0c785e43678e18440809", "size":100328 },
+    { "path":"assets/data/boxrightend.clx", "sha256":"8bfb5e0d4d2e9904825f9164a89e82a31bdca1200921f588362ea47dda41c369", "size":197 },
+    { "path":"assets/data/boxmiddle.clx", "sha256":"05a3b23e049403f1e984ba514b6d95ac6b474464b34145beb18df75b1c10833a", "size":5076 },
+    { "path":"assets/data/boxleftend.clx", "sha256":"f1f2d5f3ff577e2095e2d92ef07a5da8b13212c8ac859be68fae0ad7b1cf29b9", "size":205 },
+    { "path":"assets/da.gmo", "sha256":"85c1d98409155d5d1c4643da7c216357dc5a2bed98d92fcda53b19f9ee043e3d", "size":9651 },
+    { "path":"assets/cs.gmo", "sha256":"b82854e762625f82f9c7e92826c1a15c35d1f792d68e1a1729ba44a7b332939b", "size":254198 },
+    { "path":"assets/bg.gmo", "sha256":"3ab50ea6429afc94174caaec876b168792e8305a8131cecd791a9df3f68cdf88", "size":347310 },
+    { "path":"assets/be.gmo", "sha256":"f68d9be70ca66cf733508dd6d3b039fc70998ffb5376d8afdb61b32168a4ebc5", "size":330271 },
+    { "path":"assets/ASSETS_VERSION", "sha256":"4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865", "size":2 },
+    { "path":"assets/arena/hell.dun", "sha256":"0e4359f06abc8228152eb03ffce267379cc46cc04951f46861a84a848502635e", "size":16528 },
+    { "path":"assets/arena/circle_of_death.dun", "sha256":"f2b0d05b607ed27ba4ca2af1dc33d14c49ab5246330058761ff737fd123fbc59", "size":10952 },
+    { "path":"assets/arena/church.dun", "sha256":"285fdd45b857c49fc4a79aea6ed5f82e8d953bb6c3f545ae66281d0428198a12", "size":11428 }
+  ]
+}
+
+==== giocodel15
+Tuesday 29-Sep-26 17:38:59
+fetching https://archives.arosworld.org/share/game/board/giocodel15.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/board/giocodel15.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/giocodel15.zip
+installed giocodel15
+install giocodel15: rc=0
+{
+  "schema":1,
+  "name":"giocodel15",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"GiocoDel15_1.0",
+  "installed":"2026-09-29T17:39:00Z",
+  "origin":"https://archives.arosworld.org/share/game/board/giocodel15.x86_64-aros-v11.zip",
+  "archive_sha256":"943e4099deb4cca1cca59997644e368fb8beb79cd0519f737446cde9e3bff9a5",
+  "archive_size":529710,
+  "reason":"explicit",
+  "dir":"giocodel15",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"cc4dc6697a289f1697dfc2eedcb47361d4237c6a512992659cf205243dbb1367", "size":7463, "member":"GiocoDel15_1.0.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"111f3c938f9d1fdf16dbbb228184215e6abeea263ece270a21a2889af0ca4620", "size":1087 },
+    { "path":"Readme", "sha256":"01c3c818156dabd2cca9575c09eb9916f8e42aff0889ec0b7e5610b33ab61bda", "size":3150 },
+    { "path":"GiocoDel15.info", "sha256":"21571009f7096a821a76fcda7a0d561800100283efef6e2cb328461faf9c21d1", "size":1718 },
+    { "path":"GiocoDel15", "sha256":"56334ddf4ec60738cc1706d9701e806fdabb968e9251fc14275888d3918f965f", "size":2467904 }
+  ]
+}
+
+==== muiplot
+Tuesday 29-Sep-26 17:39:00
+fetching https://archives.arosworld.org/share/graphics/misc/muiplot.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=graphics/misc/muiplot.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/muiplot.lha
+installed muiplot
+install muiplot: rc=0
+{
+  "schema":1,
+  "name":"muiplot",
+  "version":"0.1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"MUIPlot",
+  "installed":"2026-09-29T17:39:01Z",
+  "origin":"https://archives.arosworld.org/share/graphics/misc/muiplot.x86_64-aros-v11.lha",
+  "archive_sha256":"8adbb3e7aacbd88c70b20827bdb11e7f6244a17bb649c4635caf1115d6b39805",
+  "archive_size":269792,
+  "reason":"explicit",
+  "dir":"muiplot",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"39a33f90ee1b1f2adf96a071517db15bcd1cbd7de143b5aac1b591b366f8d5b1", "size":1679, "member":"MUIPlot.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.txt.info", "sha256":"24334a30ea6b63fb9fffe8b043794e696bdb426c4e0f4e9cd53e483c54401181", "size":1091 },
+    { "path":"Readme.txt", "sha256":"86f8c083c6cdd9477217527198b2a663e87644a5817a2db591dada972a1233a8", "size":4025 },
+    { "path":"MUIPlot.info", "sha256":"b7e143616208e6bbd024ce0512a50a0ff933a98206d016e79d0d3d05a494611f", "size":1654 },
+    { "path":"MUIPlot", "sha256":"5c85b8505ec7120741d085e7551a339066b770f91bb3ee3733708914dee5c423", "size":1132944 }
+  ]
+}
+
+==== nano
+Tuesday 29-Sep-26 17:39:01
+apkg: this system does not provide what the package needs
+     nano
+     sdl.library (LIBS:sdl.library exists but would not open)
+install nano: rc=10
+apkg: not installed
+     nano
+
+==== ominoarcade
+Tuesday 29-Sep-26 17:39:01
+fetching https://archives.arosworld.org/share/game/platform/ominoarcade.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/platform/ominoarcade.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/ominoarcade.zip
+installed ominoarcade
+install ominoarcade: rc=0
+{
+  "schema":1,
+  "name":"ominoarcade",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"OminoArcade1.0",
+  "installed":"2026-09-29T17:39:02Z",
+  "origin":"https://archives.arosworld.org/share/game/platform/ominoarcade.x86_64-aros-v11.zip",
+  "archive_sha256":"813ddb7d313cd2e5278f51dd86391f08b825fe3c4e0148be5fbcad7f7697a47d",
+  "archive_size":2510500,
+  "reason":"explicit",
+  "dir":"ominoarcade",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"cc4dc6697a289f1697dfc2eedcb47361d4237c6a512992659cf205243dbb1367", "size":7463, "member":"OminoArcade1.0.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.txt.info", "sha256":"c0b6d53dce4c56420f8328ccc879b92e87a9269258f7ee6a52ee6ca63af8edb7", "size":611 },
+    { "path":"Readme.txt", "sha256":"806d2d5125049f8cba981dfaf2aa22dcf8cb31ce47885901bb156684aaa4a9fc", "size":2595 },
+    { "path":"Omino.info", "sha256":"19d384f04d7b2e82516a5b585438b41012e912648e1f9d29818b205ea8b98b33", "size":1082 },
+    { "path":"Omino", "sha256":"aed1c0a9f954029f8dcbf3b014df804f061da06fc39b60a7aa516bcd47873913", "size":2560304 },
+    { "path":"Data/urlo.iff", "sha256":"f94725942b874ec7ef1e5b514fbba7a66940a7354031819a6d9fae0ac26c555a", "size":36754 },
+    { "path":"Data/ufo.bin", "sha256":"ee7feee08f7db44520981061e0fa8c01f30911556679d672710e145b5db70fe2", "size":19200 },
+    { "path":"Data/tiles.bin", "sha256":"5d3a37281d9ba8adfa378542761db9eea78d6acc081c8adac0a61eee35591441", "size":122880 },
+    { "path":"Data/sfondopre3.bin", "sha256":"877b9da1b8452a72453008126361dfe6e6fb76498976ca7f8e5375650e391508", "size":1440000 },
+    { "path":"Data/sfondopre2.bin", "sha256":"4d3eab4f6291ca1d5274374757b2f9487a62abc30c53cffea357c6032b0b2331", "size":1440000 },
+    { "path":"Data/sfondopre1.bin", "sha256":"299623940e8aa4a38f3b376ed4397014a5284966f69ba8f7916fc6a1cec6f1e0", "size":1440000 },
+    { "path":"Data/sfondo5.bin", "sha256":"5bd59eaf629471467877fc9741742547ae62c0aa2da0d7dfde5710eff4f17f90", "size":1440000 },
+    { "path":"Data/sfondo4.bin", "sha256":"779056901d39b4b64281c44b9a71fbb71baf4d3ed11516517d6401b4c0c1412a", "size":1440000 },
+    { "path":"Data/sfondo3.bin", "sha256":"888e61c1dd3509917af221fddc864cfa34424d336e183e724a01540134b1050d", "size":1440000 },
+    { "path":"Data/sfondo2.bin", "sha256":"f291f9e01c2f4235b479fe715776a54f143591d8a8acfa92365cedc79b191d20", "size":1440000 },
+    { "path":"Data/sfondo.bin", "sha256":"4a2eca3f944aa095ded2ef231162b97676e64556a289285c543d8d4ce6ff74a3", "size":1440000 },
+    { "path":"Data/replay.bin", "sha256":"081a61bcc851a5b09b37d1859bbb074958e791411ddd613689b4796362902e3b", "size":1440000 },
+    { "path":"Data/player.bin", "sha256":"6c9590878ae2d110ccb8e8bb0f83fa6397c0e293ff1dc83fd8d881ded62becfd", "size":55296 },
+    { "path":"Data/money.bin", "sha256":"a98141b2994102f3ca99c7bf8957c6e74385f8c67e38c2167674900ac9eb3986", "size":1200 },
+    { "path":"Data/logo.bin", "sha256":"f83d712cdad14c9826b304d9e277827068abac5ecab48f7efd679ca90bd40cd3", "size":1440000 },
+    { "path":"Data/livello.bin", "sha256":"8d37e5ff0703cf05a27febd24bf72e6b4ada1a269cca00e7ff67d34b6ed64aad", "size":1440000 },
+    { "path":"Data/gameover.bin", "sha256":"d3f703be71789413415f93f1f25161e3a3785397df2b8e524c3a6c6e332c2e1b", "size":1440000 },
+    { "path":"Data/fire.bin", "sha256":"116f47e76fc389da85f1752a7d39d65e28947075703c8388abfd3181134b69a5", "size":43200 },
+    { "path":"Data/ding.iff", "sha256":"d95f1de12d5a82754643f382586a7e1ffc3a31e7f420a180fb1d61067e9d0426", "size":4288 },
+    { "path":"Data/blank.bin", "sha256":"d389ad33500fa50e0c025fed421313d2e811d9857e6f3c04fd22dd7a3e79ef31", "size":1440000 },
+    { "path":"Data/beep.iff", "sha256":"5aae67f9c6106bc0a00e639a4498af8d986f5eb493a8429a141fd44fb40dbc91", "size":4530 },
+    { "path":"Data/ape.bin", "sha256":"ac1d4c928f6aa8f432c110a133481c764d8d6c73b1a16c11d8539b5faa440bba", "size":14400 }
+  ]
+}
+
+==== opentyrian
+Tuesday 29-Sep-26 17:39:02
+apkg: this system does not provide what the package needs
+     opentyrian
+     sdl.library (LIBS:sdl.library exists but would not open)
+install opentyrian: rc=10
+apkg: not installed
+     opentyrian
+
+==== pkg-54321
+Tuesday 29-Sep-26 17:39:02
+apkg: this system does not provide what the package needs
+     pkg-54321
+     sdl.library (LIBS:sdl.library exists but would not open)
+install pkg-54321: rc=10
+apkg: not installed
+     pkg-54321
+
+==== sploiner
+Tuesday 29-Sep-26 17:39:02
+fetching https://archives.arosworld.org/share/utility/misc/sploiner.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/sploiner.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/sploiner.zip
+installed sploiner
+install sploiner: rc=0
+{
+  "schema":1,
+  "name":"sploiner",
+  "version":"1.01",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Sploiner",
+  "installed":"2026-09-29T17:39:02Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/sploiner.x86_64-aros-v11.zip",
+  "archive_sha256":"fcff93abca38c7277d81bcb4e108fa0f1789d3fe707905f081312da0a3dcd671",
+  "archive_size":63086,
+  "reason":"explicit",
+  "dir":"sploiner",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"f2fbb709711d8bb537121b31ea4c598ff45fb678b9c77723bd8dbdf376504b88", "size":8344, "member":"Sploiner.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Sploiner.info", "sha256":"05b67233a274836558e7a6ace79dc4baf024556a45b8dd3c91d26bcfe7670902", "size":8501 },
+    { "path":"Sploiner", "sha256":"6d70537fa1b25773ff1a4d29959ec729f789f8135ac1178e2021cb87028ce7d9", "size":53440 },
+    { "path":"Source.info", "sha256":"903552013f7cb82c7fd3bbfaaaec2ddac78266ce38a945625b4f0bb2a4046d81", "size":9136 },
+    { "path":"Source/source.lha", "sha256":"82e4743de637a1b805a2eff69cda5a89a96f5e56cfa743085d329040eb81849d", "size":11643 },
+    { "path":"Readme.info", "sha256":"a8d64674c4bc618e13f90826c32efe3a72c53474c35124e678d883a28d5e34e4", "size":8785 },
+    { "path":"Readme", "sha256":"cc96a94380594738ae5c3b2b6f66aa57809013da493ec5d1a179d60e647a02a7", "size":1809 }
+  ]
+}
+
+==== tiltnroll
+Tuesday 29-Sep-26 17:39:02
+apkg: this system does not provide what the package needs
+     tiltnroll
+     sdl.library (LIBS:sdl.library exists but would not open)
+install tiltnroll: rc=10
+apkg: not installed
+     tiltnroll

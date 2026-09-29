@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/stercus with
+# Run and input from NIL:, stack 50000 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch t01).
+
+status          = "approved"
+id              = "stercus"
+version         = "1.1"
+summary         = "Port of Amiga Demo from MI '06."
+arch            = "x86_64"
+abi             = "v11"
+category        = "demo/scene/fit"
+url             = "https://archives.arosworld.org/share/demo/scene/fit/stercus.x86_64-aros-v11.zip"
+size            = 2364819
+upload_date     = "20260304-19.26"
+selected_by     = "only-candidate"
+
+sha256          = "b0885dc09a7c3a0658afde9c12b6a79cbc4599af3b1aaa7d49555a3a680e479d"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Stercus"
+icon            = "Stercus.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

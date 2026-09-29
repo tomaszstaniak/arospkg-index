@@ -1,0 +1,6 @@
+Usage: rtfriddle <filename.rtf> [<verbose log file>] [-header] [-fsN] [-ff]
+
+-fsN is the font point height in decimal, eg. -fs10 (10 points).
+-ff is used in order to turn on font face support, default, do not.
+***NOTE: -ff leads to ignore the -fsN chosen font size!
+If not redirected, outputs are made in this console (window).

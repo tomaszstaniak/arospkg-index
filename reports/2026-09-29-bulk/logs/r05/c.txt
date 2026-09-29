@@ -1,0 +1,78 @@
+==== stage C: remove
+removed arrakis
+remove arrakis: rc=0
+removed diskusage
+remove diskusage: rc=0
+removed gicriptofilex
+remove gicriptofilex: rc=0
+removed isotools-gui
+remove isotools-gui: rc=0
+removed openxcom
+remove openxcom: rc=0
+removed residualvm
+remove residualvm: rc=0
+removed super-haxagon
+remove super-haxagon: rc=0
+removed tressette
+remove tressette: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:56:42
+tressette                    Dir ---rwed Today       17:56:43
+super-haxagon                Dir ---rwed Today       17:56:42
+residualvm                   Dir ---rwed Today       17:56:41
+openxcom                     Dir ---rwed Today       17:56:40
+isotools-gui                 Dir ---rwed Today       17:56:39
+gicriptofilex                Dir ---rwed Today       17:56:39
+cache                        Dir ---rwed Today       17:53:04
+db                           Dir ---rwed Today       17:56:43
+9 directories - 9 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/tressette" is empty
+Directory "SYS:Batch/super-haxagon" on Tuesday 09/29/26:
+SuperHaxagon.log             419 ---rwed Today       17:56:03
+1 file - 1 block used
+Directory "SYS:Batch/residualvm" on Tuesday 09/29/26:
+data                         Dir ---rwed Today       17:56:40
+1 directory - 1 block used
+Directory "SYS:Batch/residualvm/data" on Tuesday 09/29/26:
+modern.zip               1648226 ---rwed Today       17:52:59
+1 file - 3220 blocks used
+Directory "SYS:Batch/openxcom" on Tuesday 09/29/26:
+options.cfg                 6813 ---rwed Today       17:55:15
+openxcom.log                1058 ---rwed Today       17:54:50
+2 files - 17 blocks used
+Directory "SYS:Batch/isotools-gui" is empty
+Directory "SYS:Batch/gicriptofilex" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+tressette.zip             700840 ---rwed Today       17:53:04
+super-haxagon.zip        36448897 ---rwed Today       17:53:02
+residualvm.zip           4588171 ---rwed Today       17:52:59
+openxcom.zip             4557960 ---rwed Today       17:52:58
+isotools-gui.zip          210116 ---rwed Today       17:52:57
+gicriptofilex.zip         561041 ---rwed Today       17:52:57
+diskusage.zip              50048 ---rwed Today       17:52:56
+arrakis.zip              3475491 ---rwed Today       17:52:56
+8 files - 98818 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:56:43
+transactions                 Dir ---rwed Today       17:56:43
+installed                    Dir ---rwed Today       17:56:43
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+tressette-6abbfbdb.json      147 ---rwed Today       17:56:43
+super-haxagon-6abbfbda.json     156 ---rwed Today       17:56:42
+residualvm-6abbfbd9.json     167 ---rwed Today       17:56:41
+openxcom-6abbfbd8.json       147 ---rwed Today       17:56:40
+isotools-gui-6abbfbd7.json     153 ---rwed Today       17:56:39
+gicriptofilex-6abbfbd7.json     155 ---rwed Today       17:56:39
+6 files - 6 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 18 files - 13 directories - 102075 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:56:43

@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/keen4 with Run
+# and input from NIL:, stack 40960 bytes: its window or screen was open and
+# the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch c05).
+
+status          = "approved"
+id              = "keen4"
+version         = "1.0"
+summary         = "Port of the famous DOS game Commander Keen IV."
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/platform"
+url             = "https://archives.arosworld.org/share/game/platform/keen4.x86_64-aros-v11.lha"
+size            = 2064705
+upload_date     = "20260717-07.12"
+selected_by     = "only-candidate"
+
+sha256          = "0dbb9c66e597c0451fca762421ba42a1352a509df996da17571f7bda16ff1f18"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Keen4_AROS_x64_ABIv11"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

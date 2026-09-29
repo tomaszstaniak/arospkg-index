@@ -1,0 +1,55 @@
+==== stage C: remove
+removed muiplot
+remove muiplot: rc=0
+removed openjazz
+remove openjazz: rc=0
+removed dosbox
+remove dosbox: rc=0
+removed super_trevor_land
+remove super_trevor_land: rc=0
+removed smb2-gui
+remove smb2-gui: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       18:33:29
+smb2-gui                     Dir ---rwed Today       18:33:29
+dosbox                       Dir ---rwed Today       18:33:28
+openjazz                     Dir ---rwed Today       18:33:28
+muiplot                      Dir ---rwed Today       18:33:28
+cache                        Dir ---rwed Today       18:31:18
+db                           Dir ---rwed Today       18:33:29
+7 directories - 7 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/smb2-gui" is empty
+Directory "SYS:Batch/dosbox" is empty
+Directory "SYS:Batch/openjazz" on Tuesday 09/29/26:
+openjazz.log                 930 ---rwed Today       18:31:45
+1 file - 2 blocks used
+Directory "SYS:Batch/muiplot" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+smb2-gui.zip               67221 ---rwed Today       18:31:18
+super_trevor_land.zip    64822169 ---rwed Today       18:31:13
+dosbox.zip               4512101 ---rwed Today       18:31:10
+openjazz.zip              768643 ---rwed Today       18:31:09
+muiplot.lha               269792 ---rwed Today       18:31:09
+5 files - 137580 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       18:33:29
+transactions                 Dir ---rwed Today       18:33:29
+installed                    Dir ---rwed Today       18:33:29
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+smb2-gui-6abc0479.json       145 ---rwed Today       18:33:29
+dosbox-6abc0478.json         141 ---rwed Today       18:33:28
+openjazz-6abc0478.json       145 ---rwed Today       18:33:28
+muiplot-6abc0478.json        143 ---rwed Today       18:33:28
+4 files - 4 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 10 files - 10 directories - 137596 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 18:33:29

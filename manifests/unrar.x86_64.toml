@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/unrar with Run
+# and input from NIL:, stack 800000 bytes: it printed its usage or output
+# and returned 0. Evidence: reports/2026-09-29-bulk/ (batch w01).
+
+status          = "approved"
+id              = "unrar"
+version         = "6.11"
+summary         = "UnRAR for AROS 64 v11"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/archive"
+url             = "https://archives.arosworld.org/share/utility/archive/unrar-v6.11.x86_64-aros-v11.zip"
+size            = 3291979
+upload_date     = "20250218-06.46"
+selected_by     = "only-candidate"
+
+sha256          = "0c6e0eca2aca95cfb76e8008429d73ff476c667bc89a34f9c693c5918cfb5896"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "UnRAR"
+icon            = "UnRAR.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

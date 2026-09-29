@@ -1,0 +1,604 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8805
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8805
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== adoom3"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install adoom3
+Echo >>RAM:L/a.txt "install adoom3: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info adoom3
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== boy"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install boy
+Echo >>RAM:L/a.txt "install boy: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info boy
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== cabextract"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install cabextract
+Echo >>RAM:L/a.txt "install cabextract: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info cabextract
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== dclock"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install dclock
+Echo >>RAM:L/a.txt "install dclock: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info dclock
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== demoeffects"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install demoeffects
+Echo >>RAM:L/a.txt "install demoeffects: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info demoeffects
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== keen4"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install keen4
+Echo >>RAM:L/a.txt "install keen4: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info keen4
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== mcamiga"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install mcamiga
+Echo >>RAM:L/a.txt "install mcamiga: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info mcamiga
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== nomarch"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install nomarch
+Echo >>RAM:L/a.txt "install nomarch: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info nomarch
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== pkg-7mezzoplus"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install pkg-7mezzoplus
+Echo >>RAM:L/a.txt "install pkg-7mezzoplus: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info pkg-7mezzoplus
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== rman"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install rman
+Echo >>RAM:L/a.txt "install rman: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info rman
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== smb2-gui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install smb2-gui
+Echo >>RAM:L/a.txt "install smb2-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info smb2-gui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== unrar"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install unrar
+Echo >>RAM:L/a.txt "install unrar: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info unrar
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== vim"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install vim
+Echo >>RAM:L/a.txt "install vim: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info vim
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== zapperng"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install zapperng
+Echo >>RAM:L/a.txt "install zapperng: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info zapperng
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >RAM:L/b-adoom3.txt "==== adoom3: ADoom3, stack 10000000"
+Date >>RAM:L/b-adoom3.txt
+If NOT EXISTS SYS:Batch/adoom3
+  Echo >>RAM:L/b-adoom3.txt "adoom3: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start adoom3 "SYS:Batch/adoom3" ADoom3 10000000
+  Wait 15
+  Echo >>RAM:L/b-adoom3.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-adoom3.txt COMMAND=ADoom3
+  If EXISTS RAM:L/r-adoom3.txt
+    Type >>RAM:L/b-adoom3.txt RAM:L/r-adoom3.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "adoom3"
+RAM:b/putfile >NIL: RAM:L/m shot-adoom3 8805
+Wait 4
+Status >NIL: COMMAND=ADoom3
+If NOT WARN
+  Break >NIL: `Status COMMAND=ADoom3` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-adoom3.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-adoom3.txt COMMAND=ADoom3
+If EXISTS RAM:L/r-adoom3.txt
+  Type >>RAM:L/b-adoom3.txt RAM:L/r-adoom3.txt
+EndIf
+Date >>RAM:L/b-adoom3.txt
+RAM:b/putfile >NIL: RAM:L/b-adoom3.txt b-adoom3.txt 8805
+If EXISTS RAM:L/o-adoom3.txt
+RAM:b/putfile >NIL: RAM:L/o-adoom3.txt o-adoom3.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-adoom3 8805
+Wait 3
+Echo >RAM:L/b-boy.txt "==== boy: Boy, stack 50000"
+Date >>RAM:L/b-boy.txt
+If NOT EXISTS SYS:Batch/boy
+  Echo >>RAM:L/b-boy.txt "boy: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start boy "SYS:Batch/boy" Boy 50000
+  Wait 15
+  Echo >>RAM:L/b-boy.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-boy.txt COMMAND=Boy
+  If EXISTS RAM:L/r-boy.txt
+    Type >>RAM:L/b-boy.txt RAM:L/r-boy.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "boy"
+RAM:b/putfile >NIL: RAM:L/m shot-boy 8805
+Wait 4
+Status >NIL: COMMAND=Boy
+If NOT WARN
+  Break >NIL: `Status COMMAND=Boy` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-boy.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-boy.txt COMMAND=Boy
+If EXISTS RAM:L/r-boy.txt
+  Type >>RAM:L/b-boy.txt RAM:L/r-boy.txt
+EndIf
+Date >>RAM:L/b-boy.txt
+RAM:b/putfile >NIL: RAM:L/b-boy.txt b-boy.txt 8805
+If EXISTS RAM:L/o-boy.txt
+RAM:b/putfile >NIL: RAM:L/o-boy.txt o-boy.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-boy 8805
+Wait 3
+Echo >RAM:L/b-cabextract.txt "==== cabextract: cabextract, stack 40960"
+Date >>RAM:L/b-cabextract.txt
+If NOT EXISTS SYS:Batch/cabextract
+  Echo >>RAM:L/b-cabextract.txt "cabextract: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start cabextract "SYS:Batch/cabextract/Aros" cabextract 40960
+  Wait 15
+  Echo >>RAM:L/b-cabextract.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-cabextract.txt COMMAND=cabextract
+  If EXISTS RAM:L/r-cabextract.txt
+    Type >>RAM:L/b-cabextract.txt RAM:L/r-cabextract.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "cabextract"
+RAM:b/putfile >NIL: RAM:L/m shot-cabextract 8805
+Wait 4
+Status >NIL: COMMAND=cabextract
+If NOT WARN
+  Break >NIL: `Status COMMAND=cabextract` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-cabextract.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-cabextract.txt COMMAND=cabextract
+If EXISTS RAM:L/r-cabextract.txt
+  Type >>RAM:L/b-cabextract.txt RAM:L/r-cabextract.txt
+EndIf
+Date >>RAM:L/b-cabextract.txt
+RAM:b/putfile >NIL: RAM:L/b-cabextract.txt b-cabextract.txt 8805
+If EXISTS RAM:L/o-cabextract.txt
+RAM:b/putfile >NIL: RAM:L/o-cabextract.txt o-cabextract.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-cabextract 8805
+Wait 3
+Echo >RAM:L/b-dclock.txt "==== dclock: DClock, stack 40960"
+Date >>RAM:L/b-dclock.txt
+If NOT EXISTS SYS:Batch/dclock
+  Echo >>RAM:L/b-dclock.txt "dclock: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start dclock "SYS:Batch/dclock" DClock 40960
+  Wait 15
+  Echo >>RAM:L/b-dclock.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-dclock.txt COMMAND=DClock
+  If EXISTS RAM:L/r-dclock.txt
+    Type >>RAM:L/b-dclock.txt RAM:L/r-dclock.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "dclock"
+RAM:b/putfile >NIL: RAM:L/m shot-dclock 8805
+Wait 4
+Status >NIL: COMMAND=DClock
+If NOT WARN
+  Break >NIL: `Status COMMAND=DClock` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-dclock.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-dclock.txt COMMAND=DClock
+If EXISTS RAM:L/r-dclock.txt
+  Type >>RAM:L/b-dclock.txt RAM:L/r-dclock.txt
+EndIf
+Date >>RAM:L/b-dclock.txt
+RAM:b/putfile >NIL: RAM:L/b-dclock.txt b-dclock.txt 8805
+If EXISTS RAM:L/o-dclock.txt
+RAM:b/putfile >NIL: RAM:L/o-dclock.txt o-dclock.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-dclock 8805
+Wait 3
+Echo >RAM:L/b-demoeffects.txt "==== demoeffects: Plasma, stack 40960"
+Date >>RAM:L/b-demoeffects.txt
+If NOT EXISTS SYS:Batch/demoeffects
+  Echo >>RAM:L/b-demoeffects.txt "demoeffects: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start demoeffects "SYS:Batch/demoeffects/Plasma" Plasma 40960
+  Wait 15
+  Echo >>RAM:L/b-demoeffects.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-demoeffects.txt COMMAND=Plasma
+  If EXISTS RAM:L/r-demoeffects.txt
+    Type >>RAM:L/b-demoeffects.txt RAM:L/r-demoeffects.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "demoeffects"
+RAM:b/putfile >NIL: RAM:L/m shot-demoeffects 8805
+Wait 4
+Status >NIL: COMMAND=Plasma
+If NOT WARN
+  Break >NIL: `Status COMMAND=Plasma` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-demoeffects.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-demoeffects.txt COMMAND=Plasma
+If EXISTS RAM:L/r-demoeffects.txt
+  Type >>RAM:L/b-demoeffects.txt RAM:L/r-demoeffects.txt
+EndIf
+Date >>RAM:L/b-demoeffects.txt
+RAM:b/putfile >NIL: RAM:L/b-demoeffects.txt b-demoeffects.txt 8805
+If EXISTS RAM:L/o-demoeffects.txt
+RAM:b/putfile >NIL: RAM:L/o-demoeffects.txt o-demoeffects.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-demoeffects 8805
+Wait 3
+Echo >RAM:L/b-keen4.txt "==== keen4: aros_x64_abiv11_commander_keen, stack 40960"
+Date >>RAM:L/b-keen4.txt
+If NOT EXISTS SYS:Batch/keen4
+  Echo >>RAM:L/b-keen4.txt "keen4: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start keen4 "SYS:Batch/keen4" aros_x64_abiv11_commander_keen 40960
+  Wait 15
+  Echo >>RAM:L/b-keen4.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-keen4.txt COMMAND=aros_x64_abiv11_commander_keen
+  If EXISTS RAM:L/r-keen4.txt
+    Type >>RAM:L/b-keen4.txt RAM:L/r-keen4.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "keen4"
+RAM:b/putfile >NIL: RAM:L/m shot-keen4 8805
+Wait 4
+Status >NIL: COMMAND=aros_x64_abiv11_commander_keen
+If NOT WARN
+  Break >NIL: `Status COMMAND=aros_x64_abiv11_commander_keen` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-keen4.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-keen4.txt COMMAND=aros_x64_abiv11_commander_keen
+If EXISTS RAM:L/r-keen4.txt
+  Type >>RAM:L/b-keen4.txt RAM:L/r-keen4.txt
+EndIf
+Date >>RAM:L/b-keen4.txt
+RAM:b/putfile >NIL: RAM:L/b-keen4.txt b-keen4.txt 8805
+If EXISTS RAM:L/o-keen4.txt
+RAM:b/putfile >NIL: RAM:L/o-keen4.txt o-keen4.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-keen4 8805
+Wait 3
+Echo >RAM:L/b-mcamiga.txt "==== mcamiga: MCAmiga, stack 40960"
+Date >>RAM:L/b-mcamiga.txt
+If NOT EXISTS SYS:Batch/mcamiga
+  Echo >>RAM:L/b-mcamiga.txt "mcamiga: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start mcamiga "SYS:Batch/mcamiga" MCAmiga 40960
+  Wait 15
+  Echo >>RAM:L/b-mcamiga.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-mcamiga.txt COMMAND=MCAmiga
+  If EXISTS RAM:L/r-mcamiga.txt
+    Type >>RAM:L/b-mcamiga.txt RAM:L/r-mcamiga.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "mcamiga"
+RAM:b/putfile >NIL: RAM:L/m shot-mcamiga 8805
+Wait 4
+Status >NIL: COMMAND=MCAmiga
+If NOT WARN
+  Break >NIL: `Status COMMAND=MCAmiga` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-mcamiga.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-mcamiga.txt COMMAND=MCAmiga
+If EXISTS RAM:L/r-mcamiga.txt
+  Type >>RAM:L/b-mcamiga.txt RAM:L/r-mcamiga.txt
+EndIf
+Date >>RAM:L/b-mcamiga.txt
+RAM:b/putfile >NIL: RAM:L/b-mcamiga.txt b-mcamiga.txt 8805
+If EXISTS RAM:L/o-mcamiga.txt
+RAM:b/putfile >NIL: RAM:L/o-mcamiga.txt o-mcamiga.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-mcamiga 8805
+Wait 3
+Echo >RAM:L/b-nomarch.txt "==== nomarch: Nomarch, stack 40960"
+Date >>RAM:L/b-nomarch.txt
+If NOT EXISTS SYS:Batch/nomarch
+  Echo >>RAM:L/b-nomarch.txt "nomarch: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start nomarch "SYS:Batch/nomarch" Nomarch 40960
+  Wait 15
+  Echo >>RAM:L/b-nomarch.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-nomarch.txt COMMAND=Nomarch
+  If EXISTS RAM:L/r-nomarch.txt
+    Type >>RAM:L/b-nomarch.txt RAM:L/r-nomarch.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "nomarch"
+RAM:b/putfile >NIL: RAM:L/m shot-nomarch 8805
+Wait 4
+Status >NIL: COMMAND=Nomarch
+If NOT WARN
+  Break >NIL: `Status COMMAND=Nomarch` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-nomarch.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-nomarch.txt COMMAND=Nomarch
+If EXISTS RAM:L/r-nomarch.txt
+  Type >>RAM:L/b-nomarch.txt RAM:L/r-nomarch.txt
+EndIf
+Date >>RAM:L/b-nomarch.txt
+RAM:b/putfile >NIL: RAM:L/b-nomarch.txt b-nomarch.txt 8805
+If EXISTS RAM:L/o-nomarch.txt
+RAM:b/putfile >NIL: RAM:L/o-nomarch.txt o-nomarch.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-nomarch 8805
+Wait 3
+Echo >RAM:L/b-pkg-7mezzoplus.txt "==== pkg-7mezzoplus: 7Mezzo, stack 40960"
+Date >>RAM:L/b-pkg-7mezzoplus.txt
+If NOT EXISTS SYS:Batch/pkg-7mezzoplus
+  Echo >>RAM:L/b-pkg-7mezzoplus.txt "pkg-7mezzoplus: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start pkg-7mezzoplus "SYS:Batch/pkg-7mezzoplus" 7Mezzo 40960
+  Wait 15
+  Echo >>RAM:L/b-pkg-7mezzoplus.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-pkg-7mezzoplus.txt COMMAND=7Mezzo
+  If EXISTS RAM:L/r-pkg-7mezzoplus.txt
+    Type >>RAM:L/b-pkg-7mezzoplus.txt RAM:L/r-pkg-7mezzoplus.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "pkg-7mezzoplus"
+RAM:b/putfile >NIL: RAM:L/m shot-pkg-7mezzoplus 8805
+Wait 4
+Status >NIL: COMMAND=7Mezzo
+If NOT WARN
+  Break >NIL: `Status COMMAND=7Mezzo` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-pkg-7mezzoplus.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-pkg-7mezzoplus.txt COMMAND=7Mezzo
+If EXISTS RAM:L/r-pkg-7mezzoplus.txt
+  Type >>RAM:L/b-pkg-7mezzoplus.txt RAM:L/r-pkg-7mezzoplus.txt
+EndIf
+Date >>RAM:L/b-pkg-7mezzoplus.txt
+RAM:b/putfile >NIL: RAM:L/b-pkg-7mezzoplus.txt b-pkg-7mezzoplus.txt 8805
+If EXISTS RAM:L/o-pkg-7mezzoplus.txt
+RAM:b/putfile >NIL: RAM:L/o-pkg-7mezzoplus.txt o-pkg-7mezzoplus.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-pkg-7mezzoplus 8805
+Wait 3
+Echo >RAM:L/b-rman.txt "==== rman: rman, stack 40960"
+Date >>RAM:L/b-rman.txt
+If NOT EXISTS SYS:Batch/rman
+  Echo >>RAM:L/b-rman.txt "rman: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start rman "SYS:Batch/rman/C" rman 40960
+  Wait 15
+  Echo >>RAM:L/b-rman.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-rman.txt COMMAND=rman
+  If EXISTS RAM:L/r-rman.txt
+    Type >>RAM:L/b-rman.txt RAM:L/r-rman.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "rman"
+RAM:b/putfile >NIL: RAM:L/m shot-rman 8805
+Wait 4
+Status >NIL: COMMAND=rman
+If NOT WARN
+  Break >NIL: `Status COMMAND=rman` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-rman.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-rman.txt COMMAND=rman
+If EXISTS RAM:L/r-rman.txt
+  Type >>RAM:L/b-rman.txt RAM:L/r-rman.txt
+EndIf
+Date >>RAM:L/b-rman.txt
+RAM:b/putfile >NIL: RAM:L/b-rman.txt b-rman.txt 8805
+If EXISTS RAM:L/o-rman.txt
+RAM:b/putfile >NIL: RAM:L/o-rman.txt o-rman.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-rman 8805
+Wait 3
+Echo >RAM:L/b-smb2-gui.txt "==== smb2-gui: SMB2-GUI, stack 40960"
+Date >>RAM:L/b-smb2-gui.txt
+If NOT EXISTS SYS:Batch/smb2-gui
+  Echo >>RAM:L/b-smb2-gui.txt "smb2-gui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start smb2-gui "SYS:Batch/smb2-gui" SMB2-GUI 40960
+  Wait 15
+  Echo >>RAM:L/b-smb2-gui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-smb2-gui.txt COMMAND=SMB2-GUI
+  If EXISTS RAM:L/r-smb2-gui.txt
+    Type >>RAM:L/b-smb2-gui.txt RAM:L/r-smb2-gui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "smb2-gui"
+RAM:b/putfile >NIL: RAM:L/m shot-smb2-gui 8805
+Wait 4
+Status >NIL: COMMAND=SMB2-GUI
+If NOT WARN
+  Break >NIL: `Status COMMAND=SMB2-GUI` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-smb2-gui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-smb2-gui.txt COMMAND=SMB2-GUI
+If EXISTS RAM:L/r-smb2-gui.txt
+  Type >>RAM:L/b-smb2-gui.txt RAM:L/r-smb2-gui.txt
+EndIf
+Date >>RAM:L/b-smb2-gui.txt
+RAM:b/putfile >NIL: RAM:L/b-smb2-gui.txt b-smb2-gui.txt 8805
+If EXISTS RAM:L/o-smb2-gui.txt
+RAM:b/putfile >NIL: RAM:L/o-smb2-gui.txt o-smb2-gui.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-smb2-gui 8805
+Wait 3
+Echo >RAM:L/b-unrar.txt "==== unrar: UnRAR, stack 800000"
+Date >>RAM:L/b-unrar.txt
+If NOT EXISTS SYS:Batch/unrar
+  Echo >>RAM:L/b-unrar.txt "unrar: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start unrar "SYS:Batch/unrar" UnRAR 800000
+  Wait 15
+  Echo >>RAM:L/b-unrar.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-unrar.txt COMMAND=UnRAR
+  If EXISTS RAM:L/r-unrar.txt
+    Type >>RAM:L/b-unrar.txt RAM:L/r-unrar.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "unrar"
+RAM:b/putfile >NIL: RAM:L/m shot-unrar 8805
+Wait 4
+Status >NIL: COMMAND=UnRAR
+If NOT WARN
+  Break >NIL: `Status COMMAND=UnRAR` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-unrar.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-unrar.txt COMMAND=UnRAR
+If EXISTS RAM:L/r-unrar.txt
+  Type >>RAM:L/b-unrar.txt RAM:L/r-unrar.txt
+EndIf
+Date >>RAM:L/b-unrar.txt
+RAM:b/putfile >NIL: RAM:L/b-unrar.txt b-unrar.txt 8805
+If EXISTS RAM:L/o-unrar.txt
+RAM:b/putfile >NIL: RAM:L/o-unrar.txt o-unrar.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-unrar 8805
+Wait 3
+Echo >RAM:L/b-vim.txt "==== vim: gVim, stack 1048576"
+Date >>RAM:L/b-vim.txt
+If NOT EXISTS SYS:Batch/vim
+  Echo >>RAM:L/b-vim.txt "vim: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start vim "SYS:Batch/vim" gVim 1048576
+  Wait 15
+  Echo >>RAM:L/b-vim.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-vim.txt COMMAND=gVim
+  If EXISTS RAM:L/r-vim.txt
+    Type >>RAM:L/b-vim.txt RAM:L/r-vim.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "vim"
+RAM:b/putfile >NIL: RAM:L/m shot-vim 8805
+Wait 4
+Status >NIL: COMMAND=gVim
+If NOT WARN
+  Break >NIL: `Status COMMAND=gVim` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-vim.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-vim.txt COMMAND=gVim
+If EXISTS RAM:L/r-vim.txt
+  Type >>RAM:L/b-vim.txt RAM:L/r-vim.txt
+EndIf
+Date >>RAM:L/b-vim.txt
+RAM:b/putfile >NIL: RAM:L/b-vim.txt b-vim.txt 8805
+If EXISTS RAM:L/o-vim.txt
+RAM:b/putfile >NIL: RAM:L/o-vim.txt o-vim.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-vim 8805
+Wait 3
+Echo >RAM:L/b-zapperng.txt "==== zapperng: ZapperNG, stack 40960"
+Date >>RAM:L/b-zapperng.txt
+If NOT EXISTS SYS:Batch/zapperng
+  Echo >>RAM:L/b-zapperng.txt "zapperng: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start zapperng "SYS:Batch/zapperng" ZapperNG 40960
+  Wait 15
+  Echo >>RAM:L/b-zapperng.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-zapperng.txt COMMAND=ZapperNG
+  If EXISTS RAM:L/r-zapperng.txt
+    Type >>RAM:L/b-zapperng.txt RAM:L/r-zapperng.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "zapperng"
+RAM:b/putfile >NIL: RAM:L/m shot-zapperng 8805
+Wait 4
+Status >NIL: COMMAND=ZapperNG
+If NOT WARN
+  Break >NIL: `Status COMMAND=ZapperNG` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-zapperng.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-zapperng.txt COMMAND=ZapperNG
+If EXISTS RAM:L/r-zapperng.txt
+  Type >>RAM:L/b-zapperng.txt RAM:L/r-zapperng.txt
+EndIf
+Date >>RAM:L/b-zapperng.txt
+RAM:b/putfile >NIL: RAM:L/b-zapperng.txt b-zapperng.txt 8805
+If EXISTS RAM:L/o-zapperng.txt
+RAM:b/putfile >NIL: RAM:L/o-zapperng.txt o-zapperng.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-zapperng 8805
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove adoom3
+Echo >>RAM:L/c.txt "remove adoom3: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove boy
+Echo >>RAM:L/c.txt "remove boy: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove cabextract
+Echo >>RAM:L/c.txt "remove cabextract: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove dclock
+Echo >>RAM:L/c.txt "remove dclock: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove demoeffects
+Echo >>RAM:L/c.txt "remove demoeffects: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove keen4
+Echo >>RAM:L/c.txt "remove keen4: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove mcamiga
+Echo >>RAM:L/c.txt "remove mcamiga: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove nomarch
+Echo >>RAM:L/c.txt "remove nomarch: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove pkg-7mezzoplus
+Echo >>RAM:L/c.txt "remove pkg-7mezzoplus: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove rman
+Echo >>RAM:L/c.txt "remove rman: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove smb2-gui
+Echo >>RAM:L/c.txt "remove smb2-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove unrar
+Echo >>RAM:L/c.txt "remove unrar: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove vim
+Echo >>RAM:L/c.txt "remove vim: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove zapperng
+Echo >>RAM:L/c.txt "remove zapperng: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8805
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8805

@@ -1,0 +1,4 @@
+DEBUG: Avvio di cppsid...
+DEBUG: Provo a caricare il file: Beyond_the_Zero.sid
+ERRORE: player.load() ha fallito per il file: Beyond_the_Zero.sid
+DEBUG: Fine programma.

@@ -1,0 +1,235 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8802
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8802
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== leu"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install leu
+Echo >>RAM:L/a.txt "install leu: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info leu
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== fireoftheapes"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install fireoftheapes
+Echo >>RAM:L/a.txt "install fireoftheapes: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info fireoftheapes
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== timeless"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install timeless
+Echo >>RAM:L/a.txt "install timeless: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info timeless
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== pkg-54321"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install pkg-54321
+Echo >>RAM:L/a.txt "install pkg-54321: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info pkg-54321
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >>RAM:L/a.txt "*N==== pekkakana2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install pekkakana2
+Echo >>RAM:L/a.txt "install pekkakana2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info pekkakana2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8802
+Echo >RAM:L/b-leu.txt "==== leu: Leu, stack 40960"
+Date >>RAM:L/b-leu.txt
+If NOT EXISTS SYS:Batch/leu
+  Echo >>RAM:L/b-leu.txt "leu: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start leu "SYS:Batch/leu" "Leu" 40960
+  Wait 15
+  Echo >>RAM:L/b-leu.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-leu.txt COMMAND="Leu"
+  If EXISTS RAM:L/r-leu.txt
+    Type >>RAM:L/b-leu.txt RAM:L/r-leu.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "leu"
+RAM:b/putfile >NIL: RAM:L/m shot-leu 8802
+Wait 4
+Status >NIL: COMMAND="Leu"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Leu"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-leu.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-leu.txt COMMAND="Leu"
+If EXISTS RAM:L/r-leu.txt
+  Type >>RAM:L/b-leu.txt RAM:L/r-leu.txt
+EndIf
+Date >>RAM:L/b-leu.txt
+RAM:b/putfile >NIL: RAM:L/b-leu.txt b-leu.txt 8802
+If EXISTS RAM:L/o-leu.txt
+RAM:b/putfile >NIL: RAM:L/o-leu.txt o-leu.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-leu 8802
+Wait 3
+Echo >RAM:L/b-fireoftheapes.txt "==== fireoftheapes: FireOfTheApes, stack 40960"
+Date >>RAM:L/b-fireoftheapes.txt
+If NOT EXISTS SYS:Batch/fireoftheapes
+  Echo >>RAM:L/b-fireoftheapes.txt "fireoftheapes: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start fireoftheapes "SYS:Batch/fireoftheapes" "FireOfTheApes" 40960
+  Wait 15
+  Echo >>RAM:L/b-fireoftheapes.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-fireoftheapes.txt COMMAND="FireOfTheApes"
+  If EXISTS RAM:L/r-fireoftheapes.txt
+    Type >>RAM:L/b-fireoftheapes.txt RAM:L/r-fireoftheapes.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "fireoftheapes"
+RAM:b/putfile >NIL: RAM:L/m shot-fireoftheapes 8802
+Wait 4
+Status >NIL: COMMAND="FireOfTheApes"
+If NOT WARN
+  Break >NIL: `Status COMMAND="FireOfTheApes"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-fireoftheapes.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-fireoftheapes.txt COMMAND="FireOfTheApes"
+If EXISTS RAM:L/r-fireoftheapes.txt
+  Type >>RAM:L/b-fireoftheapes.txt RAM:L/r-fireoftheapes.txt
+EndIf
+Date >>RAM:L/b-fireoftheapes.txt
+RAM:b/putfile >NIL: RAM:L/b-fireoftheapes.txt b-fireoftheapes.txt 8802
+If EXISTS RAM:L/o-fireoftheapes.txt
+RAM:b/putfile >NIL: RAM:L/o-fireoftheapes.txt o-fireoftheapes.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-fireoftheapes 8802
+Wait 3
+Echo >RAM:L/b-timeless.txt "==== timeless: Timeless, stack 40960"
+Date >>RAM:L/b-timeless.txt
+If NOT EXISTS SYS:Batch/timeless
+  Echo >>RAM:L/b-timeless.txt "timeless: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start timeless "SYS:Batch/timeless" "Timeless" 40960
+  Wait 15
+  Echo >>RAM:L/b-timeless.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-timeless.txt COMMAND="Timeless"
+  If EXISTS RAM:L/r-timeless.txt
+    Type >>RAM:L/b-timeless.txt RAM:L/r-timeless.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "timeless"
+RAM:b/putfile >NIL: RAM:L/m shot-timeless 8802
+Wait 4
+Status >NIL: COMMAND="Timeless"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Timeless"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-timeless.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-timeless.txt COMMAND="Timeless"
+If EXISTS RAM:L/r-timeless.txt
+  Type >>RAM:L/b-timeless.txt RAM:L/r-timeless.txt
+EndIf
+Date >>RAM:L/b-timeless.txt
+RAM:b/putfile >NIL: RAM:L/b-timeless.txt b-timeless.txt 8802
+If EXISTS RAM:L/o-timeless.txt
+RAM:b/putfile >NIL: RAM:L/o-timeless.txt o-timeless.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-timeless 8802
+Wait 3
+Echo >RAM:L/b-pkg-54321.txt "==== pkg-54321: 54321, stack 72000"
+Date >>RAM:L/b-pkg-54321.txt
+If NOT EXISTS SYS:Batch/pkg-54321
+  Echo >>RAM:L/b-pkg-54321.txt "pkg-54321: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start pkg-54321 "SYS:Batch/pkg-54321" "54321" 72000
+  Wait 15
+  Echo >>RAM:L/b-pkg-54321.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-pkg-54321.txt COMMAND="54321"
+  If EXISTS RAM:L/r-pkg-54321.txt
+    Type >>RAM:L/b-pkg-54321.txt RAM:L/r-pkg-54321.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "pkg-54321"
+RAM:b/putfile >NIL: RAM:L/m shot-pkg-54321 8802
+Wait 4
+Status >NIL: COMMAND="54321"
+If NOT WARN
+  Break >NIL: `Status COMMAND="54321"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-pkg-54321.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-pkg-54321.txt COMMAND="54321"
+If EXISTS RAM:L/r-pkg-54321.txt
+  Type >>RAM:L/b-pkg-54321.txt RAM:L/r-pkg-54321.txt
+EndIf
+Date >>RAM:L/b-pkg-54321.txt
+RAM:b/putfile >NIL: RAM:L/b-pkg-54321.txt b-pkg-54321.txt 8802
+If EXISTS RAM:L/o-pkg-54321.txt
+RAM:b/putfile >NIL: RAM:L/o-pkg-54321.txt o-pkg-54321.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-pkg-54321 8802
+Wait 3
+Echo >RAM:L/b-pekkakana2.txt "==== pekkakana2: Pekka Kana 2, stack 1000000"
+Date >>RAM:L/b-pekkakana2.txt
+If NOT EXISTS SYS:Batch/pekkakana2
+  Echo >>RAM:L/b-pekkakana2.txt "pekkakana2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start pekkakana2 "SYS:Batch/pekkakana2" "Pekka Kana 2" 1000000
+  Wait 15
+  Echo >>RAM:L/b-pekkakana2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-pekkakana2.txt COMMAND="Pekka Kana 2"
+  If EXISTS RAM:L/r-pekkakana2.txt
+    Type >>RAM:L/b-pekkakana2.txt RAM:L/r-pekkakana2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "pekkakana2"
+RAM:b/putfile >NIL: RAM:L/m shot-pekkakana2 8802
+Wait 4
+Status >NIL: COMMAND="Pekka Kana 2"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Pekka Kana 2"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-pekkakana2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-pekkakana2.txt COMMAND="Pekka Kana 2"
+If EXISTS RAM:L/r-pekkakana2.txt
+  Type >>RAM:L/b-pekkakana2.txt RAM:L/r-pekkakana2.txt
+EndIf
+Date >>RAM:L/b-pekkakana2.txt
+RAM:b/putfile >NIL: RAM:L/b-pekkakana2.txt b-pekkakana2.txt 8802
+If EXISTS RAM:L/o-pekkakana2.txt
+RAM:b/putfile >NIL: RAM:L/o-pekkakana2.txt o-pekkakana2.txt 8802
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-pekkakana2 8802
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove leu
+Echo >>RAM:L/c.txt "remove leu: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove fireoftheapes
+Echo >>RAM:L/c.txt "remove fireoftheapes: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove timeless
+Echo >>RAM:L/c.txt "remove timeless: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove pkg-54321
+Echo >>RAM:L/c.txt "remove pkg-54321: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove pekkakana2
+Echo >>RAM:L/c.txt "remove pekkakana2: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8802
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8802

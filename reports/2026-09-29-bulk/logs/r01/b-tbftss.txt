@@ -1,0 +1,7 @@
+==== tbftss: TBFTSS, stack 400000
+Tuesday 29-Sep-26 17:55:43
+after 15 s (a number means it is running):
+ 13
+after Ctrl-C (empty means it has ended):
+TBFTSS returned: rc=0
+Tuesday 29-Sep-26 17:56:07

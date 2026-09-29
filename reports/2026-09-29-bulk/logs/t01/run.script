@@ -1,0 +1,276 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8801
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8801
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== hex2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install hex2
+Echo >>RAM:L/a.txt "install hex2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info hex2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== amigakeyremaper"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install amigakeyremaper
+Echo >>RAM:L/a.txt "install amigakeyremaper: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info amigakeyremaper
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== stercus"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install stercus
+Echo >>RAM:L/a.txt "install stercus: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info stercus
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== joytest"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install joytest
+Echo >>RAM:L/a.txt "install joytest: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info joytest
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== soniccd"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install soniccd
+Echo >>RAM:L/a.txt "install soniccd: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info soniccd
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== zapperng"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install zapperng
+Echo >>RAM:L/a.txt "install zapperng: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info zapperng
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >RAM:L/b-hex2.txt "==== hex2: Hex2, stack 40960"
+Date >>RAM:L/b-hex2.txt
+If NOT EXISTS SYS:Batch/hex2
+  Echo >>RAM:L/b-hex2.txt "hex2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start hex2 "SYS:Batch/hex2" "Hex2" 40960
+  Wait 15
+  Echo >>RAM:L/b-hex2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-hex2.txt COMMAND="Hex2"
+  If EXISTS RAM:L/r-hex2.txt
+    Type >>RAM:L/b-hex2.txt RAM:L/r-hex2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "hex2"
+RAM:b/putfile >NIL: RAM:L/m shot-hex2 8801
+Wait 4
+Status >NIL: COMMAND="Hex2"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Hex2"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-hex2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-hex2.txt COMMAND="Hex2"
+If EXISTS RAM:L/r-hex2.txt
+  Type >>RAM:L/b-hex2.txt RAM:L/r-hex2.txt
+EndIf
+Date >>RAM:L/b-hex2.txt
+RAM:b/putfile >NIL: RAM:L/b-hex2.txt b-hex2.txt 8801
+If EXISTS RAM:L/o-hex2.txt
+RAM:b/putfile >NIL: RAM:L/o-hex2.txt o-hex2.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-hex2 8801
+Wait 3
+Echo >RAM:L/b-amigakeyremaper.txt "==== amigakeyremaper: AmigaKeyRemapper, stack 40960"
+Date >>RAM:L/b-amigakeyremaper.txt
+If NOT EXISTS SYS:Batch/amigakeyremaper
+  Echo >>RAM:L/b-amigakeyremaper.txt "amigakeyremaper: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start amigakeyremaper "SYS:Batch/amigakeyremaper" "AmigaKeyRemapper" 40960
+  Wait 15
+  Echo >>RAM:L/b-amigakeyremaper.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-amigakeyremaper.txt COMMAND="AmigaKeyRemapper"
+  If EXISTS RAM:L/r-amigakeyremaper.txt
+    Type >>RAM:L/b-amigakeyremaper.txt RAM:L/r-amigakeyremaper.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "amigakeyremaper"
+RAM:b/putfile >NIL: RAM:L/m shot-amigakeyremaper 8801
+Wait 4
+Status >NIL: COMMAND="AmigaKeyRemapper"
+If NOT WARN
+  Break >NIL: `Status COMMAND="AmigaKeyRemapper"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-amigakeyremaper.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-amigakeyremaper.txt COMMAND="AmigaKeyRemapper"
+If EXISTS RAM:L/r-amigakeyremaper.txt
+  Type >>RAM:L/b-amigakeyremaper.txt RAM:L/r-amigakeyremaper.txt
+EndIf
+Date >>RAM:L/b-amigakeyremaper.txt
+RAM:b/putfile >NIL: RAM:L/b-amigakeyremaper.txt b-amigakeyremaper.txt 8801
+If EXISTS RAM:L/o-amigakeyremaper.txt
+RAM:b/putfile >NIL: RAM:L/o-amigakeyremaper.txt o-amigakeyremaper.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-amigakeyremaper 8801
+Wait 3
+Echo >RAM:L/b-stercus.txt "==== stercus: Stercus, stack 50000"
+Date >>RAM:L/b-stercus.txt
+If NOT EXISTS SYS:Batch/stercus
+  Echo >>RAM:L/b-stercus.txt "stercus: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start stercus "SYS:Batch/stercus" "Stercus" 50000
+  Wait 15
+  Echo >>RAM:L/b-stercus.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-stercus.txt COMMAND="Stercus"
+  If EXISTS RAM:L/r-stercus.txt
+    Type >>RAM:L/b-stercus.txt RAM:L/r-stercus.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "stercus"
+RAM:b/putfile >NIL: RAM:L/m shot-stercus 8801
+Wait 4
+Status >NIL: COMMAND="Stercus"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Stercus"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-stercus.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-stercus.txt COMMAND="Stercus"
+If EXISTS RAM:L/r-stercus.txt
+  Type >>RAM:L/b-stercus.txt RAM:L/r-stercus.txt
+EndIf
+Date >>RAM:L/b-stercus.txt
+RAM:b/putfile >NIL: RAM:L/b-stercus.txt b-stercus.txt 8801
+If EXISTS RAM:L/o-stercus.txt
+RAM:b/putfile >NIL: RAM:L/o-stercus.txt o-stercus.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-stercus 8801
+Wait 3
+Echo >RAM:L/b-joytest.txt "==== joytest: JoyTest, stack 40960"
+Date >>RAM:L/b-joytest.txt
+If NOT EXISTS SYS:Batch/joytest
+  Echo >>RAM:L/b-joytest.txt "joytest: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start joytest "SYS:Batch/joytest" "JoyTest" 40960
+  Wait 15
+  Echo >>RAM:L/b-joytest.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-joytest.txt COMMAND="JoyTest"
+  If EXISTS RAM:L/r-joytest.txt
+    Type >>RAM:L/b-joytest.txt RAM:L/r-joytest.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "joytest"
+RAM:b/putfile >NIL: RAM:L/m shot-joytest 8801
+Wait 4
+Status >NIL: COMMAND="JoyTest"
+If NOT WARN
+  Break >NIL: `Status COMMAND="JoyTest"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-joytest.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-joytest.txt COMMAND="JoyTest"
+If EXISTS RAM:L/r-joytest.txt
+  Type >>RAM:L/b-joytest.txt RAM:L/r-joytest.txt
+EndIf
+Date >>RAM:L/b-joytest.txt
+RAM:b/putfile >NIL: RAM:L/b-joytest.txt b-joytest.txt 8801
+If EXISTS RAM:L/o-joytest.txt
+RAM:b/putfile >NIL: RAM:L/o-joytest.txt o-joytest.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-joytest 8801
+Wait 3
+Echo >RAM:L/b-soniccd.txt "==== soniccd: Sonic CD, stack 200000"
+Date >>RAM:L/b-soniccd.txt
+If NOT EXISTS SYS:Batch/soniccd
+  Echo >>RAM:L/b-soniccd.txt "soniccd: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start soniccd "SYS:Batch/soniccd" "Sonic CD" 200000
+  Wait 15
+  Echo >>RAM:L/b-soniccd.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-soniccd.txt COMMAND="Sonic CD"
+  If EXISTS RAM:L/r-soniccd.txt
+    Type >>RAM:L/b-soniccd.txt RAM:L/r-soniccd.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "soniccd"
+RAM:b/putfile >NIL: RAM:L/m shot-soniccd 8801
+Wait 4
+Status >NIL: COMMAND="Sonic CD"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Sonic CD"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-soniccd.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-soniccd.txt COMMAND="Sonic CD"
+If EXISTS RAM:L/r-soniccd.txt
+  Type >>RAM:L/b-soniccd.txt RAM:L/r-soniccd.txt
+EndIf
+Date >>RAM:L/b-soniccd.txt
+RAM:b/putfile >NIL: RAM:L/b-soniccd.txt b-soniccd.txt 8801
+If EXISTS RAM:L/o-soniccd.txt
+RAM:b/putfile >NIL: RAM:L/o-soniccd.txt o-soniccd.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-soniccd 8801
+Wait 3
+Echo >RAM:L/b-zapperng.txt "==== zapperng: ZapperNG, stack 40960"
+Date >>RAM:L/b-zapperng.txt
+If NOT EXISTS SYS:Batch/zapperng
+  Echo >>RAM:L/b-zapperng.txt "zapperng: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start zapperng "SYS:Batch/zapperng" "ZapperNG" 40960
+  Wait 15
+  Echo >>RAM:L/b-zapperng.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-zapperng.txt COMMAND="ZapperNG"
+  If EXISTS RAM:L/r-zapperng.txt
+    Type >>RAM:L/b-zapperng.txt RAM:L/r-zapperng.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "zapperng"
+RAM:b/putfile >NIL: RAM:L/m shot-zapperng 8801
+Wait 4
+Status >NIL: COMMAND="ZapperNG"
+If NOT WARN
+  Break >NIL: `Status COMMAND="ZapperNG"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-zapperng.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-zapperng.txt COMMAND="ZapperNG"
+If EXISTS RAM:L/r-zapperng.txt
+  Type >>RAM:L/b-zapperng.txt RAM:L/r-zapperng.txt
+EndIf
+Date >>RAM:L/b-zapperng.txt
+RAM:b/putfile >NIL: RAM:L/b-zapperng.txt b-zapperng.txt 8801
+If EXISTS RAM:L/o-zapperng.txt
+RAM:b/putfile >NIL: RAM:L/o-zapperng.txt o-zapperng.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-zapperng 8801
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove hex2
+Echo >>RAM:L/c.txt "remove hex2: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove amigakeyremaper
+Echo >>RAM:L/c.txt "remove amigakeyremaper: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove stercus
+Echo >>RAM:L/c.txt "remove stercus: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove joytest
+Echo >>RAM:L/c.txt "remove joytest: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove soniccd
+Echo >>RAM:L/c.txt "remove soniccd: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove zapperng
+Echo >>RAM:L/c.txt "remove zapperng: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8801
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8801

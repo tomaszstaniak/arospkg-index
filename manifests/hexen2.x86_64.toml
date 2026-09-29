@@ -1,0 +1,39 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/hexen2 with Run
+# and input from NIL:, stack 2000000 bytes: it showed its own message that
+# it cannot find a Hexen II installation. The game data is not part of the
+# package; that message was checked, the game itself was not played.
+# Evidence: reports/2026-09-29-bulk/ (batch r01).
+
+status          = "approved"
+id              = "hexen2"
+version         = "1.5.10"
+summary         = "Hexen II: Hammer of Thyrion (uHexen2)"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/fps"
+url             = "https://archives.arosworld.org/share/game/fps/hexen2.x86_64-aros-v11.zip"
+size            = 3249500
+upload_date     = "20260621-07.31"
+selected_by     = "only-candidate"
+
+sha256          = "a442e90f8edcf3eff5c37e52dc7ffd3eb35f4b32b075b418df79921ca6caa6f8"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Hexen2"
+icon            = "Hexen2.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

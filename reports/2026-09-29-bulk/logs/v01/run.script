@@ -1,0 +1,194 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8801
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8801
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== joytest"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install joytest
+Echo >>RAM:L/a.txt "install joytest: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info joytest
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== flx_play.zip"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install flx_play.zip
+Echo >>RAM:L/a.txt "install flx_play.zip: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info flx_play.zip
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== giddy3"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install giddy3
+Echo >>RAM:L/a.txt "install giddy3: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info giddy3
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== protrekkr"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install protrekkr
+Echo >>RAM:L/a.txt "install protrekkr: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info protrekkr
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >RAM:L/b-joytest.txt "==== joytest: JoyTest, stack 40960"
+Date >>RAM:L/b-joytest.txt
+If NOT EXISTS SYS:Batch/joytest
+  Echo >>RAM:L/b-joytest.txt "joytest: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start joytest "SYS:Batch/joytest" "JoyTest" 40960
+  Wait 15
+  Echo >>RAM:L/b-joytest.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-joytest.txt COMMAND="JoyTest"
+  If EXISTS RAM:L/r-joytest.txt
+    Type >>RAM:L/b-joytest.txt RAM:L/r-joytest.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "joytest"
+RAM:b/putfile >NIL: RAM:L/m shot-joytest 8801
+Wait 4
+Status >NIL: COMMAND="JoyTest"
+If NOT WARN
+  Break >NIL: `Status COMMAND="JoyTest"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-joytest.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-joytest.txt COMMAND="JoyTest"
+If EXISTS RAM:L/r-joytest.txt
+  Type >>RAM:L/b-joytest.txt RAM:L/r-joytest.txt
+EndIf
+Date >>RAM:L/b-joytest.txt
+RAM:b/putfile >NIL: RAM:L/b-joytest.txt b-joytest.txt 8801
+If EXISTS RAM:L/o-joytest.txt
+RAM:b/putfile >NIL: RAM:L/o-joytest.txt o-joytest.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-joytest 8801
+Wait 3
+Echo >RAM:L/b-flx_play.zip.txt "==== flx_play.zip: FLX Play, stack 40960"
+Date >>RAM:L/b-flx_play.zip.txt
+If NOT EXISTS SYS:Batch/flx_play.zip
+  Echo >>RAM:L/b-flx_play.zip.txt "flx_play.zip: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start flx_play.zip "SYS:Batch/flx_play.zip" "FLX Play" 40960
+  Wait 15
+  Echo >>RAM:L/b-flx_play.zip.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-flx_play.zip.txt COMMAND="FLX Play"
+  If EXISTS RAM:L/r-flx_play.zip.txt
+    Type >>RAM:L/b-flx_play.zip.txt RAM:L/r-flx_play.zip.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "flx_play.zip"
+RAM:b/putfile >NIL: RAM:L/m shot-flx_play.zip 8801
+Wait 4
+Status >NIL: COMMAND="FLX Play"
+If NOT WARN
+  Break >NIL: `Status COMMAND="FLX Play"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-flx_play.zip.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-flx_play.zip.txt COMMAND="FLX Play"
+If EXISTS RAM:L/r-flx_play.zip.txt
+  Type >>RAM:L/b-flx_play.zip.txt RAM:L/r-flx_play.zip.txt
+EndIf
+Date >>RAM:L/b-flx_play.zip.txt
+RAM:b/putfile >NIL: RAM:L/b-flx_play.zip.txt b-flx_play.zip.txt 8801
+If EXISTS RAM:L/o-flx_play.zip.txt
+RAM:b/putfile >NIL: RAM:L/o-flx_play.zip.txt o-flx_play.zip.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-flx_play.zip 8801
+Wait 3
+Echo >RAM:L/b-giddy3.txt "==== giddy3: giddy3, stack 400000"
+Date >>RAM:L/b-giddy3.txt
+If NOT EXISTS SYS:Batch/giddy3
+  Echo >>RAM:L/b-giddy3.txt "giddy3: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start giddy3 "SYS:Batch/giddy3" "giddy3" 400000
+  Wait 15
+  Echo >>RAM:L/b-giddy3.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-giddy3.txt COMMAND="giddy3"
+  If EXISTS RAM:L/r-giddy3.txt
+    Type >>RAM:L/b-giddy3.txt RAM:L/r-giddy3.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "giddy3"
+RAM:b/putfile >NIL: RAM:L/m shot-giddy3 8801
+Wait 4
+Status >NIL: COMMAND="giddy3"
+If NOT WARN
+  Break >NIL: `Status COMMAND="giddy3"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-giddy3.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-giddy3.txt COMMAND="giddy3"
+If EXISTS RAM:L/r-giddy3.txt
+  Type >>RAM:L/b-giddy3.txt RAM:L/r-giddy3.txt
+EndIf
+Date >>RAM:L/b-giddy3.txt
+RAM:b/putfile >NIL: RAM:L/b-giddy3.txt b-giddy3.txt 8801
+If EXISTS RAM:L/o-giddy3.txt
+RAM:b/putfile >NIL: RAM:L/o-giddy3.txt o-giddy3.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-giddy3 8801
+Wait 3
+Echo >RAM:L/b-protrekkr.txt "==== protrekkr: Protrekkr, stack 40960"
+Date >>RAM:L/b-protrekkr.txt
+If NOT EXISTS SYS:Batch/protrekkr
+  Echo >>RAM:L/b-protrekkr.txt "protrekkr: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start protrekkr "SYS:Batch/protrekkr" "Protrekkr" 40960
+  Wait 15
+  Echo >>RAM:L/b-protrekkr.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-protrekkr.txt COMMAND="Protrekkr"
+  If EXISTS RAM:L/r-protrekkr.txt
+    Type >>RAM:L/b-protrekkr.txt RAM:L/r-protrekkr.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "protrekkr"
+RAM:b/putfile >NIL: RAM:L/m shot-protrekkr 8801
+Wait 4
+Status >NIL: COMMAND="Protrekkr"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Protrekkr"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-protrekkr.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-protrekkr.txt COMMAND="Protrekkr"
+If EXISTS RAM:L/r-protrekkr.txt
+  Type >>RAM:L/b-protrekkr.txt RAM:L/r-protrekkr.txt
+EndIf
+Date >>RAM:L/b-protrekkr.txt
+RAM:b/putfile >NIL: RAM:L/b-protrekkr.txt b-protrekkr.txt 8801
+If EXISTS RAM:L/o-protrekkr.txt
+RAM:b/putfile >NIL: RAM:L/o-protrekkr.txt o-protrekkr.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-protrekkr 8801
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove joytest
+Echo >>RAM:L/c.txt "remove joytest: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove flx_play.zip
+Echo >>RAM:L/c.txt "remove flx_play.zip: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove giddy3
+Echo >>RAM:L/c.txt "remove giddy3: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove protrekkr
+Echo >>RAM:L/c.txt "remove protrekkr: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8801
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8801

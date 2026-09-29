@@ -1,0 +1,5 @@
+==== boy: Boy, stack 50000
+Tuesday 29-Sep-26 17:38:36
+boy: not installed, not started
+after Ctrl-C (empty means it has ended):
+Tuesday 29-Sep-26 17:38:40

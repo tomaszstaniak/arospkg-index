@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/pekkakana2 with
+# Run and input from NIL:, stack 1000000 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-09-29-bulk/ (batch t02).
+
+status          = "approved"
+id              = "pekkakana2"
+version         = "1.5.2"
+summary         = "platformer game where you control a rooster"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/platform"
+url             = "https://archives.arosworld.org/share/game/platform/pekkakana2.x86_64-aros-v11.zip"
+size            = 14093424
+upload_date     = "20260508-20.17"
+selected_by     = "only-candidate"
+
+sha256          = "e88a34720d2367f2a42ccb8b7925ea5c517abc93f7b77a103b8dfa6231bfe648"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Pekka Kana 2"
+icon            = "Pekka Kana 2.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

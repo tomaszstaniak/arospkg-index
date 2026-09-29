@@ -1,0 +1,604 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8804
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8804
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== delugem"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install delugem
+Echo >>RAM:L/a.txt "install delugem: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info delugem
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== dosbox"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install dosbox
+Echo >>RAM:L/a.txt "install dosbox: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info dosbox
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== flexcat-gui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install flexcat-gui
+Echo >>RAM:L/a.txt "install flexcat-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info flexcat-gui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== gnurobbo"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install gnurobbo
+Echo >>RAM:L/a.txt "install gnurobbo: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info gnurobbo
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== hex2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install hex2
+Echo >>RAM:L/a.txt "install hex2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info hex2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== hivelyreplay"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install hivelyreplay
+Echo >>RAM:L/a.txt "install hivelyreplay: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info hivelyreplay
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== lbreakouthd"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install lbreakouthd
+Echo >>RAM:L/a.txt "install lbreakouthd: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info lbreakouthd
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== metemp3"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install metemp3
+Echo >>RAM:L/a.txt "install metemp3: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info metemp3
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== reminiscence"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install reminiscence
+Echo >>RAM:L/a.txt "install reminiscence: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info reminiscence
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== screentest"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install screentest
+Echo >>RAM:L/a.txt "install screentest: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info screentest
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== scummvm"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install scummvm
+Echo >>RAM:L/a.txt "install scummvm: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info scummvm
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== timeless"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install timeless
+Echo >>RAM:L/a.txt "install timeless: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info timeless
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== tinysid"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install tinysid
+Echo >>RAM:L/a.txt "install tinysid: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info tinysid
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >>RAM:L/a.txt "*N==== unshield"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install unshield
+Echo >>RAM:L/a.txt "install unshield: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info unshield
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8804
+Echo >RAM:L/b-delugem.txt "==== delugem: delugem, stack 400000"
+Date >>RAM:L/b-delugem.txt
+If NOT EXISTS SYS:Batch/delugem
+  Echo >>RAM:L/b-delugem.txt "delugem: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start delugem "SYS:Batch/delugem" delugem 400000
+  Wait 15
+  Echo >>RAM:L/b-delugem.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-delugem.txt COMMAND=delugem
+  If EXISTS RAM:L/r-delugem.txt
+    Type >>RAM:L/b-delugem.txt RAM:L/r-delugem.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "delugem"
+RAM:b/putfile >NIL: RAM:L/m shot-delugem 8804
+Wait 4
+Status >NIL: COMMAND=delugem
+If NOT WARN
+  Break >NIL: `Status COMMAND=delugem` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-delugem.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-delugem.txt COMMAND=delugem
+If EXISTS RAM:L/r-delugem.txt
+  Type >>RAM:L/b-delugem.txt RAM:L/r-delugem.txt
+EndIf
+Date >>RAM:L/b-delugem.txt
+RAM:b/putfile >NIL: RAM:L/b-delugem.txt b-delugem.txt 8804
+If EXISTS RAM:L/o-delugem.txt
+RAM:b/putfile >NIL: RAM:L/o-delugem.txt o-delugem.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-delugem 8804
+Wait 3
+Echo >RAM:L/b-dosbox.txt "==== dosbox: dosbox, stack 40960"
+Date >>RAM:L/b-dosbox.txt
+If NOT EXISTS SYS:Batch/dosbox
+  Echo >>RAM:L/b-dosbox.txt "dosbox: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start dosbox "SYS:Batch/dosbox" dosbox 40960
+  Wait 15
+  Echo >>RAM:L/b-dosbox.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-dosbox.txt COMMAND=dosbox
+  If EXISTS RAM:L/r-dosbox.txt
+    Type >>RAM:L/b-dosbox.txt RAM:L/r-dosbox.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "dosbox"
+RAM:b/putfile >NIL: RAM:L/m shot-dosbox 8804
+Wait 4
+Status >NIL: COMMAND=dosbox
+If NOT WARN
+  Break >NIL: `Status COMMAND=dosbox` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-dosbox.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-dosbox.txt COMMAND=dosbox
+If EXISTS RAM:L/r-dosbox.txt
+  Type >>RAM:L/b-dosbox.txt RAM:L/r-dosbox.txt
+EndIf
+Date >>RAM:L/b-dosbox.txt
+RAM:b/putfile >NIL: RAM:L/b-dosbox.txt b-dosbox.txt 8804
+If EXISTS RAM:L/o-dosbox.txt
+RAM:b/putfile >NIL: RAM:L/o-dosbox.txt o-dosbox.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-dosbox 8804
+Wait 3
+Echo >RAM:L/b-flexcat-gui.txt "==== flexcat-gui: FlexCat-GUI, stack 40960"
+Date >>RAM:L/b-flexcat-gui.txt
+If NOT EXISTS SYS:Batch/flexcat-gui
+  Echo >>RAM:L/b-flexcat-gui.txt "flexcat-gui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start flexcat-gui "SYS:Batch/flexcat-gui" FlexCat-GUI 40960
+  Wait 15
+  Echo >>RAM:L/b-flexcat-gui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-flexcat-gui.txt COMMAND=FlexCat-GUI
+  If EXISTS RAM:L/r-flexcat-gui.txt
+    Type >>RAM:L/b-flexcat-gui.txt RAM:L/r-flexcat-gui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "flexcat-gui"
+RAM:b/putfile >NIL: RAM:L/m shot-flexcat-gui 8804
+Wait 4
+Status >NIL: COMMAND=FlexCat-GUI
+If NOT WARN
+  Break >NIL: `Status COMMAND=FlexCat-GUI` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-flexcat-gui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-flexcat-gui.txt COMMAND=FlexCat-GUI
+If EXISTS RAM:L/r-flexcat-gui.txt
+  Type >>RAM:L/b-flexcat-gui.txt RAM:L/r-flexcat-gui.txt
+EndIf
+Date >>RAM:L/b-flexcat-gui.txt
+RAM:b/putfile >NIL: RAM:L/b-flexcat-gui.txt b-flexcat-gui.txt 8804
+If EXISTS RAM:L/o-flexcat-gui.txt
+RAM:b/putfile >NIL: RAM:L/o-flexcat-gui.txt o-flexcat-gui.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-flexcat-gui 8804
+Wait 3
+Echo >RAM:L/b-gnurobbo.txt "==== gnurobbo: GNURobbo, stack 40960"
+Date >>RAM:L/b-gnurobbo.txt
+If NOT EXISTS SYS:Batch/gnurobbo
+  Echo >>RAM:L/b-gnurobbo.txt "gnurobbo: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start gnurobbo "SYS:Batch/gnurobbo" GNURobbo 40960
+  Wait 15
+  Echo >>RAM:L/b-gnurobbo.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-gnurobbo.txt COMMAND=GNURobbo
+  If EXISTS RAM:L/r-gnurobbo.txt
+    Type >>RAM:L/b-gnurobbo.txt RAM:L/r-gnurobbo.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "gnurobbo"
+RAM:b/putfile >NIL: RAM:L/m shot-gnurobbo 8804
+Wait 4
+Status >NIL: COMMAND=GNURobbo
+If NOT WARN
+  Break >NIL: `Status COMMAND=GNURobbo` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-gnurobbo.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-gnurobbo.txt COMMAND=GNURobbo
+If EXISTS RAM:L/r-gnurobbo.txt
+  Type >>RAM:L/b-gnurobbo.txt RAM:L/r-gnurobbo.txt
+EndIf
+Date >>RAM:L/b-gnurobbo.txt
+RAM:b/putfile >NIL: RAM:L/b-gnurobbo.txt b-gnurobbo.txt 8804
+If EXISTS RAM:L/o-gnurobbo.txt
+RAM:b/putfile >NIL: RAM:L/o-gnurobbo.txt o-gnurobbo.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-gnurobbo 8804
+Wait 3
+Echo >RAM:L/b-hex2.txt "==== hex2: Hex2, stack 40960"
+Date >>RAM:L/b-hex2.txt
+If NOT EXISTS SYS:Batch/hex2
+  Echo >>RAM:L/b-hex2.txt "hex2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start hex2 "SYS:Batch/hex2" Hex2 40960
+  Wait 15
+  Echo >>RAM:L/b-hex2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-hex2.txt COMMAND=Hex2
+  If EXISTS RAM:L/r-hex2.txt
+    Type >>RAM:L/b-hex2.txt RAM:L/r-hex2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "hex2"
+RAM:b/putfile >NIL: RAM:L/m shot-hex2 8804
+Wait 4
+Status >NIL: COMMAND=Hex2
+If NOT WARN
+  Break >NIL: `Status COMMAND=Hex2` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-hex2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-hex2.txt COMMAND=Hex2
+If EXISTS RAM:L/r-hex2.txt
+  Type >>RAM:L/b-hex2.txt RAM:L/r-hex2.txt
+EndIf
+Date >>RAM:L/b-hex2.txt
+RAM:b/putfile >NIL: RAM:L/b-hex2.txt b-hex2.txt 8804
+If EXISTS RAM:L/o-hex2.txt
+RAM:b/putfile >NIL: RAM:L/o-hex2.txt o-hex2.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-hex2 8804
+Wait 3
+Echo >RAM:L/b-hivelyreplay.txt "==== hivelyreplay: Play_hvl, stack 40960"
+Date >>RAM:L/b-hivelyreplay.txt
+If NOT EXISTS SYS:Batch/hivelyreplay
+  Echo >>RAM:L/b-hivelyreplay.txt "hivelyreplay: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start hivelyreplay "SYS:Batch/hivelyreplay/C" Play_hvl 40960
+  Wait 15
+  Echo >>RAM:L/b-hivelyreplay.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-hivelyreplay.txt COMMAND=Play_hvl
+  If EXISTS RAM:L/r-hivelyreplay.txt
+    Type >>RAM:L/b-hivelyreplay.txt RAM:L/r-hivelyreplay.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "hivelyreplay"
+RAM:b/putfile >NIL: RAM:L/m shot-hivelyreplay 8804
+Wait 4
+Status >NIL: COMMAND=Play_hvl
+If NOT WARN
+  Break >NIL: `Status COMMAND=Play_hvl` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-hivelyreplay.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-hivelyreplay.txt COMMAND=Play_hvl
+If EXISTS RAM:L/r-hivelyreplay.txt
+  Type >>RAM:L/b-hivelyreplay.txt RAM:L/r-hivelyreplay.txt
+EndIf
+Date >>RAM:L/b-hivelyreplay.txt
+RAM:b/putfile >NIL: RAM:L/b-hivelyreplay.txt b-hivelyreplay.txt 8804
+If EXISTS RAM:L/o-hivelyreplay.txt
+RAM:b/putfile >NIL: RAM:L/o-hivelyreplay.txt o-hivelyreplay.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-hivelyreplay 8804
+Wait 3
+Echo >RAM:L/b-lbreakouthd.txt "==== lbreakouthd: LBreakoutHD, stack 500000"
+Date >>RAM:L/b-lbreakouthd.txt
+If NOT EXISTS SYS:Batch/lbreakouthd
+  Echo >>RAM:L/b-lbreakouthd.txt "lbreakouthd: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start lbreakouthd "SYS:Batch/lbreakouthd" LBreakoutHD 500000
+  Wait 15
+  Echo >>RAM:L/b-lbreakouthd.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-lbreakouthd.txt COMMAND=LBreakoutHD
+  If EXISTS RAM:L/r-lbreakouthd.txt
+    Type >>RAM:L/b-lbreakouthd.txt RAM:L/r-lbreakouthd.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "lbreakouthd"
+RAM:b/putfile >NIL: RAM:L/m shot-lbreakouthd 8804
+Wait 4
+Status >NIL: COMMAND=LBreakoutHD
+If NOT WARN
+  Break >NIL: `Status COMMAND=LBreakoutHD` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-lbreakouthd.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-lbreakouthd.txt COMMAND=LBreakoutHD
+If EXISTS RAM:L/r-lbreakouthd.txt
+  Type >>RAM:L/b-lbreakouthd.txt RAM:L/r-lbreakouthd.txt
+EndIf
+Date >>RAM:L/b-lbreakouthd.txt
+RAM:b/putfile >NIL: RAM:L/b-lbreakouthd.txt b-lbreakouthd.txt 8804
+If EXISTS RAM:L/o-lbreakouthd.txt
+RAM:b/putfile >NIL: RAM:L/o-lbreakouthd.txt o-lbreakouthd.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-lbreakouthd 8804
+Wait 3
+Echo >RAM:L/b-metemp3.txt "==== metemp3: meteMP3, stack 40960"
+Date >>RAM:L/b-metemp3.txt
+If NOT EXISTS SYS:Batch/metemp3
+  Echo >>RAM:L/b-metemp3.txt "metemp3: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start metemp3 "SYS:Batch/metemp3" meteMP3 40960
+  Wait 15
+  Echo >>RAM:L/b-metemp3.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-metemp3.txt COMMAND=meteMP3
+  If EXISTS RAM:L/r-metemp3.txt
+    Type >>RAM:L/b-metemp3.txt RAM:L/r-metemp3.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "metemp3"
+RAM:b/putfile >NIL: RAM:L/m shot-metemp3 8804
+Wait 4
+Status >NIL: COMMAND=meteMP3
+If NOT WARN
+  Break >NIL: `Status COMMAND=meteMP3` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-metemp3.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-metemp3.txt COMMAND=meteMP3
+If EXISTS RAM:L/r-metemp3.txt
+  Type >>RAM:L/b-metemp3.txt RAM:L/r-metemp3.txt
+EndIf
+Date >>RAM:L/b-metemp3.txt
+RAM:b/putfile >NIL: RAM:L/b-metemp3.txt b-metemp3.txt 8804
+If EXISTS RAM:L/o-metemp3.txt
+RAM:b/putfile >NIL: RAM:L/o-metemp3.txt o-metemp3.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-metemp3 8804
+Wait 3
+Echo >RAM:L/b-reminiscence.txt "==== reminiscence: rs, stack 40960"
+Date >>RAM:L/b-reminiscence.txt
+If NOT EXISTS SYS:Batch/reminiscence
+  Echo >>RAM:L/b-reminiscence.txt "reminiscence: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start reminiscence "SYS:Batch/reminiscence" rs 40960
+  Wait 15
+  Echo >>RAM:L/b-reminiscence.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-reminiscence.txt COMMAND=rs
+  If EXISTS RAM:L/r-reminiscence.txt
+    Type >>RAM:L/b-reminiscence.txt RAM:L/r-reminiscence.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "reminiscence"
+RAM:b/putfile >NIL: RAM:L/m shot-reminiscence 8804
+Wait 4
+Status >NIL: COMMAND=rs
+If NOT WARN
+  Break >NIL: `Status COMMAND=rs` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-reminiscence.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-reminiscence.txt COMMAND=rs
+If EXISTS RAM:L/r-reminiscence.txt
+  Type >>RAM:L/b-reminiscence.txt RAM:L/r-reminiscence.txt
+EndIf
+Date >>RAM:L/b-reminiscence.txt
+RAM:b/putfile >NIL: RAM:L/b-reminiscence.txt b-reminiscence.txt 8804
+If EXISTS RAM:L/o-reminiscence.txt
+RAM:b/putfile >NIL: RAM:L/o-reminiscence.txt o-reminiscence.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-reminiscence 8804
+Wait 3
+Echo >RAM:L/b-screentest.txt "==== screentest: ScreenTest, stack 40960"
+Date >>RAM:L/b-screentest.txt
+If NOT EXISTS SYS:Batch/screentest
+  Echo >>RAM:L/b-screentest.txt "screentest: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start screentest "SYS:Batch/screentest" ScreenTest 40960
+  Wait 15
+  Echo >>RAM:L/b-screentest.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-screentest.txt COMMAND=ScreenTest
+  If EXISTS RAM:L/r-screentest.txt
+    Type >>RAM:L/b-screentest.txt RAM:L/r-screentest.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "screentest"
+RAM:b/putfile >NIL: RAM:L/m shot-screentest 8804
+Wait 4
+Status >NIL: COMMAND=ScreenTest
+If NOT WARN
+  Break >NIL: `Status COMMAND=ScreenTest` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-screentest.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-screentest.txt COMMAND=ScreenTest
+If EXISTS RAM:L/r-screentest.txt
+  Type >>RAM:L/b-screentest.txt RAM:L/r-screentest.txt
+EndIf
+Date >>RAM:L/b-screentest.txt
+RAM:b/putfile >NIL: RAM:L/b-screentest.txt b-screentest.txt 8804
+If EXISTS RAM:L/o-screentest.txt
+RAM:b/putfile >NIL: RAM:L/o-screentest.txt o-screentest.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-screentest 8804
+Wait 3
+Echo >RAM:L/b-scummvm.txt "==== scummvm: scummvm, stack 40960"
+Date >>RAM:L/b-scummvm.txt
+If NOT EXISTS SYS:Batch/scummvm
+  Echo >>RAM:L/b-scummvm.txt "scummvm: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start scummvm "SYS:Batch/scummvm" scummvm 40960
+  Wait 15
+  Echo >>RAM:L/b-scummvm.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-scummvm.txt COMMAND=scummvm
+  If EXISTS RAM:L/r-scummvm.txt
+    Type >>RAM:L/b-scummvm.txt RAM:L/r-scummvm.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "scummvm"
+RAM:b/putfile >NIL: RAM:L/m shot-scummvm 8804
+Wait 4
+Status >NIL: COMMAND=scummvm
+If NOT WARN
+  Break >NIL: `Status COMMAND=scummvm` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-scummvm.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-scummvm.txt COMMAND=scummvm
+If EXISTS RAM:L/r-scummvm.txt
+  Type >>RAM:L/b-scummvm.txt RAM:L/r-scummvm.txt
+EndIf
+Date >>RAM:L/b-scummvm.txt
+RAM:b/putfile >NIL: RAM:L/b-scummvm.txt b-scummvm.txt 8804
+If EXISTS RAM:L/o-scummvm.txt
+RAM:b/putfile >NIL: RAM:L/o-scummvm.txt o-scummvm.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-scummvm 8804
+Wait 3
+Echo >RAM:L/b-timeless.txt "==== timeless: Timeless, stack 40960"
+Date >>RAM:L/b-timeless.txt
+If NOT EXISTS SYS:Batch/timeless
+  Echo >>RAM:L/b-timeless.txt "timeless: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start timeless "SYS:Batch/timeless" Timeless 40960
+  Wait 15
+  Echo >>RAM:L/b-timeless.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-timeless.txt COMMAND=Timeless
+  If EXISTS RAM:L/r-timeless.txt
+    Type >>RAM:L/b-timeless.txt RAM:L/r-timeless.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "timeless"
+RAM:b/putfile >NIL: RAM:L/m shot-timeless 8804
+Wait 4
+Status >NIL: COMMAND=Timeless
+If NOT WARN
+  Break >NIL: `Status COMMAND=Timeless` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-timeless.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-timeless.txt COMMAND=Timeless
+If EXISTS RAM:L/r-timeless.txt
+  Type >>RAM:L/b-timeless.txt RAM:L/r-timeless.txt
+EndIf
+Date >>RAM:L/b-timeless.txt
+RAM:b/putfile >NIL: RAM:L/b-timeless.txt b-timeless.txt 8804
+If EXISTS RAM:L/o-timeless.txt
+RAM:b/putfile >NIL: RAM:L/o-timeless.txt o-timeless.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-timeless 8804
+Wait 3
+Echo >RAM:L/b-tinysid.txt "==== tinysid: TinySID, stack 40960"
+Date >>RAM:L/b-tinysid.txt
+If NOT EXISTS SYS:Batch/tinysid
+  Echo >>RAM:L/b-tinysid.txt "tinysid: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start tinysid "SYS:Batch/tinysid" TinySID 40960
+  Wait 15
+  Echo >>RAM:L/b-tinysid.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-tinysid.txt COMMAND=TinySID
+  If EXISTS RAM:L/r-tinysid.txt
+    Type >>RAM:L/b-tinysid.txt RAM:L/r-tinysid.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "tinysid"
+RAM:b/putfile >NIL: RAM:L/m shot-tinysid 8804
+Wait 4
+Status >NIL: COMMAND=TinySID
+If NOT WARN
+  Break >NIL: `Status COMMAND=TinySID` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-tinysid.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-tinysid.txt COMMAND=TinySID
+If EXISTS RAM:L/r-tinysid.txt
+  Type >>RAM:L/b-tinysid.txt RAM:L/r-tinysid.txt
+EndIf
+Date >>RAM:L/b-tinysid.txt
+RAM:b/putfile >NIL: RAM:L/b-tinysid.txt b-tinysid.txt 8804
+If EXISTS RAM:L/o-tinysid.txt
+RAM:b/putfile >NIL: RAM:L/o-tinysid.txt o-tinysid.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-tinysid 8804
+Wait 3
+Echo >RAM:L/b-unshield.txt "==== unshield: unshield, stack 40960"
+Date >>RAM:L/b-unshield.txt
+If NOT EXISTS SYS:Batch/unshield
+  Echo >>RAM:L/b-unshield.txt "unshield: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start unshield "SYS:Batch/unshield/aros" unshield 40960
+  Wait 15
+  Echo >>RAM:L/b-unshield.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-unshield.txt COMMAND=unshield
+  If EXISTS RAM:L/r-unshield.txt
+    Type >>RAM:L/b-unshield.txt RAM:L/r-unshield.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "unshield"
+RAM:b/putfile >NIL: RAM:L/m shot-unshield 8804
+Wait 4
+Status >NIL: COMMAND=unshield
+If NOT WARN
+  Break >NIL: `Status COMMAND=unshield` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-unshield.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-unshield.txt COMMAND=unshield
+If EXISTS RAM:L/r-unshield.txt
+  Type >>RAM:L/b-unshield.txt RAM:L/r-unshield.txt
+EndIf
+Date >>RAM:L/b-unshield.txt
+RAM:b/putfile >NIL: RAM:L/b-unshield.txt b-unshield.txt 8804
+If EXISTS RAM:L/o-unshield.txt
+RAM:b/putfile >NIL: RAM:L/o-unshield.txt o-unshield.txt 8804
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-unshield 8804
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove delugem
+Echo >>RAM:L/c.txt "remove delugem: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove dosbox
+Echo >>RAM:L/c.txt "remove dosbox: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove flexcat-gui
+Echo >>RAM:L/c.txt "remove flexcat-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove gnurobbo
+Echo >>RAM:L/c.txt "remove gnurobbo: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove hex2
+Echo >>RAM:L/c.txt "remove hex2: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove hivelyreplay
+Echo >>RAM:L/c.txt "remove hivelyreplay: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove lbreakouthd
+Echo >>RAM:L/c.txt "remove lbreakouthd: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove metemp3
+Echo >>RAM:L/c.txt "remove metemp3: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove reminiscence
+Echo >>RAM:L/c.txt "remove reminiscence: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove screentest
+Echo >>RAM:L/c.txt "remove screentest: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove scummvm
+Echo >>RAM:L/c.txt "remove scummvm: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove timeless
+Echo >>RAM:L/c.txt "remove timeless: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove tinysid
+Echo >>RAM:L/c.txt "remove tinysid: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove unshield
+Echo >>RAM:L/c.txt "remove unshield: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8804
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8804

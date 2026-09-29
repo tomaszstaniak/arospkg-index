@@ -1,0 +1,5 @@
+==== adoom3: ADoom3, stack 10000000
+Tuesday 29-Sep-26 17:38:29
+adoom3: not installed, not started
+after Ctrl-C (empty means it has ended):
+Tuesday 29-Sep-26 17:38:33

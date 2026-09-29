@@ -1,0 +1,65 @@
+==== stage A: install
+
+==== scummvm
+Tuesday 29-Sep-26 21:09:02
+fetching https://archives.arosworld.org/share/emulation/misc/scummvm-1.9.0-1.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=emulation/misc/scummvm-1.9.0-1.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/scummvm.zip
+installed scummvm
+install scummvm: rc=0
+{
+  "schema":1,
+  "name":"scummvm",
+  "version":"1.9.0-1",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Scummvm",
+  "installed":"2026-09-29T21:09:10Z",
+  "origin":"https://archives.arosworld.org/share/emulation/misc/scummvm-1.9.0-1.x86_64-aros-v11.zip",
+  "archive_sha256":"466733c5a2ac2052f5349367c565e145a97488a8f8af8c20f99d6f0ee7b50b0f",
+  "archive_size":17719470,
+  "reason":"explicit",
+  "dir":"scummvm",
+  "requires_system": [
+    { "type":"library", "id":"SDL.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"opens, version 1" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"3f2ef3ec2cd53371de4555b089fc869a48b8dd6b077080dbb30dc26f7ecc9aa8", "size":9024, "member":"Scummvm.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"scummvm.ini", "sha256":"78755a40489c9c1d5acd1a644c69f38e0dba053a3d583e9316ef5bc7bfdfea0c", "size":55 },
+    { "path":"scummvm", "sha256":"308803edc84b726fd100aeb75a21ee4fea0e89b38db60e29707c7c636e4884e6", "size":63116200 },
+    { "path":"pixmaps/scummvm.xpm", "sha256":"f8f98527719cc9eb61a8332520e1efadd116df33c2c3cd96124a818fc5295f52", "size":2406 },
+    { "path":"man/man6/scummvm.6", "sha256":"c10eafc4e8309a0f69782984993e44abaeef327be5eb55c8958e3226e758c05f", "size":5832 },
+    { "path":"icons/hicolor/scalable/apps/scummvm.svg", "sha256":"c9015087e2676388f93496714cd8fafc015e47458beab2084e7de471ab3debfc", "size":242854 },
+    { "path":"doc/scummvm/README", "sha256":"a5e95c8ad9df8bbe231a337e737e4b83f763e831c73e0f18df557e2705a52757", "size":114278 },
+    { "path":"doc/scummvm/NEWS", "sha256":"0a8ac85b501e2911c8bef5900c96895138123a503ec2c1c9024050293298c050", "size":75403 },
+    { "path":"doc/scummvm/COPYRIGHT", "sha256":"eac2d5973740f7fb68ab7b4fa1a5d8e44e98cf970dae5c539cabd14c8e517651", "size":7106 },
+    { "path":"doc/scummvm/COPYING.LGPL", "sha256":"f2c0f033c76185c3c981ad458ea433ca2787ab9b6f4623cab500fc8024db0e05", "size":26721 },
+    { "path":"doc/scummvm/COPYING.FREEFONT", "sha256":"496669d6d5bd751acdc7bfaa0720bc5dbd211c791dc1d4e406a32e281a17a701", "size":35947 },
+    { "path":"doc/scummvm/COPYING.BSD", "sha256":"8d65ff31812446dee45500441533d4057542c4a874907c4a2abb57475561d5ad", "size":4745 },
+    { "path":"doc/scummvm/COPYING", "sha256":"6f04ae8364d0079a192b14635f4b1da294ce18724c034c39a6a41d1b09df6100", "size":17992 },
+    { "path":"doc/scummvm/AUTHORS", "sha256":"a6f5070a174554746412aa6c91fb781c81c324dcf0e4f78c91161bcaa1103989", "size":23003 },
+    { "path":"data/wintermute.zip", "sha256":"bfd52c137aff9d6836d2d2a373d5c4453e8b32663730499b2b72e5fdd8044779", "size":4057 },
+    { "path":"data/translations.dat", "sha256":"f6423e14ec20d17ca7669d30e23df2e3d8f17248409c32119d0149d48a311783", "size":616196 },
+    { "path":"data/toon.dat", "sha256":"6344848f3c26e73afc53c5980f8ceef9aebdbed87756684d3afb1797dd2b041d", "size":17986 },
+    { "path":"data/tony.dat", "sha256":"5537b209e5243f0a1c5e7f1e5024585caa9a63c959339dbdb2402038bcedf58c", "size":24584 },
+    { "path":"data/teenagent.dat", "sha256":"fe074a8432b4feefd0a9b191d101f0fb75f404dabcad28ac4b08a6060cf7e1df", "size":141090 },
+    { "path":"data/sky.cpt", "sha256":"4c457373415325ea039d7a3d4f1211f7bbedd83d5bf85b94afd14cb4bdd263d2", "size":419427 },
+    { "path":"data/scummmodern.zip", "sha256":"a4cff65f071ac736e6a3a6daf0ab239ee1f0bd5f31d38f725c89d5ea3b6f32f4", "size":1646030 },
+    { "path":"data/scummclassic.zip", "sha256":"dc91ce9769f550ea629ba7ea9832cbf870d78c3b4d6b6a98bde3165da49e99a3", "size":126490 },
+    { "path":"data/queen.tbl", "sha256":"d690b689247441b632a3f09cb13e4bfca91baf5c5201c5ad8428cc1c9aaf5713", "size":1084522 },
+    { "path":"data/pred.dic", "sha256":"cd367e0ef51fe79dae4b90cef9c7bf1566e092419ebec6a625d7a666d7b97287", "size":126481 },
+    { "path":"data/neverhood.dat", "sha256":"b86cb788237ace2988f7a8b7b02fddd213f29e2cac4e19764e6e3b29342894c6", "size":23804 },
+    { "path":"data/mort.dat", "sha256":"ed4f797fd4aff885000ebe589bbac9faa3dd09dd2bee1dee7b20c0d82636f4c1", "size":76302 },
+    { "path":"data/lure.dat", "sha256":"594441ff7f3fd8e7ff190f156ff65149a1817b89b7c4d410de2c499548b18eb3", "size":637824 },
+    { "path":"data/kyra.dat", "sha256":"b953f5d7b7587d34bc366f09840ddbf247edd26454282c0fdd16904ca769aef7", "size":496596 },
+    { "path":"data/hugo.dat", "sha256":"b6d0a83155733c598d9ce13eb64a06ea921634744d64c861807c65fdae2ebe01", "size":189584 },
+    { "path":"data/drascula.dat", "sha256":"8f060ad18574aa7f2730dfab72eab110256db85fb9a2937a3361e059843eef32", "size":219267 },
+    { "path":"data/access.dat", "sha256":"8c4c3ae01a03fbb7e8e034627d8bda0d9a6a24c4c2402e1af1b1ad5c9579bbd1", "size":322768 },
+    { "path":"data/Modern_ice.zip", "sha256":"b227e0b98a088b245415a67137db85e387254ce213b298a468550e4305b27bf1", "size":28869 },
+    { "path":"Scummvm.info", "sha256":"d2d7db6562f98f989aed5f820cbf517b176a139b25f1dbf585b4fe8d5f7b9ac6", "size":1641 }
+  ]
+}

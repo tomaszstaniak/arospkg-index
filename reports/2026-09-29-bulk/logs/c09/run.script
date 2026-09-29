@@ -1,0 +1,563 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8809
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8809
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== alac"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install alac
+Echo >>RAM:L/a.txt "install alac: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info alac
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== amiberry"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install amiberry
+Echo >>RAM:L/a.txt "install amiberry: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info amiberry
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== cls"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install cls
+Echo >>RAM:L/a.txt "install cls: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info cls
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== demac"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install demac
+Echo >>RAM:L/a.txt "install demac: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info demac
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== devilutionx"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install devilutionx
+Echo >>RAM:L/a.txt "install devilutionx: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info devilutionx
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== giocodel15"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install giocodel15
+Echo >>RAM:L/a.txt "install giocodel15: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info giocodel15
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== muiplot"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install muiplot
+Echo >>RAM:L/a.txt "install muiplot: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info muiplot
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== nano"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install nano
+Echo >>RAM:L/a.txt "install nano: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info nano
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== ominoarcade"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install ominoarcade
+Echo >>RAM:L/a.txt "install ominoarcade: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info ominoarcade
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== opentyrian"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install opentyrian
+Echo >>RAM:L/a.txt "install opentyrian: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info opentyrian
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== pkg-54321"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install pkg-54321
+Echo >>RAM:L/a.txt "install pkg-54321: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info pkg-54321
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== sploiner"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install sploiner
+Echo >>RAM:L/a.txt "install sploiner: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info sploiner
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >>RAM:L/a.txt "*N==== tiltnroll"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install tiltnroll
+Echo >>RAM:L/a.txt "install tiltnroll: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info tiltnroll
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8809
+Echo >RAM:L/b-alac.txt "==== alac: ALAC, stack 40960"
+Date >>RAM:L/b-alac.txt
+If NOT EXISTS SYS:Batch/alac
+  Echo >>RAM:L/b-alac.txt "alac: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start alac "SYS:Batch/alac" ALAC 40960
+  Wait 15
+  Echo >>RAM:L/b-alac.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-alac.txt COMMAND=ALAC
+  If EXISTS RAM:L/r-alac.txt
+    Type >>RAM:L/b-alac.txt RAM:L/r-alac.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "alac"
+RAM:b/putfile >NIL: RAM:L/m shot-alac 8809
+Wait 4
+Status >NIL: COMMAND=ALAC
+If NOT WARN
+  Break >NIL: `Status COMMAND=ALAC` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-alac.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-alac.txt COMMAND=ALAC
+If EXISTS RAM:L/r-alac.txt
+  Type >>RAM:L/b-alac.txt RAM:L/r-alac.txt
+EndIf
+Date >>RAM:L/b-alac.txt
+RAM:b/putfile >NIL: RAM:L/b-alac.txt b-alac.txt 8809
+If EXISTS RAM:L/o-alac.txt
+RAM:b/putfile >NIL: RAM:L/o-alac.txt o-alac.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-alac 8809
+Wait 3
+Echo >RAM:L/b-amiberry.txt "==== amiberry: amiberry, stack 2000000"
+Date >>RAM:L/b-amiberry.txt
+If NOT EXISTS SYS:Batch/amiberry
+  Echo >>RAM:L/b-amiberry.txt "amiberry: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start amiberry "SYS:Batch/amiberry" amiberry 2000000
+  Wait 15
+  Echo >>RAM:L/b-amiberry.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-amiberry.txt COMMAND=amiberry
+  If EXISTS RAM:L/r-amiberry.txt
+    Type >>RAM:L/b-amiberry.txt RAM:L/r-amiberry.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "amiberry"
+RAM:b/putfile >NIL: RAM:L/m shot-amiberry 8809
+Wait 4
+Status >NIL: COMMAND=amiberry
+If NOT WARN
+  Break >NIL: `Status COMMAND=amiberry` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-amiberry.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-amiberry.txt COMMAND=amiberry
+If EXISTS RAM:L/r-amiberry.txt
+  Type >>RAM:L/b-amiberry.txt RAM:L/r-amiberry.txt
+EndIf
+Date >>RAM:L/b-amiberry.txt
+RAM:b/putfile >NIL: RAM:L/b-amiberry.txt b-amiberry.txt 8809
+If EXISTS RAM:L/o-amiberry.txt
+RAM:b/putfile >NIL: RAM:L/o-amiberry.txt o-amiberry.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-amiberry 8809
+Wait 3
+Echo >RAM:L/b-cls.txt "==== cls: CLS, stack 40960"
+Date >>RAM:L/b-cls.txt
+If NOT EXISTS SYS:Batch/cls
+  Echo >>RAM:L/b-cls.txt "cls: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start cls "SYS:Batch/cls" CLS 40960
+  Wait 15
+  Echo >>RAM:L/b-cls.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-cls.txt COMMAND=CLS
+  If EXISTS RAM:L/r-cls.txt
+    Type >>RAM:L/b-cls.txt RAM:L/r-cls.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "cls"
+RAM:b/putfile >NIL: RAM:L/m shot-cls 8809
+Wait 4
+Status >NIL: COMMAND=CLS
+If NOT WARN
+  Break >NIL: `Status COMMAND=CLS` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-cls.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-cls.txt COMMAND=CLS
+If EXISTS RAM:L/r-cls.txt
+  Type >>RAM:L/b-cls.txt RAM:L/r-cls.txt
+EndIf
+Date >>RAM:L/b-cls.txt
+RAM:b/putfile >NIL: RAM:L/b-cls.txt b-cls.txt 8809
+If EXISTS RAM:L/o-cls.txt
+RAM:b/putfile >NIL: RAM:L/o-cls.txt o-cls.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-cls 8809
+Wait 3
+Echo >RAM:L/b-demac.txt "==== demac: Demac, stack 40960"
+Date >>RAM:L/b-demac.txt
+If NOT EXISTS SYS:Batch/demac
+  Echo >>RAM:L/b-demac.txt "demac: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start demac "SYS:Batch/demac" Demac 40960
+  Wait 15
+  Echo >>RAM:L/b-demac.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-demac.txt COMMAND=Demac
+  If EXISTS RAM:L/r-demac.txt
+    Type >>RAM:L/b-demac.txt RAM:L/r-demac.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "demac"
+RAM:b/putfile >NIL: RAM:L/m shot-demac 8809
+Wait 4
+Status >NIL: COMMAND=Demac
+If NOT WARN
+  Break >NIL: `Status COMMAND=Demac` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-demac.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-demac.txt COMMAND=Demac
+If EXISTS RAM:L/r-demac.txt
+  Type >>RAM:L/b-demac.txt RAM:L/r-demac.txt
+EndIf
+Date >>RAM:L/b-demac.txt
+RAM:b/putfile >NIL: RAM:L/b-demac.txt b-demac.txt 8809
+If EXISTS RAM:L/o-demac.txt
+RAM:b/putfile >NIL: RAM:L/o-demac.txt o-demac.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-demac 8809
+Wait 3
+Echo >RAM:L/b-devilutionx.txt "==== devilutionx: Diablo, stack 1000000"
+Date >>RAM:L/b-devilutionx.txt
+If NOT EXISTS SYS:Batch/devilutionx
+  Echo >>RAM:L/b-devilutionx.txt "devilutionx: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start devilutionx "SYS:Batch/devilutionx" Diablo 1000000
+  Wait 15
+  Echo >>RAM:L/b-devilutionx.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-devilutionx.txt COMMAND=Diablo
+  If EXISTS RAM:L/r-devilutionx.txt
+    Type >>RAM:L/b-devilutionx.txt RAM:L/r-devilutionx.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "devilutionx"
+RAM:b/putfile >NIL: RAM:L/m shot-devilutionx 8809
+Wait 4
+Status >NIL: COMMAND=Diablo
+If NOT WARN
+  Break >NIL: `Status COMMAND=Diablo` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-devilutionx.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-devilutionx.txt COMMAND=Diablo
+If EXISTS RAM:L/r-devilutionx.txt
+  Type >>RAM:L/b-devilutionx.txt RAM:L/r-devilutionx.txt
+EndIf
+Date >>RAM:L/b-devilutionx.txt
+RAM:b/putfile >NIL: RAM:L/b-devilutionx.txt b-devilutionx.txt 8809
+If EXISTS RAM:L/o-devilutionx.txt
+RAM:b/putfile >NIL: RAM:L/o-devilutionx.txt o-devilutionx.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-devilutionx 8809
+Wait 3
+Echo >RAM:L/b-giocodel15.txt "==== giocodel15: GiocoDel15, stack 40960"
+Date >>RAM:L/b-giocodel15.txt
+If NOT EXISTS SYS:Batch/giocodel15
+  Echo >>RAM:L/b-giocodel15.txt "giocodel15: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start giocodel15 "SYS:Batch/giocodel15" GiocoDel15 40960
+  Wait 15
+  Echo >>RAM:L/b-giocodel15.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-giocodel15.txt COMMAND=GiocoDel15
+  If EXISTS RAM:L/r-giocodel15.txt
+    Type >>RAM:L/b-giocodel15.txt RAM:L/r-giocodel15.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "giocodel15"
+RAM:b/putfile >NIL: RAM:L/m shot-giocodel15 8809
+Wait 4
+Status >NIL: COMMAND=GiocoDel15
+If NOT WARN
+  Break >NIL: `Status COMMAND=GiocoDel15` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-giocodel15.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-giocodel15.txt COMMAND=GiocoDel15
+If EXISTS RAM:L/r-giocodel15.txt
+  Type >>RAM:L/b-giocodel15.txt RAM:L/r-giocodel15.txt
+EndIf
+Date >>RAM:L/b-giocodel15.txt
+RAM:b/putfile >NIL: RAM:L/b-giocodel15.txt b-giocodel15.txt 8809
+If EXISTS RAM:L/o-giocodel15.txt
+RAM:b/putfile >NIL: RAM:L/o-giocodel15.txt o-giocodel15.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-giocodel15 8809
+Wait 3
+Echo >RAM:L/b-muiplot.txt "==== muiplot: MUIPlot, stack 40960"
+Date >>RAM:L/b-muiplot.txt
+If NOT EXISTS SYS:Batch/muiplot
+  Echo >>RAM:L/b-muiplot.txt "muiplot: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start muiplot "SYS:Batch/muiplot" MUIPlot 40960
+  Wait 15
+  Echo >>RAM:L/b-muiplot.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-muiplot.txt COMMAND=MUIPlot
+  If EXISTS RAM:L/r-muiplot.txt
+    Type >>RAM:L/b-muiplot.txt RAM:L/r-muiplot.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "muiplot"
+RAM:b/putfile >NIL: RAM:L/m shot-muiplot 8809
+Wait 4
+Status >NIL: COMMAND=MUIPlot
+If NOT WARN
+  Break >NIL: `Status COMMAND=MUIPlot` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-muiplot.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-muiplot.txt COMMAND=MUIPlot
+If EXISTS RAM:L/r-muiplot.txt
+  Type >>RAM:L/b-muiplot.txt RAM:L/r-muiplot.txt
+EndIf
+Date >>RAM:L/b-muiplot.txt
+RAM:b/putfile >NIL: RAM:L/b-muiplot.txt b-muiplot.txt 8809
+If EXISTS RAM:L/o-muiplot.txt
+RAM:b/putfile >NIL: RAM:L/o-muiplot.txt o-muiplot.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-muiplot 8809
+Wait 3
+Echo >RAM:L/b-nano.txt "==== nano: nano-aros-x86_64, stack 40960"
+Date >>RAM:L/b-nano.txt
+If NOT EXISTS SYS:Batch/nano
+  Echo >>RAM:L/b-nano.txt "nano: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start nano "SYS:Batch/nano" nano-aros-x86_64 40960
+  Wait 15
+  Echo >>RAM:L/b-nano.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-nano.txt COMMAND=nano-aros-x86_64
+  If EXISTS RAM:L/r-nano.txt
+    Type >>RAM:L/b-nano.txt RAM:L/r-nano.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "nano"
+RAM:b/putfile >NIL: RAM:L/m shot-nano 8809
+Wait 4
+Status >NIL: COMMAND=nano-aros-x86_64
+If NOT WARN
+  Break >NIL: `Status COMMAND=nano-aros-x86_64` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-nano.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-nano.txt COMMAND=nano-aros-x86_64
+If EXISTS RAM:L/r-nano.txt
+  Type >>RAM:L/b-nano.txt RAM:L/r-nano.txt
+EndIf
+Date >>RAM:L/b-nano.txt
+RAM:b/putfile >NIL: RAM:L/b-nano.txt b-nano.txt 8809
+If EXISTS RAM:L/o-nano.txt
+RAM:b/putfile >NIL: RAM:L/o-nano.txt o-nano.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-nano 8809
+Wait 3
+Echo >RAM:L/b-ominoarcade.txt "==== ominoarcade: Omino, stack 40960"
+Date >>RAM:L/b-ominoarcade.txt
+If NOT EXISTS SYS:Batch/ominoarcade
+  Echo >>RAM:L/b-ominoarcade.txt "ominoarcade: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start ominoarcade "SYS:Batch/ominoarcade" Omino 40960
+  Wait 15
+  Echo >>RAM:L/b-ominoarcade.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-ominoarcade.txt COMMAND=Omino
+  If EXISTS RAM:L/r-ominoarcade.txt
+    Type >>RAM:L/b-ominoarcade.txt RAM:L/r-ominoarcade.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "ominoarcade"
+RAM:b/putfile >NIL: RAM:L/m shot-ominoarcade 8809
+Wait 4
+Status >NIL: COMMAND=Omino
+If NOT WARN
+  Break >NIL: `Status COMMAND=Omino` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-ominoarcade.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-ominoarcade.txt COMMAND=Omino
+If EXISTS RAM:L/r-ominoarcade.txt
+  Type >>RAM:L/b-ominoarcade.txt RAM:L/r-ominoarcade.txt
+EndIf
+Date >>RAM:L/b-ominoarcade.txt
+RAM:b/putfile >NIL: RAM:L/b-ominoarcade.txt b-ominoarcade.txt 8809
+If EXISTS RAM:L/o-ominoarcade.txt
+RAM:b/putfile >NIL: RAM:L/o-ominoarcade.txt o-ominoarcade.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-ominoarcade 8809
+Wait 3
+Echo >RAM:L/b-opentyrian.txt "==== opentyrian: OpenTyrian, stack 300000"
+Date >>RAM:L/b-opentyrian.txt
+If NOT EXISTS SYS:Batch/opentyrian
+  Echo >>RAM:L/b-opentyrian.txt "opentyrian: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start opentyrian "SYS:Batch/opentyrian" OpenTyrian 300000
+  Wait 15
+  Echo >>RAM:L/b-opentyrian.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-opentyrian.txt COMMAND=OpenTyrian
+  If EXISTS RAM:L/r-opentyrian.txt
+    Type >>RAM:L/b-opentyrian.txt RAM:L/r-opentyrian.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "opentyrian"
+RAM:b/putfile >NIL: RAM:L/m shot-opentyrian 8809
+Wait 4
+Status >NIL: COMMAND=OpenTyrian
+If NOT WARN
+  Break >NIL: `Status COMMAND=OpenTyrian` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-opentyrian.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-opentyrian.txt COMMAND=OpenTyrian
+If EXISTS RAM:L/r-opentyrian.txt
+  Type >>RAM:L/b-opentyrian.txt RAM:L/r-opentyrian.txt
+EndIf
+Date >>RAM:L/b-opentyrian.txt
+RAM:b/putfile >NIL: RAM:L/b-opentyrian.txt b-opentyrian.txt 8809
+If EXISTS RAM:L/o-opentyrian.txt
+RAM:b/putfile >NIL: RAM:L/o-opentyrian.txt o-opentyrian.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-opentyrian 8809
+Wait 3
+Echo >RAM:L/b-pkg-54321.txt "==== pkg-54321: 54321, stack 72000"
+Date >>RAM:L/b-pkg-54321.txt
+If NOT EXISTS SYS:Batch/pkg-54321
+  Echo >>RAM:L/b-pkg-54321.txt "pkg-54321: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start pkg-54321 "SYS:Batch/pkg-54321" 54321 72000
+  Wait 15
+  Echo >>RAM:L/b-pkg-54321.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-pkg-54321.txt COMMAND=54321
+  If EXISTS RAM:L/r-pkg-54321.txt
+    Type >>RAM:L/b-pkg-54321.txt RAM:L/r-pkg-54321.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "pkg-54321"
+RAM:b/putfile >NIL: RAM:L/m shot-pkg-54321 8809
+Wait 4
+Status >NIL: COMMAND=54321
+If NOT WARN
+  Break >NIL: `Status COMMAND=54321` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-pkg-54321.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-pkg-54321.txt COMMAND=54321
+If EXISTS RAM:L/r-pkg-54321.txt
+  Type >>RAM:L/b-pkg-54321.txt RAM:L/r-pkg-54321.txt
+EndIf
+Date >>RAM:L/b-pkg-54321.txt
+RAM:b/putfile >NIL: RAM:L/b-pkg-54321.txt b-pkg-54321.txt 8809
+If EXISTS RAM:L/o-pkg-54321.txt
+RAM:b/putfile >NIL: RAM:L/o-pkg-54321.txt o-pkg-54321.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-pkg-54321 8809
+Wait 3
+Echo >RAM:L/b-sploiner.txt "==== sploiner: Sploiner, stack 40960"
+Date >>RAM:L/b-sploiner.txt
+If NOT EXISTS SYS:Batch/sploiner
+  Echo >>RAM:L/b-sploiner.txt "sploiner: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start sploiner "SYS:Batch/sploiner" Sploiner 40960
+  Wait 15
+  Echo >>RAM:L/b-sploiner.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-sploiner.txt COMMAND=Sploiner
+  If EXISTS RAM:L/r-sploiner.txt
+    Type >>RAM:L/b-sploiner.txt RAM:L/r-sploiner.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "sploiner"
+RAM:b/putfile >NIL: RAM:L/m shot-sploiner 8809
+Wait 4
+Status >NIL: COMMAND=Sploiner
+If NOT WARN
+  Break >NIL: `Status COMMAND=Sploiner` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-sploiner.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-sploiner.txt COMMAND=Sploiner
+If EXISTS RAM:L/r-sploiner.txt
+  Type >>RAM:L/b-sploiner.txt RAM:L/r-sploiner.txt
+EndIf
+Date >>RAM:L/b-sploiner.txt
+RAM:b/putfile >NIL: RAM:L/b-sploiner.txt b-sploiner.txt 8809
+If EXISTS RAM:L/o-sploiner.txt
+RAM:b/putfile >NIL: RAM:L/o-sploiner.txt o-sploiner.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-sploiner 8809
+Wait 3
+Echo >RAM:L/b-tiltnroll.txt "==== tiltnroll: Tilt-N-Roll, stack 40960"
+Date >>RAM:L/b-tiltnroll.txt
+If NOT EXISTS SYS:Batch/tiltnroll
+  Echo >>RAM:L/b-tiltnroll.txt "tiltnroll: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start tiltnroll "SYS:Batch/tiltnroll" Tilt-N-Roll 40960
+  Wait 15
+  Echo >>RAM:L/b-tiltnroll.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-tiltnroll.txt COMMAND=Tilt-N-Roll
+  If EXISTS RAM:L/r-tiltnroll.txt
+    Type >>RAM:L/b-tiltnroll.txt RAM:L/r-tiltnroll.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "tiltnroll"
+RAM:b/putfile >NIL: RAM:L/m shot-tiltnroll 8809
+Wait 4
+Status >NIL: COMMAND=Tilt-N-Roll
+If NOT WARN
+  Break >NIL: `Status COMMAND=Tilt-N-Roll` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-tiltnroll.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-tiltnroll.txt COMMAND=Tilt-N-Roll
+If EXISTS RAM:L/r-tiltnroll.txt
+  Type >>RAM:L/b-tiltnroll.txt RAM:L/r-tiltnroll.txt
+EndIf
+Date >>RAM:L/b-tiltnroll.txt
+RAM:b/putfile >NIL: RAM:L/b-tiltnroll.txt b-tiltnroll.txt 8809
+If EXISTS RAM:L/o-tiltnroll.txt
+RAM:b/putfile >NIL: RAM:L/o-tiltnroll.txt o-tiltnroll.txt 8809
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-tiltnroll 8809
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove alac
+Echo >>RAM:L/c.txt "remove alac: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove amiberry
+Echo >>RAM:L/c.txt "remove amiberry: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove cls
+Echo >>RAM:L/c.txt "remove cls: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove demac
+Echo >>RAM:L/c.txt "remove demac: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove devilutionx
+Echo >>RAM:L/c.txt "remove devilutionx: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove giocodel15
+Echo >>RAM:L/c.txt "remove giocodel15: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove muiplot
+Echo >>RAM:L/c.txt "remove muiplot: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove nano
+Echo >>RAM:L/c.txt "remove nano: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove ominoarcade
+Echo >>RAM:L/c.txt "remove ominoarcade: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove opentyrian
+Echo >>RAM:L/c.txt "remove opentyrian: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove pkg-54321
+Echo >>RAM:L/c.txt "remove pkg-54321: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove sploiner
+Echo >>RAM:L/c.txt "remove sploiner: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove tiltnroll
+Echo >>RAM:L/c.txt "remove tiltnroll: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8809
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8809

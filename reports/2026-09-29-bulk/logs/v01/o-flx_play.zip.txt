@@ -1,0 +1,4 @@
+FLX player (0.2) with SDL output (jasper@il.fontys.nl)
+View readme file for more information
+
+flxplay [-l] loop Mode [-f] fullscreen Mode [filename]

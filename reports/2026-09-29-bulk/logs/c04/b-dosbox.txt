@@ -1,0 +1,5 @@
+==== dosbox: dosbox, stack 40960
+Tuesday 29-Sep-26 17:38:46
+dosbox: not installed, not started
+after Ctrl-C (empty means it has ended):
+Tuesday 29-Sep-26 17:38:50

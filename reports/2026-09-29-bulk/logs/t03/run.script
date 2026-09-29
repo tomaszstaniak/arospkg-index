@@ -1,0 +1,235 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8803
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8803
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== muimapparium"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install muimapparium
+Echo >>RAM:L/a.txt "install muimapparium: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info muimapparium
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8803
+Echo >>RAM:L/a.txt "*N==== hydracastle"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install hydracastle
+Echo >>RAM:L/a.txt "install hydracastle: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info hydracastle
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8803
+Echo >>RAM:L/a.txt "*N==== biniax2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install biniax2
+Echo >>RAM:L/a.txt "install biniax2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info biniax2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8803
+Echo >>RAM:L/a.txt "*N==== scopagame"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install scopagame
+Echo >>RAM:L/a.txt "install scopagame: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info scopagame
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8803
+Echo >>RAM:L/a.txt "*N==== flx_play.zip"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install flx_play.zip
+Echo >>RAM:L/a.txt "install flx_play.zip: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info flx_play.zip
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8803
+Echo >RAM:L/b-muimapparium.txt "==== muimapparium: MUIMapparium, stack 40960"
+Date >>RAM:L/b-muimapparium.txt
+If NOT EXISTS SYS:Batch/muimapparium
+  Echo >>RAM:L/b-muimapparium.txt "muimapparium: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start muimapparium "SYS:Batch/muimapparium" "MUIMapparium" 40960
+  Wait 15
+  Echo >>RAM:L/b-muimapparium.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-muimapparium.txt COMMAND="MUIMapparium"
+  If EXISTS RAM:L/r-muimapparium.txt
+    Type >>RAM:L/b-muimapparium.txt RAM:L/r-muimapparium.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "muimapparium"
+RAM:b/putfile >NIL: RAM:L/m shot-muimapparium 8803
+Wait 4
+Status >NIL: COMMAND="MUIMapparium"
+If NOT WARN
+  Break >NIL: `Status COMMAND="MUIMapparium"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-muimapparium.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-muimapparium.txt COMMAND="MUIMapparium"
+If EXISTS RAM:L/r-muimapparium.txt
+  Type >>RAM:L/b-muimapparium.txt RAM:L/r-muimapparium.txt
+EndIf
+Date >>RAM:L/b-muimapparium.txt
+RAM:b/putfile >NIL: RAM:L/b-muimapparium.txt b-muimapparium.txt 8803
+If EXISTS RAM:L/o-muimapparium.txt
+RAM:b/putfile >NIL: RAM:L/o-muimapparium.txt o-muimapparium.txt 8803
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-muimapparium 8803
+Wait 3
+Echo >RAM:L/b-hydracastle.txt "==== hydracastle: HydraCastle, stack 102400"
+Date >>RAM:L/b-hydracastle.txt
+If NOT EXISTS SYS:Batch/hydracastle
+  Echo >>RAM:L/b-hydracastle.txt "hydracastle: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start hydracastle "SYS:Batch/hydracastle" "HydraCastle" 102400
+  Wait 15
+  Echo >>RAM:L/b-hydracastle.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-hydracastle.txt COMMAND="HydraCastle"
+  If EXISTS RAM:L/r-hydracastle.txt
+    Type >>RAM:L/b-hydracastle.txt RAM:L/r-hydracastle.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "hydracastle"
+RAM:b/putfile >NIL: RAM:L/m shot-hydracastle 8803
+Wait 4
+Status >NIL: COMMAND="HydraCastle"
+If NOT WARN
+  Break >NIL: `Status COMMAND="HydraCastle"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-hydracastle.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-hydracastle.txt COMMAND="HydraCastle"
+If EXISTS RAM:L/r-hydracastle.txt
+  Type >>RAM:L/b-hydracastle.txt RAM:L/r-hydracastle.txt
+EndIf
+Date >>RAM:L/b-hydracastle.txt
+RAM:b/putfile >NIL: RAM:L/b-hydracastle.txt b-hydracastle.txt 8803
+If EXISTS RAM:L/o-hydracastle.txt
+RAM:b/putfile >NIL: RAM:L/o-hydracastle.txt o-hydracastle.txt 8803
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-hydracastle 8803
+Wait 3
+Echo >RAM:L/b-biniax2.txt "==== biniax2: Biniax2, stack 40960"
+Date >>RAM:L/b-biniax2.txt
+If NOT EXISTS SYS:Batch/biniax2
+  Echo >>RAM:L/b-biniax2.txt "biniax2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start biniax2 "SYS:Batch/biniax2" "Biniax2" 40960
+  Wait 15
+  Echo >>RAM:L/b-biniax2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-biniax2.txt COMMAND="Biniax2"
+  If EXISTS RAM:L/r-biniax2.txt
+    Type >>RAM:L/b-biniax2.txt RAM:L/r-biniax2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "biniax2"
+RAM:b/putfile >NIL: RAM:L/m shot-biniax2 8803
+Wait 4
+Status >NIL: COMMAND="Biniax2"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Biniax2"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-biniax2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-biniax2.txt COMMAND="Biniax2"
+If EXISTS RAM:L/r-biniax2.txt
+  Type >>RAM:L/b-biniax2.txt RAM:L/r-biniax2.txt
+EndIf
+Date >>RAM:L/b-biniax2.txt
+RAM:b/putfile >NIL: RAM:L/b-biniax2.txt b-biniax2.txt 8803
+If EXISTS RAM:L/o-biniax2.txt
+RAM:b/putfile >NIL: RAM:L/o-biniax2.txt o-biniax2.txt 8803
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-biniax2 8803
+Wait 3
+Echo >RAM:L/b-scopagame.txt "==== scopagame: Scopa, stack 40960"
+Date >>RAM:L/b-scopagame.txt
+If NOT EXISTS SYS:Batch/scopagame
+  Echo >>RAM:L/b-scopagame.txt "scopagame: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start scopagame "SYS:Batch/scopagame" "Scopa" 40960
+  Wait 15
+  Echo >>RAM:L/b-scopagame.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-scopagame.txt COMMAND="Scopa"
+  If EXISTS RAM:L/r-scopagame.txt
+    Type >>RAM:L/b-scopagame.txt RAM:L/r-scopagame.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "scopagame"
+RAM:b/putfile >NIL: RAM:L/m shot-scopagame 8803
+Wait 4
+Status >NIL: COMMAND="Scopa"
+If NOT WARN
+  Break >NIL: `Status COMMAND="Scopa"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-scopagame.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-scopagame.txt COMMAND="Scopa"
+If EXISTS RAM:L/r-scopagame.txt
+  Type >>RAM:L/b-scopagame.txt RAM:L/r-scopagame.txt
+EndIf
+Date >>RAM:L/b-scopagame.txt
+RAM:b/putfile >NIL: RAM:L/b-scopagame.txt b-scopagame.txt 8803
+If EXISTS RAM:L/o-scopagame.txt
+RAM:b/putfile >NIL: RAM:L/o-scopagame.txt o-scopagame.txt 8803
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-scopagame 8803
+Wait 3
+Echo >RAM:L/b-flx_play.zip.txt "==== flx_play.zip: FLX Play, stack 40960"
+Date >>RAM:L/b-flx_play.zip.txt
+If NOT EXISTS SYS:Batch/flx_play.zip
+  Echo >>RAM:L/b-flx_play.zip.txt "flx_play.zip: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start flx_play.zip "SYS:Batch/flx_play.zip" "FLX Play" 40960
+  Wait 15
+  Echo >>RAM:L/b-flx_play.zip.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-flx_play.zip.txt COMMAND="FLX Play"
+  If EXISTS RAM:L/r-flx_play.zip.txt
+    Type >>RAM:L/b-flx_play.zip.txt RAM:L/r-flx_play.zip.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "flx_play.zip"
+RAM:b/putfile >NIL: RAM:L/m shot-flx_play.zip 8803
+Wait 4
+Status >NIL: COMMAND="FLX Play"
+If NOT WARN
+  Break >NIL: `Status COMMAND="FLX Play"` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-flx_play.zip.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-flx_play.zip.txt COMMAND="FLX Play"
+If EXISTS RAM:L/r-flx_play.zip.txt
+  Type >>RAM:L/b-flx_play.zip.txt RAM:L/r-flx_play.zip.txt
+EndIf
+Date >>RAM:L/b-flx_play.zip.txt
+RAM:b/putfile >NIL: RAM:L/b-flx_play.zip.txt b-flx_play.zip.txt 8803
+If EXISTS RAM:L/o-flx_play.zip.txt
+RAM:b/putfile >NIL: RAM:L/o-flx_play.zip.txt o-flx_play.zip.txt 8803
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-flx_play.zip 8803
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove muimapparium
+Echo >>RAM:L/c.txt "remove muimapparium: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove hydracastle
+Echo >>RAM:L/c.txt "remove hydracastle: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove biniax2
+Echo >>RAM:L/c.txt "remove biniax2: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove scopagame
+Echo >>RAM:L/c.txt "remove scopagame: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove flx_play.zip
+Echo >>RAM:L/c.txt "remove flx_play.zip: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8803
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8803

@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/nomarch with
+# Run and input from NIL:, stack 40960 bytes: it printed its usage or output
+# and returned 1. Evidence: reports/2026-09-29-bulk/ (batch c05).
+
+status          = "approved"
+id              = "nomarch"
+version         = "1.4"
+summary         = "extract old .arc and .ark archives"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/archive"
+url             = "https://archives.arosworld.org/share/utility/archive/nomarch.x86_64-aros-v11.zip"
+size            = 81413
+upload_date     = "20250117-16.38"
+selected_by     = "only-candidate"
+
+sha256          = "05fd654700ac323375ea89a352521430b17ff66c4a0ab7590fe3b439a6351864"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Nomarch"
+icon            = "Nomarch.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

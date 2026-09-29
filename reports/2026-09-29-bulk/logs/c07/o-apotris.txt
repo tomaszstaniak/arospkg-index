@@ -1,0 +1,4 @@
+Tilengine v2.15.1 64-bit release built May  3 2026 07:20:48
+Tilengine v134913
+starting bot!
+quit() called

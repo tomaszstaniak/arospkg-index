@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/finder with Run
+# and input from NIL:, stack 40960 bytes: its window or screen was open and
+# the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r02).
+
+status          = "approved"
+id              = "finder"
+version         = "3.1"
+summary         = "MUI File Search Tool"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/filetool"
+url             = "https://archives.arosworld.org/share/utility/filetool/finder-v3.1.x86_64-aros-v11.zip"
+size            = 63513
+upload_date     = "20250621-06.04"
+selected_by     = "only-candidate"
+
+sha256          = "f5b4630a33b799c31976b9305d67cd30c5b8d53a66869359724aa0893cdf9146"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Finder"
+icon            = "Finder.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

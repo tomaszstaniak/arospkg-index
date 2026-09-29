@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/amiberry with
+# Run and input from NIL:, stack 2000000 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-09-29-bulk/ (batch c09).
+
+status          = "approved"
+id              = "amiberry"
+version         = "6.3.4"
+summary         = "Amiberry preview v6.3.4 x86_64 abiv11"
+arch            = "x86_64"
+abi             = "v11"
+category        = "emulation/computer"
+url             = "https://archives.arosworld.org/share/emulation/computer/amiberry-v6.3.4.x86_64-aros-v11.zip"
+size            = 13468412
+upload_date     = "20260816-06.46"
+selected_by     = "only-candidate"
+
+sha256          = "f4320cc8d7b2f3f540605241de0b8f5d29357926acf28379fed363f242be053e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "amiberry"
+icon            = "amiberry.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

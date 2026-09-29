@@ -1,0 +1,358 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8801
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8801
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== ab3dhd"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install ab3dhd
+Echo >>RAM:L/a.txt "install ab3dhd: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info ab3dhd
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== davegnukem"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install davegnukem
+Echo >>RAM:L/a.txt "install davegnukem: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info davegnukem
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== fheroes2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install fheroes2
+Echo >>RAM:L/a.txt "install fheroes2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info fheroes2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== hexen2"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install hexen2
+Echo >>RAM:L/a.txt "install hexen2: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info hexen2
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== mplayer"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install mplayer
+Echo >>RAM:L/a.txt "install mplayer: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info mplayer
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== playsid-gui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install playsid-gui
+Echo >>RAM:L/a.txt "install playsid-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info playsid-gui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== sokobangp2x"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install sokobangp2x
+Echo >>RAM:L/a.txt "install sokobangp2x: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info sokobangp2x
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >>RAM:L/a.txt "*N==== tbftss"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install tbftss
+Echo >>RAM:L/a.txt "install tbftss: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info tbftss
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8801
+Echo >RAM:L/b-ab3dhd.txt "==== ab3dhd: ab3d1, stack 500000"
+Date >>RAM:L/b-ab3dhd.txt
+If NOT EXISTS SYS:Batch/ab3dhd
+  Echo >>RAM:L/b-ab3dhd.txt "ab3dhd: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start ab3dhd "SYS:Batch/ab3dhd" ab3d1 500000
+  Wait 15
+  Echo >>RAM:L/b-ab3dhd.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-ab3dhd.txt COMMAND=ab3d1
+  If EXISTS RAM:L/r-ab3dhd.txt
+    Type >>RAM:L/b-ab3dhd.txt RAM:L/r-ab3dhd.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "ab3dhd"
+RAM:b/putfile >NIL: RAM:L/m shot-ab3dhd 8801
+Wait 4
+Status >NIL: COMMAND=ab3d1
+If NOT WARN
+  Break >NIL: `Status COMMAND=ab3d1` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-ab3dhd.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-ab3dhd.txt COMMAND=ab3d1
+If EXISTS RAM:L/r-ab3dhd.txt
+  Type >>RAM:L/b-ab3dhd.txt RAM:L/r-ab3dhd.txt
+EndIf
+Date >>RAM:L/b-ab3dhd.txt
+RAM:b/putfile >NIL: RAM:L/b-ab3dhd.txt b-ab3dhd.txt 8801
+If EXISTS RAM:L/o-ab3dhd.txt
+RAM:b/putfile >NIL: RAM:L/o-ab3dhd.txt o-ab3dhd.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-ab3dhd 8801
+Wait 3
+Echo >RAM:L/b-davegnukem.txt "==== davegnukem: davegnukem, stack 40960"
+Date >>RAM:L/b-davegnukem.txt
+If NOT EXISTS SYS:Batch/davegnukem
+  Echo >>RAM:L/b-davegnukem.txt "davegnukem: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start davegnukem "SYS:Batch/davegnukem" davegnukem 40960
+  Wait 15
+  Echo >>RAM:L/b-davegnukem.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-davegnukem.txt COMMAND=davegnukem
+  If EXISTS RAM:L/r-davegnukem.txt
+    Type >>RAM:L/b-davegnukem.txt RAM:L/r-davegnukem.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "davegnukem"
+RAM:b/putfile >NIL: RAM:L/m shot-davegnukem 8801
+Wait 4
+Status >NIL: COMMAND=davegnukem
+If NOT WARN
+  Break >NIL: `Status COMMAND=davegnukem` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-davegnukem.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-davegnukem.txt COMMAND=davegnukem
+If EXISTS RAM:L/r-davegnukem.txt
+  Type >>RAM:L/b-davegnukem.txt RAM:L/r-davegnukem.txt
+EndIf
+Date >>RAM:L/b-davegnukem.txt
+RAM:b/putfile >NIL: RAM:L/b-davegnukem.txt b-davegnukem.txt 8801
+If EXISTS RAM:L/o-davegnukem.txt
+RAM:b/putfile >NIL: RAM:L/o-davegnukem.txt o-davegnukem.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-davegnukem 8801
+Wait 3
+Echo >RAM:L/b-fheroes2.txt "==== fheroes2: fheroes2, stack 200000"
+Date >>RAM:L/b-fheroes2.txt
+If NOT EXISTS SYS:Batch/fheroes2
+  Echo >>RAM:L/b-fheroes2.txt "fheroes2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start fheroes2 "SYS:Batch/fheroes2" fheroes2 200000
+  Wait 15
+  Echo >>RAM:L/b-fheroes2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-fheroes2.txt COMMAND=fheroes2
+  If EXISTS RAM:L/r-fheroes2.txt
+    Type >>RAM:L/b-fheroes2.txt RAM:L/r-fheroes2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "fheroes2"
+RAM:b/putfile >NIL: RAM:L/m shot-fheroes2 8801
+Wait 4
+Status >NIL: COMMAND=fheroes2
+If NOT WARN
+  Break >NIL: `Status COMMAND=fheroes2` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-fheroes2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-fheroes2.txt COMMAND=fheroes2
+If EXISTS RAM:L/r-fheroes2.txt
+  Type >>RAM:L/b-fheroes2.txt RAM:L/r-fheroes2.txt
+EndIf
+Date >>RAM:L/b-fheroes2.txt
+RAM:b/putfile >NIL: RAM:L/b-fheroes2.txt b-fheroes2.txt 8801
+If EXISTS RAM:L/o-fheroes2.txt
+RAM:b/putfile >NIL: RAM:L/o-fheroes2.txt o-fheroes2.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-fheroes2 8801
+Wait 3
+Echo >RAM:L/b-hexen2.txt "==== hexen2: Hexen2, stack 2000000"
+Date >>RAM:L/b-hexen2.txt
+If NOT EXISTS SYS:Batch/hexen2
+  Echo >>RAM:L/b-hexen2.txt "hexen2: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start hexen2 "SYS:Batch/hexen2" Hexen2 2000000
+  Wait 15
+  Echo >>RAM:L/b-hexen2.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-hexen2.txt COMMAND=Hexen2
+  If EXISTS RAM:L/r-hexen2.txt
+    Type >>RAM:L/b-hexen2.txt RAM:L/r-hexen2.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "hexen2"
+RAM:b/putfile >NIL: RAM:L/m shot-hexen2 8801
+Wait 4
+Status >NIL: COMMAND=Hexen2
+If NOT WARN
+  Break >NIL: `Status COMMAND=Hexen2` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-hexen2.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-hexen2.txt COMMAND=Hexen2
+If EXISTS RAM:L/r-hexen2.txt
+  Type >>RAM:L/b-hexen2.txt RAM:L/r-hexen2.txt
+EndIf
+Date >>RAM:L/b-hexen2.txt
+RAM:b/putfile >NIL: RAM:L/b-hexen2.txt b-hexen2.txt 8801
+If EXISTS RAM:L/o-hexen2.txt
+RAM:b/putfile >NIL: RAM:L/o-hexen2.txt o-hexen2.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-hexen2 8801
+Wait 3
+Echo >RAM:L/b-mplayer.txt "==== mplayer: MPlayer, stack 512000"
+Date >>RAM:L/b-mplayer.txt
+If NOT EXISTS SYS:Batch/mplayer
+  Echo >>RAM:L/b-mplayer.txt "mplayer: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start mplayer "SYS:Batch/mplayer" MPlayer 512000
+  Wait 15
+  Echo >>RAM:L/b-mplayer.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-mplayer.txt COMMAND=MPlayer
+  If EXISTS RAM:L/r-mplayer.txt
+    Type >>RAM:L/b-mplayer.txt RAM:L/r-mplayer.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "mplayer"
+RAM:b/putfile >NIL: RAM:L/m shot-mplayer 8801
+Wait 4
+Status >NIL: COMMAND=MPlayer
+If NOT WARN
+  Break >NIL: `Status COMMAND=MPlayer` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-mplayer.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-mplayer.txt COMMAND=MPlayer
+If EXISTS RAM:L/r-mplayer.txt
+  Type >>RAM:L/b-mplayer.txt RAM:L/r-mplayer.txt
+EndIf
+Date >>RAM:L/b-mplayer.txt
+RAM:b/putfile >NIL: RAM:L/b-mplayer.txt b-mplayer.txt 8801
+If EXISTS RAM:L/o-mplayer.txt
+RAM:b/putfile >NIL: RAM:L/o-mplayer.txt o-mplayer.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-mplayer 8801
+Wait 3
+Echo >RAM:L/b-playsid-gui.txt "==== playsid-gui: PlaySID-GUI, stack 40960"
+Date >>RAM:L/b-playsid-gui.txt
+If NOT EXISTS SYS:Batch/playsid-gui
+  Echo >>RAM:L/b-playsid-gui.txt "playsid-gui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start playsid-gui "SYS:Batch/playsid-gui" PlaySID-GUI 40960
+  Wait 15
+  Echo >>RAM:L/b-playsid-gui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-playsid-gui.txt COMMAND=PlaySID-GUI
+  If EXISTS RAM:L/r-playsid-gui.txt
+    Type >>RAM:L/b-playsid-gui.txt RAM:L/r-playsid-gui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "playsid-gui"
+RAM:b/putfile >NIL: RAM:L/m shot-playsid-gui 8801
+Wait 4
+Status >NIL: COMMAND=PlaySID-GUI
+If NOT WARN
+  Break >NIL: `Status COMMAND=PlaySID-GUI` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-playsid-gui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-playsid-gui.txt COMMAND=PlaySID-GUI
+If EXISTS RAM:L/r-playsid-gui.txt
+  Type >>RAM:L/b-playsid-gui.txt RAM:L/r-playsid-gui.txt
+EndIf
+Date >>RAM:L/b-playsid-gui.txt
+RAM:b/putfile >NIL: RAM:L/b-playsid-gui.txt b-playsid-gui.txt 8801
+If EXISTS RAM:L/o-playsid-gui.txt
+RAM:b/putfile >NIL: RAM:L/o-playsid-gui.txt o-playsid-gui.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-playsid-gui 8801
+Wait 3
+Echo >RAM:L/b-sokobangp2x.txt "==== sokobangp2x: Sokoban, stack 1000000"
+Date >>RAM:L/b-sokobangp2x.txt
+If NOT EXISTS SYS:Batch/sokobangp2x
+  Echo >>RAM:L/b-sokobangp2x.txt "sokobangp2x: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start sokobangp2x "SYS:Batch/sokobangp2x" Sokoban 1000000
+  Wait 15
+  Echo >>RAM:L/b-sokobangp2x.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-sokobangp2x.txt COMMAND=Sokoban
+  If EXISTS RAM:L/r-sokobangp2x.txt
+    Type >>RAM:L/b-sokobangp2x.txt RAM:L/r-sokobangp2x.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "sokobangp2x"
+RAM:b/putfile >NIL: RAM:L/m shot-sokobangp2x 8801
+Wait 4
+Status >NIL: COMMAND=Sokoban
+If NOT WARN
+  Break >NIL: `Status COMMAND=Sokoban` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-sokobangp2x.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-sokobangp2x.txt COMMAND=Sokoban
+If EXISTS RAM:L/r-sokobangp2x.txt
+  Type >>RAM:L/b-sokobangp2x.txt RAM:L/r-sokobangp2x.txt
+EndIf
+Date >>RAM:L/b-sokobangp2x.txt
+RAM:b/putfile >NIL: RAM:L/b-sokobangp2x.txt b-sokobangp2x.txt 8801
+If EXISTS RAM:L/o-sokobangp2x.txt
+RAM:b/putfile >NIL: RAM:L/o-sokobangp2x.txt o-sokobangp2x.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-sokobangp2x 8801
+Wait 3
+Echo >RAM:L/b-tbftss.txt "==== tbftss: TBFTSS, stack 400000"
+Date >>RAM:L/b-tbftss.txt
+If NOT EXISTS SYS:Batch/tbftss
+  Echo >>RAM:L/b-tbftss.txt "tbftss: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start tbftss "SYS:Batch/tbftss" TBFTSS 400000
+  Wait 15
+  Echo >>RAM:L/b-tbftss.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-tbftss.txt COMMAND=TBFTSS
+  If EXISTS RAM:L/r-tbftss.txt
+    Type >>RAM:L/b-tbftss.txt RAM:L/r-tbftss.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "tbftss"
+RAM:b/putfile >NIL: RAM:L/m shot-tbftss 8801
+Wait 4
+Status >NIL: COMMAND=TBFTSS
+If NOT WARN
+  Break >NIL: `Status COMMAND=TBFTSS` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-tbftss.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-tbftss.txt COMMAND=TBFTSS
+If EXISTS RAM:L/r-tbftss.txt
+  Type >>RAM:L/b-tbftss.txt RAM:L/r-tbftss.txt
+EndIf
+Date >>RAM:L/b-tbftss.txt
+RAM:b/putfile >NIL: RAM:L/b-tbftss.txt b-tbftss.txt 8801
+If EXISTS RAM:L/o-tbftss.txt
+RAM:b/putfile >NIL: RAM:L/o-tbftss.txt o-tbftss.txt 8801
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-tbftss 8801
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove ab3dhd
+Echo >>RAM:L/c.txt "remove ab3dhd: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove davegnukem
+Echo >>RAM:L/c.txt "remove davegnukem: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove fheroes2
+Echo >>RAM:L/c.txt "remove fheroes2: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove hexen2
+Echo >>RAM:L/c.txt "remove hexen2: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove mplayer
+Echo >>RAM:L/c.txt "remove mplayer: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove playsid-gui
+Echo >>RAM:L/c.txt "remove playsid-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove sokobangp2x
+Echo >>RAM:L/c.txt "remove sokobangp2x: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove tbftss
+Echo >>RAM:L/c.txt "remove tbftss: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8801
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8801

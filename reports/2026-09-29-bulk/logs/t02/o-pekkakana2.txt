@@ -1,0 +1,32 @@
+[34m[DEBUG][0m	PK2	- Pekka Kana 2 started!
+[34m[DEBUG][0m	PK2	- Game version: Pekka Kana 2 Greta Engine 1.0 (no-zip)
+[34m[DEBUG][0m	PK2	- Assets path - AROS:Batch/pekkakana2/res
+[34m[DEBUG][0m	PK2	- Data path - AROS:Batch/pekkakana2/res/data
+[34m[DEBUG][0m	PK2	- No settings found
+[34m[DEBUG][0m	PK2	- Searching language from code: en
+[34m[DEBUG][0m	PK2	- Found 2 episodes
+[32m[INFO][0m	PK2	- Loading save version 4
+[34m[DEBUG][0m	Piste	- We compiled against SDL version 2.32.10 ...
+[34m[DEBUG][0m	Piste	- But we are linking against SDL version 2.32.10.
+[34m[DEBUG][0m	PDraw	- Initializing buffers
+[34m[DEBUG][0m	PRender	- Initializing graphics
+[32m[INFO][0m	PRender	- Video driver: aros
+[34m[DEBUG][0m	PSdl	- Created renderer: SOFTWARE
+[32m[INFO][0m	PInput	- No Controller found
+[32m[INFO][0m	PInput	- No haptic found
+[34m[DEBUG][0m	PSound	- buffer size: 1024
+[34m[DEBUG][0m	PSound	- Desired 44100hz 0x8010
+[34m[DEBUG][0m	PSound	- Audio driver: AHI
+[34m[DEBUG][0m	PSound	- Got 44100hz 0x8010
+[34m[DEBUG][0m	PK2	- Loading language from AROS:Batch/pekkakana2/res/language/english.txt
+[34m[DEBUG][0m	PDraw	- Created font from AROS:Batch/pekkakana2/res/language/fonts/ScandicSmall.txt - id 0
+[34m[DEBUG][0m	PDraw	- Created font from AROS:Batch/pekkakana2/res/language/fonts/ScandicBig1.txt - id 1
+[34m[DEBUG][0m	PDraw	- Created font from AROS:Batch/pekkakana2/res/language/fonts/ScandicBig2.txt - id 2
+[34m[DEBUG][0m	PDraw	- Created font from AROS:Batch/pekkakana2/res/language/fonts/ScandicBig3.txt - id 3
+[32m[INFO][0m	PInput	- No Controller found
+[32m[INFO][0m	PInput	- No haptic found
+[34m[DEBUG][0m	Piste	- FPS set to 60
+[34m[DEBUG][0m	PSound	- Loaded AROS:Batch/pekkakana2/res/music/intro.xm
+[34m[DEBUG][0m	PSdl	- Terminated
+[34m[DEBUG][0m	PK2	- Terminated
+[34m[DEBUG][0m	PLog	- Terminated

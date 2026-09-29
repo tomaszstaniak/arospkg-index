@@ -1,0 +1,109 @@
+==== stage C: remove
+removed ab3dhd
+remove ab3dhd: rc=0
+note: 1 file(s) changed locally were kept in SYS:Batch/davegnukem:
+      .gnukem/logs/DaveGnukem.log
+removed davegnukem
+remove davegnukem: rc=0
+removed fheroes2
+remove fheroes2: rc=0
+removed hexen2
+remove hexen2: rc=0
+removed mplayer
+remove mplayer: rc=0
+removed playsid-gui
+remove playsid-gui: rc=0
+removed sokobangp2x
+remove sokobangp2x: rc=0
+removed tbftss
+remove tbftss: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:56:11
+tbftss                       Dir ---rwed Today       17:56:12
+sokobangp2x                  Dir ---rwed Today       17:56:11
+playsid-gui                  Dir ---rwed Today       17:56:11
+hexen2                       Dir ---rwed Today       17:56:11
+fheroes2                     Dir ---rwed Today       17:56:11
+davegnukem                   Dir ---rwed Today       17:56:10
+ab3dhd                       Dir ---rwed Today       17:56:10
+cache                        Dir ---rwed Today       17:52:35
+db                           Dir ---rwed Today       17:56:12
+10 directories - 10 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/tbftss" on Tuesday 09/29/26:
+config.json                 1648 ---rwed Today       17:55:43
+1 file - 4 blocks used
+Directory "SYS:Batch/sokobangp2x" on Tuesday 09/29/26:
+music                        Dir ---rwed Today       17:52:32
+fonts                        Dir ---rwed Today       17:56:11
+2 directories - 2 blocks used
+Directory "SYS:Batch/sokobangp2x/music" on Tuesday 09/29/26:
+periwinkle.ogg           1317666 ---rwed Today       17:52:32
+Puzzle Game 3.ogg        1945830 ---rwed Today       17:52:32
+041415calmbgm.ogg         932273 ---rwed Today       17:52:32
+title.ogg                1473079 ---rwed Today       17:52:32
+4 files - 11074 blocks used
+Directory "SYS:Batch/sokobangp2x/fonts" on Tuesday 09/29/26:
+SpaceMono-Regular.ttf      90904 ---rwed Today       17:52:32
+Roboto-Black.ttf          168060 ---rwed Today       17:52:32
+Roboto-Light.ttf          167000 ---rwed Today       17:52:32
+3 files - 834 blocks used
+Directory "SYS:Batch/playsid-gui" is empty
+Directory "SYS:Batch/hexen2" is empty
+Directory "SYS:Batch/fheroes2" on Tuesday 09/29/26:
+fheroes2.cfg                3386 ---rwed Today       17:53:32
+1 file - 7 blocks used
+Directory "SYS:Batch/davegnukem" on Tuesday 09/29/26:
+.gnukem                      Dir ---rwed Today       17:56:10
+data                         Dir ---rwed Today       17:56:10
+2 directories - 2 blocks used
+Directory "SYS:Batch/davegnukem/.gnukem" on Tuesday 09/29/26:
+logs                         Dir ---rwed Today       17:52:25
+1 directory - 1 block used
+Directory "SYS:Batch/davegnukem/.gnukem/logs" on Tuesday 09/29/26:
+DaveGnukem.log              8801 ---rwed Today       17:52:25
+1 file - 18 blocks used
+Directory "SYS:Batch/davegnukem/data" on Tuesday 09/29/26:
+music                        Dir ---rwed Today       17:52:25
+1 directory - 1 block used
+Directory "SYS:Batch/davegnukem/data/music" on Tuesday 09/29/26:
+eric_matyas                  Dir ---rwed Today       17:56:10
+1 directory - 1 block used
+Directory "SYS:Batch/davegnukem/data/music/eric_matyas" on Tuesday 09/29/26:
+8-Bit-Mayhem.ogg         1235582 ---rwed Today       17:52:25
+1 file - 2414 blocks used
+Directory "SYS:Batch/ab3dhd" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+tbftss.zip               47940255 ---rwed Today       17:52:34
+sokobangp2x.zip          7691108 ---rwed Today       17:52:32
+playsid-gui.zip            65203 ---rwed Today       17:52:31
+mplayer.zip              9182048 ---rwed Today       17:52:30
+hexen2.zip               3249500 ---rwed Today       17:52:28
+fheroes2.zip             16660558 ---rwed Today       17:52:26
+davegnukem.zip           21815509 ---rwed Today       17:52:24
+ab3dhd.zip               2298925 ---rwed Today       17:52:22
+8 files - 212706 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:56:12
+transactions                 Dir ---rwed Today       17:56:12
+installed                    Dir ---rwed Today       17:56:12
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+tbftss-6abbfbbc.json         143 ---rwed Today       17:56:12
+sokobangp2x-6abbfbbb.json     330 ---rwed Today       17:56:11
+playsid-gui-6abbfbbb.json     151 ---rwed Today       17:56:11
+hexen2-6abbfbbb.json         142 ---rwed Today       17:56:11
+fheroes2-6abbfbbb.json       147 ---rwed Today       17:56:11
+davegnukem-6abbfbba.json     223 ---rwed Today       17:56:10
+ab3dhd-6abbfbba.json         143 ---rwed Today       17:56:10
+7 files - 7 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 26 files - 20 directories - 227084 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:56:12

@@ -1,0 +1,351 @@
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8801
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+List >RAM:L/check.txt RAM:b/index.json LFORMAT="index.json %l bytes"
+RAM:b/apkg >>RAM:L/check.txt --version
+Echo >>RAM:L/check.txt "*N==== search"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/check.txt search
+Echo >>RAM:L/check.txt "search: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ab3dhd"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ab3dhd
+Echo >>RAM:L/show.txt "show ab3dhd: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show alac"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show alac
+Echo >>RAM:L/show.txt "show alac: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show amiberry"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show amiberry
+Echo >>RAM:L/show.txt "show amiberry: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show antiword"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show antiword
+Echo >>RAM:L/show.txt "show antiword: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show apotris"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show apotris
+Echo >>RAM:L/show.txt "show apotris: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show arrakis"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show arrakis
+Echo >>RAM:L/show.txt "show arrakis: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show badapple"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show badapple
+Echo >>RAM:L/show.txt "show badapple: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show bin2iso"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show bin2iso
+Echo >>RAM:L/show.txt "show bin2iso: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show blips"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show blips
+Echo >>RAM:L/show.txt "show blips: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show boy"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show boy
+Echo >>RAM:L/show.txt "show boy: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show breakhack"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show breakhack
+Echo >>RAM:L/show.txt "show breakhack: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show cabextract"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show cabextract
+Echo >>RAM:L/show.txt "show cabextract: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ccd2cue"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ccd2cue
+Echo >>RAM:L/show.txt "show ccd2cue: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ccd2iso"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ccd2iso
+Echo >>RAM:L/show.txt "show ccd2iso: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show davegnukem"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show davegnukem
+Echo >>RAM:L/show.txt "show davegnukem: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show daysleeper"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show daysleeper
+Echo >>RAM:L/show.txt "show daysleeper: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show delugem"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show delugem
+Echo >>RAM:L/show.txt "show delugem: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show demac"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show demac
+Echo >>RAM:L/show.txt "show demac: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show demoeffects"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show demoeffects
+Echo >>RAM:L/show.txt "show demoeffects: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show devilutionx"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show devilutionx
+Echo >>RAM:L/show.txt "show devilutionx: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show dirtree"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show dirtree
+Echo >>RAM:L/show.txt "show dirtree: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show diskusage"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show diskusage
+Echo >>RAM:L/show.txt "show diskusage: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show dosbox"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show dosbox
+Echo >>RAM:L/show.txt "show dosbox: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show dose2"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show dose2
+Echo >>RAM:L/show.txt "show dose2: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show fallout"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show fallout
+Echo >>RAM:L/show.txt "show fallout: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show fallout2"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show fallout2
+Echo >>RAM:L/show.txt "show fallout2: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show fheroes2"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show fheroes2
+Echo >>RAM:L/show.txt "show fheroes2: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show finder"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show finder
+Echo >>RAM:L/show.txt "show finder: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show fireoftheapes"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show fireoftheapes
+Echo >>RAM:L/show.txt "show fireoftheapes: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show flx_play"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show flx_play
+Echo >>RAM:L/show.txt "show flx_play: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show folio"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show folio
+Echo >>RAM:L/show.txt "show folio: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ft2clone"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ft2clone
+Echo >>RAM:L/show.txt "show ft2clone: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show gicriptofilex"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show gicriptofilex
+Echo >>RAM:L/show.txt "show gicriptofilex: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show giddy3"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show giddy3
+Echo >>RAM:L/show.txt "show giddy3: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show giocodel15"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show giocodel15
+Echo >>RAM:L/show.txt "show giocodel15: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show gisplita"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show gisplita
+Echo >>RAM:L/show.txt "show gisplita: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show gmore"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show gmore
+Echo >>RAM:L/show.txt "show gmore: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show gnurobbo"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show gnurobbo
+Echo >>RAM:L/show.txt "show gnurobbo: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show grafx2"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show grafx2
+Echo >>RAM:L/show.txt "show grafx2: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show grep"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show grep
+Echo >>RAM:L/show.txt "show grep: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show hexen2"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show hexen2
+Echo >>RAM:L/show.txt "show hexen2: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show hivelyreplay"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show hivelyreplay
+Echo >>RAM:L/show.txt "show hivelyreplay: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show hocoslamfy"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show hocoslamfy
+Echo >>RAM:L/show.txt "show hocoslamfy: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show hostile-takeover"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show hostile-takeover
+Echo >>RAM:L/show.txt "show hostile-takeover: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show hydracastle"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show hydracastle
+Echo >>RAM:L/show.txt "show hydracastle: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show iconmake"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show iconmake
+Echo >>RAM:L/show.txt "show iconmake: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show isomaker"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show isomaker
+Echo >>RAM:L/show.txt "show isomaker: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show isomaker-gui"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show isomaker-gui
+Echo >>RAM:L/show.txt "show isomaker-gui: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show isotool"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show isotool
+Echo >>RAM:L/show.txt "show isotool: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show isotools-gui"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show isotools-gui
+Echo >>RAM:L/show.txt "show isotools-gui: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show keen4"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show keen4
+Echo >>RAM:L/show.txt "show keen4: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show lbreakouthd"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show lbreakouthd
+Echo >>RAM:L/show.txt "show lbreakouthd: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ledblur"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ledblur
+Echo >>RAM:L/show.txt "show ledblur: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show mcamiga"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show mcamiga
+Echo >>RAM:L/show.txt "show mcamiga: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show metemp3"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show metemp3
+Echo >>RAM:L/show.txt "show metemp3: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show micropolis"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show micropolis
+Echo >>RAM:L/show.txt "show micropolis: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show minislug"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show minislug
+Echo >>RAM:L/show.txt "show minislug: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show mplayer"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show mplayer
+Echo >>RAM:L/show.txt "show mplayer: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show nano"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show nano
+Echo >>RAM:L/show.txt "show nano: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show nomarch"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show nomarch
+Echo >>RAM:L/show.txt "show nomarch: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ominoarcade"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ominoarcade
+Echo >>RAM:L/show.txt "show ominoarcade: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show ominostage"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show ominostage
+Echo >>RAM:L/show.txt "show ominostage: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show openloco"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show openloco
+Echo >>RAM:L/show.txt "show openloco: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show opentyrian"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show opentyrian
+Echo >>RAM:L/show.txt "show opentyrian: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show openxcom"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show openxcom
+Echo >>RAM:L/show.txt "show openxcom: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show pekkakana2"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show pekkakana2
+Echo >>RAM:L/show.txt "show pekkakana2: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show pkg-54321"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show pkg-54321
+Echo >>RAM:L/show.txt "show pkg-54321: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show pkg-7mezzoplus"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show pkg-7mezzoplus
+Echo >>RAM:L/show.txt "show pkg-7mezzoplus: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show pkg-7zdec"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show pkg-7zdec
+Echo >>RAM:L/show.txt "show pkg-7zdec: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show planethively"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show planethively
+Echo >>RAM:L/show.txt "show planethively: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show potrace"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show potrace
+Echo >>RAM:L/show.txt "show potrace: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show prboom-plus"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show prboom-plus
+Echo >>RAM:L/show.txt "show prboom-plus: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show protrekkr"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show protrekkr
+Echo >>RAM:L/show.txt "show protrekkr: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show qlview"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show qlview
+Echo >>RAM:L/show.txt "show qlview: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show rescode"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show rescode
+Echo >>RAM:L/show.txt "show rescode: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show residualvm"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show residualvm
+Echo >>RAM:L/show.txt "show residualvm: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show rtf-riddle"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show rtf-riddle
+Echo >>RAM:L/show.txt "show rtf-riddle: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show scopagame"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show scopagame
+Echo >>RAM:L/show.txt "show scopagame: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show screentest"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show screentest
+Echo >>RAM:L/show.txt "show screentest: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show sdllopan"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show sdllopan
+Echo >>RAM:L/show.txt "show sdllopan: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show sdlpop"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show sdlpop
+Echo >>RAM:L/show.txt "show sdlpop: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show sfsobject"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show sfsobject
+Echo >>RAM:L/show.txt "show sfsobject: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show shooterspace"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show shooterspace
+Echo >>RAM:L/show.txt "show shooterspace: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show siddump"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show siddump
+Echo >>RAM:L/show.txt "show siddump: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show skandalfoclock"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show skandalfoclock
+Echo >>RAM:L/show.txt "show skandalfoclock: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show sokobangp2x"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show sokobangp2x
+Echo >>RAM:L/show.txt "show sokobangp2x: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show soliton"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show soliton
+Echo >>RAM:L/show.txt "show soliton: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show sploiner"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show sploiner
+Echo >>RAM:L/show.txt "show sploiner: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show stercus"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show stercus
+Echo >>RAM:L/show.txt "show stercus: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show stratagus"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show stratagus
+Echo >>RAM:L/show.txt "show stratagus: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show super-haxagon"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show super-haxagon
+Echo >>RAM:L/show.txt "show super-haxagon: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show super_trevor_land"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show super_trevor_land
+Echo >>RAM:L/show.txt "show super_trevor_land: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show tbftss"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show tbftss
+Echo >>RAM:L/show.txt "show tbftss: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show tiltnroll"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show tiltnroll
+Echo >>RAM:L/show.txt "show tiltnroll: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show timeless"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show timeless
+Echo >>RAM:L/show.txt "show timeless: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show tinysid"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show tinysid
+Echo >>RAM:L/show.txt "show tinysid: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show tinytris"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show tinytris
+Echo >>RAM:L/show.txt "show tinytris: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show tressette"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show tressette
+Echo >>RAM:L/show.txt "show tressette: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show unlzx"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show unlzx
+Echo >>RAM:L/show.txt "show unlzx: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show unrar"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show unrar
+Echo >>RAM:L/show.txt "show unrar: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show unshield"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show unshield
+Echo >>RAM:L/show.txt "show unshield: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show untangle"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show untangle
+Echo >>RAM:L/show.txt "show untangle: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show untarka"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show untarka
+Echo >>RAM:L/show.txt "show untarka: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show wildmidi"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show wildmidi
+Echo >>RAM:L/show.txt "show wildmidi: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show xrick"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show xrick
+Echo >>RAM:L/show.txt "show xrick: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show zaphod"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show zaphod
+Echo >>RAM:L/show.txt "show zaphod: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show zgloom"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show zgloom
+Echo >>RAM:L/show.txt "show zgloom: rc=$RC"
+Echo >>RAM:L/show.txt "*N==== show zunecalc"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/show.txt show zunecalc
+Echo >>RAM:L/show.txt "show zunecalc: rc=$RC"
+RAM:b/putfile >NIL: RAM:L/show.txt show.txt 8801
+Echo >>RAM:L/check.txt "*N==== install and remove flx_play"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/check.txt install flx_play
+Echo >>RAM:L/check.txt "install: rc=$RC"
+List >>RAM:L/check.txt SYS:Chk
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/check.txt remove flx_play
+Echo >>RAM:L/check.txt "remove: rc=$RC"
+RAM:b/apkg --root SYS:Chk --index RAM:b/index.json >>RAM:L/check.txt list
+RAM:b/putfile >NIL: RAM:L/check.txt check.txt 8801
+Echo >RAM:L/end.txt end
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8801

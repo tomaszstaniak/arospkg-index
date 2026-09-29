@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/screentest with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch c04).
+
+status          = "approved"
+id              = "screentest"
+version         = "1"
+summary         = "Tests the stability of your screen"
+arch            = "x86_64"
+abi             = "v11"
+category        = "demo/misc"
+url             = "https://archives.arosworld.org/share/demo/misc/screentest-v1.x86_64-aros-v11.zip"
+size            = 34054
+upload_date     = "20250607-18.38"
+selected_by     = "only-candidate"
+
+sha256          = "7c2bdf49788dccd2eab9e0f7ad8ac77b56a9520557dccd742bc718fc255840ef"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Screentest"
+icon            = "Screentest.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

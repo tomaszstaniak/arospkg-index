@@ -1,0 +1,82 @@
+==== stage C: remove
+removed alac
+remove alac: rc=0
+removed amiberry
+remove amiberry: rc=0
+removed cls
+remove cls: rc=0
+removed demac
+remove demac: rc=0
+removed devilutionx
+remove devilutionx: rc=0
+removed giocodel15
+remove giocodel15: rc=0
+removed muiplot
+remove muiplot: rc=0
+apkg: not installed
+     nano
+remove nano: rc=10
+removed ominoarcade
+remove ominoarcade: rc=0
+apkg: not installed
+     opentyrian
+remove opentyrian: rc=10
+apkg: not installed
+     pkg-54321
+remove pkg-54321: rc=10
+removed sploiner
+remove sploiner: rc=0
+apkg: not installed
+     tiltnroll
+remove tiltnroll: rc=10
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:43:16
+ominoarcade                  Dir ---rwed Today       17:43:16
+muiplot                      Dir ---rwed Today       17:43:16
+giocodel15                   Dir ---rwed Today       17:43:16
+devilutionx                  Dir ---rwed Today       17:43:16
+amiberry                     Dir ---rwed Today       17:43:15
+cache                        Dir ---rwed Today       17:39:02
+db                           Dir ---rwed Today       17:43:16
+8 directories - 8 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/ominoarcade" is empty
+Directory "SYS:Batch/muiplot" is empty
+Directory "SYS:Batch/giocodel15" is empty
+Directory "SYS:Batch/devilutionx" on Tuesday 09/29/26:
+devilutionx.log             1359 ---rwed Today       17:40:56
+1 file - 3 blocks used
+Directory "SYS:Batch/amiberry" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+sploiner.zip               63086 ---rwed Today       17:39:02
+ominoarcade.zip          2510500 ---rwed Today       17:39:01
+muiplot.lha               269792 ---rwed Today       17:39:00
+giocodel15.zip            529710 ---rwed Today       17:39:00
+devilutionx.zip          8409190 ---rwed Today       17:38:58
+demac.zip                 110298 ---rwed Today       17:38:57
+cls.zip                    41871 ---rwed Today       17:38:57
+amiberry.zip             13468412 ---rwed Today       17:38:54
+alac.zip                   73149 ---rwed Today       17:38:53
+9 files - 49762 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:43:16
+transactions                 Dir ---rwed Today       17:43:16
+installed                    Dir ---rwed Today       17:43:16
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+ominoarcade-6abbf8b4.json     152 ---rwed Today       17:43:16
+muiplot-6abbf8b4.json        143 ---rwed Today       17:43:16
+giocodel15-6abbf8b4.json     149 ---rwed Today       17:43:16
+devilutionx-6abbf8b4.json     153 ---rwed Today       17:43:16
+amiberry-6abbf8b3.json       147 ---rwed Today       17:43:15
+5 files - 5 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 15 files - 11 directories - 49781 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:43:16

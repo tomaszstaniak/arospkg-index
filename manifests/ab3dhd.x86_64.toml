@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/ab3dhd with Run
+# and input from NIL:, stack 500000 bytes: its window or screen was open and
+# the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r01).
+
+status          = "approved"
+id              = "ab3dhd"
+version         = "v0.9.0b1"
+summary         = "Alien Breed 3D HD Remaster"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/fps"
+url             = "https://archives.arosworld.org/share/game/fps/ab3dhd.x86_64-aros-v11.zip"
+size            = 2298925
+upload_date     = "20260513-19.37"
+selected_by     = "only-candidate"
+
+sha256          = "067e3bbc32de0407cd5c9dfe96ae688c526a7fc54ec80e54373704baa3a40bc5"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Alien Breed HD"
+icon            = "Alien Breed HD.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

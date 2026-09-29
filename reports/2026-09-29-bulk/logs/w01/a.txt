@@ -1,0 +1,132 @@
+==== stage A: install
+
+==== scopagame
+Tuesday 29-Sep-26 19:51:17
+fetching https://archives.arosworld.org/share/game/card/scopagame.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/card/scopagame.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/scopagame.zip
+installed scopagame
+install scopagame: rc=0
+{
+  "schema":1,
+  "name":"scopagame",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"ScopaGame1.0",
+  "installed":"2026-09-29T19:51:17Z",
+  "origin":"https://archives.arosworld.org/share/game/card/scopagame.x86_64-aros-v11.zip",
+  "archive_sha256":"598db4a58f619c4e2a77c8645489ea2f5f5bb9d5df0d65be8a6ceb1720780161",
+  "archive_size":651617,
+  "reason":"explicit",
+  "dir":"scopagame",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"111f3c938f9d1fdf16dbbb228184215e6abeea263ece270a21a2889af0ca4620", "size":1087 },
+    { "path":"Data/applauso.iff", "sha256":"3a88d10b53ae5bfca4285bff7208185a0f7f30f39b761560c6b073ed4ab9d87f", "size":88178 },
+    { "path":"Data/beep.iff", "sha256":"5aae67f9c6106bc0a00e639a4498af8d986f5eb493a8429a141fd44fb40dbc91", "size":4530 },
+    { "path":"Data/risata.iff", "sha256":"5b0dac5cc1dc3925efc5e1ed2d8697843a697858aa45b5192b1e9da0961d36ff", "size":100684 },
+    { "path":"Scopa", "sha256":"593269604949fb5145696316713ecda0fb5546329116efb933fa3014de0b0236", "size":2819184 },
+    { "path":"Scopa.info", "sha256":"ab4dda3d566a3f45eeaff51a5e7f9d0e8428d3aabf71debda641a767ab7ca1d2", "size":1722 },
+    { "path":"Readme", "sha256":"0df86e181a9e5075ce0d48100c76c8c87601063c8a69e4caa1fe0644c8cbdccb", "size":2904 }
+  ]
+}
+
+==== switch
+Tuesday 29-Sep-26 19:51:17
+fetching https://archives.arosworld.org/share/utility/workbench/switch.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/workbench/switch.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/switch.zip
+installed switch
+install switch: rc=0
+{
+  "schema":1,
+  "name":"switch",
+  "version":"1.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"SWitch",
+  "installed":"2026-09-29T19:51:18Z",
+  "origin":"https://archives.arosworld.org/share/utility/workbench/switch.x86_64-aros-v11.zip",
+  "archive_sha256":"ba181c660efd04585ce2c978f76c718898b96676a7d70359e5a2e6b23cf93a07",
+  "archive_size":80089,
+  "reason":"explicit",
+  "dir":"switch",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"966ca8a94a6bc1e9fab147738a88e2ca7d451e9de962e4db567485f2b4a21a41", "size":8876, "member":"SWitch.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"SWitch.info", "sha256":"af9f47202b3ceba975ad85b7a91eb6b8cb64d12d3c88b0f94e0a94a26b91291e", "size":7911 },
+    { "path":"SWitch", "sha256":"58825086a97f3ae326c04c192d3791c4c35953daf51f0da5f61b2b2d9ca56c3a", "size":42808 },
+    { "path":"Source.info", "sha256":"6dafbce05f24bff8ab0d528e025dc7a5047b5da1435d6006db20113eecd540fc", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"49451075a14b9ec03ac70d5d3ffe8f484f780b140a76f4004e8481c4dde495ad", "size":19164 },
+    { "path":"Docs.info", "sha256":"0053c56f2e705920b86ae9045d34ba0a35706ca0b039f6b2d2de8397cd779a77", "size":9125 },
+    { "path":"Docs/SWitch.info", "sha256":"435ce4046359834db49afc3fda59ba82230e6651fbbb02930218081dda0546db", "size":8518 },
+    { "path":"Docs/SWitch", "sha256":"8553e5521dd03a554bd66fa71631f07e5277d128c52110f7b8dc13e34d115f45", "size":6870 }
+  ]
+}
+
+==== unrar
+Tuesday 29-Sep-26 19:51:18
+fetching https://archives.arosworld.org/share/utility/archive/unrar-v6.11.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/unrar-v6.11.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/unrar.zip
+installed unrar
+install unrar: rc=0
+{
+  "schema":1,
+  "name":"unrar",
+  "version":"6.11",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"UnRAR",
+  "installed":"2026-09-29T19:51:18Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/unrar-v6.11.x86_64-aros-v11.zip",
+  "archive_sha256":"0c6e0eca2aca95cfb76e8008429d73ff476c667bc89a34f9c693c5918cfb5896",
+  "archive_size":3291979,
+  "reason":"explicit",
+  "dir":"unrar",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"0abe01ba8af722fd142cbc532a961b0caa23711299fb5b3b2698fecb25be93df", "size":8344, "member":"UnRAR.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"UnRAR.info", "sha256":"0913a5b792fb8dcac129e58c606f379b5925c1bd85d6463456889a3ef56b0758", "size":8501 },
+    { "path":"UnRAR", "sha256":"6c54a4ce8df1cb4a47f2abb13bb9fc71ceb91140d2350b780e4c1e4745f6a452", "size":1971216 },
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"7e1b45a20aaf4e5b89ef2b4ef16b64d6cff7d5a3615e6c1400e5fb2a40a3b167", "size":2168079 },
+    { "path":"Readme.info", "sha256":"da194dd51f39dc9f8b973abc582ebd0e89420eeefdae3cf3ff613a6ccbb07f72", "size":8785 },
+    { "path":"Readme", "sha256":"5fa24a5f6bff4a99e8eed27073e94d95d8c32888e2c35c198637cf050fe2dc98", "size":3277 },
+    { "path":"License_Utf8proc", "sha256":"3f5bc0f7207a4b0d7a34cb5dbfb55af8b1518cfcee96616ec118eac2ba65d20d", "size":5129 },
+    { "path":"License_Newlib", "sha256":"5c6246ff5832d76ccd5d4bca529bba2857c0691c16e11279a20df4d3abfc9763", "size":46154 },
+    { "path":"License_Libiconv", "sha256":"b663ec8664828721933ed092926d68b4ab79979d528e91f0fbf4d0a830fa918f", "size":25437 },
+    { "path":"License_Getpass", "sha256":"5ef20631019d01b08618ca6ed5de773788bcf93c3027116c1b13ca2253887c63", "size":2073 },
+    { "path":"License", "sha256":"6ecc1687808b7d66b24f874755abfed7464d9751ed0001cd4e8e5d9bf397ff8a", "size":1976 },
+    { "path":"Catalogs.info", "sha256":"02a60b22df866b35f9643517c2f59e65b7a543a62f6a5a9ba7463a412eb0ea97", "size":9617 },
+    { "path":"Catalogs/Spanish.info", "sha256":"e0a31940cf8353be20103482123ed237982dbd32c306675b45023aeecffaacbf", "size":8865 },
+    { "path":"Catalogs/Spanish/unrar.catalog", "sha256":"aaf866666b6db76d8ae9f6cb3de138a7e4bbaf72d18ca8fd636c055ebff71324", "size":15602 },
+    { "path":"Catalogs/Russian.info", "sha256":"f3e1c410d5a81d20395819c4ce3ee18cc78d298cd18a327cafb1f627300ed078", "size":7917 },
+    { "path":"Catalogs/Russian/unrar.catalog", "sha256":"b833f4f46a2463000e67c75f746d5d989a934dd2fa135a015c894a6a6af4288b", "size":19506 },
+    { "path":"Catalogs/Polish.info", "sha256":"e873454b4f6e7fc8c66fbdbbe7d6053ce4bc9d36c60941214564dca6627dc532", "size":7654 },
+    { "path":"Catalogs/Polish/unrar.catalog", "sha256":"1ccaca7e86e0ee30e7d7e7a74712b132b874c6ca95c59e8acfed4a3200e3ec1a", "size":18690 },
+    { "path":"Catalogs/Italian.info", "sha256":"748a2648d84a73e97a5e5c56409fe4d8cfada5b872d7b917c9672be4fd2b7abf", "size":8186 },
+    { "path":"Catalogs/Italian/unrar.catalog", "sha256":"08094ecf974be97271a48aa3e4898acfcfaa0188fef00facf2c13838973bebdb", "size":19322 },
+    { "path":"Catalogs/German.info", "sha256":"74386e4595e5c8ce71f952cb09b5c661211801dff873e5d9f87fb6d0836bf874", "size":7997 },
+    { "path":"Catalogs/German/unrar.catalog", "sha256":"64d8064eef276d4093a8caedf93f202cf0d47d3dc5c7f1d5939673cd4fd74b88", "size":20364 },
+    { "path":"Catalogs/French.info", "sha256":"020c9fc1ccf13874d4a4efe05327196d97a663dd7379d7028f78ab69ec1b62a7", "size":7931 },
+    { "path":"Catalogs/French/unrar.catalog", "sha256":"ce84202d52f5dfd9102ffb3a5bfe2cca3ab18ceb14d783229511285901ff9166", "size":20386 }
+  ]
+}

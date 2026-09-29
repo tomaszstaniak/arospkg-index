@@ -1,0 +1,56 @@
+==== stage C: remove
+removed hex2
+remove hex2: rc=0
+removed amigakeyremaper
+remove amigakeyremaper: rc=0
+removed stercus
+remove stercus: rc=0
+removed joytest
+remove joytest: rc=0
+removed soniccd
+remove soniccd: rc=0
+removed zapperng
+remove zapperng: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       18:20:47
+soniccd                      Dir ---rwed Today       18:20:45
+stercus                      Dir ---rwed Today       18:20:27
+hex2                         Dir ---rwed Today       18:20:11
+cache                        Dir ---rwed Today       18:16:52
+db                           Dir ---rwed Today       18:20:50
+6 directories - 6 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/soniccd" on Tuesday 09/29/26:
+usage.txt                    210 ---rwed Today       18:19:06
+UData.bin                    768 ---rwed Today       18:19:05
+2 files - 3 blocks used
+Directory "SYS:Batch/stercus" is empty
+Directory "SYS:Batch/hex2" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+zapperng.zip               55986 ---rwed Today       18:16:52
+soniccd.zip              1512590 ---rwed Today       18:16:51
+joytest.zip                46242 ---rwed Today       18:16:51
+stercus.zip              2364819 ---rwed Today       18:16:50
+amigakeyremaper.zip        58128 ---rwed Today       18:16:50
+hex2.lha                  248685 ---rwed Today       18:16:49
+6 files - 8375 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       18:20:45
+transactions                 Dir ---rwed Today       18:20:50
+installed                    Dir ---rwed Today       18:20:50
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+soniccd-6abc017d.json        143 ---rwed Today       18:20:45
+stercus-6abc016b.json        143 ---rwed Today       18:20:27
+hex2-6abc015b.json           137 ---rwed Today       18:20:11
+3 files - 3 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 11 files - 9 directories - 8390 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 18:20:54

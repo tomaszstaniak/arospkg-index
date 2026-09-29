@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/pkg-7zdec with
+# Run and input from NIL:, stack 40960 bytes: it printed its usage or output
+# and returned 0. Evidence: reports/2026-09-29-bulk/ (batch s04).
+
+status          = "approved"
+id              = "pkg-7zdec"
+version         = "9.13beta"
+summary         = "Unarchive 7zip files (.7z)"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/archive"
+url             = "https://archives.arosworld.org/share/utility/archive/7zdec.x86_64-aros-v11.zip"
+size            = 253465
+upload_date     = "20250218-11.48"
+selected_by     = "only-candidate"
+
+sha256          = "627118333924e9b350acc5e73f93dfaa4bf0d8d04eca4aac5cc3628575d8608f"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "7zDec"
+icon            = "7zDec.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

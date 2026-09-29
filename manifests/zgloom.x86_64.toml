@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with TCG, with apkg 0.3 (40c2ba93). Started from SYS:Batch/zgloom with Run
+# and input from NIL:, stack 200000 bytes: its window or screen was open and
+# the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch v03).
+
+status          = "approved"
+id              = "zgloom"
+version         = "052026v2"
+summary         = "port of the Amiga FPS Gloom"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/fps"
+url             = "https://archives.arosworld.org/share/game/fps/zgloom.x86_64-aros-v11.zip"
+size            = 20763795
+upload_date     = "20260527-10.32"
+selected_by     = "only-candidate"
+
+sha256          = "2173ef1de466434f3066f6ad7cf0693b866c9ceef448f580e950dd9d6d453643"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "ZGloom"
+icon            = "ZGloom.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

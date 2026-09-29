@@ -1,0 +1,443 @@
+==== stage A: install
+
+==== adoom3
+Tuesday 29-Sep-26 17:38:21
+apkg: this system does not provide what the package needs
+     adoom3
+     sdl.library (LIBS:sdl.library exists but would not open)
+install adoom3: rc=10
+apkg: not installed
+     adoom3
+
+==== boy
+Tuesday 29-Sep-26 17:38:21
+apkg: this system does not provide what the package needs
+     boy
+     sdl.library (LIBS:sdl.library exists but would not open)
+install boy: rc=10
+apkg: not installed
+     boy
+
+==== cabextract
+Tuesday 29-Sep-26 17:38:21
+fetching https://archives.arosworld.org/share/utility/archive/cabextract1.11.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/cabextract1.11.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/cabextract.zip
+installed cabextract
+install cabextract: rc=0
+{
+  "schema":1,
+  "name":"cabextract",
+  "version":"1.11",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"cabextract",
+  "installed":"2026-09-29T17:38:21Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/cabextract1.11.x86_64-aros-v11.zip",
+  "archive_sha256":"64b46474e626ad51f77328921b5bff908f217166d95a07086c4e80b9f43988b1",
+  "archive_size":1244096,
+  "reason":"explicit",
+  "dir":"cabextract",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"cabextract-1.11-x86_64_src.zip", "sha256":"6c5c965ad96ec51254c4c0e7cd0fb1308991188e64532db93091e84aadc10296", "size":560774 },
+    { "path":"README_Aros.txt", "sha256":"163a367b46dfcef906feeda9a4591ea88438b60c5195f5ae89821333d4731edc", "size":2428 },
+    { "path":"Aros/cabinfo", "sha256":"f9dbd81433c852f6b2602e227eb0e4422fc52b0b485c1ae124b4a049e45c6f08", "size":33744 },
+    { "path":"Aros/cabextract", "sha256":"fe466601488408c426bf0ea9aee97a8b2987fbb3b4874db1b24608e3a9e0c4e9", "size":1157448 }
+  ]
+}
+
+==== dclock
+Tuesday 29-Sep-26 17:38:21
+fetching https://archives.arosworld.org/share/utility/workbench/dclock.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/workbench/dclock.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/dclock.lha
+apkg: the archive was rejected
+     SYS:Batch/cache/dclock.lha
+     unsafe member path: ram:dclock/
+install dclock: rc=10
+apkg: not installed
+     dclock
+
+==== demoeffects
+Tuesday 29-Sep-26 17:38:22
+apkg: this system does not provide what the package needs
+     demoeffects
+     sdl.library (LIBS:sdl.library exists but would not open)
+install demoeffects: rc=10
+apkg: not installed
+     demoeffects
+
+==== keen4
+Tuesday 29-Sep-26 17:38:22
+fetching https://archives.arosworld.org/share/game/platform/keen4.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/platform/keen4.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/keen4.lha
+installed keen4
+install keen4: rc=0
+{
+  "schema":1,
+  "name":"keen4",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Keen4_AROS_x64_ABIv11",
+  "installed":"2026-09-29T17:38:22Z",
+  "origin":"https://archives.arosworld.org/share/game/platform/keen4.x86_64-aros-v11.lha",
+  "archive_sha256":"0dbb9c66e597c0451fca762421ba42a1352a509df996da17571f7bda16ff1f18",
+  "archive_size":2064705,
+  "reason":"explicit",
+  "dir":"keen4",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"aros_x64_abiv11_commander_keen", "sha256":"e423a1499806dcbe84d2b582b23db04b81c4b8a66937a13905166dda5391d4ee", "size":2106768 },
+    { "path":"TILEINFO.CK4", "sha256":"3f28c4e7c51447f83882a773081233921377d368d2f5e6df0a928f46e9dff607", "size":23004 },
+    { "path":"STRINGS.CK4", "sha256":"e879f4094e6b22bf45d76e81be2b4e8a459cd54ddb7f3658b37a584ff7079931", "size":5824 },
+    { "path":"Readme", "sha256":"d144bcb2be0dcb2f0926fa53ea112329a8005b2e0e2dba981f11c39c4ac75760", "size":513 },
+    { "path":"MAPHEAD.CK4", "sha256":"542d9c21c243dfb7920fb5dc10f019233ec6f409433ea4190c763bc18793f5b0", "size":402 },
+    { "path":"GFXINFOE.CK4", "sha256":"d91e07ca6e9cb95b79368f0e3116c19cfc4bc420cbf3d75665cb5b57cf0d213d", "size":47 },
+    { "path":"GFXCHUNK.CK4", "sha256":"a9971c2889cc2065b4d0597a2d0a44666b4e4f7a5742cf1ee870e512df7caedd", "size":15429 },
+    { "path":"GAMEMAPS.CK4", "sha256":"01186f8cb99257b69a4f475186deb9ba79b872ed52378131c79c21f6344753ea", "size":99040 },
+    { "path":"EPISODE.CK4", "sha256":"5f7322c3a15ec7bb4589aea2fd5d351899143eab06c895817e83414faf214007", "size":11449 },
+    { "path":"EGAHEAD.CK4", "sha256":"3c56a5ba8bc8303c3ab7b39119e7b472434a452a915c4af0069e67cf06222ad4", "size":14256 },
+    { "path":"EGAGRAPH.CK4", "sha256":"9805168fb910385ad40455541cbcfa1aaa61f9d81b2504274ee0ca0ec4b71550", "size":520581 },
+    { "path":"EGADICT.CK4", "sha256":"af4bb92a011d33219ac736ac965a4e52a75e94e0960b1193e3d76507e2d26ce6", "size":1024 },
+    { "path":"Commander_Keen_4.info", "sha256":"a8e413185be8d73adaf3e9c83033603cdcdfd5f65f9c44e4590869ce0e905b4f", "size":37423 },
+    { "path":"Commander_Keen_4", "sha256":"7c6629ab062d66c3192a35801b463131950cd6855412a475f17694f0bc2b3311", "size":124 },
+    { "path":"AUDIOHHD.CK4", "sha256":"82c6b6b986fc29979055c57eda716ae13e6212e497188b4b3369b99da3b94144", "size":652 },
+    { "path":"AUDIODCT.CK4", "sha256":"8aee41549c743d9980dbd894daf37fa58504f7ae8f1df5275547797ac389460e", "size":1024 },
+    { "path":"AUDIO.CK4", "sha256":"66dcf6070a4bc5c8933815b15dab7145ddcccb959f8f43af2a0449b085a04366", "size":33325 },
+    { "path":"AUDINFOE.CK4", "sha256":"95587d7dccd0d7e674ae7bc12de6a582b9e9d496c5d6b0ffa036becb017f7083", "size":15 },
+    { "path":"ACTION.CK4", "sha256":"b234a038d34a42c5a04bf9135ee6f5f6532665d9214b853fe621a4fa3772d88f", "size":56034 },
+    { "path":"source/source_code.lha", "sha256":"15b8d574b52f5ce52a8dba6be9df5f25de54df0a6375227a6de95947f68bbec9", "size":672378 },
+    { "path":"licenses/LICENSES.txt", "sha256":"bdce07a5f11c6113050e41fee37aebc0d1c710df8370242b6fca2d45127d2cdc", "size":1266 },
+    { "path":"licenses/COPYING.LGPL-2.1", "sha256":"20c17d8b8c48a600800dfd14f95d5cb9ff47066a9641ddeab48dc54aec96e331", "size":26526 },
+    { "path":"licenses/COPYING", "sha256":"8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643", "size":18092 }
+  ]
+}
+
+==== mcamiga
+Tuesday 29-Sep-26 17:38:22
+fetching https://archives.arosworld.org/share/utility/filetool/mcamiga.x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/filetool/mcamiga.x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/mcamiga.lha
+installed mcamiga
+install mcamiga: rc=0
+{
+  "schema":1,
+  "name":"mcamiga",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"MCAmiga",
+  "installed":"2026-09-29T17:38:23Z",
+  "origin":"https://archives.arosworld.org/share/utility/filetool/mcamiga.x86_64-aros-v11.lha",
+  "archive_sha256":"435ee5e1316fb6c86a79bc8908b175d83d53f04f67a4d0d8fa8c46b8b45ff61e",
+  "archive_size":302308,
+  "reason":"explicit",
+  "dir":"mcamiga",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"b7f344e98f307f31fcf43b350c7072d4ce367dc9215821cf5a91383c309c83cc", "size":1679, "member":"MCAmiga.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.txt.info", "sha256":"bdb31cae972a74fafd193ffa034c02f346844864d5814e6bc6377529e5007451", "size":1091 },
+    { "path":"Readme.txt", "sha256":"62095339d0a2c8b2aeca80f0dfaf0929db1ffee053ad675c4d40fa73825acf7b", "size":6105 },
+    { "path":"MCAmiga.info", "sha256":"555d7d80fda7d29371792a65091fabe5b8ae26cb03050869236e070e1ae6b8c3", "size":4564 },
+    { "path":"MCAmiga", "sha256":"6b98a1c30f33885e267237ab065e4eb3649b1bf425e587a3b3e19e13736c373b", "size":1207416 },
+    { "path":"LICENSE.info", "sha256":"24334a30ea6b63fb9fffe8b043794e696bdb426c4e0f4e9cd53e483c54401181", "size":1091 },
+    { "path":"LICENSE", "sha256":"a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499", "size":7048 }
+  ]
+}
+
+==== nomarch
+Tuesday 29-Sep-26 17:38:23
+fetching https://archives.arosworld.org/share/utility/archive/nomarch.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/nomarch.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/nomarch.zip
+installed nomarch
+install nomarch: rc=0
+{
+  "schema":1,
+  "name":"nomarch",
+  "version":"1.4",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Nomarch",
+  "installed":"2026-09-29T17:38:23Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/nomarch.x86_64-aros-v11.zip",
+  "archive_sha256":"05fd654700ac323375ea89a352521430b17ff66c4a0ab7590fe3b439a6351864",
+  "archive_size":81413,
+  "reason":"explicit",
+  "dir":"nomarch",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"0abe01ba8af722fd142cbc532a961b0caa23711299fb5b3b2698fecb25be93df", "size":8344, "member":"Nomarch.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"147466a2b977d52da681fc9ce5d01542161f0c2512a75f4648a129904f91d299", "size":14651 },
+    { "path":"Nomarch.info", "sha256":"0913a5b792fb8dcac129e58c606f379b5925c1bd85d6463456889a3ef56b0758", "size":8501 },
+    { "path":"Nomarch", "sha256":"566209950c2ac7150bfe1665ff0591b137e0ee5f76477ce73aa7854733c819f3", "size":57824 },
+    { "path":"Docs.info", "sha256":"eb4d1194f2be1050b503ea83d9549caa709552905c1a3c2b404bb9ce6973dfb9", "size":9125 },
+    { "path":"Docs/TODO", "sha256":"84f7893c06331936633ab68dd5d675eefd4b1088309ec6159835682a7e6712ad", "size":279 },
+    { "path":"Docs/Readme", "sha256":"6c7dcc91ebce750416cd359efbee756f6aa175bf0df11c753ada3b93aac85b55", "size":2496 },
+    { "path":"Docs/nomarch.1", "sha256":"f8dd2ea66626666280d488441ac393c54c8cc908df0f741411a3784b036486a9", "size":4431 },
+    { "path":"Docs/NEWS", "sha256":"192b138c48f96bf3dd4d4c1933bc2d198987eac49f495f8b9c84dec237b166e0", "size":1875 },
+    { "path":"Docs/COPYING", "sha256":"1b2a567f289f66a143c56353e7b3d4fa5862514a5e3c5cfdf8b02ee5e5aaa953", "size":17976 },
+    { "path":"Docs/ChangeLog", "sha256":"04b69fe03def999af0f3f0c458cd5f0b09769a756b5147794c2a4087da42d8f4", "size":2783 }
+  ]
+}
+
+==== pkg-7mezzoplus
+Tuesday 29-Sep-26 17:38:23
+fetching https://archives.arosworld.org/share/game/card/7mezzoplus.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/card/7mezzoplus.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/pkg-7mezzoplus.zip
+installed pkg-7mezzoplus
+install pkg-7mezzoplus: rc=0
+{
+  "schema":1,
+  "name":"pkg-7mezzoplus",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"7MezzoPlus1.0",
+  "installed":"2026-09-29T17:38:24Z",
+  "origin":"https://archives.arosworld.org/share/game/card/7mezzoplus.x86_64-aros-v11.zip",
+  "archive_sha256":"1ea0d16ce4016d6d2a329e6d03db6871fb0184a694d929ab9eeeeb629f717baf",
+  "archive_size":668674,
+  "reason":"explicit",
+  "dir":"pkg-7mezzoplus",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"cc4dc6697a289f1697dfc2eedcb47361d4237c6a512992659cf205243dbb1367", "size":7463, "member":"7MezzoPlus1.0.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"111f3c938f9d1fdf16dbbb228184215e6abeea263ece270a21a2889af0ca4620", "size":1087 },
+    { "path":"Readme", "sha256":"ad18dce2875a9db03653b5b65169510de1a625ef16e1c57c0535ef78b16e82ef", "size":2571 },
+    { "path":"Data/risata.iff", "sha256":"5b0dac5cc1dc3925efc5e1ed2d8697843a697858aa45b5192b1e9da0961d36ff", "size":100684 },
+    { "path":"Data/beep.iff", "sha256":"5aae67f9c6106bc0a00e639a4498af8d986f5eb493a8429a141fd44fb40dbc91", "size":4530 },
+    { "path":"Data/applauso.iff", "sha256":"3a88d10b53ae5bfca4285bff7208185a0f7f30f39b761560c6b073ed4ab9d87f", "size":88178 },
+    { "path":"7MezzoAros.png", "sha256":"f64562bfc01697a2c0886bd4a69f7bb194f9c294208bfef45e502bd4eb6de9e0", "size":18688 },
+    { "path":"7Mezzo.info", "sha256":"32980d44430815506cbc48d09f6a1fa28ac050fe64af7614e371073c2a587c57", "size":1402 },
+    { "path":"7Mezzo", "sha256":"ee83e78b1c02d5df5a0e808a75833dda4c6a9bfd3b216358bef0ee1c62232bb4", "size":2751360 }
+  ]
+}
+
+==== rman
+Tuesday 29-Sep-26 17:38:24
+fetching https://archives.arosworld.org/share/utility/text/convert/rman-v3.3.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/convert/rman-v3.3.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/rman.zip
+installed rman
+install rman: rc=0
+{
+  "schema":1,
+  "name":"rman",
+  "version":"3.3",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"RMan",
+  "installed":"2026-09-29T17:38:24Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/convert/rman-v3.3.x86_64-aros-v11.zip",
+  "archive_sha256":"2c1719ff75a431aa51d7842ae2b242f289ec04ba6dd053a7f812c73391aa1abe",
+  "archive_size":225125,
+  "reason":"explicit",
+  "dir":"rman",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"d9bd090993f46ceff88384981e11dfd7143222f0efb1bbe2a9fd34531976c7d9", "size":9253, "member":"RMan.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"dc17826c646afc8ac55aaada99db79b165e89cdea84a4c6fab3898d3e906afb3", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"eeb7b24fd09a653f068afdc56ad165eeba90b8b598460253e5cff27ac19473c2", "size":54536 },
+    { "path":"RMAN.info", "sha256":"4056ee2ed711d57972c546bc544990109fa89ddba8c9a3f60103a97e28416135", "size":8207 },
+    { "path":"RMAN", "sha256":"fad8cc6404a50435e9a9dc4964bd36b1512804b56451b89da91e53e81d25c239", "size":3014 },
+    { "path":"Example/tzfile.5", "sha256":"0ff1df4c51bf42545cc9011471005b431a713c3ccbea7bff93ea965bb6f90e15", "size":14912 },
+    { "path":"Example/term.7", "sha256":"d415a3fc0653e516b27fbed3ee447f6f6236a62d6cb50fb2f3d54c4bdc21e62f", "size":7436 },
+    { "path":"Example/rman_html_split.1", "sha256":"70171e6abebb6aa6528845088f47205a5cf4036c8cf4703a2643c528e9d9893a", "size":2482 },
+    { "path":"Example/rman.1", "sha256":"9c367c31b7a2c36f955bdbf8cfe93e7cab61688b6d6910d97a23a45f47e2a205", "size":11935 },
+    { "path":"Example/papersize.5", "sha256":"70f4869743a8cbc0b85d8c96114482e896c0c2358d0c2ae069a013536e71a4f0", "size":1890 },
+    { "path":"Example/manpath.5", "sha256":"ac3c443cc7d2d123e9d85ae833709e1e6794c4a9f9ac7900eb710068ac8631a1", "size":4563 },
+    { "path":"Example/mandb.8", "sha256":"932958e10094fae77aefe8a061455285d6711de3584ae84f1b002d54b5c7523f", "size":5434 },
+    { "path":"Example/man.1", "sha256":"7d15661a5940fe1061f825b7603b1f774aad1efe730a5841bb55f89f2df8da0b", "size":35426 },
+    { "path":"Docs.info", "sha256":"b2bec758912ca7eab21d922d422d0f0ba02cbc86df58ade593b5298ce4e5e9b8", "size":9125 },
+    { "path":"Docs/ReadmeAros.info", "sha256":"4fe9116286dc7e923d8cf1336669fea38b2029d309d0a9d55632239441a9d084", "size":8785 },
+    { "path":"Docs/ReadmeAros", "sha256":"98df9d052ce5acef2eb3b754ead59cb004ee41a0771c7789c1cce31a1f282117", "size":4599 },
+    { "path":"Docs/Readme.info", "sha256":"6928917341c4c5ba7dc204b793820dfd8f3b50f6e3f3c1e4a8524e7b48864fc1", "size":8785 },
+    { "path":"Docs/ReadMe.html.info", "sha256":"96274ea232fd5a5c5cad83209ebcfcecd29caf38c4fc8aab63777ec2aba1d251", "size":7970 },
+    { "path":"Docs/ReadMe.html", "sha256":"64c24b8761ce3bd36fd319e50adee7399180c518a60628c2d79a8be53014459d", "size":13618 },
+    { "path":"Docs/Readme", "sha256":"22d51086ce72043596f8286007b863291fa722bf1798f6f1d475299051092718", "size":2260 },
+    { "path":"Docs/MANIFEST", "sha256":"356332a871e31b472263544d112cf82d76ae9c94b831fe06972ce8e5da4f5c8c", "size":807 },
+    { "path":"Docs/CHANGES", "sha256":"05dbb73c4dbc0f00abc6d93e5b6a1af65b96c87284aa1cdf230ed130ea19282d", "size":6629 },
+    { "path":"C/rman", "sha256":"46892b1a16594f4f7be3ef7abcce36c2a61ef640839569461e95ca0cd2710963", "size":324520 }
+  ]
+}
+
+==== smb2-gui
+Tuesday 29-Sep-26 17:38:24
+fetching https://archives.arosworld.org/share/network/samba/smb2-gui.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=network/samba/smb2-gui.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/smb2-gui.zip
+installed smb2-gui
+install smb2-gui: rc=0
+{
+  "schema":1,
+  "name":"smb2-gui",
+  "version":"1.0",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"SMB2-GUI",
+  "installed":"2026-09-29T17:38:24Z",
+  "origin":"https://archives.arosworld.org/share/network/samba/smb2-gui.x86_64-aros-v11.zip",
+  "archive_sha256":"4524de39f651ab65bd7f821b78ba6c77248748068ec226be99752d2d38662e13",
+  "archive_size":67221,
+  "reason":"explicit",
+  "dir":"smb2-gui",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"83e3ff6f37c7b3d22347618b8d0c962f14bfc0cbc1f662481c7156da937cbf0f", "size":9802, "member":"SMB2-GUI.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"4258552cf785c60084d5d0ba28ea8c4e2d218bd3bbc57fd05289b601f5565272", "size":9136 },
+    { "path":"Source/smb2-gui.c", "sha256":"73e54715c0153d37764ec92b389b38e4c7513a2a6040dc7291d44293d87d9b27", "size":17289 },
+    { "path":"SMB2-Start.info", "sha256":"1456dc926843727d465c7638c2459b2e4b8f01e6b1b6fbcd8eadf071036e5ea6", "size":8321 },
+    { "path":"SMB2-Start", "sha256":"c459852711581b42abbe7e29391eb2d8dd1e269952017ac450122ca37ebdd8ee", "size":19 },
+    { "path":"SMB2-GUI.info", "sha256":"941baa45deaf0814d4d3d8cd21e2b92b5d4c96a0828feaae713f2aedbd0ff696", "size":8936 },
+    { "path":"SMB2-GUI.guide.info", "sha256":"a35de4b75e912957e84ba4715df47e8a6f4d7c596b6a4b2738f8df6054e1e727", "size":8518 },
+    { "path":"SMB2-GUI.guide", "sha256":"b7ede5ffb344a18c4ac2c790b5fb9f273ef8025b7b15469d57d17f1c2e56e698", "size":11147 },
+    { "path":"SMB2-GUI", "sha256":"12fc51dc0084f655ff7fdf9924e75f6289edc3920d05197dbfd43c0904ef0032", "size":45632 }
+  ]
+}
+
+==== unrar
+Tuesday 29-Sep-26 17:38:24
+fetching https://archives.arosworld.org/share/utility/archive/unrar-v6.11.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/archive/unrar-v6.11.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/unrar.zip
+installed unrar
+install unrar: rc=0
+{
+  "schema":1,
+  "name":"unrar",
+  "version":"6.11",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"UnRAR",
+  "installed":"2026-09-29T17:38:25Z",
+  "origin":"https://archives.arosworld.org/share/utility/archive/unrar-v6.11.x86_64-aros-v11.zip",
+  "archive_sha256":"0c6e0eca2aca95cfb76e8008429d73ff476c667bc89a34f9c693c5918cfb5896",
+  "archive_size":3291979,
+  "reason":"explicit",
+  "dir":"unrar",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"0abe01ba8af722fd142cbc532a961b0caa23711299fb5b3b2698fecb25be93df", "size":8344, "member":"UnRAR.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"UnRAR.info", "sha256":"0913a5b792fb8dcac129e58c606f379b5925c1bd85d6463456889a3ef56b0758", "size":8501 },
+    { "path":"UnRAR", "sha256":"6c54a4ce8df1cb4a47f2abb13bb9fc71ceb91140d2350b780e4c1e4745f6a452", "size":1971216 },
+    { "path":"Source.info", "sha256":"3b50da69a3c6968efb50018506faaed5f578bf1ef049f2840af9983eb66df207", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"7e1b45a20aaf4e5b89ef2b4ef16b64d6cff7d5a3615e6c1400e5fb2a40a3b167", "size":2168079 },
+    { "path":"Readme.info", "sha256":"da194dd51f39dc9f8b973abc582ebd0e89420eeefdae3cf3ff613a6ccbb07f72", "size":8785 },
+    { "path":"Readme", "sha256":"5fa24a5f6bff4a99e8eed27073e94d95d8c32888e2c35c198637cf050fe2dc98", "size":3277 },
+    { "path":"License_Utf8proc", "sha256":"3f5bc0f7207a4b0d7a34cb5dbfb55af8b1518cfcee96616ec118eac2ba65d20d", "size":5129 },
+    { "path":"License_Newlib", "sha256":"5c6246ff5832d76ccd5d4bca529bba2857c0691c16e11279a20df4d3abfc9763", "size":46154 },
+    { "path":"License_Libiconv", "sha256":"b663ec8664828721933ed092926d68b4ab79979d528e91f0fbf4d0a830fa918f", "size":25437 },
+    { "path":"License_Getpass", "sha256":"5ef20631019d01b08618ca6ed5de773788bcf93c3027116c1b13ca2253887c63", "size":2073 },
+    { "path":"License", "sha256":"6ecc1687808b7d66b24f874755abfed7464d9751ed0001cd4e8e5d9bf397ff8a", "size":1976 },
+    { "path":"Catalogs.info", "sha256":"02a60b22df866b35f9643517c2f59e65b7a543a62f6a5a9ba7463a412eb0ea97", "size":9617 },
+    { "path":"Catalogs/Spanish.info", "sha256":"e0a31940cf8353be20103482123ed237982dbd32c306675b45023aeecffaacbf", "size":8865 },
+    { "path":"Catalogs/Spanish/unrar.catalog", "sha256":"aaf866666b6db76d8ae9f6cb3de138a7e4bbaf72d18ca8fd636c055ebff71324", "size":15602 },
+    { "path":"Catalogs/Russian.info", "sha256":"f3e1c410d5a81d20395819c4ce3ee18cc78d298cd18a327cafb1f627300ed078", "size":7917 },
+    { "path":"Catalogs/Russian/unrar.catalog", "sha256":"b833f4f46a2463000e67c75f746d5d989a934dd2fa135a015c894a6a6af4288b", "size":19506 },
+    { "path":"Catalogs/Polish.info", "sha256":"e873454b4f6e7fc8c66fbdbbe7d6053ce4bc9d36c60941214564dca6627dc532", "size":7654 },
+    { "path":"Catalogs/Polish/unrar.catalog", "sha256":"1ccaca7e86e0ee30e7d7e7a74712b132b874c6ca95c59e8acfed4a3200e3ec1a", "size":18690 },
+    { "path":"Catalogs/Italian.info", "sha256":"748a2648d84a73e97a5e5c56409fe4d8cfada5b872d7b917c9672be4fd2b7abf", "size":8186 },
+    { "path":"Catalogs/Italian/unrar.catalog", "sha256":"08094ecf974be97271a48aa3e4898acfcfaa0188fef00facf2c13838973bebdb", "size":19322 },
+    { "path":"Catalogs/German.info", "sha256":"74386e4595e5c8ce71f952cb09b5c661211801dff873e5d9f87fb6d0836bf874", "size":7997 },
+    { "path":"Catalogs/German/unrar.catalog", "sha256":"64d8064eef276d4093a8caedf93f202cf0d47d3dc5c7f1d5939673cd4fd74b88", "size":20364 },
+    { "path":"Catalogs/French.info", "sha256":"020c9fc1ccf13874d4a4efe05327196d97a663dd7379d7028f78ab69ec1b62a7", "size":7931 },
+    { "path":"Catalogs/French/unrar.catalog", "sha256":"ce84202d52f5dfd9102ffb3a5bfe2cca3ab18ceb14d783229511285901ff9166", "size":20386 }
+  ]
+}
+
+==== vim
+Tuesday 29-Sep-26 17:38:25
+fetching https://archives.arosworld.org/share/development/edit/vim_9.2-x86_64-aros-v11.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=development/edit/vim_9.2-x86_64-aros-v11.lha
+verified and cached SYS:Batch/cache/vim.lha
+apkg: cannot inventory the staged tree
+     SYS:Batch/tmp/6abbf792-vim/vim
+install vim: rc=10
+apkg: not installed
+     vim
+
+==== zapperng
+Tuesday 29-Sep-26 17:38:29
+fetching https://archives.arosworld.org/share/utility/workbench/zapperng.x86_64-aros-v11.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/workbench/zapperng.x86_64-aros-v11.zip
+verified and cached SYS:Batch/cache/zapperng.zip
+installed zapperng
+install zapperng: rc=0
+{
+  "schema":1,
+  "name":"zapperng",
+  "version":"1.2",
+  "revision":0,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"ZapperNG",
+  "installed":"2026-09-29T17:38:29Z",
+  "origin":"https://archives.arosworld.org/share/utility/workbench/zapperng.x86_64-aros-v11.zip",
+  "archive_sha256":"76706ce5131e1e38e42510a0437871f7faf946738b93fac7ec3e105b62be2000",
+  "archive_size":55986,
+  "reason":"explicit",
+  "dir":"zapperng",
+  "requires_system": [
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"c36e5e7c84aebe7ed8c36392ec2dcb7c1f86dc9fd8ea2b5f549eccb79e4801a0", "size":8876, "member":"ZapperNG.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"ZapperNG.info", "sha256":"2b1e37e1c57a91d6b6d7930d8850a7d398bfef994f9ba5bdca9a4821ee0e5ead", "size":7557 },
+    { "path":"ZapperNG.guide.info", "sha256":"76a82a4130c209b7a863ce4fbb15d4c4c865be2b1d3480e5476155bafeae4fff", "size":8518 },
+    { "path":"ZapperNG.guide", "sha256":"172dd382717250757da7e27d3e69dfba290a9c1ffc32fbf23525d0354a745895", "size":10260 },
+    { "path":"ZapperNG", "sha256":"af155ef11c292449b17436216421db23c969c4972879eaa6e59f055092d33bb0", "size":29472 },
+    { "path":"Source.info", "sha256":"68271074f7075d76c3e47fdeb71e4497db79d820d10cd0be38d36c1a90551c42", "size":9136 },
+    { "path":"Source/debug.h", "sha256":"d77d7c6fb32962c8e44b4ac2c8a32939579d01454a7065db6f4b4d6b40c275fd", "size":1225 },
+    { "path":"Source/ZapperNG.h", "sha256":"e0ccbb85948989cbd9ff3083b34c91dde7c63cea7f339717a81db5ae330149e9", "size":3493 },
+    { "path":"Source/ZapperNG.c", "sha256":"314cd0dab7f2059c46872eca4f8a3904bd9801fe2c05d657ef073853292b3196", "size":17777 },
+    { "path":"Source/Makefile.aros", "sha256":"f5c72f105a7bf98a805ec95937416058b2f4aa251f07f6b0341554b9eded0600", "size":704 },
+    { "path":"Source/Makefile.aos4", "sha256":"2d0d6fda4f6859824c7310ac3aeaee1a316be4865ab4cd3ea8a83fd940692b9a", "size":680 },
+    { "path":"Source/Makefile", "sha256":"1a0f897715709647f461317bfd8cdc19ced21ba0bdba0df1ebf7be01d67d37f6", "size":702 }
+  ]
+}

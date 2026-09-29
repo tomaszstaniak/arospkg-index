@@ -1,0 +1,74 @@
+==== stage C: remove
+removed muimapparium
+remove muimapparium: rc=0
+removed hydracastle
+remove hydracastle: rc=0
+removed biniax2
+remove biniax2: rc=0
+removed scopagame
+remove scopagame: rc=0
+removed flx_play.zip
+remove flx_play.zip: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       18:19:26
+scopagame                    Dir ---rwed Today       18:19:26
+biniax2                      Dir ---rwed Today       18:19:26
+hydracastle                  Dir ---rwed Today       18:19:26
+muimapparium                 Dir ---rwed Today       18:19:25
+cache                        Dir ---rwed Today       18:17:15
+db                           Dir ---rwed Today       18:19:26
+7 directories - 7 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/scopagame" is empty
+Directory "SYS:Batch/biniax2" on Tuesday 09/29/26:
+data                         Dir ---rwed Today       18:19:26
+1 directory - 1 block used
+Directory "SYS:Batch/biniax2/data" on Tuesday 09/29/26:
+graphics                     Dir ---rwed Today       18:19:26
+1 directory - 1 block used
+Directory "SYS:Batch/biniax2/data/graphics" on Tuesday 09/29/26:
+background0.png           210191 ---rwed Today       18:17:14
+1 file - 411 blocks used
+Directory "SYS:Batch/hydracastle" on Tuesday 09/29/26:
+.hydracastlelabyrinth        Dir ---rwed Today       18:17:42
+data                         Dir ---rwed Today       18:19:26
+2 directories - 2 blocks used
+Directory "SYS:Batch/hydracastle/.hydracastlelabyrinth" on Tuesday 09/29/26:
+system.ini                    86 ---rwed Today       18:17:42
+1 file - 1 block used
+Directory "SYS:Batch/hydracastle/data" on Tuesday 09/29/26:
+midi                         Dir ---rwed Today       18:19:25
+1 directory - 1 block used
+Directory "SYS:Batch/hydracastle/data/midi" on Tuesday 09/29/26:
+gameover.ogg              134766 ---rwed Today       18:17:12
+nazo.ogg                   50650 ---rwed Today       18:17:12
+2 files - 363 blocks used
+Directory "SYS:Batch/muimapparium" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+flx_play.zip.zip           75602 ---rwed Today       18:17:15
+scopagame.zip             651617 ---rwed Today       18:17:14
+biniax2.zip              3961609 ---rwed Today       18:17:14
+hydracastle.zip          58262762 ---rwed Today       18:17:09
+muimapparium.lha          756858 ---rwed Today       18:17:05
+5 files - 124433 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       18:19:26
+transactions                 Dir ---rwed Today       18:19:26
+installed                    Dir ---rwed Today       18:19:26
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+scopagame-6abc012e.json      147 ---rwed Today       18:19:26
+biniax2-6abc012e.json        175 ---rwed Today       18:19:26
+hydracastle-6abc012e.json     199 ---rwed Today       18:19:26
+muimapparium-6abc012d.json     153 ---rwed Today       18:19:25
+4 files - 4 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 13 files - 15 directories - 125227 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 18:19:26

@@ -1,0 +1,7 @@
+==== adoom3: ADoom3, stack 10000000
+Tuesday 29-Sep-26 17:52:39
+after 15 s (a number means it is running):
+ADoom3 returned: rc=20
+after Ctrl-C (empty means it has ended):
+ADoom3 returned: rc=20
+Tuesday 29-Sep-26 17:52:58

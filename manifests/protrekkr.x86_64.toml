@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with TCG, with apkg 0.3 (40c2ba93). Started from SYS:Batch/protrekkr with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch v01).
+
+status          = "approved"
+id              = "protrekkr"
+version         = "2.8.3PRE"
+summary         = "Tracker Synth hybrid Program"
+arch            = "x86_64"
+abi             = "v11"
+category        = "audio/edit"
+url             = "https://archives.arosworld.org/share/audio/edit/protrekkr.x86_64-aros-v11.zip"
+size            = 13261598
+upload_date     = "20250509-06.26"
+selected_by     = "newest-upload"
+
+sha256          = "0afb82a286d2104510be6e1856ce68e4d0bdb5b264eed7f6188561c9d4ae719e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "ProTrekkr"
+icon            = "ProTrekkr.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

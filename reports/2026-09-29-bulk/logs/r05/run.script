@@ -1,0 +1,358 @@
+; Batch script for one test machine; run with Execute RAM:b/run
+FAILAT 1000
+Protect RAM:b/apkg +e
+Protect RAM:b/putfile +e
+MakeDir RAM:L
+Echo >RAM:L/net.txt "network"
+Lab net
+RAM:b/putfile >RAM:L/netlog RAM:L/net.txt net.txt 8805
+If WARN
+  Wait 10
+  Skip net BACK
+EndIf
+Echo >RAM:L/env.txt "apkg:"
+List >>RAM:L/env.txt RAM:b/apkg LFORMAT="%n %l"
+RAM:b/apkg >>RAM:L/env.txt --version
+Version >>RAM:L/env.txt
+Date >>RAM:L/env.txt
+Avail >>RAM:L/env.txt
+Stack >>RAM:L/env.txt
+RAM:b/putfile >NIL: RAM:L/env.txt env.txt 8805
+Echo >RAM:L/a.txt "==== stage A: install"
+Echo >>RAM:L/a.txt "*N==== arrakis"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install arrakis
+Echo >>RAM:L/a.txt "install arrakis: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info arrakis
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== diskusage"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install diskusage
+Echo >>RAM:L/a.txt "install diskusage: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info diskusage
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== gicriptofilex"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install gicriptofilex
+Echo >>RAM:L/a.txt "install gicriptofilex: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info gicriptofilex
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== isotools-gui"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install isotools-gui
+Echo >>RAM:L/a.txt "install isotools-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info isotools-gui
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== openxcom"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install openxcom
+Echo >>RAM:L/a.txt "install openxcom: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info openxcom
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== residualvm"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install residualvm
+Echo >>RAM:L/a.txt "install residualvm: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info residualvm
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== super-haxagon"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install super-haxagon
+Echo >>RAM:L/a.txt "install super-haxagon: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info super-haxagon
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >>RAM:L/a.txt "*N==== tressette"
+Date >>RAM:L/a.txt
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch --index RAM:b/index.json install tressette
+Echo >>RAM:L/a.txt "install tressette: rc=$RC"
+RAM:b/apkg >>RAM:L/a.txt --root SYS:Batch info tressette
+RAM:b/putfile >NIL: RAM:L/a.txt a.txt 8805
+Echo >RAM:L/b-arrakis.txt "==== arrakis: arrakis-x86_64, stack 40960"
+Date >>RAM:L/b-arrakis.txt
+If NOT EXISTS SYS:Batch/arrakis
+  Echo >>RAM:L/b-arrakis.txt "arrakis: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start arrakis "SYS:Batch/arrakis" arrakis-x86_64 40960
+  Wait 15
+  Echo >>RAM:L/b-arrakis.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-arrakis.txt COMMAND=arrakis-x86_64
+  If EXISTS RAM:L/r-arrakis.txt
+    Type >>RAM:L/b-arrakis.txt RAM:L/r-arrakis.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "arrakis"
+RAM:b/putfile >NIL: RAM:L/m shot-arrakis 8805
+Wait 4
+Status >NIL: COMMAND=arrakis-x86_64
+If NOT WARN
+  Break >NIL: `Status COMMAND=arrakis-x86_64` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-arrakis.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-arrakis.txt COMMAND=arrakis-x86_64
+If EXISTS RAM:L/r-arrakis.txt
+  Type >>RAM:L/b-arrakis.txt RAM:L/r-arrakis.txt
+EndIf
+Date >>RAM:L/b-arrakis.txt
+RAM:b/putfile >NIL: RAM:L/b-arrakis.txt b-arrakis.txt 8805
+If EXISTS RAM:L/o-arrakis.txt
+RAM:b/putfile >NIL: RAM:L/o-arrakis.txt o-arrakis.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-arrakis 8805
+Wait 3
+Echo >RAM:L/b-diskusage.txt "==== diskusage: DiskUsage, stack 40960"
+Date >>RAM:L/b-diskusage.txt
+If NOT EXISTS SYS:Batch/diskusage
+  Echo >>RAM:L/b-diskusage.txt "diskusage: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start diskusage "SYS:Batch/diskusage" DiskUsage 40960
+  Wait 15
+  Echo >>RAM:L/b-diskusage.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-diskusage.txt COMMAND=DiskUsage
+  If EXISTS RAM:L/r-diskusage.txt
+    Type >>RAM:L/b-diskusage.txt RAM:L/r-diskusage.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "diskusage"
+RAM:b/putfile >NIL: RAM:L/m shot-diskusage 8805
+Wait 4
+Status >NIL: COMMAND=DiskUsage
+If NOT WARN
+  Break >NIL: `Status COMMAND=DiskUsage` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-diskusage.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-diskusage.txt COMMAND=DiskUsage
+If EXISTS RAM:L/r-diskusage.txt
+  Type >>RAM:L/b-diskusage.txt RAM:L/r-diskusage.txt
+EndIf
+Date >>RAM:L/b-diskusage.txt
+RAM:b/putfile >NIL: RAM:L/b-diskusage.txt b-diskusage.txt 8805
+If EXISTS RAM:L/o-diskusage.txt
+RAM:b/putfile >NIL: RAM:L/o-diskusage.txt o-diskusage.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-diskusage 8805
+Wait 3
+Echo >RAM:L/b-gicriptofilex.txt "==== gicriptofilex: GICriptoFile, stack 40960"
+Date >>RAM:L/b-gicriptofilex.txt
+If NOT EXISTS SYS:Batch/gicriptofilex
+  Echo >>RAM:L/b-gicriptofilex.txt "gicriptofilex: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start gicriptofilex "SYS:Batch/gicriptofilex" GICriptoFile 40960
+  Wait 15
+  Echo >>RAM:L/b-gicriptofilex.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-gicriptofilex.txt COMMAND=GICriptoFile
+  If EXISTS RAM:L/r-gicriptofilex.txt
+    Type >>RAM:L/b-gicriptofilex.txt RAM:L/r-gicriptofilex.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "gicriptofilex"
+RAM:b/putfile >NIL: RAM:L/m shot-gicriptofilex 8805
+Wait 4
+Status >NIL: COMMAND=GICriptoFile
+If NOT WARN
+  Break >NIL: `Status COMMAND=GICriptoFile` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-gicriptofilex.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-gicriptofilex.txt COMMAND=GICriptoFile
+If EXISTS RAM:L/r-gicriptofilex.txt
+  Type >>RAM:L/b-gicriptofilex.txt RAM:L/r-gicriptofilex.txt
+EndIf
+Date >>RAM:L/b-gicriptofilex.txt
+RAM:b/putfile >NIL: RAM:L/b-gicriptofilex.txt b-gicriptofilex.txt 8805
+If EXISTS RAM:L/o-gicriptofilex.txt
+RAM:b/putfile >NIL: RAM:L/o-gicriptofilex.txt o-gicriptofilex.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-gicriptofilex 8805
+Wait 3
+Echo >RAM:L/b-isotools-gui.txt "==== isotools-gui: IsoTools-GUI, stack 40960"
+Date >>RAM:L/b-isotools-gui.txt
+If NOT EXISTS SYS:Batch/isotools-gui
+  Echo >>RAM:L/b-isotools-gui.txt "isotools-gui: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start isotools-gui "SYS:Batch/isotools-gui" IsoTools-GUI 40960
+  Wait 15
+  Echo >>RAM:L/b-isotools-gui.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-isotools-gui.txt COMMAND=IsoTools-GUI
+  If EXISTS RAM:L/r-isotools-gui.txt
+    Type >>RAM:L/b-isotools-gui.txt RAM:L/r-isotools-gui.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "isotools-gui"
+RAM:b/putfile >NIL: RAM:L/m shot-isotools-gui 8805
+Wait 4
+Status >NIL: COMMAND=IsoTools-GUI
+If NOT WARN
+  Break >NIL: `Status COMMAND=IsoTools-GUI` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-isotools-gui.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-isotools-gui.txt COMMAND=IsoTools-GUI
+If EXISTS RAM:L/r-isotools-gui.txt
+  Type >>RAM:L/b-isotools-gui.txt RAM:L/r-isotools-gui.txt
+EndIf
+Date >>RAM:L/b-isotools-gui.txt
+RAM:b/putfile >NIL: RAM:L/b-isotools-gui.txt b-isotools-gui.txt 8805
+If EXISTS RAM:L/o-isotools-gui.txt
+RAM:b/putfile >NIL: RAM:L/o-isotools-gui.txt o-isotools-gui.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-isotools-gui 8805
+Wait 3
+Echo >RAM:L/b-openxcom.txt "==== openxcom: OpenXcom, stack 40960"
+Date >>RAM:L/b-openxcom.txt
+If NOT EXISTS SYS:Batch/openxcom
+  Echo >>RAM:L/b-openxcom.txt "openxcom: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start openxcom "SYS:Batch/openxcom" OpenXcom 40960
+  Wait 15
+  Echo >>RAM:L/b-openxcom.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-openxcom.txt COMMAND=OpenXcom
+  If EXISTS RAM:L/r-openxcom.txt
+    Type >>RAM:L/b-openxcom.txt RAM:L/r-openxcom.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "openxcom"
+RAM:b/putfile >NIL: RAM:L/m shot-openxcom 8805
+Wait 4
+Status >NIL: COMMAND=OpenXcom
+If NOT WARN
+  Break >NIL: `Status COMMAND=OpenXcom` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-openxcom.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-openxcom.txt COMMAND=OpenXcom
+If EXISTS RAM:L/r-openxcom.txt
+  Type >>RAM:L/b-openxcom.txt RAM:L/r-openxcom.txt
+EndIf
+Date >>RAM:L/b-openxcom.txt
+RAM:b/putfile >NIL: RAM:L/b-openxcom.txt b-openxcom.txt 8805
+If EXISTS RAM:L/o-openxcom.txt
+RAM:b/putfile >NIL: RAM:L/o-openxcom.txt o-openxcom.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-openxcom 8805
+Wait 3
+Echo >RAM:L/b-residualvm.txt "==== residualvm: residualvm, stack 40960"
+Date >>RAM:L/b-residualvm.txt
+If NOT EXISTS SYS:Batch/residualvm
+  Echo >>RAM:L/b-residualvm.txt "residualvm: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start residualvm "SYS:Batch/residualvm" residualvm 40960
+  Wait 15
+  Echo >>RAM:L/b-residualvm.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-residualvm.txt COMMAND=residualvm
+  If EXISTS RAM:L/r-residualvm.txt
+    Type >>RAM:L/b-residualvm.txt RAM:L/r-residualvm.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "residualvm"
+RAM:b/putfile >NIL: RAM:L/m shot-residualvm 8805
+Wait 4
+Status >NIL: COMMAND=residualvm
+If NOT WARN
+  Break >NIL: `Status COMMAND=residualvm` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-residualvm.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-residualvm.txt COMMAND=residualvm
+If EXISTS RAM:L/r-residualvm.txt
+  Type >>RAM:L/b-residualvm.txt RAM:L/r-residualvm.txt
+EndIf
+Date >>RAM:L/b-residualvm.txt
+RAM:b/putfile >NIL: RAM:L/b-residualvm.txt b-residualvm.txt 8805
+If EXISTS RAM:L/o-residualvm.txt
+RAM:b/putfile >NIL: RAM:L/o-residualvm.txt o-residualvm.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-residualvm 8805
+Wait 3
+Echo >RAM:L/b-super-haxagon.txt "==== super-haxagon: Super-Haxagon, stack 400000"
+Date >>RAM:L/b-super-haxagon.txt
+If NOT EXISTS SYS:Batch/super-haxagon
+  Echo >>RAM:L/b-super-haxagon.txt "super-haxagon: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start super-haxagon "SYS:Batch/super-haxagon" Super-Haxagon 400000
+  Wait 15
+  Echo >>RAM:L/b-super-haxagon.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-super-haxagon.txt COMMAND=Super-Haxagon
+  If EXISTS RAM:L/r-super-haxagon.txt
+    Type >>RAM:L/b-super-haxagon.txt RAM:L/r-super-haxagon.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "super-haxagon"
+RAM:b/putfile >NIL: RAM:L/m shot-super-haxagon 8805
+Wait 4
+Status >NIL: COMMAND=Super-Haxagon
+If NOT WARN
+  Break >NIL: `Status COMMAND=Super-Haxagon` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-super-haxagon.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-super-haxagon.txt COMMAND=Super-Haxagon
+If EXISTS RAM:L/r-super-haxagon.txt
+  Type >>RAM:L/b-super-haxagon.txt RAM:L/r-super-haxagon.txt
+EndIf
+Date >>RAM:L/b-super-haxagon.txt
+RAM:b/putfile >NIL: RAM:L/b-super-haxagon.txt b-super-haxagon.txt 8805
+If EXISTS RAM:L/o-super-haxagon.txt
+RAM:b/putfile >NIL: RAM:L/o-super-haxagon.txt o-super-haxagon.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-super-haxagon 8805
+Wait 3
+Echo >RAM:L/b-tressette.txt "==== tressette: Tressette, stack 40960"
+Date >>RAM:L/b-tressette.txt
+If NOT EXISTS SYS:Batch/tressette
+  Echo >>RAM:L/b-tressette.txt "tressette: not installed, not started"
+Else
+  Run >NIL: <NIL: Execute RAM:b/start tressette "SYS:Batch/tressette" Tressette 40960
+  Wait 15
+  Echo >>RAM:L/b-tressette.txt "after 15 s (a number means it is running):"
+  Status >>RAM:L/b-tressette.txt COMMAND=Tressette
+  If EXISTS RAM:L/r-tressette.txt
+    Type >>RAM:L/b-tressette.txt RAM:L/r-tressette.txt
+  EndIf
+EndIf
+Echo >RAM:L/m "tressette"
+RAM:b/putfile >NIL: RAM:L/m shot-tressette 8805
+Wait 4
+Status >NIL: COMMAND=Tressette
+If NOT WARN
+  Break >NIL: `Status COMMAND=Tressette` C
+  Wait 5
+EndIf
+Echo >>RAM:L/b-tressette.txt "after Ctrl-C (empty means it has ended):"
+Status >>RAM:L/b-tressette.txt COMMAND=Tressette
+If EXISTS RAM:L/r-tressette.txt
+  Type >>RAM:L/b-tressette.txt RAM:L/r-tressette.txt
+EndIf
+Date >>RAM:L/b-tressette.txt
+RAM:b/putfile >NIL: RAM:L/b-tressette.txt b-tressette.txt 8805
+If EXISTS RAM:L/o-tressette.txt
+RAM:b/putfile >NIL: RAM:L/o-tressette.txt o-tressette.txt 8805
+EndIf
+RAM:b/putfile >NIL: RAM:L/m done-tressette 8805
+Wait 3
+Echo >RAM:L/c.txt "==== stage C: remove"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove arrakis
+Echo >>RAM:L/c.txt "remove arrakis: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove diskusage
+Echo >>RAM:L/c.txt "remove diskusage: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove gicriptofilex
+Echo >>RAM:L/c.txt "remove gicriptofilex: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove isotools-gui
+Echo >>RAM:L/c.txt "remove isotools-gui: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove openxcom
+Echo >>RAM:L/c.txt "remove openxcom: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove residualvm
+Echo >>RAM:L/c.txt "remove residualvm: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove super-haxagon
+Echo >>RAM:L/c.txt "remove super-haxagon: rc=$RC"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch remove tressette
+Echo >>RAM:L/c.txt "remove tressette: rc=$RC"
+Echo >>RAM:L/c.txt "*N==== List SYS:Batch ALL"
+List >>RAM:L/c.txt SYS:Batch ALL
+Echo >>RAM:L/c.txt "*N==== apkg list"
+RAM:b/apkg >>RAM:L/c.txt --root SYS:Batch list
+Date >>RAM:L/c.txt
+RAM:b/putfile >NIL: RAM:L/c.txt c.txt 8805
+Echo >RAM:L/end.txt "end"
+RAM:b/putfile >NIL: RAM:L/end.txt end.txt 8805

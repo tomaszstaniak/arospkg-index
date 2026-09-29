@@ -1,0 +1,7 @@
+==== pekkakana2: Pekka Kana 2, stack 1000000
+Tuesday 29-Sep-26 18:18:50
+after 15 s (a number means it is running):
+ 12
+after Ctrl-C (empty means it has ended):
+Pekka Kana 2 returned: rc=0
+Tuesday 29-Sep-26 18:19:15

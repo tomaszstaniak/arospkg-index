@@ -1,0 +1,48 @@
+=== Alien Breed 3D I - PC Port ===
+SetupGame
+[SETTINGS] Loading INI: AROS:Batch/ab3dhd/ab3d.ini
+[SETTINGS] start_level=0 is deprecated; use start_level=1 for the first level
+[SETTINGS] AB3D_NO_THREADS build: render_threads is ignored; forcing single-threaded renderer
+[SETTINGS] Loaded: start_level=1 infinite_health=0 infinite_ammo=0 all_weapons=0 all_keys=0 display_mode=windowed render=768x640 supersampling=1 render_threads=0 render_threads_max=0 volume=100 audio_buffer_samples=0 y_proj_scale=100 billboard_sprite_rendering_enhancement=1 weapon_draw=1 post_tint=1 weapon_post_gl=1 show_fps=1 render_driver=software
+[DISPLAY] startup-before-window: current=1024x768@60 desktop=1024x768@60
+[DISPLAY] SDL2 init (display_mode=windowed, window 768x640, internal render 768x640, supersampling=1; resize to letterbox)
+[RENDERER] Initialized: 768x640
+[DISPLAY] AROS: software renderer (set render_driver=opengl in ab3d.ini for GL)
+[DISPLAY] renderer hint request: software
+[DISPLAY] SDL renderer driver: software
+[DISPLAY] 12-bit unpack: no GL context (use OpenGL renderer for GPU path)
+[DISPLAY] GL_R16UI present unavailable (no GL 3.0+ context). Using SDL texture path; try AB3D_RENDER_DRIVER=opengl or install updated GPU drivers. To force D3D+texture: set AB3D_DISABLE_GL_UNPACK=1
+[DISPLAY] renderer target: 768x640
+[DISPLAY] AROS: Created texture: ARGB8888 (direct)
+[DISPLAY] Texture actual: fmt=0x16362004 access=1 768x640
+[DISPLAY] SDL2 ready: window 768x640, present rect 768x640 at (0,0)
+[DISPLAY] startup-after-window: current=1024x768@60 desktop=1024x768@60
+[INPUT] SDL2 input init
+scream, fire!, munch, shoot.dm, collect, newdoor, splash, footstep3, lowscream, baddiegun, switch, switch1, noammo, splotch, splatpop, boom, newhiss, howl1, howl2, pant, whoosh, shotgun, flame, muffledfoot, footclop, footclank, teleport, halfwormpain
+[CONTROL] PlayGame starting
+[SETTINGS] Loading INI: AROS:Batch/ab3dhd/ab3d.ini
+[SETTINGS] start_level=0 is deprecated; use start_level=1 for the first level
+[SETTINGS] Loaded: start_level=1 infinite_health=0 infinite_ammo=0 all_weapons=0 all_keys=0 display_mode=windowed render=768x640 supersampling=1 render_threads=0 render_threads_max=0 volume=100 audio_buffer_samples=0 y_proj_scale=100 billboard_sprite_rendering_enhancement=1 weapon_draw=1 post_tint=1 weapon_post_gl=1 show_fps=1 render_driver=software
+[SETTINGS] Active: start_level=1 infinite_health=0 infinite_ammo=0 all_weapons=0 all_keys=0 display_mode=windowed render=768x640 supersampling=1 render_threads=0 render_threads_max=0 volume=100 audio_buffer_samples=0 y_proj_scale=100 billboard_sprite_rendering_enhancement=1 weapon_draw=1 post_tint=1 weapon_post_gl=1 show_fps=1 render_driver=software
+[CONTROL] Start level from ab3d.ini: 0
+[GAME] === PlayTheGame: level 0 ===
+[GAME] Level parsed: 137 zones
+[LEVELFIX] probe: level_index=0 level_1indexed=1
+[GAME] Shot pools: player=20 nasty=100 object_points=200
+[RENDERER] Sky cache: 17 synthesized polygons
+[GAME] Control mode: mouse+kbd (default)
+[PLAYER] init_from_level: PLR1 at (-720,264) zone 3 yoff=-12288 tyoff=-12288, PLR2 at (-2232,2864) zone 135
+[MUSIC] in-game music disabled
+[GAME] Entering main loop...
+[LOOP] ESC pressed - exiting to menu
+[LOOP] Exited: 7756 display frames, 1007 logic ticks (avg temp_frames=6)
+[GAME] === Level ended ===
+[CONTROL] PlayGame finished
+
+TearDownGame
+[INPUT] SDL2 input shutdown
+[RENDERER] Shutdown
+[DISPLAY] SDL2 shutdown
+TearDownGame complete
+
+=== Exit (code 0) ===

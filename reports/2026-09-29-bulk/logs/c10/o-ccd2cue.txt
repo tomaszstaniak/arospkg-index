@@ -1,0 +1,5 @@
+Usage: ccd2cue -h | -v | -i imgfile [-o cuefile] [ccdfile]
+	-h display this help message
+	-v display version information
+	-i use imgfile as image filename
+	-o write output to cuefile

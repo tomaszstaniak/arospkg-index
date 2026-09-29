@@ -1,0 +1,32 @@
+==== stage C: remove
+removed fallout2
+remove fallout2: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Tuesday 09/29/26:
+tmp                          Dir ---rwed Today       17:53:55
+fallout2                     Dir ---rwed Today       17:53:55
+cache                        Dir ---rwed Today       17:53:27
+db                           Dir ---rwed Today       17:53:55
+4 directories - 4 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/fallout2" is empty
+Directory "SYS:Batch/cache" on Tuesday 09/29/26:
+fallout2.zip             2003597 ---rwed Today       17:53:27
+1 file - 3914 blocks used
+Directory "SYS:Batch/db" on Tuesday 09/29/26:
+doctor                       Dir ---rwed Today       17:53:55
+transactions                 Dir ---rwed Today       17:53:55
+installed                    Dir ---rwed Today       17:53:55
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Tuesday 09/29/26:
+fallout2-6abbfb33.json       145 ---rwed Today       17:53:55
+1 file - 1 block used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 2 files - 7 directories - 3922 blocks used
+
+==== apkg list
+nothing installed
+Tuesday 29-Sep-26 17:53:55

@@ -1,0 +1,5 @@
+TinySID v0.94 linux version
+(c)Copyright 1999-2006 T. Hinrichs and R. Sinsch.
+All rights reserved.
+
+Usage: tinysid [sid-file]

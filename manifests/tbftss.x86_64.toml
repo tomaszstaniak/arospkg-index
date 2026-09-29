@@ -1,0 +1,38 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/tbftss with Run
+# and input from NIL:, stack 400000 bytes: its window or screen was open and
+# the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch r01).
+
+status          = "approved"
+id              = "tbftss"
+version         = "1.5.1"
+summary         = "The Battle for the Solar System: the Pandora War"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/action"
+url             = "https://archives.arosworld.org/share/game/action/tbftss.x86_64-aros-v11.zip"
+size            = 47940255
+upload_date     = "20260606-20.18"
+selected_by     = "only-candidate"
+
+sha256          = "68cbeb3901094f2a3cf21a33de20064cc546b9e74d1283004a5091fe8bc24464"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "TBFTSS"
+icon            = "TBFTSS.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

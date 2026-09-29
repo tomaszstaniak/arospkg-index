@@ -1,0 +1,37 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/metemp3 with
+# Run and input from NIL:, stack 40960 bytes: its window or screen was open
+# and the process was running after 15 s. Evidence: reports/2026-09-29-bulk/
+# (batch c04).
+
+status          = "approved"
+id              = "metemp3"
+version         = "1.5"
+summary         = "a Mp3,Flac,Wav Player"
+arch            = "x86_64"
+abi             = "v11"
+category        = "audio/play"
+url             = "https://archives.arosworld.org/share/audio/play/metemp3.x86_64-aros-v11.zip"
+size            = 682499
+upload_date     = "20250523-06.03"
+selected_by     = "only-candidate"
+
+sha256          = "3db75f6b14f6090c4ac8617dd71b563e390733dc7d2c93b19f8c435e81169eb8"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "MeteMP3_v1.5"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

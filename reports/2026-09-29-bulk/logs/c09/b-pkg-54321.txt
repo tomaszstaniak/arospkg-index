@@ -1,0 +1,5 @@
+==== pkg-54321: 54321, stack 72000
+Tuesday 29-Sep-26 17:42:39
+pkg-54321: not installed, not started
+after Ctrl-C (empty means it has ended):
+Tuesday 29-Sep-26 17:42:43

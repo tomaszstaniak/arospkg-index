@@ -1,0 +1,5 @@
+Split 1.5 (c)05.MAG.97 Giovanni Iacobelli  >>> FREEWARE <<<
+
+ Sintassi:
+
+	 split [opt] <sorgente> file1 file2 file3...

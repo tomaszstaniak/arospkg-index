@@ -1,0 +1,36 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/hivelyreplay/C
+# with Run and input from NIL:, stack 40960 bytes: it printed its usage or
+# output and returned 0. Evidence: reports/2026-09-29-bulk/ (batch c04).
+
+status          = "approved"
+id              = "hivelyreplay"
+version         = "0.2"
+summary         = "Replayer from HivelyTracker (AHI)"
+arch            = "x86_64"
+abi             = "v11"
+category        = "audio/play"
+url             = "https://archives.arosworld.org/share/audio/play/hivelyreplay.x86_64-aros-v11.zip"
+size            = 90714
+upload_date     = "20250718-15.38"
+selected_by     = "only-candidate"
+
+sha256          = "b7f06bcaf1db17665fcb125b1de0f2d13f57e40858f28f2583da1c6d718d117a"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "HivelyReplayer"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

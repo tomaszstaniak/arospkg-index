@@ -1,0 +1,5 @@
+==== giddy3: giddy3, stack 400000
+Tuesday 29-Sep-26 17:39:54
+giddy3: not installed, not started
+after Ctrl-C (empty means it has ended):
+Tuesday 29-Sep-26 17:39:58

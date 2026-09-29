@@ -1,0 +1,5 @@
+==== vim: gVim, stack 1048576
+Tuesday 29-Sep-26 17:42:19
+vim: not installed, not started
+after Ctrl-C (empty means it has ended):
+Tuesday 29-Sep-26 17:42:23

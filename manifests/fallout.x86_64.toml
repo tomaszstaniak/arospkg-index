@@ -1,0 +1,39 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/fallout with
+# Run and input from NIL:, stack 200000 bytes: it showed its own message
+# that the Fallout master datafile was not found. The game data is not part
+# of the package; that message was checked, the game itself was not played.
+# Evidence: reports/2026-09-29-bulk/ (batch s04).
+
+status          = "approved"
+id              = "fallout"
+version         = "1.1"
+summary         = "Fallout for modern operating systems"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/roleplaying"
+url             = "https://archives.arosworld.org/share/game/roleplaying/fallout.x86_64-aros-v11.zip"
+size            = 1230066
+upload_date     = "20260605-17.27"
+selected_by     = "only-candidate"
+
+sha256          = "6b403b59367c96ae8197134b89ebe90a8de48b84d042c181dc469669a3b8c261"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Fallout"
+icon            = "Fallout.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,10 @@
+.KEY ID/A,WHERE/A,PROG/A,STK/A,ARGS/F
+.BRA {
+.KET }
+; Started by Run from the batch script: one program, called directly so that
+; its output and return code can be redirected (Run itself cannot).
+FAILAT 1000
+CD "{WHERE}"
+Stack {STK}
+{PROG} >RAM:L/o-{ID}.txt <NIL: {ARGS}
+Echo >RAM:L/r-{ID}.txt "{PROG} returned: rc=$RC"

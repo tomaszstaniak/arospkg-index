@@ -1,0 +1,42 @@
+# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+#
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/openxcom with
+# Run and input from NIL:, stack 40960 bytes: it showed its own message that
+# no X-COM installation was found. The game data is not part of the package;
+# that message was checked, the game itself was not played. Evidence:
+# reports/2026-09-29-bulk/ (batch r05).
+
+status          = "approved"
+id              = "openxcom"
+version         = "1.0"
+summary         = "Open-source clone of UFO: Enemy Unknown"
+arch            = "x86_64"
+abi             = "v11"
+category        = "game/strategy"
+url             = "https://archives.arosworld.org/share/game/strategy/openxcom.x86_64-aros-v11.zip"
+size            = 4557960
+upload_date     = "20260828-06.42"
+selected_by     = "only-candidate"
+
+sha256          = "6683f06367971c9de19c6e5b953c535eb2f62f0746daa733581eff385be90bb4"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "OpenXcom"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
+
+[[requires_system]]
+type = "library"
+id   = "SDL.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

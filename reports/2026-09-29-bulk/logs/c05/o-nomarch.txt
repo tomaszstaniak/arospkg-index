@@ -1,0 +1,18 @@
+nomarch 1.4 - copyright (c) 2001-2006 Russell Marks.
+
+usage: nomarch [-hlptUv] [archive.arc] [match1 [match2 ...]]
+
+	-h	this usage help.
+	-l	list contents of archive.
+	-p	extract to standard output, rather than to separate files.
+	-t	test archive (i.e. check file CRCs).
+	-U	use uppercase filenames (preserve case).
+	-v	give verbose listing (when used with `-l').
+
+  archive.arc	the .arc or .ark file to list/extract/test.
+		(The default action is to extract the files.)
+
+  match1 etc.	zero or more wildcards, for files to list/extract/test;
+		the file is processed if it matches any one of these.
+		(If *no* wildcards are specified, all files match.)
+		Wildcard operators supported are shell-like `*' and `?'.
