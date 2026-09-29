@@ -214,7 +214,8 @@
       "kind": "app",
       "subdir": "Folio",
       "icon": "Folio.info",
-      "install": {}
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-foliopdf"
     },
     {
       "id": "gmore",
@@ -289,7 +290,8 @@
       "subdir": "GrafX2",
       "icon": "GrafX2.info",
       "install": {},
-      "revision": 4
+      "revision": 4,
+      "source": "https://github.com/tomaszstaniak/aros-grafx2"
     },
     {
       "id": "grep",
@@ -508,7 +510,8 @@
       "subdir": "Micropolis",
       "icon": "Micropolis.info",
       "install": {},
-      "revision": 1
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-micropolis"
     },
     {
       "id": "ominostage",
@@ -587,7 +590,8 @@
       "subdir": "OpenLoco",
       "icon": "",
       "install": {},
-      "revision": 1
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-openloco"
     },
     {
       "id": "rescode",

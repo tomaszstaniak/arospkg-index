@@ -10,8 +10,10 @@ software itself lives. Nothing here is mirrored from there.
 
 ## What is in here
 
-- `index.json` — the generated index the client downloads with `apkg update`.
-- `manifests/` — one file per approved package, `<id>.<arch>.toml`.
+- `index.json`: the generated index the client downloads with `apkg update`.
+- `manifests/`: one file per approved package, `<id>.<arch>.toml`. This is
+  the only copy of the approved manifests; the arospkg repository keeps the
+  tools and the candidates that have not been reviewed yet.
 
 `index.json` is generated from the manifests, so the manifests are the source
 of truth and the index is derived. A client must be able to rebuild its view
@@ -32,7 +34,7 @@ its window or printed its output and was still running; it is not a claim that
 every feature works.
 
 That is why this index is small. The AROS Archives catalogue holds 1895
-entries, of which 168 are built for x86_64 or aarch64 — but a candidate is not
+entries, of which 168 are built for x86_64 or aarch64. But a candidate is not
 an installable package, and publishing a list of things that fail to install
 would be worse than publishing a short list that works.
 
@@ -52,7 +54,7 @@ run.
 ## Dependencies and system requirements are different fields
 
 `depends` names other packages in this index. `requires_system` names things
-the machine must already provide — a library that ships with the distribution,
+the machine must already provide: a library that ships with the distribution,
 for example. They are separate because the failures are separate: "no package
 in the index provides X" can be fixed by publishing a package, and "this
 machine does not have X" cannot. The client says which of the two it hit, and
@@ -60,7 +62,7 @@ refuses before downloading anything.
 
 `sdllopan` is the first entry with system requirements. It needs
 `SDL.library`, `crt.library` and `stdlib.library`, none of which is a package
-anywhere — they are parts of a distribution. AROS One 1.3 ships all three;
+anywhere; they are parts of a distribution. AROS One 1.3 ships all three;
 mainline ships none. So the same archive is installable on one machine and
 not on the other, and that is a fact about the machine rather than about this
 index.
@@ -81,8 +83,8 @@ because it is the earlier check: the package is ABIv11 and mainline is ABIv1.
 Its system requirements are also unmet on mainline, but a client never gets
 that far. Both facts are recorded; only one of them is what a user would see.
 
-Each manifest records this explicitly — `installs_on`, `runs_on`,
-`does_not_run_on` — and the generated index carries the same fields, so a
+Each manifest records this explicitly (`installs_on`, `runs_on`,
+`does_not_run_on`), and the generated index carries the same fields, so a
 client can refuse a package on a system where it is known not to start.
 
 Why that is stated so prominently: an index that lists a package implies you
@@ -100,5 +102,5 @@ whole attack against a package manager.
 ## Contributing
 
 Manifests are reviewed before they are published. Corrections to an existing
-entry — a wrong hash, a moved URL, a dependency we missed — are welcome as
+entry (a wrong hash, a moved URL, a dependency we missed) are welcome as
 issues or pull requests.

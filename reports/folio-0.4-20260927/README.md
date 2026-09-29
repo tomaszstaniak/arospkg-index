@@ -1,4 +1,4 @@
-# Folio 0.4 release validation — 2026-09-27
+# Folio 0.4 release validation, 2026-09-27
 
 Source: `aros-foliopdf` commit `f6294e1`, tag `v0.4`.
 Architecture: x86_64, ABIv11. Compiler: GCC 10.5.0; ABIv11 SDK under
