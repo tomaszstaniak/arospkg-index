@@ -1,0 +1,7 @@
+==== antiword: antiword, stack 262144
+Saturday 03-Oct-26 11:49:19
+after 15 s (a number means it is running):
+antiword returned: rc=0
+after Ctrl-C (empty means it has ended):
+antiword returned: rc=0
+Saturday 03-Oct-26 11:49:38

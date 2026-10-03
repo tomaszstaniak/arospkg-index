@@ -1,0 +1,480 @@
+Directory tree "SYS:Tools" on Saturday 03-Oct-26
+
+Tools
++--AlarmClock
+|  +--Blanker
+|  `--Fonts
+|  
++--ArosPDF
+|  +--Fonts
+|  +--Libs
+|  +--Resources
+|  +--S
+|  `--Themes-Prefs
+|     +--Buttons
+|     `--Skins
+|     
+|  
++--arSFSDoctor
++--Arzip
+|  `--Img
+|  
++--Commodities
+|  +--AmigaKeysToALT
+|  |  `--Source
+|  |  
+|  +--AmigaKeySwaps
+|  |  `--Source
+|  |  
+|  +--AutoActivate
+|  |  +--Docs
+|  |  `--Source
+|  |  
+|  +--SWitch
+|  |  +--Docs
+|  |  `--Source
+|  |  
+|  `--ZapperNG
+|     `--Source
+|     
+|  
++--DaySleeper
+|  +--Source
+|  `--Themes-Prefs
+|  
++--DClock
+|  `--Source
+|  
++--DirList
++--DiskValidGUI
++--DOpus4
+|  +--C
+|  +--Catalogs
+|  |  +--Finnish
+|  |  +--French
+|  |  +--German
+|  |  +--Italian
+|  |  +--Polish
+|  |  `--Spanish
+|  |  
+|  +--Development
+|  |  +--fd
+|  |  +--include
+|  |  |  +--clib
+|  |  |  +--defines
+|  |  |  +--dopus
+|  |  |  +--inline
+|  |  |  `--proto
+|  |  |  
+|  |  `--lib
+|  |  
+|  +--Libs
+|  +--Modules
+|  `--S
+|  
++--Finder
++--Fix_Amistart
+|  `--Docs
+|  
++--FontTester
++--FryingPan
+|  +--Env
+|  |  `--FryingPan
+|  |  
+|  +--Libs
+|  `--Skins
+|     `--Default
+|     
+|  
++--GiCriptoFilex
++--GMore
++--Hex2
++--HFinder
+|  `--data
+|     `--icons
+|     
+|  
++--Horloge
+|  +--Data
+|  +--Docs
+|  `--Source
+|  
++--InstallerLG
+|  `--Catalogs
+|     `--Catalogs
+|        +--Deutsch
+|        +--Italian
+|        +--Russian
+|        `--Svenska
+|        
+|     
+|  
++--JCalc
+|  +--batch
+|  `--Rexx
+|  
++--JoinGUI
++--KGBArchGUI
++--Lua
+|  +--Docs
+|  +--lfs
+|  |  +--doc
+|  |  |  `--us
+|  |  |  
+|  |  +--Docs
+|  |  |  `--us
+|  |  |  
+|  |  `--tests
+|  |  
+|  +--lsqlite3
+|  |  +--doc
+|  |  +--Docs
+|  |  `--Examples
+|  |  
+|  +--lualibs
+|  +--S
+|  +--test-amilua
+|  `--test-mui
+|  
++--LzopGUI
++--MathX
+|  +--Data
+|  +--Docs
+|  +--Images
+|  |  +--std
+|  |  `--std-orig
+|  |  
+|  `--Rexx
+|  
++--MCAmiga
+|  `--C
+|  
++--MPlayer
+|  +--.mplayer
+|  +--conf
+|  +--Images
+|  `--Themes-Prefs
+|     +--Buttons
+|     `--Skins
+|     
+|  
++--MUIInspector
++--MUIPlot
++--Omanko
++--PasteQuick
++--RNOArchive
+|  `--Catalogs
+|     +--Finnish
+|     `--Italian
+|     
+|  
++--RPNScientific
++--SDLCalc
+|  +--Docs
+|  `--Source
+|  
++--Set ScreenMode
+|  +--C
+|  +--Docs
+|  +--Extra
+|  +--S
+|  `--Scripts
+|  
++--SkandalfoClock
+|  +--Catalogs
+|  |  +--German
+|  |  +--Polish
+|  |  +--Spanish
+|  |  `--Swedish
+|  |  
+|  +--data
+|  +--example
+|  +--mwb-icons
+|  `--Source
+|  
++--Sploiner-GUI
++--StartOnPubscreen
+|  +--Catalogs
+|  |  +--English
+|  |  +--French
+|  |  +--German
+|  |  +--Italian
+|  |  `--Spanish
+|  |  
+|  +--Docs
+|  `--Example_Icons
+|  
++--TTManager
+|  +--Catalogs
+|  |  +--Franch
+|  |  +--German
+|  |  +--Hungarian
+|  |  +--Polish
+|  |  `--Russian
+|  |  
+|  +--Developer
+|  `--Examples
+|     +--Background
+|     +--CustomEncoding
+|     +--DrawModes
+|     +--FamilyList
+|     +--FontNames
+|     +--MoreFonts
+|     +--PlainTest
+|     +--Postprocess
+|     +--SpeedTest
+|     +--TextExtent
+|     +--TextFit
+|     `--TextLength
+|     
+|  
++--Typeface
+|  +--Catalogs
+|  |  +--Czech
+|  |  +--French
+|  |  +--German
+|  |  +--Italian
+|  |  `--Swedish
+|  |  
+|  +--Manuals
+|  `--Source
+|  
++--UnARC
+|  +--Catalogs
+|  |  +--Czech
+|  |  +--French
+|  |  +--German
+|  |  `--Polish
+|  |  
+|  +--Images
+|  `--S
+|  
++--Vim
+|  `--runtime
+|     +--autoload
+|     |  +--cargo
+|     |  +--dist
+|     |  +--rust
+|     |  `--xml
+|     |  
+|     +--bitmaps
+|     +--colors
+|     |  +--lists
+|     |  `--tools
+|     |  
+|     +--compiler
+|     +--doc
+|     +--ftplugin
+|     +--icons
+|     +--import
+|     |  `--dist
+|     |  
+|     +--indent
+|     |  `--testdir
+|     |     `--tools
+|     |     
+|     |  
+|     +--keymap
+|     +--lang
+|     +--macros
+|     |  +--hanoi
+|     |  +--life
+|     |  +--maze
+|     |  `--urm
+|     |  
+|     +--pack
+|     |  `--dist
+|     |     `--opt
+|     |        +--cfilter
+|     |        |  `--plugin
+|     |        |  
+|     |        +--comment
+|     |        |  +--autoload
+|     |        |  +--doc
+|     |        |  `--plugin
+|     |        |  
+|     |        +--dvorak
+|     |        |  +--dvorak
+|     |        |  `--plugin
+|     |        |  
+|     |        +--editexisting
+|     |        |  `--plugin
+|     |        |  
+|     |        +--editorconfig
+|     |        |  +--autoload
+|     |        |  |  `--editorconfig_core
+|     |        |  |  
+|     |        |  +--doc
+|     |        |  +--ftdetect
+|     |        |  `--plugin
+|     |        |  
+|     |        +--helptoc
+|     |        |  +--autoload
+|     |        |  +--doc
+|     |        |  `--plugin
+|     |        |  
+|     |        +--hlyank
+|     |        |  `--plugin
+|     |        |  
+|     |        +--justify
+|     |        |  `--plugin
+|     |        |  
+|     |        +--matchit
+|     |        |  +--autoload
+|     |        |  +--doc
+|     |        |  `--plugin
+|     |        |  
+|     |        +--netrw
+|     |        |  +--autoload
+|     |        |  |  `--netrw
+|     |        |  |  
+|     |        |  +--doc
+|     |        |  +--plugin
+|     |        |  `--syntax
+|     |        |  
+|     |        +--nohlsearch
+|     |        |  `--plugin
+|     |        |  
+|     |        +--shellmenu
+|     |        |  `--plugin
+|     |        |  
+|     |        +--swapmouse
+|     |        |  `--plugin
+|     |        |  
+|     |        `--termdebug
+|     |           `--plugin
+|     |           
+|     |        
+|     |     
+|     |  
+|     +--plugin
+|     +--print
+|     +--spell
+|     |  +--af
+|     |  +--am
+|     |  +--bg
+|     |  +--br
+|     |  +--ca
+|     |  +--check
+|     |  +--cs
+|     |  +--cy
+|     |  +--da
+|     |  +--de
+|     |  +--el
+|     |  +--en
+|     |  +--eo
+|     |  +--es
+|     |  +--eu
+|     |  +--fo
+|     |  +--fr
+|     |  +--ga
+|     |  +--gd
+|     |  +--gl
+|     |  +--he
+|     |  +--hr
+|     |  +--hu
+|     |  +--id
+|     |  +--it
+|     |  +--ku
+|     |  +--la
+|     |  +--lt
+|     |  +--lv
+|     |  +--mg
+|     |  +--mi
+|     |  +--ms
+|     |  +--nb
+|     |  +--nl
+|     |  +--nn
+|     |  +--ny
+|     |  +--pl
+|     |  +--pt
+|     |  +--ro
+|     |  +--ru
+|     |  +--rw
+|     |  +--sk
+|     |  +--sl
+|     |  +--sr
+|     |  +--sv
+|     |  +--sw
+|     |  +--tet
+|     |  +--th
+|     |  +--tl
+|     |  +--tn
+|     |  +--tr
+|     |  +--uk
+|     |  +--yi
+|     |  `--zu
+|     |  
+|     +--syntax
+|     |  +--generator
+|     |  +--modula2
+|     |  |  `--opt
+|     |  |  
+|     |  +--shared
+|     |  `--testdir
+|     |     +--dumps
+|     |     +--ftplugin
+|     |     +--input
+|     |     |  +--selftestdir
+|     |     |  `--setup
+|     |     |  
+|     |     `--tools
+|     |     
+|     |  
+|     +--tools
+|     `--tutor
+|        +--en
+|        +--it
+|        +--ru
+|        `--sr
+|        
+|     
+|  
++--WitchCleaner
++--ZapHod
+|  +--Catalogs
+|  |  +--German
+|  |  +--Italian
+|  |  `--Spanish
+|  |  
+|  +--Docs
+|  +--icons
+|  |  +--mason
+|  |  |  +--aros
+|  |  |  `--images
+|  |  |  
+|  |  `--original
+|  |  
+|  +--locale
+|  `--Source
+|  
++--ZoomIT
+|  +--Catalogs
+|  |  +--French
+|  |  +--German
+|  |  +--Italian
+|  |  +--Spanish
+|  |  +--Swedish
+|  |  `--Turkish
+|  |  
+|  `--Translations
+|  
++--ZuneARC
+|  +--Icons
+|  +--Source
+|  `--Themes
+|     +--BasicIcons
+|     +--ClassicIcons
+|     +--FutureIcons
+|     +--ModernIcons
+|     `--StandardIcons
+|     
+|  
++--ZuneCalc
+|  `--Source
+|  
+`--ZuneHexEditor
+   `--Source
+   
+
+

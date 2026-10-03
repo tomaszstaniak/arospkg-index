@@ -1,0 +1,7 @@
+==== opentyrian: opentyrian, stack 262144
+Saturday 03-Oct-26 11:58:52
+after 15 s (a number means it is running):
+ 16
+after Ctrl-C (empty means it has ended):
+ 16
+Saturday 03-Oct-26 11:59:16

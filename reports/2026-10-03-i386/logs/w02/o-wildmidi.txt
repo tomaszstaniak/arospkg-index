@@ -1,0 +1,14 @@
+
+WildMidi 0.4.6 Open Source Midi Sequencer
+Copyright (C) WildMIDI Developers 2001-2016
+
+WildMidi comes with ABSOLUTELY NO WARRANTY
+This is free software, and you are welcome to redistribute it under
+the terms and conditions of the GNU General Public License version 3.
+For more information see COPYING
+
+Report bugs to https://github.com/Mindwerks/wildmidi/issues
+WildMIDI homepage is at https://github.com/Mindwerks/wildmidi
+
+Usage: wildmidi [options] filename.mid
+

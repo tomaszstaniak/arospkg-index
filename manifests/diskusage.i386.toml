@@ -1,0 +1,29 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/diskusage/C/DiskUsage with Run and input from NIL:, stack 262144
+# bytes: it printed its usage or output and returned 0. Evidence:
+# reports/2026-10-03-i386/ (batch w01).
+
+status          = "approved"
+id              = "diskusage"
+version         = "40.8"
+summary         = "Estimates file space usage"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/shell"
+url             = "https://archives.arosworld.org/share/utility/shell/diskusage.i386-aros.lha"
+size            = 60666
+upload_date     = "20210118-16.38"
+selected_by     = "only-candidate"
+
+sha256          = "47b54eeefd6aa651ba79a5068399b5f4b5443a041c5dcefcf59a662b2f5a5369"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "DiskUsage"
+icon            = "DiskUsage.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]

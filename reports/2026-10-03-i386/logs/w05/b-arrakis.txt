@@ -1,0 +1,7 @@
+==== arrakis: arrakis-aros-i386, stack 262144
+Saturday 03-Oct-26 11:57:25
+after 15 s (a number means it is running):
+ 13
+after Ctrl-C (empty means it has ended):
+ 13
+Saturday 03-Oct-26 11:57:51

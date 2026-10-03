@@ -1,0 +1,7 @@
+==== wildmidi: Wildmidi, stack 262144
+Saturday 03-Oct-26 11:50:11
+after 15 s (a number means it is running):
+Wildmidi returned: rc=1
+after Ctrl-C (empty means it has ended):
+Wildmidi returned: rc=1
+Saturday 03-Oct-26 11:50:30

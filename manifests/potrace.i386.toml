@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/potrace/bin/potrace with Run and input from NIL:, stack 262144
+# bytes: run on test input made for it (see logs/w10/o-potrace.txt), it
+# returned 0 and wrote the expected output. Evidence:
+# reports/2026-10-03-i386/ (batch w10).
+
+status          = "approved"
+id              = "potrace"
+version         = "1.16"
+summary         = "Transforming bitmaps into vector graphics"
+arch            = "i386"
+abi             = "v0"
+category        = "graphics/convert"
+url             = "https://archives.arosworld.org/share/graphics/convert/potrace.i386-aros.zip"
+size            = 1006164
+upload_date     = "20191120-19.16"
+selected_by     = "only-candidate"
+
+sha256          = "45d1652507892809b002f6f2331f277c697c50ad51b2c59bd3fdfef852f3d1d4"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "potrace-1.16"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

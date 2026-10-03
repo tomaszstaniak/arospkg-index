@@ -1,0 +1,37 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/hydracastle/HydraCastle with Run and input from NIL:, stack
+# 262144 bytes: its window or screen was open and the process was running
+# after 15 s. Evidence: reports/2026-10-03-i386/ (batch w06).
+
+status          = "approved"
+id              = "hydracastle"
+version         = "1/2019"
+summary         = "metroidvania-style action platformer"
+arch            = "i386"
+abi             = "v0"
+category        = "game/platform"
+url             = "https://archives.arosworld.org/share/game/platform/hydracastle.i386-aros.zip"
+size            = 1911077
+upload_date     = "20190126-12.30"
+selected_by     = "only-candidate"
+
+sha256          = "544f9c434d981ec07f39079c60156282980165afd8bd1a5367a2819f36334449"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "HydraCastle"
+icon            = "HydraCastle.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "gl.library"

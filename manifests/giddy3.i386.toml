@@ -1,0 +1,37 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/giddy3/giddy3
+# with Run and input from NIL:, stack 262144 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-10-03-i386/ (batch w05).
+
+status          = "approved"
+id              = "giddy3"
+version         = "1.5"
+summary         = "OpenGL puzzle-solving platform game."
+arch            = "i386"
+abi             = "v0"
+category        = "game/platform"
+url             = "https://archives.arosworld.org/share/game/puzzle/giddy3.i386-aros.zip"
+size            = 3590990
+upload_date     = "20211214-13.55"
+selected_by     = "only-candidate"
+
+sha256          = "79a7af2571fb31ea9818d5c732efcba5194caa7011642a9dbc63008a75caf2de"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Giddy3"
+icon            = "Giddy3.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "gl.library"

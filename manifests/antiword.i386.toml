@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/antiword/antiword with Run and input from NIL:, stack 262144
+# bytes: run on test input made for it (see logs/w10/o-antiword.txt), it
+# returned 0 and wrote the expected output. Evidence:
+# reports/2026-10-03-i386/ (batch w10).
+
+status          = "approved"
+id              = "antiword"
+version         = "0.37"
+summary         = "Convert Word documents to TXT/PDF/PS"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/text/convert"
+url             = "https://archives.arosworld.org/share/utility/text/convert/antiword.i386-aros.zip"
+size            = 247828
+upload_date     = "20070101-17.37"
+selected_by     = "only-candidate"
+
+sha256          = "f9d32e01acae01ddafc5be801c13d382f6d9dedfc3fd893619586b9efb6fee2b"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Antiword"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

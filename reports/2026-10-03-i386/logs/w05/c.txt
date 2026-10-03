@@ -1,0 +1,88 @@
+==== stage C: remove
+removed boy
+remove boy: rc=0
+removed dose2
+remove dose2: rc=0
+removed giddy3
+remove giddy3: rc=0
+removed arrakis
+remove arrakis: rc=0
+removed nano
+remove nano: rc=0
+removed dosbox
+remove dosbox: rc=0
+removed opentyrian
+remove opentyrian: rc=0
+removed fheroes2
+remove fheroes2: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       12:00:15
+fheroes2                     Dir ---rwed Today       12:00:21
+opentyrian                   Dir ---rwed Today       12:00:06
+dosbox                       Dir ---rwed Today       12:00:06
+nano                         Dir ---rwed Today       12:00:03
+arrakis                      Dir ---rwed Today       12:00:00
+giddy3                       Dir ---rwed Today       11:59:58
+dose2                        Dir ---rwed Today       11:59:51
+boy                          Dir ---rwed Today       11:59:51
+cache                        Dir ---rwed Today       11:55:54
+db                           Dir ---rwed Today       12:00:21
+11 directories - 11 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/fheroes2" is empty
+Directory "SYS:Batch/opentyrian" on Saturday 10/03/26:
+OpenTyrian2.1                Dir ---rwed Today       12:00:11
+1 directory - 1 block used
+Directory "SYS:Batch/opentyrian/OpenTyrian2.1" on Saturday 10/03/26:
+data                         Dir ---rwed Today       12:00:15
+1 directory - 1 block used
+Directory "SYS:Batch/opentyrian/OpenTyrian2.1/data" on Saturday 10/03/26:
+music.mus                 153482 ---rwed Today       11:55:53
+demo.1                      2745 ---rwed Today       11:55:53
+2 files - 306 blocks used
+Directory "SYS:Batch/dosbox" is empty
+Directory "SYS:Batch/nano" is empty
+Directory "SYS:Batch/arrakis" is empty
+Directory "SYS:Batch/giddy3" is empty
+Directory "SYS:Batch/dose2" on Saturday 10/03/26:
+data                         Dir ---rwed Today       11:59:54
+1 directory - 1 block used
+Directory "SYS:Batch/dose2/data" on Saturday 10/03/26:
+italo160.ogg             4317767 ---rwed Today       11:55:48
+1 file - 8434 blocks used
+Directory "SYS:Batch/boy" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+fheroes2.lha             6158795 ---rwed Today       11:55:54
+opentyrian.zip           6851132 ---rwed Today       11:55:52
+dosbox.zip               1713180 ---rwed Today       11:55:52
+nano.zip                 3911860 ---rwed Today       11:55:51
+arrakis.zip              3566920 ---rwed Today       11:55:50
+giddy3.zip               3590990 ---rwed Today       11:55:49
+dose2.zip                5359751 ---rwed Today       11:55:48
+boy.zip                  6892187 ---rwed Today       11:55:47
+8 files - 74311 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       12:00:21
+transactions                 Dir ---rwed Today       12:00:21
+installed                    Dir ---rwed Today       12:00:21
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+fheroes2-6ac0ee55.json       146 ---rwed Today       12:00:21
+opentyrian-6ac0ee4f.json     210 ---rwed Today       12:00:15
+dosbox-6ac0ee46.json         141 ---rwed Today       12:00:06
+nano-6ac0ee43.json           138 ---rwed Today       12:00:03
+arrakis-6ac0ee40.json        144 ---rwed Today       12:00:00
+giddy3-6ac0ee3e.json         143 ---rwed Today       11:59:58
+dose2-6ac0ee3a.json          160 ---rwed Today       11:59:54
+boy-6ac0ee37.json            136 ---rwed Today       11:59:51
+8 files - 8 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 19 files - 17 directories - 83076 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 12:00:21

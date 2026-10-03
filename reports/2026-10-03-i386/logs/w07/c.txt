@@ -1,0 +1,70 @@
+==== stage C: remove
+removed timeless
+remove timeless: rc=0
+removed tressette
+remove tressette: rc=0
+removed pkg-54321
+remove pkg-54321: rc=0
+removed planethively
+remove planethively: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       12:09:47
+planethively                 Dir ---rwed Today       12:09:54
+pkg-54321                    Dir ---rwed Today       12:09:44
+tressette                    Dir ---rwed Today       12:09:26
+timeless                     Dir ---rwed Today       12:09:06
+cache                        Dir ---rwed Today       12:07:02
+db                           Dir ---rwed Today       12:09:56
+7 directories - 7 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/planethively" is empty
+Directory "SYS:Batch/pkg-54321" is empty
+Directory "SYS:Batch/tressette" on Saturday 10/03/26:
+data                         Dir ---rwed Today       12:09:27
+1 directory - 1 block used
+Directory "SYS:Batch/tressette/data" on Saturday 10/03/26:
+trace_coregame.txt         empty ---rwed Today       12:07:29
+music                        Dir ---rwed Today       12:09:27
+images                       Dir ---rwed Today       12:09:25
+font                         Dir ---rwed Today       12:07:00
+1 file - 3 directories - 3 blocks used
+Directory "SYS:Batch/tressette/data/music" on Saturday 10/03/26:
+mand_intro.ogg            241746 ---rwed Today       12:07:00
+1 file - 473 blocks used
+Directory "SYS:Batch/tressette/data/images" on Saturday 10/03/26:
+tavolino.jpg              144235 ---rwed Today       12:07:00
+im000740.jpg              129333 ---rwed Today       12:07:00
+fiore7_back.jpg           119078 ---rwed Today       12:07:00
+3 files - 768 blocks used
+Directory "SYS:Batch/tressette/data/font" on Saturday 10/03/26:
+vera.ttf                   65932 ---rwed Today       12:07:00
+ariblk.ttf                117028 ---rwed Today       12:07:00
+2 files - 358 blocks used
+Directory "SYS:Batch/timeless" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+planethively.lha          473725 ---rwed Today       12:07:02
+pkg-54321.zip             978621 ---rwed Today       12:07:01
+tressette.zip            4119001 ---rwed Today       12:07:00
+timeless.zip              483766 ---rwed Today       12:07:00
+4 files - 11828 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       12:09:55
+transactions                 Dir ---rwed Today       12:09:56
+installed                    Dir ---rwed Today       12:09:55
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+planethively-6ac0f093.json     154 ---rwed Today       12:09:55
+pkg-54321-6ac0f088.json      149 ---rwed Today       12:09:45
+tressette-6ac0f077.json      308 ---rwed Today       12:09:28
+timeless-6ac0f062.json       145 ---rwed Today       12:09:06
+4 files - 4 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 15 files - 14 directories - 13445 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 12:09:59

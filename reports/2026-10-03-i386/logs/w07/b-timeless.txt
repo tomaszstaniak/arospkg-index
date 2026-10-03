@@ -1,0 +1,7 @@
+==== timeless: Timeless, stack 262144
+Saturday 03-Oct-26 12:07:02
+after 15 s (a number means it is running):
+ 9
+after Ctrl-C (empty means it has ended):
+ 9
+Saturday 03-Oct-26 12:07:26

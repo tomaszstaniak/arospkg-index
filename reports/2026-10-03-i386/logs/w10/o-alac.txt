@@ -1,0 +1,4 @@
+ALAC -v -f RAM:t.wav luckynight.m4a
+Directory "RAM:" on Saturday 10/03/26:
+t.wav                    10668716 ---rwed Today       12:41:12
+1 file - 20838 blocks used

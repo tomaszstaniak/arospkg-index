@@ -1,0 +1,37 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/dose2/dose2
+# with Run and input from NIL:, stack 262144 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-10-03-i386/ (batch w05).
+
+status          = "approved"
+id              = "dose2"
+version         = "2002"
+summary         = "Pulsating demo with bawdy humor from Assembly '01."
+arch            = "i386"
+abi             = "v0"
+category        = "demo/scene"
+url             = "https://archives.arosworld.org/share/demo/scene/dose2.i386-aros.zip"
+size            = 5359751
+upload_date     = "20140116-13.22"
+selected_by     = "only-candidate"
+
+sha256          = "5bbedf38e778aef4d2ab3579f0691dd59923dbfeebdcf104c673bdbf0e2f2f7e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "dose2"
+icon            = "dose2.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "mesa.library"

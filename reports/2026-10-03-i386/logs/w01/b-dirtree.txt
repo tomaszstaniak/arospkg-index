@@ -1,0 +1,7 @@
+==== dirtree: DirTree, stack 262144
+Saturday 03-Oct-26 11:49:41
+after 15 s (a number means it is running):
+DirTree returned: rc=10
+after Ctrl-C (empty means it has ended):
+DirTree returned: rc=10
+Saturday 03-Oct-26 11:50:00

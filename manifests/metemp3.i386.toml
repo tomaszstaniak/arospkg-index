@@ -1,0 +1,36 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/metemp3/meteMP3
+# with Run and input from NIL:, stack 262144 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-10-03-i386/ (batch w03).
+
+status          = "approved"
+id              = "metemp3"
+version         = "0.3"
+summary         = "a Mp3,Flac,Wav Player"
+arch            = "i386"
+abi             = "v0"
+category        = "audio/play"
+url             = "https://archives.arosworld.org/share/audio/play/metemp3.i386-aros.zip"
+size            = 193088
+upload_date     = "20160718-19.19"
+selected_by     = "only-candidate"
+
+sha256          = "3ea06a74e47a89ab189d3f6bc50e6c53994b628f70db4780a903f5dd842be6e0"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "meteMP3"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"

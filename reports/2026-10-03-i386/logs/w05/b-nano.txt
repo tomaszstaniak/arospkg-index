@@ -1,0 +1,7 @@
+==== nano: nano-aros-i386, stack 262144
+Saturday 03-Oct-26 11:57:55
+after 15 s (a number means it is running):
+ 14
+after Ctrl-C (empty means it has ended):
+ 14
+Saturday 03-Oct-26 11:58:21

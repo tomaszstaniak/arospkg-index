@@ -1,0 +1,41 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/iconmake/IconMake with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w01).
+
+status          = "approved"
+id              = "iconmake"
+version         = "1.2"
+summary         = "The DualPNG Icon Creator for AROS"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/misc"
+url             = "https://archives.arosworld.org/share/utility/misc/iconmake.i386-aros.zip"
+size            = 54071
+upload_date     = "20260826-17.38"
+selected_by     = "only-candidate"
+
+sha256          = "93241739418611094f84de94f8985840433f6aeb7d36fae0f16f657e71b4f037"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "IconMake"
+icon            = "IconMake.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

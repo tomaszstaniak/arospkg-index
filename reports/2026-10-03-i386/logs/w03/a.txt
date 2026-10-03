@@ -1,0 +1,385 @@
+==== stage A: install
+
+==== daysleeper
+Saturday 03-Oct-26 11:52:36
+fetching https://archives.arosworld.org/share/utility/misc/daysleeper.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/daysleeper.i386-aros.lha
+verified and cached SYS:Batch/cache/daysleeper.lha
+installed daysleeper
+install daysleeper: rc=0
+{
+  "schema":1,
+  "name":"daysleeper",
+  "version":"0.9r2",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"DaySleeper",
+  "installed":"2026-10-03T11:52:37Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/daysleeper.i386-aros.lha",
+  "archive_sha256":"f0a21a5b72895fb7a890d2dcb501c552a7b087e1c31ab60eac0b520497f9f29c",
+  "archive_size":157619,
+  "reason":"explicit",
+  "dir":"daysleeper",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" }
+  ],
+  "icon": { "state":"installed", "sha256":"9cc52bc717a7c08f9b71d69831ac162842596ae6da7a37622db6b22bd39b7b8d", "size":11420, "member":"DaySleeper.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Daysleeper_morphos.png", "sha256":"daddf514543e8987f2f87dc5a92419ec90827e32d99d1aca1c1aa2e485944ea9", "size":39320 },
+    { "path":"Daysleeper_aros.png", "sha256":"dfb954852673033747c30a33277b6d88b6f001f31e0209ffbbb3139a0de28d04", "size":40425 },
+    { "path":"Daysleeper_amigaos4.png", "sha256":"cb067d41715d7ce27dc4f4cd4a2ebbe27ca65c8b407fa6a791c2c8ac91dacf75", "size":42539 },
+    { "path":"Daysleeper.readme.info", "sha256":"11d4e10a0f75721efd28f7e8c3ddc440ecc07926a9588f6fb83dc6450378447a", "size":6526 },
+    { "path":"Daysleeper.readme", "sha256":"b3711dacd5d9760a256d61f6b4cb616e6de081da3f3b52e02c357c82538a82a3", "size":3138 },
+    { "path":"Daysleeper.info", "sha256":"431c7fe4336ce7076eff267e6ac4d2a0240605bcadd77374be682955b0ac3648", "size":3032 },
+    { "path":"Daysleeper.c", "sha256":"2486f84525ea56eda1d08cf20fdf012eb135c24cd27bf160b1f2f8560a46ccaf", "size":13068 },
+    { "path":"Daysleeper", "sha256":"39ac9e6cb44b2ff5759c790e4700485a74a0fe01857b0d3a85ebe729f3c4882a", "size":29377 }
+  ]
+}
+
+==== metemp3
+Saturday 03-Oct-26 11:52:37
+fetching https://archives.arosworld.org/share/audio/play/metemp3.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/play/metemp3.i386-aros.zip
+verified and cached SYS:Batch/cache/metemp3.zip
+installed metemp3
+install metemp3: rc=0
+{
+  "schema":1,
+  "name":"metemp3",
+  "version":"0.3",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"meteMP3",
+  "installed":"2026-10-03T11:52:37Z",
+  "origin":"https://archives.arosworld.org/share/audio/play/metemp3.i386-aros.zip",
+  "archive_sha256":"3ea06a74e47a89ab189d3f6bc50e6c53994b628f70db4780a903f5dd842be6e0",
+  "archive_size":193088,
+  "reason":"explicit",
+  "dir":"metemp3",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"meteMP3", "sha256":"3420ce00dd2122d71aca31895aecc30d29763743b6521791f1f2e8f47250a691", "size":286184 },
+    { "path":"meteMP3.info", "sha256":"13e17b3fbca2471d7d514679aead661a0763e049c941971771369dc1465176c4", "size":3851 },
+    { "path":"plists.info", "sha256":"fd4a652c6712f7786c3198995db210a415a879e73e54d825cf06ac7901c3d93e", "size":7526 },
+    { "path":"lstloc.cache", "sha256":"70b833d90992363006edb9dbd3ea789ba60b5fc2bb26a00e1b0c4eb86d389194", "size":8 },
+    { "path":"Img/tbar.png", "sha256":"73b61087e7e7718c9592060de8d7c76fcbecc097805d8c7b61a7125e59e2306c", "size":1477 },
+    { "path":"Img/ff.png", "sha256":"123d283f7e3bc8f7a0442619cc02242a0a13f63188c715f0890785f59cae6186", "size":1321 },
+    { "path":"Img/exit_g.png", "sha256":"07de1ce3b00907815b6647c664aaae0c766c4ffb0dcf6e44f359df7f233633ba", "size":909 },
+    { "path":"Img/exit.png", "sha256":"3511a632ed5b822382f01df2b3cfb69645aac986b153b45763d30236f59cb5cf", "size":1451 },
+    { "path":"Img/DskSave_g.png", "sha256":"04ab7d16d003d516db26212c394861112003cc5eb3597aac9a833fa09c20b627", "size":914 },
+    { "path":"Img/DskSave.png", "sha256":"eb7ffa522ac3af23262b3ebfc917f1c8bbbf224917e50eabf49b5a6337c246f7", "size":876 },
+    { "path":"Img/disk_g.png", "sha256":"d1333833950d169f117084bb9d685f67cac893f1044c6de19407906b93a07a91", "size":877 },
+    { "path":"Img/disk.png", "sha256":"0375f59f1e0b6bdc7b7cb4721d01450e29cdb610fcc86f90160fba542e8836e2", "size":895 },
+    { "path":"Img/del_g.png", "sha256":"4a0a503c0faf4bb1952dd5590a11859d75b36ce0e8f632ab2437706d7c20eb7f", "size":637 },
+    { "path":"Img/del.png", "sha256":"c79f129caf1b396daea3dc3fc33886a5b97b1c331a426f2158340f737502f6cb", "size":622 },
+    { "path":"Img/back.png", "sha256":"86611875dd9a8f5d5594fbe86f97d31fca080f1791c95e23d266a4be0d270d88", "size":973 },
+    { "path":"Img/add_g.png", "sha256":"a711a458a922f24fb3a5714ef5fa4acdfb7cbf68c7e4a64066e2955b6d13e36e", "size":829 },
+    { "path":"Img/add.png", "sha256":"f56245c29f6455691392af1821b7a2abeb898598afa39bef8e586e0ac34631cf", "size":793 },
+    { "path":"Img/stop_g.png", "sha256":"b6d1175e8ef76773c647b9b822e7709f360e4bb8b961b571a954ee92fcad2fcc", "size":1358 },
+    { "path":"Img/play.png", "sha256":"7f3890d8688a681f4484d1380c33456f79bc559b44c050e5788b6316266b524f", "size":1085 },
+    { "path":"Img/pause_g.png", "sha256":"cb5a3c661ed10d3b2f922e0a23289ab17eadcbf5393d2d661a6dc574ceb2e023", "size":941 },
+    { "path":"Img/pause.png", "sha256":"c8732a636dee2c9ce4d97ec10ad3978fce3416e8c695220b547ac2e71770c6c9", "size":818 },
+    { "path":"Img/open_g.png", "sha256":"33d44507c6656503a5421623c18f437f0a0b555e56fc358edc57b53e4f773568", "size":939 },
+    { "path":"Img/open.png", "sha256":"b02ef1a5bffa993ea43972b7e9027a1db16de37d1dacfdbe635b7631cd87638a", "size":1124 },
+    { "path":"Img/ok.png", "sha256":"8a2207338c1ac54bb82d36c4d3157415cf675052d6206ac722a05a65106e1461", "size":791 },
+    { "path":"Img/listview_g.png", "sha256":"5a6a4412385494dee773dd168cb59c831df0600ae92ee93adb9e17eef6b11a90", "size":679 },
+    { "path":"Img/listview.png", "sha256":"31c5a41b7b408d484a8c2bf2842eeddcf89f17d17235797658af6a78c5a71fc1", "size":537 },
+    { "path":"Img/ff_g.png", "sha256":"1cce67ca38d8e4649f29c6f3337a10fcfcd4a79fdb6fe2395de92ebcae426b03", "size":949 },
+    { "path":"Img/stop.png", "sha256":"3c7c6d9fee62c8d098b2094d0b817530dcfbe2561dc6cc356be21f882401c04e", "size":678 },
+    { "path":"Img/rw_g.png", "sha256":"73bed5bd8de304bb70511e165867172ed3a7607f8f25c6aab5db36d78bb47900", "size":1122 },
+    { "path":"Img/rw.png", "sha256":"95afbc362e67e5cd29b5c1407156b931d110e40d7f1ba8d52ece38dc6be80c3d", "size":1399 },
+    { "path":"Img/play_g.png", "sha256":"f356b4698856fa879c13b7c648729f27e3a5c10f92a0b471d14b489721e0f7a4", "size":858 },
+    { "path":"meteMP3.Readme", "sha256":"694685f1c69f0b1d0524f018ab5778cfd133a2a30af6e0978cf17f90a8f5d79d", "size":2114 },
+    { "path":"meteMP3.Readme.pdf", "sha256":"05a940a927aae2cf6475cfdb31d6ddb6545465a6a5147db9f28031d04de26079", "size":3032 }
+  ]
+}
+
+==== qlview
+Saturday 03-Oct-26 11:52:37
+fetching https://archives.arosworld.org/share/graphics/viewer/qlview.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=graphics/viewer/qlview.i386-aros.lha
+verified and cached SYS:Batch/cache/qlview.lha
+installed qlview
+install qlview: rc=0
+{
+  "schema":1,
+  "name":"qlview",
+  "version":"25.09",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"QLView",
+  "installed":"2026-10-03T11:52:38Z",
+  "origin":"https://archives.arosworld.org/share/graphics/viewer/qlview.i386-aros.lha",
+  "archive_sha256":"ef031b1814450656a124334ae3adc9f212a210ae4ebb1a0dc5f96b762fd64721",
+  "archive_size":258083,
+  "reason":"explicit",
+  "dir":"qlview",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"installed", "sha256":"365093a155490ce8612e4ff5fa040229920b886d577044e103be37d2a1ff6038", "size":5935, "member":"QLView.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"source/QLView_protos.h", "sha256":"da99c48b6eaf548fe8c4b3683fba5f2935add1f607ca5b14e1a869b367325c46", "size":1036 },
+    { "path":"source/QLView_aros.c", "sha256":"b62dcb2bc27d0ac0261c428c696ad053e35d116094450a80686f344a178cb7e1", "size":27400 },
+    { "path":"source/QLView.c", "sha256":"a38a2d9e46d9f1bac1f6c35317e243482ed42373fbe175d0c2ce3fef1b7b4b9c", "size":28868 },
+    { "path":"goodie2_screen", "sha256":"c002b7b2dcaf7f36446ec13bc5cab0418e524eb91fdbe6a000d6a47f605ada37", "size":32768 },
+    { "path":"Worm_screen", "sha256":"17c22dbea60a63bbcc3bb80ce54aaeff3053bbe42e99f0cb2b1c5d7b7827ef2f", "size":32768 },
+    { "path":"WhatEver_Screen", "sha256":"a8591b81c73d06f8cf59d396c5cbbb18c96e3fd4c908402a34294022bb7985a6", "size":32768 },
+    { "path":"SirClive_screen", "sha256":"468ab77ddbbacdff6afc8b28b85d9cb5ede103ddc765fb1178a8315777c0fed5", "size":32768 },
+    { "path":"Renault5_screen", "sha256":"b3bdf477ef8295b719776f2b073eabf8b2eb8056d81fb030614091b8eba2fa08", "size":32768 },
+    { "path":"QLView_aros.info", "sha256":"f8c04452f55d303ec23ec8e7ea96b4fd61e1d17d6d1eeb9c89bd48f80a70e9c6", "size":5864 },
+    { "path":"QLView_aros", "sha256":"064ecf559c6d58bf530dd4cf71cc3f5073cfcf7ff4ac28c5a273a0b7914f471a", "size":32252 },
+    { "path":"QLView.readme.info", "sha256":"cfce646681bb1df001fe3fc23e624548f5ec3ba325c947958037a6e0db3524bc", "size":7640 },
+    { "path":"QLView.readme", "sha256":"87daeef685522705428a3ee83f86c5e142abd69e959125674514a49a026902a7", "size":4768 },
+    { "path":"QLView.info", "sha256":"db7df42cbbfa435f002f989786d3ab38e912a65d80a6770010d1c0078e624930", "size":5864 },
+    { "path":"QLView", "sha256":"59ba23bb4514ef6a53e9266db9b7e31a7ddf8a5830ee0b0e6e73165bfd1684c6", "size":45328 },
+    { "path":"PeaceFestival2000_mode8", "sha256":"2cdb89c271536643785b3c2666cc789b85314ec13b02b7aacd18437c5a1d463a", "size":32768 },
+    { "path":"Lamp_screen", "sha256":"0da58bb129ee63a6769fb910ee6d7ab57313263e0619a980aed789dd20fe75e3", "size":32768 },
+    { "path":"Gwendoline_screen", "sha256":"d02032f785d69b5649649b10675080fe4675db7a483aeadcd3fe690bcbe7a982", "size":32768 },
+    { "path":"Girl_screen", "sha256":"034129b3ba386dd3599c0a4b6c485ed023a62690e73bd660c83d8328af2bd1bf", "size":32768 },
+    { "path":"Gatto_screen", "sha256":"3635e950657e8d7cc50cfd0f585c42fc60cf0e584cf659b38b8be274770054a2", "size":32768 },
+    { "path":"GChrome_screen", "sha256":"138f236f55056a9243a840d919bd4098969bfb5d7053b06e32e2d0f37d983dea", "size":32768 },
+    { "path":"EandI_MODE4", "sha256":"1a3414755555c74f0ad40bdb690601ba9fc08d0767d4e6e6cf7952b770a30886", "size":32768 },
+    { "path":"Cervo_screen", "sha256":"98de53b81d6bf47b57d3cccc8c71498011a0f8a6d10142dfefe93bad45bd1a64", "size":32768 },
+    { "path":"Cat_screen", "sha256":"e9fe181ba22275eae6611210d04359ab3a71e6025f0127ae0912c1ae897e18ef", "size":32768 },
+    { "path":"ArcEd_Russian_screen", "sha256":"b97f3ab8f9d5d6bb58de83f56f61acf9dabbd214ddfa6e248c918d1523291ce1", "size":32768 }
+  ]
+}
+
+==== pkg-7mezzoplus
+Saturday 03-Oct-26 11:52:38
+fetching https://archives.arosworld.org/share/game/card/7mezzoplus.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/card/7mezzoplus.i386-aros.zip
+verified and cached SYS:Batch/cache/pkg-7mezzoplus.zip
+installed pkg-7mezzoplus
+install pkg-7mezzoplus: rc=0
+{
+  "schema":1,
+  "name":"pkg-7mezzoplus",
+  "version":"1.0",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"7MezzoPlus1.0",
+  "installed":"2026-10-03T11:52:38Z",
+  "origin":"https://archives.arosworld.org/share/game/card/7mezzoplus.i386-aros.zip",
+  "archive_sha256":"f4e51bb889fa4af57962efeb53164cadb12855c70c5cb3be3f5239de7632cd94",
+  "archive_size":483773,
+  "reason":"explicit",
+  "dir":"pkg-7mezzoplus",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"111f3c938f9d1fdf16dbbb228184215e6abeea263ece270a21a2889af0ca4620", "size":1087 },
+    { "path":"Readme", "sha256":"42570e7324410aec38b9dbd39818eff0daa3ecfd9356a54890502c6003a5a82a", "size":2573 },
+    { "path":"Data/risata.iff", "sha256":"5b0dac5cc1dc3925efc5e1ed2d8697843a697858aa45b5192b1e9da0961d36ff", "size":100684 },
+    { "path":"Data/beep.iff", "sha256":"5aae67f9c6106bc0a00e639a4498af8d986f5eb493a8429a141fd44fb40dbc91", "size":4530 },
+    { "path":"Data/applauso.iff", "sha256":"3a88d10b53ae5bfca4285bff7208185a0f7f30f39b761560c6b073ed4ab9d87f", "size":88178 },
+    { "path":"7MezzoAros.png", "sha256":"f64562bfc01697a2c0886bd4a69f7bb194f9c294208bfef45e502bd4eb6de9e0", "size":18688 },
+    { "path":"7Mezzo.info", "sha256":"32980d44430815506cbc48d09f6a1fa28ac050fe64af7614e371073c2a587c57", "size":1402 },
+    { "path":"7Mezzo", "sha256":"5ca380ea824da9a988ee2f6e2f085279f38ccfe3b9be4443b6c04973961a0b35", "size":1586056 }
+  ]
+}
+
+==== gicriptofilex
+Saturday 03-Oct-26 11:52:38
+fetching https://archives.arosworld.org/share/utility/misc/gicriptofilex.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/gicriptofilex.i386-aros.zip
+verified and cached SYS:Batch/cache/gicriptofilex.zip
+installed gicriptofilex
+install gicriptofilex: rc=0
+{
+  "schema":1,
+  "name":"gicriptofilex",
+  "version":"1.0",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"GICriptoFileX1.0",
+  "installed":"2026-10-03T11:52:38Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/gicriptofilex.i386-aros.zip",
+  "archive_sha256":"cdd5dfbecbbe99671d082de9d7210382be1b326c125542ae5ec45e1fedb102b0",
+  "archive_size":377005,
+  "reason":"explicit",
+  "dir":"gicriptofilex",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"GICriptoFile.info", "sha256":"467910a53559115a343fd41c2b5946d5e3e08da83ac43bf60f789dc1e99389ee", "size":1402 },
+    { "path":"GICriptoFile", "sha256":"b91baef2e7a6026f9823c239775ace50924893ca44e656bc2f97fecd81c236c6", "size":1336504 },
+    { "path":"Readme", "sha256":"3915e988b58e293df45081620edf092108aca8d421a1c13368730e6f79fcac4c", "size":3094 },
+    { "path":"Readme.info", "sha256":"111f3c938f9d1fdf16dbbb228184215e6abeea263ece270a21a2889af0ca4620", "size":1087 },
+    { "path":"GICriptoFileXAros.png", "sha256":"2f07e3de95ae9590b0d1e59db5c97681a2cd0c94c0bf121dfa55a8e0d654131a", "size":12421 }
+  ]
+}
+
+==== giocodel15
+Saturday 03-Oct-26 11:52:38
+fetching https://archives.arosworld.org/share/game/card/giocodel15.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=game/card/giocodel15.i386-aros.zip
+verified and cached SYS:Batch/cache/giocodel15.zip
+installed giocodel15
+install giocodel15: rc=0
+{
+  "schema":1,
+  "name":"giocodel15",
+  "version":"1.0",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"GiocoDel15_1.0",
+  "installed":"2026-10-03T11:52:39Z",
+  "origin":"https://archives.arosworld.org/share/game/card/giocodel15.i386-aros.zip",
+  "archive_sha256":"fc7ae6c4615b774250218bee6246191d7b296d2f57f1e882323b38a5e37a3eed",
+  "archive_size":351429,
+  "reason":"explicit",
+  "dir":"giocodel15",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"111f3c938f9d1fdf16dbbb228184215e6abeea263ece270a21a2889af0ca4620", "size":1087 },
+    { "path":"Readme", "sha256":"08832e6b847226fdbf83fd2a876b78ca3d1625b9a1a45e535b31152b17281665", "size":3122 },
+    { "path":"GiocoDel15.info", "sha256":"21571009f7096a821a76fcda7a0d561800100283efef6e2cb328461faf9c21d1", "size":1718 },
+    { "path":"GiocoDel15", "sha256":"d023e9fb878adc609aee86f573b17ac1fb3ab913f02b289cfb53deaa1337935b", "size":1310548 }
+  ]
+}
+
+==== isotools-gui
+Saturday 03-Oct-26 11:52:39
+fetching https://archives.arosworld.org/share/utility/isotools-gui.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/isotools-gui.i386-aros.zip
+verified and cached SYS:Batch/cache/isotools-gui.zip
+installed isotools-gui
+install isotools-gui: rc=0
+{
+  "schema":1,
+  "name":"isotools-gui",
+  "version":"1.0",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"IsoTools-GUI",
+  "installed":"2026-10-03T11:52:40Z",
+  "origin":"https://archives.arosworld.org/share/utility/isotools-gui.i386-aros.zip",
+  "archive_sha256":"8f8854fd44b549eccb8723d145253326cea7ffca8c0a4efbb3425ef1af680526",
+  "archive_size":211054,
+  "reason":"explicit",
+  "dir":"isotools-gui",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" }
+  ],
+  "icon": { "state":"installed", "sha256":"94f9a4cbc72a3569ef354f57f6b7fd6f67915943ab65c81b26def3907f292b2b", "size":9695, "member":"IsoTools-GUI.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"4258552cf785c60084d5d0ba28ea8c4e2d218bd3bbc57fd05289b601f5565272", "size":9136 },
+    { "path":"Source/isotools-gui.c", "sha256":"c9889f2474f662385fdf7b24b9d13204bbffb19d9acd9c7869a76b7106a49b2e", "size":28020 },
+    { "path":"IsoTools.info", "sha256":"3fcf626d864f655ed2fba69caef7aa8ef1569be923108671ce43211b5a05b79a", "size":8501 },
+    { "path":"IsoTools-GUI.pdf.info", "sha256":"7c436a17d93d43b00b534f635afca17bd6ca1d40dfb733bc5159794853371cb6", "size":7963 },
+    { "path":"IsoTools-GUI.pdf", "sha256":"90f74ef147f87f2cf727dd1fc73f45a9e301f01811b72a84bffdc8a851f94261", "size":153286 },
+    { "path":"IsoTools-GUI.info", "sha256":"c72b767dbdb855423f441a411ee7f81e66b4208612b2bf77d17426dd8c89ff67", "size":8162 },
+    { "path":"IsoTools-GUI.1.prefs", "sha256":"1cd4e84066d473a5e7162f62eb3d3a47236572ba2d5ed922deb14af75390d404", "size":5064 },
+    { "path":"IsoTools-GUI", "sha256":"f991a86d140fc416b1506e57cb9c27ca642beca32c758a2aaabc98d23353979d", "size":25640 },
+    { "path":"IsoTools", "sha256":"cb8fe621e1ab13598e556ff2b9572d61446538bd13f315019039aa642ad8f94f", "size":13660 },
+    { "path":"IsoMakerGUI.lang", "sha256":"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b", "size":1 }
+  ]
+}
+
+==== badapple
+Saturday 03-Oct-26 11:52:40
+fetching https://archives.arosworld.org/share/demo/misc/badapple.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=demo/misc/badapple.i386-aros.zip
+verified and cached SYS:Batch/cache/badapple.zip
+installed badapple
+install badapple: rc=0
+{
+  "schema":1,
+  "name":"badapple",
+  "version":"20250122",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"Bad_Apple",
+  "installed":"2026-10-03T11:52:40Z",
+  "origin":"https://archives.arosworld.org/share/demo/misc/badapple.i386-aros.zip",
+  "archive_sha256":"e0bf3deab44e8013ef3e80abe9aadce1a0e3a3f69e0cc3cba644b046609cc909",
+  "archive_size":2914646,
+  "reason":"explicit",
+  "dir":"badapple",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" }
+  ],
+  "icon": { "state":"installed", "sha256":"58200db0cfd5026c9884a48cdc11c6b6142424d2b90e312664ce6bd12dd0ce2a", "size":7542, "member":"Bad_Apple.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"torvald_-_touhou_bad_apple.xm", "sha256":"6772a65e0edf00b484dc2f00423e70decb80e96149761105a548e36c6df37276", "size":133722 },
+    { "path":"potrace", "sha256":"649535910e3f1a71f1a7fe276af2170d5d7b4acabeb272eb4b8f10ace290c022", "size":192392 },
+    { "path":"compress", "sha256":"24a680ea5c648797e3f8877af09cdcc9d021bea47c2d56b4d69fe9f7637474c4", "size":44216 },
+    { "path":"autotrace", "sha256":"d1a597893f451159306d0dc0e82b09033bde56c042cd7ed73206c005d3cdb81e", "size":674799 },
+    { "path":"SVGAnim_play.info", "sha256":"3b005ff750054bb445f66241d3e3dafc08b9898a01dd467eed4442830ce8f697", "size":8712 },
+    { "path":"SVGAnim_play", "sha256":"a3bfa44d78506c59dd069fe8e6eda614d1a5f9e48e97972fc6855e7dc545d690", "size":45504 },
+    { "path":"SVG2Anim_src/path2poly.h", "sha256":"db6ba354325f752b25d00ef04b8bfbca47ae1c343c1317c1bf9a24db0bf74607", "size":459 },
+    { "path":"SVG2Anim_src/path2poly.c", "sha256":"6353e337a60494d558b0c6723eeb7d94f6499f7606e8fc1954ac3387511ccd94", "size":13454 },
+    { "path":"SVG2Anim_src/SVG2Anim.c", "sha256":"8bc846d6035dbf5f56efeab390efc09de175ba85891a14770741898e77268538", "size":9186 },
+    { "path":"SVG2Anim_src/RamerDouglasPeuker.h", "sha256":"bdc0a64c0140e2e022d16bdc7935f4e47ec5ad9ca2d250dd93312d928c04f01b", "size":75 },
+    { "path":"SVG2Anim_src/RamerDouglasPeuker.c", "sha256":"31084a1b9c2da5de366b13e27137caca74e246253588b8deac1a01b6fbd867b3", "size":2318 },
+    { "path":"SVG2Anim_src/Makefile", "sha256":"03a16862a094906c8747cfdf2ea885f683e9fa7c273631167f0bc2549ec218c1", "size":296 },
+    { "path":"SVG2Anim", "sha256":"e9ce218db62eb74b765143c0eff9fe891bece7b681e592094993e3a213fc6cd6", "size":21860 },
+    { "path":"Readme.txt", "sha256":"4b3777eade17abab9ec21070b21c9a63fd9b340b7e06c1ae8d1fc6d561a8e72f", "size":5017 },
+    { "path":"Player_src/test", "sha256":"93d0da1358f1278a9f309ef8d2188f8a1891a46c20d4526b252db1ad43a066c7", "size":342790 },
+    { "path":"Player_src/miniz_tinfl.o", "sha256":"cbf348dcd866d458af1f4910521b0203c193a46ace48f6ecd0d514b2822f3880", "size":10420 },
+    { "path":"Player_src/miniz_tinfl.h", "sha256":"ba496b190ac93cb8dd441370c682c2beec405af3ac9e9ff6a8acde505c984c61", "size":8030 },
+    { "path":"Player_src/miniz_tinfl.c", "sha256":"616c67eb011615875869051a72a4045e6151029eae8952944a74d9c2fa6e9ad1", "size":37591 },
+    { "path":"Player_src/miniz_tdef.o", "sha256":"11b35142a3b8f11d812b394351af1728f984e9ca8ab30b30570f17af0d0abfa3", "size":16892 },
+    { "path":"Player_src/miniz_tdef.h", "sha256":"019bff304b9eda5e94598819ad37d2d6596f9840bcf8e51aeeb08c28d3620d20", "size":9871 },
+    { "path":"Player_src/miniz_tdef.c", "sha256":"0b740ae87486a5caf0f71bf7b71c42de243b398672803f3b0e3353e999a3e2d4", "size":69822 },
+    { "path":"Player_src/miniz_common.h", "sha256":"87fa7aef5c11a143033251d12bbd23fe14c996d7d20f49e927e096a86ecd0255", "size":2516 },
+    { "path":"Player_src/miniz.o", "sha256":"3a8bfae53b9ab424eb057cd4c363507e68ad38be98c62784fb2b80e1dd9c0e29", "size":6060 },
+    { "path":"Player_src/miniz.h", "sha256":"e97721a0192fc1bc5e60b8761bafbf17006e23ad9636b92a52561a2061d8269a", "size":23235 },
+    { "path":"Player_src/miniz.c", "sha256":"e081651a604a9a3adbed70511f61dbabcee48ba4c4dd1fb69949b99f9d2528c6", "size":23659 },
+    { "path":"Player_src/mikmod_test.c", "sha256":"1d889f72263fe78b61992e9acab4ba15c5fffe829126b259b03eebfea44d603b", "size":898 },
+    { "path":"Player_src/mcc_SVGAnim.o", "sha256":"fda919b5b0d78a2f6f8b557ca419c6da6f39977e5d0e8ceac94c525d0369d812", "size":5344 },
+    { "path":"Player_src/mcc_SVGAnim.h", "sha256":"e9387bee2676aa8d84dccf960dec55eb2c2b2d213ef4c70135a4545145f31d56", "size":1286 },
+    { "path":"Player_src/mcc_SVGAnim.c", "sha256":"2ba2b2c5e8103daa8d18d7563457d7a8623973ed041d3ce33563129254151c37", "size":12161 },
+    { "path":"Player_src/SVGAnim_Play.c", "sha256":"464081ca338f311fd02975e655ee76f14565e68ab2118803b4c792197a0ab3a8", "size":5489 },
+    { "path":"Player_src/Makefile", "sha256":"29ffd1c5e8c59447f3109c540b71b28eccf698cab0df580ce862860ec55f065c", "size":316 },
+    { "path":"Player_src/BadApple.o", "sha256":"65b87d5ac632e082fe90f4ed353dc6b92826f0932c37c0d63e0d588bb50340af", "size":3424 },
+    { "path":"Create_Anim.lua", "sha256":"c0c262d0e635940a2ae441d416b4ac4122f03d76cc3229d59251b3bd859f2d00", "size":6154 },
+    { "path":"Compress_src/miniz_tinfl.h", "sha256":"ba496b190ac93cb8dd441370c682c2beec405af3ac9e9ff6a8acde505c984c61", "size":8030 },
+    { "path":"Compress_src/miniz_tinfl.c", "sha256":"616c67eb011615875869051a72a4045e6151029eae8952944a74d9c2fa6e9ad1", "size":37591 },
+    { "path":"Compress_src/miniz_tdef.h", "sha256":"019bff304b9eda5e94598819ad37d2d6596f9840bcf8e51aeeb08c28d3620d20", "size":9871 },
+    { "path":"Compress_src/miniz_tdef.c", "sha256":"0b740ae87486a5caf0f71bf7b71c42de243b398672803f3b0e3353e999a3e2d4", "size":69822 },
+    { "path":"Compress_src/miniz_common.h", "sha256":"87fa7aef5c11a143033251d12bbd23fe14c996d7d20f49e927e096a86ecd0255", "size":2516 },
+    { "path":"Compress_src/miniz.h", "sha256":"e97721a0192fc1bc5e60b8761bafbf17006e23ad9636b92a52561a2061d8269a", "size":23235 },
+    { "path":"Compress_src/miniz.c", "sha256":"e081651a604a9a3adbed70511f61dbabcee48ba4c4dd1fb69949b99f9d2528c6", "size":23659 },
+    { "path":"Compress_src/compress.c", "sha256":"2778dae2835c129676e6bcead9ae19c40af9b22aa5b56414a1f84288c31c128a", "size":2331 },
+    { "path":"Compress_src/compress", "sha256":"7ef385537a032200b799a9c21f796f9debdfc9f03c24bd0c88749e7d7397dda5", "size":123386 },
+    { "path":"Compress_src/Makefile", "sha256":"2283cbe07eeb8300808d747746bf08d3ef51d7b67086d9353b7ad3e33bc4989a", "size":288 },
+    { "path":"BadApple_pot.datz", "sha256":"1db7911c088aaa524cb8c2278bdbedb842545dd1538f5f9b67a8ecadd3751426", "size":1327246 },
+    { "path":"BadApple.datz", "sha256":"c1d1f6b5e1aafd9e3bec1f42a5e37e28a059e58d92032201b9c3e325cf3c4e37", "size":843824 }
+  ]
+}

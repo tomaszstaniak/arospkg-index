@@ -1,0 +1,56 @@
+==== stage C: remove
+removed alac
+remove alac: rc=0
+removed antiword
+remove antiword: rc=0
+removed dirtree
+remove dirtree: rc=0
+removed diskusage
+remove diskusage: rc=0
+removed gmore
+remove gmore: rc=0
+removed iconmake
+remove iconmake: rc=0
+removed isotool
+remove isotool: rc=0
+removed rescode
+remove rescode: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       11:52:08
+rescode                      Dir ---rwed Today       11:52:08
+gmore                        Dir ---rwed Today       11:52:08
+cache                        Dir ---rwed Today       11:48:57
+db                           Dir ---rwed Today       11:52:08
+5 directories - 5 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/rescode" is empty
+Directory "SYS:Batch/gmore" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+rescode.zip                29771 ---rwed Today       11:48:57
+isotool.zip                35496 ---rwed Today       11:48:57
+iconmake.zip               54071 ---rwed Today       11:48:56
+gmore.zip                  24716 ---rwed Today       11:48:56
+diskusage.lha              60666 ---rwed Today       11:48:55
+dirtree.lha                60764 ---rwed Today       11:48:55
+antiword.zip              247828 ---rwed Today       11:48:55
+alac.lha                 6803851 ---rwed Today       11:48:54
+8 files - 14296 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       11:52:08
+transactions                 Dir ---rwed Today       11:52:08
+installed                    Dir ---rwed Today       11:52:08
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+rescode-6ac0ec68.json        143 ---rwed Today       11:52:08
+gmore-6ac0ec68.json          139 ---rwed Today       11:52:08
+2 files - 2 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 10 files - 8 directories - 14306 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 11:52:08

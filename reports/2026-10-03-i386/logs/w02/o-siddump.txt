@@ -1,0 +1,16 @@
+Usage: SIDDUMP <sidfile> [options]
+Warning: CPU emulation may be buggy/inaccurate, illegals support very limited
+
+Options:
+-a<value> Accumulator value on init (subtune number) default = 0
+-c<value> Frequency recalibration. Give note frequency in hex
+-d<value> Select calibration note (abs.notation 80-DF). Default middle-C (B0)
+-f<value> First frame to display, default 0
+-l        Low-resolution mode (only display 1 row per note)
+-n<value> Note spacing, default 0 (none)
+-o<value> Oldnote-sticky factor. Default 1, increase for better vibrato display
+          (when increased, requires well calibrated frequencies)
+-p<value> Pattern spacing, default 0 (none)
+-s        Display time in minutes:seconds:frame format
+-t<value> Playback time in seconds, default 60
+-z        Include CPU cycles+rastertime (PAL)+rastertime, badline corrected

@@ -1,0 +1,32 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/sploiner/sploiner.aros with Run and input from NIL:, stack
+# 262144 bytes: it printed its usage or output and returned 1. Evidence:
+# reports/2026-10-03-i386/ (batch w02).
+
+status          = "approved"
+id              = "sploiner"
+version         = "1.01"
+summary         = "split, join and recover files + AROS build"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/misc"
+url             = "https://archives.arosworld.org/share/utility/filetool/sploiner.i386-aros.zip"
+size            = 127956
+upload_date     = "20190620-11.47"
+selected_by     = "only-candidate"
+
+sha256          = "286e8a3a42160dfc2f4fa8a288d3274d0af2127822a479e302c1debd3ca88b11"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "sploiner"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

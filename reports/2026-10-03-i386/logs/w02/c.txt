@@ -1,0 +1,63 @@
+==== stage C: remove
+removed rtf-riddle
+remove rtf-riddle: rc=0
+removed siddump
+remove siddump: rc=0
+removed sploiner
+remove sploiner: rc=0
+removed wildmidi
+remove wildmidi: rc=0
+removed potrace
+remove potrace: rc=0
+removed screentest
+remove screentest: rc=0
+removed finder
+remove finder: rc=0
+removed skandalfoclock
+remove skandalfoclock: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       11:52:16
+skandalfoclock               Dir ---rwed Today       11:52:16
+finder                       Dir ---rwed Today       11:52:16
+cache                        Dir ---rwed Today       11:49:05
+db                           Dir ---rwed Today       11:52:16
+5 directories - 5 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/skandalfoclock" on Saturday 10/03/26:
+example                      Dir ---rwed Today       11:52:16
+1 directory - 1 block used
+Directory "SYS:Batch/skandalfoclock/example" on Saturday 10/03/26:
+OrchHit                    19510 ---rwed Today       11:49:05
+Bell                       10548 ---rwed Today       11:49:05
+2Bells                     18580 ---rwed Today       11:49:05
+3 files - 97 blocks used
+Directory "SYS:Batch/finder" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+skandalfoclock.lha        103849 ---rwed Today       11:49:05
+finder.zip                 27114 ---rwed Today       11:49:04
+screentest.zip              4854 ---rwed Today       11:49:04
+potrace.zip              1006164 ---rwed Today       11:49:03
+wildmidi.zip              432951 ---rwed Today       11:49:03
+sploiner.zip              127956 ---rwed Today       11:49:03
+siddump.lha               108441 ---rwed Today       11:49:02
+rtf-riddle.lha            168299 ---rwed Today       11:49:02
+8 files - 3869 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       11:52:16
+transactions                 Dir ---rwed Today       11:52:16
+installed                    Dir ---rwed Today       11:52:16
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+skandalfoclock-6ac0ec70.json     209 ---rwed Today       11:52:16
+finder-6ac0ec70.json         141 ---rwed Today       11:52:16
+2 files - 2 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 13 files - 9 directories - 3977 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 11:52:16

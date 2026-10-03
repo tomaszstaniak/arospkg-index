@@ -1,0 +1,36 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/opentyrian/OpenTyrian2.1/opentyrian with Run and input from
+# NIL:, stack 262144 bytes: its window or screen was open and the process
+# was running after 15 s. Evidence: reports/2026-10-03-i386/ (batch w05).
+
+status          = "approved"
+id              = "opentyrian"
+version         = "2.1-fix-1"
+summary         = "open-source port of the DOS game Tyrian"
+arch            = "i386"
+abi             = "v0"
+category        = "game/action"
+url             = "https://archives.arosworld.org/share/game/action/opentyrian.i386-aros.zip"
+size            = 6851132
+upload_date     = "20230116-09.45"
+selected_by     = "only-candidate"
+
+sha256          = "f1e7be4558957e949f5397c149c4349dd432b22a0586c2695816c2019840fa57"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Tyrian2.1"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "gl.library"

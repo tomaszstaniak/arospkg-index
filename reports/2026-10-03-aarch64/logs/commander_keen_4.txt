@@ -1,0 +1,59 @@
+==== commander_keen_4 (stage A: install)
+Sunday 01-Jan-78 00:00:36
+ commander_keen_4
+install rc=0
+==== apkg list after install
+list rc=0
+==== apkg info / show / verify
+commander_keen_4 1.0
+  Commander Keen IV
+  category:     game/platform
+  target:       aarch64, ABI v1
+  compatibility:  -- built for this machine: aarch64, ABIv1, mainline AROS
+  download:     1244 KB from https://archives.arosworld.org/share/game/platform/commander_keen_4.aarch64-aros.zip
+  sha256:       e2c4b3aa002d63c4de41e0f4f9b130f62e0c06115429e294e2348bbd48b10914
+  requirements: none stated
+  installed:    1.0 (aarch64), in SYS:Test/root/commander_keen_4, since 1978-01-01T00:00:39Z
+  upgrade:      no -- installed is 1.0 revision 0 and the index offers revision 0, which is not newer
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+commander_keen_4: 22 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+==== files
+Directory "SYS:Test/root/commander_keen_4" on Sunday 01/01/78:
+ACTION.CK4                 56034 --arwed Future      00:00:38
+AUDINFOE.CK4                  15 --arwed Future      00:00:38
+AUDIO.CK4                  33325 --arwed Future      00:00:38
+AUDIODCT.CK4                1024 --arwed Future      00:00:38
+AUDIOHHD.CK4                 652 --arwed Future      00:00:38
+COPYING                    18092 --arwed Future      00:00:38
+Commander_Keen_4             128 --arwed Future      00:00:38
+Commander_Keen_4.info      37423 --arwed Future      00:00:38
+EGADICT.CK4                 1024 --arwed Future      00:00:38
+EGAGRAPH.CK4              520581 --arwed Future      00:00:38
+EGAHEAD.CK4                14256 --arwed Future      00:00:38
+EPISODE.CK4                11449 --arwed Future      00:00:38
+GAMEMAPS.CK4               99040 --arwed Future      00:00:38
+GFXCHUNK.CK4               15429 --arwed Future      00:00:38
+GFXINFOE.CK4                  47 --arwed Future      00:00:38
+MAPHEAD.CK4                  402 --arwed Future      00:00:38
+NUKEDOPL3-LICENSE          26526 --arwed Future      00:00:38
+README.txt                   968 --arwed Future      00:00:38
+STRINGS.CK4                 5824 --arwed Future      00:00:38
+THIRD_PARTY_NOTICES.txt     1017 --arwed Future      00:00:38
+TILEINFO.CK4               23004 --arwed Future      00:00:38
+aros-aarm64-keen4        2531440 --arwed Future      00:00:38
+22 files - 6647 blocks used
+==== stage B: start aros-aarm64-keen4 (stack 524288, mode win)
+Sunday 01-Jan-78 00:00:41
+after 15 s (a number means it is running):
+ 1
+after Ctrl-C (empty means it has ended):
+ 1
+==== stage C: remove
+ commander_keen_4
+remove rc=0
+==== apkg list after remove
+nothing installed
+list rc=0
+LEFTOVER: SYS:Test/root/commander_keen_4 still exists
+Directory "SYS:Test/root/commander_keen_4" is empty
+Sunday 01-Jan-78 00:01:10

@@ -1,0 +1,36 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/wildmidi/Wildmidi with Run and input from NIL:, stack 262144
+# bytes: it printed its usage or output and returned 1. Evidence:
+# reports/2026-10-03-i386/ (batch w02).
+
+status          = "approved"
+id              = "wildmidi"
+version         = "0.4.6"
+summary         = "Midi Player"
+arch            = "i386"
+abi             = "v0"
+category        = "audio/play"
+url             = "https://archives.arosworld.org/share/audio/play/wildmidi.i386-aros.zip"
+size            = 432951
+upload_date     = "20260629-19.40"
+selected_by     = "only-candidate"
+
+sha256          = "6989ea529cdcf4abb85f8c645fe1c0d97c7fb6c2ddcf25120da2b9c1e24bfc2e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "WildMidi"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

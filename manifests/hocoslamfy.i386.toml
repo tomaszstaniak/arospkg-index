@@ -1,0 +1,41 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/hocoslamfy/Hocoslamfy with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w06).
+
+status          = "approved"
+id              = "hocoslamfy"
+version         = "2014"
+summary         = "SDL Flappy Bird clone."
+arch            = "i386"
+abi             = "v0"
+category        = "game/misc"
+url             = "https://archives.arosworld.org/share/game/misc/hocoslamfy.i386-aros.zip"
+size            = 2471216
+upload_date     = "20171208-20.49"
+selected_by     = "only-candidate"
+
+sha256          = "63772cda41250b9bac98ce2cd79cfbe300853088483ed32761ba1ab25afcc896"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Hocoslamfy"
+icon            = "Hocoslamfy.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "gl.library"
+
+[[requires_system]]
+type = "library"
+id   = "png.library"

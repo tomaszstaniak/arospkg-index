@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/planethively/1024x768 with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w07).
+
+status          = "approved"
+id              = "planethively"
+version         = "2008"
+summary         = "A musicdisk about HivelyTracker"
+arch            = "i386"
+abi             = "v0"
+category        = "demo/music"
+url             = "https://archives.arosworld.org/share/demo/music/planethively.i386-aros.lha"
+size            = 473725
+upload_date     = "20210125-23.05"
+selected_by     = "only-candidate"
+
+sha256          = "d4ae102cb1716e41b7d3265fc1335ec7adf8601fe5fe298543690d2426b02665"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "PlanetHively"
+icon            = "PlanetHively.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

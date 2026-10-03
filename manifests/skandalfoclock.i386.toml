@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/skandalfoclock/SkandalfoClock with Run and input from NIL:,
+# stack 262144 bytes: its window or screen was open and the process was
+# running after 15 s. Evidence: reports/2026-10-03-i386/ (batch w02).
+
+status          = "approved"
+id              = "skandalfoclock"
+version         = "1.1"
+summary         = "Advanced Analog Clock"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/workbench"
+url             = "https://archives.arosworld.org/share/utility/workbench/skandalfoclock.i386-aros.lha"
+size            = 103849
+upload_date     = "20101103-02.58"
+selected_by     = "only-candidate"
+
+sha256          = "79479f0c25ca4700f9052291e2d4e24da535e205f7afcaa2334b82bb1088b767"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "skandalfoclock"
+icon            = "skandalfoclock.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

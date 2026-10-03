@@ -1,0 +1,37 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/ledblur/LedBlur
+# with Run and input from NIL:, stack 262144 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-10-03-i386/ (batch w06).
+
+status          = "approved"
+id              = "ledblur"
+version         = "2006"
+summary         = "Port of oldskool GP32 Demo from '06."
+arch            = "i386"
+abi             = "v0"
+category        = "demo/scene"
+url             = "https://archives.arosworld.org/share/demo/scene/ledblur.i386-aros.zip"
+size            = 597349
+upload_date     = "20140116-13.22"
+selected_by     = "only-candidate"
+
+sha256          = "5683c08a79232a5b3b053049f4dfbb55a23106732416b040ac3edadaaca4978d"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "LedBlur"
+icon            = "LedBlur.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "mesa.library"

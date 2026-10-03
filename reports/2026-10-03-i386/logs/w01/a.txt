@@ -1,0 +1,360 @@
+==== stage A: install
+
+==== alac
+Saturday 03-Oct-26 11:48:53
+fetching https://archives.arosworld.org/share/audio/misc/alac.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/misc/alac.i386-aros.lha
+verified and cached SYS:Batch/cache/alac.lha
+installed alac
+install alac: rc=0
+{
+  "schema":1,
+  "name":"alac",
+  "version":"0.1.3",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"ALAC_Decoder",
+  "installed":"2026-10-03T11:48:54Z",
+  "origin":"https://archives.arosworld.org/share/audio/misc/alac.i386-aros.lha",
+  "archive_sha256":"3b2d5d19acbe9f3ad14e734b031473a4e73ed34052f32528bc4fcc17dd7b0164",
+  "archive_size":6803851,
+  "reason":"explicit",
+  "dir":"alac",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"installed", "sha256":"b8d03c9c0436ee74e08c9377997959e63922a82999ce30e7fa467485732daeb1", "size":11420, "member":"ALAC_Decoder.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source/wavwriter.h", "sha256":"f05bd60cc82d94a193fa9f6e3ce2ae48284a20c23a1a8577fadb03a34fa80195", "size":228 },
+    { "path":"Source/wavwriter.c", "sha256":"413ef71bbe13263988315cd1ecaa9c10852920baf222aa774b9aba122df835b6", "size":3155 },
+    { "path":"Source/stream.h", "sha256":"83bacab0128d81602e03bfffe0e7adb4395c2d6843470b83e057467f1f28b41d", "size":763 },
+    { "path":"Source/stream.c", "sha256":"b031f25d4a00f979e2924a515c345421b6374c107bfdcb2d4e165f6497c7e718", "size":4170 },
+    { "path":"Source/Makefile", "sha256":"a64ef1e204761778c99c5822ac2184c543c045474dfd98ea0abd34407ebd7780", "size":394 },
+    { "path":"Source/main.c", "sha256":"3f588d756ee6bb779ccbb7ecff4aac56aff21a7fa03f49cafc8aa07d3084c552", "size":11034 },
+    { "path":"Source/demux.h", "sha256":"3fe20d6e046d8a92505cbde202355f97e3166b9dfecab77696fee835fc3b3736", "size":1114 },
+    { "path":"Source/demux.c", "sha256":"2f37e7617d688aa68cbf7639d703549354aee5163ff409773188bef763404f34", "size":20927 },
+    { "path":"Source/decomp.h", "sha256":"f7740f41b4f6d725381b24f83d7d385ca6c2d7a5d29b9848cc27da55529dc36d", "size":364 },
+    { "path":"Source/alac.c", "sha256":"8e6bc47cd1d2d6eae8b8b50c0b973061c6ec6ba1c5fd78d0305de0dc96248296", "size":32025 },
+    { "path":"Source.info", "sha256":"1296d691dfe5b7c0d21c7ea67b10ce660c1d3289855df732854da809290c597f", "size":17408 },
+    { "path":"Install.info", "sha256":"9aa2769c9a541a105ba69dba9087c430afb023f05cb9e091b2f61e689701e1c7", "size":1824 },
+    { "path":"Install", "sha256":"87294cd8a43f7edeca3753dea1c59d2fe7925d9f643966bc7c51e90ab7036293", "size":991 },
+    { "path":"Example/luckynight.m4a", "sha256":"1a4de5ef5d462456af60cc0a7902965b51a81a8f8e41f90e74985416daeb36b6", "size":6719490 },
+    { "path":"Docs/README.info", "sha256":"2b2bd98757fef975487d56b3c1956d687e9c869229043eb0ef430cfd3ed300d4", "size":5734 },
+    { "path":"Docs/README", "sha256":"349abe36938e27f00cc24dc065fb99207e437c371066a4140f8157cb9915c36a", "size":1003 },
+    { "path":"Docs/alac.readme.info", "sha256":"2b2bd98757fef975487d56b3c1956d687e9c869229043eb0ef430cfd3ed300d4", "size":5734 },
+    { "path":"Docs/alac.readme", "sha256":"3c3691875748c1428e8dc1e612ebf17a8733cd94ce7d4f9c215a883c96bc1cf9", "size":1120 },
+    { "path":"Docs.info", "sha256":"c7a721691dd6947eec92a8de05209ce5c0f816c7fdd8f97646fe20e64c49e401", "size":20920 },
+    { "path":"C/ALAC", "sha256":"20b4755c0a85e2c7ed4242b382cf34132a2b83ddafca008d9bf6c35bc8e0d2e2", "size":21816 }
+  ]
+}
+
+==== antiword
+Saturday 03-Oct-26 11:48:54
+fetching https://archives.arosworld.org/share/utility/text/convert/antiword.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/convert/antiword.i386-aros.zip
+verified and cached SYS:Batch/cache/antiword.zip
+installed antiword
+install antiword: rc=0
+{
+  "schema":1,
+  "name":"antiword",
+  "version":"0.37",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"Antiword",
+  "installed":"2026-10-03T11:48:55Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/convert/antiword.i386-aros.zip",
+  "archive_sha256":"f9d32e01acae01ddafc5be801c13d382f6d9dedfc3fd893619586b9efb6fee2b",
+  "archive_size":247828,
+  "reason":"explicit",
+  "dir":"antiword",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"antiword", "sha256":"c132be4b96bbcc98c8885910935bca056316949b5be2095263c8a65f6703367c", "size":247672 },
+    { "path":"Data/8859-11.txt", "sha256":"9063aa1ee6c9b54b7e95661f41b3ef7f1c9beec99158c98b04da43325be5a4df", "size":9732 },
+    { "path":"Data/MacCyrillic.txt", "sha256":"a915d23b499d8d94d6e1ad2dbdcca06e1a5c4f36ffa37e7152b4591f1cb074f8", "size":13353 },
+    { "path":"Data/Unicode01", "sha256":"6fa1684cdf01960adf325cc60760d376f917c49d9a1edb4cf8b69893a8e434da", "size":10858 },
+    { "path":"Data/Unicode15", "sha256":"102db50381d20fc171bf64b62b3c0f199561524bf11281f35603b8c99dda50ca", "size":10818 },
+    { "path":"Data/cp862.txt", "sha256":"273ebe82ed409ae00c26bd8c6fd77adf4859b041fcb0a627c42f4a437c5e42dc", "size":9448 },
+    { "path":"Data/cp866.txt", "sha256":"64baadcbccc437e8e87e12c53478db8b459174c66fd269bf16cfdeb69cbb70fa", "size":9817 },
+    { "path":"Data/8859-16.txt", "sha256":"c2ed919e5a107c07b13d702320eb532c83360452bb0d3fbf09fb1d920343ead9", "size":10868 },
+    { "path":"Data/koi8-u.txt", "sha256":"28c0691ea7d03241fd6d96f2bab3973cdada800c4a20af458543800279885728", "size":11259 },
+    { "path":"Data/cp437.txt", "sha256":"6e4e148eecd8c352caa0a07e5bc5bdd84966d5253235fab62e99ba36730092a3", "size":9847 },
+    { "path":"Data/cp852.txt", "sha256":"1937d70560031a7d21755e1f947d7719f719296dc12023cba38cfbcdce44273d", "size":9992 },
+    { "path":"Data/cp850.txt", "sha256":"359d83a9335bcd298a14f1d30368803b2d327983fcff29da14a27aed0a9eccb9", "size":9693 },
+    { "path":"Data/UTF-8.txt", "sha256":"2401ee812ff859a85f3b737be7daf32f19c11946ecaa5f5e66468abae4fe2d43", "size":107 },
+    { "path":"Data/fontnames.russian", "sha256":"7170526252fdbdb6121230248939d59a1c6c22d6981128ba96f7798614e195d0", "size":1565 },
+    { "path":"Data/fontnames", "sha256":"cfc4c68c6c4886295bb092586b9b6b227606a17cad89a1bac55410727011a697", "size":4696 },
+    { "path":"Data/cp864.txt", "sha256":"bfac522704129492b0669e9c5b07727bb56e076cc18f455566a117bfb8be924a", "size":9612 },
+    { "path":"Data/cp1252.txt", "sha256":"fca3ab5882f0a562794f05d7f15a39157c59d7c07fcbac79ab7cf3d12c979541", "size":9624 },
+    { "path":"Data/MacRoman.txt", "sha256":"7fabdb769c535b7f195ddf7c422a156db203ef97f11600278afb9fe297beccb3", "size":14271 },
+    { "path":"Data/roman.txt", "sha256":"28a1afa59f16f188ebd459995fb11c8679b07d30fd208b9c4009fbf9bb103274", "size":14030 },
+    { "path":"Data/koi8-r.txt", "sha256":"d635512126976aec2c4fab3aeeb346bb653e9211c44d2a018dd27fbe86c654ec", "size":11204 },
+    { "path":"Data/cp1251.txt", "sha256":"f87ed4480cfddb8f5f6226292338ca407ccc7b1a543f3832f1d20aff6cb72a58", "size":9474 },
+    { "path":"Data/cp1250.txt", "sha256":"cf79ba755416ae5628a9dd1f870306b5a45fd6b256efed0c2ac1cc2ccb3307f0", "size":9799 },
+    { "path":"Data/8859-9.txt", "sha256":"976d48dfff033c7bfedd08bc61d26f0a5fefb4c3f48f8735f454e100cf40294c", "size":10628 },
+    { "path":"Data/8859-8.txt", "sha256":"4bea5cf4b048e3b7ccf704ea153edcf77d2a4c627dd8710f8f7e037afb62a171", "size":8553 },
+    { "path":"Data/8859-7.txt", "sha256":"73b347025d12c050d82c1385d3756a5eb79f6e7b21e1ed91ee344590a2d1ee3f", "size":10365 },
+    { "path":"Data/8859-6.txt", "sha256":"a2917a1017ecb3c82fc44cd57365dbda0788f7cc1e8da94d8175f6600cf03548", "size":8308 },
+    { "path":"Data/8859-5.txt", "sha256":"c1244fabad6e9b7a8053da89448c42388bbe93681742e01e74f7a22b7f08e3ed", "size":10427 },
+    { "path":"Data/8859-4.txt", "sha256":"5bb8f1fa3fdf6df88ee3d1a17f58bdf5e336f6b665d58ea04bf7bd7bdbf259dc", "size":10792 },
+    { "path":"Data/8859-3.txt", "sha256":"a7906a91ec3a4ac7f10ec7e25966d36d98fb720f401d595de5f9f06ab1f2b2a7", "size":10498 },
+    { "path":"Data/8859-2.txt", "sha256":"5c81eca66455c5b36853c8a66495f58636643f6ddb261083d877a7f2a48287b7", "size":10816 },
+    { "path":"Data/8859-15.txt", "sha256":"0e8c5aa710fc1e8537e84dcd86704a4a4ebb289791121acea82ac5474b1bc123", "size":10583 },
+    { "path":"Data/8859-14.txt", "sha256":"79143ee49ab465f2317b9d3ade16f07ec6cf6314506426fa5b366a6e742fc15a", "size":11003 },
+    { "path":"Data/8859-13.txt", "sha256":"6e07d8120d8225f0556c9c7f477c7d4392141290c3ae7f6a81c3926c34c0e52c", "size":10588 },
+    { "path":"Data/8859-10.txt", "sha256":"13339ad725052723ff6aac91ceef1a120a3231c4fac647e0b63d5565efdd2a53", "size":10989 },
+    { "path":"Data/8859-1.txt", "sha256":"884eb5ae5aa74867c7b2c93a40b9460920e26731dfafa58f783e9d568fc79055", "size":10592 },
+    { "path":"Data/Example", "sha256":"d39b5c3fb731e84c6a056b5cb34e92e611a4739a2d3213c83550898f54a951a5", "size":3038 },
+    { "path":"Data/Default", "sha256":"b005fff466673f0a032610d5464302cfdf7ac67485cfb5608357ffb29b51dad4", "size":3211 },
+    { "path":"Docs/antiword.old.php", "sha256":"16fe02603e83a80eddeb096f67e75a8cbbf46e1928df6e56346f95c755638069", "size":926 },
+    { "path":"Docs/Emacs", "sha256":"f6ac2441fe69a258ab2d3bba7f822a1f3228e8e4cd9b8dfb4ad92bcbce536c68", "size":4368 },
+    { "path":"Docs/antiword.php", "sha256":"e9f42f6a286530f657ea21eddb39a58968a802ec4aa33b53ff7cb79be54ed0fe", "size":4618 },
+    { "path":"Docs/testdoc.doc", "sha256":"4ea5fe94a8ff9d8cd1e21a5e233efb681f2026de48ab1ac2cbaabdb953ca25ac", "size":23552 },
+    { "path":"Docs/antiword.man", "sha256":"15a2bbe221090e20e5292af5cb9c6bd9b43b5d27138737131af87908fb1a77b9", "size":5911 },
+    { "path":"Docs/Exmh", "sha256":"005ecc96537999a249a59d54d3155f0889a7eeb255448d42269e837f11a5a119", "size":463 },
+    { "path":"Docs/Mozilla", "sha256":"073014cec8c0926519e9b60506a8dda71a0ebe9d2a77311ae2614c0e4db2d0d8", "size":1983 },
+    { "path":"Docs/Mutt", "sha256":"43bdfab85477f03429c14119c911fb6177d8937130e657973e729ed88c755206", "size":717 },
+    { "path":"Docs/antiword.1", "sha256":"d27bc17e81d9b393ebc0fd657608e8bbaff441f5cfc7ef862a5ebefe745287d0", "size":5000 },
+    { "path":"Docs/ChangeLog", "sha256":"866e9e83f1ca86d63a87ae6d41aaebc2f6e051fc591fbffc88ccd9f605dbcbe0", "size":9242 },
+    { "path":"Docs/FAQ", "sha256":"19740145fed9bd6e77cc9fe3e330f2b9a44c008449e0d4d786ad47cdd8f12566", "size":5449 },
+    { "path":"Docs/COPYING", "sha256":"3c6f6f8e9eda89b42eda68cf893681db1eeb03e951af8677782501ac95c9b556", "size":17985 },
+    { "path":"Docs/ReadMe", "sha256":"422179d3b5efdd40fbba36cc529946675972e146c0dc493ea68fe18692f7d6e3", "size":3603 },
+    { "path":"Docs/QandA", "sha256":"78cbcc2a6e41c147f1250847414731045824ed1bf5c45c9a54d90c1a7e67e4d0", "size":2909 },
+    { "path":"Docs/History", "sha256":"11e0e95f6d94581ee084f9efedb46c6d575af42f5063bada7f8e76f62a016b79", "size":1539 },
+    { "path":"Docs/Netscape", "sha256":"1f6402224419d735084af236fa002dbe3200b5593fc7914ddea6505f9bdaa448", "size":4313 }
+  ]
+}
+
+==== dirtree
+Saturday 03-Oct-26 11:48:55
+fetching https://archives.arosworld.org/share/utility/shell/dirtree.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/shell/dirtree.i386-aros.lha
+verified and cached SYS:Batch/cache/dirtree.lha
+installed dirtree
+install dirtree: rc=0
+{
+  "schema":1,
+  "name":"dirtree",
+  "version":"40.8",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"DirTree",
+  "installed":"2026-10-03T11:48:55Z",
+  "origin":"https://archives.arosworld.org/share/utility/shell/dirtree.i386-aros.lha",
+  "archive_sha256":"046e0ea9364c60f82779a8e3f3021d2519badb53ba3b3f2abf2276b52760bd4d",
+  "archive_size":60764,
+  "reason":"explicit",
+  "dir":"dirtree",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"99d51c615f168b9edbc56b30a9d2ddb804455aacf35472ce718591fa99284571", "size":11420, "member":"DirTree.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source/smakefile", "sha256":"290b7430c72610b275fbdbbcd353e0842101494e09bd4cdcc7a527556a6e9a12", "size":242 },
+    { "path":"Source/make.aros", "sha256":"8db71caad9fb3f0984e7892ecedd9306cea55c6057afbf5681ffa88572ed1988", "size":166 },
+    { "path":"Source/DirTree.c", "sha256":"00b9c326de84bc307bda66a7ea9a04e4606de7b5ed502ab07567c100073cc6d0", "size":8296 },
+    { "path":"Source.info", "sha256":"1296d691dfe5b7c0d21c7ea67b10ce660c1d3289855df732854da809290c597f", "size":17408 },
+    { "path":"Install.info", "sha256":"9aa2769c9a541a105ba69dba9087c430afb023f05cb9e091b2f61e689701e1c7", "size":1824 },
+    { "path":"Install", "sha256":"0f5edd728aae9e6c1349f6175e9c9013345145a91a8afea74d68f93c32d0c72d", "size":994 },
+    { "path":"Docs/DirTree.doc.info", "sha256":"ca8a2587c2be752fb3c2bf609689a7be0249b63dbe84628c87fcc48fb485467d", "size":5734 },
+    { "path":"Docs/DirTree.doc", "sha256":"4ecea693ed978659809b7de5ce2c1f274b4d345aa9a5d6cbd5bc23ecf2ee7f41", "size":677 },
+    { "path":"Docs/COPYING.info", "sha256":"2b2bd98757fef975487d56b3c1956d687e9c869229043eb0ef430cfd3ed300d4", "size":5734 },
+    { "path":"Docs/COPYING", "sha256":"79ef0a0d92fedfc2e4f03cc807ac99229137dc9bdf2c26ad661af8b95d3fe4e5", "size":1524 },
+    { "path":"Docs.info", "sha256":"c7a721691dd6947eec92a8de05209ce5c0f816c7fdd8f97646fe20e64c49e401", "size":20920 },
+    { "path":"C/DirTree", "sha256":"40852baee2143d7698c2e5b8514ae7b4a5133bee4b7bc718cafa4029a2a13900", "size":7188 }
+  ]
+}
+
+==== diskusage
+Saturday 03-Oct-26 11:48:55
+fetching https://archives.arosworld.org/share/utility/shell/diskusage.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/shell/diskusage.i386-aros.lha
+verified and cached SYS:Batch/cache/diskusage.lha
+installed diskusage
+install diskusage: rc=0
+{
+  "schema":1,
+  "name":"diskusage",
+  "version":"40.8",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"DiskUsage",
+  "installed":"2026-10-03T11:48:55Z",
+  "origin":"https://archives.arosworld.org/share/utility/shell/diskusage.i386-aros.lha",
+  "archive_sha256":"47b54eeefd6aa651ba79a5068399b5f4b5443a041c5dcefcf59a662b2f5a5369",
+  "archive_size":60666,
+  "reason":"explicit",
+  "dir":"diskusage",
+  "requires_system": [ ],
+  "icon": { "state":"installed", "sha256":"b66f979dac545f6328ac4c19da87757714b0a2c12e6c38d0cd1a14a60e7fd253", "size":11420, "member":"DiskUsage.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source/smakefile", "sha256":"6816ef7c2837ac784f0df779d1564f477f1381e9b9b8f32d60ec30844ae647c9", "size":260 },
+    { "path":"Source/make.aros", "sha256":"93b1556655a93a7a09ad3dda0b8dfaee65dbdcb043a12de10779d9d6cfbad169", "size":165 },
+    { "path":"Source/DiskUsage.c", "sha256":"d0e0a664c163effe55709ddf3e148cf9dec302669613586b19d6182d6e245e16", "size":7525 },
+    { "path":"Source.info", "sha256":"1296d691dfe5b7c0d21c7ea67b10ce660c1d3289855df732854da809290c597f", "size":17408 },
+    { "path":"Install.info", "sha256":"9aa2769c9a541a105ba69dba9087c430afb023f05cb9e091b2f61e689701e1c7", "size":1824 },
+    { "path":"Install", "sha256":"e5ed8e85330b2c1dc5b6e806602fde4b55f357a51b22ea674f07b07a277e2c82", "size":994 },
+    { "path":"Docs/DiskUsage.doc.info", "sha256":"ca8a2587c2be752fb3c2bf609689a7be0249b63dbe84628c87fcc48fb485467d", "size":5734 },
+    { "path":"Docs/DiskUsage.doc", "sha256":"b800d7bee9179588bbed244c4dd455d81e98b259e488629edabbeda6da95b75c", "size":1599 },
+    { "path":"Docs/COPYING.info", "sha256":"2b2bd98757fef975487d56b3c1956d687e9c869229043eb0ef430cfd3ed300d4", "size":5734 },
+    { "path":"Docs/COPYING", "sha256":"79ef0a0d92fedfc2e4f03cc807ac99229137dc9bdf2c26ad661af8b95d3fe4e5", "size":1524 },
+    { "path":"Docs.info", "sha256":"c7a721691dd6947eec92a8de05209ce5c0f816c7fdd8f97646fe20e64c49e401", "size":20920 },
+    { "path":"C/DiskUsage", "sha256":"754d8399e4ac792319058e5fb237ecd8e8a944a46029e21b29d1e283af7e9c47", "size":6892 }
+  ]
+}
+
+==== gmore
+Saturday 03-Oct-26 11:48:55
+fetching https://archives.arosworld.org/share/utility/text/misc/gmore.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/misc/gmore.i386-aros.zip
+verified and cached SYS:Batch/cache/gmore.zip
+installed gmore
+install gmore: rc=0
+{
+  "schema":1,
+  "name":"gmore",
+  "version":"1.2",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"GMore1.2",
+  "installed":"2026-10-03T11:48:56Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/misc/gmore.i386-aros.zip",
+  "archive_sha256":"4b87468238a4600ea9850a5fa52c14bb3e9a9f74605679f340c2e15d09f7140e",
+  "archive_size":24716,
+  "reason":"explicit",
+  "dir":"gmore",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Readme.info", "sha256":"f5dbcb63647d2736d3f336b7c57813979968124975ffac266d8c8023503a25b6", "size":1092 },
+    { "path":"Readme", "sha256":"3f5a72beaf924009377e5bd4de122b00c59c214521826ce8992b7998b3c15fc2", "size":2965 },
+    { "path":"install.info", "sha256":"cafc555d62487b8440ba09a1ab45cf66cf16de9fc4d266629574e8b98ebaa3e0", "size":966 },
+    { "path":"install", "sha256":"090380adf0f6e5d773fe438e4df0f61e6f4167db75c6f47d13f4510c76d82b42", "size":496 },
+    { "path":"gmore.info", "sha256":"eb5f7530c8fe1fa41eac67151869d0832e5f3052a2b8095446e77ded84a4f396", "size":1078 },
+    { "path":"gmore", "sha256":"fca6ae35267b884c7bea13bdefd20fe33b8d04671ba4566f6771af69a1009283", "size":73736 }
+  ]
+}
+
+==== iconmake
+Saturday 03-Oct-26 11:48:56
+fetching https://archives.arosworld.org/share/utility/misc/iconmake.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/iconmake.i386-aros.zip
+verified and cached SYS:Batch/cache/iconmake.zip
+installed iconmake
+install iconmake: rc=0
+{
+  "schema":1,
+  "name":"iconmake",
+  "version":"1.2",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"IconMake",
+  "installed":"2026-10-03T11:48:56Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/iconmake.i386-aros.zip",
+  "archive_sha256":"93241739418611094f84de94f8985840433f6aeb7d36fae0f16f657e71b4f037",
+  "archive_size":54071,
+  "reason":"explicit",
+  "dir":"iconmake",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" }
+  ],
+  "icon": { "state":"installed", "sha256":"4325a4bcaaab68cd02639b0ea8c911fba8c6668dae4cea58853080f00796d252", "size":9460, "member":"IconMake.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source/IconMake.c", "sha256":"29471442e1308d59d592c2187992a1e54a992165d359ef50705f16e67390b21c", "size":44048 },
+    { "path":"IconMake.info", "sha256":"9839b0a0e99e7105d01324554850a1b2f4d9ba85629945931a5727407e23c148", "size":8680 },
+    { "path":"IconMake.guide.info", "sha256":"a35de4b75e912957e84ba4715df47e8a6f4d7c596b6a4b2738f8df6054e1e727", "size":8518 },
+    { "path":"IconMake.guide", "sha256":"9e3e8d6120756d0cab2bf1a8ee0cc90b353c248f744d51cbaf60b893e85ff618", "size":7586 },
+    { "path":"IconMake", "sha256":"23137e1a0bb37238d2dd2bbd5345d000c7231f6bdd34f7e80e11d18c7f76bc54", "size":38888 },
+    { "path":".arosiconedit.cfg", "sha256":"4c73ff5131c4a99f6fac13b0668cd0d39c0b82861979e2f768add4876a7f1d7b", "size":7 }
+  ]
+}
+
+==== isotool
+Saturday 03-Oct-26 11:48:56
+fetching https://archives.arosworld.org/share/utility/isotool.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/isotool.i386-aros.zip
+verified and cached SYS:Batch/cache/isotool.zip
+installed isotool
+install isotool: rc=0
+{
+  "schema":1,
+  "name":"isotool",
+  "version":"1.0",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"IsoTool",
+  "installed":"2026-10-03T11:48:57Z",
+  "origin":"https://archives.arosworld.org/share/utility/isotool.i386-aros.zip",
+  "archive_sha256":"66f8e7a38a2403a3ba3d32e77fa0fdfbb5c7a2957c3d9dca3bcc3b563f4f680e",
+  "archive_size":35496,
+  "reason":"explicit",
+  "dir":"isotool",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" }
+  ],
+  "icon": { "state":"installed", "sha256":"3a57ddf18af4c781a3f2f0acc9a2ff921e9a3a3622563b434b252b5340ca5299", "size":8344, "member":"IsoTool.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source.info", "sha256":"4258552cf785c60084d5d0ba28ea8c4e2d218bd3bbc57fd05289b601f5565272", "size":9136 },
+    { "path":"Source/isotools.c", "sha256":"4fa914463eefbe25ea21a8a3f565a679f454b8cac7303b21c981745f43899835", "size":10569 },
+    { "path":"IsoTools.info", "sha256":"3fcf626d864f655ed2fba69caef7aa8ef1569be923108671ce43211b5a05b79a", "size":8501 },
+    { "path":"IsoTools", "sha256":"cb8fe621e1ab13598e556ff2b9572d61446538bd13f315019039aa642ad8f94f", "size":13660 }
+  ]
+}
+
+==== rescode
+Saturday 03-Oct-26 11:48:57
+fetching https://archives.arosworld.org/share/utility/misc/rescode.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/misc/rescode.i386-aros.zip
+verified and cached SYS:Batch/cache/rescode.zip
+installed rescode
+install rescode: rc=0
+{
+  "schema":1,
+  "name":"rescode",
+  "version":"1.2",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"ResCode",
+  "installed":"2026-10-03T11:48:57Z",
+  "origin":"https://archives.arosworld.org/share/utility/misc/rescode.i386-aros.zip",
+  "archive_sha256":"40fcacf43ae2b8a0a1d5af6eac1f45721a039da05f3dac6384ff2e980f3b351b",
+  "archive_size":29771,
+  "reason":"explicit",
+  "dir":"rescode",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"installed", "sha256":"a311fa14ca463c8bd8c340bc3d7c99a162029823feb6dbd8baf5ebc634914bac", "size":3534, "member":"ResCode.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"rescode_AROS.c", "sha256":"42f9c97f728f74f857c019fcf699d40876bb1e2f3ec9a34c8c17a8d0e8961155", "size":12594 },
+    { "path":"rescode_68k.c", "sha256":"7c98acc8b877035aa741c8831f74996c262d23a12a37ed07235af786068dfc77", "size":12486 },
+    { "path":"rescode_68k", "sha256":"8dfee4ae91891d33d9682838bc136e08f461e9a6a4c9becb3565d4bdc1a0a65f", "size":14195 },
+    { "path":"rescode.readme", "sha256":"494d4ae632a59224e287bb53fcc4b41e90e6ac06bc4bef05d64ba67a92e92e07", "size":681 },
+    { "path":"ResCode.info", "sha256":"a311fa14ca463c8bd8c340bc3d7c99a162029823feb6dbd8baf5ebc634914bac", "size":3534 },
+    { "path":"ResCode", "sha256":"22c7beca25acb0c627df439ad8e87b3eb6ac3b3ddffd9cc633f4ac01f139a367", "size":19686 },
+    { "path":"makefile", "sha256":"bd7b8acd49a7a8c2c9d2495caa048600a72edb4fe44716842637d04797fca746", "size":326 }
+  ]
+}

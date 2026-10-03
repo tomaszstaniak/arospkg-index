@@ -1,0 +1,7 @@
+==== planethively: 1024x768, stack 262144
+Saturday 03-Oct-26 12:08:29
+after 15 s (a number means it is running):
+ 13
+after Ctrl-C (empty means it has ended):
+ 13
+Saturday 03-Oct-26 12:08:58

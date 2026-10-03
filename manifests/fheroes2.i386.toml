@@ -1,0 +1,38 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/fheroes2/fheroes2 with Run and input from NIL:, stack 262144
+# bytes: it showed its own message that its data files were not found. The
+# game data is not part of the package; that message was checked, the game
+# itself was not played. Evidence: reports/2026-10-03-i386/ (batch w05).
+
+status          = "approved"
+id              = "fheroes2"
+version         = "r2860"
+summary         = "Heroes of the Might and Magic II engine"
+arch            = "i386"
+abi             = "v0"
+category        = "game/strategy"
+url             = "https://archives.arosworld.org/share/game/strategy/fheroes2.i386-aros.lha"
+size            = 6158795
+upload_date     = "20120914-14.25"
+selected_by     = "only-candidate"
+
+sha256          = "aee75aae8d623622be48d854e81b0415f4aa2e4fd1cebbf55521425ca25c24f3"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "fheroes2"
+icon            = "fheroes2.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "mesa.library"

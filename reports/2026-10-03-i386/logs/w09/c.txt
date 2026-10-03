@@ -1,0 +1,65 @@
+==== stage C: remove
+removed qlview
+remove qlview: rc=0
+removed dirtree
+remove dirtree: rc=0
+removed skandalfoclock
+remove skandalfoclock: rc=0
+removed pkg-7mezzoplus
+remove pkg-7mezzoplus: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       12:22:22
+pkg-7mezzoplus               Dir ---rwed Today       12:22:22
+skandalfoclock               Dir ---rwed Today       12:22:22
+qlview                       Dir ---rwed Today       12:22:22
+cache                        Dir ---rwed Today       12:20:24
+db                           Dir ---rwed Today       12:22:22
+6 directories - 6 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/pkg-7mezzoplus" on Saturday 10/03/26:
+Settings                     Dir ---rwed Today       12:21:50
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings" on Saturday 10/03/26:
+7Mezzo                       Dir ---rwed Today       12:21:50
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings/7Mezzo" on Saturday 10/03/26:
+Dati                         Dir ---rwed Today       12:21:50
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings/7Mezzo/Dati" on Saturday 10/03/26:
+Score                          6 ---rwed Today       12:21:50
+1 file - 1 block used
+Directory "SYS:Batch/skandalfoclock" on Saturday 10/03/26:
+example                      Dir ---rwed Today       12:22:22
+1 directory - 1 block used
+Directory "SYS:Batch/skandalfoclock/example" on Saturday 10/03/26:
+OrchHit                    19510 ---rwed Today       12:20:23
+Bell                       10548 ---rwed Today       12:20:23
+2Bells                     18580 ---rwed Today       12:20:23
+3 files - 97 blocks used
+Directory "SYS:Batch/qlview" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+pkg-7mezzoplus.zip        483773 ---rwed Today       12:20:24
+skandalfoclock.lha        103849 ---rwed Today       12:20:23
+dirtree.lha                60764 ---rwed Today       12:20:23
+qlview.lha                258083 ---rwed Today       12:20:23
+4 files - 1772 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       12:22:22
+transactions                 Dir ---rwed Today       12:22:22
+installed                    Dir ---rwed Today       12:22:22
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+pkg-7mezzoplus-6ac0f37e.json     157 ---rwed Today       12:22:22
+skandalfoclock-6ac0f37e.json     209 ---rwed Today       12:22:22
+qlview-6ac0f37e.json         142 ---rwed Today       12:22:22
+3 files - 3 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 11 files - 13 directories - 1886 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 12:22:22

@@ -1,0 +1,7 @@
+==== skandalfoclock: SkandalfoClock, stack 262144
+Saturday 03-Oct-26 12:21:18
+after 15 s (a number means it is running):
+ 11
+after Ctrl-C (empty means it has ended):
+ 11
+Saturday 03-Oct-26 12:21:47

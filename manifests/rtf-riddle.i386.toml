@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/rtf-riddle/C/rtfriddle with Run and input from NIL:, stack
+# 262144 bytes: it printed its usage or output and returned 22. Evidence:
+# reports/2026-10-03-i386/ (batch w02).
+
+status          = "approved"
+id              = "rtf-riddle"
+version         = "3.97b"
+summary         = "Rich Text Format to HTML5 converter"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/text/convert"
+url             = "https://archives.arosworld.org/share/utility/text/convert/rtf-riddle.i386-aros.lha"
+size            = 168299
+upload_date     = "20210206-18.55"
+selected_by     = "only-candidate"
+
+sha256          = "d53b2edc4f77143b7474319c795d0a88b92c7e072312ba0466a939cfc730a82f"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "RTF-Riddle"
+icon            = "RTF-Riddle.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

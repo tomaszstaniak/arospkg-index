@@ -1,0 +1,7 @@
+==== fheroes2: fheroes2, stack 262144
+Saturday 03-Oct-26 11:59:19
+after 15 s (a number means it is running):
+ 17
+after Ctrl-C (empty means it has ended):
+ 17
+Saturday 03-Oct-26 11:59:43

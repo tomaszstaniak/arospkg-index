@@ -1,0 +1,7 @@
+==== rtf-riddle: rtfriddle, stack 262144
+Saturday 03-Oct-26 11:49:05
+after 15 s (a number means it is running):
+rtfriddle returned: rc=22
+after Ctrl-C (empty means it has ended):
+rtfriddle returned: rc=22
+Saturday 03-Oct-26 11:49:24

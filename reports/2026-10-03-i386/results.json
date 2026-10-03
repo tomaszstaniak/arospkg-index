@@ -1,0 +1,316 @@
+{
+ "date": "2026-10-03",
+ "client": "apkg 0.3.1 for i386 (arospkg-0.3.1.i386-aros-v0.zip)",
+ "base_image_sha256": "ff4895dbbddd330b62558e9a203d6f90c9c2a3c4a103553e3ba588a4a0dea1bb",
+ "published": [
+  {
+   "id": "alac",
+   "version": "0.1.3",
+   "batch": "w10",
+   "stack": 262144,
+   "started": "rc 0"
+  },
+  {
+   "id": "antiword",
+   "version": "0.37",
+   "batch": "w10",
+   "stack": 262144,
+   "started": "rc 0"
+  },
+  {
+   "id": "arrakis",
+   "version": "1.0",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "badapple",
+   "version": "1.0",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "boy",
+   "version": "2008",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "daysleeper",
+   "version": "0.9r2",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "dirtree",
+   "version": "40.8",
+   "batch": "w09",
+   "stack": 262144,
+   "started": "rc 0"
+  },
+  {
+   "id": "diskusage",
+   "version": "40.8",
+   "batch": "w01",
+   "stack": 262144,
+   "started": "rc 0"
+  },
+  {
+   "id": "dosbox",
+   "version": "0.74",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "dose2",
+   "version": "2002",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "fheroes2",
+   "version": "r2860",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "finder",
+   "version": "3.1",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "gicriptofilex",
+   "version": "1.0",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "giddy3",
+   "version": "1.5",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "giocodel15",
+   "version": "1.0",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "gmore",
+   "version": "1.2",
+   "batch": "w01",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "hocoslamfy",
+   "version": "2014",
+   "batch": "w06",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "hydracastle",
+   "version": "1/2019",
+   "batch": "w06",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "iconmake",
+   "version": "1.2",
+   "batch": "w01",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "isotool",
+   "version": "1.0",
+   "batch": "w01",
+   "stack": 262144,
+   "started": "rc 1"
+  },
+  {
+   "id": "isotools-gui",
+   "version": "1.0",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "ledblur",
+   "version": "2006",
+   "batch": "w06",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "metemp3",
+   "version": "0.3",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "nano",
+   "version": "1.2",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "opentyrian",
+   "version": "2.1-fix-1",
+   "batch": "w05",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "pkg-54321",
+   "version": "v1.0",
+   "batch": "w07",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "pkg-7mezzoplus",
+   "version": "1.0",
+   "batch": "w03",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "planethively",
+   "version": "2008",
+   "batch": "w07",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "potrace",
+   "version": "1.16",
+   "batch": "w10",
+   "stack": 262144,
+   "started": "rc 0"
+  },
+  {
+   "id": "qlview",
+   "version": "25.09",
+   "batch": "w09",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "rescode",
+   "version": "1.2",
+   "batch": "w01",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "rtf-riddle",
+   "version": "3.97b",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "rc 22"
+  },
+  {
+   "id": "screentest",
+   "version": "1",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "siddump",
+   "version": "1.08",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "rc 1"
+  },
+  {
+   "id": "skandalfoclock",
+   "version": "1.1",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "sploiner",
+   "version": "1.01",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "rc 1"
+  },
+  {
+   "id": "timeless",
+   "version": "1.0.1",
+   "batch": "w07",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "tressette",
+   "version": "0.7.4",
+   "batch": "w07",
+   "stack": 262144,
+   "started": "window"
+  },
+  {
+   "id": "wildmidi",
+   "version": "0.4.6",
+   "batch": "w02",
+   "stack": 262144,
+   "started": "rc 1"
+  }
+ ],
+ "held": [
+  {
+   "id": "stercus",
+   "reason": "started in three runs, but the whole screen stayed black, with no title or picture; the x86_64 build showed its window. Not decided whether the program works |"
+  }
+ ],
+ "not_tested": [
+  {
+   "id": "ccd2cue",
+   "reason": "tar.bz2 archive: the apkg client reads ZIP and LHA only"
+  },
+  {
+   "id": "demac",
+   "reason": "tar.bz2 archive: the apkg client reads ZIP and LHA only"
+  },
+  {
+   "id": "pkg-7zdec",
+   "reason": "tar.gz archive: the apkg client reads ZIP and LHA only"
+  },
+  {
+   "id": "protrekkr",
+   "reason": "no single drawer: files at the top level of the archive (the x86_64 upload has a drawer)"
+  },
+  {
+   "id": "sfsobject",
+   "reason": "no single drawer: files at the top level of the archive (the x86_64 upload has a drawer)"
+  },
+  {
+   "id": "stratagus",
+   "reason": "no single drawer: files at the top level of the archive (the x86_64 upload has a drawer)"
+  },
+  {
+   "id": "tinysid",
+   "reason": "rar archive: the apkg client reads ZIP and LHA only"
+  }
+ ]
+}

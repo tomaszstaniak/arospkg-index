@@ -1,0 +1,9 @@
+potrace --version
+potrace 1.16. Copyright (C) 2001-2019 Peter Selinger.
+Library version: potracelib 1.16
+Default unit: inches
+Default page size: letter
+potrace -s -o RAM:t.svg t.pbm
+Directory "RAM:" on Saturday 10/03/26:
+t.svg                        684 ---rwed Today       12:41:56
+1 file - 2 blocks used

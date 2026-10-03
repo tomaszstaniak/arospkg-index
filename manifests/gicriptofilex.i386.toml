@@ -1,0 +1,32 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/gicriptofilex/GICriptoFile with Run and input from NIL:, stack
+# 262144 bytes: its window or screen was open and the process was running
+# after 15 s. Evidence: reports/2026-10-03-i386/ (batch w03).
+
+status          = "approved"
+id              = "gicriptofilex"
+version         = "1.0"
+summary         = "Encrypt files using 128 bit algorithm"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/misc"
+url             = "https://archives.arosworld.org/share/utility/misc/gicriptofilex.i386-aros.zip"
+size            = 377005
+upload_date     = "20250514-13.22"
+selected_by     = "only-candidate"
+
+sha256          = "cdd5dfbecbbe99671d082de9d7210382be1b326c125542ae5ec45e1fedb102b0"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "GICriptoFileX1.0"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

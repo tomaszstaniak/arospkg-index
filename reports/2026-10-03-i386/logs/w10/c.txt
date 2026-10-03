@@ -1,0 +1,38 @@
+==== stage C: remove
+removed alac
+remove alac: rc=0
+removed antiword
+remove antiword: rc=0
+removed potrace
+remove potrace: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       12:42:18
+antiword                     Dir ---rwed Today       12:42:18
+cache                        Dir ---rwed Today       12:41:11
+db                           Dir ---rwed Today       12:42:18
+4 directories - 4 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/antiword" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+potrace.zip              1006164 ---rwed Today       12:41:11
+antiword.zip              247828 ---rwed Today       12:41:11
+alac.lha                 6803851 ---rwed Today       12:41:10
+3 files - 15740 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       12:42:18
+transactions                 Dir ---rwed Today       12:42:18
+installed                    Dir ---rwed Today       12:42:18
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+antiword-6ac0f82a.json       146 ---rwed Today       12:42:18
+1 file - 1 block used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 4 files - 7 directories - 15748 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 12:42:18

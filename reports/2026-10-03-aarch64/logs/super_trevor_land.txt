@@ -1,0 +1,41 @@
+==== super_trevor_land (stage A: install)
+Sunday 01-Jan-78 00:00:36
+ super_trevor_land
+install rc=0
+==== apkg list after install
+list rc=0
+==== apkg info / show / verify
+super_trevor_land 1.0
+  Super Trevor Land
+  category:     game/platform
+  target:       aarch64, ABI v1
+  compatibility:  -- built for this machine: aarch64, ABIv1, mainline AROS
+  download:     63293 KB from https://archives.arosworld.org/share/game/platform/super_trevor_land.aarch64-aros.zip
+  sha256:       f5c1c775777c94883524875bd9e2b1673909935a6e688a7fd5e847cc3146ef42
+  requirements: none stated
+  installed:    1.0 (aarch64), in SYS:Test/root/super_trevor_land, since 1978-01-01T00:02:14Z
+  upgrade:      no -- installed is 1.0 revision 0 and the index offers revision 0, which is not newer
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+super_trevor_land: 277 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon ours
+==== files
+Directory "SYS:Test/root/super_trevor_land" on Sunday 01/01/78:
+aros-aarm64-abiv1-super-trevor-land 1985168 --arwed Future      00:01:08
+Super_Trevor_Land             89 --arwed Future      00:01:08
+Super_Trevor_Land.info    107945 --arwed Future      00:01:08
+Media                        Dir --arwed Future      00:01:08
+3 files - 1 directory - 4091 blocks used
+==== stage B: start aros-aarm64-abiv1-super-trevor-land (stack 524288, mode win)
+Sunday 01-Jan-78 00:02:31
+after 15 s (a number means it is running):
+ 1
+after Ctrl-C (empty means it has ended):
+ 1
+==== stage C: remove
+ super_trevor_land
+remove rc=0
+==== apkg list after remove
+nothing installed
+list rc=0
+LEFTOVER: SYS:Test/root/super_trevor_land still exists
+Directory "SYS:Test/root/super_trevor_land" is empty
+Sunday 01-Jan-78 00:03:14

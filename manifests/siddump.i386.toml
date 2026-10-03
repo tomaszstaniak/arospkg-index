@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/siddump/C/siddump with Run and input from NIL:, stack 262144
+# bytes: it printed its usage or output and returned 1. Evidence:
+# reports/2026-10-03-i386/ (batch w02).
+
+status          = "approved"
+id              = "siddump"
+version         = "1.08"
+summary         = "C64 music debug output utility"
+arch            = "i386"
+abi             = "v0"
+category        = "audio/misc"
+url             = "https://archives.arosworld.org/share/audio/tracker/siddump.i386-aros.lha"
+size            = 108441
+upload_date     = "20211120-00.54"
+selected_by     = "only-candidate"
+
+sha256          = "e8e3ea9599a628fd87468b90f89c7d380e23094b8aca2406d2838434d7883d6a"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "SIDdump"
+icon            = "SIDdump.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

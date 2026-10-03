@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/rescode/ResCode
+# with Run and input from NIL:, stack 262144 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-10-03-i386/ (batch w01).
+
+status          = "approved"
+id              = "rescode"
+version         = "1.2"
+summary         = "Calculates resistor values (4 and 5 band)"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/misc"
+url             = "https://archives.arosworld.org/share/utility/misc/rescode.i386-aros.zip"
+size            = 29771
+upload_date     = "20080826-12.35"
+selected_by     = "only-candidate"
+
+sha256          = "40fcacf43ae2b8a0a1d5af6eac1f45721a039da05f3dac6384ff2e980f3b351b"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "ResCode"
+icon            = "ResCode.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

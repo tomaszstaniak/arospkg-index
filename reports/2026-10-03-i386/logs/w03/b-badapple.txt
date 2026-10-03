@@ -1,0 +1,7 @@
+==== badapple: SVGAnim_play, stack 262144
+Saturday 03-Oct-26 11:55:45
+after 15 s (a number means it is running):
+ 15
+after Ctrl-C (empty means it has ended):
+ 15
+Saturday 03-Oct-26 11:56:09

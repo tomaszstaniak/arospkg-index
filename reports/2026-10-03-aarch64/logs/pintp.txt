@@ -1,0 +1,38 @@
+==== pintp (stage A: install)
+Sunday 01-Jan-78 00:00:34
+ pintp
+install rc=0
+==== apkg list after install
+list rc=0
+==== apkg info / show / verify
+pintp 1.0
+  time synchronization client for Raspberry Pi
+  category:     network
+  target:       aarch64, ABI v1
+  compatibility:  -- built for this machine: aarch64, ABIv1, mainline AROS
+  download:     17 KB from https://archives.arosworld.org/share/network/pintp.aarch64-aros.lha
+  sha256:       23f5df9260098ef75739bad0c0e53545b9ffbcaa54173adbd07262638d9b31b3
+  requirements: none stated
+  installed:    1.0 (aarch64), in SYS:Test/root/pintp, since 1978-01-01T00:00:35Z
+  upgrade:      no -- installed is 1.0 revision 0 and the index offers revision 0, which is not newer
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+pintp: 2 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+==== files
+Directory "SYS:Test/root/pintp" on Sunday 01/01/78:
+pintp                      49352 --arwed Future      00:00:36
+pintp.readme.md             2945 --arwed Future      00:00:36
+2 files - 103 blocks used
+==== stage B: start pintp (stack 262144, mode cli)
+Sunday 01-Jan-78 00:00:36
+program output:
+
+pintp returned: rc=20
+==== stage C: remove
+ pintp
+remove rc=0
+==== apkg list after remove
+nothing installed
+list rc=0
+LEFTOVER: SYS:Test/root/pintp still exists
+Directory "SYS:Test/root/pintp" is empty
+Sunday 01-Jan-78 00:04:27

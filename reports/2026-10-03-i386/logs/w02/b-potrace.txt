@@ -1,0 +1,7 @@
+==== potrace: potrace, stack 262144
+Saturday 03-Oct-26 11:50:33
+after 15 s (a number means it is running):
+potrace returned: rc=2
+after Ctrl-C (empty means it has ended):
+potrace returned: rc=2
+Saturday 03-Oct-26 11:50:52

@@ -1,0 +1,37 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/daysleeper/Daysleeper with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w03).
+
+status          = "approved"
+id              = "daysleeper"
+version         = "0.9r2"
+summary         = "Shutdown/Reboot at a selected time"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/text/misc"
+url             = "https://archives.arosworld.org/share/utility/misc/daysleeper.i386-aros.lha"
+size            = 157619
+upload_date     = "20140718-06.12"
+selected_by     = "only-candidate"
+
+sha256          = "f0a21a5b72895fb7a890d2dcb501c552a7b087e1c31ab60eac0b520497f9f29c"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "DaySleeper"
+icon            = "DaySleeper.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"

@@ -1,0 +1,82 @@
+==== stage C: remove
+removed daysleeper
+remove daysleeper: rc=0
+removed metemp3
+remove metemp3: rc=0
+removed qlview
+remove qlview: rc=0
+removed pkg-7mezzoplus
+remove pkg-7mezzoplus: rc=0
+removed gicriptofilex
+remove gicriptofilex: rc=0
+removed giocodel15
+remove giocodel15: rc=0
+removed isotools-gui
+remove isotools-gui: rc=0
+removed badapple
+remove badapple: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       11:56:12
+badapple                     Dir ---rwed Today       11:56:12
+isotools-gui                 Dir ---rwed Today       11:56:12
+giocodel15                   Dir ---rwed Today       11:56:12
+gicriptofilex                Dir ---rwed Today       11:56:12
+pkg-7mezzoplus               Dir ---rwed Today       11:56:12
+metemp3                      Dir ---rwed Today       11:56:12
+daysleeper                   Dir ---rwed Today       11:56:12
+cache                        Dir ---rwed Today       11:52:40
+db                           Dir ---rwed Today       11:56:12
+10 directories - 10 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/badapple" is empty
+Directory "SYS:Batch/isotools-gui" is empty
+Directory "SYS:Batch/giocodel15" is empty
+Directory "SYS:Batch/gicriptofilex" is empty
+Directory "SYS:Batch/pkg-7mezzoplus" on Saturday 10/03/26:
+Settings                     Dir ---rwed Today       11:53:57
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings" on Saturday 10/03/26:
+7Mezzo                       Dir ---rwed Today       11:53:57
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings/7Mezzo" on Saturday 10/03/26:
+Dati                         Dir ---rwed Today       11:53:57
+1 directory - 1 block used
+Directory "SYS:Batch/pkg-7mezzoplus/Settings/7Mezzo/Dati" on Saturday 10/03/26:
+Score                          6 ---rwed Today       11:53:57
+1 file - 1 block used
+Directory "SYS:Batch/metemp3" is empty
+Directory "SYS:Batch/daysleeper" is empty
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+badapple.zip             2914646 ---rwed Today       11:52:40
+isotools-gui.zip          211054 ---rwed Today       11:52:40
+giocodel15.zip            351429 ---rwed Today       11:52:39
+gicriptofilex.zip         377005 ---rwed Today       11:52:38
+pkg-7mezzoplus.zip        483773 ---rwed Today       11:52:38
+qlview.lha                258083 ---rwed Today       11:52:37
+metemp3.zip               193088 ---rwed Today       11:52:37
+daysleeper.lha            157619 ---rwed Today       11:52:37
+8 files - 9666 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       11:56:12
+transactions                 Dir ---rwed Today       11:56:12
+installed                    Dir ---rwed Today       11:56:12
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+badapple-6ac0ed5c.json       146 ---rwed Today       11:56:12
+isotools-gui-6ac0ed5c.json     154 ---rwed Today       11:56:12
+giocodel15-6ac0ed5c.json     149 ---rwed Today       11:56:12
+gicriptofilex-6ac0ed5c.json     155 ---rwed Today       11:56:12
+pkg-7mezzoplus-6ac0ed5c.json     157 ---rwed Today       11:56:12
+metemp3-6ac0ed5c.json        144 ---rwed Today       11:56:12
+daysleeper-6ac0ed5c.json     149 ---rwed Today       11:56:12
+7 files - 7 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 16 files - 16 directories - 9690 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 11:56:12

@@ -1,0 +1,45 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/badapple/SVGAnim_play with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w03).
+
+status          = "approved"
+id              = "badapple"
+version         = "1.0"
+summary         = "The famous Bad Apple animation with player and xm"
+arch            = "i386"
+abi             = "v0"
+category        = "demo/misc"
+url             = "https://archives.arosworld.org/share/demo/misc/badapple.i386-aros.zip"
+size            = 2914646
+upload_date     = "20240208-11.02"
+selected_by     = "only-candidate"
+
+sha256          = "e0bf3deab44e8013ef3e80abe9aadce1a0e3a3f69e0cc3cba644b046609cc909"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Bad_Apple"
+icon            = "Bad_Apple.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

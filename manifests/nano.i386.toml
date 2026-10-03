@@ -1,0 +1,40 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/nano/nano-aros-i386 with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w05).
+
+status          = "approved"
+id              = "nano"
+version         = "1.2"
+summary         = "nano demo x86_64 by Kakiarts"
+arch            = "i386"
+abi             = "v0"
+category        = "demo/scene"
+url             = "https://archives.arosworld.org/share/demo/scene/nano.i386-aros.zip"
+size            = 3911860
+upload_date     = "20240316-17.33"
+selected_by     = "only-candidate"
+
+sha256          = "488bca0270b2ff1141c317e126e261205a1c4e295f420b352190401f9d059953"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "nano"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "gl.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

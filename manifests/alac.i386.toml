@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/alac/C/ALAC
+# with Run and input from NIL:, stack 262144 bytes: run on test input made
+# for it (see logs/w10/o-alac.txt), it returned 0 and wrote the expected
+# output. Evidence: reports/2026-10-03-i386/ (batch w10).
+
+status          = "approved"
+id              = "alac"
+version         = "0.1.3"
+summary         = "Apple Lossless Audio Codec decoder"
+arch            = "i386"
+abi             = "v0"
+category        = "audio/misc"
+url             = "https://archives.arosworld.org/share/audio/misc/alac.i386-aros.lha"
+size            = 6803851
+upload_date     = "20210119-00.30"
+selected_by     = "only-candidate"
+
+sha256          = "3b2d5d19acbe9f3ad14e734b031473a4e73ed34052f32528bc4fcc17dd7b0164"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "ALAC_Decoder"
+icon            = "ALAC_Decoder.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

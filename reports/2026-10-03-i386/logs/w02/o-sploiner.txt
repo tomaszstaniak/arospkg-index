@@ -1,0 +1,66 @@
+
+Sploiner                 USER COMMANDS                   Sploiner
+
+
+NAME
+     Sploiner 1.01 (Jun 18 2019 08:39:06) - Split, Join & Repair.
+     Splits large files into smaller parts for transportation 
+     on disk. Possibility for error recovery.
+
+SYNOPSIS
+     Sploiner split  <InputFile> [-n] [-s Disksize] [-o Outputname]
+
+     Sploiner join <basename> as <joined_file>
+
+     Sploiner repair file_1 file_2 ... file_n as damaged_file
+
+     Sploiner example
+
+DISCLAIMER
+     I take NO responsibilities for this program.
+     Any use is on your own risk.
+
+DESCRIPTION
+     Splits a program op in smaller sizes, recovers a lost file, 
+     or join files.
+
+     Type "Sploiner split", "Sploiner join" or "Sploiner repair"
+     for detailed description and "Sploiner example" for an example.
+
+AVAILABILITY
+     This program is beerware. If you like it, send or give me a
+     beer (or beers %-). You stand a good chance of finding me in:
+     TÅGEKAMMERET, Aarhus universitet, Matematisk institut,
+     Ny Munkegade 116, 8000 Aarhus C, Denmark.
+     This program is copyrighted to: Richard Jørgensen. 
+     If you make any improvements to the program, please send them
+     to me. 
+     My address: Internet: ric@daimi.aau.dk
+                 Fidonet: 2:238/28.1
+                 WWW: http://www.daimi.aau.dk/~ric
+                      (Check out the sploiner WWW-page)
+                 Real World(tm): Gudrunsvej 48 6th
+                                 8220 Brabrand
+                                 Denmark
+
+OPTIONS
+     split <file> [-n] [-s <size>] [-o <name>]
+          Split a file.
+
+     join <basename> as <file>
+          Join <basename>.nnn and save as <file>
+
+     repair <files> as <file>
+          Cast spell to summon a lost file.
+
+     example
+          Gives a detailed example of sploiner usage.
+
+SEE ALSO
+     split(1), cat(1)
+
+BUGS
+     Some functionality discovered.  :-)
+
+     Please reports bugs to: ric@daimi.aau.dk (Internet).
+

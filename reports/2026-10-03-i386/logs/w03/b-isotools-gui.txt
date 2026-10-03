@@ -1,0 +1,7 @@
+==== isotools-gui: IsoTools-GUI, stack 262144
+Saturday 03-Oct-26 11:55:18
+after 15 s (a number means it is running):
+ 14
+after Ctrl-C (empty means it has ended):
+ 14
+Saturday 03-Oct-26 11:55:42

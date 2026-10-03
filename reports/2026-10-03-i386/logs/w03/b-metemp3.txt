@@ -1,0 +1,7 @@
+==== metemp3: meteMP3, stack 262144
+Saturday 03-Oct-26 11:53:07
+after 15 s (a number means it is running):
+ 11
+after Ctrl-C (empty means it has ended):
+meteMP3 returned: rc=0
+Saturday 03-Oct-26 11:53:32

@@ -1,0 +1,41 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/isotools-gui/IsoTools-GUI with Run and input from NIL:, stack
+# 262144 bytes: its window or screen was open and the process was running
+# after 15 s. Evidence: reports/2026-10-03-i386/ (batch w03).
+
+status          = "approved"
+id              = "isotools-gui"
+version         = "1.0"
+summary         = "Boot Extraction ISO And Rename Volume"
+arch            = "i386"
+abi             = "v0"
+category        = "utility"
+url             = "https://archives.arosworld.org/share/utility/isotools-gui.i386-aros.zip"
+size            = 211054
+upload_date     = "20260911-19.42"
+selected_by     = "only-candidate"
+
+sha256          = "8f8854fd44b549eccb8723d145253326cea7ffca8c0a4efbb3425ef1af680526"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "IsoTools-GUI"
+icon            = "IsoTools-GUI.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

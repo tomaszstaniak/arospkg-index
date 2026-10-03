@@ -1,0 +1,32 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/screentest/Screentest with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w02).
+
+status          = "approved"
+id              = "screentest"
+version         = "1"
+summary         = "Tests the stability of your screen"
+arch            = "i386"
+abi             = "v0"
+category        = "demo/misc"
+url             = "https://archives.arosworld.org/share/demo/misc/screentest.i386.zip"
+size            = 4854
+upload_date     = "20060810-07.16"
+selected_by     = "only-candidate"
+
+sha256          = "5aeed06063af110c2a5fbc26721388d188330d5614f5d35fe769ed4494d573d5"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "Screentest"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

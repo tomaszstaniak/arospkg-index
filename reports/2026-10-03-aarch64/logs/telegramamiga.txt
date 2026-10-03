@@ -1,0 +1,45 @@
+==== telegramamiga (stage A: install)
+Sunday 01-Jan-78 00:00:35
+ telegramamiga
+install rc=0
+==== apkg list after install
+list rc=0
+==== apkg info / show / verify
+telegramamiga 0.0.94
+  Native MTProto Telegram chat client
+  category:     network/chat
+  target:       aarch64, ABI v1
+  compatibility:  -- built for this machine: aarch64, ABIv1, mainline AROS
+  download:     397 KB from https://archives.arosworld.org/share/network/chat/telegramamiga.aarch64-aros.lha
+  sha256:       b6f10d910bc1fbb928f5ccfe130b3d35b13aa10a7a49e6d12d6dcf1d506d5ad8
+  requirements: none stated
+  installed:    0.0.94 (aarch64), in SYS:Test/root/telegramamiga, since 1978-01-01T00:00:36Z
+  upgrade:      no -- installed is 0.0.94 revision 0 and the index offers revision 0, which is not newer
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+telegramamiga: 10 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon ours
+==== files
+Directory "SYS:Test/root/telegramamiga" on Sunday 01/01/78:
+CHANGELOG.txt              45003 --arwed Future      00:00:38
+LICENSE                     1101 --arwed Future      00:00:38
+LICENSE-NotoEmoji.txt       4330 --arwed Future      00:00:38
+Manual-EN.txt              13659 --arwed Future      00:00:38
+Manuale-IT.txt             14090 --arwed Future      00:00:38
+NOTICE-NotoEmoji.txt         521 --arwed Future      00:00:38
+README.txt                  1534 --arwed Future      00:00:38
+TelegramAmiga             988424 --arwed Future      00:00:38
+TelegramAmiga.info          8569 --arwed Future      00:00:38
+data                         Dir --arwed Future      00:00:38
+9 files - 1 directory - 2109 blocks used
+==== stage B: start TelegramAmiga (stack 262144, mode win)
+Sunday 01-Jan-78 00:00:38
+after 15 s (a number means it is running):
+after Ctrl-C (empty means it has ended):
+TelegramAmiga returned: rc=0
+==== stage C: remove
+ telegramamiga
+remove rc=0
+==== apkg list after remove
+nothing installed
+list rc=0
+root/telegramamiga gone
+Sunday 01-Jan-78 00:00:59

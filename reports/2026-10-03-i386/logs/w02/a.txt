@@ -1,0 +1,576 @@
+==== stage A: install
+
+==== rtf-riddle
+Saturday 03-Oct-26 11:49:01
+fetching https://archives.arosworld.org/share/utility/text/convert/rtf-riddle.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/text/convert/rtf-riddle.i386-aros.lha
+verified and cached SYS:Batch/cache/rtf-riddle.lha
+installed rtf-riddle
+install rtf-riddle: rc=0
+{
+  "schema":1,
+  "name":"rtf-riddle",
+  "version":"3.97b",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"RTF-Riddle",
+  "installed":"2026-10-03T11:49:02Z",
+  "origin":"https://archives.arosworld.org/share/utility/text/convert/rtf-riddle.i386-aros.lha",
+  "archive_sha256":"d53b2edc4f77143b7474319c795d0a88b92c7e072312ba0466a939cfc730a82f",
+  "archive_size":168299,
+  "reason":"explicit",
+  "dir":"rtf-riddle",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"installed", "sha256":"cebc603fe47fc7d0e17ca6b3d4e1a9366fcbc7fc3249a50c4d0fef035fe0cdf2", "size":11420, "member":"RTF-Riddle.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source/widechar.c", "sha256":"119de915e5ac40fbdd21a5756b6d09258a2ac6a1cc7524b0276c0354a6727d71", "size":603 },
+    { "path":"Source/tools/Sces.c", "sha256":"80eda5c1259c1a4ebf2f4ca4fa63411862a6dd7c08187d40a588ad78e8439571", "size":16684 },
+    { "path":"Source/tokens.h", "sha256":"ed922168fd567cdd38691a6e74d0a695560ce0320bda1a36acaad33a368fa393", "size":1346 },
+    { "path":"Source/tokens.c", "sha256":"ecaa09b9e0e4afc49efcd68364667ad20024bda202faef711b5e89a6b296a1bf", "size":16868 },
+    { "path":"Source/strlcpy.c", "sha256":"3909ebedbb78b7e704eda7e47ace4f31cba79ea3663cee784f0fa91f0e2b7c8a", "size":610 },
+    { "path":"Source/rtfriddle.rc", "sha256":"42b940dfed615899fe706594a453cb24042d658e946dbef15f93f7b0cc15e407", "size":1169 },
+    { "path":"Source/rtfriddle.c", "sha256":"ebd0451ceb9f23bdf967f48c3bd16ffcec4af8ee1fc41b91391ab1ff6c5a89b0", "size":5310 },
+    { "path":"Source/prototypes.h", "sha256":"58a81a4ad17f5e2c2ac3c3b5986b6af95c55b278b17af19ba4c75e223f673874", "size":4362 },
+    { "path":"Source/parset.h", "sha256":"42fc07121e8101f430b66371f1f471241acbbf71aa235adf5402dfca7663b637", "size":3698 },
+    { "path":"Source/parset.c", "sha256":"38fa189ed1af5bed229e590e56933842b119769966befe75f1bc31fa1ab541c5", "size":1317 },
+    { "path":"Source/parser.c", "sha256":"97cdc48f1ea8459b13709add8a595793489a5e74b4b992d887d29eeea5b22096", "size":18655 },
+    { "path":"Source/MS-codepages/CP1257.TXT", "sha256":"5ac72f382ea4f64fe61854e0dae7d311583bd1dd20797697d4dce32b175a268b", "size":9218 },
+    { "path":"Source/MS-codepages/CP1254.TXT", "sha256":"f93569399f81abce90441793c118d2524770b58d9c5774de3233c64d88c9fca0", "size":9346 },
+    { "path":"Source/MS-codepages/CP1253.TXT", "sha256":"85d917854926ef09b22abefd19c7b61494e229fa391b648dc332f1fac0879ce3", "size":8938 },
+    { "path":"Source/MS-codepages/CP1252.TXT", "sha256":"f607ae328b4dff5e9bfef725f5fff0ae23f38797f8a5b95998a0d2735c0e8fad", "size":9355 },
+    { "path":"Source/MS-codepages/CP1251.TXT", "sha256":"d9d491808bd7956c26ef8ed07fa63015bfab32860720e07d5bf3a64a609927ee", "size":9205 },
+    { "path":"Source/MS-codepages/CP1250.TXT", "sha256":"e6535e3c81f4aff1a4b369c46e588a2423d6a75da341e01a6cea108c7542c19a", "size":9530 },
+    { "path":"Source/makefile.targ.inc", "sha256":"7fb4c9423e867b207795587353fac9a0a368339b8da2ee34d38ec68a50532242", "size":805 },
+    { "path":"Source/makefile.mak", "sha256":"f7c3622bb68f10e99d7aa5ae35a9ef793f3fdd7667e0564b389b8ee23a13962c", "size":4267 },
+    { "path":"Source/makefile.inc", "sha256":"7327e246ddbb3c631e66e371613ef04e579898e13d8babd781874fbcf6b5eaf1", "size":1825 },
+    { "path":"Source/makefile", "sha256":"bec0d5cd3f75ff73f15ade091ed9d0ba977e71a2a3e29e86e1fd0ab668316f4e", "size":5460 },
+    { "path":"Source/lists_and_nodes.h", "sha256":"2354d3361f29cbe3f70a3acfa1a29b171b34bbbb03122533d9f7c377de2bceff", "size":804 },
+    { "path":"Source/lists_and_nodes.c", "sha256":"b35b6f9598b29d6320291b3ed335c32348bfa4b5a81f3e5490d7da30abdd7fc2", "size":2617 },
+    { "path":"Source/io.c", "sha256":"911e3ebdeba53c3be5436878a9a17b4715c81f358863852934d3baf76226966e", "size":1248 },
+    { "path":"Source/html.c", "sha256":"35f8637962fe822edb1acbff3760c60f294633ba29d7f1baade2ff56c3fc4fb5", "size":2217 },
+    { "path":"Source/globals.h", "sha256":"92f925e4a6d6c9de485064cbdbee9ccb0e045b1e2fe875d4e59401a9d24f6682", "size":698 },
+    { "path":"Source/globals.c", "sha256":"12ff8f2540fe1bae9b20f93c774f4d498930379a844ee506a72af863e328ccb5", "size":108 },
+    { "path":"Source/fontfaces.h", "sha256":"ee79556faecb5e83a60dc71a79ae5f7ad05e5765f6bceb3799fac780cd6b032f", "size":1178 },
+    { "path":"Source/fontfaces.c", "sha256":"960a21cbb8ea464d67ccd5d5b5c88e78c295cebc08f0bfdc0f5a356c2bc00903", "size":15853 },
+    { "path":"Source/colourtable.c", "sha256":"865c149637526039e05c407fa848597ce8aabac33d6fdba1cdc1e1deac13ac0e", "size":1910 },
+    { "path":"Source/codepages.c", "sha256":"27b0995aa4f4b49cb7beacb033c2c8b2dcee406b2eddb20520efe47422a2e3aa", "size":20220 },
+    { "path":"Source/charset.h", "sha256":"d29c8fe03745ab91f8dea48296e8f03e3d0c89326ebe14d35b1e922e25794d92", "size":561 },
+    { "path":"Source/charset.c", "sha256":"0153ed20cf7be4949bf8d62d5c1558dcf74fee874e5eb224a72421d5ea5e98ed", "size":1147 },
+    { "path":"Source/chainlink.h", "sha256":"db39874fe1ff30c3c01e4f6f143b6886f4f3cc39aac83d5298d17e895a86d1ba", "size":1477 },
+    { "path":"Source/chainlink.c", "sha256":"41651c5980faf611192bc794f78451b176112cd52a68f9b8c437118e0f97f286", "size":40279 },
+    { "path":"Source.info", "sha256":"1296d691dfe5b7c0d21c7ea67b10ce660c1d3289855df732854da809290c597f", "size":17408 },
+    { "path":"RTFs/RTF-Riddle-User.rtf", "sha256":"fd2af84ca2c9e6966869ae2fef462b65a1682918296f486075f2834ad9b6a4e1", "size":84859 },
+    { "path":"RTFs/RTF-Riddle-Dev.rtf", "sha256":"6b0169af456f2fbbf87ac2a74af1da96f684714be3f0bb2c66186d18a8636e92", "size":141981 },
+    { "path":"RTF2HTML.info", "sha256":"dafb5ab09394db459ad7bedc9c17904619ffa19b145677c1cb81298a344843f7", "size":1715 },
+    { "path":"RTF2HTML", "sha256":"361051d8aa0131baaf08bd766d146d4dfc4b1a4c2e1b2e45da9008854c4ad102", "size":1724 },
+    { "path":"Install.info", "sha256":"9aa2769c9a541a105ba69dba9087c430afb023f05cb9e091b2f61e689701e1c7", "size":1824 },
+    { "path":"Install", "sha256":"dead0d12d56a6dc967cac63a0051bd0a244e62d1fbb412afe63adf87483a6d2c", "size":1752 },
+    { "path":"HTMLs/RTF-Riddle-User.html", "sha256":"5fe3f2f86fda12cce0580bace2e140bcadbb107dfbbab91c432f6e4db70d94c7", "size":8496 },
+    { "path":"HTMLs/RTF-Riddle-Dev.html", "sha256":"c5497b61694265e8c8935f5aa053f3c480561ff058f85e819d080116a29801f8", "size":18453 },
+    { "path":"C/rtfriddle", "sha256":"dd74ce7dde5e4b45e2dd4569ae3ff3dc4f9198e041fa08624ae2e64e0324ed80", "size":48800 }
+  ]
+}
+
+==== siddump
+Saturday 03-Oct-26 11:49:02
+fetching https://archives.arosworld.org/share/audio/tracker/siddump.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/tracker/siddump.i386-aros.lha
+verified and cached SYS:Batch/cache/siddump.lha
+installed siddump
+install siddump: rc=0
+{
+  "schema":1,
+  "name":"siddump",
+  "version":"1.08",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"SIDdump",
+  "installed":"2026-10-03T11:49:02Z",
+  "origin":"https://archives.arosworld.org/share/audio/tracker/siddump.i386-aros.lha",
+  "archive_sha256":"e8e3ea9599a628fd87468b90f89c7d380e23094b8aca2406d2838434d7883d6a",
+  "archive_size":108441,
+  "reason":"explicit",
+  "dir":"siddump",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"installed", "sha256":"6f00b5815db3fa494957605054ec33a639c88adaf83e703cd0f53f6821d88370", "size":11420, "member":"SIDdump.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Source/siddump.c", "sha256":"78560a4f4147a4e02a9bf5f7e269039426fad698eb22c60ef230800ffc80f6e5", "size":16214 },
+    { "path":"Source/Makefile", "sha256":"76d5fae63aa54046a27b9cd63370ae54f42d6833b4299efbd3456b03325afe17", "size":197 },
+    { "path":"Source/cpu.h", "sha256":"df3960e0812cb6e2ee228758526eff09af3c7dc6792f958893b4047c907863f8", "size":204 },
+    { "path":"Source/cpu.c", "sha256":"2c95f607a6cad428c9aafdd4c26358873c071001a66c7b4fbbb60f45a9e01d28", "size":27991 },
+    { "path":"Source.info", "sha256":"1296d691dfe5b7c0d21c7ea67b10ce660c1d3289855df732854da809290c597f", "size":17408 },
+    { "path":"Install.info", "sha256":"9aa2769c9a541a105ba69dba9087c430afb023f05cb9e091b2f61e689701e1c7", "size":1824 },
+    { "path":"Install", "sha256":"e4f8c39d232232ec8243ceb6e3814fb134f01fefd5294bc914c683d16caba24d", "size":985 },
+    { "path":"Example/Monty_on_the_Run.sid", "sha256":"528a7330817e4a0a0f75a505e9fe2444e07c5072ce5383ceaa89f183f0eee3ab", "size":5694 },
+    { "path":"Example/Golden_Axe.sid", "sha256":"c20e8eef9c9af543644defdf5d5daca48098336be85f208424dfc0ece76e0694", "size":14196 },
+    { "path":"Example/Arkanoid.sid", "sha256":"9a576463b6d9e46f35cf2c8fbf40b6b3915424b2207d7c44c73b36e6ce9bc1cd", "size":9834 },
+    { "path":"Example.info", "sha256":"9b24420ede621b1f35283a6eadb7fa88de23d59c450195b31c0178f66b08cfd1", "size":11420 },
+    { "path":"Docs/README.info", "sha256":"6941bc8e295505d0c5500c4fbe16cbfe106854847f6207d626802e2c3628c64b", "size":5120 },
+    { "path":"Docs/README", "sha256":"181337658eb9aba2179572e7baecec412ae246e196e404fe884751808d3ff904", "size":2006 },
+    { "path":"Docs.info", "sha256":"c7a721691dd6947eec92a8de05209ce5c0f816c7fdd8f97646fe20e64c49e401", "size":20920 },
+    { "path":"C/siddump", "sha256":"9767143171668925a8997d60107c315a02d0316f683b723e45256eb6d536e949", "size":61056 }
+  ]
+}
+
+==== sploiner
+Saturday 03-Oct-26 11:49:02
+fetching https://archives.arosworld.org/share/utility/filetool/sploiner.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/filetool/sploiner.i386-aros.zip
+verified and cached SYS:Batch/cache/sploiner.zip
+installed sploiner
+install sploiner: rc=0
+{
+  "schema":1,
+  "name":"sploiner",
+  "version":"1.01",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"sploiner",
+  "installed":"2026-10-03T11:49:03Z",
+  "origin":"https://archives.arosworld.org/share/utility/filetool/sploiner.i386-aros.zip",
+  "archive_sha256":"286e8a3a42160dfc2f4fa8a288d3274d0af2127822a479e302c1debd3ca88b11",
+  "archive_size":127956,
+  "reason":"explicit",
+  "dir":"sploiner",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"readme.morphos", "sha256":"0f1ab933ffb85374f1f7461851a53dfc51a128907c9c46f4ac6bc3b45725c3c6", "size":772 },
+    { "path":"readme.txt", "sha256":"cc96a94380594738ae5c3b2b6f66aa57809013da493ec5d1a179d60e647a02a7", "size":1809 },
+    { "path":"source.lha", "sha256":"82e4743de637a1b805a2eff69cda5a89a96f5e56cfa743085d329040eb81849d", "size":11643 },
+    { "path":"sploiner.amiga", "sha256":"345bfb54a291c1b65da7fb101a3de0aa637ee6b471b2f688fc8f05082b30957f", "size":23508 },
+    { "path":"sploiner.exe", "sha256":"a878d18d4b36f82ac55dba88c422988e40d87b3368916ef88e6dc3d11fdbf07f", "size":104964 },
+    { "path":"sploiner.morphos", "sha256":"fdd412d62169eca80410cdab7ac6ae22ac5e5af290b9a5d37b8685326e6f19f3", "size":28648 },
+    { "path":"sploiner.sparc", "sha256":"cabe3a213bc8bf2c1f072b91e56c8ddbf3d201e7c2a8d2e0c2fbde078064ad38", "size":32768 },
+    { "path":"sploiner.aros", "sha256":"2fbdf46ac3b1ca417651f958639aab75442c6e3666afc1c12297338c3482c990", "size":31052 },
+    { "path":"sploiner-aros_i386.zip", "sha256":"b257d461a996b6ba6489f59b0b94a8229acd3d218bd0463fc0ee0600fd02d804", "size":11810 }
+  ]
+}
+
+==== wildmidi
+Saturday 03-Oct-26 11:49:03
+fetching https://archives.arosworld.org/share/audio/play/wildmidi.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=audio/play/wildmidi.i386-aros.zip
+verified and cached SYS:Batch/cache/wildmidi.zip
+installed wildmidi
+install wildmidi: rc=0
+{
+  "schema":1,
+  "name":"wildmidi",
+  "version":"0.4.6",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"WildMidi",
+  "installed":"2026-10-03T11:49:03Z",
+  "origin":"https://archives.arosworld.org/share/audio/play/wildmidi.i386-aros.zip",
+  "archive_sha256":"6989ea529cdcf4abb85f8c645fe1c0d97c7fb6c2ddcf25120da2b9c1e24bfc2e",
+  "archive_size":432951,
+  "reason":"explicit",
+  "dir":"wildmidi",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"WildMidi.info", "sha256":"f7035bfe746b5eda21adb53face6a64010f4e70b87c90afefb952c0c0d13dab5", "size":8501 },
+    { "path":"WildMidi.cfg", "sha256":"3af8687080b2af6eeadb235de59a5114873136d694db12bfc4b57f8d09c5445e", "size":3830 },
+    { "path":"Wildmidi", "sha256":"cb583efbcceb0eb658a5c46d38273aef9b962930a426b8d319a87c44ca25d14f", "size":133732 },
+    { "path":"Source.info", "sha256":"e787a95740a9b29ee71e8cb2e73f0f865abadd654e5d8554235c8c6a047d984e", "size":9136 },
+    { "path":"Source/Source.zip", "sha256":"a7e488c1881a855ee403b6e661336b0f737ad23bc7f5bd4e2b69f792cece0b28", "size":275315 },
+    { "path":"Readme.info", "sha256":"70f6814d1ca548dd20e5b83b0150a2544dca74e49514a477b3014f98d219fc9c", "size":8788 },
+    { "path":"Readme", "sha256":"10096c1a9cab84fc936b6fe6555bc81f91e2f2a358c56520179ebb5362051c9b", "size":10944 },
+    { "path":"Docs.info", "sha256":"d6072ec9cce25fcfa6d782d833de0f4af45aa8bd9499b227f95d6d721744c1b3", "size":9125 },
+    { "path":"Docs/Man/man5/wildmidi.cfg.5", "sha256":"e8942e149fec01fa4f758b355188112e38aabe2ba800ef9980d3be9c9f243307", "size":5884 },
+    { "path":"Docs/Man/man3/WildMidi_SongSeek.3", "sha256":"f2582476229b2492cbe170f3f1edbb0f19ec8c8409a2a56cdb89b3fd00fbc797", "size":2351 },
+    { "path":"Docs/Man/man3/WildMidi_Shutdown.3", "sha256":"361ac75b4aee62576decafaf950c90e043960c83cd1e452a6ab6a34ab84f5d3d", "size":2118 },
+    { "path":"Docs/Man/man3/WildMidi_SetOption.3", "sha256":"bf11223791d063688181d4268dbf1cafe65ef0cdaed4f8ab5f7349457d50d772", "size":3881 },
+    { "path":"Docs/Man/man3/WildMidi_SetCvtOption.3", "sha256":"4af4058ab50aabd2e05a4bbe1ff871dcd86681a484ec4b6375fde4d341f648af", "size":2355 },
+    { "path":"Docs/Man/man3/WildMidi_OpenBuffer.3", "sha256":"785053b9294eb49f427abfcd9a54cd428bfedd1b19e53c2606b98e2693a0ed08", "size":2430 },
+    { "path":"Docs/Man/man3/WildMidi_Open.3", "sha256":"fa7daa7501cc2fd352754dec03c8cfc2adcd093404d6a8adc401c5d729f9cb9b", "size":2271 },
+    { "path":"Docs/Man/man3/WildMidi_MasterVolume.3", "sha256":"dbc62ca1b75890496b4200e85dfa3e77e261e6bf6e5273fd5ea3de794917c6fe", "size":2156 },
+    { "path":"Docs/Man/man3/WildMidi_InitVIO.3", "sha256":"eee93ea598423e89dded5ed6de409db55cbaad1162d925bbb2c515da9ef054eb", "size":4272 },
+    { "path":"Docs/Man/man3/WildMidi_Init.3", "sha256":"65d3b8df6da0300c93fd7c92397692a97abca6178d7a7304b32efed410b99365", "size":3628 },
+    { "path":"Docs/Man/man3/WildMidi_GetVersion.3", "sha256":"1d7864fcdb2d52d43df18a8e8379e8e37bd58c9edfa3e6e7046eb48be4854c95", "size":2185 },
+    { "path":"Docs/Man/man3/WildMidi_GetString.3", "sha256":"d8cd5a727816d9435e195f373f68c815eac9a95bb5007bc9b60eba53e353e990", "size":2260 },
+    { "path":"Docs/Man/man3/WildMidi_GetOutput.3", "sha256":"7ad058e405aa69515011e3ff0c4291c19c528c5568ea499069f347c89f7add38", "size":3177 },
+    { "path":"Docs/Man/man3/WildMidi_GetMidiOutput.3", "sha256":"907509b01aeee241d491208f95a3e0ff56c7ced95f23382926239e94a24d9928", "size":2790 },
+    { "path":"Docs/Man/man3/WildMidi_GetLyric.3", "sha256":"e3688afea3a725bfb54b3e459ac82bcdb0459247207ee0d038db12c472278a7c", "size":2370 },
+    { "path":"Docs/Man/man3/WildMidi_GetInfo.3", "sha256":"ac13a7437840b00eae4159cb48ec18cdb3e9e8f028c1a757f3541e73074eb00f", "size":4101 },
+    { "path":"Docs/Man/man3/WildMidi_GetError.3", "sha256":"069df2c0f14f5878b9db95b7ca7e4bfbc201fb055895d73b43976ca4886cce86", "size":1953 },
+    { "path":"Docs/Man/man3/WildMidi_FastSeek.3", "sha256":"e57402a7f10ae76ab3f2d51404e33196d1d27e32b2f1d5e54ef413d1abe53b25", "size":2678 },
+    { "path":"Docs/Man/man3/WildMidi_ConvertToMidi.3", "sha256":"b5f4028ffba7b6742b1a946b1d0b93cbf26952041877ea257acc5ebff287cfab", "size":2385 },
+    { "path":"Docs/Man/man3/WildMidi_ConvertBufferToMidi.3", "sha256":"d47257580ce292218b8dcf336a2f43b4b8b113bfc579a9750039ce36f439072a", "size":2490 },
+    { "path":"Docs/Man/man3/WildMidi_Close.3", "sha256":"eccd1d54b4866ea403c0d1a5fb86a28fb8d61cd0d55c24ea44b68f0ecdd3821e", "size":2135 },
+    { "path":"Docs/Man/man3/WildMidi_ClearError.3", "sha256":"ccc4b75fbe5241412b9528ff9e036138125a98ea0af2ef70874db2a8981b8825", "size":1935 },
+    { "path":"Docs/Man/man1/wildmidi.1", "sha256":"9b7df6c1b26189c0c9daeaed079692a800c1e639f8c3c73a6013e480f3c85ceb", "size":5520 },
+    { "path":"Docs/License/LGPLv3.txt", "sha256":"319917f5ccd09878db6f67c9a77dee846055644ca49eb535628b9e020a87261e", "size":7804 },
+    { "path":"Docs/License/GPLv3.txt", "sha256":"0b383d5a63da644f628d99c33976ea6487ed89aaa59f0b3257992deac1171e6b", "size":35821 },
+    { "path":"Docs/Formats/XmiFileFormat.txt", "sha256":"e89df0e2bd22d39345232c81631395792bc5ea519639a2fe50c0bc133053bbf0", "size":2791 },
+    { "path":"Docs/Formats/XMIFileFormat-AIL.txt", "sha256":"9986c79f738195446c9c5333e109c67fd9047359ab95a1dfdbda6520378df0ba", "size":29298 },
+    { "path":"Docs/Formats/MUSFileFormat.txt", "sha256":"48365ec0273c1518db59ff28fbd5aef4b922ead36bc1a9a87b8e9cfbd2f0f179", "size":17507 },
+    { "path":"Docs/Formats/HmpFileFormat.txt", "sha256":"5dd3656a680d8bdd9a32ace450aff4051de4a0f86e7752ab3d62a8a792018dbb", "size":6145 },
+    { "path":"Docs/Formats/HmiFileFormat.txt", "sha256":"98b3f410b0fc06f0e66727944f7a8367183a15f68a2e019a52568e7045b646fb", "size":4803 },
+    { "path":"COPYING", "sha256":"17701a4d4cbe5fc36ada953d75c5bd979e4c9f0672c867b6840f5fb36739979b", "size":92 }
+  ]
+}
+
+==== potrace
+Saturday 03-Oct-26 11:49:03
+fetching https://archives.arosworld.org/share/graphics/convert/potrace.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=graphics/convert/potrace.i386-aros.zip
+verified and cached SYS:Batch/cache/potrace.zip
+installed potrace
+install potrace: rc=0
+{
+  "schema":1,
+  "name":"potrace",
+  "version":"1.16",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"potrace-1.16",
+  "installed":"2026-10-03T11:49:04Z",
+  "origin":"https://archives.arosworld.org/share/graphics/convert/potrace.i386-aros.zip",
+  "archive_sha256":"45d1652507892809b002f6f2331f277c697c50ad51b2c59bd3fdfef852f3d1d4",
+  "archive_size":1006164,
+  "reason":"explicit",
+  "dir":"potrace",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"aclocal.m4", "sha256":"e6440d1b14651752b7f70c326951ebe1520a60a0734a20b3014fc3730df028be", "size":42036 },
+    { "path":"AUTHORS", "sha256":"ada9f40f9e86b27a35ae155a12df2f002827db2436b6357cf02a76ccc64283aa", "size":324 },
+    { "path":"bin/mkbitmap", "sha256":"9419fa3e3b44e2139a47832c3530b0cf093a396e7269d71546c12845fe786260", "size":53104 },
+    { "path":"bin/potrace", "sha256":"cbfd1d37908612b94bf7c2606bf124fe314328b44a66f78021326616b9a48007", "size":192120 },
+    { "path":"ChangeLog", "sha256":"4055f52e96f269e3981716f95418161ea83499718d4fe6e422aebfd204ea534c", "size":21472 },
+    { "path":"check/backend-check.sh", "sha256":"cdda8628db5a1f9014504872f1e1311c98ba7238d9e15c254a13575f95469d4d", "size":4846 },
+    { "path":"check/binary-check.sh", "sha256":"b00824ad1b4ad01c06f3d98eb69ae07fec340b00e9bda6bc0495e1e6575b2cd4", "size":1394 },
+    { "path":"check/checkbin.c", "sha256":"47602546d2be028c601c357eee6d74a9c62fc0495257dac6c828f711b870ff22", "size":1228 },
+    { "path":"check/data/data1-out.pgm", "sha256":"80beabcdae254cbc01c9ddef3433fb7faef2351dd5ea73d63ac8f0268a523007", "size":45387 },
+    { "path":"check/data/data1.bmp1", "sha256":"5429462d905f362754ff0a7dfffb19434d352af41fe04ef2cc0fbab9845d0dbf", "size":6366 },
+    { "path":"check/data/data1.bmp4", "sha256":"92d804a6251f911f2e55d4f83c4fa9b2041e1dd2afc97f546c582ba2cb95aa91", "size":22970 },
+    { "path":"check/data/data1.bmp4r", "sha256":"7459f6c9f98c3956505664d37046edd289f8f8768ffc7584d89cdabc8ea89f87", "size":9154 },
+    { "path":"check/data/data1.bmp8", "sha256":"d631dcfd6082c28e787d78ce6be3b504ad074167aad2fac2ca00f62cda1982ba", "size":46782 },
+    { "path":"check/data/data1.bmp8r", "sha256":"7d1d662c4aba876b3ceb8beceb43b20008a0942206f059340b40cadb03a4a177", "size":8114 },
+    { "path":"check/data/data1.bmp24", "sha256":"0f380d0632305336ed99a312a5553e19f20a48f2e404025ab998090418f15fa5", "size":136378 },
+    { "path":"check/data/data1.bmp24td", "sha256":"4dc488cd69211dca0fddb73a670685ee5a807562052f43291b1889aab594993c", "size":136402 },
+    { "path":"check/data/data1.bmp24v5", "sha256":"54feffbd8f28b6968bdde664608bde62fde69f21a99e3c8ac04aef2d84b2525f", "size":136462 },
+    { "path":"check/data/data1.bmp32", "sha256":"33f4d2f677d108736ad6707406523406d7149a805c5d93ffab6e9aa6d1be6a6e", "size":181378 },
+    { "path":"check/data/data1.bmp32bf", "sha256":"549ff28f888f3598cfbe2dc2f190816fa4cce5b55a717e3e6e436453de91c96e", "size":181378 },
+    { "path":"check/data/data1.pbm", "sha256":"f5a426b5a5af26215da610deebbbb5fe2014bc95d3240810575fa4cea7b0f94a", "size":5956 },
+    { "path":"check/data/data1.pbm.gs", "sha256":"5ae105179a949fc186013993ecbd8f9f48da4f8c15a280554eb808d8786c1b5d", "size":22916 },
+    { "path":"check/data/data1.pbm.plain", "sha256":"d27c0a0d4e1ad60f48905a552f4a86401b4d40aa2d2126cbfeeef4e86a7ce320", "size":46109 },
+    { "path":"check/data/data1.pbm.rot", "sha256":"b0c53dfe7e7560ed16f195068bc5e97cdc1415e4b697dd3abaca1cda68999485", "size":37552 },
+    { "path":"check/data/data1.pgm", "sha256":"31ed08a03142e8c1778cfbde0e09f2a3c198df60f3de5cf19e713be7275843fb", "size":45620 },
+    { "path":"check/data/data1.pgm.inv", "sha256":"1a9bd4be1d71e474fe97bba28729b7384f3c5e2ff0fb7f2d6937ead021f4a910", "size":45389 },
+    { "path":"check/data/data1.pgm.plain", "sha256":"0b79f40174a2f825816316b982394616dd3a30030dcbbd1d9b1b156f175707d9", "size":161403 },
+    { "path":"check/data/data1.pgm.rot", "sha256":"31ace0a02e4e01758da3c3c830f73115ef510b977fe38c3428dfb528a29c5cb6", "size":75054 },
+    { "path":"check/data/data1.ppm", "sha256":"4f26014ef657ebf126ded21d6cbdfb9c56082e34e9e1f964d5d38104356c71df", "size":136178 },
+    { "path":"check/data/data1.ppm.plain", "sha256":"e0c6fb5f50363c4c694aeeaf786b54e8a3d9f56a173243b74850c431239e62a7", "size":521806 },
+    { "path":"check/data/data2-out1.pbm", "sha256":"0db385388aa4fe06333fba541cf8491eb6b68506b76c80c765b4c1803be701b3", "size":2059 },
+    { "path":"check/data/data2-out2.pbm", "sha256":"df343fd52f056d74b44ab9e60561110dd2ae0c8f4d2c3ae288cd560f3229b16c", "size":2059 },
+    { "path":"check/data/data2.bmp32bf", "sha256":"ddfa63820625d82cca04656a64dcdb80c4947b3b6f78e021ab5836948523e043", "size":16522 },
+    { "path":"check/data/data2.ppm", "sha256":"eb2090037e91b6e0578bee97c065573307456e31a16e65215a36f492dccd9d03", "size":12346 },
+    { "path":"check/data/data3.pgm", "sha256":"8db2996b64d1cae99002d0542c43e5ea38247d76386e93d46e3a311d6eaa88e6", "size":175 },
+    { "path":"check/data/data1.eps", "sha256":"2601c273e01000366bf51b4811811ee8f9cc8f93433ca8b1c63c0ad1102b7b18", "size":5643 },
+    { "path":"check/input-check.sh", "sha256":"22c895ff16f94cb13a46e287650af48d968193c2583a6bfbfd528e1141dc4994", "size":1510 },
+    { "path":"check/Makefile.am", "sha256":"b2dcbdeff1c83183832cb533209a284d5cd26d9c8c5eda6bfbbf596bb30a2d4f", "size":1086 },
+    { "path":"check/Makefile.in", "sha256":"0ee77d637c7ee2741e1e7f03516b00e51c8c9d68e09ecd777fb5692067425cde", "size":35281 },
+    { "path":"check/missing.sh", "sha256":"dfda551cc438f941ba1f441b386f9204a1fe22146c17ac8246e5c50dad2e5913", "size":1088 },
+    { "path":"check/mkbitmap-check.sh", "sha256":"1cd1c90589485f0bb7d17f0d4b1a84f7b7612b6f38316d7114d8db0b4ec42e98", "size":1559 },
+    { "path":"check/mkbitmap-input-check.sh", "sha256":"4e37c55fe6b3b059d7f5c84e9abdb7493317f9d8fedaea468fc16b12c57440f9", "size":1401 },
+    { "path":"check/pdf-check.sh", "sha256":"bdc58031be3a9c9ccc5cbf87aad3c22c9c27b57d0768d335a220c9fa0f38f221", "size":2312 },
+    { "path":"check/pgmdiff.c", "sha256":"79a26a87428534763dcf42bd468f223ac20c8290e4aae11f135889ee1bba0f01", "size":2246 },
+    { "path":"check/postscript-check.sh", "sha256":"00d8d2bc76d95f73dd191c94559b84b2345fd5dea5e1c763e67be4f3d7ec4ef8", "size":2275 },
+    { "path":"check/potrace-check.sh", "sha256":"78c4fbb869e53db594493b93d5b529483b56218f5058189d9173035b0d8a4377", "size":1917 },
+    { "path":"check/Makefile", "sha256":"e1fb4c8e93346f8d72fdae87dd095401a034d095618e6cd5c304606868649d33", "size":34608 },
+    { "path":"check/.deps/checkbin.Po", "sha256":"ddb1c8705176da86c285112f625f6a732bf7353b0a17835e8bcbc27c0e4243d9", "size":8 },
+    { "path":"check/.deps/pgmdiff.Po", "sha256":"ddb1c8705176da86c285112f625f6a732bf7353b0a17835e8bcbc27c0e4243d9", "size":8 },
+    { "path":"compile", "sha256":"cf686b3cb1f8f8ffc4f0295671f2fce476f6187e98a456dd2b71ec0c1d2a407c", "size":7383 },
+    { "path":"config.guess", "sha256":"19c12bb2ca19e68724c2854ed0512469518df19b0710cc2011a5ca540810979c", "size":44283 },
+    { "path":"config.h.in", "sha256":"a45beaabafeeb196a60d2b1a8382d0ed54a19a7b8b8ec38f12dccbd4df7ecfd8", "size":3571 },
+    { "path":"config.sub", "sha256":"f7197ddfb309e86d5fbd7d3b440a5ababfbd4aac1e1f53b492e28e54db58b222", "size":36136 },
+    { "path":"configure.ac", "sha256":"1abea08fc9605e0f8ccbcdf3ab67004b451fd5fb96d467aadcda91f0fa695e81", "size":9195 },
+    { "path":"COPYING", "sha256":"88294d8a473e4e6efc9e2a0d15f834045a9e386bd6b7495ca67c4c3045e76aee", "size":18005 },
+    { "path":"depcomp", "sha256":"561b133cbb3d0806480302a72ef4fda57e3546107dec6bc570f01c8e52ded09f", "size":23568 },
+    { "path":"doc/dictionary.txt", "sha256":"5f4b9c8a80b36501481be3d6ca6f4b0833b9b223825594293829eb674124674a", "size":668 },
+    { "path":"doc/Makefile.am", "sha256":"876db152a8bcd54554ab1ed7414819aa907ed9d37fe7eb06a40b32fb7904ded0", "size":904 },
+    { "path":"doc/Makefile.in", "sha256":"044354a27abd073d6e3226b783b34151c943bd2f896057b7b06f58d483b260f5", "size":17671 },
+    { "path":"doc/mkbitmap.1.in", "sha256":"27f9f6ac8f3dc52bd1b29752e0b0f7fb984072d522699a4ad7fa965934956aeb", "size":8005 },
+    { "path":"doc/placement.pdf", "sha256":"b0fbb67446705df1afb5eed44338bb6cf39438c56ca73a55baae5f45999a4082", "size":10374 },
+    { "path":"doc/potrace.1.in", "sha256":"ef2b87a3c0257fa5d32d24ceaf6e9d96226cb5120d4df39656f4e95ff0d0b13a", "size":21986 },
+    { "path":"doc/potracelib-fig1a.eps", "sha256":"fa7a28b211303d252c636bb0ee363df7f3bd78870b0c325d65cb169729137fbc", "size":28949 },
+    { "path":"doc/potracelib-fig1b.eps", "sha256":"ad1f7246a90ffc7f31068ae06a82f4d1b02971f587b14bff6b7a7a4854d48452", "size":29631 },
+    { "path":"doc/potracelib-fig2.eps", "sha256":"48093c9b0d83afb8abbf6bad3535b60394c063a4d4072d3f3c9c09ea8a763952", "size":13263 },
+    { "path":"doc/potracelib-fig3.eps", "sha256":"324c97b00f2b67367ce5b288a58730c694013dff33bcef7c2fdd532d7beb6f58", "size":11320 },
+    { "path":"doc/potracelib-fig4a.eps", "sha256":"f04dd78733dce4e6412be77ba3fac6e4de169618be6f2d9ea1176d24f5982180", "size":4873 },
+    { "path":"doc/potracelib-fig4b.eps", "sha256":"de753d7120767f0412868a6b7204516a2f73be7f46d996ac1aadf4494b59d112", "size":3490 },
+    { "path":"doc/potracelib-fig5.eps", "sha256":"850c69db2f47d291ec13ff04c1731a4d4842e783688fb36db36c171bea88f0fd", "size":8663 },
+    { "path":"doc/potracelib-fig6a.eps", "sha256":"e2d342dc0dfd3367491acb4da1b97660684c155d13d9e7677aee7e0502a659ef", "size":5496 },
+    { "path":"doc/potracelib-fig6b.eps", "sha256":"31d1c257f4a57a7d3677d83fc7da845f8e92a8f118f8f8f9f88be86d7984f321", "size":5059 },
+    { "path":"doc/potracelib-fig7-00.eps", "sha256":"b0d88e606f2629c6128201fbe92c9574e5b6eedfd91119b48882081eef3ff54d", "size":989 },
+    { "path":"doc/potracelib-fig7-06.eps", "sha256":"df39f7729bb362a9d9f5c6a0d8cca316bb269affb6bc375b798d9c2068155afe", "size":1000 },
+    { "path":"doc/potracelib-fig7-10.eps", "sha256":"902e8a01cfb3802ec0ab5e1342205f768036e6380187672afd93fc067f9df186", "size":978 },
+    { "path":"doc/potracelib-fig7-12.eps", "sha256":"769e3a0fe54655d496798954d153d58ce8ab9b331a1a2f0c0a680db552eb2f0b", "size":985 },
+    { "path":"doc/potracelib-fig7-13.eps", "sha256":"64c5bb279f7ca3e57d75e18065fdfa8c4dca78733738c6a90b264ef1d8ace300", "size":989 },
+    { "path":"doc/potracelib-fig8.eps", "sha256":"fcdf76e27ca56bbe228b9aa77a82880b49bd08c0a22b73eaa2f00c93d155fd05", "size":1873 },
+    { "path":"doc/potracelib.tex", "sha256":"0306799cc36f621f790d5b8b31ee2f50d6a523786906740d191e31af08ae541f", "size":29152 },
+    { "path":"doc/Makefile", "sha256":"490feeae1cdb24cc6033829e3c1509805d5473280b2d6e98b70069dc7976c881", "size":17675 },
+    { "path":"doc/potrace.1", "sha256":"cd9f302cae1973599dab6d887aa20a4f3a452e96017643ea3adcca4e86ebdcac", "size":21984 },
+    { "path":"doc/mkbitmap.1", "sha256":"208b5df5fb0cd8a489aedebf526352aa34a969b3750c3ebfaaa3cd2bc76dc24d", "size":8003 },
+    { "path":"INSTALL", "sha256":"54be5efe708bd5a7b433ab227130c5548221151698d17eb7eb142f640cf291ec", "size":15756 },
+    { "path":"install-sh", "sha256":"618b9afe95659e12966f090232b2e713946f1c162915c8385dfff71f34eacd58", "size":15368 },
+    { "path":"ltmain.sh", "sha256":"b0a86e97edf7a0baad07c2b3f738be226506992a91964752b852039a6561617e", "size":327116 },
+    { "path":"m4/libtool.m4", "sha256":"6a1e4f8aa2902d7993300660c43e6ee479b4b6781ed7d5ef9c9f9f1cc46623b7", "size":306678 },
+    { "path":"m4/ltoptions.m4", "sha256":"e77ebba8361b36f14b4d0927173a034b98c5d05049697a9ded84d85eb99a7990", "size":14514 },
+    { "path":"m4/ltsugar.m4", "sha256":"5a6735cda60e0ba0d1b706c0ef648f5d096298da46daefd9cdecdb6a0f4584d3", "size":4384 },
+    { "path":"m4/ltversion.m4", "sha256":"a27b754709de61575197bf5a980696c98ae49da3f92f0de8ee7f42dd543b7465", "size":699 },
+    { "path":"m4/lt~obsolete.m4", "sha256":"26fa3285c35dd6ab00ed1e466ba92a17e4655e01897731ec18a587a4cf5e4f8d", "size":6140 },
+    { "path":"Makefile.am", "sha256":"5b1989c3f4ffe05e9fd82c4747d929122ee025d23abfc3f34eb779ed6a4ca766", "size":320 },
+    { "path":"Makefile.in", "sha256":"901b96f6d235614025e135c1dc62bcb4cf566febcf301e755304cd929a12cd4e", "size":25766 },
+    { "path":"missing", "sha256":"387d0e5e99a2574f38d58cedac996c3fc720b4a86a03eb87f36d7852b4e80204", "size":6878 },
+    { "path":"mkinstalldirs", "sha256":"9e1766ed7a2acebb516f51968a67090d40e61496e7e6d407c336b824d3f11c65", "size":3539 },
+    { "path":"NEWS", "sha256":"ddc1fc5ebabba4c7b0481bb54b2c9683e882c02e460e6b1ba08ddb796ca5dc30", "size":7311 },
+    { "path":"README", "sha256":"44733120fc4d11bc57f3005910f69381d256c2592bed13a968edbca04322105d", "size":9607 },
+    { "path":"README-WIN", "sha256":"9a3b2d21dbb438653bdd4e084cb2fa13f279e674a5a26c30b23fda49f7a8101f", "size":1564 },
+    { "path":"src/auxiliary.h", "sha256":"16ccf028976d4898c5eeb4ee092b542b28358b3c4340e1ca3c0694629495cd3f", "size":2146 },
+    { "path":"src/backend_dxf.c", "sha256":"f09577703095d9c28b20c5e78a06451f1f706d4f824e33812803ea7789b81bd7", "size":6826 },
+    { "path":"src/backend_dxf.h", "sha256":"ec90db966fa9318f83614f3d70ac5c1149a852278f1f9340838ff372f894f444", "size":377 },
+    { "path":"src/backend_eps.c", "sha256":"a41614c826007ba65474017754d878a4039342ef97732f9521576c748b838f10", "size":20872 },
+    { "path":"src/backend_eps.h", "sha256":"9f5cc40c2d53e80798979110de077ce305d4c9d010e851ffa4225b4cff886c29", "size":496 },
+    { "path":"src/backend_geojson.c", "sha256":"76e69e2ad52eccd02f7475fac6e8d5bcf9830eb823e9ed3a39370e46b640d57d", "size":5320 },
+    { "path":"src/backend_geojson.h", "sha256":"a5c12e23eed812e3441b39fe97fdeea0355c76da2c592de56b802bf79c6a8968", "size":381 },
+    { "path":"src/backend_pdf.c", "sha256":"fe1725c02b7ba2416621fdb3577ebc19062934995515b2cd5a28117976250445", "size":9684 },
+    { "path":"src/backend_pdf.h", "sha256":"08b99e31203953b1c7f29c12dcf5a4823a7be1019ddc9c87c63a1797009162a8", "size":572 },
+    { "path":"src/backend_pgm.c", "sha256":"13334dff746bdaf6f8215d350fac91dcba09b211245c67993490d4972437119b", "size":2577 },
+    { "path":"src/backend_pgm.h", "sha256":"a2135d0885654149691a5a228e218a8d1764da1b1ab547fbf202a62cbe53c634", "size":396 },
+    { "path":"src/decompose.c", "sha256":"a54e9a5af575ecdf974ed8686e0045628c03beda9d0869759963fefdb7efdf0f", "size":14605 },
+    { "path":"src/backend_svg.c", "sha256":"45108df54441bb5b2df7e2712ba6bd921421954eb8be805bbcfdd43a9945bc1a", "size":8788 },
+    { "path":"src/backend_svg.h", "sha256":"cad5e941728746ad35635b9df90c203446942130b614e4e1f695cb36b6544b3e", "size":447 },
+    { "path":"src/backend_xfig.c", "sha256":"49dda60d5ba3b5614dbcc365ba72cec6682630a202537118037d9ae04f9731fc", "size":6414 },
+    { "path":"src/backend_xfig.h", "sha256":"961193c737bc0a5d47cdd9bc58e061e3fe5a87e6a65a657c840a75c4c1a10e91", "size":381 },
+    { "path":"src/bbox.c", "sha256":"7b97da92bc3d64db1404a3a1fe0520a24e795a05620853ddc56bee69cf8eddc4", "size":4322 },
+    { "path":"src/bbox.h", "sha256":"3e525878d9b182746ea984e07741fae08f4c9715d3424b6229295b115912190c", "size":454 },
+    { "path":"src/bitmap.h", "sha256":"b9c62b331cf811bd2ed80ed28c7d42205ccf4a32804929536a19c093393da609", "size":6450 },
+    { "path":"src/bitmap_io.c", "sha256":"7f75affef48b14a57852fdfe71bf979c972da19cfae2bc3487c913051fc65d80", "size":20670 },
+    { "path":"src/bitmap_io.h", "sha256":"2340c313cf36aa7dbc44f9b98e35a4b0f1e19acc055abb87c23874fdb521f781", "size":631 },
+    { "path":"src/bitops.h", "sha256":"db7584ecb91fe17d8b3f09b8e0ddf6b7dc06958484cf4d95cd8d06f9e952e40a", "size":1767 },
+    { "path":"src/curve.c", "sha256":"bf806ed891f6c086fd22dafc90b3197cd128d244cd6b74fef36ad8a17dcc3777", "size":2693 },
+    { "path":"src/curve.h", "sha256":"e168ddeac6177da691cbc094b01515550a6044f655209bff52f07c14ef207b17", "size":2782 },
+    { "path":"src/main.h", "sha256":"b568e7d48af16d00aa29d80f4f6db2c6f2c456bfd5a9437bbbf36532c8107a84", "size":3722 },
+    { "path":"src/decompose.h", "sha256":"aa5a3f1b43132e7032f3221f6f56a7fe6d5b6fdc08c45d8b08c48ab8d1a5706b", "size":442 },
+    { "path":"src/flate.c", "sha256":"cd4c20def4e3ef45366d5ae8a2e3394d502e368d3899f68a4b69d1fa56e789b1", "size":8959 },
+    { "path":"src/flate.h", "sha256":"ec8da5855ab4a9f267953e1bb7cc06e77a9c74c5d058384ddcbc827480642ed5", "size":550 },
+    { "path":"src/getopt.c", "sha256":"3d1db9d84a3968796aed5cfe8b86015dc1307a00ebcbaac15ef15f51c9b5c9e3", "size":29575 },
+    { "path":"src/getopt1.c", "sha256":"efb36099fcff1810d7a8fdc9304438e31353f8a02a4e9ab4c09bcb1bfaa3fb1c", "size":3774 },
+    { "path":"src/greymap.c", "sha256":"e9f2b2788d6d349d88f7d78cb519aa379e0dfe94ba691fd90111aaeeed0126c1", "size":25114 },
+    { "path":"src/greymap.h", "sha256":"d7ece8338787bbd6a03ec4f52f95d26f5b80353d3cd14cac2293c59a31e15107", "size":2740 },
+    { "path":"src/include/getopt/getopt.h", "sha256":"70bed3b2bc370ab054b9d7ad3a30f557f6101ca354659b0e53a536eea3467a08", "size":6398 },
+    { "path":"src/libpotrace-export.sym", "sha256":"1dcd02d4be866fac693afd8c6b8cba9f3aaa0f6a230ffa29244a50cfc49bee3f", "size":90 },
+    { "path":"src/lists.h", "sha256":"ff22a7191337dc916adfece5681145170c1ddd6e138af1d057d4109dff9370e7", "size":11118 },
+    { "path":"src/lzw.c", "sha256":"f4e563addd4f3fdc924d56043b730dbdd0b55a9a1a5ca068c7e525a14526732d", "size":11022 },
+    { "path":"src/lzw.h", "sha256":"9ec0d946f42e8696d9521302e5a4def1b0f3747c8e2771c1469f2155f2b4f693", "size":2376 },
+    { "path":"src/main.c", "sha256":"19091e54ecdc4bf6fc4143f08f495a6469ea786fbcde1999246520daace181d2", "size":39392 },
+    { "path":"src/Makefile.am", "sha256":"802c64ac0866fc189dae37782170eaa49bb58f0833c969de12840c413316ebd8", "size":2262 },
+    { "path":"src/Makefile.in", "sha256":"a2a94dfef7d38bee830cdeb139b5444e6530ffc79ecd1b293b632b04a78c8d8f", "size":31623 },
+    { "path":"src/mkbitmap.c", "sha256":"ca0ef5be1d3c6aec3cb59caf77819a2291302b56b1d13101be137ffa0ec69c85", "size":21305 },
+    { "path":"src/platform.h", "sha256":"1218d7e47359fd9ffd91b4ed957b1b7e2c03cb5448f9b21c2ac01a1ff8d308e5", "size":1009 },
+    { "path":"src/potracelib.c", "sha256":"1515dac1cb1a63d13ec1bc07134718ee6bd0c23b77d2ef582d32587e9cebc336", "size":3122 },
+    { "path":"src/potracelib.h", "sha256":"d027ad832a8be7f5209b52820a3ed304b2d3b4c598d1c770c580910922ea9a1f", "size":4573 },
+    { "path":"src/potracelib_demo.c", "sha256":"ee0e34381aea14a3566c5c43b55a02bbd48fa2ce43a227b492ef21f47b89613c", "size":3966 },
+    { "path":"src/progress.h", "sha256":"2d68460fa72d54f399064dcc7f4d8e8726e67af760c5ef45f539dbebc65d2b68", "size":2654 },
+    { "path":"src/progress_bar.c", "sha256":"6c1d40d9b5fcd8a675ca88505be67910a84e11120a1bcab22c6aa2b42a460e18", "size":5703 },
+    { "path":"src/progress_bar.h", "sha256":"d3ad479bd4701ee381456ef92f2dd4bc07e32aa89a4e54a45d05b1d34f76594d", "size":734 },
+    { "path":"src/render.c", "sha256":"858284bdb9f505845e19bceeadf989359c612234bd1f7882d14de93a95759945", "size":6985 },
+    { "path":"src/render.h", "sha256":"0648d0ec26b03d2b3dc2afcbe14830c023f5b9ba0fbb3aa545a755a30d975f83", "size":742 },
+    { "path":"src/trace.c", "sha256":"f70964c69d8fec779e4f3968ddb5fcdc6c45a2666f9d96195fafd82543e195fe", "size":32392 },
+    { "path":"src/trace.h", "sha256":"3f1439f2ad9f9ecde3e16316a844cd20a97d22c9d93ca32fb274a2ceac0177f6", "size":397 },
+    { "path":"src/trans.c", "sha256":"7e31c00dff9e5b734b88eec2d4532f4d007811eb2d65ea442a8f5eba77a77144", "size":3019 },
+    { "path":"src/trans.h", "sha256":"d66db3e8a2c4b2e555bc3883f30fdf52179c472b76c47f9b2ff76821f623a228", "size":1174 },
+    { "path":"src/Makefile", "sha256":"daf71fa50b4ff3bd4f0fe3ea530866357e52189ca3b1d4a6154b15ce94bf2abd", "size":30133 },
+    { "path":"src/.deps/bitmap_io.Po", "sha256":"16537376d88d4555e1972698a0f2aa3f1786ad3f32c846190179abae87f18a0c", "size":2654 },
+    { "path":"src/.deps/backend_eps.Po", "sha256":"07297310648d37647ce72a59c927cc4cf8504a68cc8aa82a78941f5d85f7a4c3", "size":2675 },
+    { "path":"src/.deps/flate.Po", "sha256":"8bda0f7539c29507cddb45c2bd0c0b28db7041eb89bd304adfd4ed880102e5f1", "size":4179 },
+    { "path":"src/.deps/backend_pgm.Po", "sha256":"652c19169f31ef4e71dacf479294613d40fa55fc3030f5012effebf923061ec3", "size":2590 },
+    { "path":"src/.deps/backend_svg.Po", "sha256":"87b03c32b6f67d2b9c35a5e119c43bf9ae219b8d3b0e3b3030a68a9557ed92b1", "size":2657 },
+    { "path":"src/.deps/backend_xfig.Po", "sha256":"f81c5c8627aef7df3809804696570f7f18cfc3bc5e402f4516e8a9d87b7214f3", "size":2640 },
+    { "path":"src/.deps/backend_dxf.Po", "sha256":"b1733d0d60511a39c5b0673736538e47fc096bc72af8a991f0c76ff3c89dfff9", "size":2636 },
+    { "path":"src/.deps/backend_pdf.Po", "sha256":"1793bef7a535b8d21b1374c42c21650f00af4939dcc08f0b0584e32bd738f205", "size":2657 },
+    { "path":"src/.deps/backend_geojson.Po", "sha256":"c1b71a926c4e769ef724be3022bc1d91b76646ae4538aab7c32e3958c310474f", "size":2673 },
+    { "path":"src/.deps/bbox.Po", "sha256":"e85f78104eaf19696fb0c6f20f492844b8cbdce6776fa2bc33758c917cc9b797", "size":1623 },
+    { "path":"src/.deps/curve.Plo", "sha256":"817c61ed8ebb05eb8cb66307b9711981ad6a7fad0d597c50dac485b326a84f01", "size":1849 },
+    { "path":"src/.deps/decompose.Plo", "sha256":"e0535f1126db90d3c8717d6e836e3b15d711c471ea56ce8d8833837bd39409b7", "size":2892 },
+    { "path":"src/.deps/getopt.Po", "sha256":"ddb1c8705176da86c285112f625f6a732bf7353b0a17835e8bcbc27c0e4243d9", "size":8 },
+    { "path":"src/.deps/getopt1.Po", "sha256":"ddb1c8705176da86c285112f625f6a732bf7353b0a17835e8bcbc27c0e4243d9", "size":8 },
+    { "path":"src/.deps/potracelib_demo.Po", "sha256":"ddb1c8705176da86c285112f625f6a732bf7353b0a17835e8bcbc27c0e4243d9", "size":8 },
+    { "path":"src/.deps/main.Po", "sha256":"a54efe63ebe1e427e2836b7488147f5f80099c41051a71afc18103bd4fed1463", "size":3394 },
+    { "path":"src/.deps/greymap.Po", "sha256":"0bd97a2977a9881d63e50b27a09a817ee90aa2be93874f07587084728914376f", "size":2850 },
+    { "path":"src/.deps/render.Po", "sha256":"f0a337c48d29bb0acbe0c004aee4274e568c9fdf2babd8c9380ffaea6fe1e945", "size":2729 },
+    { "path":"src/.deps/lzw.Po", "sha256":"e39eba49b166b46b4808982d6a96c641641f29457c75f5ba1ab819cce1e7583f", "size":1973 },
+    { "path":"src/.deps/progress_bar.Po", "sha256":"a64be51621046e1261643b00cd36b7aa4cc6b6b9c518ec3a5496acb9ca935d72", "size":2530 },
+    { "path":"src/.deps/trans.Po", "sha256":"d95ad9a23cc14139fe0031381966f16c58174f4bb724ab1b32da74749430c48b", "size":1914 },
+    { "path":"src/.deps/trace.Plo", "sha256":"7ae09328149c1cc5fc0756884ff5fcaddd9c66a85b2f27f1d82bfaff1c73395b", "size":2589 },
+    { "path":"src/.deps/potracelib.Plo", "sha256":"16f02ff84a404c45379312dd45eb410a84e2173781f5733906843ceb09aeab9e", "size":1285 },
+    { "path":"src/.deps/mkbitmap.Po", "sha256":"4c698fd95a8a1df5b0397939413c879630a2c69a82188e5a2069da4c98852d37", "size":3022 },
+    { "path":"test-driver", "sha256":"c20c14e985dd15c6b4ba7e7acb7b9295cd17a72d3b1abc8fa2b71471d2242b4a", "size":4642 },
+    { "path":"config.log", "sha256":"8836848096a7ce108b70b052cd2a41cd2be31fd66b515d4c46184c0831e2087e", "size":29210 },
+    { "path":"configure", "sha256":"317ac8af008534696d4c229e03f36e888f7dfe98af95a384cdbab0f45a6030c0", "size":450805 },
+    { "path":"config.status", "sha256":"a4f55e600efb8dde5d1363ed0773a37605d5fde8915a799f3ab2c876eef014ec", "size":57947 },
+    { "path":"Makefile", "sha256":"7bd83af49b61707a9252cf7498d8063c51edec5d25383ec352432c87e95d1d04", "size":25753 },
+    { "path":"config.h", "sha256":"7e394efe973e8dcfbdc26139761af067458a2323a28aafdea9f476f4f51cf89c", "size":3910 },
+    { "path":"stamp-h1", "sha256":"24fdde0aee1f49666fc7a5bd7f422dc0118e4db128bc1f606f7f047c9b245bb4", "size":23 },
+    { "path":"libtool", "sha256":"e0147ace6f2d9c0e5617a0c9769b8d13e8528a23e28aa2287ad11dfbc7dd690c", "size":341577 }
+  ]
+}
+
+==== screentest
+Saturday 03-Oct-26 11:49:04
+fetching https://archives.arosworld.org/share/demo/misc/screentest.i386.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=demo/misc/screentest.i386.zip
+verified and cached SYS:Batch/cache/screentest.zip
+installed screentest
+install screentest: rc=0
+{
+  "schema":1,
+  "name":"screentest",
+  "version":"1",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"Screentest",
+  "installed":"2026-10-03T11:49:04Z",
+  "origin":"https://archives.arosworld.org/share/demo/misc/screentest.i386.zip",
+  "archive_sha256":"5aeed06063af110c2a5fbc26721388d188330d5614f5d35fe769ed4494d573d5",
+  "archive_size":4854,
+  "reason":"explicit",
+  "dir":"screentest",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Screentest", "sha256":"fa43cfc4f265be89719a5c3829b09af1bf3bf1deea04003dee024122c93e97e3", "size":9828 },
+    { "path":"screentest.c", "sha256":"59388d7699bcbfc7ba33e9fa0b3ee242b428f7ef0c47d2223e0e2bbee6b4d880", "size":2504 }
+  ]
+}
+
+==== finder
+Saturday 03-Oct-26 11:49:04
+fetching https://archives.arosworld.org/share/utility/filetool/finder.i386-aros.zip
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/filetool/finder.i386-aros.zip
+verified and cached SYS:Batch/cache/finder.zip
+installed finder
+install finder: rc=0
+{
+  "schema":1,
+  "name":"finder",
+  "version":"3.1",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"Finder",
+  "installed":"2026-10-03T11:49:04Z",
+  "origin":"https://archives.arosworld.org/share/utility/filetool/finder.i386-aros.zip",
+  "archive_sha256":"052fb31278b3c08aa2650614db7ca517fc43aa810a5ddc5b0c5863377275566d",
+  "archive_size":27114,
+  "reason":"explicit",
+  "dir":"finder",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" }
+  ],
+  "icon": { "state":"none", "sha256":"", "size":-1, "member":"" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"FinderLogo.iff", "sha256":"1a03529b5619795043949a7b304ec495e12ce9343f7a56f56d167ce7e7dc1752", "size":860 },
+    { "path":"FinderV3.guide.info", "sha256":"5fc1225b8f7fab466590d9a1cb8d0ebcdd24776e503373a4cf9d8bb981a1471c", "size":1618 },
+    { "path":"Finder", "sha256":"8c63d1a0a6c19f9ac3becf99762e99e7cb147693c43793b549cb7c7050432191", "size":26760 },
+    { "path":"Finder.info", "sha256":"fa5a685922a816b4b15955ef057e3d8bf0d73c185b04703117ef059fd036d7fb", "size":4279 },
+    { "path":"FinderV3.guide", "sha256":"1f1f188ec0a6680cee8c769fe42cd98d21c16f5dae544510ecc15f8523df4ea1", "size":26764 }
+  ]
+}
+
+==== skandalfoclock
+Saturday 03-Oct-26 11:49:04
+fetching https://archives.arosworld.org/share/utility/workbench/skandalfoclock.i386-aros.lha
+  redirect -> https://arosarchives.os4depot.net/download.php?file=utility/workbench/skandalfoclock.i386-aros.lha
+verified and cached SYS:Batch/cache/skandalfoclock.lha
+installed skandalfoclock
+install skandalfoclock: rc=0
+{
+  "schema":1,
+  "name":"skandalfoclock",
+  "version":"1.1",
+  "revision":0,
+  "arch":"i386",
+  "abi":"v0",
+  "subdir":"skandalfoclock",
+  "installed":"2026-10-03T11:49:05Z",
+  "origin":"https://archives.arosworld.org/share/utility/workbench/skandalfoclock.i386-aros.lha",
+  "archive_sha256":"79479f0c25ca4700f9052291e2d4e24da535e205f7afcaa2334b82bb1088b767",
+  "archive_size":103849,
+  "reason":"explicit",
+  "dir":"skandalfoclock",
+  "requires_system": [
+    { "type":"library", "id":"arosc.library", "min_version":0, "state":"satisfied", "found_version":44, "checked":"already open, version 44" }
+  ],
+  "icon": { "state":"installed", "sha256":"f2f280abbd9629761640b53ba7f533f314510aa9bab68c6b832e3aa573b9f485", "size":2143, "member":"skandalfoclock.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"source/íslenska.ct", "sha256":"f329e9a969ada6bb7ce00c2317a137e7005ccadda1b155be10b29bc14dabae3d", "size":1321 },
+    { "path":"source/svenska.ct", "sha256":"ebacd0cbf079104eed14984c998328a790c0f022a8e3c1afc1b7af54b1d7a140", "size":821 },
+    { "path":"source/skandalfoclock.cd", "sha256":"8a5b2c029c14c89ec19cc569eec630dcb7173c20bffaa5b666571a880b2187ab", "size":842 },
+    { "path":"source/polski.ct", "sha256":"75276d137e0d4ce129ab7ce83b07c138206bb23aa5cef8d543a4c125f6075d4d", "size":903 },
+    { "path":"source/espaqol.ct", "sha256":"6b0467adff2702dbab670d09598c3d306a2c348f1ea7f69a964138e238a603c3", "size":798 },
+    { "path":"source/english.ct", "sha256":"c18099197fe52089a4d4c18b82f8306e178a518089fc4716631518431125da13", "size":779 },
+    { "path":"source/deutsch.ct", "sha256":"f363e40152ebc969fb005be03fd81d42a8d50e331c95c4e7b5bb32e35cd9d4c6", "size":851 },
+    { "path":"source/català.ct", "sha256":"ceec2b87ea73a2097c55e817b2b48f6b7d08782923ca7852e3e6b022f3be1db2", "size":822 },
+    { "path":"source/SkandalfoClock.c", "sha256":"aa810207ad8060c4b2c3c9992539caf18b723eb272f21cb954c96bff34e4de79", "size":86591 },
+    { "path":"mwb-icons/SkandalfoClock.info", "sha256":"fd9b1544175677dadcb7f6cb4600da7d4318695aa17d30a0065e8e480a531219", "size":1567 },
+    { "path":"mwb-icons/SkandalfoClock.Guide.info", "sha256":"e14dc307514cea53751b5174f1d3f93afebb0e41335ad79b7436788e5265191b", "size":1567 },
+    { "path":"example.info", "sha256":"7cf4d413eb451b9fce066f5736776500eb7d08b54d7344a477f20e13a348c94b", "size":1352 },
+    { "path":"example/SCBrush", "sha256":"6c29ccce9862bdac9c9243da1d841198de70ada18e5d2c6f135c831464a15fc0", "size":6698 },
+    { "path":"example/OrchHit", "sha256":"597adb8d5e0c955c4d792846ae15739bd87f2f85e4b3cc02498f169380f36614", "size":19510 },
+    { "path":"example/Bell", "sha256":"6c176cb74f23ef16b240b9b7b78b83fd3607c37faa532f1bf1572c81e43359e1", "size":10548 },
+    { "path":"example/2Bells", "sha256":"c701335030cc1d25fdead33888fdd8461022e8e903d1324186b211be23f7611e", "size":18580 },
+    { "path":"data.info", "sha256":"59c8ad1e94a50be7eb995552d6cfbc2b87d9bc5b07e3228b24a110377750c7b0", "size":1352 },
+    { "path":"data/Twelve.fig", "sha256":"c318235dd1090fa6d78da014dea46705c62719e3f23af9d3593287478d31d497", "size":30 },
+    { "path":"data/Second.fig", "sha256":"855b8fc23b6c172339b556af35eb7dc5a33bdefd3a5fb3e2470ad84efe179dc7", "size":12 },
+    { "path":"data/Quarters.fig", "sha256":"45c68837dac79702e4f6b5f0f2b483597f177e0db8af024457901af69ae983ee", "size":30 },
+    { "path":"data/Minutes.fig", "sha256":"9efad77ef987ccc43be1ef8d5d7876c2d8560dba21eb9f78ed605965e406de96", "size":26 },
+    { "path":"data/Minute.fig", "sha256":"c6ffcfc3d9f9bd408f1b36778268b41682b77689c12a2881670131de5d4c4bbf", "size":30 },
+    { "path":"data/Hours.fig", "sha256":"319e84d09fbfbfb50f7cfc1cecc1be24b2961f18d1f69a1b045d3ae7cb23200b", "size":26 },
+    { "path":"data/Hour.fig", "sha256":"80513b328e3fd174e648c5d25191e93145d152dcc8c39e07624da86e89a6f31e", "size":30 },
+    { "path":"catalogs.info", "sha256":"aeb1481c7178866616bc352918ba84d759a20f6db9172de7221d85be16848c8e", "size":1352 },
+    { "path":"catalogs/íslenska/skandalfoclock.catalog", "sha256":"ef0fb683161dabbaf4590cf969f773a4ee6b2d3e160fe3c1c5a043abb9f240ac", "size":702 },
+    { "path":"catalogs/svenska/skandalfoclock.catalog", "sha256":"82ed9d7aa925a3ae9af5866eed778775ea3e7cc83ddd758ccaf6aa378ebf003f", "size":652 },
+    { "path":"catalogs/polski/skandalfoclock.catalog", "sha256":"48c40e79849aeb0b78fd321b562a084997fd5f26a06eff0e309abf78387bbe36", "size":732 },
+    { "path":"catalogs/espaqol/skandalfoclock.catalog", "sha256":"48685b5d30fdd39bbcd5db7ad139768e6e360e6fb090b454a53586f610f9d6ee", "size":642 },
+    { "path":"catalogs/deutsch/skandalfoclock.catalog", "sha256":"9010565371742e56e3f759bd0741de8581a423760179638745e30084353724ff", "size":684 },
+    { "path":"catalogs/català/skandalfoclock.catalog", "sha256":"17f3ab669e595d6a247e8ff99da1a2b488f1f437f1589b59eaf12a2a3b287836", "size":662 },
+    { "path":"Source.info", "sha256":"9bf5a51de2d5049f556c47323a279f66cbe488e96cb82a5f70befbc262ac75da", "size":1352 },
+    { "path":"SkandalfoClock.info", "sha256":"e2b8d06cb9942cbce01062c5083f7f69894743ec0648f2e10c52df676a5646db", "size":3855 },
+    { "path":"SkandalfoClock.guide.info", "sha256":"3443b41b94707aad70e698b4405e1a3f499a1635cb74db3d52894f028481720d", "size":1538 },
+    { "path":"SkandalfoClock.guide", "sha256":"98c29efeb633700df7142aa4e898383c78b7b1e40a7e8e070ad6de35ec5220b4", "size":19449 },
+    { "path":"SkandalfoClock", "sha256":"214912c374898fcb633909efd021c36a6fd69ff22ec90edf78bfb4aa6268799a", "size":72412 }
+  ]
+}

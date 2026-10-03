@@ -41,6 +41,35 @@
       "id": "alac",
       "version": "0.1.3",
       "summary": "Apple Lossless Audio Codec decoder",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "audio/misc",
+      "url": "https://archives.arosworld.org/share/audio/misc/alac.i386-aros.lha",
+      "size": 6803851,
+      "sha256": "3b2d5d19acbe9f3ad14e734b031473a4e73ed34052f32528bc4fcc17dd7b0164",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "ALAC_Decoder",
+      "icon": "ALAC_Decoder.info",
+      "install": {}
+    },
+    {
+      "id": "alac",
+      "version": "0.1.3",
+      "summary": "Apple Lossless Audio Codec decoder",
       "arch": "x86_64",
       "abi": "v11",
       "category": "audio/misc",
@@ -105,6 +134,35 @@
       "kind": "app",
       "subdir": "amiberry",
       "icon": "amiberry.info",
+      "install": {}
+    },
+    {
+      "id": "antiword",
+      "version": "0.37",
+      "summary": "Convert Word documents to TXT/PDF/PS",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/text/convert",
+      "url": "https://archives.arosworld.org/share/utility/text/convert/antiword.i386-aros.zip",
+      "size": 247828,
+      "sha256": "f9d32e01acae01ddafc5be801c13d382f6d9dedfc3fd893619586b9efb6fee2b",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Antiword",
+      "icon": "",
       "install": {}
     },
     {
@@ -181,6 +239,43 @@
       "id": "arrakis",
       "version": "1.0",
       "summary": "Arrakis demo x86_64 by Kakiarts/trbl",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/scene",
+      "url": "https://archives.arosworld.org/share/demo/scene/arrakis.i386-aros.zip",
+      "size": 3566920,
+      "sha256": "5cce58a8fe60b56c7cb1209717faa3893efd48bc7daf4e950cb9489a069581d7",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "arrakis",
+      "icon": "",
+      "install": {}
+    },
+    {
+      "id": "arrakis",
+      "version": "1.0",
+      "summary": "Arrakis demo x86_64 by Kakiarts/trbl",
       "arch": "x86_64",
       "abi": "v11",
       "category": "demo/scene",
@@ -214,6 +309,47 @@
       "kind": "app",
       "subdir": "arrakis",
       "icon": "",
+      "install": {}
+    },
+    {
+      "id": "badapple",
+      "version": "1.0",
+      "summary": "The famous Bad Apple animation with player and xm",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/misc",
+      "url": "https://archives.arosworld.org/share/demo/misc/badapple.i386-aros.zip",
+      "size": 2914646,
+      "sha256": "e0bf3deab44e8013ef3e80abe9aadce1a0e3a3f69e0cc3cba644b046609cc909",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Bad_Apple",
+      "icon": "Bad_Apple.info",
       "install": {}
     },
     {
@@ -323,6 +459,39 @@
       "kind": "app",
       "subdir": "Blips",
       "icon": "Blips.info",
+      "install": {}
+    },
+    {
+      "id": "boy",
+      "version": "2008",
+      "summary": "Port of OpenGL demo from Icons '08",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/scene/fit",
+      "url": "https://archives.arosworld.org/share/demo/scene/fit/boy.i386-aros.zip",
+      "size": 6892187,
+      "sha256": "c7cbf0314992d0b216de2a12a9fc8e677ae05cea7186d9fbdb33549bf15cf75d",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Boy",
+      "icon": "Boy.info",
       "install": {}
     },
     {
@@ -547,6 +716,39 @@
       "id": "daysleeper",
       "version": "0.9r2",
       "summary": "Shutdown/Reboot at a selected time",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/text/misc",
+      "url": "https://archives.arosworld.org/share/utility/misc/daysleeper.i386-aros.lha",
+      "size": 157619,
+      "sha256": "f0a21a5b72895fb7a890d2dcb501c552a7b087e1c31ab60eac0b520497f9f29c",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "DaySleeper",
+      "icon": "DaySleeper.info",
+      "install": {}
+    },
+    {
+      "id": "daysleeper",
+      "version": "0.9r2",
+      "summary": "Shutdown/Reboot at a selected time",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/text/misc",
@@ -726,6 +928,30 @@
       "id": "dirtree",
       "version": "40.8",
       "summary": "Shell command displaying directory trees",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/misc",
+      "url": "https://archives.arosworld.org/share/utility/shell/dirtree.i386-aros.lha",
+      "size": 60764,
+      "sha256": "046e0ea9364c60f82779a8e3f3021d2519badb53ba3b3f2abf2276b52760bd4d",
+      "depends": [],
+      "requires_system": [],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "DirTree",
+      "icon": "DirTree.info",
+      "install": {}
+    },
+    {
+      "id": "dirtree",
+      "version": "40.8",
+      "summary": "Shell command displaying directory trees",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/misc",
@@ -757,6 +983,30 @@
       "id": "diskusage",
       "version": "40.8",
       "summary": "Estimates file space usage",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/shell",
+      "url": "https://archives.arosworld.org/share/utility/shell/diskusage.i386-aros.lha",
+      "size": 60666,
+      "sha256": "47b54eeefd6aa651ba79a5068399b5f4b5443a041c5dcefcf59a662b2f5a5369",
+      "depends": [],
+      "requires_system": [],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "DiskUsage",
+      "icon": "DiskUsage.info",
+      "install": {}
+    },
+    {
+      "id": "diskusage",
+      "version": "40.8",
+      "summary": "Estimates file space usage",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",
@@ -782,6 +1032,47 @@
       "kind": "app",
       "subdir": "DiskUsage",
       "icon": "DiskUsage.info",
+      "install": {}
+    },
+    {
+      "id": "dosbox",
+      "version": "0.74",
+      "summary": "Dosbox x86_64",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "emulation/computer",
+      "url": "https://archives.arosworld.org/share/emulation/computer/dosbox.i386-aros.zip",
+      "size": 1713180,
+      "sha256": "8bc8bea1b54290fef553ff12d890cc626d788b2dc05087f7b6df03293e6a2306",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        },
+        {
+          "type": "library",
+          "id": "png.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "dosbox.i386-aros",
+      "icon": "",
       "install": {}
     },
     {
@@ -821,6 +1112,39 @@
       "kind": "app",
       "subdir": "DOSBox",
       "icon": "DOSBox.info",
+      "install": {}
+    },
+    {
+      "id": "dose2",
+      "version": "2002",
+      "summary": "Pulsating demo with bawdy humor from Assembly '01.",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/scene",
+      "url": "https://archives.arosworld.org/share/demo/scene/dose2.i386-aros.zip",
+      "size": 5359751,
+      "sha256": "5bbedf38e778aef4d2ab3579f0691dd59923dbfeebdcf104c673bdbf0e2f2f7e",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "dose2",
+      "icon": "dose2.info",
       "install": {}
     },
     {
@@ -930,6 +1254,39 @@
     },
     {
       "id": "fheroes2",
+      "version": "r2860",
+      "summary": "Heroes of the Might and Magic II engine",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/strategy",
+      "url": "https://archives.arosworld.org/share/game/strategy/fheroes2.i386-aros.lha",
+      "size": 6158795,
+      "sha256": "aee75aae8d623622be48d854e81b0415f4aa2e4fd1cebbf55521425ca25c24f3",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "fheroes2",
+      "icon": "fheroes2.info",
+      "install": {}
+    },
+    {
+      "id": "fheroes2",
       "version": "1.1.16",
       "summary": "Heroes of the Might and Magic II engine",
       "arch": "x86_64",
@@ -961,6 +1318,39 @@
       "kind": "app",
       "subdir": "fheroes2",
       "icon": "fheroes2.info",
+      "install": {}
+    },
+    {
+      "id": "finder",
+      "version": "3.1",
+      "summary": "MUI File Search Tool",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/filetool",
+      "url": "https://archives.arosworld.org/share/utility/filetool/finder.i386-aros.zip",
+      "size": 27114,
+      "sha256": "052fb31278b3c08aa2650614db7ca517fc43aa810a5ddc5b0c5863377275566d",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Finder",
+      "icon": "",
       "install": {}
     },
     {
@@ -1151,6 +1541,35 @@
       "id": "gicriptofilex",
       "version": "1.0",
       "summary": "Encrypt files using 128 bit algorithm",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/misc",
+      "url": "https://archives.arosworld.org/share/utility/misc/gicriptofilex.i386-aros.zip",
+      "size": 377005,
+      "sha256": "cdd5dfbecbbe99671d082de9d7210382be1b326c125542ae5ec45e1fedb102b0",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "GICriptoFileX1.0",
+      "icon": "",
+      "install": {}
+    },
+    {
+      "id": "gicriptofilex",
+      "version": "1.0",
+      "summary": "Encrypt files using 128 bit algorithm",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/misc",
@@ -1180,6 +1599,39 @@
       "kind": "app",
       "subdir": "GICriptoFileX1.0",
       "icon": "GICriptoFileX1.0.info",
+      "install": {}
+    },
+    {
+      "id": "giddy3",
+      "version": "1.5",
+      "summary": "OpenGL puzzle-solving platform game.",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/platform",
+      "url": "https://archives.arosworld.org/share/game/puzzle/giddy3.i386-aros.zip",
+      "size": 3590990,
+      "sha256": "79a7af2571fb31ea9818d5c732efcba5194caa7011642a9dbc63008a75caf2de",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Giddy3",
+      "icon": "Giddy3.info",
       "install": {}
     },
     {
@@ -1219,6 +1671,35 @@
       "kind": "app",
       "subdir": "Giddy3",
       "icon": "Giddy3.info",
+      "install": {}
+    },
+    {
+      "id": "giocodel15",
+      "version": "1.0",
+      "summary": "a classic puzzle game",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/board",
+      "url": "https://archives.arosworld.org/share/game/card/giocodel15.i386-aros.zip",
+      "size": 351429,
+      "sha256": "fc7ae6c4615b774250218bee6246191d7b296d2f57f1e882323b38a5e37a3eed",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "GiocoDel15_1.0",
+      "icon": "",
       "install": {}
     },
     {
@@ -1288,6 +1769,35 @@
       ],
       "kind": "app",
       "subdir": "Split1.5",
+      "icon": "",
+      "install": {}
+    },
+    {
+      "id": "gmore",
+      "version": "1.2",
+      "summary": "Text viewer similar to MORE",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/text",
+      "url": "https://archives.arosworld.org/share/utility/text/misc/gmore.i386-aros.zip",
+      "size": 24716,
+      "sha256": "4b87468238a4600ea9850a5fa52c14bb3e9a9f74605679f340c2e15d09f7140e",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "GMore1.2",
       "icon": "",
       "install": {}
     },
@@ -1513,6 +2023,43 @@
     },
     {
       "id": "hocoslamfy",
+      "version": "2014",
+      "summary": "SDL Flappy Bird clone.",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/misc",
+      "url": "https://archives.arosworld.org/share/game/misc/hocoslamfy.i386-aros.zip",
+      "size": 2471216,
+      "sha256": "63772cda41250b9bac98ce2cd79cfbe300853088483ed32761ba1ab25afcc896",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        },
+        {
+          "type": "library",
+          "id": "png.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Hocoslamfy",
+      "icon": "Hocoslamfy.info",
+      "install": {}
+    },
+    {
+      "id": "hocoslamfy",
       "version": "2026",
       "summary": "SDL Flappy Bird clone.",
       "arch": "x86_64",
@@ -1591,6 +2138,39 @@
     },
     {
       "id": "hydracastle",
+      "version": "1/2019",
+      "summary": "metroidvania-style action platformer",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/platform",
+      "url": "https://archives.arosworld.org/share/game/platform/hydracastle.i386-aros.zip",
+      "size": 1911077,
+      "sha256": "544f9c434d981ec07f39079c60156282980165afd8bd1a5367a2819f36334449",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "HydraCastle",
+      "icon": "HydraCastle.info",
+      "install": {}
+    },
+    {
+      "id": "hydracastle",
       "version": "02/2024",
       "summary": "metroidvania-style action platformer",
       "arch": "x86_64",
@@ -1626,6 +2206,43 @@
       "kind": "app",
       "subdir": "HydraCastleLabyrinth",
       "icon": "HydraCastleLabyrinth.info",
+      "install": {}
+    },
+    {
+      "id": "iconmake",
+      "version": "1.2",
+      "summary": "The DualPNG Icon Creator for AROS",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/misc",
+      "url": "https://archives.arosworld.org/share/utility/misc/iconmake.i386-aros.zip",
+      "size": 54071,
+      "sha256": "93241739418611094f84de94f8985840433f6aeb7d36fae0f16f657e71b4f037",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "IconMake",
+      "icon": "IconMake.info",
       "install": {}
     },
     {
@@ -1737,6 +2354,39 @@
       "id": "isotool",
       "version": "1.0",
       "summary": "Boot Extraction ISO And Rename Volume",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility",
+      "url": "https://archives.arosworld.org/share/utility/isotool.i386-aros.zip",
+      "size": 35496,
+      "sha256": "66f8e7a38a2403a3ba3d32e77fa0fdfbb5c7a2957c3d9dca3bcc3b563f4f680e",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "IsoTool",
+      "icon": "IsoTool.info",
+      "install": {}
+    },
+    {
+      "id": "isotool",
+      "version": "1.0",
+      "summary": "Boot Extraction ISO And Rename Volume",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility",
@@ -1766,6 +2416,43 @@
       "kind": "app",
       "subdir": "IsoTool",
       "icon": "IsoTool.info",
+      "install": {}
+    },
+    {
+      "id": "isotools-gui",
+      "version": "1.0",
+      "summary": "Boot Extraction ISO And Rename Volume",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility",
+      "url": "https://archives.arosworld.org/share/utility/isotools-gui.i386-aros.zip",
+      "size": 211054,
+      "sha256": "8f8854fd44b549eccb8723d145253326cea7ffca8c0a4efbb3425ef1af680526",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "IsoTools-GUI",
+      "icon": "IsoTools-GUI.info",
       "install": {}
     },
     {
@@ -1875,6 +2562,39 @@
     },
     {
       "id": "ledblur",
+      "version": "2006",
+      "summary": "Port of oldskool GP32 Demo from '06.",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/scene",
+      "url": "https://archives.arosworld.org/share/demo/scene/ledblur.i386-aros.zip",
+      "size": 597349,
+      "sha256": "5683c08a79232a5b3b053049f4dfbb55a23106732416b040ac3edadaaca4978d",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LedBlur",
+      "icon": "LedBlur.info",
+      "install": {}
+    },
+    {
+      "id": "ledblur",
       "version": "20260904",
       "summary": "Port of oldskool GP32 Demo from '06.",
       "arch": "x86_64",
@@ -1936,6 +2656,39 @@
       "kind": "app",
       "subdir": "MCAmiga",
       "icon": "MCAmiga.info",
+      "install": {}
+    },
+    {
+      "id": "metemp3",
+      "version": "0.3",
+      "summary": "a Mp3,Flac,Wav Player",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "audio/play",
+      "url": "https://archives.arosworld.org/share/audio/play/metemp3.i386-aros.zip",
+      "size": 193088,
+      "sha256": "3ea06a74e47a89ab189d3f6bc50e6c53994b628f70db4780a903f5dd842be6e0",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "meteMP3",
+      "icon": "",
       "install": {}
     },
     {
@@ -2086,6 +2839,43 @@
       "kind": "app",
       "subdir": "MPlayer",
       "icon": "MPlayer.info",
+      "install": {}
+    },
+    {
+      "id": "nano",
+      "version": "1.2",
+      "summary": "nano demo x86_64 by Kakiarts",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/scene",
+      "url": "https://archives.arosworld.org/share/demo/scene/nano.i386-aros.zip",
+      "size": 3911860,
+      "sha256": "488bca0270b2ff1141c317e126e261205a1c4e295f420b352190401f9d059953",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "nano",
+      "icon": "",
       "install": {}
     },
     {
@@ -2279,6 +3069,39 @@
     },
     {
       "id": "opentyrian",
+      "version": "2.1-fix-1",
+      "summary": "open-source port of the DOS game Tyrian",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/action",
+      "url": "https://archives.arosworld.org/share/game/action/opentyrian.i386-aros.zip",
+      "size": 6851132,
+      "sha256": "f1e7be4558957e949f5397c149c4349dd432b22a0586c2695816c2019840fa57",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Tyrian2.1",
+      "icon": "",
+      "install": {}
+    },
+    {
+      "id": "opentyrian",
       "version": "2.1.x-AROS",
       "summary": "open-source port of the DOS game Tyrian",
       "arch": "x86_64",
@@ -2392,6 +3215,39 @@
     },
     {
       "id": "pkg-54321",
+      "version": "v1.0",
+      "summary": "Five common 2d puzzles in multiple dimensions",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/board",
+      "url": "https://archives.arosworld.org/share/game/board/54321.i386-aros.zip",
+      "size": 978621,
+      "sha256": "04ef5ed116f173d0bec3d0717f80e6fcd870dd30fc8986a1288e6eb15e02a03f",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "54321",
+      "icon": "54321.info",
+      "install": {}
+    },
+    {
+      "id": "pkg-54321",
       "version": "1.0",
       "summary": "Five common 2d puzzles in multiple dimensions",
       "arch": "x86_64",
@@ -2427,6 +3283,35 @@
       "kind": "app",
       "subdir": "54321",
       "icon": "54321.info",
+      "install": {}
+    },
+    {
+      "id": "pkg-7mezzoplus",
+      "version": "1.0",
+      "summary": "Popular Italian Christmas game",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/card",
+      "url": "https://archives.arosworld.org/share/game/card/7mezzoplus.i386-aros.zip",
+      "size": 483773,
+      "sha256": "f4e51bb889fa4af57962efeb53164cadb12855c70c5cb3be3f5239de7632cd94",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "7MezzoPlus1.0",
+      "icon": "",
       "install": {}
     },
     {
@@ -2501,6 +3386,35 @@
     },
     {
       "id": "planethively",
+      "version": "2008",
+      "summary": "A musicdisk about HivelyTracker",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/music",
+      "url": "https://archives.arosworld.org/share/demo/music/planethively.i386-aros.lha",
+      "size": 473725,
+      "sha256": "d4ae102cb1716e41b7d3265fc1335ec7adf8601fe5fe298543690d2426b02665",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "PlanetHively",
+      "icon": "PlanetHively.info",
+      "install": {}
+    },
+    {
+      "id": "planethively",
       "version": "1.0",
       "summary": "A musicdisk about HivelyTracker",
       "arch": "x86_64",
@@ -2536,6 +3450,35 @@
       "kind": "app",
       "subdir": "PlanetHively",
       "icon": "PlanetHively.info",
+      "install": {}
+    },
+    {
+      "id": "potrace",
+      "version": "1.16",
+      "summary": "Transforming bitmaps into vector graphics",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "graphics/convert",
+      "url": "https://archives.arosworld.org/share/graphics/convert/potrace.i386-aros.zip",
+      "size": 1006164,
+      "sha256": "45d1652507892809b002f6f2331f277c697c50ad51b2c59bd3fdfef852f3d1d4",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "potrace-1.16",
+      "icon": "",
       "install": {}
     },
     {
@@ -2651,6 +3594,35 @@
       "id": "qlview",
       "version": "25.09",
       "summary": "Sinclair QL Screen viewer",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "graphics/viewer",
+      "url": "https://archives.arosworld.org/share/graphics/viewer/qlview.i386-aros.lha",
+      "size": 258083,
+      "sha256": "ef031b1814450656a124334ae3adc9f212a210ae4ebb1a0dc5f96b762fd64721",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "QLView",
+      "icon": "QLView.info",
+      "install": {}
+    },
+    {
+      "id": "qlview",
+      "version": "25.09",
+      "summary": "Sinclair QL Screen viewer",
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/viewer",
@@ -2680,6 +3652,35 @@
       "kind": "app",
       "subdir": "QLView",
       "icon": "QLView.info",
+      "install": {}
+    },
+    {
+      "id": "rescode",
+      "version": "1.2",
+      "summary": "Calculates resistor values (4 and 5 band)",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/misc",
+      "url": "https://archives.arosworld.org/share/utility/misc/rescode.i386-aros.zip",
+      "size": 29771,
+      "sha256": "40fcacf43ae2b8a0a1d5af6eac1f45721a039da05f3dac6384ff2e980f3b351b",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "ResCode",
+      "icon": "ResCode.info",
       "install": {}
     },
     {
@@ -2760,6 +3761,35 @@
       "id": "rtf-riddle",
       "version": "3.97b",
       "summary": "Rich Text Format to HTML5 converter",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/text/convert",
+      "url": "https://archives.arosworld.org/share/utility/text/convert/rtf-riddle.i386-aros.lha",
+      "size": 168299,
+      "sha256": "d53b2edc4f77143b7474319c795d0a88b92c7e072312ba0466a939cfc730a82f",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "RTF-Riddle",
+      "icon": "RTF-Riddle.info",
+      "install": {}
+    },
+    {
+      "id": "rtf-riddle",
+      "version": "3.97b",
+      "summary": "Rich Text Format to HTML5 converter",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/text/convert",
@@ -2823,6 +3853,35 @@
       ],
       "kind": "app",
       "subdir": "ScopaGame1.0",
+      "icon": "",
+      "install": {}
+    },
+    {
+      "id": "screentest",
+      "version": "1",
+      "summary": "Tests the stability of your screen",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/misc",
+      "url": "https://archives.arosworld.org/share/demo/misc/screentest.i386.zip",
+      "size": 4854,
+      "sha256": "5aeed06063af110c2a5fbc26721388d188330d5614f5d35fe769ed4494d573d5",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Screentest",
       "icon": "",
       "install": {}
     },
@@ -3001,6 +4060,35 @@
       "id": "siddump",
       "version": "1.08",
       "summary": "C64 music debug output utility",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "audio/misc",
+      "url": "https://archives.arosworld.org/share/audio/tracker/siddump.i386-aros.lha",
+      "size": 108441,
+      "sha256": "e8e3ea9599a628fd87468b90f89c7d380e23094b8aca2406d2838434d7883d6a",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "SIDdump",
+      "icon": "SIDdump.info",
+      "install": {}
+    },
+    {
+      "id": "siddump",
+      "version": "1.08",
+      "summary": "C64 music debug output utility",
       "arch": "x86_64",
       "abi": "v11",
       "category": "audio/misc",
@@ -3030,6 +4118,35 @@
       "kind": "app",
       "subdir": "SidDump",
       "icon": "SidDump.info",
+      "install": {}
+    },
+    {
+      "id": "skandalfoclock",
+      "version": "1.1",
+      "summary": "Advanced Analog Clock",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/workbench",
+      "url": "https://archives.arosworld.org/share/utility/workbench/skandalfoclock.i386-aros.lha",
+      "size": 103849,
+      "sha256": "79479f0c25ca4700f9052291e2d4e24da535e205f7afcaa2334b82bb1088b767",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "skandalfoclock",
+      "icon": "skandalfoclock.info",
       "install": {}
     },
     {
@@ -3139,6 +4256,35 @@
       "kind": "app",
       "subdir": "Soliton",
       "icon": "Soliton.info",
+      "install": {}
+    },
+    {
+      "id": "sploiner",
+      "version": "1.01",
+      "summary": "split, join and recover files + AROS build",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/misc",
+      "url": "https://archives.arosworld.org/share/utility/filetool/sploiner.i386-aros.zip",
+      "size": 127956,
+      "sha256": "286e8a3a42160dfc2f4fa8a288d3274d0af2127822a479e302c1debd3ca88b11",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "sploiner",
+      "icon": "",
       "install": {}
     },
     {
@@ -3396,6 +4542,39 @@
     },
     {
       "id": "timeless",
+      "version": "1.0.1",
+      "summary": "SDL port of Tran's Timeless MS-DOS demo.",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "demo/scene",
+      "url": "https://archives.arosworld.org/share/demo/scene/timeless.i386-aros.zip",
+      "size": 483766,
+      "sha256": "342f1b5471738d97dec431e4de5b8b3066464d899ae18898d3ece91df9380f6a",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Timeless",
+      "icon": "Timeless.info",
+      "install": {}
+    },
+    {
+      "id": "timeless",
       "version": "1.0.2",
       "summary": "SDL port of Tran's Timeless MS-DOS demo.",
       "arch": "x86_64",
@@ -3505,6 +4684,39 @@
       "kind": "app",
       "subdir": "Tinytris",
       "icon": "Tinytris.info",
+      "install": {}
+    },
+    {
+      "id": "tressette",
+      "version": "0.7.4",
+      "summary": "Is a popular Italian card game",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "game/card",
+      "url": "https://archives.arosworld.org/share/game/card/tressette.i386-aros.zip",
+      "size": 4119001,
+      "sha256": "2ff5e7c91def1ab83194021c2f2235c4a1386a7434cb2e90371640999eb81830",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "arosc.library"
+        },
+        {
+          "type": "library",
+          "id": "mesa.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Tressette",
+      "icon": "Tressette.info",
       "install": {}
     },
     {
@@ -3706,6 +4918,39 @@
       "kind": "app",
       "subdir": "UnTarka",
       "icon": "UnTarka.info",
+      "install": {}
+    },
+    {
+      "id": "wildmidi",
+      "version": "0.4.6",
+      "summary": "Midi Player",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "audio/play",
+      "url": "https://archives.arosworld.org/share/audio/play/wildmidi.i386-aros.zip",
+      "size": 432951,
+      "sha256": "6989ea529cdcf4abb85f8c645fe1c0d97c7fb6c2ddcf25120da2b9c1e24bfc2e",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "WildMidi",
+      "icon": "",
       "install": {}
     },
     {

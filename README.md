@@ -27,9 +27,10 @@ installs, and formed a view on its dependencies. An entry that has not had that
 done to it is not here.
 
 **Since 2026-09-20, approval also requires that the package has been started.**
-Every entry here was installed by `pkg`, started, and removed again on AROS One
-1.3 x86_64. A hash and a clean unpack do not qualify a package: they say the
-archive arrived intact, not that the program runs. "Started" means it opened
+Every entry here was installed by `pkg`, started, and removed again on the
+system it is built for: AROS One 1.3 x86_64 for the x86_64 entries, AROS One
+2.9 32-bit for the i386 ones. A hash and a clean unpack do not qualify a
+package: they say the archive arrived intact, not that the program runs. "Started" means it opened
 its window or printed its output and was still running; it is not a claim that
 every feature works.
 
@@ -45,6 +46,10 @@ filename. A `-v11` suffix means **ABIv11**, used by current distributions such
 as AROS One. A name without it means **ABIv1**, which is what mainline AROS
 builds. A binary for one does not run on the other, however correctly it is
 installed.
+
+i386 AROS is a third line, **ABIv0**: the archives' `i386-aros` uploads, run by
+32-bit distributions such as AROS One 2.9. Its entries carry `arch = "i386"`
+and `abi = "v0"`.
 
 Each manifest records `abi`, so a client can tell before downloading anything.
 Of the archives' x86_64 entries, 171 are ABIv11 and a handful are ABIv1.

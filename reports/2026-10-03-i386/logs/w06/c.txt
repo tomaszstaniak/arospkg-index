@@ -1,0 +1,63 @@
+==== stage C: remove
+removed hocoslamfy
+remove hocoslamfy: rc=0
+removed hydracastle
+remove hydracastle: rc=0
+removed ledblur
+remove ledblur: rc=0
+removed stercus
+remove stercus: rc=0
+
+==== List SYS:Batch ALL
+Directory "SYS:Batch" on Saturday 10/03/26:
+tmp                          Dir ---rwed Today       12:12:14
+stercus                      Dir ---rwed Today       12:12:33
+ledblur                      Dir ---rwed Today       12:12:10
+hydracastle                  Dir ---rwed Today       12:11:51
+hocoslamfy                   Dir ---rwed Today       12:09:38
+cache                        Dir ---rwed Today       12:07:14
+db                           Dir ---rwed Today       12:12:35
+7 directories - 7 blocks used
+Directory "SYS:Batch/tmp" is empty
+Directory "SYS:Batch/stercus" is empty
+Directory "SYS:Batch/ledblur" is empty
+Directory "SYS:Batch/hydracastle" on Saturday 10/03/26:
+data                         Dir ---rwed Today       12:11:52
+1 directory - 1 block used
+Directory "SYS:Batch/hydracastle/data" on Saturday 10/03/26:
+.hydracastlelabyrinth        Dir ---rwed Today       12:07:41
+1 directory - 1 block used
+Directory "SYS:Batch/hydracastle/data/.hydracastlelabyrinth" on Saturday 10/03/26:
+system.ini                    70 ---rwed Today       12:07:41
+1 file - 1 block used
+Directory "SYS:Batch/hocoslamfy" on Saturday 10/03/26:
+hoco_data                    Dir ---rwed Today       12:09:34
+1 directory - 1 block used
+Directory "SYS:Batch/hocoslamfy/hoco_data" on Saturday 10/03/26:
+bgm.wav                  2097474 ---rwed Today       12:07:12
+1 file - 4097 blocks used
+Directory "SYS:Batch/cache" on Saturday 10/03/26:
+stercus.zip              2423558 ---rwed Today       12:07:14
+ledblur.zip               597349 ---rwed Today       12:07:13
+hydracastle.zip          1911077 ---rwed Today       12:07:13
+hocoslamfy.zip           2471216 ---rwed Today       12:07:12
+4 files - 14461 blocks used
+Directory "SYS:Batch/db" on Saturday 10/03/26:
+doctor                       Dir ---rwed Today       12:12:34
+transactions                 Dir ---rwed Today       12:12:35
+installed                    Dir ---rwed Today       12:12:34
+3 directories - 3 blocks used
+Directory "SYS:Batch/db/doctor" on Saturday 10/03/26:
+stercus-6ac0f132.json        143 ---rwed Today       12:12:34
+ledblur-6ac0f11b.json        143 ---rwed Today       12:12:11
+hydracastle-6ac0f109.json     153 ---rwed Today       12:12:01
+hocoslamfy-6ac0f082.json     169 ---rwed Today       12:09:39
+4 files - 4 blocks used
+Directory "SYS:Batch/db/transactions" is empty
+Directory "SYS:Batch/db/installed" is empty
+
+TOTAL: 10 files - 13 directories - 18576 blocks used
+
+==== apkg list
+nothing installed
+Saturday 03-Oct-26 12:12:40

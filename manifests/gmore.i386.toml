@@ -1,0 +1,32 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/gmore/gmore
+# with Run and input from NIL:, stack 262144 bytes: its window or screen was
+# open and the process was running after 15 s. Evidence:
+# reports/2026-10-03-i386/ (batch w01).
+
+status          = "approved"
+id              = "gmore"
+version         = "1.2"
+summary         = "Text viewer similar to MORE"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/text"
+url             = "https://archives.arosworld.org/share/utility/text/misc/gmore.i386-aros.zip"
+size            = 24716
+upload_date     = "20240512-08.20"
+selected_by     = "only-candidate"
+
+sha256          = "4b87468238a4600ea9850a5fa52c14bb3e9a9f74605679f340c2e15d09f7140e"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "GMore1.2"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

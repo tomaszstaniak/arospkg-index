@@ -1,0 +1,33 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/qlview/QLView_aros with Run and input from NIL:, stack 262144
+# bytes: its window or screen was open and the process was running after 15
+# s. Evidence: reports/2026-10-03-i386/ (batch w09).
+
+status          = "approved"
+id              = "qlview"
+version         = "25.09"
+summary         = "Sinclair QL Screen viewer"
+arch            = "i386"
+abi             = "v0"
+category        = "graphics/viewer"
+url             = "https://archives.arosworld.org/share/graphics/viewer/qlview.i386-aros.lha"
+size            = 258083
+upload_date     = "20100405-23.52"
+selected_by     = "only-candidate"
+
+sha256          = "ef031b1814450656a124334ae3adc9f212a210ae4ebb1a0dc5f96b762fd64721"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "QLView"
+icon            = "QLView.info"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "arosc.library"

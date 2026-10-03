@@ -1,0 +1,7 @@
+==== alac: ALAC, stack 262144
+Saturday 03-Oct-26 12:41:12
+after 15 s (a number means it is running):
+ALAC returned: rc=0
+after Ctrl-C (empty means it has ended):
+ALAC returned: rc=0
+Saturday 03-Oct-26 12:41:31

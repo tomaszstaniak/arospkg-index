@@ -1,0 +1,40 @@
+# APPROVED 2026-10-03, from the i386 test of packages already published for x86_64.
+#
+# Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
+# with KVM, with apkg 0.3.1 for i386. Started from
+# SYS:Batch/arrakis/arrakis-aros-i386 with Run and input from NIL:, stack
+# 262144 bytes: its window or screen was open and the process was running
+# after 15 s. Evidence: reports/2026-10-03-i386/ (batch w05).
+
+status          = "approved"
+id              = "arrakis"
+version         = "1.0"
+summary         = "Arrakis demo x86_64 by Kakiarts/trbl"
+arch            = "i386"
+abi             = "v0"
+category        = "demo/scene"
+url             = "https://archives.arosworld.org/share/demo/scene/arrakis.i386-aros.zip"
+size            = 3566920
+upload_date     = "20240316-17.33"
+selected_by     = "only-candidate"
+
+sha256          = "5cce58a8fe60b56c7cb1209717faa3893efd48bc7daf4e950cb9489a069581d7"
+depends         = []
+depends_checked = true
+kind            = "app"
+subdir          = "arrakis"
+
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "gl.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"

@@ -1,0 +1,4 @@
+Usage (extract boot): IsoTools -x <source_iso> <output_boot_file.bif>
+Usage (rename volume): IsoTools -r <iso_to_modify> <new_volume_name>
+Example: IsoTools -x RAM:bootable.iso RAM:boot.bif
+Example: IsoTools -r RAM:disk.iso NEW_NAME
