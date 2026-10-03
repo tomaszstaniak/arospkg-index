@@ -2633,6 +2633,51 @@
       "install": {}
     },
     {
+      "id": "limpet",
+      "version": "0.1.0",
+      "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "utility/shell",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.1.0/Limpet-0.1.0-abiv11.zip",
+      "size": 3574025,
+      "sha256": "668ba57e97d204896f23c7604fd1ee38b469f9b2bf566b56742b83b84fa339a0",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "freetype2.library"
+        },
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [
+        "mainline-x86_64"
+      ],
+      "kind": "app",
+      "subdir": "Limpet",
+      "icon": "Limpet.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/limpet"
+    },
+    {
       "id": "mcamiga",
       "version": "1.0",
       "summary": "File Manager",

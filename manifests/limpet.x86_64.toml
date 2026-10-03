@@ -1,0 +1,52 @@
+# APPROVED 2026-10-04. Our own program, published by its author as a GitHub
+# release asset.
+#
+# Checked on AROS One 1.3 x86_64 (ABIv11) under QEMU, apkg (progress-resize
+# build c2e35e6c): install downloaded from url (HTTPS, followed GitHub's
+# redirect), verified the hash, installed limpet/ plus limpet.info; the
+# installed Limpet started a Shell in its window (Version 0.1.0, Echo);
+# remove deleted the drawer and its icon and `apkg list` showed nothing.
+
+status          = "approved"
+id              = "limpet"
+version         = "0.1.0"
+revision        = 1
+summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
+arch            = "x86_64"
+abi             = "v11"
+category        = "utility/shell"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.1.0/Limpet-0.1.0-abiv11.zip"
+size            = 3574025
+sha256          = "668ba57e97d204896f23c7604fd1ee38b469f9b2bf566b56742b83b84fa339a0"
+kind            = "app"
+
+depends         = []
+depends_checked = true
+subdir          = "Limpet"
+icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]        # installed, started and removed 2026-10-04
+does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
+
+# Libraries the binary opens that AROS One supplies. The system fonts
+# FONTS:TrueType/VeraMono.ttf and OpenSans-Regular.ttf are also required.
+[[requires_system]]
+type = "library"
+id   = "freetype2.library"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/limpet"
+revision   = "v0.1.0"
+built_with = "abiv11-x86_64, GCC 10.5.0"
