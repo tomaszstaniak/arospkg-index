@@ -37,6 +37,14 @@ URLs. No dependency code changed in this release.
 - Source ZIP: SHA-256 55fc77b8618554b4e8cc40a8963c3e10322ff330d0ebf189fc2c4f1c59d48fdb
 - Packaged executable: SHA-256 b3c6b188f3dfb21a84e334be6cb1bcec117927308a71e6e4e0f3d38e34d65ec2
 
+## Public download check
+
+After publication, tools/ci_check_index.py downloaded the release LHA from
+GitHub. Its size, SHA-256, subdir and icon layout matched the manifest. All
+148 approved manifests passed catalogue generation; both generated index
+files were byte-identical to the committed files. GitHub asset sizes and
+SHA-256 digests also matched all five local release files.
+
 ## What these checks did not show
 
 The guest install used a seeded cache, not a live network download. Public
