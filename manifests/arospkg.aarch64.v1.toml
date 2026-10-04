@@ -1,0 +1,42 @@
+# APPROVED 2026-10-04. Our own program, published by its author as a GitHub
+# release asset: apkg (command line).
+#
+# Checked on native AROS for the Raspberry Pi (raspi-aarch64 20260822) under QEMU raspi3b: version, install from a
+# local catalogue, notes, show, open, remove. That machine had no network: update and downloads untested.
+# The entry's target is aarch64/v1, which a hosted (Macaros) aarch64 client also matches; this build is
+# for the Pi's own SDK.
+
+status          = "approved"
+id              = "arospkg"
+version         = "0.4.0"
+summary         = "Package manager for AROS: find, install, open and remove programs"
+arch            = "aarch64"
+abi             = "v1"
+category        = "utility/system"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.aarch64-aros-raspi.zip"
+size            = 379977
+sha256          = "4ec8b14ed5dc75ac97b26d9d4096c87c2cdaed8418578988414a1b4773ee1954"
+kind            = "app"
+license         = "MIT"
+
+depends         = []
+depends_checked = true
+subdir          = "arospkg-0.4.0.aarch64-aros-raspi"
+installs_on     = []
+does_not_run_on = []
+
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/arospkg"
+revision   = "v0.4.0"
