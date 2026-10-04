@@ -1464,14 +1464,14 @@
     },
     {
       "id": "folio",
-      "version": "0.4",
-      "summary": "PDF reader with thumbnails, search and highlighting, on MuPDF",
+      "version": "0.4.1",
+      "summary": "PDF reader with two-page spreads, search and highlighting",
       "arch": "x86_64",
       "abi": "v11",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4/Folio-0.4.x86_64-aros-v11.lha",
-      "size": 29365392,
-      "sha256": "432298b9bc4abfe92cb573c6cc157d12b54ceef43888405796a7a6e68de186a2",
+      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1.x86_64-aros-v11.lha",
+      "size": 29367583,
+      "sha256": "c78eddde9a5e34eda2de1dc51eb16ebf810aea5b5feb9579562232d3d2589626",
       "depends": [],
       "requires_system": [
         {

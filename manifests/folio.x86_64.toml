@@ -1,35 +1,34 @@
-# APPROVED 2026-09-27. Folio 0.4, source commit f6294e1.
-# Release LHA installed from a seeded cache and from the public GitHub URL
-# with apkg on AROS One 1.3 x86_64 ABIv11, QEMU pool v11-1. Both installs
-# verified the archive checksum. The installed program opened the arXiv PDF;
-# centred cover/last page, Zoom Out, paired view, resize and reopen passed.
-# Removal passed. Evidence: reports/folio-0.4-20260927/.
-#
+# APPROVED 2026-10-04. Folio 0.4.1, source commit f9d1e49.
+# Installed through apkg from a seeded cache on AROS One 1.3 x86_64 ABIv11,
+# QEMU pool v11-2. Rendered the three-page fixture, paired pages 1-2,
+# jumped to the lone page 3 with Amiga+J, quit and removed through apkg.
+# Install, application exit and removal returned 0.
+# Evidence: reports/folio-0.4.1-20261004/.
 # Requires an 8 MiB stack (set in the icon); Shell: Stack 8388608.
-# Same ABIv11 system requirements as 0.3.8. openurl.library is optional.
+# openurl.library is optional. No new mandatory dependencies since 0.4.
 
 status          = "approved"
 id              = "folio"
-version         = "0.4"
-summary         = "PDF reader with thumbnails, search and highlighting, on MuPDF"
+version         = "0.4.1"
+summary         = "PDF reader with two-page spreads, search and highlighting"
 arch            = "x86_64"
 abi             = "v11"
 category        = "office/misc"
-url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4/Folio-0.4.x86_64-aros-v11.lha"
-size            = 29365392
-sha256          = "432298b9bc4abfe92cb573c6cc157d12b54ceef43888405796a7a6e68de186a2"
+url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1.x86_64-aros-v11.lha"
+size            = 29367583
+sha256          = "c78eddde9a5e34eda2de1dc51eb16ebf810aea5b5feb9579562232d3d2589626"
 kind            = "app"
 
 depends         = []
 depends_checked = true
 subdir          = "Folio"
 icon            = "Folio.info"        # the drawer icon, beside Folio/ at the archive root
-installs_on     = ["aros-one"]        # AROS One 1.3, QEMU pool v11-1, 2026-09-27
-runs_on         = ["aros-one"]        # Magazine reading checks, then removed
+installs_on     = ["aros-one"]        # AROS One 1.3, QEMU pool v11-2, 2026-10-04
+runs_on         = ["aros-one"]        # PDF render, spreads and page entry; then removed
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # The binary names crt.library, m.library and stdlib.library, the ABIv11
-# runtime. muimaster, asl, iffparse and cybergraphics are in every AROS.
+# runtime. muimaster, asl, iffparse and cybergraphics were supplied by the tested system.
 # openurl.library is optional: it is opened only when a link in a PDF is
 # clicked, and without it Folio says so in the status line.
 [[requires_system]]
@@ -46,7 +45,7 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-foliopdf"
-revision   = "v0.4"
-archive    = "Folio-0.4-source.zip"
-sha256     = "9863c2608e2fb6127231e041473d6a4ef8f3e38c05fc109528dce2a16619b240"
+revision   = "v0.4.1"
+archive    = "Folio-0.4.1-source.zip"
+sha256     = "55fc77b8618554b4e8cc40a8963c3e10322ff330d0ebf189fc2c4f1c59d48fdb"
 built_with = "abiv11-x86_64, GCC 10.5.0"

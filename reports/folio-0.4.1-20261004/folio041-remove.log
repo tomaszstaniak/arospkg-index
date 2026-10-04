@@ -1,0 +1,21 @@
+removed folio
+remove rc=0
+Directory "RAM:FP" on Sunday 10/04/26:
+cache                        Dir ---rwed Today       20:46:51
+db                           Dir ---rwed Today       20:48:28
+tmp                          Dir ---rwed Today       20:48:28
+3 directories - 3 blocks used
+Directory "RAM:FP/cache" on Sunday 10/04/26:
+folio.lha                29367583 ---rw-d Today       20:46:51
+1 file - 57359 blocks used
+Directory "RAM:FP/db" on Sunday 10/04/26:
+installed                    Dir ---rwed Today       20:47:06
+transactions                 Dir ---rwed Today       20:48:28
+doctor                       Dir ---rwed Today       20:46:51
+3 directories - 3 blocks used
+Directory "RAM:FP/db/installed" is empty
+Directory "RAM:FP/db/transactions" is empty
+Directory "RAM:FP/db/doctor" is empty
+Directory "RAM:FP/tmp" is empty
+
+TOTAL: 1 files - 6 directories - 57365 blocks used
