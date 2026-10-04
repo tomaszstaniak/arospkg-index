@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: tomaszstaniak/arospkg
-          ref: 78eac6c9529452a3bf59cd36f1ecad44c5171946
+          ref: a2fab7808e550e576669889a5ffb441b74360ed8
           path: .tools
           persist-credentials: false
       - uses: actions/setup-python@v5

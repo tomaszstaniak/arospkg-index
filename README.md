@@ -14,12 +14,13 @@ software itself lives. Nothing here is mirrored from there.
   `apkg update`, with every package.
 - `index.json`: the same, for clients up to 0.3.2: the packages it already
   lists, kept up to date, within the 8192 JSON values those clients read.
-- `manifests/`: one file per approved package, `<id>.<arch>.toml`. This is
+- `manifests/`: one file per approved package build, `<id>.<arch>.<abi>.toml`
+  (older ones `<id>.<arch>.toml`). This is
   the only copy of the approved manifests; the arospkg repository keeps the
   tools and the candidates that have not been reviewed yet.
 
 - `overrides/`: a maintainer's deliberate corrections to an author's entry,
-  `<id>.<arch>.toml`, applied every time that author submits.
+  under the manifest's file name, applied whenever the catalogue is made.
 
 Both catalogue files are generated from the manifests, so the manifests are the source
 of truth and the index is derived. A client must be able to rebuild its view
@@ -135,6 +136,7 @@ secrets and runs nothing from the pull request or the archive. After a merge,
 `.github/workflows/publish.yml` regenerates the catalogue and commits it; a
 failed run leaves the published files as they were.
 
-Entries submitted this way are approved on that evidence: the maintainer does
-not start them on AROS before merging. The rule above, that every entry was
-started, applies to the entries a maintainer describes.
+Submissions are checked automatically. Maintainers review the source and
+metadata before merging. Running every application on AROS is not a
+requirement for catalogue inclusion; the entries a maintainer describes and
+starts are the ones the paragraph above covers.
