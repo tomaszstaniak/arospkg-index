@@ -10,12 +10,18 @@ software itself lives. Nothing here is mirrored from there.
 
 ## What is in here
 
-- `index.json`: the generated index the client downloads with `apkg update`.
+- `index-v2.json`: the generated catalogue clients after 0.3.2 download with
+  `apkg update`, with every package.
+- `index.json`: the same, for clients up to 0.3.2: the packages it already
+  lists, kept up to date, within the 8192 JSON values those clients read.
 - `manifests/`: one file per approved package, `<id>.<arch>.toml`. This is
   the only copy of the approved manifests; the arospkg repository keeps the
   tools and the candidates that have not been reviewed yet.
 
-`index.json` is generated from the manifests, so the manifests are the source
+- `overrides/`: a maintainer's deliberate corrections to an author's entry,
+  `<id>.<arch>.toml`, applied every time that author submits.
+
+Both catalogue files are generated from the manifests, so the manifests are the source
 of truth and the index is derived. A client must be able to rebuild its view
 from the manifests alone.
 
@@ -109,3 +115,26 @@ whole attack against a package manager.
 Manifests are reviewed before they are published. Corrections to an existing
 entry (a wrong hash, a moved URL, a dependency we missed) are welcome as
 issues or pull requests.
+
+## Submitting a package
+
+An author whose archive carries `.arospkg/manifest.toml` (written by
+`apkg-pack init` in the arospkg repository) runs
+
+    apkg-pack submit <url of the uploaded archive> --pr
+
+which downloads the archive, measures it, and opens a pull request with the
+manifest. Nobody copies fields by hand. See the authoring guide in the arospkg
+repository.
+
+Every pull request is checked automatically (`.github/workflows/check.yml`):
+each changed archive is downloaded within the client's limits, its size and
+SHA-256 must match, its description and layout must pass the catalogue's
+rules, and both catalogue files are generated as a trial. The check has no
+secrets and runs nothing from the pull request or the archive. After a merge,
+`.github/workflows/publish.yml` regenerates the catalogue and commits it; a
+failed run leaves the published files as they were.
+
+Entries submitted this way are approved on that evidence: the maintainer does
+not start them on AROS before merging. The rule above, that every entry was
+started, applies to the entries a maintainer describes.
