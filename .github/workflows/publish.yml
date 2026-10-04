@@ -24,8 +24,10 @@ jobs:
           fetch-depth: 0
       - uses: actions/checkout@v4
         with:
-          repository: tomaszstaniak/arospkg
-          ref: a2fab7808e550e576669889a5ffb441b74360ed8
+          # A test copy of this repository sets TOOLS_REPO/TOOLS_REF to test tools;
+          # here they are unset and the pinned arospkg commit is used.
+          repository: ${{ vars.TOOLS_REPO || 'tomaszstaniak/arospkg' }}
+          ref: ${{ vars.TOOLS_REF || 'c8b4eff01bc839424dbbbe4530e973b08d02638e' }}
           path: .tools
           persist-credentials: false
       - uses: actions/setup-python@v5
