@@ -1629,6 +1629,63 @@
       "id": "folio",
       "version": "0.4.1",
       "summary": "PDF reader with two-page spreads, search and highlighting",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "office/misc",
+      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1-aros1.i386-aros-v0.zip",
+      "size": 28330745,
+      "sha256": "c5621473cd482d2a4b2f6742f6064002ce58ef935b9ed215bf68fdbfd676d47e",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Folio",
+      "icon": "Folio.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-foliopdf",
+      "license": "AGPL-3.0-or-later",
+      "post_install_notes": [
+        "This 0.4.1 binary has not been runtime-tested. See BUILD-REPORT.md.",
+        "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
+        "Opening external web links requires openurl.library."
+      ]
+    },
+    {
+      "id": "folio",
+      "version": "0.4.1",
+      "summary": "PDF reader with two-page spreads, search and highlighting",
       "arch": "x86_64",
       "abi": "v11",
       "category": "office/misc",
