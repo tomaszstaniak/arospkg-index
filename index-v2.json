@@ -236,6 +236,111 @@
       "install": {}
     },
     {
+      "id": "arospkg",
+      "version": "0.4.0",
+      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "utility/system",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.aarch64-aros-raspi.zip",
+      "size": 379977,
+      "sha256": "4ec8b14ed5dc75ac97b26d9d4096c87c2cdaed8418578988414a1b4773ee1954",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "arospkg-0.4.0.aarch64-aros-raspi",
+      "icon": "",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/arospkg",
+      "license": "MIT"
+    },
+    {
+      "id": "arospkg",
+      "version": "0.4.0",
+      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/system",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.i386-aros-v0.zip",
+      "size": 304886,
+      "sha256": "73610b0b54ac8fe58ce10ec69b812a95c3127c9d681285de3cf711f2f416e375",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "arospkg-0.4.0.i386-aros-v0",
+      "icon": "",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/arospkg",
+      "license": "MIT"
+    },
+    {
+      "id": "arospkg",
+      "version": "0.4.0",
+      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "utility/system",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.x86_64-aros-v11.zip",
+      "size": 720941,
+      "sha256": "88d0f4b6b137298b5d7f571cc833086bb44da9afe0223750f30348962aa94249",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [],
+      "does_not_run_on": [
+        "mainline-x86_64"
+      ],
+      "kind": "app",
+      "subdir": "arospkg-0.4.0.x86_64-aros-v11",
+      "icon": "",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/arospkg",
+      "license": "MIT"
+    },
+    {
       "id": "arrakis",
       "version": "1.0",
       "summary": "Arrakis demo x86_64 by Kakiarts/trbl",
