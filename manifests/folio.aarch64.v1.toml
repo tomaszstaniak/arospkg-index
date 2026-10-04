@@ -1,0 +1,63 @@
+# Published upstream archive inspected 2026-10-05.
+# SHA-256 matches release SHA256SUMS-0.4.1; executable and both icons present.
+# Dependencies checked against executable library names and upstream README.
+# MuPDF and rendering dependencies are statically linked; openurl is optional.
+# BUILD-REPORT.md says this exact binary has not been run.
+# No runtime result is claimed by catalogue approval.
+status = "approved"
+id = "folio"
+version = "0.4.1"
+summary = "PDF reader with two-page spreads, search and highlighting"
+arch = "aarch64"
+abi = "v1"
+category = "office/misc"
+url = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1.aarch64-aros-raspi.zip"
+size = 28864594
+sha256 = "8e99e25275e409bc0815058f22c390152383f274b60a34a50381e9309d33dab9"
+kind = "app"
+license = "AGPL-3.0-or-later"
+depends = []
+depends_checked = true
+subdir = "Folio"
+icon = "Folio.info"
+installs_on = []
+runs_on = []
+does_not_run_on = []
+post_install_notes = [
+  "Native Raspberry Pi build; not validated on hosted Macaros.",
+  "This 0.4.1 binary has not been runtime-tested. See BUILD-REPORT.md.",
+  "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
+  "Opening external web links requires openurl.library.",
+]
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id = "asl.library"
+
+[[requires_system]]
+type = "library"
+id = "iffparse.library"
+
+[[requires_system]]
+type = "library"
+id = "cybergraphics.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-foliopdf"
+revision = "v0.4.1"
