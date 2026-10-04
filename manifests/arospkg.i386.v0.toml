@@ -1,0 +1,36 @@
+# APPROVED 2026-10-04. Our own program, published by its author as a GitHub
+# release asset: apkg (command line).
+#
+# Checked on AROS i386 ABIv0 under QEMU (pool slot v0-2): the release archive unpacked and used (version, update from
+# the public catalogue, search, install, open, remove).
+
+status          = "approved"
+id              = "arospkg"
+version         = "0.4.0"
+summary         = "Package manager for AROS: find, install, open and remove programs"
+arch            = "i386"
+abi             = "v0"
+category        = "utility/system"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.i386-aros-v0.zip"
+size            = 304886
+sha256          = "73610b0b54ac8fe58ce10ec69b812a95c3127c9d681285de3cf711f2f416e375"
+kind            = "app"
+license         = "MIT"
+
+depends         = []
+depends_checked = true
+subdir          = "arospkg-0.4.0.i386-aros-v0"
+installs_on     = []
+does_not_run_on = []
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/arospkg"
+revision   = "v0.4.0"
