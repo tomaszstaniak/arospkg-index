@@ -126,7 +126,7 @@ An author whose archive carries `.arospkg/manifest.toml` (written by
 
 which downloads the archive, measures it, and opens a pull request with the
 manifest. Nobody copies fields by hand. The steps are in the
-[authoring guide](https://github.com/tomaszstaniak/arospkg/blob/ux-flow/docs/guide/authoring.md).
+[authoring guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/authoring.md).
 
 Every pull request is checked automatically (`.github/workflows/check.yml`):
 each changed archive is downloaded within the client's limits, its size and
