@@ -1,0 +1,13 @@
+# Maintainer's record for Folio x86_64 ABIv11, kept here so an author
+# submission (apkg-pack submit) replacing manifests/folio.x86_64.v11.toml
+# does not drop it. Applies only to this file, the x86_64/v11 variant.
+#
+# Tested 2026-10-04 with Folio 0.4.1 (source commit f9d1e49): installed
+# through apkg on AROS One 1.3, QEMU pool v11-2; rendered the three-page
+# fixture, paired pages 1-2, jumped to page 3, quit and removed through
+# apkg. Evidence: reports/folio-0.4.1-20261004/.
+# A new archive's bytes are not covered by this test; update or remove
+# these fields when a new release is tested.
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"]
