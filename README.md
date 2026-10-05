@@ -119,14 +119,17 @@ issues or pull requests.
 
 ## Submitting a package
 
-An author whose archive carries `.arospkg/manifest.toml` (written by
-`apkg-pack init` in the arospkg repository) runs
+Authors pack their program with `apkg-pack`, which runs on their own
+computer and writes the description into the archive as
+`.arospkg/manifest.toml`. After uploading the archive, they run
 
     apkg-pack submit <url of the uploaded archive> --pr
 
 which downloads the archive, measures it, and opens a pull request with the
-manifest. Nobody copies fields by hand. The steps are in the
-[authoring guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/authoring.md).
+manifest. Nobody copies fields by hand. Installing the tool, the full
+example and what happens after submission are in the
+[authoring guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/authoring.md);
+this file does not repeat them.
 
 Every pull request is checked automatically (`.github/workflows/check.yml`):
 each changed archive is downloaded within the client's limits, its size and
