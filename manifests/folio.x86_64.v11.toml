@@ -1,51 +1,58 @@
-# APPROVED 2026-10-04. Folio 0.4.1, source commit f9d1e49.
-# Installed through apkg from a seeded cache on AROS One 1.3 x86_64 ABIv11,
-# QEMU pool v11-2. Rendered the three-page fixture, paired pages 1-2,
-# jumped to the lone page 3 with Amiga+J, quit and removed through apkg.
-# Install, application exit and removal returned 0.
-# Evidence: reports/folio-0.4.1-20261004/.
-# Requires an 8 MiB stack (set in the icon); Shell: Stack 8388608.
-# openurl.library is optional. No new mandatory dependencies since 0.4.
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/folio.x86_64.v11.toml, which
+# every later submission applies again.
 
-status          = "approved"
 id              = "folio"
 version         = "0.4.1"
+revision        = 1
 summary         = "PDF reader with two-page spreads, search and highlighting"
+category        = "office/misc"
+license         = "AGPL-3.0-or-later"
+kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
-category        = "office/misc"
-url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1.x86_64-aros-v11.lha"
-size            = 29367583
-sha256          = "c78eddde9a5e34eda2de1dc51eb16ebf810aea5b5feb9579562232d3d2589626"
-kind            = "app"
-
+subdir          = "Folio"
+icon            = "Folio.info"
 depends         = []
 depends_checked = true
-subdir          = "Folio"
-icon            = "Folio.info"        # the drawer icon, beside Folio/ at the archive root
-installs_on     = ["aros-one"]        # AROS One 1.3, QEMU pool v11-2, 2026-10-04
-runs_on         = ["aros-one"]        # PDF render, spreads and page entry; then removed
-does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
-
-# The binary names crt.library, m.library and stdlib.library, the ABIv11
-# runtime. muimaster, asl, iffparse and cybergraphics were supplied by the tested system.
-# openurl.library is optional: it is opened only when a link in a PDF is
-# clicked, and without it Folio says so in the status line.
-[[requires_system]]
-type = "library"
-id   = "crt.library"
+post_install_notes = [
+  "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
+  "Opening external web links requires openurl.library.",
+]
+sha256          = "024ba46165b07e10bd44312f9cb2fe5ed8c412755e77958a750eb7d8b8065193"
+size            = 28551337
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1-aros1.x86_64-aros-v11.zip"
 
 [[requires_system]]
 type = "library"
-id   = "m.library"
+id = "crt.library"
 
 [[requires_system]]
 type = "library"
-id   = "stdlib.library"
+id = "m.library"
+
+[[requires_system]]
+type = "library"
+id = "stdlib.library"
+
+[[requires_system]]
+type = "library"
+id = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id = "asl.library"
+
+[[requires_system]]
+type = "library"
+id = "iffparse.library"
+
+[[requires_system]]
+type = "library"
+id = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-foliopdf"
-revision   = "v0.4.1"
-archive    = "Folio-0.4.1-source.zip"
-sha256     = "55fc77b8618554b4e8cc40a8963c3e10322ff330d0ebf189fc2c4f1c59d48fdb"
-built_with = "abiv11-x86_64, GCC 10.5.0"
+revision = "v0.4.1"
+archive = "Folio-0.4.1-source.zip"
