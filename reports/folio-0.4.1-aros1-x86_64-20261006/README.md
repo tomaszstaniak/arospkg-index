@@ -26,8 +26,8 @@ Guest (guest/, screens/):
 Not shown: launch from icon, Folio features beyond first-page render.
 f6-run.log is a first launch attempt with a wrong path (object not found).
 
-Kept in this repository: the guest logs and three screenshots (install,
-apkg open, rendered page). The downloaded ZIP and catalogue copies are not
+Kept in this repository: the guest logs and four screenshots (install,
+apkg open, rendered page, remove). The downloaded ZIP and catalogue copies are not
 committed; the catalogue files fetched were index-v2.json SHA-256
 ae501ad01b0b24d20fd82aea630e8882fc8ae071afbcb8f8a6aae20bd9f8dbe8 and index.json SHA-256
 0812437245bcaef4d831769c686fa982b0f888d5bffb2cba1956b5027fb4e8fb.
