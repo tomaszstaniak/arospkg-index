@@ -1,0 +1,24 @@
+Removing folio 0.4.1-aros1
+
+Removed folio 0.4.1-aros1
+remove rc=0
+Directory "RAM:FR6" on Tuesday 10/06/26:
+db                           Dir ---rwed Today       08:50:39
+cache                        Dir ---rwed Today       08:43:26
+tmp                          Dir ---rwed Today       08:50:39
+3 directories - 3 blocks used
+Directory "RAM:FR6/db" on Tuesday 10/06/26:
+installed                    Dir ---rwed Today       08:43:45
+transactions                 Dir ---rwed Today       08:50:39
+doctor                       Dir ---rwed Today       08:43:09
+index.json                136385 ---rwed Today       08:43:11
+1 file - 3 directories - 270 blocks used
+Directory "RAM:FR6/db/installed" is empty
+Directory "RAM:FR6/db/transactions" is empty
+Directory "RAM:FR6/db/doctor" is empty
+Directory "RAM:FR6/cache" on Tuesday 10/06/26:
+folio.zip                28551337 ---rwed Today       08:43:26
+1 file - 55765 blocks used
+Directory "RAM:FR6/tmp" is empty
+
+TOTAL: 2 files - 6 directories - 56038 blocks used

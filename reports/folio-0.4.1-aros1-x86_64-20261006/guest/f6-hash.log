@@ -1,0 +1,5 @@
+PASS assert-hash RAM:FR6/cache/folio.zip
+assert-hash rc=0
+Directory "RAM:FR6/cache" on Tuesday 10/06/26:
+folio.zip                28551337 ---rwed Today       08:43:26
+1 file - 55765 blocks used

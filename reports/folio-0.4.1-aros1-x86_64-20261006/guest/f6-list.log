@@ -1,0 +1,64 @@
+folio
+list rc=0
+{
+  "schema":1,
+  "name":"folio",
+  "version":"0.4.1",
+  "revision":1,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Folio",
+  "installed":"2026-10-06T08:43:45Z",
+  "origin":"https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1-aros1.x86_64-aros-v11.zip",
+  "archive_sha256":"024ba46165b07e10bd44312f9cb2fe5ed8c412755e77958a750eb7d8b8065193",
+  "archive_size":28551337,
+  "reason":"explicit",
+  "dir":"folio",
+  "requires_system": [
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"m.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" },
+    { "type":"library", "id":"muimaster.library", "min_version":0, "state":"satisfied", "found_version":19, "checked":"already open, version 19" },
+    { "type":"library", "id":"asl.library", "min_version":0, "state":"satisfied", "found_version":50, "checked":"already open, version 50" },
+    { "type":"library", "id":"iffparse.library", "min_version":0, "state":"satisfied", "found_version":50, "checked":"already open, version 50" },
+    { "type":"library", "id":"cybergraphics.library", "min_version":0, "state":"satisfied", "found_version":51, "checked":"already open, version 51" }
+  ],
+  "icon": { "state":"installed", "sha256":"750e0c9d0f100ea5753fb3ec31899d91f2a2af8ff2da8e7a97fc855ba3372e77", "size":5252, "member":"Folio.info" },
+  "previous": { "registry":"", "archive":"" },
+  "post_install_notes": ["Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.", "Opening external web links requires openurl.library."],
+  "contents": [
+    { "path":"CHANGELOG", "sha256":"4bc629d97327bf179f60aa2c5ce6afd2f7cacbe9df698bccefda46567d276337", "size":7291 },
+    { "path":"Folio", "sha256":"b3c6b188f3dfb21a84e334be6cb1bcec117927308a71e6e4e0f3d38e34d65ec2", "size":40636048 },
+    { "path":"Folio.info", "sha256":"750e0c9d0f100ea5753fb3ec31899d91f2a2af8ff2da8e7a97fc855ba3372e77", "size":5252 },
+    { "path":"LICENSE", "sha256":"57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6", "size":34520 },
+    { "path":"README", "sha256":"c6bae140b89f1a2be392ccc16205807affc9be1f59a2a3f7ce5655ac49778355", "size":4820 },
+    { "path":"SHA256SUMS", "sha256":"3397192859121aa2b4930c5041e429de1ce4b6c9425032859a75200336f8b7da", "size":1474 },
+    { "path":"licenses/FreeType-FTL.txt", "sha256":"5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f", "size":6743 },
+    { "path":"licenses/FreeType-LICENSE.txt", "sha256":"bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b", "size":2149 },
+    { "path":"licenses/MuPDF-AGPL-3.0.txt", "sha256":"57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6", "size":34520 },
+    { "path":"licenses/OpenJPEG-BSD-2-Clause.txt", "sha256":"a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6", "size":2112 },
+    { "path":"licenses/URW-base35-fonts-OFL.txt", "sha256":"3b709798a0943cbf824ed21b6b2c735e482cf6cb8fa11441e57381c2650253ca", "size":4349 },
+    { "path":"licenses/jbig2dec-AGPL-3.0.txt", "sha256":"57c8ff33c9c0cfc3ef00e650a1cc910d7ee479a8bc509f6c9209a7c2a11399d6", "size":34520 },
+    { "path":"licenses/lcms2-MIT.txt", "sha256":"74fe8934cee0e63e8368d4a6b3a703b603e753a62b75b75273572e98a57ebf75", "size":1075 },
+    { "path":"licenses/libjpeg-IJG.txt", "sha256":"d139f62d49c0d14dba4bba6ba8747f0146d7a1aff67a50f47db08d4afc81b7e1", "size":2685 },
+    { "path":"licenses/zlib-LICENSE.txt", "sha256":"e32ff4e00d9d94930537635291da39e7e612703334bf6fde8c7f1686fe8a45a2", "size":1002 }
+  ]
+}
+info rc=0
+folio: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon ours
+ok                 CHANGELOG
+ok                 Folio
+ok                 Folio.info
+ok                 LICENSE
+ok                 README
+ok                 SHA256SUMS
+ok                 licenses/FreeType-FTL.txt
+ok                 licenses/FreeType-LICENSE.txt
+ok                 licenses/MuPDF-AGPL-3.0.txt
+ok                 licenses/OpenJPEG-BSD-2-Clause.txt
+ok                 licenses/URW-base35-fonts-OFL.txt
+ok                 licenses/jbig2dec-AGPL-3.0.txt
+ok                 licenses/lcms2-MIT.txt
+ok                 licenses/libjpeg-IJG.txt
+ok                 licenses/zlib-LICENSE.txt
+verify rc=0

@@ -1,0 +1,22 @@
+Directory "RAM:FR6/folio" on Tuesday 10/06/26:
+CHANGELOG                   7291 ---rwed Today       08:43:28
+Folio                    40636048 ---rwed Today       08:43:44
+Folio.info                  5252 ---rwed Today       08:43:44
+LICENSE                    34520 ---rwed Today       08:43:44
+README                      4820 ---rwed Today       08:43:44
+SHA256SUMS                  1474 ---rwed Today       08:43:44
+licenses                     Dir ---rwed Today       08:43:44
+6 files - 1 directory - 79476 blocks used
+Directory "RAM:FR6/folio/licenses" on Tuesday 10/06/26:
+FreeType-FTL.txt            6743 ---rwed Today       08:43:44
+FreeType-LICENSE.txt        2149 ---rwed Today       08:43:44
+MuPDF-AGPL-3.0.txt         34520 ---rwed Today       08:43:44
+OpenJPEG-BSD-2-Clause.txt    2112 ---rwed Today       08:43:44
+URW-base35-fonts-OFL.txt    4349 ---rwed Today       08:43:44
+jbig2dec-AGPL-3.0.txt      34520 ---rwed Today       08:43:44
+lcms2-MIT.txt               1075 ---rwed Today       08:43:44
+libjpeg-IJG.txt             2685 ---rwed Today       08:43:44
+zlib-LICENSE.txt            1002 ---rwed Today       08:43:44
+9 files - 180 blocks used
+
+TOTAL: 15 files - 1 directories - 79656 blocks used

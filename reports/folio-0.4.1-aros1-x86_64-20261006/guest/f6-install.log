@@ -1,0 +1,16 @@
+Installing folio 0.4.1-aros1
+  from https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1-aros1.x86_64-aros-v11.zip
+Downloading 27882 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1381300564/fac13b69-773d-46f3-b8b7-d59042975852
+  verified and cached RAM:FR6/cache/folio.zip
+Verifying archive
+Installing files
+
+Installed folio 0.4.1-aros1
+  Location: RAM:FR6/folio
+  Open folder: apkg --root "RAM:FR6" open folio
+
+Notes from the package
+  Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.
+  Opening external web links requires openurl.library.
+install rc=0

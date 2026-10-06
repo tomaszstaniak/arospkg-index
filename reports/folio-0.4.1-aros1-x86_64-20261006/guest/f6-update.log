@@ -1,0 +1,7 @@
+Updating the package catalogue
+  from https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/main/index-v2.json
+  saved RAM:FR6/db/index.json
+
+Updated the package catalogue: 110 packages for this system
+  43 more are for other systems (apkg --all-abi search)
+update rc=0

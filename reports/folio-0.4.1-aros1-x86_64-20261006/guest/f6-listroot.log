@@ -1,0 +1,47 @@
+Directory "RAM:FR6" on Tuesday 10/06/26:
+db                           Dir ---rwed Today       08:43:11
+cache                        Dir ---rwed Today       08:43:26
+tmp                          Dir ---rwed Today       08:43:28
+folio                        Dir ---rwed Today       08:43:44
+folio.info                  5252 ---rwed Today       08:43:45
+1 file - 4 directories - 15 blocks used
+Directory "RAM:FR6/db" on Tuesday 10/06/26:
+installed                    Dir ---rwed Today       08:43:45
+transactions                 Dir ---rwed Today       08:43:45
+doctor                       Dir ---rwed Today       08:43:09
+index.json                136385 ---rwed Today       08:43:11
+1 file - 3 directories - 270 blocks used
+Directory "RAM:FR6/db/installed" on Tuesday 10/06/26:
+folio.json                  3794 ---rwed Today       08:43:45
+1 file - 8 blocks used
+Directory "RAM:FR6/db/transactions" is empty
+Directory "RAM:FR6/db/doctor" is empty
+Directory "RAM:FR6/cache" on Tuesday 10/06/26:
+folio.zip                28551337 ---rwed Today       08:43:26
+1 file - 55765 blocks used
+Directory "RAM:FR6/tmp" on Tuesday 10/06/26:
+6ac4b4b0-folio               Dir ---rwed Today       08:43:45
+1 directory - 1 block used
+Directory "RAM:FR6/tmp/6ac4b4b0-folio" is empty
+Directory "RAM:FR6/folio" on Tuesday 10/06/26:
+CHANGELOG                   7291 ---rwed Today       08:43:28
+Folio                    40636048 ---rwed Today       08:43:44
+Folio.info                  5252 ---rwed Today       08:43:44
+LICENSE                    34520 ---rwed Today       08:43:44
+README                      4820 ---rwed Today       08:43:44
+SHA256SUMS                  1474 ---rwed Today       08:43:44
+licenses                     Dir ---rwed Today       08:43:44
+6 files - 1 directory - 79476 blocks used
+Directory "RAM:FR6/folio/licenses" on Tuesday 10/06/26:
+FreeType-FTL.txt            6743 ---rwed Today       08:43:44
+FreeType-LICENSE.txt        2149 ---rwed Today       08:43:44
+MuPDF-AGPL-3.0.txt         34520 ---rwed Today       08:43:44
+OpenJPEG-BSD-2-Clause.txt    2112 ---rwed Today       08:43:44
+URW-base35-fonts-OFL.txt    4349 ---rwed Today       08:43:44
+jbig2dec-AGPL-3.0.txt      34520 ---rwed Today       08:43:44
+lcms2-MIT.txt               1075 ---rwed Today       08:43:44
+libjpeg-IJG.txt             2685 ---rwed Today       08:43:44
+zlib-LICENSE.txt            1002 ---rwed Today       08:43:44
+9 files - 180 blocks used
+
+TOTAL: 19 files - 9 directories - 135715 blocks used

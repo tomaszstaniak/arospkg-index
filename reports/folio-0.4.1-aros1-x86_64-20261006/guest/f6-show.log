@@ -1,0 +1,23 @@
+folio 0.4.1-aros1
+  PDF reader with two-page spreads, search and highlighting
+  category:     office/misc
+  target:       x86_64, ABI v11 (the index lists: aarch64/v1, i386/v0, x86_64/v11)
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     27883 KB from https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.4.1/Folio-0.4.1-aros1.x86_64-aros-v11.zip
+  sha256:       024ba46165b07e10bd44312f9cb2fe5ed8c412755e77958a750eb7d8b8065193
+  source:       https://github.com/tomaszstaniak/aros-foliopdf
+  license:      AGPL-3.0-or-later
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+    muimaster.library: satisfied (already open, version 19)
+    asl.library: satisfied (already open, version 50)
+    iffparse.library: satisfied (already open, version 50)
+    cybergraphics.library: satisfied (already open, version 51)
+  installed:    no
+
+Notes from the package
+  Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.
+  Opening external web links requires openurl.library.
+show rc=0
