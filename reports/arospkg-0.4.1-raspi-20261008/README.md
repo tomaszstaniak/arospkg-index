@@ -1,4 +1,4 @@
-# arospkg 0.4.1 for Raspberry Pi (aarch64-aros-raspi): built, not run, 2026-10-08
+# arospkg 0.4.1 for Raspberry Pi (aarch64-aros-raspi): built, not run, withdrawn, 2026-10-08
 
 Not submitted to the catalogue. This index publishes only builds that were
 started on the system they are for, and this one was not run, on a Pi or in
@@ -21,5 +21,23 @@ Checked on the host only:
   (host/library-bases-0.4.*.txt);
 - the version string says apkg 0.4.1, target aarch64-aros-raspi.
 
-None of this shows that it runs. A Pi on 0.4.0 that runs `apkg
-self-update` is offered this build.
+None of this shows that it runs.
+
+## Withdrawn, 2026-10-08 evening
+
+While the archive was in the release, a Pi on 0.4.0 running `apkg
+self-update` would have been offered it: self-update reads the release's
+SHA256SUMS, not this catalogue. A test on the pool's Pi machine (rpi-1,
+native AROS raspi-aarch64 20260822 under QEMU raspi3b) was not possible:
+that machine has no working network (its 2026-10-05 network trial was not
+accepted), so self-update and catalogue operations cannot run there, and
+its USB input has not passed acceptance.
+
+The archive was therefore removed from the v0.4.1 release and its line from
+the release's SHA256SUMS (now x86_64 and i386 only). apkg 0.4.0 looks for
+`arospkg-<version>.aarch64-aros-raspi.zip` in that file; finding none, it
+reports that the latest stable release has no archive for this CPU and ABI
+and changes nothing (src/pkg/selfupdate.c at v0.4.0; read, not run on a
+Pi). The release's asset list showed one download of the archive before
+removal; the session that published it also downloaded every asset once to
+check the sums.
