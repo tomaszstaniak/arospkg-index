@@ -1,0 +1,3 @@
+Could not upgrade limpet: nothing to upgrade to
+  installed is version 0.1.0, the index offers 0.2.0: no rule orders one
+  upstream version against another yet, so this is refused rather than guessed

@@ -1,0 +1,5 @@
+Directory "RAM:lp" on Thursday 10/08/26:
+db                           Dir ---rwed Today       01:58:07
+cache                        Dir ---rwed Today       01:56:52
+tmp                          Dir ---rwed Today       01:58:07
+3 directories - 3 blocks used

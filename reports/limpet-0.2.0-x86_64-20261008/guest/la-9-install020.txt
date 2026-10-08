@@ -1,0 +1,9 @@
+Installing limpet 0.2.0-aros1
+The cached archive does not match the catalogue; downloading it again.
+Downloading 3494 KiB
+Verifying archive
+Installing files
+
+Installed limpet 0.2.0-aros1
+  Location: RAM:lp/limpet
+  Open folder: apkg --root "RAM:lp" open limpet

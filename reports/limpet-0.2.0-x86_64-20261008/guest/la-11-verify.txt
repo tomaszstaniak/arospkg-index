@@ -1,0 +1,16 @@
+limpet: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon ours
+ok                 Fonts/NotoEmoji.ttf
+ok                 Fonts/Unifont.otf
+ok                 LICENSE.txt
+ok                 Licenses/HarfBuzz-COPYING.txt
+ok                 Licenses/NotoEmoji-OFL.txt
+ok                 Licenses/Unicode-3.0.txt
+ok                 Licenses/Unifont-COPYING.txt
+ok                 Licenses/Unifont-OFL-1.1.txt
+ok                 Licenses/utf8proc-LICENSE.md
+ok                 Limpet
+ok                 Limpet.info
+ok                 README.txt
+ok                 Themes/dark.theme
+ok                 Themes/high-contrast.theme
+ok                 Themes/light.theme
