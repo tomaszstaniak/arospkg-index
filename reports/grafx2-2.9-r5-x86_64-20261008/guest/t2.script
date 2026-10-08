@@ -1,0 +1,5 @@
+; part 2: remove
+RAM:a/apkg041/apkg --root RAM:gp --index RAM:a/idx-r5.json remove grafx2 >RESULTS:g5-11-remove-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp --index RAM:a/idx-r5.json list >RESULTS:g5-12-list-after-1008.txt
+List RAM:gp ALL >RESULTS:g5-13-tree-after-1008.txt
+Echo "t2 done"

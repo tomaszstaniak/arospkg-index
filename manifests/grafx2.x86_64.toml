@@ -34,8 +34,8 @@ depends         = []
 depends_checked = true
 subdir          = "GrafX2"
 icon            = "GrafX2.info"       # the drawer icon, beside GrafX2/ at the archive root
-installs_on     = ["aros-one"]        # revision 4: apkg 0.2 (a513aea7), AROS One 1.3, 2026-09-26
-runs_on         = ["aros-one"]        # revision 4 started and removed 2026-09-26; revision 5 see the report
+installs_on     = ["aros-one"]        # apkg 0.4.1, AROS One 1.3, 2026-10-08; revision 4 with apkg 0.2 on 2026-09-26
+runs_on         = ["aros-one"]        # revision 5: apkg 0.4.1 upgrade from 4, started, removed 2026-10-08 (reports/grafx2-2.9-r5-x86_64-20261008)
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # The binary names crt.library, m.library and stdlib.library, the ABIv11

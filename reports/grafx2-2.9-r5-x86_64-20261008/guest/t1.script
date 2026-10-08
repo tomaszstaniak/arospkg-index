@@ -1,0 +1,11 @@
+; GrafX2 r5 apkg test, part 1: install r4 from the public catalogue, upgrade with the test catalogue
+MakeDir RAM:gp
+RAM:a/apkg041/apkg --root RAM:gp update >RESULTS:g5-01-update-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp install grafx2 >RESULTS:g5-02-install-public-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp list >RESULTS:g5-03-list-public-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp --index RAM:a/idx-r5.json show grafx2 >RESULTS:g5-04-show-test-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp --index RAM:a/idx-r5.json upgrade grafx2 >RESULTS:g5-05-upgrade-test-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp --index RAM:a/idx-r5.json list >RESULTS:g5-06-list-test-1008.txt
+RAM:a/apkg041/apkg --root RAM:gp --index RAM:a/idx-r5.json verify grafx2 >RESULTS:g5-07-verify-1008.txt
+List RAM:gp ALL >RESULTS:g5-08-tree-1008.txt
+Echo "t1 done"

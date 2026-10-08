@@ -1,0 +1,7 @@
+Removing grafx2 2.9-aros5
+
+Removed grafx2 2.9-aros5
+  Kept files in RAM:gp/grafx2:
+    gfx2.lck (not installed by apkg)
+    gfx2-sdl2.cfg (not installed by apkg)
+    gfx2.ini (not installed by apkg)

@@ -1,0 +1,8 @@
+Installing grafx2 2.9-aros4
+Downloading 4109 KiB
+Verifying archive
+Installing files
+
+Installed grafx2 2.9-aros4
+  Location: RAM:gp/grafx2
+  Open folder: apkg --root "RAM:gp" open grafx2

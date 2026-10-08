@@ -1,0 +1,36 @@
+Directory "RAM:gp" on Thursday 10/08/26:
+db                           Dir ---rwed Today       23:42:41
+cache                        Dir ---rwed Today       23:40:04
+grafx2                       Dir ---rwed Today       23:42:35
+tmp                          Dir ---rwed Today       23:42:41
+4 directories - 4 blocks used
+Directory "RAM:gp/db" on Thursday 10/08/26:
+installed                    Dir ---rwed Today       23:40:04
+transactions                 Dir ---rwed Today       23:42:41
+doctor                       Dir ---rwed Today       23:42:41
+index.json                136385 ---rwed Today       23:39:40
+previous                     Dir ---rwed Today       23:40:04
+1 file - 4 directories - 271 blocks used
+Directory "RAM:gp/db/installed" is empty
+Directory "RAM:gp/db/transactions" is empty
+Directory "RAM:gp/db/doctor" on Thursday 10/08/26:
+grafx2-6ac82a71.json         140 ---rwed Today       23:42:41
+1 file - 1 block used
+Directory "RAM:gp/db/previous" on Thursday 10/08/26:
+grafx2.json                70900 ---rwed Today       23:40:04
+1 file - 139 blocks used
+Directory "RAM:gp/cache" on Thursday 10/08/26:
+grafx2.lha               4213786 ---rwed Today       23:39:59
+previous                     Dir ---rwed Today       23:40:04
+1 file - 1 directory - 8232 blocks used
+Directory "RAM:gp/cache/previous" on Thursday 10/08/26:
+grafx2.lha               4207684 ---rwed Today       23:39:48
+1 file - 8219 blocks used
+Directory "RAM:gp/grafx2" on Thursday 10/08/26:
+gfx2.lck                   empty ---rwed Today       23:41:33
+gfx2-sdl2.cfg              11160 ---rwed Today       23:42:35
+gfx2.ini                   20849 ---rwed Today       23:42:35
+3 files - 63 blocks used
+Directory "RAM:gp/tmp" is empty
+
+TOTAL: 8 files - 9 directories - 16929 blocks used
