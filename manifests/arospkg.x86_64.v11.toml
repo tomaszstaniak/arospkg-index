@@ -1,25 +1,28 @@
-# APPROVED 2026-10-04. Our own program, published by its author as a GitHub
+# arospkg 0.4.1. Our own program, published by its author as a GitHub
 # release asset: apkg and PkgManager.
 #
-# Checked on AROS One 1.3 x86_64 (ABIv11) under QEMU: the release archive unpacked and used (version, update from the
-# public catalogue, search, install, open, remove, PkgManager start, self-update --check).
+# 0.4.1 adds upgrades across upstream versions. The release archive was
+# tested on AROS One 1.3 x86_64 (ABIv11) under QEMU on 2026-10-08 (arospkg
+# docs/reports/2026-10-08-version-upgrade). Installed through this entry:
+# see the report named in the submission.
+# 0.4.0 entry: approved 2026-10-04.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.4.0"
+version         = "0.4.1"
 summary         = "Package manager for AROS: find, install, open and remove programs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.x86_64-aros-v11.zip"
-size            = 720941
-sha256          = "88d0f4b6b137298b5d7f571cc833086bb44da9afe0223750f30348962aa94249"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip"
+size            = 717969
+sha256          = "14f076caede95eec614c118477cf0a08c4894241922e76fa0c7c44f496c9330a"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.4.0.x86_64-aros-v11"
+subdir          = "arospkg-0.4.1.x86_64-aros-v11"
 installs_on     = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]
 
@@ -37,4 +40,4 @@ id   = "muimaster.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.4.0"
+revision   = "v0.4.1"
