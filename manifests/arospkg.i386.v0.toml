@@ -1,25 +1,28 @@
-# APPROVED 2026-10-04. Our own program, published by its author as a GitHub
+# arospkg 0.4.1. Our own program, published by its author as a GitHub
 # release asset: apkg (command line).
 #
-# Checked on AROS i386 ABIv0 under QEMU (pool slot v0-2): the release archive unpacked and used (version, update from
-# the public catalogue, search, install, open, remove).
+# 0.4.1 adds upgrades across upstream versions. The i386 archive was added to
+# the v0.4.1 release on 2026-10-08, built from the same commit as the x86_64
+# one. Tested on AROS i386 ABIv0 under QEMU (pool slot v0-2) on 2026-10-08:
+# see reports/arospkg-0.4.1-i386-20261008.
+# 0.4.0 entry: approved 2026-10-04.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.4.0"
+version         = "0.4.1"
 summary         = "Package manager for AROS: find, install, open and remove programs"
 arch            = "i386"
 abi             = "v0"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.i386-aros-v0.zip"
-size            = 304886
-sha256          = "73610b0b54ac8fe58ce10ec69b812a95c3127c9d681285de3cf711f2f416e375"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.i386-aros-v0.zip"
+size            = 301566
+sha256          = "f6ad30fe2cd4fedb96ef3f79c6cd9f08a26035ebb1ddb8e17b164c2f942ab483"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.4.0.i386-aros-v0"
+subdir          = "arospkg-0.4.1.i386-aros-v0"
 installs_on     = []
 does_not_run_on = []
 
@@ -33,4 +36,4 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.4.0"
+revision   = "v0.4.1"
