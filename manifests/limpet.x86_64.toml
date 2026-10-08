@@ -1,12 +1,13 @@
 # Limpet 0.2.0. Our own program, published by its author as a GitHub
 # release asset (tag v0.2.0).
 #
-# PENDING, do not merge before both are done:
-#   1. the release v0.2.0 is published and the asset at `url` has exactly
-#      this size and SHA-256 (ci_check_index.py downloads and checks it);
-#   2. apkg updates an installed Limpet 0.1.0 to 0.2.0 on AROS One 1.3
-#      x86_64 under QEMU, the installed Limpet starts a Shell in its window
-#      (Version 0.2.0), and remove deletes the drawer and its icon.
+# Checked 2026-10-08 on AROS One 1.3 x86_64 (ABIv11) under QEMU, apkg 0.4.0,
+# with this branch's catalogue: the release asset matched size and SHA-256;
+# with 0.1.0 installed, `upgrade` was refused (apkg 0.4.0 does not order
+# upstream versions), `remove` then `install` installed 0.2.0, verify was
+# clean, the installed Limpet started a Shell in its window (Version 0.2.0),
+# and remove deleted the drawer and its icon.
+# Report: reports/limpet-0.2.0-x86_64-20261008/.
 #
 # Same archive layout as 0.1.0 (checked on the local archive 2026-10-08):
 # Limpet/ with the program, README.txt, fonts, themes and licences, plus
@@ -32,7 +33,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]        # 0.1.0 installed, started and removed 2026-10-04; 0.2.0 pending, see above
+runs_on         = ["aros-one"]        # 0.2.0 installed, started and removed 2026-10-08
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # Libraries the binary opens that AROS One supplies. The system fonts

@@ -1,0 +1,8 @@
+Installing limpet 0.1.0-aros1
+Downloading 3490 KiB
+Verifying archive
+Installing files
+
+Installed limpet 0.1.0-aros1
+  Location: RAM:lp/limpet
+  Open folder: apkg --root "RAM:lp" open limpet
