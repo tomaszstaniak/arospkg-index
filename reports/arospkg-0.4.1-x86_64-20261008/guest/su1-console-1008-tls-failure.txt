@@ -1,0 +1,140 @@
+== 0.4.0 as unpacked ==
+apkg 0.4.0
+  abi     v11
+  binary  5339927432d9bde6f04f01eabbd36a0f9ddce5759b958a197838bff9349eb19b
+  source  58b8d2ee14b94b64
+  cc      10.5.0
+  tc      /Users/tumash/Work/AROS/toolchain
+  sdk     /Users/tumash/Work/AROS/sdk
+  tls     Mbed TLS 3.6.7
+== self-update --check ==
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Latest stable release: 0.4.1 (x86_64-aros-v11)
+
+A newer release is available. Install it with: apkg self-update
+rc=0
+== self-update ==
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Latest stable release: 0.4.1 (x86_64-aros-v11)
+
+Updating apkg 0.4.0 to 0.4.1
+Downloading arospkg-0.4.1.x86_64-aros-v11.zip
+Verifying archive
+Installing apkg
+
+Updated apkg to 0.4.1
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Previous version: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg.old
+  The new version runs from the next apkg command.
+  PkgManager is updated separately, from the release archive.
+rc=0
+apkg 0.4.1
+  abi     v11
+  binary  4d86b342e375c51b368e2ce0fa56b2253e64b5530b716dddcbd594076e789912
+  source  57601a97a49e4533
+  cc      10.5.0
+  tc      /Users/tumash/Work/AROS/toolchain
+  sdk     /Users/tumash/Work/AROS/sdk
+  tls     Mbed TLS 3.6.7
+Directory "RAM:o/arospkg-0.4.0.x86_64-aros-v11" on Thursday 10/08/26:
+LICENSE                     1099 ---rw-d Sunday      18:24:29
+licenses                     Dir ---rwed Today       10:55:03
+BUILD.txt                    235 ---rw-d Sunday      18:24:29
+Examples                     Dir ---rwed Today       10:55:03
+README.txt                 15690 ---rw-d Sunday      18:24:29
+PkgManager               1004440 ---rwed Sunday      18:24:29
+apkg.old                  982448 ---rwed Sunday      18:24:29
+apkg                      983448 ---rwed Today       10:55:23
+6 files - 2 directories - 5839 blocks used
+== package arospkg: install 0.4.0 from the public catalogue ==
+Updating the package catalogue
+
+Updated the package catalogue: 110 packages for this system
+  43 more are for other systems (apkg --all-abi search)
+Installing arospkg 0.4.0
+Downloading 704 KiB
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.0
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+apkg 0.4.0
+  abi     v11
+  binary  5339927432d9bde6f04f01eabbd36a0f9ddce5759b958a197838bff9349eb19b
+  source  58b8d2ee14b94b64
+  cc      10.5.0
+  tc      /Users/tumash/Work/AROS/toolchain
+  sdk     /Users/tumash/Work/AROS/sdk
+  tls     Mbed TLS 3.6.7
+== upgrade arospkg with the branch catalogue ==
+arospkg 0.4.1
+  Package manager for AROS: find, install, open and remove programs
+  category:     utility/system
+  target:       x86_64, ABI v11 (the index lists: aarch64/v1, i386/v0, x86_64/v11)
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     702 KB from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+  sha256:       14f076caede95eec614c118477cf0a08c4894241922e76fa0c7c44f496c9330a
+  source:       https://github.com/tomaszstaniak/arospkg
+  license:      MIT
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+    muimaster.library: satisfied (already open, version 19)
+  installed:    0.4.0 (x86_64), in RAM:ap/arospkg, since 2026-10-08T10:55:35Z
+  upgrade:      available, 0.4.0 -> 0.4.1
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+Downloading 701 KiB
+Could not upgrade arospkg: cannot fetch the archive
+  https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4
+  .1.x86_64-aros-v11.zip
+  TLS handshake with github.com failed (-0x7280)
+rc=10
+apkg 0.4.0
+  abi     v11
+  binary  5339927432d9bde6f04f01eabbd36a0f9ddce5759b958a197838bff9349eb19b
+  source  58b8d2ee14b94b64
+  cc      10.5.0
+  tc      /Users/tumash/Work/AROS/toolchain
+  sdk     /Users/tumash/Work/AROS/sdk
+  tls     Mbed TLS 3.6.7
+arospkg: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+ok                 BUILD.txt
+ok                 Examples/ARexx/Install.rexx
+ok                 Examples/ARexx/InstallWatch.rexx
+ok                 Examples/ARexx/IsInstalled.rexx
+ok                 Examples/ARexx/ShowPackage.rexx
+ok                 Examples/ARexx/Upgrade.rexx
+ok                 LICENSE
+ok                 PkgManager
+ok                 README.txt
+ok                 apkg
+ok                 licenses/MbedTLS-3.6.7-LICENSE
+ok                 licenses/aros-xterm-client-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE.bsd
+ok                 licenses/zlib-LICENSE
+Directory "RAM:ap/arospkg" on Thursday 10/08/26:
+LICENSE                     1099 ---rwed Today       10:55:34
+licenses                     Dir ---rwed Today       10:55:34
+BUILD.txt                    235 ---rwed Today       10:55:34
+Examples                     Dir ---rwed Today       10:55:34
+README.txt                 15690 ---rwed Today       10:55:34
+PkgManager               1004440 ---rwed Today       10:55:34
+apkg                      982448 ---rwed Today       10:55:34
+5 files - 2 directories - 3918 blocks used
+== remove ==
+Removing arospkg 0.4.0
+
+Removed arospkg 0.4.0
+rc=0
+Directory "RAM:ap" on Thursday 10/08/26:
+db                           Dir ---rwed Today       10:57:19
+cache                        Dir ---rwed Today       10:55:34
+tmp                          Dir ---rwed Today       10:57:19
+3 directories - 3 blocks used
+nothing installed
+== end ==

@@ -42,3 +42,15 @@ So a user goes from 0.1.0 to 0.2.0 with `apkg remove limpet` and
 
 Not shown: launch from the icon, Limpet features beyond starting a Shell
 (tested separately in the Limpet repository, doc/sdk/verification-0.2.0.md).
+
+## Follow-up the same day: `apkg upgrade limpet` with apkg 0.4.1
+
+The refusal above was apkg 0.4.0's rule. apkg 0.4.1 orders dotted numeric
+versions. On v11-2 with the 0.4.1 release archive, Limpet 0.1.0 (installed
+from the catalogue as it was before 0.2.0) was upgraded to 0.2.0 with
+`apkg update` and `apkg upgrade limpet` against the public catalogue: plan
+2 replaced, 13 unchanged, a theme the user edited kept, verify clean,
+rollback to 0.1.0 and upgrade again, the upgraded Limpet started. PkgManager
+0.4.1 did the same upgrade from its Upgrade button. Evidence:
+arospkg docs/reports/2026-10-08-version-upgrade (lu2-console-1008.txt,
+screens g01-g06).
