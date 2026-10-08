@@ -1904,9 +1904,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-grafx2/releases/download/v2.9-r4/GrafX2-2.9-r4.x86_64-aros-v11.lha",
-      "size": 4207684,
-      "sha256": "b037cb10dbdd7e2d527764a3b6f1d48bcf9876dd954ba7595fed3c55820d2d61",
+      "url": "https://github.com/tomaszstaniak/aros-grafx2/releases/download/v2.9-r5/GrafX2-2.9-r5.x86_64-aros-v11.lha",
+      "size": 4213786,
+      "sha256": "2587bc80ca648963c2fbe4826cbd9f7c9119cb3845adf4cc8491cb8f365c3d00",
       "depends": [],
       "requires_system": [
         {
@@ -1935,7 +1935,7 @@
       "subdir": "GrafX2",
       "icon": "GrafX2.info",
       "install": {},
-      "revision": 4,
+      "revision": 5,
       "source": "https://github.com/tomaszstaniak/aros-grafx2"
     },
     {

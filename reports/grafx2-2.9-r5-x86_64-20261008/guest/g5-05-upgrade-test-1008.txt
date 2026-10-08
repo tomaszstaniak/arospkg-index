@@ -1,0 +1,11 @@
+Downloading 4115 KiB
+Verifying archive
+upgrading grafx2 2.9-aros4 -> 2.9-aros5
+Installing files
+plan for RAM:gp/grafx2: 0 add, 2 replace, 0 remove, 0 kept, 450 unchanged
+  replace    GrafX2
+  replace    ReadMe.txt
+
+Upgraded grafx2 2.9-aros5
+  Location: RAM:gp/grafx2
+  Open folder: apkg --root "RAM:gp" open grafx2
