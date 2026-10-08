@@ -1,0 +1,50 @@
+; i386: self-update 0.4.0 -> 0.4.1 from the published release, then the
+; arospkg package 0.4.0 -> 0.4.1 through apkg upgrade with the branch
+; catalogue (submit/arospkg-i386-v0-0.4.1-r1), verify, start, remove.
+FAILAT 1000
+Delete RAM:su.txt QUIET
+Delete RAM:o ALL FORCE QUIET
+Delete RAM:ap ALL FORCE QUIET
+C:UnZip >RAM:u3 PAYLOAD:OLDZIP -d RAM:o
+Copy PAYLOAD:IDXOLD RAM:idxold.json
+Copy PAYLOAD:IDXNEW RAM:idxnew.json
+MakeDir RAM:ap
+Echo >>RAM:su.txt "== 0.4.0 as unpacked =="
+Date >>RAM:su.txt
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --version >>RAM:su.txt
+Echo >>RAM:su.txt "== self-update --check =="
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg self-update --check >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+Echo >>RAM:su.txt "== self-update =="
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg self-update >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --version >>RAM:su.txt
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg assert-hash RAM:o/arospkg-0.4.0.i386-aros-v0/apkg 418f5219a4ee6d200463be892a365adf82bb0a4552f260d768064e5cbb4a3718 >>RAM:su.txt
+Echo >>RAM:su.txt "== package arospkg 0.4.0 from the public catalogue as it was =="
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxold.json install arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+RAM:ap/arospkg/apkg --version >>RAM:su.txt
+Echo >>RAM:su.txt "== upgrade with the branch catalogue =="
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxnew.json show arospkg >>RAM:su.txt
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxnew.json upgrade arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+RAM:ap/arospkg/apkg --version >>RAM:su.txt
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxnew.json verify arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "== the installed 0.4.1 runs: update and search from the public catalogue =="
+RAM:ap/arospkg/apkg --root RAM:ap update >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+RAM:ap/arospkg/apkg --root RAM:ap search arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "== rollback and upgrade again =="
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxnew.json rollback arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+RAM:ap/arospkg/apkg --version >>RAM:su.txt
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxnew.json upgrade arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+RAM:ap/arospkg/apkg --version >>RAM:su.txt
+Echo >>RAM:su.txt "== remove =="
+RAM:o/arospkg-0.4.0.i386-aros-v0/apkg --root RAM:ap --index RAM:idxnew.json remove arospkg >>RAM:su.txt
+Echo >>RAM:su.txt "rc=$RC"
+List RAM:ap >>RAM:su.txt
+Date >>RAM:su.txt
+Echo >>RAM:su.txt "== end =="
+Copy RAM:su.txt RESULTS:i3su-1008.txt

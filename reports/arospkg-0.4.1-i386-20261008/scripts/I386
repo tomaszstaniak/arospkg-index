@@ -1,0 +1,9 @@
+; i386 0.4.1 from the release candidate archive: the version, then the
+; upgrade suite (with the indexes' arch/abi set to i386/v0) run with the
+; archive's own apkg.
+FAILAT 1000
+Delete RAM:rel ALL FORCE QUIET
+C:UnZip >RAM:u2 PAYLOAD:RELZIP -d RAM:rel
+RAM:rel/arospkg-0.4.1.i386-aros-v0/apkg --version >RESULTS:i3v-version-1008.txt
+Execute PAYLOAD:S/UPGRADE
+Echo >RESULTS:i3v-done-1008.txt "done"

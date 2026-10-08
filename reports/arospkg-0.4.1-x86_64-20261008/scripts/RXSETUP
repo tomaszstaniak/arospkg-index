@@ -1,0 +1,26 @@
+; Upgrade.rexx with a version change: Limpet 0.1.0 -> 0.2.0 on root RAM:rl,
+; driven by PkgManager 0.4.1 and Examples/ARexx/Upgrade.rexx, both taken
+; from the published release archive.
+FAILAT 1000
+Delete RAM:rx-console.txt QUIET
+Delete RAM:rel ALL FORCE QUIET
+Delete RAM:rl ALL FORCE QUIET
+C:UnZip >RAM:rx-unzip.txt PAYLOAD:RELZIP -d RAM:rel
+Alias ap RAM:rel/arospkg-0.4.1.x86_64-aros-v11/apkg []
+Copy PAYLOAD:IDX010 RAM:idx010.json
+MakeDir RAM:rl
+Echo >>RAM:rx-console.txt "== versions =="
+ap --version >>RAM:rx-console.txt
+ap assert-hash RAM:rel/arospkg-0.4.1.x86_64-aros-v11/Examples/ARexx/Upgrade.rexx 9acc3613828689d1c5385ab410cccbedaf214532ecbb399d5b24bc273b6ce5fc >>RAM:rx-console.txt
+Echo >>RAM:rx-console.txt "== install 0.1.0 from the old catalogue =="
+ap --root RAM:rl --index RAM:idx010.json install limpet >>RAM:rx-console.txt
+Echo >>RAM:rx-console.txt "rc=$RC"
+ap assert-hash RAM:rl/limpet/Limpet 04457259597908a0e87bcfde7ab68eda07247dba56947d96c69fac508ad8aa6e >>RAM:rx-console.txt
+Echo >>RAM:rl/limpet/Themes/light.theme "user edit"
+ap assert-hash RAM:rl/limpet/Themes/light.theme 6c7326b53da3ba9a0662dd9a9275c5ca385b5e80eda329607b657600b38337cd >>RAM:rx-console.txt
+Echo >>RAM:rx-console.txt "== apkg update (public catalogue) =="
+ap --root RAM:rl update >>RAM:rx-console.txt
+ap --root RAM:rl show limpet >>RAM:rx-console.txt
+Run >NIL: RAM:rel/arospkg-0.4.1.x86_64-aros-v11/PkgManager --root RAM:rl --log RAM:rx-pm.log
+Wait 8
+Echo >>RAM:rx-console.txt "== setup done =="

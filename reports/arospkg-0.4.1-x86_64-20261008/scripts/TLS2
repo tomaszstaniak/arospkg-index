@@ -1,0 +1,1125 @@
+; TLS series 2 (fresh boot). Part A: 3 repeats of the sequence that failed
+; once on 2026-10-08 (0.4.0 self-update, then the arospkg package upgraded
+; 0.4.0 -> 0.4.1 right after). Part B: 100 installs of arospkg 0.4.1 from its
+; GitHub release. Guest time around every network step, exit codes, full
+; --verbose output, and a marker to the host after each step.
+FAILAT 1000
+Delete RAM:tls2.log QUIET
+Copy PAYLOAD:IDXOLD RAM:idxold.json
+Copy PAYLOAD:IDXPUB RAM:idxpub.json
+Copy PAYLOAD:PUTFILE RAM:putfile
+Protect RAM:putfile +e
+Echo >RAM:m "tls2 start"
+RAM:putfile RAM:m tls2-1008c-000-start 8765 >>RAM:tls2.log
+Delete RAM:o ALL FORCE QUIET
+Delete RAM:ap ALL FORCE QUIET
+MakeDir RAM:ap
+C:UnZip >RAM:u3 PAYLOAD:OLDZIP -d RAM:o
+Echo >>RAM:tls2.log "== a1-selfupdate =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose self-update >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a1-selfupdate rc=$r"
+RAM:putfile RAM:m tls2-1008c-a1-selfupdate 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a1-install040 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:ap --index RAM:idxold.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a1-install040 rc=$r"
+RAM:putfile RAM:m tls2-1008c-a1-install040 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a1-upgrade041 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:ap --index RAM:idxpub.json upgrade arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a1-upgrade041 rc=$r"
+RAM:putfile RAM:m tls2-1008c-a1-upgrade041 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a1-verify =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --root RAM:ap --index RAM:idxpub.json verify arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a1-verify rc=$r"
+RAM:putfile RAM:m tls2-1008c-a1-verify 8765 >>RAM:tls2.log
+Delete RAM:o ALL FORCE QUIET
+Delete RAM:ap ALL FORCE QUIET
+MakeDir RAM:ap
+C:UnZip >RAM:u3 PAYLOAD:OLDZIP -d RAM:o
+Echo >>RAM:tls2.log "== a2-selfupdate =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose self-update >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a2-selfupdate rc=$r"
+RAM:putfile RAM:m tls2-1008c-a2-selfupdate 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a2-install040 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:ap --index RAM:idxold.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a2-install040 rc=$r"
+RAM:putfile RAM:m tls2-1008c-a2-install040 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a2-upgrade041 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:ap --index RAM:idxpub.json upgrade arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a2-upgrade041 rc=$r"
+RAM:putfile RAM:m tls2-1008c-a2-upgrade041 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a2-verify =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --root RAM:ap --index RAM:idxpub.json verify arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a2-verify rc=$r"
+RAM:putfile RAM:m tls2-1008c-a2-verify 8765 >>RAM:tls2.log
+Delete RAM:o ALL FORCE QUIET
+Delete RAM:ap ALL FORCE QUIET
+MakeDir RAM:ap
+C:UnZip >RAM:u3 PAYLOAD:OLDZIP -d RAM:o
+Echo >>RAM:tls2.log "== a3-selfupdate =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose self-update >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a3-selfupdate rc=$r"
+RAM:putfile RAM:m tls2-1008c-a3-selfupdate 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a3-install040 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:ap --index RAM:idxold.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a3-install040 rc=$r"
+RAM:putfile RAM:m tls2-1008c-a3-install040 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a3-upgrade041 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:ap --index RAM:idxpub.json upgrade arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a3-upgrade041 rc=$r"
+RAM:putfile RAM:m tls2-1008c-a3-upgrade041 8765 >>RAM:tls2.log
+Echo >>RAM:tls2.log "== a3-verify =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --root RAM:ap --index RAM:idxpub.json verify arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "a3-verify rc=$r"
+RAM:putfile RAM:m tls2-1008c-a3-verify 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b001 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b001 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b001 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b002 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b002 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b002 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b003 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b003 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b003 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b004 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b004 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b004 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b005 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b005 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b005 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b006 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b006 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b006 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b007 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b007 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b007 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b008 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b008 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b008 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b009 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b009 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b009 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b010 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b010 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b010 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b011 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b011 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b011 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b012 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b012 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b012 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b013 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b013 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b013 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b014 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b014 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b014 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b015 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b015 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b015 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b016 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b016 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b016 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b017 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b017 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b017 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b018 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b018 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b018 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b019 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b019 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b019 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b020 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b020 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b020 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b021 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b021 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b021 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b022 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b022 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b022 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b023 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b023 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b023 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b024 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b024 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b024 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b025 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b025 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b025 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b026 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b026 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b026 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b027 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b027 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b027 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b028 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b028 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b028 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b029 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b029 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b029 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b030 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b030 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b030 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b031 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b031 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b031 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b032 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b032 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b032 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b033 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b033 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b033 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b034 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b034 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b034 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b035 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b035 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b035 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b036 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b036 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b036 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b037 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b037 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b037 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b038 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b038 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b038 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b039 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b039 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b039 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b040 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b040 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b040 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b041 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b041 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b041 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b042 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b042 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b042 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b043 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b043 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b043 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b044 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b044 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b044 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b045 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b045 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b045 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b046 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b046 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b046 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b047 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b047 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b047 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b048 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b048 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b048 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b049 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b049 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b049 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b050 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b050 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b050 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b051 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b051 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b051 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b052 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b052 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b052 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b053 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b053 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b053 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b054 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b054 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b054 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b055 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b055 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b055 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b056 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b056 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b056 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b057 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b057 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b057 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b058 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b058 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b058 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b059 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b059 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b059 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b060 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b060 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b060 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b061 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b061 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b061 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b062 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b062 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b062 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b063 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b063 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b063 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b064 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b064 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b064 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b065 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b065 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b065 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b066 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b066 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b066 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b067 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b067 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b067 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b068 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b068 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b068 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b069 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b069 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b069 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b070 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b070 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b070 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b071 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b071 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b071 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b072 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b072 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b072 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b073 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b073 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b073 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b074 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b074 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b074 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b075 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b075 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b075 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b076 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b076 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b076 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b077 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b077 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b077 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b078 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b078 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b078 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b079 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b079 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b079 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b080 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b080 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b080 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b081 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b081 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b081 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b082 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b082 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b082 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b083 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b083 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b083 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b084 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b084 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b084 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b085 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b085 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b085 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b086 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b086 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b086 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b087 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b087 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b087 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b088 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b088 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b088 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b089 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b089 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b089 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b090 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b090 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b090 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b091 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b091 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b091 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b092 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b092 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b092 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b093 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b093 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b093 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b094 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b094 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b094 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b095 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b095 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b095 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b096 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b096 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b096 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b097 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b097 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b097 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b098 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b098 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b098 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b099 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b099 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b099 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+MakeDir RAM:tl
+Echo >>RAM:tls2.log "== b100 =="
+Date >>RAM:tls2.log
+RAM:o/arospkg-0.4.0.x86_64-aros-v11/apkg --verbose --root RAM:tl --index RAM:idxpub.json install arospkg >>RAM:tls2.log
+Set r $RC
+Echo >>RAM:tls2.log "rc=$r"
+Date >>RAM:tls2.log
+Echo >RAM:m "b100 rc=$r"
+RAM:putfile RAM:m tls2-1008c-b100 8765 >>RAM:tls2.log
+Delete RAM:tl ALL FORCE QUIET
+Echo >>RAM:tls2.log "== end =="
+Copy RAM:tls2.log RESULTS:tls2-1008c.log
+RAM:putfile RAM:tls2.log tls2-1008c-log.txt 8765

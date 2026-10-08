@@ -1,0 +1,1848 @@
+OK tls2-1008c-000-start 11 6921aaddf273b418b1e51f838d72278f77a647e890a62012e7c1554927cf1309
+== a1-selfupdate ==
+Thursday 08-Oct-26 18:57:55
+  redirected to https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/SHA256SUMS
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/6c78b202-2a8e-457c-b2ed-ef099435c65c
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Latest stable release: 0.4.1 (x86_64-aros-v11)
+
+Updating apkg 0.4.0 to 0.4.1
+Downloading arospkg-0.4.1.x86_64-aros-v11.zip
+  from https://github.com/tomaszstaniak/arospkg/releases/latest/download/arospkg-0.4.1.x86_64-aros-v11.zip
+  redirected to https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+Verifying archive
+Installing apkg
+
+Updated apkg to 0.4.1
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Previous version: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg.old
+  The new version runs from the next apkg command.
+  PkgManager is updated separately, from the release archive.
+rc=0
+Thursday 08-Oct-26 18:58:01
+OK tls2-1008c-a1-selfupdate 19 adae8e405a0a7ff1a7ba0c05a3061988109c879e0ac9b71d0b1d59e0bf938c1c
+== a1-install040 ==
+Thursday 08-Oct-26 18:58:01
+Installing arospkg 0.4.0
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.x86_64-aros-v11.zip
+Downloading 704 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/c87b1ff4-7f05-4dd4-8172-d638e04206cb
+  verified and cached RAM:ap/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.0
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:04
+OK tls2-1008c-a1-install040 19 4664218814c3a7e4ceca1df16ce8b4c0b6dcb24701a91ca35f133f5bad99e6ed
+== a1-upgrade041 ==
+Thursday 08-Oct-26 18:58:04
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:ap/cache/arospkg.new.zip
+Verifying archive
+upgrading arospkg 0.4.0 -> 0.4.1
+Installing files
+plan for RAM:ap/arospkg: 0 add, 4 replace, 0 remove, 0 kept, 11 unchanged
+  replace    BUILD.txt
+  replace    PkgManager
+  replace    README.txt
+  replace    apkg
+
+Upgraded arospkg 0.4.1
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:07
+OK tls2-1008c-a1-upgrade041 19 5fa660b61d926e4b8a36c905610af86230a76a417557546974dcb568d7413317
+== a1-verify ==
+Thursday 08-Oct-26 18:58:07
+arospkg: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+ok                 BUILD.txt
+ok                 Examples/ARexx/Install.rexx
+ok                 Examples/ARexx/InstallWatch.rexx
+ok                 Examples/ARexx/IsInstalled.rexx
+ok                 Examples/ARexx/ShowPackage.rexx
+ok                 Examples/ARexx/Upgrade.rexx
+ok                 LICENSE
+ok                 PkgManager
+ok                 README.txt
+ok                 apkg
+ok                 licenses/MbedTLS-3.6.7-LICENSE
+ok                 licenses/aros-xterm-client-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE.bsd
+ok                 licenses/zlib-LICENSE
+rc=0
+Thursday 08-Oct-26 18:58:07
+OK tls2-1008c-a1-verify 15 b66370e0c68f2c61a38c39f537c0fb970baf6cc5ca5a37c12f1bea5c5485b600
+== a2-selfupdate ==
+Thursday 08-Oct-26 18:58:07
+  redirected to https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/SHA256SUMS
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/6c78b202-2a8e-457c-b2ed-ef099435c65c
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Latest stable release: 0.4.1 (x86_64-aros-v11)
+
+Updating apkg 0.4.0 to 0.4.1
+Downloading arospkg-0.4.1.x86_64-aros-v11.zip
+  from https://github.com/tomaszstaniak/arospkg/releases/latest/download/arospkg-0.4.1.x86_64-aros-v11.zip
+  redirected to https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+Verifying archive
+Installing apkg
+
+Updated apkg to 0.4.1
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Previous version: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg.old
+  The new version runs from the next apkg command.
+  PkgManager is updated separately, from the release archive.
+rc=0
+Thursday 08-Oct-26 18:58:13
+OK tls2-1008c-a2-selfupdate 19 f465251f56e5bd5afbb718fd63951838f210bc31225974d7e683bb3233bc733b
+== a2-install040 ==
+Thursday 08-Oct-26 18:58:13
+Installing arospkg 0.4.0
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.x86_64-aros-v11.zip
+Downloading 704 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/c87b1ff4-7f05-4dd4-8172-d638e04206cb
+  verified and cached RAM:ap/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.0
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:15
+OK tls2-1008c-a2-install040 19 49578797d2a1bf161a2d4d3f84e81d4175c094606393a7c647e67de78dd42ade
+== a2-upgrade041 ==
+Thursday 08-Oct-26 18:58:15
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:ap/cache/arospkg.new.zip
+Verifying archive
+upgrading arospkg 0.4.0 -> 0.4.1
+Installing files
+plan for RAM:ap/arospkg: 0 add, 4 replace, 0 remove, 0 kept, 11 unchanged
+  replace    BUILD.txt
+  replace    PkgManager
+  replace    README.txt
+  replace    apkg
+
+Upgraded arospkg 0.4.1
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:18
+OK tls2-1008c-a2-upgrade041 19 1e5ee680f3cb84e79f19aa0d21d9d35533a4b99fa0163074a3e7c8f37d1c2aaa
+== a2-verify ==
+Thursday 08-Oct-26 18:58:18
+arospkg: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+ok                 BUILD.txt
+ok                 Examples/ARexx/Install.rexx
+ok                 Examples/ARexx/InstallWatch.rexx
+ok                 Examples/ARexx/IsInstalled.rexx
+ok                 Examples/ARexx/ShowPackage.rexx
+ok                 Examples/ARexx/Upgrade.rexx
+ok                 LICENSE
+ok                 PkgManager
+ok                 README.txt
+ok                 apkg
+ok                 licenses/MbedTLS-3.6.7-LICENSE
+ok                 licenses/aros-xterm-client-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE.bsd
+ok                 licenses/zlib-LICENSE
+rc=0
+Thursday 08-Oct-26 18:58:18
+OK tls2-1008c-a2-verify 15 0cbadb9e249e160020c0f8d57537ad6c2594509d47bdb6a3d2769f58bc4ecb8e
+== a3-selfupdate ==
+Thursday 08-Oct-26 18:58:19
+  redirected to https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/SHA256SUMS
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/6c78b202-2a8e-457c-b2ed-ef099435c65c
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Latest stable release: 0.4.1 (x86_64-aros-v11)
+
+Updating apkg 0.4.0 to 0.4.1
+Downloading arospkg-0.4.1.x86_64-aros-v11.zip
+  from https://github.com/tomaszstaniak/arospkg/releases/latest/download/arospkg-0.4.1.x86_64-aros-v11.zip
+  redirected to https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+Verifying archive
+Installing apkg
+
+Updated apkg to 0.4.1
+  Location: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg
+  Previous version: RAM Disk:o/arospkg-0.4.0.x86_64-aros-v11/apkg.old
+  The new version runs from the next apkg command.
+  PkgManager is updated separately, from the release archive.
+rc=0
+Thursday 08-Oct-26 18:58:24
+OK tls2-1008c-a3-selfupdate 19 24ce41dbc4e1410e733c96da8935bab91c6e1a8cc101c9832c62117917280f4a
+== a3-install040 ==
+Thursday 08-Oct-26 18:58:24
+Installing arospkg 0.4.0
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.x86_64-aros-v11.zip
+Downloading 704 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/c87b1ff4-7f05-4dd4-8172-d638e04206cb
+  verified and cached RAM:ap/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.0
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:27
+OK tls2-1008c-a3-install040 19 88961f28eaf61344de55a6143695bf7ac04e20e833be635f964f2c6fca8505cc
+== a3-upgrade041 ==
+Thursday 08-Oct-26 18:58:27
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:ap/cache/arospkg.new.zip
+Verifying archive
+upgrading arospkg 0.4.0 -> 0.4.1
+Installing files
+plan for RAM:ap/arospkg: 0 add, 4 replace, 0 remove, 0 kept, 11 unchanged
+  replace    BUILD.txt
+  replace    PkgManager
+  replace    README.txt
+  replace    apkg
+
+Upgraded arospkg 0.4.1
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:30
+OK tls2-1008c-a3-upgrade041 19 1c3aaa986d8fa350a09016d4d815ce4e4136f8edb135161e2d375ff4e38bf751
+== a3-verify ==
+Thursday 08-Oct-26 18:58:30
+arospkg: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+ok                 BUILD.txt
+ok                 Examples/ARexx/Install.rexx
+ok                 Examples/ARexx/InstallWatch.rexx
+ok                 Examples/ARexx/IsInstalled.rexx
+ok                 Examples/ARexx/ShowPackage.rexx
+ok                 Examples/ARexx/Upgrade.rexx
+ok                 LICENSE
+ok                 PkgManager
+ok                 README.txt
+ok                 apkg
+ok                 licenses/MbedTLS-3.6.7-LICENSE
+ok                 licenses/aros-xterm-client-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE.bsd
+ok                 licenses/zlib-LICENSE
+rc=0
+Thursday 08-Oct-26 18:58:30
+OK tls2-1008c-a3-verify 15 008556ecfeb0afadcaf02b5eb94427fc30875dacbed123716e59b48396e06a4f
+== b001 ==
+Thursday 08-Oct-26 18:58:30
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:33
+OK tls2-1008c-b001 10 bd0d0db4e6fea14e5891c15dcc9f2fbb56385a03b9bdea80402f92866046a123
+== b002 ==
+Thursday 08-Oct-26 18:58:33
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:36
+OK tls2-1008c-b002 10 c5cef282f078be57474ba0f0859e02dd4a7c1bdc5180c44cdb7fb078bfff7774
+== b003 ==
+Thursday 08-Oct-26 18:58:36
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:39
+OK tls2-1008c-b003 10 9097d33d70d217e1056712ef13ea945e0cfca0a726835703f822853d7ac0e580
+== b004 ==
+Thursday 08-Oct-26 18:58:39
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:41
+OK tls2-1008c-b004 10 3d2c8404791c68b3a9058fb57ee6698b95659cc30100064d7aecc7a18a9cc5a0
+== b005 ==
+Thursday 08-Oct-26 18:58:41
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:44
+OK tls2-1008c-b005 10 df11b2245acc9e0155933d6cc23f71dc955c5c10ec612d58d30afecba49be5d0
+== b006 ==
+Thursday 08-Oct-26 18:58:44
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:47
+OK tls2-1008c-b006 10 f5c2b2445a61238b206a2dd9d2ef3eca4d78a0a54bd9d183f8d392affcd48980
+== b007 ==
+Thursday 08-Oct-26 18:58:47
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:50
+OK tls2-1008c-b007 10 3a9e618bdd02ad389f6b846510e02b8e253c3d0d7e088f7f76c8de36c88df512
+== b008 ==
+Thursday 08-Oct-26 18:58:50
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:52
+OK tls2-1008c-b008 10 9ea8cb9a9a53613fc2c388b78461cf516366eb291ab31f9950001b74a2822adc
+== b009 ==
+Thursday 08-Oct-26 18:58:52
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:55
+OK tls2-1008c-b009 10 d47620e509d6b108c4786633b2618e7347d4f737ccc0600b0cd29043f0fb0f87
+== b010 ==
+Thursday 08-Oct-26 18:58:55
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:58:58
+OK tls2-1008c-b010 10 e965125f31dfdd78b6dff993e6daa071bf65d141cf57a6017a32acbbff93ddfe
+== b011 ==
+Thursday 08-Oct-26 18:58:58
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:00
+OK tls2-1008c-b011 10 bb8661580ebe619d279b70d8f99760f47b8c7570730d73b11efa1aeefc25a558
+== b012 ==
+Thursday 08-Oct-26 18:59:00
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:03
+OK tls2-1008c-b012 10 e3913e82830d0b0ff2bac63e2689001d05d982b603f995cda64774a8062973c3
+== b013 ==
+Thursday 08-Oct-26 18:59:03
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:06
+OK tls2-1008c-b013 10 81e2d65158af012d968a7d219159417b38c607d82988c63b27d0454c50e32402
+== b014 ==
+Thursday 08-Oct-26 18:59:06
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:08
+OK tls2-1008c-b014 10 c09cf0c5afb7df448bbecfa5d8cdc9ee7e3e4d9673369eb0c8db95b23d283f79
+== b015 ==
+Thursday 08-Oct-26 18:59:08
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:11
+OK tls2-1008c-b015 10 c1d26ea4d93a7cbc3ceeb24e030b6fcdd4aabe49d6bc9bae83cbb9bd7ec3ead1
+== b016 ==
+Thursday 08-Oct-26 18:59:11
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:15
+OK tls2-1008c-b016 10 1c0f38f33457ea6831bc9a1a14f6dc9e5aaa2dffc354f71b7ef0fc64e6253888
+== b017 ==
+Thursday 08-Oct-26 18:59:15
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:19
+OK tls2-1008c-b017 10 6c1b677932fcf0cefec95e705d1ffcd595f6286e3139df9424d7ef17e3d05704
+== b018 ==
+Thursday 08-Oct-26 18:59:19
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:23
+OK tls2-1008c-b018 10 d7e3069e957b7bcecfffbb43162b5016a7baca9bf60fa30badeb7b30bbbcd155
+== b019 ==
+Thursday 08-Oct-26 18:59:24
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:28
+OK tls2-1008c-b019 10 98c923bf65313ab0cf19abf584d202ee56d98c11c1d86f0fca6d3f7c56b40aa4
+== b020 ==
+Thursday 08-Oct-26 18:59:28
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:32
+OK tls2-1008c-b020 10 0e405459fa410ecebbe0436f9cc46e01751a5091fe931a13bf6db632893f4c3f
+== b021 ==
+Thursday 08-Oct-26 18:59:32
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:36
+OK tls2-1008c-b021 10 6915eb8fec88b07e6c337b28b0618a66708485e559f639bc1295534d0ed43a26
+== b022 ==
+Thursday 08-Oct-26 18:59:36
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:39
+OK tls2-1008c-b022 10 3f8b72e74f08d4530d146c3a554d0c24bd36a381091b73b0bfca36cfce20f5a8
+== b023 ==
+Thursday 08-Oct-26 18:59:39
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:43
+OK tls2-1008c-b023 10 217a49499cab76d72919d679770b9f97cabaa8b6faaad7aa4155d08c2eb076c3
+== b024 ==
+Thursday 08-Oct-26 18:59:43
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:47
+OK tls2-1008c-b024 10 7d367f04c965ecbb071629424c00aca4d44c01e54cc5878f1cc3eeb7638d9984
+== b025 ==
+Thursday 08-Oct-26 18:59:48
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:52
+OK tls2-1008c-b025 10 7a70f50ed8075c64f667c44dd038ad8e51912386900d8342c03855bfb9547b8c
+== b026 ==
+Thursday 08-Oct-26 18:59:52
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 18:59:56
+OK tls2-1008c-b026 10 814640749b15f3610c2237706344ae458da0939823fa8ae38a9faeea8f321224
+== b027 ==
+Thursday 08-Oct-26 18:59:56
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:00
+OK tls2-1008c-b027 10 381b28d2714ad0808bb016288b8c26bcc2cf1479d186287b32ce874a796cdd7f
+== b028 ==
+Thursday 08-Oct-26 19:00:00
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:04
+OK tls2-1008c-b028 10 66630e812cbb02c02017c7515b7d1fb4ff3b9f489c584d9aa35612cb90cb73ab
+== b029 ==
+Thursday 08-Oct-26 19:00:04
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:08
+OK tls2-1008c-b029 10 8984824fa86247aaef71776abe598499ae5f2fecef1eaaf470bc494dce7e7726
+== b030 ==
+Thursday 08-Oct-26 19:00:08
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:12
+OK tls2-1008c-b030 10 8345cb1f17ae7fdcee905b0b5b035da42f986697c450c317f9e6814ded4803c9
+== b031 ==
+Thursday 08-Oct-26 19:00:12
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:16
+OK tls2-1008c-b031 10 28776c75300e047c439bdc75d08b7ee0bc62f418e8edc97c6170d268fddb182d
+== b032 ==
+Thursday 08-Oct-26 19:00:16
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:20
+OK tls2-1008c-b032 10 95fcceb069479fa52cfcb6ae95397531a68c3c61156c8ceaef28d0c1ef128ff0
+== b033 ==
+Thursday 08-Oct-26 19:00:20
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:24
+OK tls2-1008c-b033 10 b9cfb1471b318b54e9de8bb106b0690b4ce4ec7bd7890bf207d57e40219bad22
+== b034 ==
+Thursday 08-Oct-26 19:00:24
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:27
+OK tls2-1008c-b034 10 636c64f1cf1fb5b6e09bfb2ead810b0edc6fc65135bf9cf14612c85c31c63adb
+== b035 ==
+Thursday 08-Oct-26 19:00:28
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:31
+OK tls2-1008c-b035 10 4ac182a5191ef21240919e7d1873e428ffbad05f5568c4731e5384adb783548f
+== b036 ==
+Thursday 08-Oct-26 19:00:31
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:35
+OK tls2-1008c-b036 10 1b147e03afbc2e814ae307a3367f85de5b836b448c9591523a853451b9783768
+== b037 ==
+Thursday 08-Oct-26 19:00:35
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:40
+OK tls2-1008c-b037 10 17c256391f71475dc65a3b455d76cdfb6fa8732b8c137bc238eb7538d8be99cd
+== b038 ==
+Thursday 08-Oct-26 19:00:40
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:44
+OK tls2-1008c-b038 10 ba4aff714693b89fc1c22e91221bdaeab450d4001a1954e201a1e9bb17609157
+== b039 ==
+Thursday 08-Oct-26 19:00:44
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:49
+OK tls2-1008c-b039 10 1e5d1c53259a697d901659be2fc93afb9274578e1b016a7b011cf4d88264595d
+== b040 ==
+Thursday 08-Oct-26 19:00:49
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:52
+OK tls2-1008c-b040 10 3b01a6a643ae0fba1ffcfb5a2343fa8380dcd89eca28c5e749b9b32f2d6b784a
+== b041 ==
+Thursday 08-Oct-26 19:00:52
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:00:56
+OK tls2-1008c-b041 10 a6acd07256d92ee9158484d2c045f195fea3365d74cff30800d1abae03e15e33
+== b042 ==
+Thursday 08-Oct-26 19:00:56
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:00
+OK tls2-1008c-b042 10 192c73018b18739d0c16aaeb3960f652f2d46fd39b58805148f7e7e1e3e2f70c
+== b043 ==
+Thursday 08-Oct-26 19:01:00
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:03
+OK tls2-1008c-b043 10 7d6db5907e2e523b26a0d774aada914af7440356da5c3cc2df171084a0abfddb
+== b044 ==
+Thursday 08-Oct-26 19:01:03
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:08
+OK tls2-1008c-b044 10 8f0993686ba01423bb11ef747b2b3e61ff5cb09dd93bea924ddd5c62394317d5
+== b045 ==
+Thursday 08-Oct-26 19:01:08
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:12
+OK tls2-1008c-b045 10 7c1c7072e03365d9e15c7b31751933a9d7a4320b90271f115894995aff747661
+== b046 ==
+Thursday 08-Oct-26 19:01:12
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:16
+OK tls2-1008c-b046 10 6e84371f97b646ac5cb3a4297f26e09cd2c1765ca9ee3b08dfac5a4428e87905
+== b047 ==
+Thursday 08-Oct-26 19:01:16
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:20
+OK tls2-1008c-b047 10 ceddc512f2fe70941e4e136b43c5749af4fc63d9f19db2430bf56974e2c6ffeb
+== b048 ==
+Thursday 08-Oct-26 19:01:20
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:24
+OK tls2-1008c-b048 10 e81c1c7af3d6331fea0411bad943c942d2e80d4a2c742b412d9d761a3b4c3a14
+== b049 ==
+Thursday 08-Oct-26 19:01:24
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:29
+OK tls2-1008c-b049 10 52ac36bb5e9f4d0923301c13e215cf96044e518fb9e66cb0ef3c02795a506939
+== b050 ==
+Thursday 08-Oct-26 19:01:29
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:33
+OK tls2-1008c-b050 10 20706e7dfcd7e125747a6ea80d107b4f737a52b16a7467db597cba991877c160
+== b051 ==
+Thursday 08-Oct-26 19:01:33
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:36
+OK tls2-1008c-b051 10 cdf2deb3e5fb1e8a82eb5d57c6933029beef19fdf6a2037ca07008acccd618af
+== b052 ==
+Thursday 08-Oct-26 19:01:37
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:40
+OK tls2-1008c-b052 10 cbe9ceb76a95647440aca26938121c7023d6fb7de6dbff16ac8c603cbcdd10c9
+== b053 ==
+Thursday 08-Oct-26 19:01:41
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:44
+OK tls2-1008c-b053 10 a13727a1d3c798dacdb6123d48ff045f341ab08c635ae7d2b446466dcc2eb3e9
+== b054 ==
+Thursday 08-Oct-26 19:01:44
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:48
+OK tls2-1008c-b054 10 41f83e361417a029fbe5a626aa96a8846a3df2d75a279d069fd1405c7542b91a
+== b055 ==
+Thursday 08-Oct-26 19:01:48
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:52
+OK tls2-1008c-b055 10 b4f034afd1e07f9890f8b46d02704525851a455437756bb71c520157230dfec5
+== b056 ==
+Thursday 08-Oct-26 19:01:52
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:01:57
+OK tls2-1008c-b056 10 0fd31c98b139d3d0922f6c35796f31047f565c788e6c347b88232df553f92c63
+== b057 ==
+Thursday 08-Oct-26 19:01:57
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:01
+OK tls2-1008c-b057 10 b6e83f1be02f958b3c3778b192e90f8f0437b957a2e79d8ec013fcb44d85b197
+== b058 ==
+Thursday 08-Oct-26 19:02:01
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:05
+OK tls2-1008c-b058 10 c784a5ca63002fec09e7e10fa00675b8c9b97bb9241de8c7d4fde91f8517432e
+== b059 ==
+Thursday 08-Oct-26 19:02:05
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:09
+OK tls2-1008c-b059 10 ba453ffafd272efd81d1a181d738797d3ba9a1e561ec32d8fa13f049fb0b23b1
+== b060 ==
+Thursday 08-Oct-26 19:02:09
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:13
+OK tls2-1008c-b060 10 2ebc8b4963926700387b4e3e5e0916a0051e0e7bd9920c382dcf574f7c5fd74e
+== b061 ==
+Thursday 08-Oct-26 19:02:13
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:17
+OK tls2-1008c-b061 10 f9455b078b3d66249aa3874e44b896b4777522125f2dbc0802e4e0d36ff48376
+== b062 ==
+Thursday 08-Oct-26 19:02:18
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:21
+OK tls2-1008c-b062 10 9cc7893c9e5169bb7615b56857fffc86646c2cef3c574ff729e6b80af5a791ce
+== b063 ==
+Thursday 08-Oct-26 19:02:21
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:25
+OK tls2-1008c-b063 10 bf415c8a0f690c1ec5a4883e3bf62646df82f6d97873d4a2401666c3e6b7ae16
+== b064 ==
+Thursday 08-Oct-26 19:02:25
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:29
+OK tls2-1008c-b064 10 277c31df05be73541fc1c6596c2bd19f71d29c1e57c88c008c61e81c006d7e3a
+== b065 ==
+Thursday 08-Oct-26 19:02:29
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:33
+OK tls2-1008c-b065 10 ea33cd8bab4f9a8dd29663b04ab238ad3ddf4ad6f5b9837c6fb53e0537117ceb
+== b066 ==
+Thursday 08-Oct-26 19:02:33
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:36
+OK tls2-1008c-b066 10 1a73b021fa340d173cc2183307d00823af07985be506c1ea32c34bdf9ebffcd0
+== b067 ==
+Thursday 08-Oct-26 19:02:36
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:40
+OK tls2-1008c-b067 10 7ad8b661fe05add9532a81f98133518cba26803084911d14ad1881ae109411c4
+== b068 ==
+Thursday 08-Oct-26 19:02:40
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:44
+OK tls2-1008c-b068 10 1f83d1c74ec67d44845b565923d6823fec67be01c43d34bd1d7ad75a6dfd53ab
+== b069 ==
+Thursday 08-Oct-26 19:02:44
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:48
+OK tls2-1008c-b069 10 f23ebbac6945d2bcb77782cc7c1a53611c421c37463f24aeef00d3a7e0215d83
+== b070 ==
+Thursday 08-Oct-26 19:02:48
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:52
+OK tls2-1008c-b070 10 55d1370256a95a6cbd60166e3874a12ec554708ea72dfae01ac85b9342e2aa45
+== b071 ==
+Thursday 08-Oct-26 19:02:52
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:56
+OK tls2-1008c-b071 10 89feb4dbc88b7cfc490ed891c683271d61378b64fbd0d406f6f3b1d729b7854a
+== b072 ==
+Thursday 08-Oct-26 19:02:56
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:02:59
+OK tls2-1008c-b072 10 d7569cc65a4b447f9801fafdf3cbc23abae563ca5d084ff02b6984b9b0fb4db9
+== b073 ==
+Thursday 08-Oct-26 19:02:59
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:03
+OK tls2-1008c-b073 10 bae154f188d2faccae2a89ef13f9e0222d1d84f90fb9771ff218cc14d8df7f41
+== b074 ==
+Thursday 08-Oct-26 19:03:04
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:07
+OK tls2-1008c-b074 10 6f3b7033818c41ac7776053061f9d679517b30e373895c73cf23140380fb9d54
+== b075 ==
+Thursday 08-Oct-26 19:03:07
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:10
+OK tls2-1008c-b075 10 167592440bfbf4c73518325ee744bafc7d169dd543449a0560d098b1e0de8ec9
+== b076 ==
+Thursday 08-Oct-26 19:03:10
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:14
+OK tls2-1008c-b076 10 738f6ce2b51e464977adc2f8ad3f1298bfe30d69917426d4585aae793ce1ebfa
+== b077 ==
+Thursday 08-Oct-26 19:03:14
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:18
+OK tls2-1008c-b077 10 59ed08e7b49198aee944220afe80712ad4579f18b7fd0c88eb0b87975c49c8df
+== b078 ==
+Thursday 08-Oct-26 19:03:18
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:22
+OK tls2-1008c-b078 10 3583865c8c572e67b4adadb22adec3e64da2de9906e58a53118ee9d0635b74f9
+== b079 ==
+Thursday 08-Oct-26 19:03:22
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:25
+OK tls2-1008c-b079 10 63c3938de7012d8acaa73aeed51dc68e994d96b604e4cc66fe41fd41183db665
+== b080 ==
+Thursday 08-Oct-26 19:03:26
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:30
+OK tls2-1008c-b080 10 c551ace37a9e813077dac062d7a1bd92b5941fa5b50a33db08e056839716efe2
+== b081 ==
+Thursday 08-Oct-26 19:03:30
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:33
+OK tls2-1008c-b081 10 a2c34fa22903670cbfff8c250ee7b32d7e81f535a5c81f45c0972cb422890341
+== b082 ==
+Thursday 08-Oct-26 19:03:33
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:37
+OK tls2-1008c-b082 10 ea4d9cec32cfe2ec16fe8c471e3d46e2bd95cfa3e60a7592f47380d136a3ddbe
+== b083 ==
+Thursday 08-Oct-26 19:03:37
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:40
+OK tls2-1008c-b083 10 9ba3ef68ee1d81d23a5902e3551d5d42f57f808d8eb551797ea9cada16efe8df
+== b084 ==
+Thursday 08-Oct-26 19:03:40
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:44
+OK tls2-1008c-b084 10 80110764249c5b2c02de1a79d88a6e6e3d3f8855bd03833071ce2f7037a69211
+== b085 ==
+Thursday 08-Oct-26 19:03:44
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:48
+OK tls2-1008c-b085 10 49b9baac1efc0c50881f07323fb0fb275d33abdfe2bee4240e89aa797de407f3
+== b086 ==
+Thursday 08-Oct-26 19:03:48
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:51
+OK tls2-1008c-b086 10 12623b253fcb2ea50f1294db3ab7eba8ec963ace4e7f8190ffcc9226d6db8f07
+== b087 ==
+Thursday 08-Oct-26 19:03:52
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:55
+OK tls2-1008c-b087 10 f139bc2e0a9064bce3947623139873f1b56a4ac89e3cdc55f3e9263606ad0b43
+== b088 ==
+Thursday 08-Oct-26 19:03:55
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:03:59
+OK tls2-1008c-b088 10 e0d68343106abe57afff01598a48d1d5acf313f98617106bd3a7cd06eb33a665
+== b089 ==
+Thursday 08-Oct-26 19:03:59
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:03
+OK tls2-1008c-b089 10 775e45841bc08e0d4ec5b0f593678bf860c6487de75ccc1a8e62f40373ab4800
+== b090 ==
+Thursday 08-Oct-26 19:04:03
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:06
+OK tls2-1008c-b090 10 e1c0e753a6178aa790fdb37a384b80cd704acf73bf57ba8f09b59e16e9619c6c
+== b091 ==
+Thursday 08-Oct-26 19:04:06
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:10
+OK tls2-1008c-b091 10 044e13269a5e2f379952061807c162065cbee3c2d4eb9e4177d2b9f7d2ef713c
+== b092 ==
+Thursday 08-Oct-26 19:04:10
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:13
+OK tls2-1008c-b092 10 9ebeb046e9e05dbb7eef81db0b9f5022d623c63f181e256588d5a44ebbec8ba2
+== b093 ==
+Thursday 08-Oct-26 19:04:13
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:17
+OK tls2-1008c-b093 10 6cea6e5b7d8d0e8bbefd7b700bfbab842f7fc542d6d91d999fa3a7c9b1b70b79
+== b094 ==
+Thursday 08-Oct-26 19:04:17
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:21
+OK tls2-1008c-b094 10 7e18c5da24d9e0e9f4ef684c9580a211b90f72bbd319b95c38eecb69b92687bf
+== b095 ==
+Thursday 08-Oct-26 19:04:21
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:24
+OK tls2-1008c-b095 10 c755b530caec9f22aa245e01fb6258ca03e178c8f121e16e1c417696d3824717
+== b096 ==
+Thursday 08-Oct-26 19:04:24
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:28
+OK tls2-1008c-b096 10 079c43487b7935d1267a74fda08c59df75d10ae04017d51467bffe6fd89c0196
+== b097 ==
+Thursday 08-Oct-26 19:04:28
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:31
+OK tls2-1008c-b097 10 202dd77e7b9ac3fb4b71d41f262e74d8f1df7a6de5d24a9df4303f4274e89f48
+== b098 ==
+Thursday 08-Oct-26 19:04:32
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:35
+OK tls2-1008c-b098 10 62f330d30c711840af3e2cb95ecef9aaff8bb74192b71fd39d0f011471287595
+== b099 ==
+Thursday 08-Oct-26 19:04:35
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:39
+OK tls2-1008c-b099 10 054398772a52a75f90203d7bbf2ffd888215d3a36829b998cacf3a622368c8b4
+== b100 ==
+Thursday 08-Oct-26 19:04:39
+Installing arospkg 0.4.1
+  from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.x86_64-aros-v11.zip
+Downloading 701 KiB
+  redirected to https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/1364bd31-d71c-43b4-b598-c24531112ac2
+  verified and cached RAM:tl/cache/arospkg.zip
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.1
+  Location: RAM:tl/arospkg
+  Open folder: apkg --root "RAM:tl" open arospkg
+rc=0
+Thursday 08-Oct-26 19:04:43
+OK tls2-1008c-b100 10 0020fe446c06303278626ce0cd2bcb1026203e275a8efefa96ace1920e0de4c2
+== end ==
