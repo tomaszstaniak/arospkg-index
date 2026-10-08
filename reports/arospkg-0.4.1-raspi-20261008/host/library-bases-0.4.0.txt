@@ -1,0 +1,12 @@
+B PosixCBase
+B SocketBase
+B StdCBase
+B StdCIOBase
+B SysBase
+r __aros_libset_PosixCBase
+r __aros_libset_StdCBase
+r __aros_libset_StdCIOBase
+r __aros_set_LIBS___aros_libset_PosixCBase
+r __aros_set_LIBS___aros_libset_StdCBase
+r __aros_set_LIBS___aros_libset_StdCIOBase
+V DOSBase

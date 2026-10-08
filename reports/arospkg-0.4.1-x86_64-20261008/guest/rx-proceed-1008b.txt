@@ -1,0 +1,2 @@
+job 2: confirm or cancel the upgrade of limpet in PkgManager
+limpet upgraded

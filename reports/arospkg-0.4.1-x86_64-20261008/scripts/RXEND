@@ -1,0 +1,6 @@
+FAILAT 1000
+Echo >>RAM:rx-console.txt "== hashes =="
+RAM:rel/arospkg-0.4.1.x86_64-aros-v11/apkg assert-hash RAM:rl/limpet/Limpet 3ff6b5d399a1ee17a7050ff92c1f48bd437ef7c548cf5297317ce80c525adc25 >>RAM:rx-console.txt
+Echo >>RAM:rx-console.txt "== end =="
+Copy RAM:rx-console.txt RESULTS:rx-console-1008b.txt
+Copy RAM:rx-pm.log RESULTS:rx-pm-1008b.log

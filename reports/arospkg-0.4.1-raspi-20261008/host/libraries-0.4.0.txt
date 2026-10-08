@@ -1,0 +1,8 @@
+bsdsocket.library
+dos.library
+exec.library
+intuition.library
+posixc.library
+stdc.library
+stdcio.library
+workbench.library

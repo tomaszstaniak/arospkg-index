@@ -1,0 +1,8 @@
+; After an Upgrade.rexx run: what is installed. Argument: a label.
+.KEY label/A
+FAILAT 1000
+Echo >>RAM:rx-console.txt "== check <label> =="
+Version RAM:rl/limpet/Limpet >>RAM:rx-console.txt
+RAM:rel/arospkg-0.4.1.x86_64-aros-v11/apkg assert-hash RAM:rl/limpet/Themes/light.theme 6c7326b53da3ba9a0662dd9a9275c5ca385b5e80eda329607b657600b38337cd >>RAM:rx-console.txt
+RAM:rel/arospkg-0.4.1.x86_64-aros-v11/apkg --root RAM:rl verify limpet >>RAM:rx-console.txt
+RAM:rel/arospkg-0.4.1.x86_64-aros-v11/apkg --root RAM:rl info limpet >>RAM:rx-console.txt

@@ -1,0 +1,171 @@
+== 0.4.0 as unpacked ==
+Thursday 08-Oct-26 19:18:13
+apkg 0.4.0
+  abi     v0
+  binary  66173b6b0d1d61869f6a04c702eeede7b852682fd9158818f7a8f48415932ec0
+  source  58b8d2ee14b94b64
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+== self-update --check ==
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.i386-aros-v0/apkg
+  Latest stable release: 0.4.1 (i386-aros-v0)
+
+A newer release is available. Install it with: apkg self-update
+rc=0
+== self-update ==
+apkg 0.4.0
+  Location: RAM Disk:o/arospkg-0.4.0.i386-aros-v0/apkg
+  Latest stable release: 0.4.1 (i386-aros-v0)
+
+Updating apkg 0.4.0 to 0.4.1
+Downloading arospkg-0.4.1.i386-aros-v0.zip
+Verifying archive
+Installing apkg
+
+Updated apkg to 0.4.1
+  Location: RAM Disk:o/arospkg-0.4.0.i386-aros-v0/apkg
+  Previous version: RAM Disk:o/arospkg-0.4.0.i386-aros-v0/apkg.old
+  The new version runs from the next apkg command.
+  PkgManager is updated separately, from the release archive.
+rc=0
+apkg 0.4.1
+  abi     v0
+  binary  418f5219a4ee6d200463be892a365adf82bb0a4552f260d768064e5cbb4a3718
+  source  57601a97a49e4533
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+PASS assert-hash RAM:o/arospkg-0.4.0.i386-aros-v0/apkg
+== package arospkg 0.4.0 from the public catalogue as it was ==
+Installing arospkg 0.4.0
+Downloading 297 KiB
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.0
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+apkg 0.4.0
+  abi     v0
+  binary  66173b6b0d1d61869f6a04c702eeede7b852682fd9158818f7a8f48415932ec0
+  source  58b8d2ee14b94b64
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+== upgrade with the branch catalogue ==
+arospkg 0.4.1
+  Package manager for AROS: find, install, open and remove programs
+  category:     utility/system
+  target:       i386, ABI v0 (the index lists: aarch64/v1, i386/v0, x86_64/v11)
+  compatibility: native -- built for this machine: i386, ABIv0, the i386 release line
+  download:     295 KB from https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.1/arospkg-0.4.1.i386-aros-v0.zip
+  sha256:       f6ad30fe2cd4fedb96ef3f79c6cd9f08a26035ebb1ddb8e17b164c2f942ab483
+  source:       https://github.com/tomaszstaniak/arospkg
+  license:      MIT
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 3)
+    stdlib.library: satisfied (already open, version 1)
+  installed:    0.4.0 (i386), in RAM:ap/arospkg, since 2026-10-08T19:18:38Z
+  upgrade:      available, 0.4.0 -> 0.4.1
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+Downloading 294 KiB
+Verifying archive
+upgrading arospkg 0.4.0 -> 0.4.1
+Installing files
+plan for RAM:ap/arospkg: 0 add, 3 replace, 0 remove, 0 kept, 6 unchanged
+  replace    BUILD.txt
+  replace    README.txt
+  replace    apkg
+
+Upgraded arospkg 0.4.1
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+apkg 0.4.1
+  abi     v0
+  binary  418f5219a4ee6d200463be892a365adf82bb0a4552f260d768064e5cbb4a3718
+  source  57601a97a49e4533
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+arospkg: 9 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+ok                 BUILD.txt
+ok                 LICENSE
+ok                 README.txt
+ok                 apkg
+ok                 licenses/MbedTLS-3.6.7-LICENSE
+ok                 licenses/aros-xterm-client-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE.bsd
+ok                 licenses/zlib-LICENSE
+== the installed 0.4.1 runs: update and search from the public catalogue ==
+Updating the package catalogue
+
+Updated the package catalogue: 41 packages for this system
+  112 more are for other systems (apkg --all-abi search)
+rc=0
+arospkg              0.4.0      i386      Package manager for AROS: find, install, open and remove programs
+
+2 package(s) hidden: built for another CPU or ABI, or for one this
+client cannot judge, so not known to run here. apkg show <id> says
+why; --all-abi lists them.
+== rollback and upgrade again ==
+rolling arospkg back to 0.4.0
+Installing files
+plan for RAM:ap/arospkg: 0 add, 3 replace, 0 remove, 0 kept, 6 unchanged
+  replace    BUILD.txt
+  replace    README.txt
+  replace    apkg
+
+Rolled back arospkg 0.4.0
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+apkg 0.4.0
+  abi     v0
+  binary  66173b6b0d1d61869f6a04c702eeede7b852682fd9158818f7a8f48415932ec0
+  source  58b8d2ee14b94b64
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+Downloading 294 KiB
+Verifying archive
+upgrading arospkg 0.4.0 -> 0.4.1
+Installing files
+plan for RAM:ap/arospkg: 0 add, 3 replace, 0 remove, 0 kept, 6 unchanged
+  replace    BUILD.txt
+  replace    README.txt
+  replace    apkg
+
+Upgraded arospkg 0.4.1
+  Location: RAM:ap/arospkg
+  Open folder: apkg --root "RAM:ap" open arospkg
+rc=0
+apkg 0.4.1
+  abi     v0
+  binary  418f5219a4ee6d200463be892a365adf82bb0a4552f260d768064e5cbb4a3718
+  source  57601a97a49e4533
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+== remove ==
+Removing arospkg 0.4.1
+
+Removed arospkg 0.4.1
+rc=0
+Directory "RAM:ap" on Thursday 10/08/26:
+db                           Dir ---rwed Today       19:18:53
+cache                        Dir ---rwed Today       19:18:52
+tmp                          Dir ---rwed Today       19:18:53
+3 directories - 3 blocks used
+Thursday 08-Oct-26 19:18:53
+== end ==

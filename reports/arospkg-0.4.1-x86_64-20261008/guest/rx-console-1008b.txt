@@ -1,0 +1,167 @@
+== versions ==
+apkg 0.4.1
+  abi     v11
+  binary  4d86b342e375c51b368e2ce0fa56b2253e64b5530b716dddcbd594076e789912
+  source  57601a97a49e4533
+  cc      10.5.0
+  tc      /Users/tumash/Work/AROS/toolchain
+  sdk     /Users/tumash/Work/AROS/sdk
+  tls     Mbed TLS 3.6.7
+PASS assert-hash RAM:rel/arospkg-0.4.1.x86_64-aros-v11/Examples/ARexx/Upgrade.rexx
+== install 0.1.0 from the old catalogue ==
+Installing limpet 0.1.0-aros1
+Downloading 3490 KiB
+Verifying archive
+Installing files
+
+Installed limpet 0.1.0-aros1
+  Location: RAM:rl/limpet
+  Open folder: apkg --root "RAM:rl" open limpet
+rc=0
+PASS assert-hash RAM:rl/limpet/Limpet
+PASS assert-hash RAM:rl/limpet/Themes/light.theme
+== apkg update (public catalogue) ==
+Updating the package catalogue
+
+Updated the package catalogue: 110 packages for this system
+  43 more are for other systems (apkg --all-abi search)
+limpet 0.2.0-aros1
+  Terminal for the AROS Shell: Unicode, colour, scrollback, reflow
+  category:     utility/shell
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3495 KB from https://github.com/tomaszstaniak/limpet/releases/download/v0.2.0/Limpet-0.2.0-abiv11.zip
+  sha256:       15d13d87c9774dfa2cca95adc0ef5384bfe92e1928cc5179d7b5aab1b5f42e56
+  source:       https://github.com/tomaszstaniak/limpet
+  requirements: satisfied, probed now:
+    freetype2.library: satisfied (already open, version 6)
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    0.1.0-aros1 (x86_64), in RAM:rl/limpet, since 2026-10-08T18:43:06Z
+  upgrade:      available, 0.1.0-aros1 -> 0.2.0-aros1
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
+== setup done ==
+rx cancel rc=5
+== check after-cancel ==
+Limpet 0.1
+PASS assert-hash RAM:rl/limpet/Themes/light.theme
+limpet: 14 as installed, 1 changed locally, 0 missing, 0 not the package's; drawer icon ours
+ok                 Fonts/NotoEmoji.ttf
+ok                 Fonts/Unifont.otf
+ok                 LICENSE.txt
+ok                 Licenses/HarfBuzz-COPYING.txt
+ok                 Licenses/NotoEmoji-OFL.txt
+ok                 Licenses/Unicode-3.0.txt
+ok                 Licenses/Unifont-COPYING.txt
+ok                 Licenses/Unifont-OFL-1.1.txt
+ok                 Licenses/utf8proc-LICENSE.md
+ok                 Limpet
+ok                 Limpet.info
+ok                 README.txt
+ok                 Themes/dark.theme
+ok                 Themes/high-contrast.theme
+changed locally    Themes/light.theme
+{
+  "schema":1,
+  "name":"limpet",
+  "version":"0.1.0",
+  "revision":1,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Limpet",
+  "installed":"2026-10-08T18:43:06Z",
+  "origin":"https://github.com/tomaszstaniak/limpet/releases/download/v0.1.0/Limpet-0.1.0-abiv11.zip",
+  "archive_sha256":"668ba57e97d204896f23c7604fd1ee38b469f9b2bf566b56742b83b84fa339a0",
+  "archive_size":3574025,
+  "reason":"explicit",
+  "dir":"limpet",
+  "requires_system": [
+    { "type":"library", "id":"freetype2.library", "min_version":0, "state":"satisfied", "found_version":6, "checked":"already open, version 6" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"m.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"63231a5711e2a7a5e1443c91cc44d12dd744d272812ad4814f3ad0871eab7477", "size":10114, "member":"Limpet.info" },
+  "previous": { "registry":"", "archive":"" },
+  "contents": [
+    { "path":"Licenses/utf8proc-LICENSE.md", "sha256":"3b510150d34f248a221bb88e1d811238d6c6c18b51231822c42974c39bb07256", "size":5125 },
+    { "path":"Licenses/Unifont-COPYING.txt", "sha256":"cd2785c2b8e0a01d203560265b2d2d47cdb1401d2707d25918ac5531bcdba947", "size":48441 },
+    { "path":"Licenses/Unifont-OFL-1.1.txt", "sha256":"869692af094c57fb7258c57fe26820c759319603321d0ffeb278de3651763ded", "size":4340 },
+    { "path":"Licenses/NotoEmoji-OFL.txt", "sha256":"500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b", "size":4330 },
+    { "path":"Licenses/Unicode-3.0.txt", "sha256":"e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96", "size":1995 },
+    { "path":"Licenses/HarfBuzz-COPYING.txt", "sha256":"ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64", "size":1971 },
+    { "path":"Limpet.info", "sha256":"63231a5711e2a7a5e1443c91cc44d12dd744d272812ad4814f3ad0871eab7477", "size":10114 },
+    { "path":"Limpet", "sha256":"04457259597908a0e87bcfde7ab68eda07247dba56947d96c69fac508ad8aa6e", "size":3190280 },
+    { "path":"README.txt", "sha256":"0e24da636549f686084aa61e38b11ab6211d05d6fdefe0729dbfffc113e712d9", "size":5597 },
+    { "path":"LICENSE.txt", "sha256":"41c4a48185ebb6ba44f1d6eed8c171f86eb88f0fcd3e420a58660d8e75a5ae76", "size":1194 },
+    { "path":"Fonts/Unifont.otf", "sha256":"26071c5a97533cefdcbc6b0645e7ee279413049079f09f592b26916ca6c21bf5", "size":5321400 },
+    { "path":"Fonts/NotoEmoji.ttf", "sha256":"de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551", "size":1982596 },
+    { "path":"Themes/high-contrast.theme", "sha256":"d4c2963c8408173b4d0e8c813770459dd9ab85e2cd1fa2caa771697f6ff3f8b0", "size":325 },
+    { "path":"Themes/dark.theme", "sha256":"fed998e8a7ce8336f6c3ae0ff70da474da3c207df4f9782061bd321ceca6b017", "size":156 },
+    { "path":"Themes/light.theme", "sha256":"365dba129e4cb88e6d9ebeb87bb6734bb9124f9f15f2abb67e6108e9491ed068", "size":407 }
+  ]
+}
+rx proceed rc=0
+== check after-proceed ==
+Limpet 0.2
+PASS assert-hash RAM:rl/limpet/Themes/light.theme
+limpet: 14 as installed, 1 changed locally, 0 missing, 0 not the package's; drawer icon ours
+ok                 Fonts/NotoEmoji.ttf
+ok                 Fonts/Unifont.otf
+ok                 LICENSE.txt
+ok                 Licenses/HarfBuzz-COPYING.txt
+ok                 Licenses/NotoEmoji-OFL.txt
+ok                 Licenses/Unicode-3.0.txt
+ok                 Licenses/Unifont-COPYING.txt
+ok                 Licenses/Unifont-OFL-1.1.txt
+ok                 Licenses/utf8proc-LICENSE.md
+ok                 Limpet
+ok                 Limpet.info
+ok                 README.txt
+ok                 Themes/dark.theme
+ok                 Themes/high-contrast.theme
+changed locally    Themes/light.theme
+{
+  "schema":1,
+  "name":"limpet",
+  "version":"0.2.0",
+  "revision":1,
+  "arch":"x86_64",
+  "abi":"v11",
+  "subdir":"Limpet",
+  "installed":"2026-10-08T18:48:45Z",
+  "origin":"https://github.com/tomaszstaniak/limpet/releases/download/v0.2.0/Limpet-0.2.0-abiv11.zip",
+  "archive_sha256":"15d13d87c9774dfa2cca95adc0ef5384bfe92e1928cc5179d7b5aab1b5f42e56",
+  "archive_size":3577972,
+  "reason":"explicit",
+  "dir":"limpet",
+  "requires_system": [
+    { "type":"library", "id":"freetype2.library", "min_version":0, "state":"satisfied", "found_version":6, "checked":"already open, version 6" },
+    { "type":"library", "id":"crt.library", "min_version":0, "state":"satisfied", "found_version":5, "checked":"already open, version 5" },
+    { "type":"library", "id":"m.library", "min_version":0, "state":"satisfied", "found_version":1, "checked":"already open, version 1" },
+    { "type":"library", "id":"stdlib.library", "min_version":0, "state":"satisfied", "found_version":3, "checked":"already open, version 3" }
+  ],
+  "icon": { "state":"installed", "sha256":"63231a5711e2a7a5e1443c91cc44d12dd744d272812ad4814f3ad0871eab7477", "size":10114, "member":"Limpet.info" },
+  "previous": { "registry":"RAM:rl/db/previous/limpet.json", "archive":"RAM:rl/cache/previous/limpet.zip" },
+  "contents": [
+    { "path":"Licenses/utf8proc-LICENSE.md", "sha256":"3b510150d34f248a221bb88e1d811238d6c6c18b51231822c42974c39bb07256", "size":5125 },
+    { "path":"Licenses/Unifont-COPYING.txt", "sha256":"cd2785c2b8e0a01d203560265b2d2d47cdb1401d2707d25918ac5531bcdba947", "size":48441 },
+    { "path":"Licenses/Unifont-OFL-1.1.txt", "sha256":"869692af094c57fb7258c57fe26820c759319603321d0ffeb278de3651763ded", "size":4340 },
+    { "path":"Licenses/NotoEmoji-OFL.txt", "sha256":"500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b", "size":4330 },
+    { "path":"Licenses/Unicode-3.0.txt", "sha256":"e7a93b009565cfce55919a381437ac4db883e9da2126fa28b91d12732bc53d96", "size":1995 },
+    { "path":"Licenses/HarfBuzz-COPYING.txt", "sha256":"ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64", "size":1971 },
+    { "path":"Limpet.info", "sha256":"63231a5711e2a7a5e1443c91cc44d12dd744d272812ad4814f3ad0871eab7477", "size":10114 },
+    { "path":"Limpet", "sha256":"3ff6b5d399a1ee17a7050ff92c1f48bd437ef7c548cf5297317ce80c525adc25", "size":3199064 },
+    { "path":"README.txt", "sha256":"f3ead5ef5bb183bdbae1a44bcca6c070b9fbd787ad1e8aca65a5e6c4c3164d67", "size":6748 },
+    { "path":"LICENSE.txt", "sha256":"41c4a48185ebb6ba44f1d6eed8c171f86eb88f0fcd3e420a58660d8e75a5ae76", "size":1194 },
+    { "path":"Fonts/Unifont.otf", "sha256":"26071c5a97533cefdcbc6b0645e7ee279413049079f09f592b26916ca6c21bf5", "size":5321400 },
+    { "path":"Fonts/NotoEmoji.ttf", "sha256":"de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551", "size":1982596 },
+    { "path":"Themes/high-contrast.theme", "sha256":"d4c2963c8408173b4d0e8c813770459dd9ab85e2cd1fa2caa771697f6ff3f8b0", "size":325 },
+    { "path":"Themes/dark.theme", "sha256":"fed998e8a7ce8336f6c3ae0ff70da474da3c207df4f9782061bd321ceca6b017", "size":156 },
+    { "path":"Themes/light.theme", "sha256":"365dba129e4cb88e6d9ebeb87bb6734bb9124f9f15f2abb67e6108e9491ed068", "size":407 }
+  ]
+}
+== hashes ==
+PASS assert-hash RAM:rl/limpet/Limpet
+== end ==
