@@ -1,0 +1,16 @@
+limpet 0.2.1-aros1
+  Terminal for the AROS Shell: Unicode, colour, scrollback, reflow
+  category:     utility/shell
+  target:       x86_64, ABI v11
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     3558 KB from https://github.com/tomaszstaniak/limpet/releases/download/v0.2.1/Limpet-0.2.1-abiv11.zip
+  sha256:       71dee9c638ba7676e8089f75d65511b71df9d066e0436feabd75ee27230c768d
+  source:       https://github.com/tomaszstaniak/limpet
+  requirements: satisfied, probed now:
+    freetype2.library: satisfied (already open, version 6)
+    crt.library: satisfied (already open, version 5)
+    m.library: satisfied (already open, version 1)
+    stdlib.library: satisfied (already open, version 3)
+  installed:    0.2.0-aros1 (x86_64), in RAM:lu/limpet, since 2026-10-11T09:01:32Z
+  upgrade:      available, 0.2.0-aros1 -> 0.2.1-aros1
+  roll back:    no -- no upgrade of this package is recorded, or its record is gone
