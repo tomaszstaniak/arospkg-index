@@ -1,25 +1,26 @@
-# Limpet 0.2.1. Our own program, published by its author as a GitHub
-# release asset (tag v0.2.1): 0.2.0 with HarfBuzz 14.5.0 instead of 11.2.1.
+# Limpet 0.3.0. Our own program, published by its author as a GitHub
+# release asset (tag v0.3.0): window title, Ctrl-R history search, Ctrl-C
+# and inline-image fixes.
 #
-# Same archive layout as 0.2.0 (checked on the release asset 2026-10-11):
+# Same archive layout as 0.2.1 (checked on the release asset 2026-10-11):
 # Limpet/ with the program, README.txt, fonts, themes and licences, plus
 # Limpet.info beside it; only Limpet/Limpet and Limpet/README.txt differ.
-# The terminal was tested on AROS One 1.3 x86_64 under QEMU from this
-# archive (aros-xterm doc/verification-0.2.1.md).
-# apkg upgrade from 0.2.0: reports/limpet-0.2.1-x86_64-20261011/.
-# 0.2.0 entry: approved 2026-10-08; 0.1.0 entry: approved 2026-10-04.
+# The terminal was tested on AROS One 1.3 x86_64 under QEMU with this
+# program (aros-xterm doc/verification-0.3.0.md).
+# apkg upgrade from 0.2.1: reports/limpet-0.3.0-x86_64-20261011/.
+# 0.2.1 entry: approved 2026-10-11; 0.2.0: 2026-10-08; 0.1.0: 2026-10-04.
 
 status          = "approved"
 id              = "limpet"
-version         = "0.2.1"
+version         = "0.3.0"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.2.1/Limpet-0.2.1-abiv11.zip"
-size            = 3642491
-sha256          = "71dee9c638ba7676e8089f75d65511b71df9d066e0436feabd75ee27230c768d"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.3.0/Limpet-0.3.0-abiv11.zip"
+size            = 3648767
+sha256          = "7e2514029e0e6fadc7d331ceeb817df4b7f780dfed12409f347cf244d8a31676"
 kind            = "app"
 
 depends         = []
@@ -27,7 +28,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]        # 0.2.1 started from its archive 2026-10-11
+runs_on         = ["aros-one"]        # 0.3.0 started after apkg upgrade 2026-10-11
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # Libraries the binary opens that AROS One supplies. The system fonts
@@ -50,5 +51,5 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.2.1"
+revision   = "v0.3.0"
 built_with = "abiv11-x86_64, GCC 10.5.0"

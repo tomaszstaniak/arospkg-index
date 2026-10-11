@@ -1,0 +1,5 @@
+Removing limpet 0.3.0-aros1
+
+Removed limpet 0.3.0-aros1
+  Kept files in RAM:lu/limpet:
+    Themes/light.theme (you changed it)
