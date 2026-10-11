@@ -236,6 +236,76 @@
       "install": {}
     },
     {
+      "id": "arospkg",
+      "version": "0.4.2",
+      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "arch": "i386",
+      "abi": "v0",
+      "category": "utility/system",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.2/arospkg-0.4.2.i386-aros-v0.zip",
+      "size": 311192,
+      "sha256": "a50c121af16aabfd07436ce011b1e4a393c978dca2d4d76375243ae6b2c3bbe8",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "arospkg-0.4.2.i386-aros-v0",
+      "icon": "",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/arospkg",
+      "license": "MIT"
+    },
+    {
+      "id": "arospkg",
+      "version": "0.4.2",
+      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "utility/system",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.2/arospkg-0.4.2.x86_64-aros-v11.zip",
+      "size": 741579,
+      "sha256": "5536075b79e568776ff33979b17f0cbdc29a838ff341d400dd56aba420d0aa12",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [],
+      "does_not_run_on": [
+        "mainline-x86_64"
+      ],
+      "kind": "app",
+      "subdir": "arospkg-0.4.2.x86_64-aros-v11",
+      "icon": "",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/arospkg",
+      "license": "MIT"
+    },
+    {
       "id": "arrakis",
       "version": "1.0",
       "summary": "Arrakis demo x86_64 by Kakiarts/trbl",
