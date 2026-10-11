@@ -1,0 +1,28 @@
+Directory "RAM:lu" on Sunday 10/11/26:
+db                           Dir ---rwed Today       09:05:15
+cache                        Dir ---rwed Today       09:01:38
+tmp                          Dir ---rwed Today       09:05:15
+3 directories - 3 blocks used
+Directory "RAM:lu/db" on Sunday 10/11/26:
+installed                    Dir ---rwed Today       09:01:38
+transactions                 Dir ---rwed Today       09:05:15
+doctor                       Dir ---rwed Today       09:01:25
+index.json                136385 ---rwed Today       09:01:27
+previous                     Dir ---rwed Today       09:01:38
+1 file - 4 directories - 271 blocks used
+Directory "RAM:lu/db/installed" is empty
+Directory "RAM:lu/db/transactions" is empty
+Directory "RAM:lu/db/doctor" is empty
+Directory "RAM:lu/db/previous" on Sunday 10/11/26:
+limpet.json                 3175 ---rwed Today       09:01:38
+1 file - 7 blocks used
+Directory "RAM:lu/cache" on Sunday 10/11/26:
+limpet.zip               3642491 ---rwed Today       09:01:36
+previous                     Dir ---rwed Today       09:01:38
+1 file - 1 directory - 7116 blocks used
+Directory "RAM:lu/cache/previous" on Sunday 10/11/26:
+limpet.zip               3577972 ---rwed Today       09:01:31
+1 file - 6989 blocks used
+Directory "RAM:lu/tmp" is empty
+
+TOTAL: 4 files - 8 directories - 14386 blocks used
