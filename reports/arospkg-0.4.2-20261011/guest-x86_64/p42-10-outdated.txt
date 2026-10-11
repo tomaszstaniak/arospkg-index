@@ -1,0 +1,7 @@
+Status for installed packages
+Catalogue updated 2026-10-11 18:02
+  Package  Installed      Available      State
+  arospkg  0.4.2          0.4.2          up to date
+
+No updates: the catalogue offers nothing newer for the 1 installed package.
+rc=0

@@ -1,0 +1,6 @@
+arospkg              0.4.2      x86_64    Package manager for AROS: find, install, open and remove programs
+
+1 package(s) hidden: built for another CPU or ABI, or for one this
+client cannot judge, so not known to run here. apkg show <id> says
+why; --all-abi lists them.
+rc=0

@@ -1,0 +1,15 @@
+apkg 0.4.1
+  Location: RAM Disk:su/apkg
+  Latest stable release: 0.4.2 (x86_64-aros-v11)
+
+Updating apkg 0.4.1 to 0.4.2
+Downloading arospkg-0.4.2.x86_64-aros-v11.zip
+Verifying archive
+Installing apkg
+
+Updated apkg to 0.4.2
+  Location: RAM Disk:su/apkg
+  Previous version: RAM Disk:su/apkg.old
+  The new version runs from the next apkg command.
+  PkgManager is updated separately, from the release archive.
+rc=0
