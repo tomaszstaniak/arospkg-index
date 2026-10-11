@@ -1,0 +1,6 @@
+Failat 30
+APK:apkg --root RAM:lu --index RAM:x/test-index.json remove limpet >RESULTS:u031-20-remove.txt
+Echo >RESULTS:u031-20-rc.txt "rc=$RC"
+List RAM:lu ALL LFORMAT "%p%n" >RESULTS:u031-21-after.txt
+APK:apkg --root RAM:lu --index RAM:x/test-index.json list >RESULTS:u031-22-list.txt
+Echo >RESULTS:u031-23-done.txt done
