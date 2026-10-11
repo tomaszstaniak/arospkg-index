@@ -1,0 +1,6 @@
+apkg 0.4.1
+  Location: RAM Disk:su/apkg
+  Latest stable release: 0.4.2 (i386-aros-v0)
+
+A newer release is available. Install it with: apkg self-update
+rc=0

@@ -1,0 +1,17 @@
+arospkg: 15 as installed, 0 changed locally, 0 missing, 0 not the package's; drawer icon none
+ok                 BUILD.txt
+ok                 Examples/ARexx/Install.rexx
+ok                 Examples/ARexx/InstallWatch.rexx
+ok                 Examples/ARexx/IsInstalled.rexx
+ok                 Examples/ARexx/ShowPackage.rexx
+ok                 Examples/ARexx/Upgrade.rexx
+ok                 LICENSE
+ok                 PkgManager
+ok                 README.txt
+ok                 apkg
+ok                 licenses/MbedTLS-3.6.7-LICENSE
+ok                 licenses/aros-xterm-client-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE
+ok                 licenses/jitterentropy-3.7.0-LICENSE.bsd
+ok                 licenses/zlib-LICENSE
+rc=0

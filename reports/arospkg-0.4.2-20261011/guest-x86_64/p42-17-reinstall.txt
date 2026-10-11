@@ -1,0 +1,7 @@
+Installing arospkg 0.4.2
+Verifying archive
+Installing files
+
+Installed arospkg 0.4.2
+  Location: RAM:cat/arospkg
+  Open folder: apkg --root "RAM:cat" open arospkg

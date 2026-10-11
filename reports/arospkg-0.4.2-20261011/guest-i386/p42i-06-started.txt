@@ -1,0 +1,9 @@
+apkg 0.4.2
+  abi     v0
+  binary  3fe5cd4de744e7b79bffa4a6e08efd9c1cc4b35b1bc4de513a8bf50985b0a459
+  source  bd5f223f3a573254
+  cc      6.5.0
+  tc      /Volumes/arosabiv0/toolchain-abiv0-i386
+  sdk     /Volumes/arosabiv0/pc-i386/bin/pc-i386/AROS/Development
+  tls     Mbed TLS 3.6.7
+rc=0

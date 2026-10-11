@@ -1,0 +1,2 @@
+RAM:old/arospkg-0.4.2.x86_64-aros-v11/apkg: object not found
+rc=0
