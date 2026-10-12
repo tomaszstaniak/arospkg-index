@@ -1,0 +1,30 @@
+; After publication: self-update, install through the candidate catalogue,
+; apkg 0.3.2 with index.json. Results RESULTS:p50-*
+failat 21
+makedir RAM:su
+copy SYS:P5/o42/apkg RAM:su/apkg
+protect RAM:su/apkg +e
+RAM:su/apkg --version >RESULTS:p50-01-old-version.txt
+RAM:su/apkg --root RAM:sr self-update --check >RESULTS:p50-02-check.txt
+echo "rc $RC" >>RESULTS:p50-02-check.txt
+RAM:su/apkg --root RAM:sr self-update >RESULTS:p50-03-selfupdate.txt
+echo "rc $RC" >>RESULTS:p50-03-selfupdate.txt
+RAM:su/apkg --version >RESULTS:p50-04-new-version.txt
+RAM:su/apkg --root RAM:cat --index SYS:P5/idx-v2.json show arospkg >RESULTS:p50-05-show.txt
+RAM:su/apkg --root RAM:cat --index SYS:P5/idx-v2.json install arospkg >RESULTS:p50-06-install.txt
+echo "rc $RC" >>RESULTS:p50-06-install.txt
+RAM:su/apkg --root RAM:cat verify arospkg >RESULTS:p50-07-verify.txt
+RAM:su/apkg --root RAM:cat run --check arospkg >RESULTS:p50-08-run-check.txt
+RAM:cat/arospkg/apkg --version >RESULTS:p50-09-installed-version.txt
+RAM:su/apkg --root RAM:cat run arospkg >RESULTS:p50-10-run.txt
+echo "rc $RC" >>RESULTS:p50-10-run.txt
+makedir RAM:old
+copy SYS:P5/o32/apkg RAM:old/apkg
+protect RAM:old/apkg +e
+RAM:old/apkg --version >RESULTS:p50-20-v032.txt
+RAM:old/apkg --root RAM:oc --index SYS:P5/idx-old.json search arospkg >RESULTS:p50-21-old-search.txt
+RAM:old/apkg --root RAM:oc --index SYS:P5/idx-old.json install arospkg >RESULTS:p50-22-old-install.txt
+echo "rc $RC" >>RESULTS:p50-22-old-install.txt
+RAM:oc/arospkg/apkg --version >RESULTS:p50-23-old-installed-version.txt
+RAM:old/apkg --root RAM:oc --index SYS:P5/idx-old.json search game >RESULTS:p50-24-old-search-game.txt
+echo "done" >RESULTS:p50-99-done.txt
