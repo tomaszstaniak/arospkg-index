@@ -5,7 +5,7 @@
 # Run and input from NIL:, stack 40960 bytes: it showed its own message that
 # it cannot find its data directory, and returned 1. The game data is not
 # part of the package; that message was checked, the game itself was not
-# played. Evidence: reports/2026-09-29-bulk/ (batch s02).
+# played.  (batch s02).
 
 status          = "approved"
 id              = "stratagus"

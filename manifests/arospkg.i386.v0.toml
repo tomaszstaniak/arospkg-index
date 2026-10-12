@@ -2,8 +2,8 @@
 # release asset: apkg (command line).
 #
 # 0.5.0 adds apkg run. Tested on AROS i386 ABIv0 under QEMU (pool slot
-# v0-2) on 2026-10-12 (arospkg docs/evidence/2026-10-12-050). Installed
-# through this entry and started: reports/arospkg-0.5.0-20261012.
+# v0-2) on 2026-10-12 . Installed
+# through this entry and started.
 # 0.4.2 entry: approved 2026-10-11; 0.4.1: 2026-10-08; 0.4.0: 2026-10-04.
 
 status          = "approved"

@@ -1,4 +1,0 @@
-Removing arospkg 0.4.2
-
-Removed arospkg 0.4.2
-rc=0

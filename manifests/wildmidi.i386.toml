@@ -3,8 +3,8 @@
 # Installed, started and removed on AROS One 2.9 i386 (ABIv0) under QEMU
 # with KVM, with apkg 0.3.1 for i386. Started from
 # SYS:Batch/wildmidi/Wildmidi with Run and input from NIL:, stack 262144
-# bytes: it printed its usage or output and returned 1. Evidence:
-# reports/2026-10-03-i386/ (batch w02).
+# bytes: it printed its usage or output and returned 1. Evidence.
+#  (batch w02).
 
 status          = "approved"
 id              = "wildmidi"

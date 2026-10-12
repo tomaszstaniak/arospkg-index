@@ -4,7 +4,7 @@
 # with KVM, with apkg 0.3.1 for i386. Started from
 # SYS:Batch/opentyrian/OpenTyrian2.1/opentyrian with Run and input from
 # NIL:, stack 262144 bytes: its window or screen was open and the process
-# was running after 15 s. Evidence: reports/2026-10-03-i386/ (batch w05).
+# was running after 15 s.  (batch w05).
 
 status          = "approved"
 id              = "opentyrian"

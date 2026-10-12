@@ -5,7 +5,7 @@
 # with Run and input from NIL:, stack 40960 bytes: it showed its own message
 # that no IWAD was found, and returned 0. The game data is not part of the
 # package; that message was checked, the game itself was not played.
-# Evidence: reports/2026-09-29-bulk/ (batch r02).
+#  (batch r02).
 
 status          = "approved"
 id              = "prboom-plus"

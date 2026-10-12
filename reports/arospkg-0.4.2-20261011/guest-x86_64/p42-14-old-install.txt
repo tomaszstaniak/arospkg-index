@@ -1,5 +1,0 @@
-fetching https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.2/arospkg-0.4.2.x86_64-aros-v11.zip
-  redirect -> https://release-assets.githubusercontent.com/github-production-release-asset/1394804833/843097b7-f417-498b-b13f-c380586bca70?(signed query removed)
-verified and cached RAM:old/cache/arospkg.zip
-installed arospkg
-rc=0

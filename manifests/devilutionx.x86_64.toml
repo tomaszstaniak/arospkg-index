@@ -5,8 +5,8 @@
 # with Run and input from NIL:, stack 1000000 bytes: it showed its own
 # message that it cannot open its main data archive (diabdat.mpq or
 # spawn.mpq). The game data is not part of the package; that message was
-# checked, the game itself was not played. Evidence:
-# reports/2026-09-29-bulk/ (batch c09).
+# checked, the game itself was not played. Evidence.
+#  (batch c09).
 
 status          = "approved"
 id              = "devilutionx"

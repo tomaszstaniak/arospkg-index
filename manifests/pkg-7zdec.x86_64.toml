@@ -3,7 +3,7 @@
 # Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
 # with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/pkg-7zdec with
 # Run and input from NIL:, stack 40960 bytes: it printed its usage or output
-# and returned 0. Evidence: reports/2026-09-29-bulk/ (batch s04).
+# and returned 0.  (batch s04).
 
 status          = "approved"
 id              = "pkg-7zdec"

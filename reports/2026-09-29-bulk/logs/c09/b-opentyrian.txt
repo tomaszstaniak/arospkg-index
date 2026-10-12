@@ -1,5 +1,0 @@
-==== opentyrian: OpenTyrian, stack 300000
-Tuesday 29-Sep-26 17:42:32
-opentyrian: not installed, not started
-after Ctrl-C (empty means it has ended):
-Tuesday 29-Sep-26 17:42:36

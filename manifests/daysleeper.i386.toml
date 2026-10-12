@@ -4,7 +4,7 @@
 # with KVM, with apkg 0.3.1 for i386. Started from
 # SYS:Batch/daysleeper/Daysleeper with Run and input from NIL:, stack 262144
 # bytes: its window or screen was open and the process was running after 15
-# s. Evidence: reports/2026-10-03-i386/ (batch w03).
+# s.  (batch w03).
 
 status          = "approved"
 id              = "daysleeper"

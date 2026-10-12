@@ -1,9 +1,0 @@
-Installing arospkg 0.5.0
-Downloading 834 KiB
-Verifying archive
-Installing files
-
-Installed arospkg 0.5.0
-  Location: RAM:cat/arospkg
-  Open folder: apkg --root "RAM:cat" open arospkg
-rc 0

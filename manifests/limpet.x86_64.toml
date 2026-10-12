@@ -2,12 +2,12 @@
 # release asset (tag v0.3.0): window title, Ctrl-R history search, Ctrl-C
 # and inline-image fixes.
 #
-# Same archive layout as 0.2.1 (checked on the release asset 2026-10-11):
+# Same archive layout as 0.2.1 (checked on the release asset 2026-10-11).
 # Limpet/ with the program, README.txt, fonts, themes and licences, plus
 # Limpet.info beside it; only Limpet/Limpet and Limpet/README.txt differ.
 # The terminal was tested on AROS One 1.3 x86_64 under QEMU with this
 # program (aros-xterm doc/verification-0.3.0.md).
-# apkg upgrade from 0.2.1: reports/limpet-0.3.0-x86_64-20261011/.
+# apkg upgrade from 0.2.1.
 # 0.2.1 entry: approved 2026-10-11; 0.2.0: 2026-10-08; 0.1.0: 2026-10-04.
 
 status          = "approved"

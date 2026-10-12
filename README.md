@@ -3,10 +3,8 @@
 The package index for [arospkg](https://github.com/tomaszstaniak/arospkg), a
 package manager for AROS.
 
-This repository holds **metadata only**. It contains no binaries and never
-will: packages are downloaded from [AROS
-Archives](https://archives.arosworld.org), which remains the only place the
-software itself lives. Nothing here is mirrored from there.
+This repository holds package metadata. Application archives remain at their
+publisher's URL, such as AROS Archives or GitHub Releases; they are not mirrored here.
 
 ## What is in here
 
@@ -16,8 +14,8 @@ software itself lives. Nothing here is mirrored from there.
   lists, kept up to date, within the 8192 JSON values those clients read.
 - `manifests/`: one file per approved package build, `<id>.<arch>.<abi>.toml`
   (older ones `<id>.<arch>.toml`). This is
-  the only copy of the approved manifests; the arospkg repository keeps the
-  tools and the candidates that have not been reviewed yet.
+  the source of truth for approved manifests. The arospkg repository provides
+  tools for generating and reviewing candidates locally.
 
 - `overrides/`: a maintainer's deliberate corrections to an author's entry,
   under the manifest's file name, applied whenever the catalogue is made.
@@ -33,18 +31,10 @@ recorded its SHA-256, looked inside it to establish what the package actually
 installs, and formed a view on its dependencies. An entry that has not had that
 done to it is not here.
 
-**Since 2026-09-20, approval also requires that the package has been started.**
-Every entry here was installed by `pkg`, started, and removed again on the
-system it is built for: AROS One 1.3 x86_64 for the x86_64 entries, AROS One
-2.9 32-bit for the i386 ones. A hash and a clean unpack do not qualify a
-package: they say the archive arrived intact, not that the program runs. "Started" means it opened
-its window or printed its output and was still running; it is not a claim that
-every feature works.
-
-That is why this index is small. The AROS Archives catalogue holds 1895
-entries, of which 168 are built for x86_64 or aarch64. But a candidate is not
-an installable package, and publishing a list of things that fail to install
-would be worse than publishing a short list that works.
+Runtime coverage varies by package and platform. Read the manifest's installs_on,
+runs_on and does_not_run_on fields; an archive hash verifies its contents, not
+whether the application runs. Experimental entries must describe their actual
+validation status. Internal run logs are kept outside this repository.
 
 ## ABIv1 and ABIv11
 

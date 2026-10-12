@@ -1,2 +1,0 @@
-job 1: confirm or cancel the upgrade of limpet in PkgManager
-declined in PkgManager; nothing changed

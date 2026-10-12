@@ -4,8 +4,8 @@
 # with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/openxcom with
 # Run and input from NIL:, stack 40960 bytes: it showed its own message that
 # no X-COM installation was found. The game data is not part of the package;
-# that message was checked, the game itself was not played. Evidence:
-# reports/2026-09-29-bulk/ (batch r05).
+# that message was checked, the game itself was not played. Evidence.
+#  (batch r05).
 
 status          = "approved"
 id              = "openxcom"

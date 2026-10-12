@@ -1,5 +1,0 @@
-Directory "RAM:su" on Sunday 10/11/26:
-apkg.old                  983448 ---rwed Today       18:04:40
-apkg                     1024040 ---rwed Today       18:05:02
-2 files - 3922 blocks used
-rc=0

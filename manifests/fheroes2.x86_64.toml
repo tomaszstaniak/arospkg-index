@@ -5,7 +5,7 @@
 # Run and input from NIL:, stack 200000 bytes: it showed its own message
 # that its data files were not found. The game data is not part of the
 # package; that message was checked, the game itself was not played.
-# Evidence: reports/2026-09-29-bulk/ (batch r01).
+#  (batch r01).
 
 status          = "approved"
 id              = "fheroes2"

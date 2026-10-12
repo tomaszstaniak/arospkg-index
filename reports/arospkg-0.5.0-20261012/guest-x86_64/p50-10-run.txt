@@ -1,2 +1,0 @@
-Started arospkg from its icon (stack 65536 bytes from PkgManager.info).
-rc 0

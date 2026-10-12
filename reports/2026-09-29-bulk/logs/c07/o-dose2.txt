@@ -1,3 +1,0 @@
-dose2 by mfx [-WIDTHxHEIGHT -fullscreen -stretch -nofill] 
-will display in: 640x480 windowed
-fps:1192

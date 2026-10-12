@@ -5,7 +5,7 @@
 # and input from NIL:, stack 2000000 bytes: it showed its own message that
 # it cannot find a Hexen II installation. The game data is not part of the
 # package; that message was checked, the game itself was not played.
-# Evidence: reports/2026-09-29-bulk/ (batch r01).
+#  (batch r01).
 
 status          = "approved"
 id              = "hexen2"

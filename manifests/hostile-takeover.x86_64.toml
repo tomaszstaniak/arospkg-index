@@ -4,7 +4,7 @@
 # with KVM, with apkg 0.3 (40c2ba93). Started from
 # SYS:Batch/hostile-takeover with Run and input from NIL:, stack 40960
 # bytes: its window or screen was open and the process was running after 15
-# s. Evidence: reports/2026-09-29-bulk/ (batch r02).
+# s.  (batch r02).
 
 status          = "approved"
 id              = "hostile-takeover"

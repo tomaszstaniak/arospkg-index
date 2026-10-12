@@ -1,3 +1,0 @@
-HivelyReplayer 0.2
-
-Usage: play_hvl <tune>

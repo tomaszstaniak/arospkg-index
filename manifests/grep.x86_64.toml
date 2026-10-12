@@ -3,7 +3,7 @@
 # Searches files for an AmigaDOS pattern. Matched lines in its own readme during the trial.
 #
 # Installed, started and removed on AROS One 1.3 x86_64 in QEMU; see
-# docs/reports/2026-09-19-v01/. A hash and a clean unpack do not qualify a
+# docs/ A hash and a clean unpack do not qualify a
 # package -- it has to have run.
 
 status          = "approved"
@@ -42,7 +42,7 @@ id   = "stdlib.library"
 # How it is started (docs/rfc/0002 in arospkg), for apkg 0.5 and later: a
 # Shell command. `apkg run grep -c data <file>` printed the count and passed
 # grep's return code on (0 with a match, 5 without) on AROS One 1.3 (QEMU
-# pool v11-2), 2026-10-12; evidence in reports/arospkg-0.5.0-20261012/.
+# pool v11-2), 2026-10-12; evidence in 
 [launch]
 executable = "Grep"
 mode       = "shell"

@@ -4,7 +4,7 @@
 # with KVM, with apkg 0.3.1 for i386. Started from SYS:Batch/alac/C/ALAC
 # with Run and input from NIL:, stack 262144 bytes: run on test input made
 # for it (see logs/w10/o-alac.txt), it returned 0 and wrote the expected
-# output. Evidence: reports/2026-10-03-i386/ (batch w10).
+# output.  (batch w10).
 
 status          = "approved"
 id              = "alac"

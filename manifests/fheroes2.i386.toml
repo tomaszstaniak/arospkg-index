@@ -5,7 +5,7 @@
 # SYS:Batch/fheroes2/fheroes2 with Run and input from NIL:, stack 262144
 # bytes: it showed its own message that its data files were not found. The
 # game data is not part of the package; that message was checked, the game
-# itself was not played. Evidence: reports/2026-10-03-i386/ (batch w05).
+# itself was not played.  (batch w05).
 
 status          = "approved"
 id              = "fheroes2"

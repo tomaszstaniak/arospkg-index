@@ -15,7 +15,7 @@
 #
 # Revision 4: approved 2026-09-26 after install, start and remove by apkg 0.2
 # (a513aea7) on AROS One 1.3 x86_64 (ABIv11) under QEMU.
-# Evidence: docs/reports/2026-09-26-catalogue/ in arospkg.
+# Evidence: docs/ in arospkg.
 
 status          = "approved"
 id              = "grafx2"
@@ -54,10 +54,10 @@ id   = "m.library"
 type = "library"
 id   = "stdlib.library"
 
-# How it is started (docs/rfc/0002 in arospkg), for apkg 0.5 and later:
+# How it is started (docs/rfc/0002 in arospkg), for apkg 0.5 and later.
 # from the program's icon, which carries the 8 MiB stack GrafX2 needs.
 # Started that way by `apkg run grafx2` on AROS One 1.3 (QEMU pool v11-2),
-# 2026-10-12; evidence in reports/arospkg-0.5.0-20261012/.
+# 2026-10-12; evidence in 
 [launch]
 executable = "GrafX2"
 mode       = "workbench"

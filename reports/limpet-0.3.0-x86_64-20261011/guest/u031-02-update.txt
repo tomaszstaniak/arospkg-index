@@ -1,6 +1,0 @@
-Updating the package catalogue
-Downloading 133 KiB
-
-Updated the package catalogue: 110 packages for this system
-  43 more are for other systems (apkg --all-abi search)
-No packages are installed.
