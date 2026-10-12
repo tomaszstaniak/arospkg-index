@@ -54,6 +54,14 @@ id   = "m.library"
 type = "library"
 id   = "stdlib.library"
 
+# How it is started (docs/rfc/0002 in arospkg), for apkg 0.5 and later:
+# from the program's icon, which carries the 8 MiB stack GrafX2 needs.
+# Started that way by `apkg run grafx2` on AROS One 1.3 (QEMU pool v11-2),
+# 2026-10-12; evidence in reports/arospkg-0.5.0-20261012/.
+[launch]
+executable = "GrafX2"
+mode       = "workbench"
+
 [source]
 repository = "https://github.com/tomaszstaniak/aros-grafx2"
 revision   = "v2.9-r5"

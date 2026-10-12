@@ -272,14 +272,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.4.2",
-      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "version": "0.5.0",
+      "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "i386",
       "abi": "v0",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.2/arospkg-0.4.2.i386-aros-v0.zip",
-      "size": 311192,
-      "sha256": "a50c121af16aabfd07436ce011b1e4a393c978dca2d4d76375243ae6b2c3bbe8",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.5.0/arospkg-0.5.0.i386-aros-v0.zip",
+      "size": 320845,
+      "sha256": "cc73007ad7517240c67c40f08cfe662ee6b95da6f4e16bbe6f824a6462b92e50",
       "depends": [],
       "requires_system": [
         {
@@ -295,7 +295,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.4.2.i386-aros-v0",
+      "subdir": "arospkg-0.5.0.i386-aros-v0",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -303,14 +303,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.4.2",
-      "summary": "Package manager for AROS: find, install, open and remove programs",
+      "version": "0.5.0",
+      "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.2/arospkg-0.4.2.x86_64-aros-v11.zip",
-      "size": 741579,
-      "sha256": "5536075b79e568776ff33979b17f0cbdc29a838ff341d400dd56aba420d0aa12",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.5.0/arospkg-0.5.0.x86_64-aros-v11.zip",
+      "size": 854414,
+      "sha256": "4fc6b9d91b505054cc3025562e2586fb7d5714b95ec01496da85a9c7c8a5aa3c",
       "depends": [],
       "requires_system": [
         {
@@ -334,11 +334,16 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "arospkg-0.4.2.x86_64-aros-v11",
+      "subdir": "arospkg-0.5.0.x86_64-aros-v11",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
-      "license": "MIT"
+      "license": "MIT",
+      "launch": {
+        "executable": "PkgManager",
+        "mode": "workbench",
+        "working_directory": "."
+      }
     },
     {
       "id": "arrakis",
@@ -1742,7 +1747,12 @@
       "post_install_notes": [
         "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
         "Opening external web links requires openurl.library."
-      ]
+      ],
+      "launch": {
+        "executable": "Folio",
+        "mode": "workbench",
+        "working_directory": "."
+      }
     },
     {
       "id": "ft2clone",
@@ -2156,7 +2166,12 @@
       "icon": "GrafX2.info",
       "install": {},
       "revision": 5,
-      "source": "https://github.com/tomaszstaniak/aros-grafx2"
+      "source": "https://github.com/tomaszstaniak/aros-grafx2",
+      "launch": {
+        "executable": "GrafX2",
+        "mode": "workbench",
+        "working_directory": "."
+      }
     },
     {
       "id": "grep",
@@ -2191,7 +2206,12 @@
       "kind": "app",
       "subdir": "Grep",
       "icon": "Grep.info",
-      "install": {}
+      "install": {},
+      "launch": {
+        "executable": "Grep",
+        "mode": "shell",
+        "working_directory": "."
+      }
     },
     {
       "id": "hexen2",

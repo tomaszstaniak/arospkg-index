@@ -1,0 +1,14 @@
+arospkg 0.5.0
+  Package manager for AROS: find, install, start, update and remove programs
+  category:     utility/system
+  target:       x86_64, ABI v11 (the index lists: aarch64/v1, i386/v0, x86_64/v11)
+  compatibility: native -- built for this machine: x86_64, ABIv11, current distributions such as AROS One
+  download:     835 KB from https://github.com/tomaszstaniak/arospkg/releases/download/v0.5.0/arospkg-0.5.0.x86_64-aros-v11.zip
+  sha256:       4fc6b9d91b505054cc3025562e2586fb7d5714b95ec01496da85a9c7c8a5aa3c
+  source:       https://github.com/tomaszstaniak/arospkg
+  license:      MIT
+  requirements: satisfied, probed now:
+    crt.library: satisfied (already open, version 5)
+    stdlib.library: satisfied (already open, version 3)
+    muimaster.library: satisfied (already open, version 19)
+  installed:    no

@@ -1,0 +1,10 @@
+apkg 0.4.2
+  Location: RAM Disk:su/apkg
+  Latest stable release: 0.5.0 (x86_64-aros-v11)
+
+A newer release is available. Install it with: apkg self-update
+  apkg self-update replaces only this apkg. PkgManager is a separate program:
+  take it from the release archive
+  (https://github.com/tomaszstaniak/arospkg/releases/latest), or use its "Check
+  for a newer version" in About.
+rc 0

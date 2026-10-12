@@ -1,0 +1,7 @@
+arospkg
+  State: can be started
+  Start: Workbench, from its icon
+  Program: RAM:cat/arospkg/PkgManager
+  Stack: 65536 bytes, from the program's icon
+  Requirements: satisfied
+  Starts from its icon, as a double-click would.
