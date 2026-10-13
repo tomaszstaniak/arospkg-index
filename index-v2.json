@@ -2906,14 +2906,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.3.0/Limpet-0.3.0-abiv11.zip",
-      "size": 3648767,
-      "sha256": "7e2514029e0e6fadc7d331ceeb817df4b7f780dfed12409f347cf244d8a31676",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.4.0/Limpet-0.4.0-abiv11.zip",
+      "size": 3653872,
+      "sha256": "49e606fd8609588524c6e69db5537707584965fa4dd08da9bb545609c435c64f",
       "depends": [],
       "requires_system": [
         {
