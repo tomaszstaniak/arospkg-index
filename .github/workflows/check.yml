@@ -26,7 +26,7 @@ jobs:
           # A test copy of this repository sets TOOLS_REPO/TOOLS_REF to test tools;
           # here they are unset and the pinned arospkg commit is used.
           repository: ${{ vars.TOOLS_REPO || 'tomaszstaniak/arospkg' }}
-          ref: ${{ vars.TOOLS_REF || 'b5cfb4c8c3ae8b16caf97dd9b0262bc61d3cc511' }}
+          ref: ${{ vars.TOOLS_REF || '7064018359b2fb4eae3808054f9c7dbe4b8ce9ce' }}
           path: .tools
           persist-credentials: false
       - uses: actions/setup-python@v5
