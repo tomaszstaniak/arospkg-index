@@ -1,0 +1,1059 @@
+{
+ "schema": 1,
+ "variants": {
+  "ab3dhd/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "alac/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "alac/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "amiberry/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "antiword/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "antiword/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "apotris/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "arospkg/aarch64/v1": {
+   "first_added": "2026-10-04",
+   "commit": "0873f1dcb633"
+  },
+  "arospkg/i386/v0": {
+   "first_added": "2026-10-04",
+   "commit": "0873f1dcb633"
+  },
+  "arospkg/x86_64/v11": {
+   "first_added": "2026-10-04",
+   "commit": "0873f1dcb633"
+  },
+  "arrakis/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "arrakis/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "badapple/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "badapple/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "bin2iso/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "blips/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "boy/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "boy/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "breakhack/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "cabextract/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ccd2cue/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ccd2iso/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "davegnukem/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "daysleeper/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "daysleeper/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "delugem/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "demac/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "demoeffects/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "devilutionx/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "dirtree/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "dirtree/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "diskusage/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "diskusage/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "dosbox/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "dosbox/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "dose2/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "dose2/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fallout/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fallout2/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fheroes2/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "fheroes2/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "finder/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "finder/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fireoftheapes/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "flx_play/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "folio/aarch64/v1": {
+   "first_added": "2026-10-04",
+   "commit": "005b792d561b"
+  },
+  "folio/i386/v0": {
+   "first_added": "2026-10-04",
+   "commit": "ba3f786f5841"
+  },
+  "folio/x86_64/v11": {
+   "first_added": "2026-09-26",
+   "commit": "be18c1cd518e"
+  },
+  "ft2clone/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "gicriptofilex/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "gicriptofilex/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "giddy3/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "giddy3/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "giocodel15/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "giocodel15/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "gisplita/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "gmore/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "gmore/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "gnurobbo/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "grafx2/x86_64/v11": {
+   "first_added": "2026-09-26",
+   "commit": "be18c1cd518e"
+  },
+  "grep/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "hexen2/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "hivelyreplay/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "hocoslamfy/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "hocoslamfy/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "hostile-takeover/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "hydracastle/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "hydracastle/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "iconmake/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "iconmake/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "isomaker-gui/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "isomaker/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "isotool/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "isotool/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "isotools-gui/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "isotools-gui/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "keen4/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "lbreakouthd/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ledblur/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "ledblur/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "limpet/x86_64/v11": {
+   "first_added": "2026-10-03",
+   "commit": "28b7ca438a0a"
+  },
+  "mcamiga/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "metemp3/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "metemp3/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "micropolis/x86_64/v11": {
+   "first_added": "2026-09-25",
+   "commit": "865b625b5821"
+  },
+  "minislug/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "mplayer/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "nano/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "nano/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "nomarch/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ominoarcade/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ominostage/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "openloco/x86_64/v11": {
+   "first_added": "2026-09-25",
+   "commit": "865b625b5821"
+  },
+  "opentyrian/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "opentyrian/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "openxcom/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pekkakana2/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pkg-54321/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "pkg-54321/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pkg-7mezzoplus/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "pkg-7mezzoplus/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pkg-7zdec/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "planethively/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "planethively/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "potrace/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "potrace/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "prboom-plus/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "protrekkr/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "qlview/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "qlview/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "rescode/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "rescode/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "residualvm/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "rtf-riddle/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "rtf-riddle/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "scopagame/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "screentest/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "screentest/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "sdllopan/x86_64/v11": {
+   "first_added": "2026-09-12",
+   "commit": "296dcee61222"
+  },
+  "sdlpop/x86_64/v11": {
+   "first_added": "2026-09-10",
+   "commit": "8b1b6d86fb23"
+  },
+  "sfsobject/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "shooterspace/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "siddump/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "siddump/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "skandalfoclock/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "skandalfoclock/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "sokobangp2x/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "soliton/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "sploiner/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "sploiner/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "stercus/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "stratagus/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "super-haxagon/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "super_trevor_land/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tbftss/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tiltnroll/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "timeless/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "timeless/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tinysid/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tinytris/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tressette/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "tressette/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "unlzx/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "unrar/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "unshield/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "untangle/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "untarka/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "wildmidi/i386/v0": {
+   "first_added": "2026-10-03",
+   "commit": "9c5cb008aded"
+  },
+  "wildmidi/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "xrick/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "zaphod/x86_64/v11": {
+   "first_added": "2026-09-10",
+   "commit": "8b1b6d86fb23"
+  },
+  "zgloom/x86_64/v11": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "zunecalc/x86_64/v11": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  }
+ },
+ "apps": {
+  "ab3dhd": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "alac": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "amiberry": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "antiword": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "apotris": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "arospkg": {
+   "first_added": "2026-10-04",
+   "commit": "0873f1dcb633"
+  },
+  "arrakis": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "badapple": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "bin2iso": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "blips": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "boy": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "breakhack": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "cabextract": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ccd2cue": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ccd2iso": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "davegnukem": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "daysleeper": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "delugem": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "demac": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "demoeffects": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "devilutionx": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "dirtree": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "diskusage": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "dosbox": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "dose2": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fallout": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fallout2": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fheroes2": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "finder": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "fireoftheapes": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "flx_play": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "folio": {
+   "first_added": "2026-09-26",
+   "commit": "be18c1cd518e"
+  },
+  "ft2clone": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "gicriptofilex": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "giddy3": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "giocodel15": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "gisplita": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "gmore": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "gnurobbo": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "grafx2": {
+   "first_added": "2026-09-26",
+   "commit": "be18c1cd518e"
+  },
+  "grep": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "hexen2": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "hivelyreplay": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "hocoslamfy": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "hostile-takeover": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "hydracastle": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "iconmake": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "isomaker": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "isomaker-gui": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "isotool": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "isotools-gui": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "keen4": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "lbreakouthd": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ledblur": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "limpet": {
+   "first_added": "2026-10-03",
+   "commit": "28b7ca438a0a"
+  },
+  "mcamiga": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "metemp3": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "micropolis": {
+   "first_added": "2026-09-25",
+   "commit": "865b625b5821"
+  },
+  "minislug": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "mplayer": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "nano": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "nomarch": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ominoarcade": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "ominostage": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "openloco": {
+   "first_added": "2026-09-25",
+   "commit": "865b625b5821"
+  },
+  "opentyrian": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "openxcom": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pekkakana2": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pkg-54321": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pkg-7mezzoplus": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "pkg-7zdec": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "planethively": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "potrace": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "prboom-plus": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "protrekkr": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "qlview": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "rescode": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "residualvm": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "rtf-riddle": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "scopagame": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "screentest": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "sdllopan": {
+   "first_added": "2026-09-12",
+   "commit": "296dcee61222"
+  },
+  "sdlpop": {
+   "first_added": "2026-09-10",
+   "commit": "8b1b6d86fb23"
+  },
+  "sfsobject": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "shooterspace": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "siddump": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "skandalfoclock": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "sokobangp2x": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "soliton": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "sploiner": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "stercus": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "stratagus": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "super-haxagon": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "super_trevor_land": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tbftss": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tiltnroll": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "timeless": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tinysid": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tinytris": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "tressette": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "unlzx": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "unrar": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "unshield": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "untangle": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "untarka": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "wildmidi": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "xrick": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  },
+  "zaphod": {
+   "first_added": "2026-09-10",
+   "commit": "8b1b6d86fb23"
+  },
+  "zgloom": {
+   "first_added": "2026-09-29",
+   "commit": "baa0a498f774"
+  },
+  "zunecalc": {
+   "first_added": "2026-09-19",
+   "commit": "206e013c694d"
+  }
+ }
+}

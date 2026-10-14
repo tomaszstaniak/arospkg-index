@@ -35,7 +35,28 @@
       "kind": "app",
       "subdir": "Alien Breed HD",
       "icon": "Alien Breed HD.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 500000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "alac",
@@ -64,7 +85,28 @@
       "kind": "app",
       "subdir": "ALAC_Decoder",
       "icon": "ALAC_Decoder.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "run on test input made for it, wrote the expected output, returned 0, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "alac",
@@ -99,7 +141,28 @@
       "kind": "app",
       "subdir": "ALAC",
       "icon": "ALAC.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "amiberry",
@@ -109,8 +172,8 @@
       "abi": "v11",
       "category": "emulation/computer",
       "url": "https://archives.arosworld.org/share/emulation/computer/amiberry-v6.3.4.x86_64-aros-v11.zip",
-      "size": 13468412,
-      "sha256": "f4320cc8d7b2f3f540605241de0b8f5d29357926acf28379fed363f242be053e",
+      "size": 13337390,
+      "sha256": "2c0ae0ac5bda65e98b0d2d776601248a27f2190c15bd26e14711f4ba0c4c9451",
       "depends": [],
       "requires_system": [
         {
@@ -122,19 +185,35 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
       "subdir": "amiberry",
       "icon": "amiberry.info",
-      "install": {}
+      "install": {},
+      "revision": 1,
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "antiword",
@@ -163,7 +242,28 @@
       "kind": "app",
       "subdir": "Antiword",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "run on test input made for it, wrote the expected output, returned 0, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "antiword",
@@ -198,7 +298,84 @@
       "kind": "app",
       "subdir": "Antiword",
       "icon": "Antiword.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "apotris",
@@ -233,7 +410,28 @@
       "kind": "app",
       "subdir": "Apotris",
       "icon": "Apotris.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 100000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "arospkg",
@@ -268,7 +466,13 @@
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
-      "license": "MIT"
+      "license": "MIT",
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [],
+      "first_added": "2026-10-04",
+      "app_first_added": "2026-10-04"
     },
     {
       "id": "arospkg",
@@ -299,7 +503,27 @@
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
-      "license": "MIT"
+      "license": "MIT",
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS i386 ABIv0 20250313-1",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "0.5.0: installed through this catalogue; the installed apkg reported 0.5.0; no removal recorded"
+        }
+      ],
+      "first_added": "2026-10-04",
+      "app_first_added": "2026-10-04"
     },
     {
       "id": "arospkg",
@@ -343,7 +567,27 @@
         "executable": "PkgManager",
         "mode": "workbench",
         "working_directory": "."
-      }
+      },
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "0.5.0: installed through this catalogue, verify clean; apkg run arospkg started PkgManager; no removal recorded"
+        }
+      ],
+      "first_added": "2026-10-04",
+      "app_first_added": "2026-10-04"
     },
     {
       "id": "arrakis",
@@ -380,7 +624,28 @@
       "kind": "app",
       "subdir": "arrakis",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "arrakis",
@@ -419,7 +684,28 @@
       "kind": "app",
       "subdir": "arrakis",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "badapple",
@@ -460,7 +746,28 @@
       "kind": "app",
       "subdir": "Bad_Apple",
       "icon": "Bad_Apple.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "badapple",
@@ -495,7 +802,28 @@
       "kind": "app",
       "subdir": "Bad_Apple",
       "icon": "Bad_Apple.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "bin2iso",
@@ -530,7 +858,84 @@
       "kind": "app",
       "subdir": "Bin2Iso",
       "icon": "Bin2Iso.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 20"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 20"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 20"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 20"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 20"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "blips",
@@ -569,7 +974,84 @@
       "kind": "app",
       "subdir": "Blips",
       "icon": "Blips.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "boy",
@@ -602,7 +1084,28 @@
       "kind": "app",
       "subdir": "Boy",
       "icon": "Boy.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "boy",
@@ -641,7 +1144,28 @@
       "kind": "app",
       "subdir": "Boy",
       "icon": "Boy.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 50000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "breakhack",
@@ -676,7 +1200,28 @@
       "kind": "app",
       "subdir": "BreakHack",
       "icon": "BreakHack.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 200000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "cabextract",
@@ -711,7 +1256,28 @@
       "kind": "app",
       "subdir": "cabextract",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 20, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "ccd2cue",
@@ -746,7 +1312,28 @@
       "kind": "app",
       "subdir": "Ccd2Cue",
       "icon": "Ccd2Cue.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "ccd2iso",
@@ -781,7 +1368,84 @@
       "kind": "app",
       "subdir": "CCD2ISO",
       "icon": "CCD2ISO.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "davegnukem",
@@ -820,7 +1484,28 @@
       "kind": "app",
       "subdir": "DaveGnukem",
       "icon": "DaveGnukem.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "daysleeper",
@@ -853,7 +1538,28 @@
       "kind": "app",
       "subdir": "DaySleeper",
       "icon": "DaySleeper.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "daysleeper",
@@ -888,7 +1594,28 @@
       "kind": "app",
       "subdir": "DaySleeper",
       "icon": "DaySleeper.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "delugem",
@@ -923,7 +1650,28 @@
       "kind": "app",
       "subdir": "Delugem",
       "icon": "Delugem.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 400000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "demac",
@@ -958,7 +1706,28 @@
       "kind": "app",
       "subdir": "Demac",
       "icon": "Demac.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "demoeffects",
@@ -997,7 +1766,28 @@
       "kind": "app",
       "subdir": "DemoEffects",
       "icon": "DemoEffects.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "devilutionx",
@@ -1032,7 +1822,28 @@
       "kind": "app",
       "subdir": "Diablo",
       "icon": "Diablo.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open after 15 s; data message only: game data not included, stack 1000000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "dirtree",
@@ -1056,7 +1867,56 @@
       "kind": "app",
       "subdir": "DirTree",
       "icon": "DirTree.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 262144"
+        },
+        {
+          "system": "AROS i386 ABIv0 20250313-1",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool drew the directory tree and returned 0"
+        },
+        {
+          "system": "AROS i386 ABIv0 20250313-1",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool drew the directory tree and returned 0"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "dirtree",
@@ -1087,7 +1947,84 @@
       "kind": "app",
       "subdir": "DirTree",
       "icon": "DirTree.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "diskusage",
@@ -1111,7 +2048,28 @@
       "kind": "app",
       "subdir": "DiskUsage",
       "icon": "DiskUsage.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "diskusage",
@@ -1142,7 +2100,98 @@
       "kind": "app",
       "subdir": "DiskUsage",
       "icon": "DiskUsage.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "printed directory sizes and returned 232"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "printed directory sizes and returned 232"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "printed directory sizes and returned 232"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "printed directory sizes and returned 232"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "printed directory sizes and returned 232"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "dosbox",
@@ -1183,7 +2232,28 @@
       "kind": "app",
       "subdir": "dosbox.i386-aros",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "dosbox",
@@ -1222,7 +2292,28 @@
       "kind": "app",
       "subdir": "DOSBox",
       "icon": "DOSBox.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "dose2",
@@ -1255,7 +2346,28 @@
       "kind": "app",
       "subdir": "dose2",
       "icon": "dose2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "dose2",
@@ -1290,7 +2402,28 @@
       "kind": "app",
       "subdir": "Dose2",
       "icon": "Dose2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "fallout",
@@ -1325,7 +2458,28 @@
       "kind": "app",
       "subdir": "Fallout",
       "icon": "Fallout.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open after 15 s; data message only: game data not included, stack 200000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "fallout2",
@@ -1360,7 +2514,28 @@
       "kind": "app",
       "subdir": "Fallout2",
       "icon": "Fallout2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open after 15 s; data message only: game data not included, stack 200000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "fheroes2",
@@ -1393,7 +2568,28 @@
       "kind": "app",
       "subdir": "fheroes2",
       "icon": "fheroes2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "fheroes2",
@@ -1428,7 +2624,28 @@
       "kind": "app",
       "subdir": "fheroes2",
       "icon": "fheroes2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open after 15 s; data message only: game data not included, stack 200000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "finder",
@@ -1461,7 +2678,28 @@
       "kind": "app",
       "subdir": "Finder",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "finder",
@@ -1496,7 +2734,28 @@
       "kind": "app",
       "subdir": "Finder",
       "icon": "Finder.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "fireoftheapes",
@@ -1531,7 +2790,28 @@
       "kind": "app",
       "subdir": "FireOfTheApes",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "flx_play",
@@ -1570,7 +2850,28 @@
       "kind": "app",
       "subdir": "FLX Play",
       "icon": "FLX Play.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "folio",
@@ -1633,7 +2934,13 @@
         "executable": "Folio",
         "mode": "workbench",
         "working_directory": "."
-      }
+      },
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [],
+      "first_added": "2026-10-04",
+      "app_first_added": "2026-09-26"
     },
     {
       "id": "folio",
@@ -1695,7 +3002,13 @@
         "executable": "Folio",
         "mode": "workbench",
         "working_directory": "."
-      }
+      },
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [],
+      "first_added": "2026-10-04",
+      "app_first_added": "2026-09-26"
     },
     {
       "id": "folio",
@@ -1762,7 +3075,28 @@
         "executable": "Folio",
         "mode": "workbench",
         "working_directory": "."
-      }
+      },
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU",
+          "date": "2026-10-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "0.5: apkg 0.5.0 installed it from the release URL, verified 16 files; apkg run started it from its icon, rendered a PDF, turned a page; removed"
+        }
+      ],
+      "first_added": "2026-09-26",
+      "app_first_added": "2026-09-26"
     },
     {
       "id": "ft2clone",
@@ -1797,7 +3131,28 @@
       "kind": "app",
       "subdir": "FastTracker2-Clone",
       "icon": "FastTracker2-Clone.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 4096000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "gicriptofilex",
@@ -1826,18 +3181,39 @@
       "kind": "app",
       "subdir": "GICriptoFileX1.0",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "gicriptofilex",
-      "version": "1.0",
+      "version": "1.1",
       "summary": "Encrypt files using 128 bit algorithm",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/misc",
       "url": "https://archives.arosworld.org/share/utility/misc/gicriptofilex.x86_64-aros-v11.zip",
-      "size": 561041,
-      "sha256": "ee19c9c24337fe67de3f4160add60227be6e91fd9aca32f06807a4eb1e284c78",
+      "size": 562100,
+      "sha256": "c92f72cb5040f49fd508cab4af8f126b12bf28b1bd7b31e37204223e78d21234",
       "depends": [],
       "requires_system": [
         {
@@ -1849,19 +3225,34 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "GICriptoFileX1.0",
-      "icon": "GICriptoFileX1.0.info",
-      "install": {}
+      "subdir": "GICriptoFileX1.1",
+      "icon": "GICriptoFileX1.1.info",
+      "install": {},
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "giddy3",
@@ -1894,7 +3285,28 @@
       "kind": "app",
       "subdir": "Giddy3",
       "icon": "Giddy3.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "giddy3",
@@ -1933,7 +3345,28 @@
       "kind": "app",
       "subdir": "Giddy3",
       "icon": "Giddy3.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 400000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "giocodel15",
@@ -1962,18 +3395,39 @@
       "kind": "app",
       "subdir": "GiocoDel15_1.0",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "giocodel15",
-      "version": "1.0",
+      "version": "1.1",
       "summary": "a classic puzzle game",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/board",
       "url": "https://archives.arosworld.org/share/game/board/giocodel15.x86_64-aros-v11.zip",
-      "size": 529710,
-      "sha256": "943e4099deb4cca1cca59997644e368fb8beb79cd0519f737446cde9e3bff9a5",
+      "size": 531331,
+      "sha256": "f8f5d991ad3cbcc8da10e1068a4f668d81f59186570971d7dfbebdbacd0a5d38",
       "depends": [],
       "requires_system": [
         {
@@ -1985,19 +3439,34 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "GiocoDel15_1.0",
-      "icon": "GiocoDel15_1.0.info",
-      "install": {}
+      "subdir": "GiocoDel15_1.1",
+      "icon": "GiocoDel15_1.1.info",
+      "install": {},
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "gisplita",
@@ -2032,7 +3501,98 @@
       "kind": "app",
       "subdir": "Split1.5",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2, stack 40960"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "gmore",
@@ -2061,7 +3621,28 @@
       "kind": "app",
       "subdir": "GMore1.2",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "gmore",
@@ -2096,7 +3677,84 @@
       "kind": "app",
       "subdir": "GMore1.2",
       "icon": "GMore1.2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "gnurobbo",
@@ -2135,7 +3793,28 @@
       "kind": "app",
       "subdir": "GNURobbo",
       "icon": "GNURobbo.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "grafx2",
@@ -2181,7 +3860,28 @@
         "executable": "GrafX2",
         "mode": "workbench",
         "working_directory": "."
-      }
+      },
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-08",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "revision 5: apkg upgrade from revision 4; started with an 8 MiB stack, Italian keymap typed correctly; removal kept files GrafX2 wrote"
+        }
+      ],
+      "first_added": "2026-09-26",
+      "app_first_added": "2026-09-26"
     },
     {
       "id": "grep",
@@ -2221,7 +3921,84 @@
         "executable": "Grep",
         "mode": "shell",
         "working_directory": "."
-      }
+      },
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "hexen2",
@@ -2256,7 +4033,28 @@
       "kind": "app",
       "subdir": "Hexen2",
       "icon": "Hexen2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open after 15 s; data message only: game data not included, stack 2000000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "hivelyreplay",
@@ -2291,7 +4089,28 @@
       "kind": "app",
       "subdir": "HivelyReplayer",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "hocoslamfy",
@@ -2328,7 +4147,28 @@
       "kind": "app",
       "subdir": "Hocoslamfy",
       "icon": "Hocoslamfy.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "hocoslamfy",
@@ -2367,7 +4207,84 @@
       "kind": "app",
       "subdir": "Hocoslamfy",
       "icon": "Hocoslamfy.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "hostile-takeover",
@@ -2406,7 +4323,28 @@
       "kind": "app",
       "subdir": "Hostile-Takeover",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "hydracastle",
@@ -2439,7 +4377,28 @@
       "kind": "app",
       "subdir": "HydraCastle",
       "icon": "HydraCastle.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "hydracastle",
@@ -2478,7 +4437,28 @@
       "kind": "app",
       "subdir": "HydraCastleLabyrinth",
       "icon": "HydraCastleLabyrinth.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 102400"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "iconmake",
@@ -2515,7 +4495,28 @@
       "kind": "app",
       "subdir": "IconMake",
       "icon": "IconMake.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "iconmake",
@@ -2550,7 +4551,84 @@
       "kind": "app",
       "subdir": "IconMake",
       "icon": "IconMake.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "isomaker",
@@ -2585,7 +4663,74 @@
       "kind": "app",
       "subdir": "IsoMaker",
       "icon": "IsoMaker.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "isomaker-gui",
@@ -2620,7 +4765,28 @@
       "kind": "app",
       "subdir": "IsoMaker-GUI",
       "icon": "IsoMaker-GUI.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "isotool",
@@ -2653,7 +4819,28 @@
       "kind": "app",
       "subdir": "IsoTool",
       "icon": "IsoTool.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "isotool",
@@ -2688,7 +4875,74 @@
       "kind": "app",
       "subdir": "IsoTool",
       "icon": "IsoTool.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install"
+          ],
+          "note": "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "isotools-gui",
@@ -2725,7 +4979,28 @@
       "kind": "app",
       "subdir": "IsoTools-GUI",
       "icon": "IsoTools-GUI.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "isotools-gui",
@@ -2760,7 +5035,28 @@
       "kind": "app",
       "subdir": "IsoTools-GUI",
       "icon": "IsoTools-GUI.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "keen4",
@@ -2795,7 +5091,28 @@
       "kind": "app",
       "subdir": "Keen4_AROS_x64_ABIv11",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "lbreakouthd",
@@ -2830,7 +5147,28 @@
       "kind": "app",
       "subdir": "LBreakoutHD",
       "icon": "LBreakoutHD.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 500000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "ledblur",
@@ -2863,7 +5201,28 @@
       "kind": "app",
       "subdir": "LedBlur",
       "icon": "LedBlur.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "ledblur",
@@ -2902,7 +5261,28 @@
       "kind": "app",
       "subdir": "LedBlur",
       "icon": "LedBlur.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "limpet",
@@ -2947,7 +5327,28 @@
       "icon": "Limpet.info",
       "install": {},
       "revision": 1,
-      "source": "https://github.com/tomaszstaniak/limpet"
+      "source": "https://github.com/tomaszstaniak/limpet",
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-13",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "0.4.1: apkg upgrade from 0.4.0 kept a user-changed theme; started with that theme, Version ran; removed"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-10-03"
     },
     {
       "id": "mcamiga",
@@ -2973,7 +5374,28 @@
       "kind": "app",
       "subdir": "MCAmiga",
       "icon": "MCAmiga.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "metemp3",
@@ -3006,7 +5428,28 @@
       "kind": "app",
       "subdir": "meteMP3",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "metemp3",
@@ -3041,7 +5484,28 @@
       "kind": "app",
       "subdir": "MeteMP3_v1.5",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "micropolis",
@@ -3082,7 +5546,98 @@
       "icon": "Micropolis.info",
       "install": {},
       "revision": 1,
-      "source": "https://github.com/tomaszstaniak/aros-micropolis"
+      "source": "https://github.com/tomaszstaniak/aros-micropolis",
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "game running after 20 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "game running after 20 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "installed by apkg 0.3 at a 40960-byte Shell stack; game window open with a city; removed"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-28",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "game running after 20 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "game running after 20 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU",
+          "date": "2026-09-23",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "installed from the release URL with apkg 0.1, hash verified; opened CITY.CTY and quit cleanly; removed"
+        }
+      ],
+      "first_added": "2026-09-25",
+      "app_first_added": "2026-09-25"
     },
     {
       "id": "minislug",
@@ -3121,7 +5676,28 @@
       "kind": "app",
       "subdir": "MiniSlug",
       "icon": "MiniSlug.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "mplayer",
@@ -3156,7 +5732,28 @@
       "kind": "app",
       "subdir": "MPlayer",
       "icon": "MPlayer.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 512000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "nano",
@@ -3193,7 +5790,28 @@
       "kind": "app",
       "subdir": "nano",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "nano",
@@ -3232,7 +5850,28 @@
       "kind": "app",
       "subdir": "nano",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "nomarch",
@@ -3267,7 +5906,28 @@
       "kind": "app",
       "subdir": "Nomarch",
       "icon": "Nomarch.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "ominoarcade",
@@ -3302,7 +5962,28 @@
       "kind": "app",
       "subdir": "OminoArcade1.0",
       "icon": "OminoArcade1.0.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "ominostage",
@@ -3337,7 +6018,84 @@
       "kind": "app",
       "subdir": "Omino1.1",
       "icon": "Omino1.1.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "openloco",
@@ -3382,7 +6140,28 @@
       "icon": "",
       "install": {},
       "revision": 1,
-      "source": "https://github.com/tomaszstaniak/aros-openloco"
+      "source": "https://github.com/tomaszstaniak/aros-openloco",
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "not stated",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "apkg 0.2: menu, map, save and reload after reinstall, as the manifest comment states; the game data is the player own copy"
+        }
+      ],
+      "first_added": "2026-09-25",
+      "app_first_added": "2026-09-25"
     },
     {
       "id": "opentyrian",
@@ -3415,7 +6194,28 @@
       "kind": "app",
       "subdir": "Tyrian2.1",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "opentyrian",
@@ -3454,7 +6254,28 @@
       "kind": "app",
       "subdir": "OpenTyrian",
       "icon": "OpenTyrian.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 300000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "openxcom",
@@ -3493,7 +6314,28 @@
       "kind": "app",
       "subdir": "OpenXcom",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open after 15 s; data message only: game data not included, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "pekkakana2",
@@ -3528,7 +6370,28 @@
       "kind": "app",
       "subdir": "Pekka Kana 2",
       "icon": "Pekka Kana 2.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 1000000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "pkg-54321",
@@ -3561,7 +6424,28 @@
       "kind": "app",
       "subdir": "54321",
       "icon": "54321.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "pkg-54321",
@@ -3600,7 +6484,28 @@
       "kind": "app",
       "subdir": "54321",
       "icon": "54321.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 72000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "pkg-7mezzoplus",
@@ -3629,18 +6534,39 @@
       "kind": "app",
       "subdir": "7MezzoPlus1.0",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "pkg-7mezzoplus",
-      "version": "1.0",
+      "version": "1.1",
       "summary": "Popular Italian Christmas game",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/card",
       "url": "https://archives.arosworld.org/share/game/card/7mezzoplus.x86_64-aros-v11.zip",
-      "size": 668674,
-      "sha256": "1ea0d16ce4016d6d2a329e6d03db6871fb0184a694d929ab9eeeeb629f717baf",
+      "size": 664406,
+      "sha256": "5e16f2791feb497eb8e1065a7aef305bf827f493c126aa5fd1970ba4007d9d03",
       "depends": [],
       "requires_system": [
         {
@@ -3652,19 +6578,34 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "7MezzoPlus1.0",
-      "icon": "7MezzoPlus1.0.info",
-      "install": {}
+      "subdir": "7MezzoPlus1.1",
+      "icon": "7MezzoPlus1.1.info",
+      "install": {},
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "pkg-7zdec",
@@ -3699,7 +6640,28 @@
       "kind": "app",
       "subdir": "7zDec",
       "icon": "7zDec.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "planethively",
@@ -3728,7 +6690,28 @@
       "kind": "app",
       "subdir": "PlanetHively",
       "icon": "PlanetHively.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "planethively",
@@ -3767,7 +6750,28 @@
       "kind": "app",
       "subdir": "PlanetHively",
       "icon": "PlanetHively.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "potrace",
@@ -3796,7 +6800,28 @@
       "kind": "app",
       "subdir": "potrace-1.16",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "run on test input made for it, wrote the expected output, returned 0, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "potrace",
@@ -3831,7 +6856,28 @@
       "kind": "app",
       "subdir": "Potrace",
       "icon": "Potrace.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "prboom-plus",
@@ -3866,7 +6912,28 @@
       "kind": "app",
       "subdir": "Prboom-plus",
       "icon": "Prboom-plus.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "returned 0; data message only: game data not included, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "protrekkr",
@@ -3905,7 +6972,28 @@
       "kind": "app",
       "subdir": "ProTrekkr",
       "icon": "ProTrekkr.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "qlview",
@@ -3934,7 +7022,28 @@
       "kind": "app",
       "subdir": "QLView",
       "icon": "QLView.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "qlview",
@@ -3969,7 +7078,28 @@
       "kind": "app",
       "subdir": "QLView",
       "icon": "QLView.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "rescode",
@@ -3998,7 +7128,28 @@
       "kind": "app",
       "subdir": "ResCode",
       "icon": "ResCode.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "rescode",
@@ -4033,7 +7184,84 @@
       "kind": "app",
       "subdir": "ResCode",
       "icon": "ResCode.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "residualvm",
@@ -4072,7 +7300,28 @@
       "kind": "app",
       "subdir": "Residualvm",
       "icon": "Residualvm.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "rtf-riddle",
@@ -4101,7 +7350,28 @@
       "kind": "app",
       "subdir": "RTF-Riddle",
       "icon": "RTF-Riddle.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 22, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "rtf-riddle",
@@ -4136,18 +7406,39 @@
       "kind": "app",
       "subdir": "RTF2HTML",
       "icon": "RTF2HTML.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 22, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "scopagame",
-      "version": "1.0",
+      "version": "1.1",
       "summary": "Italian card game",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/card",
       "url": "https://archives.arosworld.org/share/game/card/scopagame.x86_64-aros-v11.zip",
-      "size": 651617,
-      "sha256": "598db4a58f619c4e2a77c8645489ea2f5f5bb9d5df0d65be8a6ceb1720780161",
+      "size": 672056,
+      "sha256": "87c67e188346e4c1a78e88bd50b42e8f0448e2359a7eeebfd99d8af62ea402d6",
       "depends": [],
       "requires_system": [
         {
@@ -4159,19 +7450,34 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "ScopaGame1.0",
-      "icon": "",
-      "install": {}
+      "subdir": "ScopaGame1.1",
+      "icon": "ScopaGame1.1.info",
+      "install": {},
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "screentest",
@@ -4200,7 +7506,28 @@
       "kind": "app",
       "subdir": "Screentest",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "screentest",
@@ -4235,7 +7562,98 @@
       "kind": "app",
       "subdir": "Screentest",
       "icon": "Screentest.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "sdllopan",
@@ -4274,7 +7692,98 @@
       "kind": "app",
       "subdir": "sdllopan-10",
       "icon": "sdllopan-10.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-22",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "drew its Mahjong board, close gadget worked; it must be started from its own drawer to find its data"
+        }
+      ],
+      "first_added": "2026-09-12",
+      "app_first_added": "2026-09-12"
     },
     {
       "id": "sdlpop",
@@ -4301,7 +7810,97 @@
       "kind": "app",
       "subdir": "SDLPoP",
       "icon": "SDLPoP.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-22",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "mainline x86_64, local source build",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU",
+          "date": "2026-09-10",
+          "result": "failed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "installed from the catalogue, crashed at start: Illegal address access in Lddemon OpenLibrary; ABIv11 binary on an ABIv1 system"
+        }
+      ],
+      "first_added": "2026-09-10",
+      "app_first_added": "2026-09-10"
     },
     {
       "id": "sfsobject",
@@ -4336,7 +7935,28 @@
       "kind": "app",
       "subdir": "SFSobject",
       "icon": "SFSobject.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 10, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "shooterspace",
@@ -4371,7 +7991,84 @@
       "kind": "app",
       "subdir": "ShooterSpace1.0",
       "icon": "ShooterSpace1.0.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "siddump",
@@ -4400,7 +8097,28 @@
       "kind": "app",
       "subdir": "SIDdump",
       "icon": "SIDdump.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "siddump",
@@ -4435,7 +8153,28 @@
       "kind": "app",
       "subdir": "SidDump",
       "icon": "SidDump.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "skandalfoclock",
@@ -4464,7 +8203,28 @@
       "kind": "app",
       "subdir": "skandalfoclock",
       "icon": "skandalfoclock.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "skandalfoclock",
@@ -4499,7 +8259,84 @@
       "kind": "app",
       "subdir": "SkandalfoClock",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "sokobangp2x",
@@ -4538,7 +8375,28 @@
       "kind": "app",
       "subdir": "SokobanGP2X",
       "icon": "SokobanGP2X.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 1000000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "soliton",
@@ -4573,7 +8431,98 @@
       "kind": "app",
       "subdir": "Soliton",
       "icon": "Soliton.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-22",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "installed from the published catalogue by the README steps; process running when started from its drawer"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "sploiner",
@@ -4602,7 +8551,28 @@
       "kind": "app",
       "subdir": "sploiner",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "sploiner",
@@ -4637,7 +8607,28 @@
       "kind": "app",
       "subdir": "Sploiner",
       "icon": "Sploiner.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "stercus",
@@ -4676,7 +8667,28 @@
       "kind": "app",
       "subdir": "Stercus",
       "icon": "Stercus.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 50000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "stratagus",
@@ -4711,7 +8723,28 @@
       "kind": "app",
       "subdir": "Stratagus",
       "icon": "Stratagus.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "returned 1; data message only: game data not included, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "super-haxagon",
@@ -4746,7 +8779,28 @@
       "kind": "app",
       "subdir": "Super-Haxagon",
       "icon": "Super-Haxagon.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 400000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "super_trevor_land",
@@ -4781,7 +8835,28 @@
       "kind": "app",
       "subdir": "Super Trevor Land",
       "icon": "Super Trevor Land.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "tbftss",
@@ -4816,7 +8891,28 @@
       "kind": "app",
       "subdir": "TBFTSS",
       "icon": "TBFTSS.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 400000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "tiltnroll",
@@ -4855,7 +8951,28 @@
       "kind": "app",
       "subdir": "Tilt-N-Roll",
       "icon": "Tilt-N-Roll.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "timeless",
@@ -4888,7 +9005,28 @@
       "kind": "app",
       "subdir": "Timeless",
       "icon": "Timeless.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "timeless",
@@ -4927,7 +9065,28 @@
       "kind": "app",
       "subdir": "Timeless",
       "icon": "Timeless.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "tinysid",
@@ -4962,7 +9121,98 @@
       "kind": "app",
       "subdir": "TinySID",
       "icon": "TinySID.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "tinytris",
@@ -5001,7 +9251,28 @@
       "kind": "app",
       "subdir": "Tinytris",
       "icon": "Tinytris.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "tressette",
@@ -5034,18 +9305,39 @@
       "kind": "app",
       "subdir": "Tressette",
       "icon": "Tressette.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "tressette",
-      "version": "1.0",
+      "version": "1.1",
       "summary": "Is a popular Italian card game",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/card",
       "url": "https://archives.arosworld.org/share/game/card/tressette.x86_64-aros-v11.zip",
-      "size": 700840,
-      "sha256": "1c706f3344be3e9c5f036114bfba344356bf2bf06e23ef4bd34242036c2c1b6d",
+      "size": 695625,
+      "sha256": "d37ee69f5e118d93a481c40b04c983a83057893f9052392513e5ada018409cef",
       "depends": [],
       "requires_system": [
         {
@@ -5057,19 +9349,34 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "Tressette1.0",
-      "icon": "Tressette1.0.info",
-      "install": {}
+      "subdir": "Tressette1.1",
+      "icon": "Tressette1.1.info",
+      "install": {},
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "unlzx",
@@ -5104,7 +9411,84 @@
       "kind": "app",
       "subdir": "UnLZX",
       "icon": "UnLZX.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 2"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "unrar",
@@ -5139,7 +9523,28 @@
       "kind": "app",
       "subdir": "UnRAR",
       "icon": "UnRAR.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 800000"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "unshield",
@@ -5174,7 +9579,28 @@
       "kind": "app",
       "subdir": "unshield-1.6.2",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "untangle",
@@ -5200,7 +9626,84 @@
       "kind": "app",
       "subdir": "Untangle",
       "icon": "Untangle.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "untarka",
@@ -5235,7 +9738,28 @@
       "kind": "app",
       "subdir": "UnTarka",
       "icon": "UnTarka.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 0, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "wildmidi",
@@ -5268,7 +9792,28 @@
       "kind": "app",
       "subdir": "WildMidi",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 2.9",
+          "arch": "i386",
+          "abi": "v0",
+          "machine": "QEMU (KVM)",
+          "date": "2026-10-03",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 262144"
+        }
+      ],
+      "first_added": "2026-10-03",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "wildmidi",
@@ -5303,7 +9848,28 @@
       "kind": "app",
       "subdir": "WildMidi",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (KVM)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "Shell tool printed its output and returned 1, stack 40960"
+        }
+      ],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "xrick",
@@ -5313,8 +9879,8 @@
       "abi": "v11",
       "category": "game/platform",
       "url": "https://archives.arosworld.org/share/game/platform/xrick.x86_64-aros-v11.zip",
-      "size": 2043720,
-      "sha256": "671d89c9b45c9358cd02faf379510ef8a49bf746119fa45f7b90c466575c3e98",
+      "size": 2050668,
+      "sha256": "b257180ca022dc64b9cef491569dfa9088b219fecceb37c62492a597097c0a0c",
       "depends": [],
       "requires_system": [
         {
@@ -5323,22 +9889,42 @@
         },
         {
           "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
       "subdir": "xRick",
       "icon": "xRick.info",
-      "install": {}
+      "install": {},
+      "revision": 1,
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     },
     {
       "id": "zaphod",
@@ -5365,18 +9951,108 @@
       "kind": "app",
       "subdir": "ZapHod",
       "icon": "",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-22",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "mainline x86_64, local source build",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU",
+          "date": "2026-09-10",
+          "result": "failed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "installed from the catalogue, crashed at start: Illegal address access in Exec FindTask; ABIv11 binary on an ABIv1 system"
+        }
+      ],
+      "first_added": "2026-09-10",
+      "app_first_added": "2026-09-10"
     },
     {
       "id": "zgloom",
-      "version": "052026v2",
+      "version": "082026",
       "summary": "port of the Amiga FPS Gloom",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/fps",
       "url": "https://archives.arosworld.org/share/game/fps/zgloom.x86_64-aros-v11.zip",
-      "size": 20763795,
-      "sha256": "2173ef1de466434f3066f6ad7cf0693b866c9ceef448f580e950dd9d6d453643",
+      "size": 20849204,
+      "sha256": "c6354316795d1ab981de937db5f8fa0bc156920cb5144f89acf9833407f1e942",
       "depends": [],
       "requires_system": [
         {
@@ -5388,19 +10064,34 @@
           "id": "stdlib.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
-      "runs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
+      "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
       ],
       "kind": "app",
       "subdir": "ZGloom",
       "icon": "ZGloom.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-09-29",
+      "app_first_added": "2026-09-29"
     },
     {
       "id": "zunecalc",
@@ -5431,7 +10122,84 @@
       "kind": "app",
       "subdir": "ZuneCalc",
       "icon": "ZuneCalc.info",
-      "install": {}
+      "install": {},
+      "review": {
+        "status": "listed"
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-02",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-30",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-09-20",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "window open and process running after 15 s, started from its drawer with Run"
+        }
+      ],
+      "first_added": "2026-09-19",
+      "app_first_added": "2026-09-19"
     }
   ]
 }
