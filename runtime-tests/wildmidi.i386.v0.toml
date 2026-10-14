@@ -1,0 +1,14 @@
+# Runtime tests of wildmidi i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "6989ea529cdcf4abb85f8c645fe1c0d97c7fb6c2ddcf25120da2b9c1e24bfc2e"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 1, stack 262144"

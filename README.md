@@ -19,22 +19,42 @@ publisher's URL, such as AROS Archives or GitHub Releases; they are not mirrored
 
 - `overrides/`: a maintainer's deliberate corrections to an author's entry,
   under the manifest's file name, applied whenever the catalogue is made.
+- `runtime-tests/`: who installed and started which archive, on which
+  system and when, `<id>.<arch>.<abi>.toml`. Each test names the SHA-256 of
+  the bytes it was made with.
+- `review/`: the result of the automatic review of each entry, written by
+  the publish workflow. Not edited by hand.
+- `history.json`: the day each application and each build was first
+  published, written by the publish workflow. Not edited by hand.
 
 Both catalogue files are generated from the manifests, so the manifests are the source
 of truth and the index is derived. A client must be able to rebuild its view
 from the manifests alone.
 
-## What "approved" means
+## Listed, Reviewed, runtime tested
 
-A manifest is published only after someone has downloaded the archive,
-recorded its SHA-256, looked inside it to establish what the package actually
-installs, and formed a view on its dependencies. An entry that has not had that
-done to it is not here.
+Three separate facts about one build and one archive:
 
-Runtime coverage varies by package and platform. Read the manifest's installs_on,
-runs_on and does_not_run_on fields; an archive hash verifies its contents, not
-whether the application runs. Experimental entries must describe their actual
-validation status. Internal run logs are kept outside this repository.
+- **Listed**: an approved manifest (`status = "approved"`) is published.
+  Someone has measured the archive's size and SHA-256 and formed a view on
+  its dependencies; clients check every download against both, whatever
+  else is known about the entry.
+- **Reviewed**: the automatic review passed for exactly these bytes and this
+  entry: its metadata, size and SHA-256, a readable archive, safe member
+  names that cannot overwrite one another (also without regard to case),
+  the drawer, icon and program it names, and the CPU of its programs. The
+  ABI cannot be read from the files and is not guessed. Nobody installs or
+  starts the program for this, and nobody can declare it: the workflow
+  writes the result, for those bytes, into `review/`.
+- **Runtime tested**: a record in `runtime-tests/` that someone installed
+  and started that archive on a named system on a given date. A changed
+  archive starts without one.
+
+An entry does not have to be started by us before it is listed. The
+manifest fields `installs_on`, `runs_on` and `does_not_run_on` are older
+free-form claims, kept as they were. Internal run logs are kept outside this
+repository. The fields are specified in the
+[metadata reference](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/metadata.md#listed-reviewed-and-runtime-tests).
 
 ## ABIv1 and ABIv11
 
@@ -103,9 +123,17 @@ whole attack against a package manager.
 
 ## Contributing
 
-Manifests are reviewed before they are published. Corrections to an existing
-entry (a wrong hash, a moved URL, a dependency we missed) are welcome as
-issues or pull requests.
+Manifests are read by a maintainer and reviewed automatically before they
+are published. Corrections to an existing entry (a wrong hash, a moved URL,
+a dependency we missed) and runtime tests are welcome as issues or pull
+requests.
+
+When an upstream file changes under a published URL, its download no longer
+matches the entry and installing it fails. The new file is measured and
+reviewed, and published under a new `revision` (the same program version)
+or a new `version`; a published version and revision never silently get
+other bytes, and the old runtime tests stay with the old bytes. A file that
+cannot be reconciled is withdrawn with `excluded = "<reason>"`.
 
 ## Submitting a package
 
@@ -122,12 +150,15 @@ example and what happens after submission are in the
 this file does not repeat them.
 
 Every pull request is checked automatically (`.github/workflows/check.yml`):
-each changed archive is downloaded within the client's limits, its size and
-SHA-256 must match, its description and layout must pass the catalogue's
-rules, and both catalogue files are generated as a trial. The check has no
-secrets and runs nothing from the pull request or the archive. After a merge,
-`.github/workflows/publish.yml` regenerates the catalogue and commits it; a
-failed run leaves the published files as they were.
+each archive whose entry changed is downloaded within the client's limits
+and reviewed, and both catalogue files are generated as a trial. A change
+to comments only reviews nothing; a pull request that edits `review/` or
+`history.json` fails. The check has no secrets and runs nothing from the
+pull request or the archive. After a merge, `.github/workflows/publish.yml`
+reviews the changed entries again, regenerates the catalogue and commits it
+with the review records and first publication dates; a failed run leaves the
+published files as they were. Run by hand with *review_all*, it reviews
+every entry; one that no longer passes stays Listed.
 
 Submissions are checked automatically. Maintainers review the source and
 metadata before merging. Running every application on AROS is not a

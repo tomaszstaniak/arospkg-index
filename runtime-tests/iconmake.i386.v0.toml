@@ -1,0 +1,14 @@
+# Runtime tests of iconmake i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "93241739418611094f84de94f8985840433f6aeb7d36fae0f16f657e71b4f037"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, stack 262144"

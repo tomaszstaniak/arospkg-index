@@ -1,0 +1,14 @@
+# Runtime tests of potrace i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "45d1652507892809b002f6f2331f277c697c50ad51b2c59bd3fdfef852f3d1d4"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "run on test input made for it, wrote the expected output, returned 0, stack 262144"

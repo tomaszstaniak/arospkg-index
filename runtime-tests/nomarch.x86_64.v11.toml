@@ -1,0 +1,14 @@
+# Runtime tests of nomarch x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "05fd654700ac323375ea89a352521430b17ff66c4a0ab7590fe3b439a6351864"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 1, stack 40960"

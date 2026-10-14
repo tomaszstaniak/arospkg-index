@@ -1,0 +1,47 @@
+# Runtime tests of arospkg i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "73610b0b54ac8fe58ce10ec69b812a95c3127c9d681285de3cf711f2f416e375"
+date    = "2026-10-08"
+system  = "AROS i386 ABIv0 20250313-1"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "0.4.0 installed from the public catalogue as the starting point of the 0.4.1 upgrade test; not started from the installed drawer"
+
+[[test]]
+sha256  = "f6ad30fe2cd4fedb96ef3f79c6cd9f08a26035ebb1ddb8e17b164c2f942ab483"
+date    = "2026-10-08"
+system  = "AROS i386 ABIv0 20250313-1"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.4.1: apkg upgrade from 0.4.0 through the catalogue; installed apkg ran update and search; rollback and upgrade again; removed"
+
+[[test]]
+sha256  = "a50c121af16aabfd07436ce011b1e4a393c978dca2d4d76375243ae6b2c3bbe8"
+date    = "2026-10-11"
+system  = "AROS i386 ABIv0 20250313-1"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.4.2: installed through this catalogue; installed apkg printed 0.4.2; verify clean; removed"
+
+[[test]]
+sha256  = "cc73007ad7517240c67c40f08cfe662ee6b95da6f4e16bbe6f824a6462b92e50"
+date    = "2026-10-12"
+system  = "AROS i386 ABIv0 20250313-1"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start"]
+note    = "0.5.0: installed through this catalogue; the installed apkg reported 0.5.0; no removal recorded"

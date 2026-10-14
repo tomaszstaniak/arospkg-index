@@ -1,0 +1,14 @@
+# Runtime tests of dose2 i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "5bbedf38e778aef4d2ab3579f0691dd59923dbfeebdcf104c673bdbf0e2f2f7e"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, stack 262144"

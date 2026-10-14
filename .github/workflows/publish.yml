@@ -1,19 +1,25 @@
-# After a merge to main: regenerate index-v2.json and index.json from the
-# manifests and commit them. One run at a time; a run that fails writes
-# nothing, so the published files stay as they were. The push is refused if
-# main has moved since the run started, so an older run cannot replace a
-# newer catalogue.
+# After a merge to main: review the changed packages, regenerate index-v2.json
+# and index.json from the manifests, and commit them with the review records
+# (review/) and the first publication dates (history.json). One run at a
+# time; a run that fails writes nothing, so the published files stay as they
+# were. The push is refused if main has moved since the run started, so an
+# older run cannot replace a newer catalogue.
 name: publish
 on:
   push:
     branches: [main]
-    paths: ["manifests/**", "overrides/**"]
+    paths: ["manifests/**", "overrides/**", "runtime-tests/**"]
   workflow_dispatch:
     inputs:
       base:
         description: "Compare package metadata with this commit; blank checks all packages"
         required: false
         type: string
+      review_all:
+        description: "Review every published package again (a new review suite, changed upstream files)"
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -24,15 +30,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      # No credentials stay in the checkout while archives are read: the
+      # token is used only by the push at the end.
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
       - uses: actions/checkout@v4
         with:
           # A test copy of this repository sets TOOLS_REPO/TOOLS_REF to test tools;
           # here they are unset and the pinned arospkg commit is used.
           repository: ${{ vars.TOOLS_REPO || 'tomaszstaniak/arospkg' }}
-          ref: ${{ vars.TOOLS_REF || 'b5cfb4c8c3ae8b16caf97dd9b0262bc61d3cc511' }}
+          ref: ${{ vars.TOOLS_REF || '7064018359b2fb4eae3808054f9c7dbe4b8ce9ce' }}
           path: .tools
           persist-credentials: false
       - uses: actions/setup-python@v5
@@ -42,10 +51,14 @@ jobs:
       - name: Validate and generate catalogue
         env:
           BASE_REF: ${{ github.event.before || inputs.base }}
-        run: python3 .tools/tools/ci_check_index.py . --base "$BASE_REF" --out-dir . --cache "$RUNNER_TEMP/archives"
-      - run: |
-          git add index.json index-v2.json
+          REVIEW_ALL: ${{ inputs.review_all && '--review-all' || '' }}
+        run: python3 .tools/tools/ci_check_index.py . --base "$BASE_REF" --publish --out-dir . --review-dir review
+             --commit "$GITHUB_SHA" --cache "$RUNNER_TEMP/archives" $REVIEW_ALL
+      - env:
+          TOKEN: ${{ github.token }}
+        run: |
+          git add index.json index-v2.json history.json review
           if git diff --cached --quiet; then echo "catalogue unchanged"; exit 0; fi
           git -c user.name="arospkg-index" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "Regenerate the catalogue from ${GITHUB_SHA::12}"
-          git push origin HEAD:main
+          git push "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main

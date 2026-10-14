@@ -1,0 +1,14 @@
+# Runtime tests of breakhack x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "8f038366a39184a61443c2f1f0e6da70272b3c390b7f704294064f6fbf96cbad"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, stack 200000"

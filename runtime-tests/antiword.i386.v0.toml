@@ -1,0 +1,14 @@
+# Runtime tests of antiword i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "f9d32e01acae01ddafc5be801c13d382f6d9dedfc3fd893619586b9efb6fee2b"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "run on test input made for it, wrote the expected output, returned 0, stack 262144"

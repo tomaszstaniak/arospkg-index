@@ -1,0 +1,69 @@
+# Runtime tests of zaphod x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+date    = "2026-09-10"
+system  = "mainline x86_64, local source build"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU"
+result  = "failed"
+checked = ["install", "start"]
+note    = "installed from the catalogue, crashed at start: Illegal address access in Exec FindTask; ABIv11 binary on an ABIv1 system"
+
+[[test]]
+sha256  = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+date    = "2026-09-22"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+date    = "2026-09-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+date    = "2026-09-30"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448"
+date    = "2026-10-02"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "process running after 15 s, started from its drawer with Run"

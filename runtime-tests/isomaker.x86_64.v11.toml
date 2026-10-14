@@ -1,0 +1,58 @@
+# Runtime tests of isomaker x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "c9b16161ed6ccc737deac09004be2112dd635cfe2bdf841fd3cf80cda6aed47d"
+date    = "2026-09-20"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+
+[[test]]
+sha256  = "c9b16161ed6ccc737deac09004be2112dd635cfe2bdf841fd3cf80cda6aed47d"
+date    = "2026-09-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+
+[[test]]
+sha256  = "c9b16161ed6ccc737deac09004be2112dd635cfe2bdf841fd3cf80cda6aed47d"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+
+[[test]]
+sha256  = "c9b16161ed6ccc737deac09004be2112dd635cfe2bdf841fd3cf80cda6aed47d"
+date    = "2026-09-30"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"
+
+[[test]]
+sha256  = "c9b16161ed6ccc737deac09004be2112dd635cfe2bdf841fd3cf80cda6aed47d"
+date    = "2026-10-02"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "start tried with Run, output to NIL:; no process after 15 s, nothing captured; removed afterwards"

@@ -1,0 +1,58 @@
+# Runtime tests of rescode x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407"
+date    = "2026-09-20"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407"
+date    = "2026-09-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407"
+date    = "2026-09-30"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407"
+date    = "2026-10-02"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, started from its drawer with Run"

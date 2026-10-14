@@ -1,0 +1,14 @@
+# Runtime tests of isotool i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "66f8e7a38a2403a3ba3d32e77fa0fdfbb5c7a2957c3d9dca3bcc3b563f4f680e"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 1, stack 262144"

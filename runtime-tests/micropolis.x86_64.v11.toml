@@ -1,0 +1,69 @@
+# Runtime tests of micropolis x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+date    = "2026-09-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "installed from the release URL with apkg 0.1, hash verified; opened CITY.CTY and quit cleanly; removed"
+
+[[test]]
+sha256  = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+date    = "2026-09-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "game running after 20 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+date    = "2026-09-28"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "game running after 20 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "installed by apkg 0.3 at a 40960-byte Shell stack; game window open with a city; removed"
+
+[[test]]
+sha256  = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+date    = "2026-09-30"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "game running after 20 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124"
+date    = "2026-10-02"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "game running after 20 s, started from its drawer with Run"

@@ -1,0 +1,14 @@
+# Runtime tests of prboom-plus x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "97c135f98a8fbc82b02101a629ae6eb75212bf25e02d8bc01da90219a81ea49d"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "returned 0; data message only: game data not included, stack 40960"

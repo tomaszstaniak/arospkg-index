@@ -1,0 +1,69 @@
+# Runtime tests of diskusage x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+date    = "2026-09-20"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "printed directory sizes and returned 232"
+
+[[test]]
+sha256  = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+date    = "2026-09-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "printed directory sizes and returned 232"
+
+[[test]]
+sha256  = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0, stack 40960"
+
+[[test]]
+sha256  = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "printed directory sizes and returned 232"
+
+[[test]]
+sha256  = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+date    = "2026-09-30"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "printed directory sizes and returned 232"
+
+[[test]]
+sha256  = "d0ead9d61f0ede8fc958010ae6e7ee25c38abf32c5273f75b0f8963663237c73"
+date    = "2026-10-02"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "printed directory sizes and returned 232"
