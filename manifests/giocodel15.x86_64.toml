@@ -1,32 +1,29 @@
-# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
-#
-# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
-# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/giocodel15 with
-# Run and input from NIL:, stack 40960 bytes: its window or screen was open
-# and the process was running after 15 s.
-# (batch c09).
+# Listed 2026-10-14: the AROS Archives file at this URL was replaced by
+# version 1.1 on 2026-10-08. Size and SHA-256 were measured on the new
+# download; its review is the catalogue's automatic one. The install-and-start
+# test of 2026-09-29 was made with the previous archive (sha256
+# 943e4099deb4...) and is kept in runtime-tests/; it does not cover these
+# bytes, so the installs_on and runs_on claims it supported were removed.
 
 status          = "approved"
 id              = "giocodel15"
-version         = "1.0"
+version         = "1.1"
 summary         = "a classic puzzle game"
 arch            = "x86_64"
 abi             = "v11"
 category        = "game/board"
 url             = "https://archives.arosworld.org/share/game/board/giocodel15.x86_64-aros-v11.zip"
-size            = 529710
-upload_date     = "20260910-18.46"
+size            = 531331
+upload_date     = "20261008-17.54"
 selected_by     = "only-candidate"
 
-sha256          = "943e4099deb4cca1cca59997644e368fb8beb79cd0519f737446cde9e3bff9a5"
+sha256          = "f8f5d991ad3cbcc8da10e1068a4f668d81f59186570971d7dfbebdbacd0a5d38"
 depends         = []
 depends_checked = true
 kind            = "app"
-subdir          = "GiocoDel15_1.0"
-icon            = "GiocoDel15_1.0.info"
+subdir          = "GiocoDel15_1.1"
+icon            = "GiocoDel15_1.1.info"
 
-installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]   # ABIv11 binary; the ABI gate refuses it there
 
 [[requires_system]]
