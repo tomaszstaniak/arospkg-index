@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "gnurobbo",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-14",
+ "sha256": "27dae2c7cad34ee6c2d11aca81f8d647b1810b2fa9b5246fb98a09e567a7dfd2",
+ "size": 3389410,
+ "manifest_digest": "8b279a7fd444b1f752229d00b5eded6192b0746f4bac169f064bcc7d7c075dcd",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "212 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

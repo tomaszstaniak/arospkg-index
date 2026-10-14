@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "isomaker-gui",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-14",
+ "sha256": "195690d728f9fc2658a514087be5a8272912fce058732a4ef33441ef1f0e713e",
+ "size": 276822,
+ "manifest_digest": "a616d2d9311a642afd53ae3bb433ee4da86e2efe8a11a487041598466b455740",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "13 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "3 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

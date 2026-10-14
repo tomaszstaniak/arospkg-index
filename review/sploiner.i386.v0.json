@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "sploiner",
+ "arch": "i386",
+ "abi": "v0",
+ "date": "2026-10-14",
+ "sha256": "286e8a3a42160dfc2f4fa8a288d3274d0af2127822a479e302c1debd3ca88b11",
+ "size": 127956,
+ "manifest_digest": "405d5615b00301b2ee235b3c2419a1943410811c43958556ff21aa108b5c569f",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "9 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for i386; also 2 for another CPU (sploiner/sploiner.morphos, sploiner/sploiner.amiga)"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

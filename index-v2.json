@@ -37,7 +37,20 @@
       "icon": "Alien Breed HD.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -87,7 +100,20 @@
       "icon": "ALAC_Decoder.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -143,7 +169,20 @@
       "icon": "ALAC.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -244,7 +283,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -300,7 +352,20 @@
       "icon": "Antiword.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -412,7 +477,20 @@
       "icon": "Apotris.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -468,7 +546,20 @@
       "source": "https://github.com/tomaszstaniak/arospkg",
       "license": "MIT",
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [],
       "first_added": "2026-10-04",
@@ -505,7 +596,20 @@
       "source": "https://github.com/tomaszstaniak/arospkg",
       "license": "MIT",
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -569,7 +673,20 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -626,7 +743,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -686,7 +816,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -748,7 +891,20 @@
       "icon": "Bad_Apple.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -804,7 +960,20 @@
       "icon": "Bad_Apple.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -860,7 +1029,20 @@
       "icon": "Bin2Iso.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -976,7 +1158,20 @@
       "icon": "Blips.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1086,7 +1281,20 @@
       "icon": "Boy.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1146,7 +1354,20 @@
       "icon": "Boy.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1202,7 +1423,20 @@
       "icon": "BreakHack.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1258,7 +1492,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1314,7 +1561,20 @@
       "icon": "Ccd2Cue.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1370,7 +1630,20 @@
       "icon": "CCD2ISO.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1486,7 +1759,20 @@
       "icon": "DaveGnukem.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1540,7 +1826,20 @@
       "icon": "DaySleeper.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1596,7 +1895,20 @@
       "icon": "DaySleeper.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1652,7 +1964,20 @@
       "icon": "Delugem.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1708,7 +2033,20 @@
       "icon": "Demac.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1768,7 +2106,20 @@
       "icon": "DemoEffects.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1824,7 +2175,20 @@
       "icon": "Diablo.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1869,7 +2233,20 @@
       "icon": "DirTree.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -1949,7 +2326,20 @@
       "icon": "DirTree.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2050,7 +2440,20 @@
       "icon": "DiskUsage.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2102,7 +2505,20 @@
       "icon": "DiskUsage.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2234,7 +2650,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2294,7 +2723,20 @@
       "icon": "DOSBox.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2348,7 +2790,20 @@
       "icon": "dose2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2404,7 +2859,20 @@
       "icon": "Dose2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2460,7 +2928,20 @@
       "icon": "Fallout.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2516,7 +2997,20 @@
       "icon": "Fallout2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2570,7 +3064,20 @@
       "icon": "fheroes2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2626,7 +3133,20 @@
       "icon": "fheroes2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2680,7 +3200,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2736,7 +3269,20 @@
       "icon": "Finder.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2792,7 +3338,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2852,7 +3411,20 @@
       "icon": "FLX Play.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -2936,7 +3508,20 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [],
       "first_added": "2026-10-04",
@@ -3004,7 +3589,20 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [],
       "first_added": "2026-10-04",
@@ -3077,7 +3675,20 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3133,7 +3744,20 @@
       "icon": "FastTracker2-Clone.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3183,7 +3807,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3287,7 +3924,20 @@
       "icon": "Giddy3.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3347,7 +3997,20 @@
       "icon": "Giddy3.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3397,7 +4060,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3503,7 +4179,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3623,7 +4312,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3679,7 +4381,20 @@
       "icon": "GMore1.2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3795,7 +4510,20 @@
       "icon": "GNURobbo.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3862,7 +4590,20 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -3923,7 +4664,20 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4035,7 +4789,20 @@
       "icon": "Hexen2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4091,7 +4858,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4149,7 +4929,20 @@
       "icon": "Hocoslamfy.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4209,7 +5002,20 @@
       "icon": "Hocoslamfy.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4325,7 +5131,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4379,7 +5198,20 @@
       "icon": "HydraCastle.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4439,7 +5271,20 @@
       "icon": "HydraCastleLabyrinth.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4497,7 +5342,20 @@
       "icon": "IconMake.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4553,7 +5411,20 @@
       "icon": "IconMake.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4665,7 +5536,20 @@
       "icon": "IsoMaker.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4767,7 +5651,20 @@
       "icon": "IsoMaker-GUI.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4821,7 +5718,20 @@
       "icon": "IsoTool.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4877,7 +5787,20 @@
       "icon": "IsoTool.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -4981,7 +5904,20 @@
       "icon": "IsoTools-GUI.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5037,7 +5973,20 @@
       "icon": "IsoTools-GUI.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5093,7 +6042,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5149,7 +6111,20 @@
       "icon": "LBreakoutHD.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5203,7 +6178,20 @@
       "icon": "LedBlur.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5263,7 +6251,20 @@
       "icon": "LedBlur.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5329,7 +6330,20 @@
       "revision": 1,
       "source": "https://github.com/tomaszstaniak/limpet",
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5376,7 +6390,20 @@
       "icon": "MCAmiga.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5430,7 +6457,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5486,7 +6526,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5548,7 +6601,20 @@
       "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-micropolis",
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5678,7 +6744,20 @@
       "icon": "MiniSlug.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5734,7 +6813,20 @@
       "icon": "MPlayer.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5792,7 +6884,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5852,7 +6957,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5908,7 +7026,20 @@
       "icon": "Nomarch.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -5964,7 +7095,20 @@
       "icon": "OminoArcade1.0.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6020,7 +7164,20 @@
       "icon": "Omino1.1.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6142,7 +7299,20 @@
       "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-openloco",
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6196,7 +7366,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6256,7 +7439,20 @@
       "icon": "OpenTyrian.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6316,7 +7512,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6372,7 +7581,20 @@
       "icon": "Pekka Kana 2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6426,7 +7648,20 @@
       "icon": "54321.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6486,7 +7721,20 @@
       "icon": "54321.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6536,7 +7784,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6642,7 +7903,20 @@
       "icon": "7zDec.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6692,7 +7966,20 @@
       "icon": "PlanetHively.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6752,7 +8039,20 @@
       "icon": "PlanetHively.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6802,7 +8102,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6858,7 +8171,20 @@
       "icon": "Potrace.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6914,7 +8240,20 @@
       "icon": "Prboom-plus.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -6974,7 +8313,20 @@
       "icon": "ProTrekkr.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7024,7 +8376,20 @@
       "icon": "QLView.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7080,7 +8445,20 @@
       "icon": "QLView.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7130,7 +8508,20 @@
       "icon": "ResCode.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7186,7 +8577,20 @@
       "icon": "ResCode.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7302,7 +8706,20 @@
       "icon": "Residualvm.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7352,7 +8769,20 @@
       "icon": "RTF-Riddle.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7408,7 +8838,20 @@
       "icon": "RTF2HTML.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7508,7 +8951,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7564,7 +9020,20 @@
       "icon": "Screentest.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7694,7 +9163,20 @@
       "icon": "sdllopan-10.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7812,7 +9294,20 @@
       "icon": "SDLPoP.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7937,7 +9432,20 @@
       "icon": "SFSobject.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -7993,7 +9501,20 @@
       "icon": "ShooterSpace1.0.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8099,7 +9620,20 @@
       "icon": "SIDdump.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8155,7 +9689,20 @@
       "icon": "SidDump.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8205,7 +9752,20 @@
       "icon": "skandalfoclock.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8261,7 +9821,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8377,7 +9950,20 @@
       "icon": "SokobanGP2X.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8433,7 +10019,20 @@
       "icon": "Soliton.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8553,7 +10152,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8609,7 +10221,20 @@
       "icon": "Sploiner.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8669,7 +10294,20 @@
       "icon": "Stercus.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8725,7 +10363,20 @@
       "icon": "Stratagus.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8781,7 +10432,20 @@
       "icon": "Super-Haxagon.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8837,7 +10501,20 @@
       "icon": "Super Trevor Land.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8893,7 +10570,20 @@
       "icon": "TBFTSS.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8953,7 +10643,20 @@
       "icon": "Tilt-N-Roll.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9007,7 +10710,20 @@
       "icon": "Timeless.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9067,7 +10783,20 @@
       "icon": "Timeless.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9123,7 +10852,20 @@
       "icon": "TinySID.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9253,7 +10995,20 @@
       "icon": "Tinytris.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9307,7 +11062,20 @@
       "icon": "Tressette.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9413,7 +11181,20 @@
       "icon": "UnLZX.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9525,7 +11306,20 @@
       "icon": "UnRAR.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9581,7 +11375,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9628,7 +11435,20 @@
       "icon": "Untangle.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9740,7 +11560,20 @@
       "icon": "UnTarka.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9794,7 +11627,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9850,7 +11696,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -9953,7 +11812,20 @@
       "icon": "",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -10124,7 +11996,20 @@
       "icon": "ZuneCalc.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 1,
+        "date": "2026-10-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {

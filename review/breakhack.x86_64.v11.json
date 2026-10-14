@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "breakhack",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-14",
+ "sha256": "8f038366a39184a61443c2f1f0e6da70272b3c390b7f704294064f6fbf96cbad",
+ "size": 16058465,
+ "manifest_digest": "b449954f3ffce06e40d3ccb2cf0907e30666d9893f51967985f861a9cef149e3",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "9 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

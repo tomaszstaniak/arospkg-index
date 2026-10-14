@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "gmore",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-14",
+ "sha256": "65ecebd838705d29ffdb05dbd4727aa8e9c8f49342923a73e30d60acb6427131",
+ "size": 35787,
+ "manifest_digest": "2058cf455ffac6a697ea8c17d7cbfa057760287de414cec2a347c501e8728e04",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "7 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

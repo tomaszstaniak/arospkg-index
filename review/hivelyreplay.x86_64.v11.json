@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "hivelyreplay",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-14",
+ "sha256": "b7f06bcaf1db17665fcb125b1de0f2d13f57e40858f28f2583da1c6d718d117a",
+ "size": 90714,
+ "manifest_digest": "b8310eef3ac3b54800e61804d10def1218d908d4892758d2881f4508b44378df",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "15 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "qlview",
+ "arch": "i386",
+ "abi": "v0",
+ "date": "2026-10-14",
+ "sha256": "ef031b1814450656a124334ae3adc9f212a210ae4ebb1a0dc5f96b762fd64721",
+ "size": 258083,
+ "manifest_digest": "083e1ff70312d886c1817ed76da07a69ef6b971e4f18e9520b076553c4c1fe02",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "27 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for i386; also 1 for another CPU (QLView/QLView)"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

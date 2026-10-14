@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "daysleeper",
+ "arch": "i386",
+ "abi": "v0",
+ "date": "2026-10-14",
+ "sha256": "f0a21a5b72895fb7a890d2dcb501c552a7b087e1c31ab60eac0b520497f9f29c",
+ "size": 157619,
+ "manifest_digest": "cbd931008f5686d22ed014c4d4634a7b6d009d65b728ca77efd6ef3ef5505af2",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "10 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for i386"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

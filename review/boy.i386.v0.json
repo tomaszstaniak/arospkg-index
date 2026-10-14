@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "boy",
+ "arch": "i386",
+ "abi": "v0",
+ "date": "2026-10-14",
+ "sha256": "c7cbf0314992d0b216de2a12a9fc8e677ae05cea7186d9fbdb33549bf15cf75d",
+ "size": 6892187,
+ "manifest_digest": "f371c6896d0f8f0d5c7008b2246f63ef7b22f9b5e259958e5d33b649e32369f1",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "52 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for i386"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

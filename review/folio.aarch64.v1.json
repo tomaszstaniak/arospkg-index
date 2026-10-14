@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 1,
+ "id": "folio",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-10-14",
+ "sha256": "e06b76706f0c6bd5764625f30ca88e8838832d1893c8dfb11ac69af49a2130eb",
+ "size": 28864013,
+ "manifest_digest": "cd3eb23c9dc6ebd270bc635cd6d5b6b1e6b09528923c270e781e600d74dbf231",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "21 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
