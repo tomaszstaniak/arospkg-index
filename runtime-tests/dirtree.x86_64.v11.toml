@@ -1,0 +1,58 @@
+# Runtime tests of dirtree x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "0776eb0ad5dd0e05757da2860aca3131d5fd06ca22b27c0b0506e7e2d3b4be3b"
+date    = "2026-09-20"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0"
+
+[[test]]
+sha256  = "0776eb0ad5dd0e05757da2860aca3131d5fd06ca22b27c0b0506e7e2d3b4be3b"
+date    = "2026-09-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0"
+
+[[test]]
+sha256  = "0776eb0ad5dd0e05757da2860aca3131d5fd06ca22b27c0b0506e7e2d3b4be3b"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0"
+
+[[test]]
+sha256  = "0776eb0ad5dd0e05757da2860aca3131d5fd06ca22b27c0b0506e7e2d3b4be3b"
+date    = "2026-09-30"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0"
+
+[[test]]
+sha256  = "0776eb0ad5dd0e05757da2860aca3131d5fd06ca22b27c0b0506e7e2d3b4be3b"
+date    = "2026-10-02"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0"

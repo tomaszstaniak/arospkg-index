@@ -1,0 +1,14 @@
+# Runtime tests of planethively x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "fc24cc45d5dc052da00d5d94cb49d8ce879b98b8b4c6bad79563d6087b1155f2"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "window open and process running after 15 s, stack 40960"

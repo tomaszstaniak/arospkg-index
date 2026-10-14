@@ -1,0 +1,14 @@
+# Runtime tests of ccd2cue x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "c63e88c0a2aba462301a5e7ad2dcf2ff548ab199641216ec6ec00808f3e32c8a"
+date    = "2026-09-29"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0, stack 40960"

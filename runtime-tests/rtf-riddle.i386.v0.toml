@@ -1,0 +1,14 @@
+# Runtime tests of rtf-riddle i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "d53b2edc4f77143b7474319c795d0a88b92c7e072312ba0466a939cfc730a82f"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 22, stack 262144"

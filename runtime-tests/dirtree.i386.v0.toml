@@ -1,0 +1,36 @@
+# Runtime tests of dirtree i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "046e0ea9364c60f82779a8e3f3021d2519badb53ba3b3f2abf2276b52760bd4d"
+date    = "2026-09-29"
+system  = "AROS i386 ABIv0 20250313-1"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool drew the directory tree and returned 0"
+
+[[test]]
+sha256  = "046e0ea9364c60f82779a8e3f3021d2519badb53ba3b3f2abf2276b52760bd4d"
+date    = "2026-10-02"
+system  = "AROS i386 ABIv0 20250313-1"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool drew the directory tree and returned 0"
+
+[[test]]
+sha256  = "046e0ea9364c60f82779a8e3f3021d2519badb53ba3b3f2abf2276b52760bd4d"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "Shell tool printed its output and returned 0, stack 262144"

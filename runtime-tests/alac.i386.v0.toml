@@ -1,0 +1,14 @@
+# Runtime tests of alac i386/v0: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "3b2d5d19acbe9f3ad14e734b031473a4e73ed34052f32528bc4fcc17dd7b0164"
+date    = "2026-10-03"
+system  = "AROS One 2.9"
+arch    = "i386"
+abi     = "v0"
+machine = "QEMU (KVM)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "run on test input made for it, wrote the expected output, returned 0, stack 262144"

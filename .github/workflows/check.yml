@@ -2,11 +2,13 @@
 # within the client's limits, check its size and SHA-256 against the
 # manifest, and generate both catalogue files as a trial. Read-only token, no
 # secrets; nothing from the pull request is run (manifests are read as TOML
-# data, archives are only listed).
+# data, archives are only listed and their headers read). The automatic
+# review runs here; a pull request that edits review/ or history.json fails,
+# because only the publish workflow writes them.
 name: check
 on:
   pull_request:
-    paths: ["manifests/**", "overrides/**"]
+    paths: ["manifests/**", "overrides/**", "runtime-tests/**", "review/**", "history.json"]
 permissions:
   contents: read
 jobs:

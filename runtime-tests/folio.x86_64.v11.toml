@@ -1,0 +1,58 @@
+# Runtime tests of folio x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "e46f8c09562899bd41315c08eae47632c5316ae696c6785414989401a6531ecf"
+date    = "2026-09-26"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.3.8: installed from the GitHub release; running 20 s after Run with an 8 MiB stack; removal left nothing"
+
+[[test]]
+sha256  = "432298b9bc4abfe92cb573c6cc157d12b54ceef43888405796a7a6e68de186a2"
+date    = "2026-09-27"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.4: installed by apkg 0.2 from a seeded cache and from the release URL; opened a 22-page PDF, layout checks passed; both removed"
+
+[[test]]
+sha256  = "c78eddde9a5e34eda2de1dc51eb16ebf810aea5b5feb9579562232d3d2589626"
+date    = "2026-10-04"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.4.1 LHA: installed from a seeded cache through a test index; rendered a 3-page PDF, spread and page jump; quit rc 0; removed"
+
+[[test]]
+sha256  = "024ba46165b07e10bd44312f9cb2fe5ed8c412755e77958a750eb7d8b8065193"
+date    = "2026-10-06"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.4.1-aros1: installed from the public catalogue over the network; started from a Shell with an 8 MiB stack, rendered page 1; removed"
+
+[[test]]
+sha256  = "e8aa4792eace65791ea49c13d2eda8b258c6c4bf00abe14fa0b820e08a3cb840"
+date    = "2026-10-12"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.5: apkg 0.5.0 installed it from the release URL, verified 16 files; apkg run started it from its icon, rendered a PDF, turned a page; removed"

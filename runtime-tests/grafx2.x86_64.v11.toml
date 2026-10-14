@@ -1,0 +1,36 @@
+# Runtime tests of grafx2 x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "b037cb10dbdd7e2d527764a3b6f1d48bcf9876dd954ba7595fed3c55820d2d61"
+date    = "2026-09-26"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "revision 4: installed from the GitHub release; running 20 s after Run with an 8 MiB stack; removal kept files GrafX2 wrote"
+
+[[test]]
+sha256  = "2587bc80ca648963c2fbe4826cbd9f7c9119cb3845adf4cc8491cb8f365c3d00"
+date    = "2026-10-08"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "revision 5: apkg upgrade from revision 4; started with an 8 MiB stack, Italian keymap typed correctly; removal kept files GrafX2 wrote"
+
+[[test]]
+sha256  = "b037cb10dbdd7e2d527764a3b6f1d48bcf9876dd954ba7595fed3c55820d2d61"
+date    = "2026-10-08"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "revision 4 installed from the public catalogue as the starting point of the upgrade test; not started"

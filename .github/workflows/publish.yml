@@ -1,19 +1,25 @@
-# After a merge to main: regenerate index-v2.json and index.json from the
-# manifests and commit them. One run at a time; a run that fails writes
-# nothing, so the published files stay as they were. The push is refused if
-# main has moved since the run started, so an older run cannot replace a
-# newer catalogue.
+# After a merge to main: review the changed packages, regenerate index-v2.json
+# and index.json from the manifests, and commit them with the review records
+# (review/) and the first publication dates (history.json). One run at a
+# time; a run that fails writes nothing, so the published files stay as they
+# were. The push is refused if main has moved since the run started, so an
+# older run cannot replace a newer catalogue.
 name: publish
 on:
   push:
     branches: [main]
-    paths: ["manifests/**", "overrides/**"]
+    paths: ["manifests/**", "overrides/**", "runtime-tests/**"]
   workflow_dispatch:
     inputs:
       base:
         description: "Compare package metadata with this commit; blank checks all packages"
         required: false
         type: string
+      review_all:
+        description: "Review every published package again (a new review suite, changed upstream files)"
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -42,9 +48,11 @@ jobs:
       - name: Validate and generate catalogue
         env:
           BASE_REF: ${{ github.event.before || inputs.base }}
-        run: python3 .tools/tools/ci_check_index.py . --base "$BASE_REF" --out-dir . --cache "$RUNNER_TEMP/archives"
+          REVIEW_ALL: ${{ inputs.review_all && '--review-all' || '' }}
+        run: python3 .tools/tools/ci_check_index.py . --base "$BASE_REF" --out-dir . --review-dir review
+             --commit "$GITHUB_SHA" --cache "$RUNNER_TEMP/archives" $REVIEW_ALL
       - run: |
-          git add index.json index-v2.json
+          git add index.json index-v2.json history.json review
           if git diff --cached --quiet; then echo "catalogue unchanged"; exit 0; fi
           git -c user.name="arospkg-index" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
               commit -q -m "Regenerate the catalogue from ${GITHUB_SHA::12}"
