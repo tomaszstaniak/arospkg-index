@@ -8,8 +8,11 @@ publisher's URL, such as AROS Archives or GitHub Releases; they are not mirrored
 
 ## What is in here
 
-- `index-v2.json`: the generated catalogue clients after 0.3.2 download with
+- `index-v3.json`: the generated catalogue apkg 0.6 and later download with
   `apkg update`, with every package.
+- `index-v2.json`: the same for apkg 0.4 and 0.5, without the packages
+  that need relations they do not read (`depends`, `conflicts`,
+  `replaces`): those would install there without what they need.
 - `index.json`: the same, for clients up to 0.3.2: the packages it already
   lists, kept up to date, within the 8192 JSON values those clients read.
 - `manifests/`: one file per approved package build, `<id>.<arch>.<abi>.toml`
