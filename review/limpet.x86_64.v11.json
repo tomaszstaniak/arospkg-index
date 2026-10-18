@@ -1,13 +1,13 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 2,
  "id": "limpet",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-15",
- "sha256": "695499c8769e4e4659095067e4cc0fef5cc434fe3216b132eb5772f34932519e",
- "size": 3666468,
- "manifest_digest": "9507f35380185733346ec68dd4a06390dd0c647af1e29d3905cdf9f7f203e261",
+ "date": "2026-10-18",
+ "sha256": "ca591ee09a561f80ea83fe9e002643e181b801e3877cbe9b85d1d82e43b920a0",
+ "size": 3667762,
+ "manifest_digest": "4a298d5f1fb2a96cff9081141964d2bd0ef01f51806757937d18dc06b2f22242",
  "result": "passed",
  "checks": [
   {
