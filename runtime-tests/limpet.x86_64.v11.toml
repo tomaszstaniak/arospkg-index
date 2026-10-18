@@ -100,3 +100,25 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install"]
 note    = "0.3.0 installed from the public catalogue as the starting point of the 0.4.0 upgrade test; only its version string was read"
+
+[[test]]
+sha256  = "ca591ee09a561f80ea83fe9e002643e181b801e3877cbe9b85d1d82e43b920a0"
+date    = "2026-10-18"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.6.0: apkg upgrade from 0.5.0 kept a user-changed theme; started, Version and the window size ran; removed"
+
+[[test]]
+sha256  = "695499c8769e4e4659095067e4cc0fef5cc434fe3216b132eb5772f34932519e"
+date    = "2026-10-18"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "0.5.0 installed from the public catalogue as the starting point of the 0.6.0 upgrade test; only its version string was read"
