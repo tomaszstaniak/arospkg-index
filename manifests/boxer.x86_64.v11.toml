@@ -38,7 +38,7 @@ post_install_notes = [
   "No games are included. ReadMe.txt in the drawer describes import and the logs.",
 ]
 
-# Libraries BoxerUI opens at start that AROS One supplies (Boxer/REQUIREMENTS.txt).
+# System libraries supplied by AROS One. The SDL3 build does not require gl.library.
 [[requires_system]]
 type = "library"
 id   = "crt.library"
@@ -70,10 +70,6 @@ id   = "iffparse.library"
 [[requires_system]]
 type = "library"
 id   = "commodities.library"
-
-[[requires_system]]
-type = "library"
-id   = "gl.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-boxerapp"
