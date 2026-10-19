@@ -4,10 +4,10 @@
  "id": "limpet",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-18",
- "sha256": "ca591ee09a561f80ea83fe9e002643e181b801e3877cbe9b85d1d82e43b920a0",
- "size": 3667762,
- "manifest_digest": "4a298d5f1fb2a96cff9081141964d2bd0ef01f51806757937d18dc06b2f22242",
+ "date": "2026-10-19",
+ "sha256": "253dc48dfc5a241c5e8c4efce08d4ebafc980d8f298095e003c97ec51f71e973",
+ "size": 3668952,
+ "manifest_digest": "fc9cc6165ab88458e1c3adb560a903354564e8c572ff27ef4cb2154d50210b5e",
  "result": "passed",
  "checks": [
   {

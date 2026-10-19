@@ -6287,14 +6287,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.6.0",
+      "version": "0.6.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.6.0/Limpet-0.6.0-abiv11.zip",
-      "size": 3667762,
-      "sha256": "ca591ee09a561f80ea83fe9e002643e181b801e3877cbe9b85d1d82e43b920a0",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.6.1/Limpet-0.6.1-abiv11.zip",
+      "size": 3668952,
+      "sha256": "253dc48dfc5a241c5e8c4efce08d4ebafc980d8f298095e003c97ec51f71e973",
       "depends": [],
       "requires_system": [
         {
@@ -6332,7 +6332,7 @@
       "review": {
         "status": "reviewed",
         "suite": 2,
-        "date": "2026-10-18",
+        "date": "2026-10-19",
         "checked": [
           "metadata",
           "download",
@@ -6351,14 +6351,14 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-18",
+          "date": "2026-10-19",
           "result": "passed",
           "checked": [
             "install",
             "start",
             "remove"
           ],
-          "note": "0.6.0: apkg upgrade from 0.5.0 kept a user-changed theme; started, Version and the window size ran; removed"
+          "note": "0.6.1: apkg upgrade from 0.6.0 kept a user-changed theme; started, Version, the window size and COLORTERM ran; removed"
         }
       ],
       "first_added": "2026-10-03",
