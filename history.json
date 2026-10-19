@@ -65,6 +65,10 @@
    "first_added": "2026-09-19",
    "commit": "206e013c694d"
   },
+  "boxer/x86_64/v11": {
+   "first_added": "2026-10-19",
+   "commit": "71c2aa3f848d"
+  },
   "boy/i386/v0": {
    "first_added": "2026-10-03",
    "commit": "9c5cb008aded"
@@ -654,6 +658,10 @@
   "blips": {
    "first_added": "2026-09-19",
    "commit": "206e013c694d"
+  },
+  "boxer": {
+   "first_added": "2026-10-19",
+   "commit": "71c2aa3f848d"
   },
   "boy": {
    "first_added": "2026-09-29",

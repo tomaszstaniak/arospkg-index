@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 2,
+ "id": "boxer",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-19",
+ "sha256": "5c3620fa5ad29af5c231e61dbe106f2e99499252f73acb57d9cfa2658224d2fb",
+ "size": 14173786,
+ "manifest_digest": "8ba7fb199d6851ab26383d81baebc4bba588dde29d7e25f5de37eaaa5ee19c96",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "38 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

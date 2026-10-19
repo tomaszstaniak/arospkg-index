@@ -1249,6 +1249,112 @@
       "app_first_added": "2026-09-19"
     },
     {
+      "id": "boxer",
+      "version": "0.1.0-preview5",
+      "summary": "DOS game front end with Boxer's DOSBox core: import, gameboxes, covers (experimental preview)",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "emulation/computer",
+      "url": "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.1.0-preview5/boxer-0.1.0-preview5.x86_64-aros-v11.zip",
+      "size": 14173786,
+      "sha256": "5c3620fa5ad29af5c231e61dbe106f2e99499252f73acb57d9cfa2658224d2fb",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "diskfont.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "commodities.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [],
+      "does_not_run_on": [
+        "mainline-x86_64"
+      ],
+      "kind": "app",
+      "subdir": "Boxer",
+      "icon": "Boxer.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-boxerapp",
+      "license": "GPL-2.0",
+      "post_install_notes": [
+        "Experimental preview: use a test installation of AROS. A hung game session can crash AROS.",
+        "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+        "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
+        "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
+        "No games are included. ReadMe.txt in the drawer describes import and the logs."
+      ],
+      "launch": {
+        "executable": "BoxerUI",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 2,
+        "date": "2026-10-19",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-19",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "0.1.0-preview5: installed with apkg 0.5.0, hash verified; Install-Assign set Boxer:; apkg run opened the welcome window; assign removed; removed"
+        }
+      ],
+      "first_added": "2026-10-19",
+      "app_first_added": "2026-10-19"
+    },
+    {
       "id": "boy",
       "version": "2008",
       "summary": "Port of OpenGL demo from Icons '08",
