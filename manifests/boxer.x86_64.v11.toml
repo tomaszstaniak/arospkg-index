@@ -1,0 +1,81 @@
+# Boxer for AROS 0.1.0 preview 5. Our own port, published by its author as a
+# GitHub release asset (prerelease, tag v0.1.0-preview5). An experimental
+# preview: a game session can freeze, and closing a hung session can crash AROS.
+#
+# Archive layout (checked on the release asset 2026-10-19): Boxer/ with
+# BoxerUI, Install-Assign, conf/, Fonts/, dosbox.msg, ReadMe.txt, licences and
+# the complete source, plus Boxer.info beside it.
+# Game icons start Boxer:BoxerUI, so the user runs Install-Assign once after
+# installing (tested from a Shell with Execute); apkg makes no assigns. Install-Assign REMOVE undoes it.
+# First entry for this package.
+
+status          = "approved"
+id              = "boxer"
+version         = "0.1.0-preview5"
+revision        = 1
+summary         = "DOS game front end with Boxer's DOSBox core: import, gameboxes, covers (experimental preview)"
+category        = "emulation/computer"
+license         = "GPL-2.0"
+url             = "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.1.0-preview5/boxer-0.1.0-preview5.x86_64-aros-v11.zip"
+size            = 14173786
+sha256          = "5c3620fa5ad29af5c231e61dbe106f2e99499252f73acb57d9cfa2658224d2fb"
+kind            = "app"
+arch            = "x86_64"
+abi             = "v11"
+
+depends         = []
+depends_checked = true
+subdir          = "Boxer"
+icon            = "Boxer.info"   # the drawer icon, beside Boxer/ at the archive root
+installs_on     = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
+
+post_install_notes = [
+  "Experimental preview: use a test installation of AROS. A hung game session can crash AROS.",
+  "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+  "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
+  "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
+  "No games are included. ReadMe.txt in the drawer describes import and the logs.",
+]
+
+# System libraries supplied by AROS One. The SDL3 build does not require gl.library.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id   = "diskfont.library"
+
+[[requires_system]]
+type = "library"
+id   = "iffparse.library"
+
+[[requires_system]]
+type = "library"
+id   = "commodities.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-boxerapp"
+revision   = "v0.1.0-preview5"
+built_with = "abiv11-x86_64, GCC 10.5.0"
+
+[launch]
+executable = "BoxerUI"
+mode       = "workbench"
