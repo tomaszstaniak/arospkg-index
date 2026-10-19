@@ -1,29 +1,30 @@
-# Limpet 0.6.0. Our own program, published by its author as a GitHub
-# release asset (tag v0.6.0): Ctrl-D/E/F and Ctrl-\ as in the system
-# console, Shift+Enter for raw-mode programs that ask for it, and answers
-# to the Amiga console's window-size and cursor queries.
+# Limpet 0.6.1. Our own program, published by its author as a GitHub
+# release asset (tag v0.6.1): letters of keymaps in other character sets,
+# no stray Shell line after a full-screen editor, programs notice a closed
+# window, margins in a full-screen program's colours, COLORTERM=truecolor.
 #
-# Same archive layout as 0.5.0 (checked on the release asset 2026-10-18):
+# Same archive layout as 0.6.0 (checked on the release asset 2026-10-19):
 # Limpet/ with the program, README.txt, fonts, themes and licences, plus
 # Limpet.info beside it. The experimental LIMPET: console handler is a
 # separate release asset and not part of this package.
 # The terminal was tested on AROS One 1.3 x86_64 under QEMU with this
-# program (limpet doc/verification-0.6.0.md).
-# apkg upgrade from 0.5.0.
-# 0.5.0 entry: approved 2026-10-15; 0.4.1: 2026-10-13; 0.4.0: 2026-10-13;
-# 0.3.0: 2026-10-11; 0.2.1: 2026-10-11; 0.2.0: 2026-10-08; 0.1.0: 2026-10-04.
+# program (limpet doc/verification-0.6.1.md).
+# apkg upgrade from 0.6.0.
+# 0.6.0 entry: approved 2026-10-18; 0.5.0: 2026-10-15; 0.4.1: 2026-10-13;
+# 0.4.0: 2026-10-13; 0.3.0: 2026-10-11; 0.2.1: 2026-10-11; 0.2.0: 2026-10-08;
+# 0.1.0: 2026-10-04.
 
 status          = "approved"
 id              = "limpet"
-version         = "0.6.0"
+version         = "0.6.1"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.6.0/Limpet-0.6.0-abiv11.zip"
-size            = 3667762
-sha256          = "ca591ee09a561f80ea83fe9e002643e181b801e3877cbe9b85d1d82e43b920a0"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.6.1/Limpet-0.6.1-abiv11.zip"
+size            = 3668952
+sha256          = "253dc48dfc5a241c5e8c4efce08d4ebafc980d8f298095e003c97ec51f71e973"
 kind            = "app"
 
 depends         = []
@@ -31,7 +32,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]        # 0.6.0 started after apkg upgrade 2026-10-18
+runs_on         = ["aros-one"]        # 0.6.1 started after apkg upgrade 2026-10-19
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # Libraries the binary opens that AROS One supplies. The system fonts
@@ -54,5 +55,5 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.6.0"
+revision   = "v0.6.1"
 built_with = "abiv11-x86_64, GCC 10.5.0"
