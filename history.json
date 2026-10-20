@@ -105,6 +105,10 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "deckcraft/x86_64/v11": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
+  },
   "delugem/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -249,6 +253,10 @@
    "first_added": "2026-09-19",
    "commit": "206e013c694d"
   },
+  "gridcraft/x86_64/v11": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
+  },
   "hexen2/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -389,9 +397,17 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "pdfcraft/x86_64/v11": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
+  },
   "pekkakana2/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "photocraft/x86_64/v11": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
   },
   "pkg-54321/i386/v0": {
    "first_added": "2026-10-03",
@@ -601,6 +617,10 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "wordcraft/x86_64/v11": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
+  },
   "xrick/x86_64/v11": {
    "first_added": "2026-09-19",
    "commit": "206e013c694d"
@@ -690,6 +710,10 @@
   "daysleeper": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "deckcraft": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
   },
   "delugem": {
    "first_added": "2026-09-29",
@@ -786,6 +810,10 @@
   "grep": {
    "first_added": "2026-09-19",
    "commit": "206e013c694d"
+  },
+  "gridcraft": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
   },
   "hexen2": {
    "first_added": "2026-09-29",
@@ -891,9 +919,17 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "pdfcraft": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
+  },
   "pekkakana2": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "photocraft": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
   },
   "pkg-54321": {
    "first_added": "2026-09-29",
@@ -1046,6 +1082,10 @@
   "wildmidi": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "wordcraft": {
+   "first_added": "2026-10-20",
+   "commit": "93ac3ccf479d"
   },
   "xrick": {
    "first_added": "2026-09-19",

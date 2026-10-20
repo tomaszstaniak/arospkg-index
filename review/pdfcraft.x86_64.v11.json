@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 2,
+ "id": "pdfcraft",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-20",
+ "sha256": "113c3fd6a5da413703955dda5ef460439a673404704663e38a464f70b841fc2a",
+ "size": 39669910,
+ "manifest_digest": "8550cbd543bb736150a65f426b74079be6b7c98e631cc110368fec295fd46518",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "513 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

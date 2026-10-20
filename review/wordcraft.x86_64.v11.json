@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 2,
+ "id": "wordcraft",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-20",
+ "sha256": "63b93af28961b89d2064d363df8a78ba1476be471201438236832d8bf7a33b05",
+ "size": 43875201,
+ "manifest_digest": "5c62f7985eeb893287f6048ff94e575ccb34abc28e280112c2c2ddfa42ee7e65",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "36 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

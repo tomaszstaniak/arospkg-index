@@ -1,0 +1,50 @@
+{
+ "schema": 1,
+ "suite": 2,
+ "id": "deckcraft",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-20",
+ "sha256": "9704ac4345138532dac9493463fb0238eb322fdfecedaabe9d6d00a3dd7d3d3b",
+ "size": 55075595,
+ "manifest_digest": "21fd22b019836b61d515b9f0047bd0f1121cec5583a26a8bb5f56d40f43a40c5",
+ "result": "passed",
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "48 members"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
