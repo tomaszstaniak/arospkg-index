@@ -1,0 +1,63 @@
+# WordCraft for AROS 0.7.0-test4-r2. Our own port of storytold/wordcraft, published by its author as a
+# GitHub release asset (prerelease, tag v0.7.0-test4-r2). Experimental and not optimised.
+# Rebuild 2: the same program as the earlier test build, without build-machine paths.
+# Archive layout (checked 2026-10-20): WordCraft/ with WordCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus WordCraft.info beside it.
+# First entry for this package.
+
+status          = "approved"
+id              = "wordcraft"
+version         = "0.7.0-test4-r2"
+revision        = 1
+summary         = "Word processor for DOCX, ODT and RTF with PDF export (experimental, not optimised)"
+category        = "office/text"
+license         = "MIT OR Apache-2.0"
+url             = "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.7.0-test4-r2/WordCraft-0.7.0-test4-r2.x86_64-aros-v11.zip"
+size            = 43875201
+sha256          = "63b93af28961b89d2064d363df8a78ba1476be471201438236832d8bf7a33b05"
+kind            = "app"
+arch            = "x86_64"
+abi             = "v11"
+
+depends         = []
+depends_checked = true
+subdir          = "WordCraft"
+icon            = "WordCraft.info"   # the drawer icon, beside WordCraft/ at the archive root
+installs_on     = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
+
+post_install_notes = [
+  "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
+  "Typing lags behind, more in a large window. No printing: export to PDF instead.",
+  "Settings are kept in WordCraftData inside the program's drawer.",
+  "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong.",
+]
+
+# System libraries the programs open; AROS One supplies them. bsdsocket.library is optional.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id   = "iffparse.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-wordcraft"
+revision   = "v0.7.0-test4-r2"
+built_with = "abiv11-x86_64, GCC 10.5.0, Rust nightly 1.100 (rust-aros)"
+
+[launch]
+executable = "WordCraft"
+mode       = "workbench"
