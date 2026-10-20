@@ -1,0 +1,62 @@
+# PdfCraft for AROS 0.9.0-test2-r2. Our own port of storytold/pdfcraft, published by its author as a
+# GitHub release asset (prerelease, tag v0.9.0-test2-r2). Experimental and not optimised.
+# Rebuild 2: the same program as the earlier test build, without build-machine paths.
+# Archive layout (checked 2026-10-20): PdfCraft-0.9.0-aros-v11-x86_64-test2-r2/ with PdfCraft, pdfcraft-cli, README.txt, BUILD.json, notices and Licenses/.
+# First entry for this package.
+
+status          = "approved"
+id              = "pdfcraft"
+version         = "0.9.0-test2-r2"
+revision        = 1
+summary         = "PDF viewer and editor: search, rotate, save (experimental, not optimised)"
+category        = "office/misc"
+license         = "MIT OR Apache-2.0"
+url             = "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.9.0-test2-r2/PdfCraft-0.9.0-aros-v11-x86_64-test2-r2.zip"
+size            = 39669910
+sha256          = "113c3fd6a5da413703955dda5ef460439a673404704663e38a464f70b841fc2a"
+kind            = "app"
+arch            = "x86_64"
+abi             = "v11"
+
+depends         = []
+depends_checked = true
+subdir          = "PdfCraft-0.9.0-aros-v11-x86_64-test2-r2"
+installs_on     = ["aros-one"]
+does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
+
+post_install_notes = [
+  "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
+  "Start it from a Shell after Stack 4000000; there is no Workbench icon. OCR and printing are not available.",
+  "A desktop crash after closing PdfCraft was reported on one system and is not known to be fixed. README.txt explains logging.",
+  "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong.",
+]
+
+# System libraries the programs open; AROS One supplies them. bsdsocket.library is optional.
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id   = "iffparse.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-pdfcraft"
+revision   = "v0.9.0-test2-r2"
+built_with = "abiv11-x86_64, GCC 10.5.0, Rust nightly 1.100 (rust-aros)"
+
+[launch]
+executable = "PdfCraft"
+mode       = "shell"
