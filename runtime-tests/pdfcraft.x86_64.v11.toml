@@ -11,7 +11,7 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "failed"
 checked = ["install"]
-note    = "0.9.0-test2-r2: apkg 0.5.0 downloaded and verified the archive, then refused it: member over size limit (PdfCraft, 73 MB; limit 64 MiB)"
+note    = "0.9.0-test2-r2: apkg 0.5.0 verified the download, then refused it: member over size limit (PdfCraft 73 MB, limit 64 MiB)"
 
 [[test]]
 sha256  = "1d06e9e8ff5ebbadab1d1276c0b263a8f58e54608ec34acb96d8fa95e6904f10"
@@ -22,4 +22,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "run", "verify", "remove"]
-note    = "0.9.0-test4: installed with apkg 0.5.0 from the published catalogue into SYS:, hash verified; apkg run started it from its icon, closed with the window gadget, rc 0; verify ok; PkgManager listed it installed; removed, rc 0"
+note    = "0.9.0-test4: apkg 0.5.0 install from the catalogue to SYS:, apkg run from its icon, closed, verify ok, PkgManager listed it, removed"
