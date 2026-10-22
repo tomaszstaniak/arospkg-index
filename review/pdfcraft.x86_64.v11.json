@@ -4,10 +4,10 @@
  "id": "pdfcraft",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-20",
- "sha256": "113c3fd6a5da413703955dda5ef460439a673404704663e38a464f70b841fc2a",
- "size": 39669910,
- "manifest_digest": "8550cbd543bb736150a65f426b74079be6b7c98e631cc110368fec295fd46518",
+ "date": "2026-10-22",
+ "sha256": "1d06e9e8ff5ebbadab1d1276c0b263a8f58e54608ec34acb96d8fa95e6904f10",
+ "size": 36681261,
+ "manifest_digest": "f08ecdd0e26ddd0fafc4cf6292a79efc3ad33451afdaa8c97b42f6cb0aeadc2b",
  "result": "passed",
  "checks": [
   {
@@ -23,7 +23,7 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "513 members"
+   "detail": "796 members"
   },
   {
    "name": "paths",

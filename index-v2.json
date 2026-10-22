@@ -7810,14 +7810,14 @@
     },
     {
       "id": "pdfcraft",
-      "version": "0.9.0-test2-r2",
+      "version": "0.9.0-test4",
       "summary": "PDF viewer and editor: search, rotate, save (experimental, not optimised)",
       "arch": "x86_64",
       "abi": "v11",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.9.0-test2-r2/PdfCraft-0.9.0-aros-v11-x86_64-test2-r2.zip",
-      "size": 39669910,
-      "sha256": "113c3fd6a5da413703955dda5ef460439a673404704663e38a464f70b841fc2a",
+      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.9.0-test4/PdfCraft-0.9.0-test4.x86_64-aros-v11.zip",
+      "size": 36681261,
+      "sha256": "1d06e9e8ff5ebbadab1d1276c0b263a8f58e54608ec34acb96d8fa95e6904f10",
       "depends": [],
       "requires_system": [
         {
@@ -7849,27 +7849,27 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "PdfCraft-0.9.0-aros-v11-x86_64-test2-r2",
-      "icon": "",
+      "subdir": "PdfCraft",
+      "icon": "PdfCraft.info",
       "install": {},
       "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-pdfcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
         "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
-        "Start it from a Shell after Stack 4000000; there is no Workbench icon. OCR and printing are not available.",
-        "A desktop crash after closing PdfCraft was reported on one system and is not known to be fixed. README.txt explains logging.",
+        "Double-click the PdfCraft icon; from a Shell run Stack 4000000 first. OCR and printing are not available.",
+        "Test 4 fixes a crash after closing PdfCraft started from Workbench. README.txt in the drawer explains logging.",
         "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong."
       ],
       "launch": {
         "executable": "PdfCraft",
-        "mode": "shell",
+        "mode": "workbench",
         "working_directory": "."
       },
       "review": {
         "status": "reviewed",
         "suite": 2,
-        "date": "2026-10-20",
+        "date": "2026-10-22",
         "checked": [
           "metadata",
           "download",
