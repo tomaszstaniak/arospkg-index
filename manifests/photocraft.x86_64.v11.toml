@@ -1,19 +1,20 @@
-# PhotoCraft for AROS 0.7.0-preview2-r2. Our own port of storytold/photocraft, published by its author as a
-# GitHub release asset (prerelease, tag v0.7.0-preview2-r2). Experimental and not optimised.
-# Rebuild 2: the same program as the earlier test build, without build-machine paths.
-# Archive layout (checked 2026-10-20): PhotoCraft/ with PhotoCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus PhotoCraft.info beside it.
-# First entry for this package.
+# PhotoCraft for AROS 0.7.0-preview3. Our own port of storytold/photocraft, published by its author as a
+# GitHub release asset (prerelease, tag v0.7.0-preview3). Experimental and not optimised.
+# Preview 3: keeps the startup drawer's lock on the main task (Workbench exit fix), whole-program LTO, stripped programs.
+# Archive layout (checked 2026-10-23): PhotoCraft/ with PhotoCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus PhotoCraft.info beside it.
+# The program is over 64 MiB unpacked, so this entry is for apkg 0.6.0 and later only (large-members).
+# Previous entry: 0.7.0-preview2-r2 (2026-10-20), whose program was over apkg 0.5.0's 64 MiB file limit.
 
 status          = "approved"
 id              = "photocraft"
-version         = "0.7.0-preview2-r2"
+version         = "0.7.0-preview3"
 revision        = 1
 summary         = "Image editor with layers, masks, painting and PSD/PNG files (experimental, not optimised)"
 category        = "graphics/edit"
 license         = "MIT OR Apache-2.0"
-url             = "https://github.com/tomaszstaniak/aros-photocraft/releases/download/v0.7.0-preview2-r2/PhotoCraft-0.7.0-preview2-r2.x86_64-aros-v11.zip"
-size            = 48556283
-sha256          = "d4a560aea87a2cdee1a2ef2b55521ad17d99d8abdbc5cabd605e451bb6b47290"
+url             = "https://github.com/tomaszstaniak/aros-photocraft/releases/download/v0.7.0-preview3/PhotoCraft-0.7.0-preview3.x86_64-aros-v11.zip"
+size            = 45313513
+sha256          = "585e62badd3bce98920174647c18aaa04df6e1a26fa470e966af65e32fc73b29"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
@@ -28,6 +29,7 @@ does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 post_install_notes = [
   "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
   "Use file names without accented letters. Large documents can be slow.",
+  "Needs apkg 0.6.0 or later.",
   "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong.",
 ]
 
@@ -54,7 +56,7 @@ id   = "iffparse.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-photocraft"
-revision   = "v0.7.0-preview2-r2"
+revision   = "v0.7.0-preview3"
 built_with = "abiv11-x86_64, GCC 10.5.0, Rust nightly 1.100 (rust-aros)"
 
 [launch]
