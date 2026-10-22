@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "arospkg",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
- "sha256": "4fc6b9d91b505054cc3025562e2586fb7d5714b95ec01496da85a9c7c8a5aa3c",
- "size": 854414,
- "manifest_digest": "5d0366ac144aab914a7f85cbd547ecdafaccf20f3ebc1afc909d0e380503df30",
+ "date": "2026-10-22",
+ "sha256": "57938cdbf855d1fb7012581a07eca7c9f49b39fbbcfa7a5dad489c404b4b74b5",
+ "size": 921724,
+ "manifest_digest": "9c03bb9ef43242f14f7f6c480f339314f73e48ffb3d1f1f333f2a3ddcbf43863",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1221600,
+  "unpacked": 2523384
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "37 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1221600 bytes (arospkg-0.6.0.x86_64-aros-v11/PkgManager), 2523384 bytes unpacked"
   },
   {
    "name": "paths",

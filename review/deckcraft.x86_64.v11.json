@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 2,
+ "suite": 3,
  "id": "deckcraft",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-20",
- "sha256": "9704ac4345138532dac9493463fb0238eb322fdfecedaabe9d6d00a3dd7d3d3b",
- "size": 55075595,
- "manifest_digest": "21fd22b019836b61d515b9f0047bd0f1121cec5583a26a8bb5f56d40f43a40c5",
+ "date": "2026-10-22",
+ "sha256": "57055356fbd07a84411c87db9365704102b405b60fd34a17682a81cd5ca91520",
+ "size": 44094755,
+ "manifest_digest": "0665c48dbb702ef75a1d1ffb67e68cc7ac4f1f36d341e70c081829fabe1f2b28",
  "result": "passed",
+ "sizes": {
+  "largest_member": 66298392,
+  "unpacked": 122950591
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "48 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 66298392 bytes (DeckCraft/DeckCraft), 122950591 bytes unpacked"
   },
   {
    "name": "paths",
