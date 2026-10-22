@@ -1,20 +1,19 @@
-# GridCraft for AROS 0.8.0-test2. Our own port of storytold/gridcraft, published by its author as a
-# GitHub release asset (prerelease, tag v0.8.0-test2). Experimental and not optimised.
-# Test 2: keeps the startup drawer's lock on the main task (Workbench exit fix), whole-program LTO, stripped programs.
-# Archive layout (checked 2026-10-23): GridCraft/ with GridCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus GridCraft.info beside it.
-# Every file is under 64 MiB, so apkg 0.5.0 installs it too.
-# Previous entry: 0.8.0-test1-r2 (2026-10-20), whose program was over apkg 0.5.0's 64 MiB file limit.
+# GridCraft for AROS 0.8.0-test1-r2. Our own port of storytold/gridcraft, published by its author as a
+# GitHub release asset (prerelease, tag v0.8.0-test1-r2). Experimental and not optimised.
+# Rebuild 2: the same program as the earlier test build, without build-machine paths.
+# Archive layout (checked 2026-10-20): GridCraft/ with GridCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus GridCraft.info beside it.
+# First entry for this package.
 
 status          = "approved"
 id              = "gridcraft"
-version         = "0.8.0-test2"
+version         = "0.8.0-test1-r2"
 revision        = 1
 summary         = "Spreadsheet for XLSX with formulas, charts and CSV/PDF export (experimental, not optimised)"
 category        = "office/spreadsheet"
 license         = "MIT OR Apache-2.0"
-url             = "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.8.0-test2/GridCraft-0.8.0-test2.x86_64-aros-v11.zip"
-size            = 14720128
-sha256          = "dc1dd40a0ee32f8b8586fe1872780b799f51a8922c5f652517a47e44cf50721f"
+url             = "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.8.0-test1-r2/GridCraft-0.8.0-test1-r2.x86_64-aros-v11.zip"
+size            = 19175748
+sha256          = "6fde48f812190c15fb73e3d0b1327aa6efd47f5d5191caad840da74182a0df23"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
@@ -56,7 +55,7 @@ id   = "iffparse.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-gridcraft"
-revision   = "v0.8.0-test2"
+revision   = "v0.8.0-test1-r2"
 built_with = "abiv11-x86_64, GCC 10.5.0, Rust nightly 1.100 (rust-aros)"
 
 [launch]
