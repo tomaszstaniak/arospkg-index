@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v11",
  "date": "2026-10-23",
- "sha256": "83d00344b41c057103ac03c0e939e7042cba51b85f78171a155651b09de4403d",
- "size": 44094851,
- "manifest_digest": "73f69aa555ef30c70886342696c10a780deefe2713d1e70761e5bda55eff3f6a",
+ "sha256": "a2b4dd4491fabeefd464a2776391cbf2303a6c02ef250f9d11b95db92e2e37d0",
+ "size": 44097852,
+ "manifest_digest": "c00b5a0e376ea92eff7df4aa54d842f84de0e5a181ac877df3a4d7d7197504c4",
  "result": "passed",
  "sizes": {
-  "largest_member": 66299744,
-  "unpacked": 122951943
+  "largest_member": 66305792,
+  "unpacked": 122957992
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 66299744 bytes (DeckCraft/DeckCraft), 122951943 bytes unpacked"
+   "detail": "largest member 66305792 bytes (DeckCraft/DeckCraft), 122957992 bytes unpacked"
   },
   {
    "name": "paths",
