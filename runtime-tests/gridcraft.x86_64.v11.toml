@@ -1,0 +1,25 @@
+# Runtime tests of gridcraft x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, upgrade, start and
+# remove runs from the published catalogue), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "dc1dd40a0ee32f8b8586fe1872780b799f51a8922c5f652517a47e44cf50721f"
+date    = "2026-10-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "failed"
+checked = ["upgrade", "start"]
+note    = "0.8.0-test2: apkg 0.6.0 upgraded to it, but the program exited at startup; withdrawn"
+
+[[test]]
+sha256  = "f02fdb0a84d85a65e51f0c464cec91074daf11f5f9870072e61301476766230a"
+date    = "2026-10-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "run"]
+note    = "0.8.0-test3: apkg 0.5.0 fresh install, apkg 0.6.0 upgrade from test1-r2 and from test2, verify ok, apkg run opened its window; the archive started from Shell and Workbench and saved a sheet"

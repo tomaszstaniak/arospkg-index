@@ -45,3 +45,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start"]
 note    = "0.5.0: installed through this catalogue, verify clean; apkg run arospkg started PkgManager; no removal recorded"
+
+[[test]]
+sha256  = "57938cdbf855d1fb7012581a07eca7c9f49b39fbbcfa7a5dad489c404b4b74b5"
+date    = "2026-10-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "verify"]
+note    = "0.6.0: release archive run from RAM:; installed, verified, upgraded and removed Craft packages from this catalogue; apkg 0.5.0 self-update to it worked"

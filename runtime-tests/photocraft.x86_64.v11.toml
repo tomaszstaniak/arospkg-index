@@ -1,0 +1,25 @@
+# Runtime tests of photocraft x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, upgrade, start and
+# remove runs from the published catalogue), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "585e62badd3bce98920174647c18aaa04df6e1a26fa470e966af65e32fc73b29"
+date    = "2026-10-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "failed"
+checked = ["upgrade", "start"]
+note    = "0.7.0-preview3: apkg 0.6.0 upgraded to it, but the program exited at startup; withdrawn"
+
+[[test]]
+sha256  = "58421ad981e0309495cf68b4a4f9f1a9234978fb1c5d7e6a2e0d62a02d1a774c"
+date    = "2026-10-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["upgrade", "verify"]
+note    = "0.7.0-preview4: apkg 0.6.0 upgrade from preview2-r2 and from preview3, verify ok; not offered to apkg 0.5.0; the archive started from Shell and Workbench and saved a copy"
