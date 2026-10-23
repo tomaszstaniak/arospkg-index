@@ -33,4 +33,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["upgrade", "verify", "run", "remove"]
-note    = "0.7.0-preview5: apkg 0.6.0 upgrade from preview4; verify ok; apkg run opened it; removed; archive started from Shell and Workbench, a picture opened from a volume's root and saved under a new name"
+note    = "0.7.0-preview5: 0.6.0 upgrade from preview4; verify ok; run; removed; Shell and Workbench start, volume-root name, Save As"

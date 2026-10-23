@@ -33,4 +33,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["upgrade", "verify", "run", "remove"]
-note    = "0.8.0-test4: apkg 0.6.0 upgrade from test3; verify ok; apkg run opened it; removed; archive started from Shell and Workbench, a sheet saved, reopened from Recent and saved under a new name"
+note    = "0.8.0-test4: 0.6.0 upgrade from test3; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
