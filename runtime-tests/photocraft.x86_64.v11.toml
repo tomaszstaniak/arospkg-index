@@ -22,4 +22,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["upgrade", "verify"]
-note    = "0.7.0-preview4: apkg 0.6.0 upgrade from preview2-r2 and from preview3, verify ok; not offered to apkg 0.5.0; the archive started from Shell and Workbench and saved a copy"
+note    = "0.7.0-preview4: 0.6.0 upgrade from preview2-r2 and preview3; verify ok; not offered to 0.5.0; archive started from Shell and Workbench, saved a copy"

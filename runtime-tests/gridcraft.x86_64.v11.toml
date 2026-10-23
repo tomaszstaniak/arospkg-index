@@ -22,4 +22,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "run"]
-note    = "0.8.0-test3: apkg 0.5.0 fresh install, apkg 0.6.0 upgrade from test1-r2 and from test2, verify ok, apkg run opened its window; the archive started from Shell and Workbench and saved a sheet"
+note    = "0.8.0-test3: 0.5.0 install; 0.6.0 upgrade from test1-r2 and test2; verify ok; apkg run opened it; archive started from Shell and Workbench, saved a sheet"
