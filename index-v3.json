@@ -2111,7 +2111,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-23",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "verify",
+            "run",
+            "remove"
+          ],
+          "note": "0.8.0-test4: 0.6.0 upgrade from test3; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
+        }
+      ],
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20"
     },
@@ -5015,7 +5031,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-23",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "verify",
+            "run",
+            "remove"
+          ],
+          "note": "0.8.0-test4: 0.6.0 upgrade from test3; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
+        }
+      ],
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20"
     },
@@ -8052,7 +8084,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-23",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "verify",
+            "run",
+            "remove"
+          ],
+          "note": "0.7.0-preview5: 0.6.0 upgrade from preview4; verify ok; run; removed; Shell and Workbench start, volume-root name, Save As"
+        }
+      ],
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20"
     },
@@ -12246,7 +12294,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-23",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "verify",
+            "run",
+            "remove"
+          ],
+          "note": "0.7.0-test7: 0.6.0 upgrade from test6 in PkgManager; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
+        }
+      ],
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20"
     },
