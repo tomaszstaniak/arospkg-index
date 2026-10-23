@@ -4,14 +4,14 @@
  "id": "photocraft",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-22",
- "sha256": "d4a560aea87a2cdee1a2ef2b55521ad17d99d8abdbc5cabd605e451bb6b47290",
- "size": 48556283,
- "manifest_digest": "2c3a3b767d99bba5f1897a2a19b4cc2e8ffdc891d188526039697cf355916cd5",
+ "date": "2026-10-23",
+ "sha256": "58421ad981e0309495cf68b4a4f9f1a9234978fb1c5d7e6a2e0d62a02d1a774c",
+ "size": 45313856,
+ "manifest_digest": "d3e2d7f070b24ef1e9f9ebf74c0e74179e3b89c614a89ab42e0de24b6fc08e94",
  "result": "passed",
  "sizes": {
-  "largest_member": 90049512,
-  "unpacked": 158362142
+  "largest_member": 78702328,
+  "unpacked": 137729426
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 90049512 bytes (PhotoCraft/PhotoCraft), 158362142 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 78702328 bytes (PhotoCraft/PhotoCraft), 137729426 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",
