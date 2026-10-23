@@ -23,3 +23,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify"]
 note    = "0.8.0-test3: 0.5.0 install; 0.6.0 upgrade from test1-r2 and test2; verify ok; archive started from Shell and Workbench, saved a presentation"
+
+[[test]]
+sha256  = "a2b4dd4491fabeefd464a2776391cbf2303a6c02ef250f9d11b95db92e2e37d0"
+date    = "2026-10-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["upgrade", "verify", "run", "remove"]
+note    = "0.8.0-test4: 0.6.0 upgrade from test3; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
