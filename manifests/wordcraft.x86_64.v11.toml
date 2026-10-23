@@ -1,20 +1,19 @@
-# WordCraft for AROS 0.7.0-test6. Our own port of storytold/wordcraft, published by its author as a
-# GitHub release asset (prerelease, tag v0.7.0-test6). Experimental and not optimised.
-# Test 6: keeps the startup drawer's lock on the main task (Workbench exit fix), whole-program LTO, stripped programs.
+# WordCraft for AROS 0.7.0-test7. Our own port of storytold/wordcraft, published by its author as a
+# GitHub release asset (prerelease, tag v0.7.0-test7). Experimental and not optimised.
+# Test 7: documents named relatively on the command line are kept with their full path (Recent works after a Workbench start); the startup-directory check stops the program if the drawer cannot be locked.
 # Archive layout (checked 2026-10-23): WordCraft/ with WordCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus WordCraft.info beside it.
-# Every file is under 64 MiB, so apkg 0.5.0 installs it too.
-# Test 5 (0.7.0-test5) was withdrawn: it exited at startup. Previous working entry: 0.7.0-test4-r2 (2026-10-20), whose program was over apkg 0.5.0's 64 MiB file limit.
+# Every file is under 64 MiB, so apkg 0.5.0 installs it too. Previous entry: 0.7.0-test6 (2026-10-23).
 
 status          = "approved"
 id              = "wordcraft"
-version         = "0.7.0-test6"
+version         = "0.7.0-test7"
 revision        = 1
 summary         = "Word processor for DOCX, ODT and RTF with PDF export (experimental, not optimised)"
 category        = "office/text"
 license         = "MIT OR Apache-2.0"
-url             = "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.7.0-test6/WordCraft-0.7.0-test6.x86_64-aros-v11.zip"
-size            = 31503600
-sha256          = "9d859be40f153083dd47cdd999944baa8208d977d33cb6a22abacc0ff1bb8986"
+url             = "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.7.0-test7/WordCraft-0.7.0-test7.x86_64-aros-v11.zip"
+size            = 31503111
+sha256          = "7b118ca1bf1dba21a83879b8d951a8767bf200eccbe813e7e80aae9d20f500ba"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
@@ -56,7 +55,7 @@ id   = "iffparse.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-wordcraft"
-revision   = "v0.7.0-test6"
+revision   = "v0.7.0-test7"
 built_with = "abiv11-x86_64, GCC 10.5.0, Rust nightly 1.100 (rust-aros)"
 
 [launch]

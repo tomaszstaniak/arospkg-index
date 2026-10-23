@@ -1,20 +1,19 @@
-# DeckCraft for AROS 0.8.0-test3. Our own port of storytold/deckcraft, published by its author as a
-# GitHub release asset (prerelease, tag v0.8.0-test3). Experimental and not optimised.
-# Test 3: keeps the startup drawer's lock on the main task (Workbench exit fix), whole-program LTO, stripped programs.
+# DeckCraft for AROS 0.8.0-test4. Our own port of storytold/deckcraft, published by its author as a
+# GitHub release asset (prerelease, tag v0.8.0-test4). Experimental and not optimised.
+# Test 4: documents named relatively on the command line are kept with their full path (Recent works after a Workbench start); the startup-directory check stops the program if the drawer cannot be locked.
 # Archive layout (checked 2026-10-23): DeckCraft/ with DeckCraft, its icon, the CLI, README, SOURCE.txt and Licenses/, plus DeckCraft.info beside it.
-# Every file is under 64 MiB, so apkg 0.5.0 installs it too.
-# Test 2 (0.8.0-test2) was withdrawn: it exited at startup. Previous working entry: 0.8.0-test1-r2 (2026-10-20), whose program was over apkg 0.5.0's 64 MiB file limit.
+# Every file is under 64 MiB, so apkg 0.5.0 installs it too. Previous entry: 0.8.0-test3 (2026-10-23).
 
 status          = "approved"
 id              = "deckcraft"
-version         = "0.8.0-test3"
+version         = "0.8.0-test4"
 revision        = 1
 summary         = "Presentation program for PPTX with slide show and PDF export (experimental, not optimised)"
 category        = "office/presentation"
 license         = "MIT OR Apache-2.0"
-url             = "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.8.0-test3/DeckCraft-0.8.0-test3.x86_64-aros-v11.zip"
-size            = 44094851
-sha256          = "83d00344b41c057103ac03c0e939e7042cba51b85f78171a155651b09de4403d"
+url             = "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.8.0-test4/DeckCraft-0.8.0-test4.x86_64-aros-v11.zip"
+size            = 44097852
+sha256          = "a2b4dd4491fabeefd464a2776391cbf2303a6c02ef250f9d11b95db92e2e37d0"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
@@ -56,7 +55,7 @@ id   = "iffparse.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-deckcraft"
-revision   = "v0.8.0-test3"
+revision   = "v0.8.0-test4"
 built_with = "abiv11-x86_64, GCC 10.5.0, Rust nightly 1.100 (rust-aros)"
 
 [launch]
