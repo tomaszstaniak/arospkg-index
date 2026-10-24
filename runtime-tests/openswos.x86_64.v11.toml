@@ -1,0 +1,11 @@
+# Results apply only to the archive with the checksum below.
+[[test]]
+sha256 = "aa5da6f9d6002b5111478dfccd04719df5bd35e879e998c781acfae7723bc3a1"
+date = "2026-10-24"
+system = "AROS One 1.3"
+arch = "x86_64"
+abi = "v11"
+machine = "v11-1, QEMU TCG"
+result = "passed"
+checked = ["install", "start"]
+note = "apkg 0.4.2 cached install; own ADF import, intro/menu/quit and full two-client lobby match passed. Pads and Internet NAT untested."
