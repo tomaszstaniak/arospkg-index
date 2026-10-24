@@ -1,0 +1,14 @@
+# Runtime tests of limpet x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs, kept outside the
+# catalogue repository.
+
+[[test]]
+sha256  = "083778959059dd03d650ca654e86ff1b4b04e75db7fb60ee64c7ec6d9b0cb265"
+date    = "2026-10-24"
+system  = "mainline AROS x86_64 (74a2d80b, 2026-09-04)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start", "run"]
+note    = "0.7.0 release asset unpacked with UnZip (no apkg for mainline x86_64 yet); started a Shell in its window and in a LIMPET: window"

@@ -1,0 +1,56 @@
+# Limpet 0.7.0 for mainline AROS (ABIv1) x86_64. Our own program, published
+# by its author as a GitHub release asset (tag v0.7.0), built from the same
+# sources as the ABIv11 entry with the mainline GCC 10.5 toolchain and SDK.
+#
+# Same archive layout as the ABIv11 archive: Limpet/ with the program,
+# README.txt, fonts, themes and licences, plus Limpet.info beside it. The
+# experimental LIMPET: handler is a separate asset, not part of this package.
+# The program was run on mainline AROS built from 74a2d80b (2026-09-04) under
+# QEMU, unpacked from the release archive (limpet doc/verification-0.7.0-v1.md).
+# Not installed through apkg there: no apkg build for mainline x86_64 yet.
+# The Raspberry Pi test build of the same release is deliberately not listed.
+
+status          = "approved"
+id              = "limpet"
+version         = "0.7.0"
+revision        = 1
+summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
+arch            = "x86_64"
+abi             = "v1"
+category        = "utility/shell"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.7.0/Limpet-0.7.0-v1-x86_64.zip"
+size            = 5219922
+sha256          = "083778959059dd03d650ca654e86ff1b4b04e75db7fb60ee64c7ec6d9b0cb265"
+kind            = "app"
+license         = "MIT"
+
+depends         = []
+depends_checked = true
+subdir          = "Limpet"
+icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
+installs_on     = []
+runs_on         = ["mainline-x86_64"]   # 0.7.0 started from the unpacked archive 2026-10-24
+does_not_run_on = ["aros-one"]          # ABIv1 binary; AROS One is ABIv11
+
+# Libraries the binary opens that mainline supplies. The system fonts
+# FONTS:TrueType/OpenSans-Regular.ttf and VeraMono.ttf are also used.
+[[requires_system]]
+type = "library"
+id   = "freetype2.library"
+
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/limpet"
+revision   = "v0.7.0"
+built_with = "mainline-x86_64, GCC 10.5.0"
