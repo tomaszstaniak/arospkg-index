@@ -144,3 +144,25 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install"]
 note    = "0.6.0 installed from the public catalogue as the starting point of the 0.6.1 upgrade test; only its version string was read"
+
+[[test]]
+sha256  = "5ef9188e8cdd39f4fb8f9c27f55424cb672d706e6e4555f831061b74770b91c6"
+date    = "2026-10-24"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.7.0: apkg upgrade from 0.6.1 added the Nerd Font, kept a user-changed theme; started, Version and COLORTERM ran; removed"
+
+[[test]]
+sha256  = "253dc48dfc5a241c5e8c4efce08d4ebafc980d8f298095e003c97ec51f71e973"
+date    = "2026-10-24"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install"]
+note    = "0.6.1 installed from the public catalogue as the starting point of the 0.7.0 upgrade test; only its version string was read"
