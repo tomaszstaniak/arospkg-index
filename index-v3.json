@@ -7864,6 +7864,80 @@
     },
     {
       "id": "openswos",
+      "version": "0.1.0-rc1-pi1",
+      "summary": "OpenSWOS football game for AROS Raspberry Pi (experimental, silent audio)",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "game/sports",
+      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc1-pi1/openswos-0.1.0-rc1-pi1-aarch64-aros-v1.zip",
+      "size": 17574302,
+      "sha256": "ca04daedb1703f2c4982bcd008d32e8c563292a4930a945bf909675d975e2f92",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "OpenSWOS-aarch64-v1",
+      "icon": "",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-swos",
+      "license": "GPL-3.0-or-later",
+      "post_install_notes": [
+        "Experimental Pi build. Original SWOS data is not included: import your own ADFs or PC copy with swosdata; see ReadMe.txt.",
+        "Use Execute Start or Start-Fullscreen; launchers select silent audio. Real hardware, audio and Pi networking remain unverified."
+      ],
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-10-24",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20260822",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-10-24",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "apkg 0.4 cached install/verify, native own-ADF import, silent intro/menu and keyboard passed. Real Pi/audio/network untested."
+        }
+      ],
+      "first_added": "2026-10-24",
+      "app_first_added": "2026-10-24"
+    },
+    {
+      "id": "openswos",
       "version": "0.1.0-rc1",
       "summary": "OpenSWOS football game with SDL3, career and local or network multiplayer",
       "arch": "x86_64",

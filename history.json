@@ -397,6 +397,10 @@
    "first_added": "2026-09-25",
    "commit": "865b625b5821"
   },
+  "openswos/aarch64/v1": {
+   "first_added": "2026-10-24",
+   "commit": "5b7bfdc26c13"
+  },
   "openswos/x86_64/v11": {
    "first_added": "2026-10-24",
    "commit": "18bfa87aac6e"

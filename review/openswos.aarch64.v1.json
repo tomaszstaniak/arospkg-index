@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "openswos",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-10-24",
+ "sha256": "ca04daedb1703f2c4982bcd008d32e8c563292a4930a945bf909675d975e2f92",
+ "size": 17574302,
+ "manifest_digest": "af6e24254b2d540ed6920fd844fd6697666b3f0b07a228165d3cead953b561f6",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 17026360,
+  "unpacked": 42620864
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "281 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 17026360 bytes (OpenSWOS-aarch64-v1/SWOS), 42620864 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
