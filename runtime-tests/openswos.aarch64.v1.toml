@@ -1,0 +1,10 @@
+[[test]]
+sha256 = "ca04daedb1703f2c4982bcd008d32e8c563292a4930a945bf909675d975e2f92"
+date = "2026-10-24"
+system = "AROS AArch64 20260822"
+arch = "aarch64"
+abi = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "apkg 0.4 cached install/verify, native own-ADF import, silent intro/menu and keyboard passed. Real Pi/audio/network untested."

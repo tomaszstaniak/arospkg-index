@@ -1,0 +1,41 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/openswos.aarch64.v1.toml, which
+# every later submission applies again.
+
+id              = "openswos"
+version         = "0.1.0-rc1-pi1"
+revision        = 1
+summary         = "OpenSWOS football game for AROS Raspberry Pi (experimental, silent audio)"
+category        = "game/sports"
+license         = "GPL-3.0-or-later"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "OpenSWOS-aarch64-v1"
+depends         = []
+depends_checked = true
+post_install_notes = [
+  "Experimental Pi build. Original SWOS data is not included: import your own ADFs or PC copy with swosdata; see ReadMe.txt.",
+  "Use Execute Start or Start-Fullscreen; launchers select silent audio. Real hardware, audio and Pi networking remain unverified.",
+]
+sha256          = "ca04daedb1703f2c4982bcd008d32e8c563292a4930a945bf909675d975e2f92"
+size            = 17574302
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc1-pi1/openswos-0.1.0-rc1-pi1-aarch64-aros-v1.zip"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-swos"
+revision = "v0.1.0-rc1-pi1"
+built_with = "AROS AArch64 ABIv1 LLVM20.1 SDK; native SDL3; libc++abi with upstream AROS pthread TLS fix"
