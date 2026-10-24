@@ -7706,6 +7706,80 @@
       "app_first_added": "2026-09-25"
     },
     {
+      "id": "openswos",
+      "version": "0.1.0-rc1",
+      "summary": "OpenSWOS football game with SDL3, career and local or network multiplayer",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "game/sports",
+      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc1/openswos-0.1.0-rc1-x86_64-aros-v11.zip",
+      "size": 18300062,
+      "sha256": "aa5da6f9d6002b5111478dfccd04719df5bd35e879e998c781acfae7723bc3a1",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "OpenSWOS-v11",
+      "icon": "",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-swos",
+      "license": "GPL-3.0-or-later",
+      "post_install_notes": [
+        "Original SWOS data is not included. Import your own Amiga ADFs or PC game with swosdata; see ReadMe.txt.",
+        "Start from a Shell with Execute Start, or Execute Start-Fullscreen for sharp pixel scaling."
+      ],
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-10-24",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "v11-1, QEMU TCG",
+          "date": "2026-10-24",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "apkg 0.4.2 cached install; own ADF import, intro/menu/quit and full two-client lobby match passed. Pads and Internet NAT untested."
+        }
+      ],
+      "first_added": "2026-10-24",
+      "app_first_added": "2026-10-24"
+    },
+    {
       "id": "opentyrian",
       "version": "2.1-fix-1",
       "summary": "open-source port of the DOS game Tyrian",

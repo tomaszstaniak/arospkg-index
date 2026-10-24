@@ -393,6 +393,10 @@
    "first_added": "2026-09-25",
    "commit": "865b625b5821"
   },
+  "openswos/x86_64/v11": {
+   "first_added": "2026-10-24",
+   "commit": "18bfa87aac6e"
+  },
   "opentyrian/i386/v0": {
    "first_added": "2026-10-03",
    "commit": "9c5cb008aded"
@@ -922,6 +926,10 @@
   "openloco": {
    "first_added": "2026-09-25",
    "commit": "865b625b5821"
+  },
+  "openswos": {
+   "first_added": "2026-10-24",
+   "commit": "18bfa87aac6e"
   },
   "opentyrian": {
    "first_added": "2026-09-29",
