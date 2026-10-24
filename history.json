@@ -341,6 +341,10 @@
    "first_added": "2026-10-24",
    "commit": "1dc15080d883"
   },
+  "limpet/x86_64/v1": {
+   "first_added": "2026-10-24",
+   "commit": "4b6e9883cf0b"
+  },
   "limpet/x86_64/v11": {
    "first_added": "2026-10-03",
    "commit": "28b7ca438a0a"
