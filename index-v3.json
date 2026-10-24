@@ -6584,6 +6584,85 @@
     },
     {
       "id": "lightcraft",
+      "version": "0.13.0-aros2",
+      "summary": "Photo library and non-destructive RAW editor with CPU rendering",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0-aros2/LightCraft-0.13.0-aros2.x86_64-aros-v1.zip",
+      "size": 36614399,
+      "sha256": "4fc26bb0af4a164f327899d18770380d83acde61f04db8fea66871512729bcd6",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "fd.library",
+          "min_version": 51
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LightCraft",
+      "icon": "LightCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-lightcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Requires fd.library 51, posixc.library 0.41 and matching stdc/AROSTCP components. System libraries are not installed by this package.",
+        "CPU interface and image processing. GPU backends are not included.",
+        "Keep LightCraftData when upgrading; it contains edits and settings.",
+        "Optional inference and HEIF are disabled. See README.md for feature details.",
+        "Native keyboard and clipboard conversion is limited to Latin-1."
+      ],
+      "launch": {
+        "executable": "LightCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-10-24",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-10-24",
+      "app_first_added": "2026-10-24"
+    },
+    {
+      "id": "lightcraft",
       "version": "0.13.0-aros1",
       "summary": "Photo library and non-destructive RAW editor with CPU rendering",
       "arch": "x86_64",

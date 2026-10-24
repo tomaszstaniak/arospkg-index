@@ -333,6 +333,10 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "lightcraft/x86_64/v1": {
+   "first_added": "2026-10-24",
+   "commit": "2a59a7412fad"
+  },
   "lightcraft/x86_64/v11": {
    "first_added": "2026-10-24",
    "commit": "1dc15080d883"
