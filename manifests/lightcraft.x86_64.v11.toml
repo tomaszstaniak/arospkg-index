@@ -3,7 +3,7 @@
 # every later submission applies again.
 
 id              = "lightcraft"
-version         = "0.13.0-aros1"
+version         = "0.13.0"
 summary         = "Photo library and non-destructive RAW editor with CPU rendering"
 category        = "graphics/edit"
 license         = "MIT OR Apache-2.0"
@@ -20,10 +20,10 @@ post_install_notes = [
   "Neural denoise, SAM, HEIF, MCP stdio and model downloads are unavailable.",
   "Native keyboard and clipboard conversion is limited to Latin-1.",
 ]
-sha256          = "4d693fab246613285afca4eb14a125695d01e60390ab2583df7e7c40a1c3f9d3"
-size            = 40066191
+sha256          = "6e98d248fe7edd058d7b0aae3e9c257fb3642134b1aeee1585f5e37585a78481"
+size            = 40066186
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0-aros1/LightCraft-0.13.0-aros1.x86_64-aros-v11.zip"
+url             = "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0/LightCraft-0.13.0.x86_64-aros-v11.zip"
 
 [[requires_system]]
 type = "library"
@@ -47,7 +47,7 @@ id = "iffparse.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-lightcraft"
-revision = "v0.13.0-aros1"
+revision = "v0.13.0"
 built_with = "x86_64 ABIv11, GCC 10.5.0, Rust 1.100.0-nightly (rust-aros), -nix"
 
 [launch]
