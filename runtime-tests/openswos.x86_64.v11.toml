@@ -8,4 +8,4 @@ abi = "v11"
 machine = "v11-1, QEMU TCG"
 result = "passed"
 checked = ["install", "start"]
-note = "apkg 0.4.2 installed the exact archive from a preseeded cache; own ADF import, normal intro/menu/input/quit and a complete two-client match through matchmaker/lobby passed with matching final simulation and state hashes. Physical two-player controllers and Internet NAT are not covered."
+note = "apkg 0.4.2 cached install; own ADF import, intro/menu/quit and full two-client lobby match passed. Pads and Internet NAT untested."
