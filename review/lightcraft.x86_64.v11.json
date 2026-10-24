@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "lightcraft",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-24",
+ "sha256": "4d693fab246613285afca4eb14a125695d01e60390ab2583df7e7c40a1c3f9d3",
+ "size": 40066191,
+ "manifest_digest": "245dc94c8708a8b0cf3470b3d2af737c5b764b8dfd898577d3e48c9a06291228",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 66563160,
+  "unpacked": 136749931
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "41 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 66563160 bytes (LightCraft/LightCraft), 136749931 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

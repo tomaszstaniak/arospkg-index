@@ -6583,6 +6583,80 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "lightcraft",
+      "version": "0.13.0-aros1",
+      "summary": "Photo library and non-destructive RAW editor with CPU rendering",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0-aros1/LightCraft-0.13.0-aros1.x86_64-aros-v11.zip",
+      "size": 40066191,
+      "sha256": "4d693fab246613285afca4eb14a125695d01e60390ab2583df7e7c40a1c3f9d3",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LightCraft",
+      "icon": "LightCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-lightcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "CPU interface and image processing. GPU backends are not included.",
+        "Edits and settings are kept in LightCraftData inside the program drawer. Keep it when upgrading.",
+        "Neural denoise, SAM, HEIF, MCP stdio and model downloads are unavailable.",
+        "Native keyboard and clipboard conversion is limited to Latin-1."
+      ],
+      "launch": {
+        "executable": "LightCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-10-24",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-10-24",
+      "app_first_added": "2026-10-24"
+    },
+    {
       "id": "limpet",
       "version": "0.6.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
