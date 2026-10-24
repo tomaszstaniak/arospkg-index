@@ -6593,6 +6593,9 @@
       "size": 36614384,
       "sha256": "cc246af5392bdf3ae7ffe262626935ac14dba601fc315be0f6ce60680b38e122",
       "depends": [],
+      "client_features": [
+        "large-members"
+      ],
       "requires_system": [
         {
           "type": "library",
@@ -6638,7 +6641,21 @@
         "working_directory": "."
       },
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-10-24",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [],
       "first_added": "2026-10-24",

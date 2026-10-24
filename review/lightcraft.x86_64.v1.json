@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v1",
  "date": "2026-10-24",
- "sha256": "4fc26bb0af4a164f327899d18770380d83acde61f04db8fea66871512729bcd6",
- "size": 36614399,
- "manifest_digest": "bb5759da7eee937a870a259768570bf75e28d87e5b898121b7c5c9b731a557a5",
+ "sha256": "cc246af5392bdf3ae7ffe262626935ac14dba601fc315be0f6ce60680b38e122",
+ "size": 36614384,
+ "manifest_digest": "d9651a996c624b09b66f111d307966ec9260b1a18ff2a55c489c82e840896aa7",
  "result": "passed",
  "sizes": {
   "largest_member": 67620624,
-  "unpacked": 139060927
+  "unpacked": 139060897
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 67620624 bytes (LightCraft/LightCraft), 139060927 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 67620624 bytes (LightCraft/LightCraft), 139060897 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",
