@@ -7938,14 +7938,14 @@
     },
     {
       "id": "openswos",
-      "version": "0.1.0-rc1",
+      "version": "0.1.0-rc2",
       "summary": "OpenSWOS football game with SDL3, career and local or network multiplayer",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/sports",
-      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc1/openswos-0.1.0-rc1-x86_64-aros-v11.zip",
-      "size": 18300062,
-      "sha256": "aa5da6f9d6002b5111478dfccd04719df5bd35e879e998c781acfae7723bc3a1",
+      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc2/openswos-0.1.0-rc2-x86_64-aros-v11.zip",
+      "size": 18325691,
+      "sha256": "229cc7e41c44f32ee55c75252350a05aff3322c294fab8c16f61295caf281020",
       "depends": [],
       "requires_system": [
         {
@@ -7978,7 +7978,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "checked": [
           "metadata",
           "download",
@@ -7998,13 +7998,12 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "v11-1, QEMU TCG",
-          "date": "2026-10-24",
+          "date": "2026-10-25",
           "result": "passed",
           "checked": [
-            "install",
             "start"
           ],
-          "note": "apkg 0.4.2 cached install; own ADF import, intro/menu/quit and full two-client lobby match passed. Pads and Internet NAT untested."
+          "note": "Missing/partial-data error and exit, valid-data startup passed. CPU fullscreen roundtrip; accel toggle blocked safely. Real GPU untested."
         }
       ],
       "first_added": "2026-10-24",
