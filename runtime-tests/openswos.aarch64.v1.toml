@@ -19,3 +19,14 @@ machine = "rpi-1, QEMU raspi3b"
 result = "passed"
 checked = ["install", "start"]
 note = "apkg cached install/verify248; missing/partial-data error+exit; silent intro/menu/keyboard passed. Real Pi/audio/network and accel untested."
+
+[[test]]
+sha256 = "36d0a89ffbaae928538e90a21547f906ddf937d8dc5ebf66fe2d6f220953b32a"
+date = "2026-10-25"
+system = "AROS AArch64 20260822"
+arch = "aarch64"
+abi = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "apkg0.4 cached install/verify254; silent CPU intro/menu and CTRL into FRIENDLY passed. Pi GL, real hardware, audio/network and clean quit not verified."

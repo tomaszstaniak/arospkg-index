@@ -20,3 +20,14 @@ machine = "v11-1, QEMU TCG"
 result = "passed"
 checked = ["start"]
 note = "Missing/partial-data error and exit, valid-data startup passed. CPU fullscreen roundtrip; accel toggle blocked safely. Real GPU untested."
+
+[[test]]
+sha256 = "685361609c74ca01032daeb8edbbd4e8c434741d567b346dbced6955a8ec4115"
+date = "2026-10-25"
+system = "AROS One 1.3"
+arch = "x86_64"
+abi = "v11"
+machine = "v11-1, QEMU TCG"
+result = "passed"
+checked = ["install", "start"]
+note = "apkg0.4.2 cached install/verify247; own-data CPU intro/menu and normal quit RC0, dummy audio. Accepted game binary also has v11 GL roundtrip tests and GT220 user confirmation."
