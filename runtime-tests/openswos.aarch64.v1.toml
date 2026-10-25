@@ -29,4 +29,4 @@ abi = "v1"
 machine = "rpi-1, QEMU raspi3b"
 result = "passed"
 checked = ["install", "start"]
-note = "apkg0.4 cached install/verify254; silent CPU intro/menu and CTRL into FRIENDLY passed. Pi GL, real hardware, audio/network and clean quit not verified."
+note = "apkg0.4 cached install/verify254; silent CPU intro/menu and FRIENDLY input passed. Real Pi, GL, audio/network and clean quit unverified."

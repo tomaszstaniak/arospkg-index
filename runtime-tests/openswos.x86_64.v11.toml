@@ -30,4 +30,4 @@ abi = "v11"
 machine = "v11-1, QEMU TCG"
 result = "passed"
 checked = ["install", "start"]
-note = "apkg0.4.2 cached install/verify247; own-data CPU intro/menu and normal quit RC0, dummy audio. Accepted game binary also has v11 GL roundtrip tests and GT220 user confirmation."
+note = "apkg0.4.2 cached install/verify247; CPU intro/menu and quit RC0 with private data and dummy audio. GL/GT220 acceptance tested separately."
