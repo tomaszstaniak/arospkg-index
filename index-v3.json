@@ -7864,14 +7864,14 @@
     },
     {
       "id": "openswos",
-      "version": "0.1.0-rc2",
+      "version": "0.1.0-rc3",
       "summary": "OpenSWOS football game for AROS Raspberry Pi (experimental, silent audio)",
       "arch": "aarch64",
       "abi": "v1",
       "category": "game/sports",
-      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc2/openswos-0.1.0-rc2-aarch64-aros-v1.zip",
-      "size": 17580743,
-      "sha256": "a6c8376818d39fc8e8dd70fb7a4b58992e6beb185f9d59497f941826760edd77",
+      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc3/openswos-0.1.0-rc3-aarch64-aros-v1.zip",
+      "size": 17591989,
+      "sha256": "36d0a89ffbaae928538e90a21547f906ddf937d8dc5ebf66fe2d6f220953b32a",
       "depends": [],
       "requires_system": [
         {
@@ -7930,7 +7930,7 @@
             "install",
             "start"
           ],
-          "note": "apkg cached install/verify248; missing/partial-data error+exit; silent intro/menu/keyboard passed. Real Pi/audio/network and accel untested."
+          "note": "apkg0.4 cached install/verify254; silent CPU intro/menu and FRIENDLY input passed. Real Pi, GL, audio/network and clean quit unverified."
         }
       ],
       "first_added": "2026-10-24",
@@ -7938,14 +7938,14 @@
     },
     {
       "id": "openswos",
-      "version": "0.1.0-rc2",
+      "version": "0.1.0-rc3",
       "summary": "OpenSWOS football game with SDL3, career and local or network multiplayer",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/sports",
-      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc2/openswos-0.1.0-rc2-x86_64-aros-v11.zip",
-      "size": 18325691,
-      "sha256": "229cc7e41c44f32ee55c75252350a05aff3322c294fab8c16f61295caf281020",
+      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc3/openswos-0.1.0-rc3-x86_64-aros-v11.zip",
+      "size": 18336681,
+      "sha256": "685361609c74ca01032daeb8edbbd4e8c434741d567b346dbced6955a8ec4115",
       "depends": [],
       "requires_system": [
         {
@@ -8001,9 +8001,10 @@
           "date": "2026-10-25",
           "result": "passed",
           "checked": [
+            "install",
             "start"
           ],
-          "note": "Missing/partial-data error and exit, valid-data startup passed. CPU fullscreen roundtrip; accel toggle blocked safely. Real GPU untested."
+          "note": "apkg0.4.2 cached install/verify247; CPU intro/menu and quit RC0 with private data and dummy audio. GL/GT220 acceptance tested separately."
         }
       ],
       "first_added": "2026-10-24",
