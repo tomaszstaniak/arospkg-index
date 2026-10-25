@@ -4,14 +4,14 @@
  "id": "openswos",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-10-24",
- "sha256": "ca04daedb1703f2c4982bcd008d32e8c563292a4930a945bf909675d975e2f92",
- "size": 17574302,
- "manifest_digest": "af6e24254b2d540ed6920fd844fd6697666b3f0b07a228165d3cead953b561f6",
+ "date": "2026-10-25",
+ "sha256": "a6c8376818d39fc8e8dd70fb7a4b58992e6beb185f9d59497f941826760edd77",
+ "size": 17580743,
+ "manifest_digest": "362c4b8b0055c60c42cb77a869342037dd87fd7489f6130bdaa744c58b22c7db",
  "result": "passed",
  "sizes": {
-  "largest_member": 17026360,
-  "unpacked": 42620864
+  "largest_member": 17031776,
+  "unpacked": 42636640
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "281 members"
+   "detail": "283 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 17026360 bytes (OpenSWOS-aarch64-v1/SWOS), 42620864 bytes unpacked"
+   "detail": "largest member 17031776 bytes (OpenSWOS-aarch64-v1/SWOS), 42636640 bytes unpacked"
   },
   {
    "name": "paths",

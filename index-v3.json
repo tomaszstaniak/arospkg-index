@@ -7864,14 +7864,14 @@
     },
     {
       "id": "openswos",
-      "version": "0.1.0-rc1-pi1",
+      "version": "0.1.0-rc2",
       "summary": "OpenSWOS football game for AROS Raspberry Pi (experimental, silent audio)",
       "arch": "aarch64",
       "abi": "v1",
       "category": "game/sports",
-      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc1-pi1/openswos-0.1.0-rc1-pi1-aarch64-aros-v1.zip",
-      "size": 17574302,
-      "sha256": "ca04daedb1703f2c4982bcd008d32e8c563292a4930a945bf909675d975e2f92",
+      "url": "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc2/openswos-0.1.0-rc2-aarch64-aros-v1.zip",
+      "size": 17580743,
+      "sha256": "a6c8376818d39fc8e8dd70fb7a4b58992e6beb185f9d59497f941826760edd77",
       "depends": [],
       "requires_system": [
         {
@@ -7904,7 +7904,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "checked": [
           "metadata",
           "download",
@@ -7924,13 +7924,13 @@
           "arch": "aarch64",
           "abi": "v1",
           "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-10-24",
+          "date": "2026-10-25",
           "result": "passed",
           "checked": [
             "install",
             "start"
           ],
-          "note": "apkg 0.4 cached install/verify, native own-ADF import, silent intro/menu and keyboard passed. Real Pi/audio/network untested."
+          "note": "apkg cached install/verify248; missing/partial-data error+exit; silent intro/menu/keyboard passed. Real Pi/audio/network and accel untested."
         }
       ],
       "first_added": "2026-10-24",
