@@ -3,7 +3,7 @@
 # every later submission applies again.
 
 id              = "openswos"
-version         = "0.1.0-rc1"
+version         = "0.1.0-rc2"
 revision        = 1
 summary         = "OpenSWOS football game with SDL3, career and local or network multiplayer"
 category        = "game/sports"
@@ -18,10 +18,10 @@ post_install_notes = [
   "Original SWOS data is not included. Import your own Amiga ADFs or PC game with swosdata; see ReadMe.txt.",
   "Start from a Shell with Execute Start, or Execute Start-Fullscreen for sharp pixel scaling.",
 ]
-sha256          = "aa5da6f9d6002b5111478dfccd04719df5bd35e879e998c781acfae7723bc3a1"
-size            = 18300062
+sha256          = "229cc7e41c44f32ee55c75252350a05aff3322c294fab8c16f61295caf281020"
+size            = 18325691
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc1/openswos-0.1.0-rc1-x86_64-aros-v11.zip"
+url             = "https://github.com/tomaszstaniak/aros-swos/releases/download/v0.1.0-rc2/openswos-0.1.0-rc2-x86_64-aros-v11.zip"
 
 [[requires_system]]
 type = "library"
@@ -37,5 +37,5 @@ id = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-swos"
-revision = "v0.1.0-rc1"
+revision = "v0.1.0-rc2"
 built_with = "AROS ABIv11 x86_64 GCC 10.5; OpenSWOS 6b5997b; SDL3 static"
