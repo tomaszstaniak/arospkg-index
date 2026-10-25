@@ -9,3 +9,14 @@ machine = "v11-1, QEMU TCG"
 result = "passed"
 checked = ["install", "start"]
 note = "apkg 0.4.2 cached install; own ADF import, intro/menu/quit and full two-client lobby match passed. Pads and Internet NAT untested."
+
+[[test]]
+sha256 = "229cc7e41c44f32ee55c75252350a05aff3322c294fab8c16f61295caf281020"
+date = "2026-10-25"
+system = "AROS One 1.3"
+arch = "x86_64"
+abi = "v11"
+machine = "v11-1, QEMU TCG"
+result = "passed"
+checked = ["start"]
+note = "Missing/partial-data error and exit, valid-data startup passed. CPU fullscreen roundtrip; accel toggle blocked safely. Real GPU untested."
