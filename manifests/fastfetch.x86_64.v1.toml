@@ -1,0 +1,36 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/fastfetch.x86_64.v1.toml, which
+# every later submission applies again.
+
+id              = "fastfetch"
+version         = "2.70.0"
+revision        = 3
+summary         = "System information in the Shell, with the AROS logo"
+category        = "utility/misc"
+license         = "MIT"
+kind            = "app"
+arch            = "x86_64"
+abi             = "v1"
+subdir          = "Fastfetch"
+depends         = []
+depends_checked = true
+sha256          = "1f8f50d77c871d904f9707f723dd86224ff53939d5fe4962fe99f034eac8fca3"
+size            = 933945
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r3/Fastfetch-2.70.0-r3-aros-x86_64-abiv1-pc.zip"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[launch]
+executable = "fastfetch"
+mode = "shell"
