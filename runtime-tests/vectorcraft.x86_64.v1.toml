@@ -1,0 +1,15 @@
+# Runtime tests of vectorcraft x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install from the public
+# release URL and from a pre-placed cache, start, verify and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "25c62a36160cc885b2de6892ba82ad9752e693db469bdda863699c1e36eee662"
+date    = "2026-10-29"
+system  = "mainline AROS x86_64 (9802c8c0, 2026-10-28)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "run", "verify", "remove"]
+note    = "apkg 0.6.0 downloaded the archive from the release URL; window opened from its icon and closed cleanly; remove kept VectorCraftData"
