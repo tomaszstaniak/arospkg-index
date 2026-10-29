@@ -187,4 +187,4 @@ abi = "v11"
 machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "remove"]
-note = "0.8.0: apkg 0.6.0 upgraded 0.7.1 from the public catalogue; verify 20/20; Shell started and ran Fastfetch with a picture logo; removed, leaving only package-manager metadata."
+note = "0.8.0: apkg 0.6.0 upgraded 0.7.1; verify 20/20; Shell ran Fastfetch with picture logo; removed, leaving only package metadata."
