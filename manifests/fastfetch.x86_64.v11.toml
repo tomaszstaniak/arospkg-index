@@ -1,0 +1,32 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/fastfetch.x86_64.v11.toml, which
+# every later submission applies again.
+
+id              = "fastfetch"
+version         = "2.70.0"
+revision        = 3
+summary         = "System information in the Shell, with the AROS logo"
+category        = "utility/misc"
+license         = "MIT"
+kind            = "app"
+arch            = "x86_64"
+abi             = "v11"
+subdir          = "Fastfetch"
+depends         = []
+depends_checked = true
+sha256          = "0b36ddc22d06d18f19db791665810f47803eed5e61b0af84382c56a192fc634e"
+size            = 937486
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r3/Fastfetch-2.70.0-r3-aros-x86_64-abiv11-pc.zip"
+
+[[requires_system]]
+type = "library"
+id = "crt.library"
+
+[[requires_system]]
+type = "library"
+id = "stdlib.library"
+
+[launch]
+executable = "fastfetch"
+mode = "shell"
