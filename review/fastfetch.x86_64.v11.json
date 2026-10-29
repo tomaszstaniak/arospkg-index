@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "fastfetch",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-10-29",
+ "sha256": "0b36ddc22d06d18f19db791665810f47803eed5e61b0af84382c56a192fc634e",
+ "size": 937486,
+ "manifest_digest": "240d7c3b0566fa11735204af16faa73b7b1482a54ae8188fb5bde57e897ef0cb",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 2708952,
+  "unpacked": 3185178
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "81 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2708952 bytes (Fastfetch/fastfetch), 3185178 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

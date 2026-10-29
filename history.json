@@ -165,6 +165,14 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "fastfetch/x86_64/v1": {
+   "first_added": "2026-10-29",
+   "commit": "317afb772650"
+  },
+  "fastfetch/x86_64/v11": {
+   "first_added": "2026-10-29",
+   "commit": "317afb772650"
+  },
   "fheroes2/i386/v0": {
    "first_added": "2026-10-03",
    "commit": "9c5cb008aded"
@@ -774,6 +782,10 @@
   "fallout2": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "fastfetch": {
+   "first_added": "2026-10-29",
+   "commit": "317afb772650"
   },
   "fheroes2": {
    "first_added": "2026-09-29",
