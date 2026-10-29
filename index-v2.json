@@ -3345,7 +3345,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "2.70.0 r3: installed by apkg 0.6.0 from the public catalogue; verify passed; aros-logo displayed in Limpet 0.8.0, rc 0; removed cleanly."
+        }
+      ],
       "first_added": "2026-10-29",
       "app_first_added": "2026-10-29"
     },
@@ -6833,7 +6848,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "0.8.0: apkg 0.6.0 upgraded 0.7.1; verify 20/20; Shell ran Fastfetch with picture logo; removed, leaving only package metadata."
+        }
+      ],
       "first_added": "2026-10-03",
       "app_first_added": "2026-10-03"
     },
