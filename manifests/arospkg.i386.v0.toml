@@ -1,26 +1,22 @@
-# arospkg 0.7.1. Our own program, published by its author as a GitHub
-# release asset: apkg (command line).
-#
-# 0.7.1 build for AROS i386 ABIv0, built from the release commit; not run on
-# i386 for this version (0.5.0 was, on 2026-10-12, pool slot v0-2).
-# 0.5.0 entry: approved 2026-10-12; 0.4.2: 2026-10-11; 0.4.1: 2026-10-08; 0.4.0: 2026-10-04.
+# arospkg 0.7.3. PkgManager fixes link backgrounds after hover.
+# v11 and mainline GUI checked in QEMU; Pi and i386 compiled only.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.1"
+version         = "0.7.3"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "i386"
 abi             = "v0"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.1/arospkg-0.7.1.i386-aros-v0.zip"
-size            = 373781
-sha256          = "596cda7addf7ce63914adf5c31f17578c82804767cad62e54a49853572b0cd19"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.3/arospkg-0.7.3.i386-aros-v0.zip"
+size            = 374199
+sha256          = "4df8993827fc970dcb8f339899a714f6705df6b68f94ac68f482b5e076b706ab"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.1.i386-aros-v0"
+subdir          = "arospkg-0.7.3.i386-aros-v0"
 installs_on     = []
 does_not_run_on = []
 
@@ -34,4 +30,4 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.1"
+revision   = "v0.7.3"

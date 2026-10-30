@@ -1,30 +1,22 @@
-# arospkg 0.7.1. Our own program, published by its author as a GitHub
-# release asset: apkg and PkgManager, for native AROS on the Raspberry Pi.
-#
-# Run on native AROS for the Raspberry Pi (nightly 20261029, non-SMP) under QEMU
-# raspi3b with networking on 2026-10-30: the published 0.5.0 updated itself from
-# GitHub to 0.7.1 in two runs (also as C:apkg with --drawer), and PkgManager 0.7.0
-# updated to 0.7.1 from its About window and started again.
-# The entry's target is aarch64/v1, which a hosted (Macaros) aarch64 client also matches; this build is
-# for the Pi's own SDK.
-# 0.4.0 entry: approved 2026-10-04.
+# arospkg 0.7.3. PkgManager fixes link backgrounds after hover.
+# v11 and mainline GUI checked in QEMU; Pi and i386 compiled only.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.1"
+version         = "0.7.3"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.1/arospkg-0.7.1.aarch64-aros-raspi.zip"
-size            = 1062242
-sha256          = "004500a505e7295817a2313231828f0a7807d766d96cae213eb9656f8253d1f1"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.3/arospkg-0.7.3.aarch64-aros-raspi.zip"
+size            = 1075168
+sha256          = "bf6b3feaa0031801b758b6c17a34fa0b01d35901bcdafb570ef632f596528d97"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.1.aarch64-aros-raspi"
+subdir          = "arospkg-0.7.3.aarch64-aros-raspi"
 installs_on     = []
 does_not_run_on = []
 
@@ -52,4 +44,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.1"
+revision   = "v0.7.3"
