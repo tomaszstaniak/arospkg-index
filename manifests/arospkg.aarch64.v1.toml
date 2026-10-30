@@ -1,10 +1,10 @@
 # arospkg 0.7.1. Our own program, published by its author as a GitHub
 # release asset: apkg and PkgManager, for native AROS on the Raspberry Pi.
 #
-# Started on native AROS for the Raspberry Pi (raspi-aarch64 20260822) under QEMU
-# raspi3b on 2026-10-30 (0.7.0): apkg version and self-update check, PkgManager start;
-# 0.7.1 changes only the GUI's update hand-off and was built, not run there. That
-# machine had no network: update and downloads untested there.
+# Run on native AROS for the Raspberry Pi (nightly 20261029, non-SMP) under QEMU
+# raspi3b with networking on 2026-10-30: the published 0.5.0 updated itself from
+# GitHub to 0.7.1 in two runs (also as C:apkg with --drawer), and PkgManager 0.7.0
+# updated to 0.7.1 from its About window and started again.
 # The entry's target is aarch64/v1, which a hosted (Macaros) aarch64 client also matches; this build is
 # for the Pi's own SDK.
 # 0.4.0 entry: approved 2026-10-04.
