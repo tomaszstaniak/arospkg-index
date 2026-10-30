@@ -1,29 +1,29 @@
-# arospkg 0.7.1. Our own program, published by its author as a GitHub
+# arospkg 0.7.2. Our own program, published by its author as a GitHub
 # release asset: apkg and PkgManager.
 #
 # 0.7.0 updates apkg and PkgManager together (apkg self-update, Update arospkg in
-# PkgManager). The release archive was run on AROS 2026.09 and AROS One 1.3 x86_64
-# (ABIv11) under QEMU on 2026-10-30 (self-update from 0.6.0 and between releases,
-# installed as a package, GUI update and restart); 0.7.1, which fixes the GUI's
-# choice of the apkg that finishes an update, the same on 2026-10-30.
+# PkgManager). 0.7.2 makes web addresses in PkgManager links (open, copy). The
+# release archive was run on AROS 2026.09 and AROS One 1.3 x86_64 (ABIv11) under
+# QEMU on 2026-10-30: links, and the published 0.7.1 updated to 0.7.2 from GitHub
+# (apkg self-update, and Update arospkg in PkgManager on 2026.09).
 # 0.6.0 entry: approved 2026-10-23; 0.5.0: 2026-10-12; 0.4.2: 2026-10-11; 0.4.1: 2026-10-08; 0.4.0: 2026-10-04.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.1"
+version         = "0.7.2"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.1/arospkg-0.7.1.x86_64-aros-v11.zip"
-size            = 986327
-sha256          = "9a10f189f572d6c949dcaf25d67217de280b0e9c5a834a0128e6b72ee8b9f8b4"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.2/arospkg-0.7.2.x86_64-aros-v11.zip"
+size            = 995539
+sha256          = "4ac95d676930decb1b19d5de52d1e96d3115fa07a6d4b02e772bfedab558e35b"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.1.x86_64-aros-v11"
+subdir          = "arospkg-0.7.2.x86_64-aros-v11"
 installs_on     = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]
 
@@ -47,4 +47,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.1"
+revision   = "v0.7.2"
