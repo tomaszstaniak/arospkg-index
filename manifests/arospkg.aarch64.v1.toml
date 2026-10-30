@@ -1,27 +1,29 @@
-# APPROVED 2026-10-04. Our own program, published by its author as a GitHub
-# release asset: apkg (command line).
+# arospkg 0.7.0. Our own program, published by its author as a GitHub
+# release asset: apkg and PkgManager, for native AROS on the Raspberry Pi.
 #
-# Checked on native AROS for the Raspberry Pi (raspi-aarch64 20260822) under QEMU raspi3b: version, install from a
-# local catalogue, notes, show, open, remove. That machine had no network: update and downloads untested.
+# Started on native AROS for the Raspberry Pi (raspi-aarch64 20260822) under QEMU
+# raspi3b on 2026-10-30: apkg version and self-update check, PkgManager start. That
+# machine had no network: update and downloads untested there.
 # The entry's target is aarch64/v1, which a hosted (Macaros) aarch64 client also matches; this build is
 # for the Pi's own SDK.
+# 0.4.0 entry: approved 2026-10-04.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.4.0"
-summary         = "Package manager for AROS: find, install, open and remove programs"
+version         = "0.7.0"
+summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.4.0/arospkg-0.4.0.aarch64-aros-raspi.zip"
-size            = 379977
-sha256          = "4ec8b14ed5dc75ac97b26d9d4096c87c2cdaed8418578988414a1b4773ee1954"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.0/arospkg-0.7.0.aarch64-aros-raspi.zip"
+size            = 1061478
+sha256          = "5716ee4717267bceabd323a0f70b7ff71efab1efbc8be639ce451a85502dfae4"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.4.0.aarch64-aros-raspi"
+subdir          = "arospkg-0.7.0.aarch64-aros-raspi"
 installs_on     = []
 does_not_run_on = []
 
@@ -37,6 +39,16 @@ id   = "stdc.library"
 type = "library"
 id   = "stdcio.library"
 
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+# PkgManager starts from its icon; the archive carries the same table as
+# application.json.
+[launch]
+executable = "PkgManager"
+mode       = "workbench"
+
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.4.0"
+revision   = "v0.7.0"

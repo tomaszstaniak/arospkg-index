@@ -1,27 +1,26 @@
-# arospkg 0.5.0. Our own program, published by its author as a GitHub
+# arospkg 0.7.0. Our own program, published by its author as a GitHub
 # release asset: apkg (command line).
 #
-# 0.5.0 adds apkg run. Tested on AROS i386 ABIv0 under QEMU (pool slot
-# v0-2) on 2026-10-12 . Installed
-# through this entry and started.
-# 0.4.2 entry: approved 2026-10-11; 0.4.1: 2026-10-08; 0.4.0: 2026-10-04.
+# 0.7.0 build for AROS i386 ABIv0, built from the release commit; not run on
+# i386 for this version (0.5.0 was, on 2026-10-12, pool slot v0-2).
+# 0.5.0 entry: approved 2026-10-12; 0.4.2: 2026-10-11; 0.4.1: 2026-10-08; 0.4.0: 2026-10-04.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.5.0"
+version         = "0.7.0"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "i386"
 abi             = "v0"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.5.0/arospkg-0.5.0.i386-aros-v0.zip"
-size            = 320845
-sha256          = "cc73007ad7517240c67c40f08cfe662ee6b95da6f4e16bbe6f824a6462b92e50"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.0/arospkg-0.7.0.i386-aros-v0.zip"
+size            = 373665
+sha256          = "cdbe2e8a94409c0cebb2fe19047f0e3ae36c4588e8c9b3402c13804296baf415"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.5.0.i386-aros-v0"
+subdir          = "arospkg-0.7.0.i386-aros-v0"
 installs_on     = []
 does_not_run_on = []
 
@@ -35,4 +34,4 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.5.0"
+revision   = "v0.7.0"
