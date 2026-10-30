@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v11",
  "date": "2026-10-30",
- "sha256": "12c5c065014bea82f9de0af25466e34630aa729e6e82d93548fb868e2783fc5c",
- "size": 985488,
- "manifest_digest": "d3ad3c76d6525b1d5f81cc957eb7e30573ddc0271cf8cee87306e0367e18da47",
+ "sha256": "9a10f189f572d6c949dcaf25d67217de280b0e9c5a834a0128e6b72ee8b9f8b4",
+ "size": 986327,
+ "manifest_digest": "320904922a9aedc7a67c6e3511e95788eec4b81b59ecf66039b6f09b2242c470",
  "result": "passed",
  "sizes": {
-  "largest_member": 1333072,
-  "unpacked": 2731246
+  "largest_member": 1334456,
+  "unpacked": 2732996
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 1333072 bytes (arospkg-0.7.0.x86_64-aros-v11/PkgManager), 2731246 bytes unpacked"
+   "detail": "largest member 1334456 bytes (arospkg-0.7.1.x86_64-aros-v11/PkgManager), 2732996 bytes unpacked"
   },
   {
    "name": "paths",

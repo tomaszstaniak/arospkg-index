@@ -513,14 +513,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.0/arospkg-0.7.0.aarch64-aros-raspi.zip",
-      "size": 1061478,
-      "sha256": "5716ee4717267bceabd323a0f70b7ff71efab1efbc8be639ce451a85502dfae4",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.1/arospkg-0.7.1.aarch64-aros-raspi.zip",
+      "size": 1062242,
+      "sha256": "004500a505e7295817a2313231828f0a7807d766d96cae213eb9656f8253d1f1",
       "depends": [],
       "requires_system": [
         {
@@ -544,7 +544,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.7.0.aarch64-aros-raspi",
+      "subdir": "arospkg-0.7.1.aarch64-aros-raspi",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -577,14 +577,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "i386",
       "abi": "v0",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.0/arospkg-0.7.0.i386-aros-v0.zip",
-      "size": 373665,
-      "sha256": "cdbe2e8a94409c0cebb2fe19047f0e3ae36c4588e8c9b3402c13804296baf415",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.1/arospkg-0.7.1.i386-aros-v0.zip",
+      "size": 373781,
+      "sha256": "596cda7addf7ce63914adf5c31f17578c82804767cad62e54a49853572b0cd19",
       "depends": [],
       "requires_system": [
         {
@@ -600,7 +600,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.7.0.i386-aros-v0",
+      "subdir": "arospkg-0.7.1.i386-aros-v0",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -628,14 +628,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.0/arospkg-0.7.0.x86_64-aros-v11.zip",
-      "size": 985488,
-      "sha256": "12c5c065014bea82f9de0af25466e34630aa729e6e82d93548fb868e2783fc5c",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.1/arospkg-0.7.1.x86_64-aros-v11.zip",
+      "size": 986327,
+      "sha256": "9a10f189f572d6c949dcaf25d67217de280b0e9c5a834a0128e6b72ee8b9f8b4",
       "depends": [],
       "requires_system": [
         {
@@ -659,7 +659,7 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "arospkg-0.7.0.x86_64-aros-v11",
+      "subdir": "arospkg-0.7.1.x86_64-aros-v11",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
