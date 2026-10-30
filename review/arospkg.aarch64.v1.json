@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "arospkg",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-10-14",
- "sha256": "4ec8b14ed5dc75ac97b26d9d4096c87c2cdaed8418578988414a1b4773ee1954",
- "size": 379977,
- "manifest_digest": "b4c8be76f06b88489aac22cedcbb22df82585faba3305f9e96ae76ff8912a451",
+ "date": "2026-10-30",
+ "sha256": "5716ee4717267bceabd323a0f70b7ff71efab1efbc8be639ce451a85502dfae4",
+ "size": 1061478,
+ "manifest_digest": "e977f49005a1b361f6b389cc5377a881a44680020083265cb8a429d467e1070b",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1588800,
+  "unpacked": 3205832
+ },
  "checks": [
   {
    "name": "metadata",
@@ -23,7 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "9 members"
+   "detail": "28 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1588800 bytes (arospkg-0.7.0.aarch64-aros-raspi/PkgManager), 3205832 bytes unpacked"
   },
   {
    "name": "paths",
@@ -38,7 +47,7 @@
   {
    "name": "cpu",
    "result": "passed",
-   "detail": "1 ELF file(s) for aarch64"
+   "detail": "2 ELF file(s) for aarch64"
   }
  ],
  "unchecked": [
