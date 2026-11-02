@@ -1,18 +1,17 @@
-# Limpet 0.8.0: Preferences and per-window startup command, text/image
-# capability queries, and inline image retention. Experimental handler is
-# distributed separately. Release assets downloaded and SHA-256 checked.
-# Runtime scope: limpet/doc/verification-0.8.0.md.
+# Limpet 0.9.0: optional transparent background on systems that can show it.
+# Experimental handler is distributed separately. Release assets downloaded and SHA-256 checked.
+# Runtime scope: limpet/doc/verification-0.9.0.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.8.0"
+version         = "0.9.0"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.8.0/Limpet-0.8.0-aros-x86_64-abiv11-pc.zip"
-size            = 5338727
-sha256          = "b7ad7a4b035316f98b9d7862c4de8405ec1cfcd2a92c961e774da7868afe7ed1"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.9.0/Limpet-0.9.0-aros-x86_64-abiv11-pc.zip"
+size            = 5345791
+sha256          = "1c2bcd7fc09f1f5438a5ef696dd18847ae21353f212b52507ed1ca5a0cb2113f"
 kind            = "app"
 
 depends         = []
@@ -44,5 +43,5 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.8.0"
+revision   = "v0.9.0"
 built_with = "abiv11-x86_64, GCC 10.5.0"
