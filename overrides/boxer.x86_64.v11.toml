@@ -1,0 +1,9 @@
+# Maintainer's record for Boxer x86_64 ABIv11, kept here so an author
+# submission replacing manifests/boxer.x86_64.v11.toml does not drop it.
+#
+# Tested 2026-11-04 with the 0.2.0-preview1 archive of this entry (sha256
+# 31958659...): apkg 0.7.3 on AROS One 1.3 under QEMU installed it from the
+# release URL and upgraded 0.1.0-preview5 to it (runtime-tests/).
+# A new archive's bytes are not covered by this test; update or remove
+# these fields when a new release is tested.
+installs_on = ["aros-one"]

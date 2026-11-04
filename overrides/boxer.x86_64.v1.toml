@@ -1,0 +1,9 @@
+# Maintainer's record for Boxer x86_64 ABIv1, kept here so an author
+# submission replacing manifests/boxer.x86_64.v1.toml does not drop it.
+#
+# Tested 2026-11-04 with the 0.2.0-preview1 archive of this entry (sha256
+# ae4747f0...): apkg 0.7.3 on mainline AROS x86_64 (nightly 2026-10-31)
+# under QEMU installed it from the release URL (runtime-tests/).
+# A new archive's bytes are not covered by this test; update or remove
+# these fields when a new release is tested.
+installs_on = ["mainline-x86_64"]

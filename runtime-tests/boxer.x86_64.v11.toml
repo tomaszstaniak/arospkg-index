@@ -12,3 +12,25 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "remove"]
 note    = "0.1.0-preview5: installed with apkg 0.5.0, hash verified; Install-Assign set Boxer:; apkg run opened the welcome window; assign removed; removed"
+
+[[test]]
+sha256  = "319586598fc9b48d631084cbd27009493b015ac05290ce6eb3d2ea4240985bca"
+date    = "2026-11-04"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.2.0-preview1, apkg 0.7.3: installed, hash verified; Install-Assign; apkg run opened the welcome window, quit rc 0; Install-Assign REMOVE; removed"
+
+[[test]]
+sha256  = "319586598fc9b48d631084cbd27009493b015ac05290ce6eb3d2ea4240985bca"
+date    = "2026-11-04"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["upgrade", "start", "remove"]
+note    = "apkg 0.7.3 upgrade from 0.1.0-preview5: hash verified, games, saves and settings kept; Boxer: assign stale until Install-Assign was run again"

@@ -1,0 +1,14 @@
+# Runtime tests of boxer x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "ae4747f03b972b00986a181b69d11c758921f86a8e54fb66d8f96b480d037805"
+date    = "2026-11-04"
+system  = "mainline AROS x86_64 (nightly 2026-10-31)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.2.0-preview1, apkg 0.7.3: installed, hash verified; Install-Assign; apkg run opened the welcome window, quit rc 0; Install-Assign REMOVE; removed"
