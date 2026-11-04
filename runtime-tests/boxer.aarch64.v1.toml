@@ -11,4 +11,4 @@ abi     = "v1"
 machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["install", "start", "remove"]
-note    = "apkg 0.7.3: installed, hash verified; Install-Assign; apkg run opened the welcome window, quit rc 0; removed. AHI on VOID, no sound tested; real Pi untested"
+note    = "apkg 0.7.3 to RAM:pk, S:/ENVARC: on RAM:, hash verified; Install-Assign; welcome window; removed. Disk install, reboot, sound, real Pi untested"

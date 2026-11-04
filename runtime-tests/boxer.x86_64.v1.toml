@@ -11,4 +11,4 @@ abi     = "v1"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "remove"]
-note    = "0.2.0-preview1, apkg 0.7.3: installed, hash verified; Install-Assign; apkg run opened the welcome window, quit rc 0; Install-Assign REMOVE; removed"
+note    = "apkg 0.7.3 to RAM:pk, S: and ENVARC: on RAM:, hash verified; Install-Assign; welcome window, quit rc 0; REMOVE; removed. Disk install, reboot untested"
