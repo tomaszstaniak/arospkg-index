@@ -1,0 +1,14 @@
+# Runtime tests of openloco aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs, kept outside the
+# catalogue repository.
+
+[[test]]
+sha256  = "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309"
+date    = "2026-11-04"
+system  = "AROS AArch64 20261029"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["start", "run"]
+note    = "Not via apkg: zip unpacked on the host, drawer copied to SD. Run-OpenLoco, track, stations, train, save, reboot, load. No sound (VOID); real Pi untested"

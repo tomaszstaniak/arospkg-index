@@ -1,0 +1,71 @@
+# OpenLoco for AROS 0.1.0-rc1, Raspberry Pi build. Our own port, published by
+# its author as the GitHub PRERELEASE v0.1.0-rc1-raspi (port revision 25b633b,
+# the same upstream OpenLoco 7f8c90cf as the x86_64 rc1).
+# Experimental: run only under QEMU (raspi3b, nightly 20261029) with AHI's VOID
+# driver, so no sound was heard; sound and speed on a real Raspberry Pi are
+# untested.
+#
+# The .zip of the release (apkg reads ZIP and LHA; the .lha holds the same
+# drawer). The player needs their OWN copy of Chris Sawyer's Locomotion (not
+# included, commercial) and starts the game with Run-OpenLoco, which sets a
+# 1 MB stack and the program's execute bit:
+#     cd SYS:Packages/openloco/OpenLoco   (or wherever apkg installed it)
+#     execute Run-OpenLoco
+# Details: https://github.com/tomaszstaniak/aros-openloco#getting-the-locomotion-files
+# installs_on stays empty until these bytes have been installed with apkg;
+# runs_on is empty as in the other aarch64 entries (no system name for AROS
+# for Raspberry Pi is defined for that field).
+
+status          = "approved"
+id              = "openloco"
+version         = "0.1.0-rc1"
+revision        = 1
+summary         = "Open-source re-implementation of Chris Sawyer's Locomotion (experimental Raspberry Pi build)"
+category        = "game/strategy"
+license         = "MIT"
+url             = "https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1-raspi/openloco.aarch64-aros-raspi.zip"
+size            = 16707990
+sha256          = "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+
+depends         = []
+depends_checked = true
+subdir          = "OpenLoco"
+# no icon: rc1 has no drawer icon (planned for a later release)
+installs_on     = []
+runs_on         = []
+does_not_run_on = []
+
+post_install_notes = [
+  "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
+  "The Locomotion game data is not included: you need your own copy of Chris Sawyer's Locomotion. README.md in the drawer says how to point the game at it.",
+  "Start the game from a Shell inside the OpenLoco drawer with: execute Run-OpenLoco (it sets the 1 MB stack the game needs).",
+  "Save under new names and keep copies of saves you care about: saving over an existing file has not been tried on the Pi.",
+]
+
+# Libraries the binary opens at start (its autoinit set), beyond the system's
+# core ones. SDL3, OpenAL Soft, iconv and the C++ runtime are linked in
+# statically: openal.library is NOT required (unlike the x86_64 build).
+# bsdsocket.library is opened only when networking is first used.
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-openloco"
+revision   = "v0.1.0-rc1-raspi"
+built_with = "aros-aarch64-abiv1-raspi, Clang 20.1.0, SDK of the Raspberry Pi nightly 20261029, libc++ 20.1.0; upstream OpenLoco 7f8c90cf"
