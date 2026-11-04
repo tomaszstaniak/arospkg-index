@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "openloco",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-04",
+ "sha256": "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309",
+ "size": 16707990,
+ "manifest_digest": "dca0509dc98f49e353d6267eee00c25dabe62a9cdd86bac8267ebd53fa66e065",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 14759432,
+  "unpacked": 44528621
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "278 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 14759432 bytes (OpenLoco/OpenLoco), 44528621 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

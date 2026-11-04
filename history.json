@@ -409,6 +409,10 @@
    "first_added": "2026-09-19",
    "commit": "206e013c694d"
   },
+  "openloco/aarch64/v1": {
+   "first_added": "2026-11-04",
+   "commit": "edea4a4ea074"
+  },
   "openloco/x86_64/v11": {
    "first_added": "2026-09-25",
    "commit": "865b625b5821"

@@ -8093,6 +8093,86 @@
     {
       "id": "openloco",
       "version": "0.1.0-rc1",
+      "summary": "Open-source re-implementation of Chris Sawyer's Locomotion (experimental Raspberry Pi build)",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "game/strategy",
+      "url": "https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1-raspi/openloco.aarch64-aros-raspi.zip",
+      "size": 16707990,
+      "sha256": "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "OpenLoco",
+      "icon": "",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-openloco",
+      "license": "MIT",
+      "post_install_notes": [
+        "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
+        "The Locomotion game data is not included: you need your own copy of Chris Sawyer's Locomotion. README.md in the drawer says how to point the game at it.",
+        "Start the game from a Shell inside the OpenLoco drawer with: execute Run-OpenLoco (it sets the 1 MB stack the game needs).",
+        "Save under new names and keep copies of saves you care about: saving over an existing file has not been tried on the Pi."
+      ],
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-04",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261029",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-04",
+          "result": "passed",
+          "checked": [
+            "start",
+            "run"
+          ],
+          "note": "Not via apkg: zip unpacked on the host, drawer copied to SD. Run-OpenLoco, track, stations, train, save, reboot, load. No sound (VOID); real Pi untested"
+        }
+      ],
+      "first_added": "2026-11-04",
+      "app_first_added": "2026-09-25"
+    },
+    {
+      "id": "openloco",
+      "version": "0.1.0-rc1",
       "summary": "Open-source re-implementation of Chris Sawyer's Locomotion",
       "arch": "x86_64",
       "abi": "v11",
