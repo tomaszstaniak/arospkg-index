@@ -1,24 +1,30 @@
-# Boxer for AROS 0.1.0 preview 5. Our own port, published by its author as a
-# GitHub release asset (prerelease, tag v0.1.0-preview5). An experimental
-# preview: a game session can freeze, and closing a hung session can crash AROS.
+# Boxer for AROS 0.2.0 preview 1, x86_64 ABIv11 build. Our own port, published by
+# its author as a GitHub release asset (prerelease, tag v0.2.0-preview1). An
+# experimental preview: a game session can freeze, and closing a hung session
+# can crash AROS.
 #
-# Archive layout (checked on the release asset 2026-10-19): Boxer/ with
-# BoxerUI, Install-Assign, conf/, Fonts/, dosbox.msg, ReadMe.txt, licences and
-# the complete source, plus Boxer.info beside it.
+# Archive layout: Boxer/ with BoxerUI, Install-Assign, conf/, Fonts/,
+# dosbox.msg, ReadMe.txt, licences and the complete source, plus Boxer.info
+# beside it. BoxerUI links GNU libiconv (LGPL); its source and a relink kit are
+# the release asset Boxer-0.2.0-preview1-aros-x86_64-abiv11-pc-lgpl-kit.zip.
 # Game icons start Boxer:BoxerUI, so the user runs Install-Assign once after
-# installing (tested from a Shell with Execute); apkg makes no assigns. Install-Assign REMOVE undoes it.
-# First entry for this package.
+# installing; apkg makes no assigns. Install-Assign REMOVE undoes it.
+# Upgrade from 0.1.0-preview5: version_compare of apkg v0.6.0 and v0.7.3,
+# compiled and run on 2026-11-03, orders 0.1.0-preview5 before 0.2.0-preview1,
+# so apkg upgrade moves to this entry; apkg 0.4.1 and 0.5.0 refuse the pair as
+# unordered (remove and install).
+# installs_on stays empty until these bytes have been installed with apkg.
 
 status          = "approved"
 id              = "boxer"
-version         = "0.1.0-preview5"
+version         = "0.2.0-preview1"
 revision        = 1
 summary         = "DOS game front end with Boxer's DOSBox core: import, gameboxes, covers (experimental preview)"
 category        = "emulation/computer"
 license         = "GPL-2.0"
-url             = "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.1.0-preview5/boxer-0.1.0-preview5.x86_64-aros-v11.zip"
-size            = 14173786
-sha256          = "5c3620fa5ad29af5c231e61dbe106f2e99499252f73acb57d9cfa2658224d2fb"
+url             = "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.2.0-preview1/Boxer-0.2.0-preview1-aros-x86_64-abiv11-pc.zip"
+size            = 14267998
+sha256          = "319586598fc9b48d631084cbd27009493b015ac05290ce6eb3d2ea4240985bca"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
@@ -27,7 +33,8 @@ depends         = []
 depends_checked = true
 subdir          = "Boxer"
 icon            = "Boxer.info"   # the drawer icon, beside Boxer/ at the archive root
-installs_on     = ["aros-one"]
+installs_on     = []
+runs_on         = ["aros-one"]   # this BoxerUI started from the unpacked archive under QEMU, 2026-11-03
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 post_install_notes = [
@@ -63,17 +70,9 @@ id   = "cybergraphics.library"
 type = "library"
 id   = "diskfont.library"
 
-[[requires_system]]
-type = "library"
-id   = "iffparse.library"
-
-[[requires_system]]
-type = "library"
-id   = "commodities.library"
-
 [source]
 repository = "https://github.com/tomaszstaniak/aros-boxerapp"
-revision   = "v0.1.0-preview5"
+revision   = "v0.2.0-preview1"
 built_with = "abiv11-x86_64, GCC 10.5.0"
 
 [launch]

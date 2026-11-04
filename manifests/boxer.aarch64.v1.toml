@@ -1,0 +1,84 @@
+# Boxer for AROS 0.2.0 preview 1, Raspberry Pi build. Our own port, published by
+# its author as an asset of the same GitHub release as the x86_64 builds
+# (prerelease, tag v0.2.0-preview1, one source commit for all three).
+# Experimental: it has run only under QEMU (raspi3b, without SMP, nightly
+# 20261029) with AHI's VOID driver, so no sound was heard; sound and speed on a
+# real Raspberry Pi are untested. DOSBox runs its interpreter core here.
+#
+# The .zip, not the release's .pkg: apkg reads ZIP and LHA only (the .pkg is for
+# C:Unpack, since this system has no UnZip). Same layout as the x86_64 archives.
+# Game icons start Boxer:BoxerUI, so the user runs Install-Assign once after
+# installing; apkg makes no assigns. Install-Assign REMOVE undoes it.
+# Built against the Developer/ directory of the Raspberry Pi nightly 20261029.
+# installs_on stays empty until these bytes have been installed with apkg.
+# runs_on is empty as in the other aarch64 entries: the field is an older
+# free-form claim (README), and no system name for AROS for Raspberry Pi is
+# defined or used in it. The QEMU-only start goes into runtime-tests/ after
+# publication, with machine "rpi-1, QEMU raspi3b".
+
+status          = "approved"
+id              = "boxer"
+version         = "0.2.0-preview1"
+revision        = 1
+summary         = "DOS game front end with Boxer's DOSBox core: import, gameboxes, covers (experimental preview)"
+category        = "emulation/computer"
+license         = "GPL-2.0"
+url             = "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.2.0-preview1/Boxer-0.2.0-preview1-aros-aarch64-abiv1-raspi.zip"
+size            = 13636452
+sha256          = "3727bddf77e38d4673b46a34528075cdf12d222dc4da31628178b1fb80234ea4"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+
+depends         = []
+depends_checked = true
+subdir          = "Boxer"
+icon            = "Boxer.info"   # the drawer icon, beside Boxer/ at the archive root
+installs_on     = []
+runs_on         = []
+does_not_run_on = []
+
+post_install_notes = [
+  "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
+  "Use a test installation of AROS. A hung game session can crash AROS.",
+  "Boxer can crash while you choose the folder of a game to import.",
+  "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+  "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
+  "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
+  "No games are included. ReadMe.txt in the drawer describes import and the logs.",
+]
+
+# Libraries the binary opens at start (its autoinit sets). SDL3 and the C++
+# runtime are linked statically; gl.library is not required.
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id   = "diskfont.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-boxerapp"
+revision   = "v0.2.0-preview1"
+built_with = "AROS for Raspberry Pi nightly 20261029 SDK, Clang 20.1.0, libc++ 20.1.0 with the AROS patches"
+
+[launch]
+executable = "BoxerUI"
+mode       = "workbench"
