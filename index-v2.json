@@ -1284,6 +1284,7 @@
         "Use a test installation of AROS. A hung game session can crash AROS.",
         "Boxer can crash while you choose the folder of a game to import.",
         "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+        "After upgrading with apkg, open the newly installed Boxer folder, run Install-Assign and choose Replace if prompted.",
         "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
         "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
         "No games are included. ReadMe.txt in the drawer describes import and the logs."
@@ -1310,7 +1311,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261029",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-04",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "apkg 0.7.3 to RAM:pk, S:/ENVARC: on RAM:, hash verified; Install-Assign; welcome window; removed. Disk install, reboot, sound, real Pi untested"
+        }
+      ],
       "first_added": "2026-11-04",
       "app_first_added": "2026-10-19"
     },
@@ -1351,7 +1367,9 @@
           "id": "diskfont.library"
         }
       ],
-      "installs_on": [],
+      "installs_on": [
+        "mainline-x86_64"
+      ],
       "runs_on": [
         "mainline-x86_64"
       ],
@@ -1369,6 +1387,7 @@
         "Experimental preview: use a test installation of AROS. A hung game session can crash AROS.",
         "On mainline AROS under QEMU, games and sound slowed down seriously when the host ran QEMU at low priority. Real hardware is untested.",
         "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+        "After upgrading with apkg, open the newly installed Boxer folder, run Install-Assign and choose Replace if prompted.",
         "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
         "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
         "No games are included. ReadMe.txt in the drawer describes import and the logs."
@@ -1395,7 +1414,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 (nightly 2026-10-31)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-04",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "apkg 0.7.3 to RAM:pk, S: and ENVARC: on RAM:, hash verified; Install-Assign; welcome window, quit rc 0; REMOVE; removed. Disk install, reboot untested"
+        }
+      ],
       "first_added": "2026-11-04",
       "app_first_added": "2026-10-19"
     },
@@ -1436,7 +1470,9 @@
           "id": "diskfont.library"
         }
       ],
-      "installs_on": [],
+      "installs_on": [
+        "aros-one"
+      ],
       "runs_on": [
         "aros-one"
       ],
@@ -1453,6 +1489,7 @@
       "post_install_notes": [
         "Experimental preview: use a test installation of AROS. A hung game session can crash AROS.",
         "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+        "After upgrading with apkg, open the newly installed Boxer folder, run Install-Assign and choose Replace if prompted.",
         "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
         "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
         "No games are included. ReadMe.txt in the drawer describes import and the logs."
@@ -1479,7 +1516,47 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-04",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "0.2.0-preview1, apkg 0.7.3: installed, hash verified; Install-Assign; apkg run opened the welcome window, quit rc 0; Install-Assign REMOVE; removed"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-04",
+          "result": "failed",
+          "checked": [
+            "upgrade"
+          ],
+          "note": "apkg 0.7.3 upgrade from 0.1.0-preview5, hash verified, games, saves, settings kept; Boxer: then pointed to the moved old drawer, Boxer:BoxerUI not found"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-04",
+          "result": "passed",
+          "checked": [
+            "start",
+            "remove"
+          ],
+          "note": "after the upgrade: apkg run and a game with its saved state started; Install-Assign in the new drawer (Replace) fixed Boxer:; REMOVE; removed"
+        }
+      ],
       "first_added": "2026-10-19",
       "app_first_added": "2026-10-19"
     },
