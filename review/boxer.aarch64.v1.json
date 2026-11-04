@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "boxer",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-04",
+ "sha256": "3727bddf77e38d4673b46a34528075cdf12d222dc4da31628178b1fb80234ea4",
+ "size": 13636452,
+ "manifest_digest": "57359f193e9b5141664a4cfb5407d6aff0ee61c517f52f8e08e3b0363d9c5bc5",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 11876568,
+  "unpacked": 22857581
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "39 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 11876568 bytes (Boxer/BoxerUI), 22857581 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
