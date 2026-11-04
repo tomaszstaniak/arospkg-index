@@ -1,0 +1,14 @@
+# Runtime tests of boxer aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "3727bddf77e38d4673b46a34528075cdf12d222dc4da31628178b1fb80234ea4"
+date    = "2026-11-04"
+system  = "AROS AArch64 20261029"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "apkg 0.7.3 to RAM:pk, S:/ENVARC: on RAM:, hash verified; Install-Assign; welcome window; removed. Disk install, reboot, sound, real Pi untested"

@@ -1,0 +1,17 @@
+# Maintainer's record for Boxer aarch64 ABIv1, kept here so an author
+# submission replacing manifests/boxer.aarch64.v1.toml does not drop it.
+#
+# post_install_notes: the manifest's lines with one added (2026-11-04):
+# after `apkg upgrade` the Boxer: assign still points to the moved old
+# drawer. The whole list is kept here because an override replaces it.
+# Keep it in step with the manifest's lines.
+post_install_notes = [
+  "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
+  "Use a test installation of AROS. A hung game session can crash AROS.",
+  "Boxer can crash while you choose the folder of a game to import.",
+  "Before the first start, run Install-Assign in the Boxer drawer. It sets the Boxer: assign that game icons use.",
+  "After upgrading with apkg, open the newly installed Boxer folder, run Install-Assign and choose Replace if prompted.",
+  "Before removing Boxer, run Execute Install-Assign REMOVE in its drawer.",
+  "Removing Boxer keeps your games folder, its Boxer Data and ENVARC:Boxer.",
+  "No games are included. ReadMe.txt in the drawer describes import and the logs.",
+]
