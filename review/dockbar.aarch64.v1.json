@@ -5,13 +5,13 @@
  "arch": "aarch64",
  "abi": "v1",
  "date": "2026-11-05",
- "sha256": "6cefcf40918256e776d0a572afe9349413fa950e5d8871419b5ac40cb29e4ce0",
- "size": 10514712,
- "manifest_digest": "c352484f61e83dae1c3bc08d265b4655c6648780553ecdb83dde6a014ef99416",
+ "sha256": "543f461c74eb2aabc7fab9ec508f784a92bf8990cdd350f10b8093cee96a328c",
+ "size": 10516910,
+ "manifest_digest": "e90bdfcebdeda553fc5f830c42d6dabe14eb1bccb0f3666d3870320219682b63",
  "result": "passed",
  "sizes": {
-  "largest_member": 10991104,
-  "unpacked": 22197839
+  "largest_member": 10991408,
+  "unpacked": 22210452
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 10991104 bytes (Dockbar/Widgets/org.aros.weather/bin/aarch64-raspi-v1/WeatherProvider), 22197839 bytes unpacked"
+   "detail": "largest member 10991408 bytes (Dockbar/Widgets/org.aros.weather/bin/aarch64-raspi-v1/WeatherProvider), 22210452 bytes unpacked"
   },
   {
    "name": "paths",
