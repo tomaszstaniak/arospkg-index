@@ -33,7 +33,7 @@ abi     = "v1"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "upgrade", "remove", "verify"]
-note    = "apkg 0.7.4 to RAM:; hash verified; upgrade from 0.5.1 kept docks.config and WidgetState; install replaced dockbar-info-only 0.5.1 and kept its user files, first start copied them; Weather data, no WeatherProvider failure on stdc.library 0.51; remove kept user files"
+note    = "apkg 0.7.4; upgrade from 0.5.1 kept user files; replaced dockbar-info-only, settings copied; Weather ok on stdc 0.51; remove kept user files"
 
 [[test]]
 sha256  = "a0aef81751f1590e33aafcba53307427e34565d7be411358abc7897197a339a0"
@@ -44,7 +44,7 @@ abi     = "v1"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start"]
-note    = "archive unpacked to RAM:; stdc.library 0.51; 4 Weather updates (start and 3 Refreshes), no Software Failure, no provider task left; settings copied from a dockbar-info-only drawer"
+note    = "archive to RAM:; stdc.library 0.51; 4 Weather updates, no Software Failure, no provider task left; settings copied from dockbar-info-only"
 
 [[test]]
 sha256  = "a0aef81751f1590e33aafcba53307427e34565d7be411358abc7897197a339a0"
