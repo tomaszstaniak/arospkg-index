@@ -15,6 +15,8 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
+# installs_on, runs_on: apkg 0.7.4 installed or upgraded, started and removed
+# these bytes (runtime-tests/, 2026-11-05).
 
 status          = "approved"
 id              = "dockbar"
@@ -35,8 +37,8 @@ depends_checked = true
 replaces        = ["dockbar-info-only"]
 subdir          = "Dockbar"
 icon            = "Dockbar.info"   # the drawer icon, beside Dockbar/ at the archive root
-installs_on     = []
-runs_on         = []
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
 does_not_run_on = []
 
 post_install_notes = [
