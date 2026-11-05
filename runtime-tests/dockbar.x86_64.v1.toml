@@ -23,3 +23,36 @@ machine = "QEMU (TCG)"
 result  = "failed"
 checked = ["start"]
 note    = "Dock and Weather data ok, but WeatherProvider crashed at each exit: stdc.library here is 0.51, the binary needs 0.52 (__stdc_set_taskexit)"
+
+[[test]]
+sha256  = "a0aef81751f1590e33aafcba53307427e34565d7be411358abc7897197a339a0"
+date    = "2026-11-05"
+system  = "mainline AROS x86_64 (nightly 2026-10-31)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.4; upgrade from 0.5.1 kept user files; replaced dockbar-info-only, settings copied; Weather ok on stdc 0.51; remove kept user files"
+
+[[test]]
+sha256  = "a0aef81751f1590e33aafcba53307427e34565d7be411358abc7897197a339a0"
+date    = "2026-11-05"
+system  = "mainline AROS x86_64 (nightly 2026-10-31)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start"]
+note    = "archive to RAM:; stdc.library 0.51; 4 Weather updates, no Software Failure, no provider task left; settings copied from dockbar-info-only"
+
+[[test]]
+sha256  = "a0aef81751f1590e33aafcba53307427e34565d7be411358abc7897197a339a0"
+date    = "2026-11-05"
+system  = "mainline AROS x86_64 (nightly 2026-11-04)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG), live CD"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to RAM:; stdc.library 0.52; Weather city search, forecast and one Refresh, no Software Failure, no provider task left"
