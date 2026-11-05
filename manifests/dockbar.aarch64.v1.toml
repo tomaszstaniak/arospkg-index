@@ -19,13 +19,13 @@
 status          = "approved"
 id              = "dockbar"
 version         = "0.5.2"
-revision        = 1
-summary         = "Dock for AROS: launchers, drawers, groups, clocks, see-through docks, Weather widget, SVG icons"
+revision        = 2
+summary         = "Dock with live drawer panels, application groups, file-drop actions and Weather"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
 url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-aarch64-abiv1-raspi.zip"
-size            = 10516910
-sha256          = "543f461c74eb2aabc7fab9ec508f784a92bf8990cdd350f10b8093cee96a328c"
+size            = 10508065
+sha256          = "fb057bf91732b32faeffa264657ef0b8abebab38b428ef7bd2a096fe041850f2"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -68,7 +68,7 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-dockbar"
-revision   = "v0.5.2"
+revision        = 2
 built_with = "AROS raspi-aarch64 SDK of 2026-11-02 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
