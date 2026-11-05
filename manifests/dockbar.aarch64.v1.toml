@@ -14,7 +14,9 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# installs_on stays empty until these bytes have been installed with apkg.
+# installs_on and runs_on stay empty, as in the other aarch64 entries: no
+# system name for AROS for Raspberry Pi is defined. The apkg run on rpi-1
+# (QEMU raspi3b) is in runtime-tests/.
 
 status          = "approved"
 id              = "dockbar"
