@@ -3149,13 +3149,13 @@
     {
       "id": "dockbar",
       "version": "0.5.2",
-      "summary": "Dock for AROS: launchers, drawers, groups, clocks, see-through docks, Weather widget, SVG icons",
+      "summary": "Dock with live drawer panels, application groups, file-drop actions and Weather",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/workbench",
       "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-aarch64-abiv1-raspi.zip",
-      "size": 10516910,
-      "sha256": "543f461c74eb2aabc7fab9ec508f784a92bf8990cdd350f10b8093cee96a328c",
+      "size": 10508065,
+      "sha256": "fb057bf91732b32faeffa264657ef0b8abebab38b428ef7bd2a096fe041850f2",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -3192,7 +3192,7 @@
       "subdir": "Dockbar",
       "icon": "Dockbar.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
@@ -3223,48 +3223,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS AArch64 20261029",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "start",
-            "upgrade",
-            "remove",
-            "verify"
-          ],
-          "note": "apkg 0.7.4 to RAM:; hash verified; upgrade from 0.5.1 kept docks.config and WidgetState; Weather data; remove kept user files; real Pi untested"
-        },
-        {
-          "system": "AROS AArch64 20261029",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "archive unpacked to RAM:; stdc.library 0.51; Weather data and one Refresh, no alert, no provider task left; real Pi untested"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
     {
       "id": "dockbar",
       "version": "0.5.2",
-      "summary": "Dock for AROS: launchers, drawers, groups, clocks, see-through docks, Weather widget, SVG icons",
+      "summary": "Dock with live drawer panels, application groups, file-drop actions and Weather",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/workbench",
       "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-x86_64-abiv1-pc.zip",
-      "size": 10402668,
-      "sha256": "a0aef81751f1590e33aafcba53307427e34565d7be411358abc7897197a339a0",
+      "size": 10381005,
+      "sha256": "8c8d095592a3688dde7802fbb12255dc594e6f2c5007a6060ce43d9b0339e858",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -3305,7 +3277,7 @@
       "subdir": "Dockbar",
       "icon": "Dockbar.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
@@ -3336,61 +3308,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "mainline AROS x86_64 (nightly 2026-10-31)",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "upgrade",
-            "remove",
-            "verify"
-          ],
-          "note": "apkg 0.7.4; upgrade from 0.5.1 kept user files; replaced dockbar-info-only, settings copied; Weather ok on stdc 0.51; remove kept user files"
-        },
-        {
-          "system": "mainline AROS x86_64 (nightly 2026-10-31)",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "archive to RAM:; stdc.library 0.51; 4 Weather updates, no Software Failure, no provider task left; settings copied from dockbar-info-only"
-        },
-        {
-          "system": "mainline AROS x86_64 (nightly 2026-11-04)",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG), live CD",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "archive unpacked to RAM:; stdc.library 0.52; Weather city search, forecast and one Refresh, no Software Failure, no provider task left"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
     {
       "id": "dockbar",
       "version": "0.5.2",
-      "summary": "Dock for AROS: launchers, drawers, groups, clocks, see-through docks, Weather widget, SVG icons",
+      "summary": "Dock with live drawer panels, application groups, file-drop actions and Weather",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/workbench",
       "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-x86_64-abiv11-pc.zip",
-      "size": 8797477,
-      "sha256": "e7b9ef24a1f5ef74ebe0810948fe0c01cdd0dc630c2dc44e5d30d55e08ab4d4f",
+      "size": 8785416,
+      "sha256": "72e2f432ce79795c317ed18d9514e01c1764232c1d86e4da389b1b262fcfa08f",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -3431,7 +3362,7 @@
       "subdir": "Dockbar",
       "icon": "Dockbar.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
@@ -3462,35 +3393,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "start",
-            "upgrade",
-            "remove",
-            "verify"
-          ],
-          "note": "apkg 0.7.4 to RAM:; hash verified; upgrade from 0.5.1 kept docks.config and WidgetState; Weather data; remove kept user files"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-05",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "archive unpacked to RAM:; Weather data and one Refresh, no alert"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },

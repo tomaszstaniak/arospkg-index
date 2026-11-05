@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v11",
  "date": "2026-11-05",
- "sha256": "e7b9ef24a1f5ef74ebe0810948fe0c01cdd0dc630c2dc44e5d30d55e08ab4d4f",
- "size": 8797477,
- "manifest_digest": "653ba1d7eed1084cffc08370c4ecd7aa58fe39ddf53f8d06a581059c7c26215b",
+ "sha256": "72e2f432ce79795c317ed18d9514e01c1764232c1d86e4da389b1b262fcfa08f",
+ "size": 8785416,
+ "manifest_digest": "be8cbafaa6a480b82a96ed689b9b96407e30702c222c027358ab79be1f45bd8b",
  "result": "passed",
  "sizes": {
   "largest_member": 5925740,
-  "unpacked": 15246722
+  "unpacked": 15247359
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "78 members"
+   "detail": "79 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 5925740 bytes (Dockbar/Widgets/org.aros.weather/assets/sprites.pak), 15246722 bytes unpacked"
+   "detail": "largest member 5925740 bytes (Dockbar/Widgets/org.aros.weather/assets/sprites.pak), 15247359 bytes unpacked"
   },
   {
    "name": "paths",
