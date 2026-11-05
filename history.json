@@ -149,6 +149,30 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "dockbar-info-only/aarch64/v1": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
+  "dockbar-info-only/x86_64/v1": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
+  "dockbar-info-only/x86_64/v11": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
+  "dockbar/aarch64/v1": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
+  "dockbar/x86_64/v1": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
+  "dockbar/x86_64/v11": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
   "dosbox/i386/v0": {
    "first_added": "2026-10-03",
    "commit": "9c5cb008aded"
@@ -778,6 +802,14 @@
   "diskusage": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "dockbar": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
+  },
+  "dockbar-info-only": {
+   "first_added": "2026-11-05",
+   "commit": "4eb69841dd88"
   },
   "dosbox": {
    "first_added": "2026-09-29",

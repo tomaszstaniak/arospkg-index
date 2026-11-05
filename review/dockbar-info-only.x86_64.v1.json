@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "dockbar-info-only",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-05",
+ "sha256": "5b2dd81bd38af798258c05ca2b891c035937947caa42a89ffd9f464723f928a9",
+ "size": 9585816,
+ "manifest_digest": "ebf7fc516cad5b213a3b1836dcaebfa90d3c158a816fc447538c7beea3b3eae1",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 9629552,
+  "unpacked": 17673457
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "65 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 9629552 bytes (Dockbar/Widgets/org.aros.weather/bin/x86_64-v1/WeatherProvider), 17673457 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

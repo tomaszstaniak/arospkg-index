@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "dockbar-info-only",
+ "arch": "x86_64",
+ "abi": "v11",
+ "date": "2026-11-05",
+ "sha256": "852cc7b0c54bb71c634312d25bd8f9673d43986673f78e87fc21a1c93635963d",
+ "size": 8185068,
+ "manifest_digest": "acab02af444ef49fd47a3ea8046d62b86f5a01215dc69d09b0a3f363bf8e4c06",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 5925740,
+  "unpacked": 12425602
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "65 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 5925740 bytes (Dockbar/Widgets/org.aros.weather/assets/sprites.pak), 12425602 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
