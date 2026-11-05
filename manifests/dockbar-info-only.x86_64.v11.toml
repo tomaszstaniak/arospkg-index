@@ -15,6 +15,13 @@
 # installs_on, runs_on: apkg 0.7.4 installed, started and removed these bytes
 # on AROS One 1.3 (runtime-tests/).
 
+# Not continued after 0.5.1 (2026-11-05): Dockbar is published as one
+# package per system, dockbar, with SVG icons; dockbar replaces this id.
+# The entry stays here as the record of the published 0.5.1 archive (its
+# bytes are unchanged on the v0.5.1 release) and is left out of the
+# catalogue. Installed copies can still be removed; `apkg install dockbar`
+# takes this one over and Dockbar copies its settings.
+excluded        = "Not continued after 0.5.1: install dockbar, which replaces dockbar-info-only and takes over its settings."
 status          = "approved"
 id              = "dockbar-info-only"
 version         = "0.5.1"

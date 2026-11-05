@@ -1,40 +1,38 @@
-# Dockbar 0.5.1 for AROS for Raspberry Pi (aarch64, ABIv1), with SVG icons.
+# Dockbar 0.5.2 for AROS on Raspberry Pi (aarch64, mainline ABIv1), with SVG icons.
 # Our own program, published by its author as an asset of the GitHub
-# release v0.5.1 (tag commit 2fe1919, one source commit for all six archives).
-# The package with SVG icons: it carries libs/svgicon.library, which Dockbar
-# opens as PROGDIR:libs/svgicon.library. dockbar-info-only is the same
-# program without that library; it shows the programs' .info icons.
-# Both packages contain the Weather widget (Widgets/org.aros.weather).
-# The two ids conflict: apkg 0.6 and later refuse to install one while the
-# other is installed (each would start its own Dockbar on the same docks).
+# release v0.5.2 (one source commit for all three archives).
+# It carries libs/svgicon.library, which Dockbar opens as
+# PROGDIR:libs/svgicon.library, and the Weather widget (Widgets/org.aros.weather).
+# replaces: dockbar-info-only (0.5.1, the same program without svgicon.library)
+# is not continued. apkg 0.6 and later install this package, then remove
+# dockbar-info-only; the user's files stay in its drawer, and Dockbar copies
+# docks.config, dock.pins and WidgetState from there on its first start
+# (only into a drawer that has none of them yet). replaces implies the
+# conflict the two ids had in 0.5.1.
 # User data lives in the program drawer: PROGDIR:docks.config and
 # PROGDIR:WidgetState/. Neither is in the archive, so apkg keeps both on
 # upgrade and removal as files it did not install.
-# Tested only under QEMU (raspi3b, nightly 20261029), not on a real Raspberry Pi.
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# installs_on and runs_on stay empty, as in the other aarch64 entries: no
-# system name for AROS for Raspberry Pi is defined. The apkg run on rpi-1
-# (QEMU raspi3b) is in runtime-tests/.
 
 status          = "approved"
 id              = "dockbar"
-version         = "0.5.1"
+version         = "0.5.2"
 revision        = 1
 summary         = "Dock for AROS: launchers, drawers, groups, clocks, see-through docks, Weather widget, SVG icons"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
-url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.1/Dockbar-0.5.1-aros-aarch64-abiv1-raspi.zip"
-size            = 10514712
-sha256          = "6cefcf40918256e776d0a572afe9349413fa950e5d8871419b5ac40cb29e4ce0"
+url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-aarch64-abiv1-raspi.zip"
+size            = 10516910
+sha256          = "543f461c74eb2aabc7fab9ec508f784a92bf8990cdd350f10b8093cee96a328c"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
 
 depends         = []
 depends_checked = true
-conflicts       = ["dockbar-info-only"]
+replaces        = ["dockbar-info-only"]
 subdir          = "Dockbar"
 icon            = "Dockbar.info"   # the drawer icon, beside Dockbar/ at the archive root
 installs_on     = []
@@ -43,9 +41,8 @@ does_not_run_on = []
 
 post_install_notes = [
   "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
+  "Replaces dockbar-info-only, which is not continued. On its first start Dockbar copies docks.config, dock.pins and WidgetState from that drawer.",
   "Your docks (docks.config) and Weather data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
-  "dockbar-info-only is the same dock without SVG icons. Only one of the two can be installed.",
-  "To switch, remove this package, install the other and copy docks.config and WidgetState from the old drawer.",
   "To start Dockbar with the system, see Installation in the ReadMe. Weather needs a running TCP/IP stack.",
 ]
 
@@ -71,7 +68,7 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-dockbar"
-revision   = "v0.5.1"
+revision   = "v0.5.2"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-02 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
