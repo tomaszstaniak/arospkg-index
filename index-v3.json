@@ -3093,7 +3093,35 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261029",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "start",
+            "upgrade",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:; hash verified; upgrade from 0.5.1 kept docks.config and WidgetState; Weather data; remove kept user files; real Pi untested"
+        },
+        {
+          "system": "AROS AArch64 20261029",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:; stdc.library 0.51; Weather data and one Refresh, no alert, no provider task left; real Pi untested"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
@@ -3136,8 +3164,12 @@
           "id": "cybergraphics.library"
         }
       ],
-      "installs_on": [],
-      "runs_on": [],
+      "installs_on": [
+        "mainline-x86_64"
+      ],
+      "runs_on": [
+        "mainline-x86_64"
+      ],
       "does_not_run_on": [],
       "kind": "app",
       "subdir": "Dockbar",
@@ -3174,7 +3206,48 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 (nightly 2026-10-31)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "upgrade",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4; upgrade from 0.5.1 kept user files; replaced dockbar-info-only, settings copied; Weather ok on stdc 0.51; remove kept user files"
+        },
+        {
+          "system": "mainline AROS x86_64 (nightly 2026-10-31)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive to RAM:; stdc.library 0.51; 4 Weather updates, no Software Failure, no provider task left; settings copied from dockbar-info-only"
+        },
+        {
+          "system": "mainline AROS x86_64 (nightly 2026-11-04)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG), live CD",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:; stdc.library 0.52; Weather city search, forecast and one Refresh, no Software Failure, no provider task left"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
@@ -3217,8 +3290,12 @@
           "id": "cybergraphics.library"
         }
       ],
-      "installs_on": [],
-      "runs_on": [],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
       "does_not_run_on": [],
       "kind": "app",
       "subdir": "Dockbar",
@@ -3255,7 +3332,35 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "start",
+            "upgrade",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:; hash verified; upgrade from 0.5.1 kept docks.config and WidgetState; Weather data; remove kept user files"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-05",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:; Weather data and one Refresh, no alert"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
