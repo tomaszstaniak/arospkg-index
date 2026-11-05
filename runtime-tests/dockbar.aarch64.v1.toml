@@ -1,0 +1,14 @@
+# Runtime tests of dockbar aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start, upgrade and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "6cefcf40918256e776d0a572afe9349413fa950e5d8871419b5ac40cb29e4ce0"
+date    = "2026-11-05"
+system  = "AROS AArch64 20261029"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM:; hash verified; Weather online; upgrade from a revision 0 test entry kept docks.config and WidgetState; remove kept them; real Pi untested"

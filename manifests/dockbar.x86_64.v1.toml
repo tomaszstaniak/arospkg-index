@@ -13,7 +13,12 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# installs_on stays empty until these bytes have been installed with apkg.
+# installs_on: apkg 0.7.4 installed, upgraded and removed these bytes on
+# mainline nightly 2026-10-31 (runtime-tests/). runs_on stays empty: that
+# nightly has stdc.library 0.51, and the Weather helper, linked against the
+# 531307d8 SDK, calls __stdc_set_taskexit (stdc.library 0.52, AROS a819b99a,
+# 2026-10-31) when it ends and crashes there. min_version cannot express
+# 0.52 (the library version is 0), so the requirement is a note.
 
 status          = "approved"
 id              = "dockbar"
@@ -34,7 +39,7 @@ depends_checked = true
 conflicts       = ["dockbar-info-only"]
 subdir          = "Dockbar"
 icon            = "Dockbar.info"   # the drawer icon, beside Dockbar/ at the archive root
-installs_on     = []
+installs_on     = ["mainline-x86_64"]
 runs_on         = []
 does_not_run_on = []
 
@@ -42,6 +47,7 @@ post_install_notes = [
   "Your docks (docks.config) and Weather data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
   "dockbar-info-only is the same dock without SVG icons. Only one of the two can be installed.",
   "To switch, remove this package, install the other and copy docks.config and WidgetState from the old drawer.",
+  "Needs stdc.library 0.52 or later (check: Version stdc.library). With 0.51, as in the nightly of 2026-10-31, the Weather helper crashes when it ends.",
   "To start Dockbar with the system, see Installation in the ReadMe. Weather needs a running TCP/IP stack.",
   "With VMware SVGA graphics the docks can be invisible. Start Dockbar with --no-compose then.",
 ]
