@@ -1,0 +1,25 @@
+# Runtime tests of dockbar x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start, upgrade and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "742076141843434427827557f6e786b8201596602439114106bb73775b600f32"
+date    = "2026-11-05"
+system  = "mainline AROS x86_64 (nightly 2026-10-31)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM:; hash verified; upgrade from a revision 0 test entry kept docks.config and WidgetState; remove kept them; dockbar-info-only refused"
+
+[[test]]
+sha256  = "742076141843434427827557f6e786b8201596602439114106bb73775b600f32"
+date    = "2026-11-05"
+system  = "mainline AROS x86_64 (nightly 2026-10-31)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "failed"
+checked = ["start"]
+note    = "Dock and Weather data ok, but WeatherProvider crashed at each exit: stdc.library here is 0.51, the binary needs 0.52 (__stdc_set_taskexit)"

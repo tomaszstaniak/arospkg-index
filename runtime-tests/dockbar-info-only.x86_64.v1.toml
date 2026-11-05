@@ -1,0 +1,14 @@
+# Runtime tests of dockbar-info-only x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start, upgrade and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "5b2dd81bd38af798258c05ca2b891c035937947caa42a89ffd9f464723f928a9"
+date    = "2026-11-05"
+system  = "mainline AROS x86_64 (nightly 2026-10-31)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM: from the catalogue; hash verified; default dock started and quit; dockbar refused while installed. Weather not used in this test"
