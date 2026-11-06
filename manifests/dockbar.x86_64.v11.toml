@@ -18,8 +18,8 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# runs_on: these archive bytes were unpacked and started under QEMU in the
-# 0.6.0 release tests (2026-11-06); installs_on follows the apkg test.
+# installs_on, runs_on: apkg 0.7.4 installed and upgraded these bytes, and they
+# were unpacked and started, under QEMU (runtime-tests/, 2026-11-06).
 
 status          = "approved"
 id              = "dockbar"
@@ -40,7 +40,7 @@ depends_checked = true
 replaces        = ["dockbar-info-only"]
 subdir          = "Dockbar"
 icon            = "Dockbar.info"   # the drawer icon, beside Dockbar/ at the archive root
-installs_on     = []
+installs_on     = ["aros-one"]
 runs_on         = ["aros-one"]
 does_not_run_on = []
 

@@ -34,3 +34,25 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start"]
 note    = "archive unpacked to RAM:; Weather data and one Refresh, no alert"
+
+[[test]]
+sha256  = "8b7de923fc8e2209b709ddeb89c42f2b2759beedde64f4f0e40164361c434709"
+date    = "2026-11-06"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM:, catalogue of this change; upgrade from 0.5.2 kept docks.config and WidgetState; widget install from another program; remove kept user files"
+
+[[test]]
+sha256  = "8b7de923fc8e2209b709ddeb89c42f2b2759beedde64f4f0e40164361c434709"
+date    = "2026-11-06"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to RAM:; two docks, Weather data, widget install with dock choice, action widget, busy and refusal answers, restart"
