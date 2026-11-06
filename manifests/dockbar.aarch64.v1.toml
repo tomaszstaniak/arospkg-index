@@ -18,6 +18,9 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
+# apkg 0.7.4 installed and upgraded these bytes, and they were unpacked and
+# started, under QEMU raspi3b (runtime-tests/, 2026-11-06); there is no system
+# id for the Pi in installs_on and runs_on.
 
 status          = "approved"
 id              = "dockbar"

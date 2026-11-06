@@ -18,8 +18,10 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# runs_on: these archive bytes were unpacked and started under QEMU in the
-# 0.6.0 release tests (2026-11-06); installs_on follows the apkg test.
+# runs_on: the programs in these bytes were started on a mainline nightly
+# (2026-11-05) under QEMU in the 0.6.0 release tests, from an archive that
+# differed only in ReadMe, Changes and application.json; installs_on is empty
+# until an apkg test of this archive.
 # The Weather helper calls __stdc_set_taskexit (stdc.library 0.52) only when
 # the running stdc.library has it, so since 0.5.2 it does not need 0.52.
 
