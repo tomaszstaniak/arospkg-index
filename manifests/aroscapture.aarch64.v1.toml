@@ -1,0 +1,86 @@
+# AROS Capture 0.1.0 for AROS on the Raspberry Pi (aarch64, ABIv1).
+# Our own program, published by its author as an asset of the GitHub
+# release v0.1.0 (one source commit, b16bd4e, for both archives).
+# The drawer carries libs/svgicon.library (toolbar icons), which the program
+# opens from its own drawer, and Widget/org.aros.capture, the Dockbar button
+# that Add to Dockbar asks a running Dockbar to install.
+# recommends dockbar: the button needs Dockbar 0.6.0 or newer. AROS Capture
+# works the same without it, so Dockbar is not a dependency.
+# User data: the capture folder setting in ENVARC:AROSCapture/Folder and,
+# after Add to Dockbar, the program path in ENVARC:AROSCapture/Program.
+# Nothing in the drawer is written by the program.
+# requires_system: the C runtime libraries the binaries open at start, and
+# the system libraries the editor opens (MUI, cybergraphics, datatypes for
+# PNG, iffparse for the clipboard).
+# apkg 0.7.4 installed these bytes, and they were unpacked and started, under
+# QEMU raspi3b (nightly 2026-11-05; runtime-tests/), not on a real Raspberry Pi.
+
+status          = "approved"
+id              = "aroscapture"
+version         = "0.1.0"
+revision        = 1
+summary         = "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands"
+category        = "graphics/edit"
+license         = "MIT; bundled parts keep their own licences, see NOTICES"
+url             = "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-aarch64-abiv1-raspi.zip"
+size            = 789981
+sha256          = "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+
+depends         = []
+depends_checked = true
+subdir          = "AROSCapture"
+icon            = "AROSCapture.info"   # the drawer icon, beside AROSCapture/ at the archive root
+installs_on     = []
+runs_on         = []
+does_not_run_on = []
+
+post_install_notes = [
+  "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
+  "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
+  "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer.",
+]
+
+[[recommends]]
+id          = "dockbar"
+min_version = "0.6.0"
+reason      = "Add to Dockbar puts an AROS Capture button on a dock: capture an area, the screen, the screen in 5 seconds, open the folder"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id   = "datatypes.library"
+
+[[requires_system]]
+type = "library"
+id   = "iffparse.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-capture"
+revision   = "v0.1.0"
+built_with = "AROS raspi-aarch64 SDK of 2026-11-05 (mainline ABIv1), Clang 20.1.0"
+
+[launch]
+executable = "AROSCapture"
+mode       = "workbench"

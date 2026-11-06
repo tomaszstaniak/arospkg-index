@@ -1,0 +1,25 @@
+# Runtime tests of aroscapture x86_64/v11: maintainer records, each for the
+# archive bytes named by its sha256. Source: maintainer test logs (apkg
+# install, start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9"
+date    = "2026-11-06"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove"
+
+[[test]]
+sha256  = "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9"
+date    = "2026-11-06"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to RAM:; area capture, editor, save; Dockbar button: four actions, update, busy, refusal and skip keep the stored path"

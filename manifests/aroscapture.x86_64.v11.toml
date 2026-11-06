@@ -1,0 +1,85 @@
+# AROS Capture 0.1.0 for x86_64 AROS ABIv11 (AROS One), PC.
+# Our own program, published by its author as an asset of the GitHub
+# release v0.1.0 (one source commit, b16bd4e, for both archives).
+# The drawer carries libs/svgicon.library (toolbar icons), which the program
+# opens from its own drawer, and Widget/org.aros.capture, the Dockbar button
+# that Add to Dockbar asks a running Dockbar to install.
+# recommends dockbar: the button needs Dockbar 0.6.0 or newer. AROS Capture
+# works the same without it, so Dockbar is not a dependency.
+# User data: the capture folder setting in ENVARC:AROSCapture/Folder and,
+# after Add to Dockbar, the program path in ENVARC:AROSCapture/Program.
+# Nothing in the drawer is written by the program.
+# requires_system: the C runtime libraries the binaries open at start, and
+# the system libraries the editor opens (MUI, cybergraphics, datatypes for
+# PNG, iffparse for the clipboard).
+# installs_on, runs_on: apkg 0.7.4 installed these bytes on AROS One, and they
+# were unpacked and started there, under QEMU (runtime-tests/, 2026-11-06).
+
+status          = "approved"
+id              = "aroscapture"
+version         = "0.1.0"
+revision        = 1
+summary         = "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands"
+category        = "graphics/edit"
+license         = "MIT; bundled parts keep their own licences, see NOTICES"
+url             = "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-x86_64-abiv11-pc.zip"
+size            = 713410
+sha256          = "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9"
+kind            = "app"
+arch            = "x86_64"
+abi             = "v11"
+
+depends         = []
+depends_checked = true
+subdir          = "AROSCapture"
+icon            = "AROSCapture.info"   # the drawer icon, beside AROSCapture/ at the archive root
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
+does_not_run_on = []
+
+post_install_notes = [
+  "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
+  "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer.",
+]
+
+[[recommends]]
+id          = "dockbar"
+min_version = "0.6.0"
+reason      = "Add to Dockbar puts an AROS Capture button on a dock: capture an area, the screen, the screen in 5 seconds, open the folder"
+
+[[requires_system]]
+type = "library"
+id   = "crt.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdlib.library"
+
+[[requires_system]]
+type = "library"
+id   = "m.library"
+
+[[requires_system]]
+type = "library"
+id   = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id   = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id   = "datatypes.library"
+
+[[requires_system]]
+type = "library"
+id   = "iffparse.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-capture"
+revision   = "v0.1.0"
+built_with = "AROS ABIv11 2026.09 SDK, GCC 10.5.0"
+
+[launch]
+executable = "AROSCapture"
+mode       = "workbench"
