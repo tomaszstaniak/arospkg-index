@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "tinytris",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "55a2f9de5486a8db4f445b2901d44775baa3d193cdd694262377861f5e5f62c8",
  "size": 2533852,
  "manifest_digest": "aa9fb86cfbd4dcc71950c0ae22763d4966d699f48522fd93e3605f60491efc81",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1352272,
+  "unpacked": 5270073
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "16 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1352272 bytes (Tinytris/TinytrisAROS), 5270073 bytes unpacked"
   },
   {
    "name": "paths",

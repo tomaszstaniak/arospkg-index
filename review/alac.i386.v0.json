@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "alac",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "3b2d5d19acbe9f3ad14e734b031473a4e73ed34052f32528bc4fcc17dd7b0164",
  "size": 6803851,
  "manifest_digest": "8a4fa6228e2fd9fc2a8ba1814a862fb7897c6a01ef6519890c8fbad461dce963",
  "result": "passed",
+ "sizes": {
+  "largest_member": 6719490,
+  "unpacked": 6881634
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "21 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 6719490 bytes (Jan 18  2021 ALAC_Decoder/Example/luckynight.m4a), 6881634 bytes unpacked"
   },
   {
    "name": "paths",

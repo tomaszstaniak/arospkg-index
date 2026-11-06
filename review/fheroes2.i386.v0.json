@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "fheroes2",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "aee75aae8d623622be48d854e81b0415f4aa2e4fd1cebbf55521425ca25c24f3",
  "size": 6158795,
  "manifest_digest": "7fc6a3ed317637d28321eb0285474ff4b2d16435cee34308c7940283e04c1fe0",
  "result": "passed",
+ "sizes": {
+  "largest_member": 11810857,
+  "unpacked": 15310119
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "70 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 11810857 bytes (Sep 13  2012 fheroes2/fheroes2), 15310119 bytes unpacked"
   },
   {
    "name": "paths",

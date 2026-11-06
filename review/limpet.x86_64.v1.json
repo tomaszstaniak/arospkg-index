@@ -4,7 +4,7 @@
  "id": "limpet",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-11-02",
+ "date": "2026-11-06",
  "sha256": "5d34411b9af49763da9ad9b846f43044f0870887ca6b0bb4bf93862ff5991898",
  "size": 5262468,
  "manifest_digest": "4b8b19dc7389e54a913c91ba1a17920fe852c397df659ec3070d9503ac831951",

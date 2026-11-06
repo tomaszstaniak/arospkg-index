@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "rescode",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "20390af4424f167727fc0765db0bf0cd96f581942272694e5e047fd8df799407",
  "size": 89500,
  "manifest_digest": "4a365091ea99b341b8c3628b6595ebfa91793cdbe293b421bed904b66298893a",
  "result": "passed",
+ "sizes": {
+  "largest_member": 41736,
+  "unpacked": 174094
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "14 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 41736 bytes (ResCode/ResCode), 174094 bytes unpacked"
   },
   {
    "name": "paths",

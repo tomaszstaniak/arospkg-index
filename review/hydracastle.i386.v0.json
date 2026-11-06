@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "hydracastle",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "544f9c434d981ec07f39079c60156282980165afd8bd1a5367a2819f36334449",
  "size": 1911077,
  "manifest_digest": "a2e76c48114332095c2dcd195a4ddb9437c6eb51cbc9ebf8a379fdb51c3cee69",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1426442,
+  "unpacked": 4978598
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "666 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1426442 bytes (HydraCastle/data/bmp.qda), 4978598 bytes unpacked"
   },
   {
    "name": "paths",

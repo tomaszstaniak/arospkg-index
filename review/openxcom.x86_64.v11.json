@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "openxcom",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "6683f06367971c9de19c6e5b953c535eb2f62f0746daa733581eff385be90bb4",
  "size": 4557960,
  "manifest_digest": "aca4c81b13fb400a3bada7bcd963613101cf0849d2ec124639776f4ce4d65031",
  "result": "passed",
+ "sizes": {
+  "largest_member": 14037624,
+  "unpacked": 18507058
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "342 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 14037624 bytes (OpenXcom/OpenXcom), 18507058 bytes unpacked"
   },
   {
    "name": "paths",

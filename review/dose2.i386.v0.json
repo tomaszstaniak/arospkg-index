@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "dose2",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "5bbedf38e778aef4d2ab3579f0691dd59923dbfeebdcf104c673bdbf0e2f2f7e",
  "size": 5359751,
  "manifest_digest": "ed44273c067d5a566c89f8ef161a74140aabbed9260288dc27344416d0ac3dca",
  "result": "passed",
+ "sizes": {
+  "largest_member": 4317767,
+  "unpacked": 6378529
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "184 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 4317767 bytes (dose2/data/italo160.ogg), 6378529 bytes unpacked"
   },
   {
    "name": "paths",

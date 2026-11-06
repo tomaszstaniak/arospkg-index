@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "timeless",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "342f1b5471738d97dec431e4de5b8b3066464d899ae18898d3ece91df9380f6a",
  "size": 483766,
  "manifest_digest": "2cd70e985a6fa4434c022ce7ec937e3be4eaaccc8a1e39f8ca55ff0d0f5483fd",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1091664,
+  "unpacked": 1235545
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "7 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1091664 bytes (Timeless/Timeless), 1235545 bytes unpacked"
   },
   {
    "name": "paths",

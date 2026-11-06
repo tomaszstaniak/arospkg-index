@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "ab3dhd",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "067e3bbc32de0407cd5c9dfe96ae688c526a7fc54ec80e54373704baa3a40bc5",
  "size": 2298925,
  "manifest_digest": "310ed1378307ceed253d4ec10396375a2e3b1d41f407f8269d582161d03c4cc5",
  "result": "passed",
+ "sizes": {
+  "largest_member": 3160800,
+  "unpacked": 6158790
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "249 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 3160800 bytes (Alien Breed HD/ab3d1), 6158790 bytes unpacked"
   },
   {
    "name": "paths",

@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "rtf-riddle",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "d53b2edc4f77143b7474319c795d0a88b92c7e072312ba0466a939cfc730a82f",
  "size": 168299,
  "manifest_digest": "2c93f71b348a21d4802b1a61e3a7d56ebf1f6579bbfda6568d20996c112621a8",
  "result": "passed",
+ "sizes": {
+  "largest_member": 141981,
+  "unpacked": 567320
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "46 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 141981 bytes (Feb 21  2015 RTF-Riddle/RTFs/RTF-Riddle-Dev.rtf), 567320 bytes unpacked"
   },
   {
    "name": "paths",

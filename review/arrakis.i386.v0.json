@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "arrakis",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "5cce58a8fe60b56c7cb1209717faa3893efd48bc7daf4e950cb9489a069581d7",
  "size": 3566920,
  "manifest_digest": "848fd55259371a42e0c5e74ae0b3080b6c5cd03654b749ced0ab8febaef3efe7",
  "result": "passed",
+ "sizes": {
+  "largest_member": 2400035,
+  "unpacked": 6124547
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "53 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2400035 bytes (arrakis/data/arrakis.music), 6124547 bytes unpacked"
   },
   {
    "name": "paths",

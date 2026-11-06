@@ -4,7 +4,7 @@
  "id": "arospkg",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-10-30",
+ "date": "2026-11-06",
  "sha256": "bf6b3feaa0031801b758b6c17a34fa0b01d35901bcdafb570ef632f596528d97",
  "size": 1075168,
  "manifest_digest": "419670fc54d74611dc04f46e94d2b543d04a8fd1fabd2f758a04b797e62dd663",

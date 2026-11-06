@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "mcamiga",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "435ee5e1316fb6c86a79bc8908b175d83d53f04f67a4d0d8fa8c46b8b45ff61e",
  "size": 302308,
  "manifest_digest": "6345fdb90bde7c5cd6516b1b50d95fa0503b3bfc693cdcb972981169bf77dd9e",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1207416,
+  "unpacked": 1228994
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "8 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1207416 bytes (Mar 16  2023 MCAmiga/MCAmiga), 1228994 bytes unpacked"
   },
   {
    "name": "paths",

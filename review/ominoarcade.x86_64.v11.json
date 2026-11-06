@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "ominoarcade",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
- "sha256": "813ddb7d313cd2e5278f51dd86391f08b825fe3c4e0148be5fbcad7f7697a47d",
- "size": 2510500,
+ "date": "2026-11-06",
+ "sha256": "db7168e08678059438af8a757d9320e76865659d2ca480e52fa9c873a5dbc24e",
+ "size": 2507512,
  "manifest_digest": "aba52615c373aea78bf67ff4c3dc3b5d8d6bef4424c7eed8f18ac5f5a1917e28",
- "result": "passed",
+ "result": "failed",
+ "sizes": {
+  "largest_member": 2561600,
+  "unpacked": 21595099
+ },
  "checks": [
   {
    "name": "metadata",
@@ -17,13 +21,18 @@
   },
   {
    "name": "download",
-   "result": "passed",
-   "detail": ""
+   "result": "failed",
+   "detail": "2507512 bytes, sha256 db7168e08678059438af8a757d9320e76865659d2ca480e52fa9c873a5dbc24e; the entry says 2510500 bytes, sha256 813ddb7d313cd2e5278f51dd86391f08b825fe3c4e0148be5fbcad7f7697a47d"
   },
   {
    "name": "archive",
    "result": "passed",
    "detail": "27 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2561600 bytes (OminoArcade1.2/Omino), 21595099 bytes unpacked"
   },
   {
    "name": "paths",
@@ -32,8 +41,8 @@
   },
   {
    "name": "layout",
-   "result": "passed",
-   "detail": ""
+   "result": "failed",
+   "detail": "icon: 'OminoArcade1.0.info' is not at that path in the archive; subdir: 'OminoArcade1.0' is not in the archive"
   },
   {
    "name": "cpu",

@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "hocoslamfy",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "63772cda41250b9bac98ce2cd79cfbe300853088483ed32761ba1ab25afcc896",
  "size": 2471216,
  "manifest_digest": "19e3ae84ce8ebcc425499e0cc7b4778c067eed759a07bac059a4a614261c5fca",
  "result": "passed",
+ "sizes": {
+  "largest_member": 2097474,
+  "unpacked": 3942969
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "37 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2097474 bytes (Hocoslamfy/hoco_data/bgm.wav), 3942969 bytes unpacked"
   },
   {
    "name": "paths",

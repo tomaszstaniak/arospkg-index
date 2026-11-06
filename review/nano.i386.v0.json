@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "nano",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "488bca0270b2ff1141c317e126e261205a1c4e295f420b352190401f9d059953",
  "size": 3911860,
  "manifest_digest": "53f75217518fcc442b5ecd4b33e8ceaf396b33e526e49892d2797a32eb3c4222",
  "result": "passed",
+ "sizes": {
+  "largest_member": 2906575,
+  "unpacked": 6328349
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "62 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2906575 bytes (nano/data/nano.music), 6328349 bytes unpacked"
   },
   {
    "name": "paths",

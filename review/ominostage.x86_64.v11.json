@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "ominostage",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
- "sha256": "2a60c078accba2e796d85dbd83640ef9f2c0537d6cf38e4693990039060bfccf",
- "size": 1645762,
+ "date": "2026-11-06",
+ "sha256": "2178545481da5c30adca694ff6aef57e9eb391be1e674455cd6d723e8ddc01de",
+ "size": 1647803,
  "manifest_digest": "27756ab91ff5118e818ec02cb32735449cf7013f01ac0127397c8193722a65de",
- "result": "passed",
+ "result": "failed",
+ "sizes": {
+  "largest_member": 2561952,
+  "unpacked": 21590584
+ },
  "checks": [
   {
    "name": "metadata",
@@ -17,13 +21,18 @@
   },
   {
    "name": "download",
-   "result": "passed",
-   "detail": ""
+   "result": "failed",
+   "detail": "1647803 bytes, sha256 2178545481da5c30adca694ff6aef57e9eb391be1e674455cd6d723e8ddc01de; the entry says 1645762 bytes, sha256 2a60c078accba2e796d85dbd83640ef9f2c0537d6cf38e4693990039060bfccf"
   },
   {
    "name": "archive",
    "result": "passed",
    "detail": "26 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2561952 bytes (Omino1.2/Omino), 21590584 bytes unpacked"
   },
   {
    "name": "paths",
@@ -32,8 +41,8 @@
   },
   {
    "name": "layout",
-   "result": "passed",
-   "detail": ""
+   "result": "failed",
+   "detail": "icon: 'Omino1.1.info' is not at that path in the archive; subdir: 'Omino1.1' is not in the archive"
   },
   {
    "name": "cpu",

@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "wildmidi",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "6989ea529cdcf4abb85f8c645fe1c0d97c7fb6c2ddcf25120da2b9c1e24bfc2e",
  "size": 432951,
  "manifest_digest": "47d3ad5cf0f125faa90bfa91974e9f610c1c1e84b9fd8af2e92c2ca3e5b3d4e7",
  "result": "passed",
+ "sizes": {
+  "largest_member": 275315,
+  "unpacked": 630957
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "48 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 275315 bytes (WildMidi/Source/Source.zip), 630957 bytes unpacked"
   },
   {
    "name": "paths",

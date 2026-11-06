@@ -4,7 +4,7 @@
  "id": "lightcraft",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-10-24",
+ "date": "2026-11-06",
  "sha256": "cc246af5392bdf3ae7ffe262626935ac14dba601fc315be0f6ce60680b38e122",
  "size": 36614384,
  "manifest_digest": "d9651a996c624b09b66f111d307966ec9260b1a18ff2a55c489c82e840896aa7",

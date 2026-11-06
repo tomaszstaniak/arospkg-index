@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "planethively",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "d4ae102cb1716e41b7d3265fc1335ec7adf8601fe5fe298543690d2426b02665",
  "size": 473725,
  "manifest_digest": "d630900717057f56028c34e894352fadd70a300f6dcd05fe14809d4e7630c488",
  "result": "passed",
+ "sizes": {
+  "largest_member": 434836,
+  "unpacked": 2191463
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "39 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 434836 bytes (Jan 25  2021 PlanetHively/1024x768), 2191463 bytes unpacked"
   },
   {
    "name": "paths",

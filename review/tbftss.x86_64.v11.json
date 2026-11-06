@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "tbftss",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "68cbeb3901094f2a3cf21a33de20064cc546b9e74d1283004a5091fe8bc24464",
  "size": 47940255,
  "manifest_digest": "d67d53bac7c29071334f11ff152e4dbac2c88f1819b34135b2ef110bb2192bf3",
  "result": "passed",
+ "sizes": {
+  "largest_member": 6085960,
+  "unpacked": 54167030
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "337 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 6085960 bytes (TBFTSS/TBFTSS), 54167030 bytes unpacked"
   },
   {
    "name": "paths",

@@ -38,12 +38,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -101,12 +102,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -170,12 +172,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -236,12 +239,13 @@
       "revision": 1,
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -284,12 +288,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -353,12 +358,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -478,12 +484,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -735,7 +742,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-30",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -786,7 +793,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-30",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -850,7 +857,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-30",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -906,12 +913,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -979,12 +987,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1054,12 +1063,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1123,12 +1133,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1192,12 +1203,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1321,12 +1333,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1475,7 +1488,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-04",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -1578,7 +1591,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-04",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -1680,7 +1693,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-04",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -1772,12 +1785,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1845,12 +1859,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1914,12 +1929,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -1994,7 +2010,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -2059,7 +2075,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -2113,12 +2129,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2182,12 +2199,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2251,12 +2269,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2380,12 +2399,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2447,12 +2467,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2516,12 +2537,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2610,7 +2632,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-23",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -2680,12 +2702,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2749,12 +2772,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2822,12 +2846,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2891,12 +2916,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -2949,12 +2975,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3042,12 +3069,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3156,12 +3184,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3221,12 +3250,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3673,12 +3703,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3746,12 +3777,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3813,12 +3845,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3882,12 +3915,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -3951,12 +3985,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4020,12 +4055,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4095,7 +4131,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-29",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -4151,7 +4187,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-29",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -4218,12 +4254,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4287,12 +4324,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4354,12 +4392,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4423,12 +4462,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4492,12 +4532,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4565,12 +4606,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4662,12 +4704,13 @@
       },
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4743,12 +4786,13 @@
       },
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4829,12 +4873,13 @@
       },
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4898,12 +4943,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -4961,12 +5007,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5026,12 +5073,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5078,12 +5126,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5151,12 +5200,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5214,12 +5264,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5279,12 +5330,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5333,12 +5385,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5466,12 +5519,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5535,12 +5589,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5664,12 +5719,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5744,12 +5800,13 @@
       },
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5818,12 +5875,13 @@
       },
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -5968,7 +6026,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-23",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -6038,12 +6096,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6107,12 +6166,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6178,12 +6238,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6251,12 +6312,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6380,12 +6442,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6447,12 +6510,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6520,12 +6584,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6591,12 +6656,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6660,12 +6726,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6785,12 +6852,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6900,12 +6968,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -6967,12 +7036,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7036,12 +7106,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7153,12 +7224,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7222,12 +7294,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7291,12 +7364,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7360,12 +7434,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7427,12 +7502,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7500,12 +7576,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7594,7 +7671,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-24",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -7668,7 +7745,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-24",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -7733,7 +7810,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-02",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -7797,7 +7874,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-02",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -7842,12 +7919,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7909,12 +7987,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -7978,12 +8057,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8053,12 +8133,13 @@
       "source": "https://github.com/tomaszstaniak/aros-micropolis",
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8196,12 +8277,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8265,12 +8347,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8336,12 +8419,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8409,12 +8493,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8478,12 +8563,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8546,20 +8632,7 @@
       "icon": "OminoArcade1.0.info",
       "install": {},
       "review": {
-        "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [
         {
@@ -8615,20 +8688,7 @@
       "icon": "Omino1.1.info",
       "install": {},
       "review": {
-        "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [
         {
@@ -8753,7 +8813,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-04",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -8831,12 +8891,13 @@
       "source": "https://github.com/tomaszstaniak/aros-openloco",
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -8906,7 +8967,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-25",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -8980,7 +9041,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-25",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -9046,12 +9107,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9119,12 +9181,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9192,12 +9255,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9285,12 +9349,13 @@
       },
       "review": {
         "status": "reviewed",
-        "suite": 2,
-        "date": "2026-10-22",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9355,12 +9420,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9452,7 +9518,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-23",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -9520,12 +9586,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9593,12 +9660,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9656,12 +9724,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9721,12 +9790,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9775,12 +9845,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9838,12 +9909,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9911,12 +9983,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -9974,12 +10047,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10043,12 +10117,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10112,12 +10187,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10185,12 +10261,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10248,12 +10325,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10317,12 +10395,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10380,12 +10459,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10449,12 +10529,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10578,12 +10659,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10641,12 +10723,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10710,12 +10793,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10775,12 +10859,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10823,12 +10908,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -10892,12 +10978,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11035,12 +11122,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11166,12 +11254,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11304,12 +11393,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11372,20 +11462,7 @@
       "icon": "ShooterSpace1.0.info",
       "install": {},
       "review": {
-        "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [
         {
@@ -11492,12 +11569,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11561,12 +11639,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11624,12 +11703,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11693,12 +11773,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11822,12 +11903,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -11891,12 +11973,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12024,12 +12107,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12093,12 +12177,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12166,12 +12251,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12235,12 +12321,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12304,12 +12391,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12373,12 +12461,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12442,12 +12531,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12515,12 +12605,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12582,12 +12673,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12655,12 +12747,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12724,12 +12817,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12867,12 +12961,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12934,12 +13029,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -12999,12 +13095,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13053,12 +13150,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13178,12 +13276,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13247,12 +13346,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13307,12 +13407,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13432,12 +13533,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13499,12 +13601,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13568,12 +13671,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13662,7 +13766,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-10-23",
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
@@ -13733,12 +13837,13 @@
       "revision": 1,
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13779,12 +13884,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13913,12 +14019,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"
@@ -13963,12 +14070,13 @@
       "install": {},
       "review": {
         "status": "reviewed",
-        "suite": 1,
-        "date": "2026-10-14",
+        "suite": 3,
+        "date": "2026-11-06",
         "checked": [
           "metadata",
           "download",
           "archive",
+          "sizes",
           "paths",
           "layout",
           "cpu"

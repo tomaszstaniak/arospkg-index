@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "ccd2iso",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "5826015e739fdc261da0001f4a3af3ced1e239b6be9709a0231f2e2035db32dd",
  "size": 58798,
  "manifest_digest": "fad59351e7d5d013718a829847751dfe33db8d36568cdfe7ae6ee022290d0209",
  "result": "passed",
+ "sizes": {
+  "largest_member": 20208,
+  "unpacked": 96978
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "18 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 20208 bytes (CCD2ISO/CCD2ISO), 96978 bytes unpacked"
   },
   {
    "name": "paths",

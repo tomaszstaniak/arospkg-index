@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "iconmake",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "93241739418611094f84de94f8985840433f6aeb7d36fae0f16f657e71b4f037",
  "size": 54071,
  "manifest_digest": "abbdb8d4a991418b849df58745fd698d837399334081e7863536ec36f3095c29",
  "result": "passed",
+ "sizes": {
+  "largest_member": 44048,
+  "unpacked": 117187
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 44048 bytes (IconMake/Source/IconMake.c), 117187 bytes unpacked"
   },
   {
    "name": "paths",

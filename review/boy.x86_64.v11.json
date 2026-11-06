@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "boy",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "79f7235a667d402a7393e559a841dc0735a68e41856cdf7808a236f1c82e670e",
  "size": 6909377,
  "manifest_digest": "bc084e2e64f92c040b374cdff697fcf25cea62ad6863dee6c44d6a364860b871",
  "result": "passed",
+ "sizes": {
+  "largest_member": 5890660,
+  "unpacked": 10566327
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "54 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 5890660 bytes (Boy/data/boy_carrot_v4.mp3), 10566327 bytes unpacked"
   },
   {
    "name": "paths",

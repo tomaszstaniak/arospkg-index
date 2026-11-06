@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "antiword",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "f9d32e01acae01ddafc5be801c13d382f6d9dedfc3fd893619586b9efb6fee2b",
  "size": 247828,
  "manifest_digest": "21828a7354dbbb82cdf959e7d7429e989a94cc2ac9190d56090b8d099797fa45",
  "result": "passed",
+ "sizes": {
+  "largest_member": 247672,
+  "unpacked": 680708
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "56 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 247672 bytes (Antiword/antiword), 680708 bytes unpacked"
   },
   {
    "name": "paths",

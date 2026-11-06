@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "blips",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "bbd9576dfdedc2f3d508894f81c38ee22870804ae56cb9f0b37b91bcd1011362",
  "size": 1408356,
  "manifest_digest": "901e9d5621b21351b62d018b20cfb947af88db64e27399f99499f70027a49604",
  "result": "passed",
+ "sizes": {
+  "largest_member": 2225608,
+  "unpacked": 3391417
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "72 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2225608 bytes (Blips/Blips), 3391417 bytes unpacked"
   },
   {
    "name": "paths",

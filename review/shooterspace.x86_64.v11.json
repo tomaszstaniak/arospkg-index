@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "shooterspace",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
- "sha256": "173a4f28870be7cc37c1865d0e9f58d6bec3a84df08123a5cc52461e6f9f0254",
- "size": 1184697,
+ "date": "2026-11-06",
+ "sha256": "a770110edbe45c465fdf77676aabebd585f94343ffa1d0a4b8ba51f257db5647",
+ "size": 1180044,
  "manifest_digest": "eb27f94c37a96c9c3c4ec94aa801ff893a1ec82e0c2e11872ab07c84f7c756dd",
- "result": "passed",
+ "result": "failed",
+ "sizes": {
+  "largest_member": 2309216,
+  "unpacked": 9876357
+ },
  "checks": [
   {
    "name": "metadata",
@@ -17,13 +21,18 @@
   },
   {
    "name": "download",
-   "result": "passed",
-   "detail": ""
+   "result": "failed",
+   "detail": "1180044 bytes, sha256 a770110edbe45c465fdf77676aabebd585f94343ffa1d0a4b8ba51f257db5647; the entry says 1184697 bytes, sha256 173a4f28870be7cc37c1865d0e9f58d6bec3a84df08123a5cc52461e6f9f0254"
   },
   {
    "name": "archive",
    "result": "passed",
    "detail": "18 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2309216 bytes (ShooterSpace1.1/ShooterSpace), 9876357 bytes unpacked"
   },
   {
    "name": "paths",
@@ -32,8 +41,8 @@
   },
   {
    "name": "layout",
-   "result": "passed",
-   "detail": ""
+   "result": "failed",
+   "detail": "icon: 'ShooterSpace1.0.info' is not at that path in the archive; subdir: 'ShooterSpace1.0' is not in the archive"
   },
   {
    "name": "cpu",

@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "untarka",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "e0f549940adcce5e1fda06ae8f679c0d62f9253a6ed2d199f9703927aff3cfa8",
  "size": 64136,
  "manifest_digest": "170c085edc7fa8570c89669a9aa04cb5bb255bc1fd14205c3e7c24d62da5e8a8",
  "result": "passed",
+ "sizes": {
+  "largest_member": 48896,
+  "unpacked": 98988
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 48896 bytes (UnTarka/UnTarka), 98988 bytes unpacked"
   },
   {
    "name": "paths",

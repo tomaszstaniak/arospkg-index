@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "isotools-gui",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "8f8854fd44b549eccb8723d145253326cea7ffca8c0a4efbb3425ef1af680526",
  "size": 211054,
  "manifest_digest": "f287d5d8c0ad01890b300ebe59f8b9eecd2f9291c72d4cb87039a5aa999ce8a0",
  "result": "passed",
+ "sizes": {
+  "largest_member": 153286,
+  "unpacked": 269128
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "13 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 153286 bytes (IsoTools-GUI/IsoTools-GUI.pdf), 269128 bytes unpacked"
   },
   {
    "name": "paths",

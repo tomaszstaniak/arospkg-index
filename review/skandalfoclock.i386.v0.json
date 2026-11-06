@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "skandalfoclock",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "79479f0c25ca4700f9052291e2d4e24da535e205f7afcaa2334b82bb1088b767",
  "size": 103849,
  "manifest_digest": "088039cc226490ac7f21afb9f33fcd6c452c09a75255d081708be5682c8ebfa9",
  "result": "passed",
+ "sizes": {
+  "largest_member": 86591,
+  "unpacked": 261261
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "48 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 86591 bytes (Nov  2  2010 skandalfoclock/source/SkandalfoClock.c), 261261 bytes unpacked"
   },
   {
    "name": "paths",

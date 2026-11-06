@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "sfsobject",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "c1b19e5dc89c35dbc7ab9f7552f2586c63390366b180a015f5142a385baeb2bb",
  "size": 79038,
  "manifest_digest": "45f1b01d803b38ea92198fc8f1a659eeadedcf3e99313310ed2c9eac2125c7bb",
  "result": "passed",
+ "sizes": {
+  "largest_member": 25282,
+  "unpacked": 95411
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "11 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 25282 bytes (SFSobject/Source/Source.zip), 95411 bytes unpacked"
   },
   {
    "name": "paths",

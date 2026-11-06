@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "pkg-7mezzoplus",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "f4e51bb889fa4af57962efeb53164cadb12855c70c5cb3be3f5239de7632cd94",
  "size": 483773,
  "manifest_digest": "56ad664005a6fe0c601d7de508a86711dd815fdf0c9ad046f93b07c2af5d0512",
  "result": "passed",
+ "sizes": {
+  "largest_member": 1586056,
+  "unpacked": 1803198
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 1586056 bytes (7MezzoPlus1.0/7Mezzo), 1803198 bytes unpacked"
   },
   {
    "name": "paths",

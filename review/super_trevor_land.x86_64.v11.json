@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "super_trevor_land",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "bde1149d5036911fcfa7c269fc4cdb65f252c1db6c7223b83c9289f2d6302e4c",
  "size": 64822169,
  "manifest_digest": "9865d8d6556dc1edd5fde336171405042dfeda09cc689058c4d4fa1e93a106d7",
  "result": "passed",
+ "sizes": {
+  "largest_member": 4373267,
+  "unpacked": 66599000
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "283 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 4373267 bytes (Super Trevor Land/Media/Music/2.ogg), 66599000 bytes unpacked"
   },
   {
    "name": "paths",

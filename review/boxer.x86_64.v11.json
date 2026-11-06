@@ -4,7 +4,7 @@
  "id": "boxer",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-11-04",
+ "date": "2026-11-06",
  "sha256": "319586598fc9b48d631084cbd27009493b015ac05290ce6eb3d2ea4240985bca",
  "size": 14267998,
  "manifest_digest": "2d0a1f604b20a3d522dd9fc6d2f68e923ed086098fc1c71bb7fd600c619a9848",

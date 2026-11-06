@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "dosbox",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "8bc8bea1b54290fef553ff12d890cc626d788b2dc05087f7b6df03293e6a2306",
  "size": 1713180,
  "manifest_digest": "71d5b4ecb2fac4ec84548325ba5ae77eb6302ba28490cfa18078d3d47b16b752",
  "result": "passed",
+ "sizes": {
+  "largest_member": 6251232,
+  "unpacked": 6604563
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 6251232 bytes (dosbox.i386-aros/DOSBox), 6604563 bytes unpacked"
   },
   {
    "name": "paths",

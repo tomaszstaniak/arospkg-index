@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "zaphod",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "603e292457c3439f32709380bdd1d9c72b06536d013eebc01541a0bf0fa75448",
  "size": 218782,
  "manifest_digest": "54ea47db9d400d8185375681aeea442d7952bedb5cbe31e26879a23fe3db1e41",
  "result": "passed",
+ "sizes": {
+  "largest_member": 230872,
+  "unpacked": 614869
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "71 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 230872 bytes (ZapHod/Zaphod), 614869 bytes unpacked"
   },
   {
    "name": "paths",

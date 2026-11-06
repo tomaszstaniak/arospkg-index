@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "tinysid",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "d9279a7b540f5c43d45c1fa540bd0455755a3bfbb3214d11e040770bc1e9d996",
  "size": 67846,
  "manifest_digest": "d09b79702d2ee1a0cc1b5c2ebe8a30c89669481d277707e502c69bf4433c165d",
  "result": "passed",
+ "sizes": {
+  "largest_member": 64992,
+  "unpacked": 113939
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 64992 bytes (TinySID/TinySID), 113939 bytes unpacked"
   },
   {
    "name": "paths",

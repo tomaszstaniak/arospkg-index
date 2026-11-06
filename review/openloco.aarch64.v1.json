@@ -4,7 +4,7 @@
  "id": "openloco",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-04",
+ "date": "2026-11-06",
  "sha256": "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309",
  "size": 16707990,
  "manifest_digest": "dca0509dc98f49e353d6267eee00c25dabe62a9cdd86bac8267ebd53fa66e065",

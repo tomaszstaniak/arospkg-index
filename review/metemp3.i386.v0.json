@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "metemp3",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "3ea06a74e47a89ab189d3f6bc50e6c53994b628f70db4780a903f5dd842be6e0",
  "size": 193088,
  "manifest_digest": "f3de5af48119d1af97118c17a553704861510055e6c95d53d4b13e34b3b30a74",
  "result": "passed",
+ "sizes": {
+  "largest_member": 286184,
+  "unpacked": 328567
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "36 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 286184 bytes (meteMP3/meteMP3), 328567 bytes unpacked"
   },
   {
    "name": "paths",

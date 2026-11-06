@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "amiberry",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "2c0ae0ac5bda65e98b0d2d776601248a27f2190c15bd26e14711f4ba0c4c9451",
  "size": 13337390,
  "manifest_digest": "b42d62b7aa40ca0657299e9b43ee4c6bf5825dff7a95ab563f39f69a4e24f666",
  "result": "passed",
+ "sizes": {
+  "largest_member": 51706344,
+  "unpacked": 63388980
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "166 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 51706344 bytes (amiberry/amiberry), 63388980 bytes unpacked"
   },
   {
    "name": "paths",

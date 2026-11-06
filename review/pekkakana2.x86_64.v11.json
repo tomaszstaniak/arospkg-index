@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "pekkakana2",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "e88a34720d2367f2a42ccb8b7925ea5c517abc93f7b77a103b8dfa6231bfe648",
  "size": 14093424,
  "manifest_digest": "e9a55627203584371807c326c1f291b4ed03bbd7b2a63f144dc1dce0e29a1246",
  "result": "passed",
+ "sizes": {
+  "largest_member": 24830944,
+  "unpacked": 43527400
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "439 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 24830944 bytes (Pekka Kana 2/Pekka Kana 2), 43527400 bytes unpacked"
   },
   {
    "name": "paths",

@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "breakhack",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "8f038366a39184a61443c2f1f0e6da70272b3c390b7f704294064f6fbf96cbad",
  "size": 16058465,
  "manifest_digest": "b449954f3ffce06e40d3ccb2cf0907e30666d9893f51967985f861a9cef149e3",
  "result": "passed",
+ "sizes": {
+  "largest_member": 13522005,
+  "unpacked": 21368908
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 13522005 bytes (BreakHack/assets.pack), 21368908 bytes unpacked"
   },
   {
    "name": "paths",

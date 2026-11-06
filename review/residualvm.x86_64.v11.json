@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "residualvm",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "bffb6ddc9a784509ad0fb3f89aca745bf81ab60a9e9dbcc532d7d9413c921e9b",
  "size": 4588171,
  "manifest_digest": "05fc630ed709ec2df712ba315d0dad4a707d218625ce06377a62241ac57d8c52",
  "result": "passed",
+ "sizes": {
+  "largest_member": 11383952,
+  "unpacked": 14317129
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "36 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 11383952 bytes (Residualvm/residualvm), 14317129 bytes unpacked"
   },
   {
    "name": "paths",

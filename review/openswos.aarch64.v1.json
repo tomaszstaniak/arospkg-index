@@ -4,7 +4,7 @@
  "id": "openswos",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-10-25",
+ "date": "2026-11-06",
  "sha256": "36d0a89ffbaae928538e90a21547f906ddf937d8dc5ebf66fe2d6f220953b32a",
  "size": 17591989,
  "manifest_digest": "555744e3e0c7aa4d3c84b54c8cddfe445b7a85c4e39fc4b8d1d1d37ec40df12d",

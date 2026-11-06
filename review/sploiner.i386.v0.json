@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "sploiner",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "286e8a3a42160dfc2f4fa8a288d3274d0af2127822a479e302c1debd3ca88b11",
  "size": 127956,
  "manifest_digest": "405d5615b00301b2ee235b3c2419a1943410811c43958556ff21aa108b5c569f",
  "result": "passed",
+ "sizes": {
+  "largest_member": 104964,
+  "unpacked": 246974
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 104964 bytes (sploiner/sploiner.exe), 246974 bytes unpacked"
   },
   {
    "name": "paths",

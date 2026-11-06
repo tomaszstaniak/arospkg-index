@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "folio",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "2e2be9157c021b3572549b14a10b64437c17749dd225db8ddd45b1cc742c1e4f",
  "size": 28336154,
  "manifest_digest": "2a376428904e2d4049ff0de999657d7190592f4361d831e99b86eed7a58b7e16",
  "result": "passed",
+ "sizes": {
+  "largest_member": 38875256,
+  "unpacked": 39026170
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "21 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 38875256 bytes (Folio/Folio), 39026170 bytes unpacked"
   },
   {
    "name": "paths",

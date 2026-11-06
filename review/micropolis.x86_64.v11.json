@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "micropolis",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "c46bbc14274af53fb4452f59081fbcf28f1ce5fffb534c06d169b0b1911cd124",
  "size": 2593505,
  "manifest_digest": "381a744dd75949b44d9df9d93295c7893dcf4ac934dc82c2cb864d228f352b4e",
  "result": "passed",
+ "sizes": {
+  "largest_member": 3214864,
+  "unpacked": 6649942
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "140 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 3214864 bytes (Sep 22 23:43 Micropolis/Micropolis), 6649942 bytes unpacked"
   },
   {
    "name": "paths",

@@ -1,14 +1,18 @@
 {
  "schema": 1,
- "suite": 1,
+ "suite": 3,
  "id": "lbreakouthd",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-10-14",
+ "date": "2026-11-06",
  "sha256": "9c65456190109728f1be08c73312222eb7355e2369ee35a2346e70cf36c2c58c",
  "size": 7682130,
  "manifest_digest": "deddccefbde5197c7b86f4b16c5f5f8be08297788bd1b4dfc183fdb8df0544af",
  "result": "passed",
+ "sizes": {
+  "largest_member": 8627224,
+  "unpacked": 16198349
+ },
  "checks": [
   {
    "name": "metadata",
@@ -24,6 +28,11 @@
    "name": "archive",
    "result": "passed",
    "detail": "282 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 8627224 bytes (LBreakoutHD/LBreakoutHD), 16198349 bytes unpacked"
   },
   {
    "name": "paths",
