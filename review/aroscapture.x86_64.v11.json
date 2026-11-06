@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v11",
  "date": "2026-11-06",
- "sha256": "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9",
- "size": 713410,
- "manifest_digest": "937ab60709b49cc2667674c72a5b858484c4afe6e725bd376ad11493b8d706f0",
+ "sha256": "7d18b2900bd6624fca057486567f952e94058e4796a04a7d49566f80ca65c02c",
+ "size": 709071,
+ "manifest_digest": "594824c4c673d4043869592cd649bcc279066a309e1da2ad730b7eeac2760001",
  "result": "passed",
  "sizes": {
   "largest_member": 2736280,
-  "unpacked": 3050099
+  "unpacked": 3050319
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 2736280 bytes (AROSCapture/libs/svgicon.library), 3050099 bytes unpacked"
+   "detail": "largest member 2736280 bytes (AROSCapture/libs/svgicon.library), 3050319 bytes unpacked"
   },
   {
    "name": "paths",

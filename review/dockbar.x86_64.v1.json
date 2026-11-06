@@ -4,14 +4,14 @@
  "id": "dockbar",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-11-05",
- "sha256": "8c8d095592a3688dde7802fbb12255dc594e6f2c5007a6060ce43d9b0339e858",
- "size": 10381005,
- "manifest_digest": "0f76845f85df19a95772271f38958455b7d5588b6caeba3319aa07e26acd4b80",
+ "date": "2026-11-06",
+ "sha256": "ea2cfdc18f3eb25202abb3d02b45cb7c33d2322cccb22d1326c2f0c9a7bdd731",
+ "size": 10414047,
+ "manifest_digest": "a276b700278748d915f1e7de6dd25f89d23c81ef13b7a00188ee7731b1a284c0",
  "result": "passed",
  "sizes": {
   "largest_member": 9629768,
-  "unpacked": 22253188
+  "unpacked": 22284538
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 9629768 bytes (Dockbar/Widgets/org.aros.weather/bin/x86_64-v1/WeatherProvider), 22253188 bytes unpacked"
+   "detail": "largest member 9629768 bytes (Dockbar/Widgets/org.aros.weather/bin/x86_64-v1/WeatherProvider), 22284538 bytes unpacked"
   },
   {
    "name": "paths",

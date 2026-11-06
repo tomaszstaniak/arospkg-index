@@ -5,13 +5,13 @@
  "arch": "aarch64",
  "abi": "v1",
  "date": "2026-11-06",
- "sha256": "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea",
- "size": 789981,
- "manifest_digest": "a66347d57de815618dbbdb2cfa96e759575957ce2163801120a4f8d677ab220b",
+ "sha256": "ed8077cf7874fd7255a1095c5909c4e0d28b83fb7984e2403c664f0168ce3935",
+ "size": 787362,
+ "manifest_digest": "8f52ffb7c50638453db2a00ec912e9055a22fabed18b26bd4d6acff748f84695",
  "result": "passed",
  "sizes": {
   "largest_member": 2901592,
-  "unpacked": 3279385
+  "unpacked": 3279614
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 2901592 bytes (AROSCapture/libs/svgicon.library), 3279385 bytes unpacked"
+   "detail": "largest member 2901592 bytes (AROSCapture/libs/svgicon.library), 3279614 bytes unpacked"
   },
   {
    "name": "paths",

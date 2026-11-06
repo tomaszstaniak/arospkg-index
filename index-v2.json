@@ -513,14 +513,14 @@
     },
     {
       "id": "aroscapture",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 789981,
-      "sha256": "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.1/AROSCapture-0.1.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 787362,
+      "sha256": "ed8077cf7874fd7255a1095c5909c4e0d28b83fb7984e2403c664f0168ce3935",
       "depends": [],
       "recommends": [
         {
@@ -570,7 +570,6 @@
       "source": "https://github.com/tomaszstaniak/aros-capture",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
-        "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
         "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
         "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer."
       ],
@@ -596,48 +595,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS AArch64 20261105",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-06",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove",
-            "verify"
-          ],
-          "note": "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove; real Pi untested"
-        },
-        {
-          "system": "AROS AArch64 20261105",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-06",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "archive unpacked to RAM:, without SMP; area capture, editor, save; Dockbar button: four actions, update; real Pi untested"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-06",
       "app_first_added": "2026-11-06"
     },
     {
       "id": "aroscapture",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-x86_64-abiv11-pc.zip",
-      "size": 713410,
-      "sha256": "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.1/AROSCapture-0.1.1-aros-x86_64-abiv11-pc.zip",
+      "size": 709071,
+      "sha256": "7d18b2900bd6624fca057486567f952e94058e4796a04a7d49566f80ca65c02c",
       "depends": [],
       "recommends": [
         {
@@ -676,9 +647,7 @@
           "id": "iffparse.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
       "runs_on": [
         "aros-one"
       ],
@@ -716,35 +685,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-06",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove",
-            "verify"
-          ],
-          "note": "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-06",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "archive unpacked to RAM:; area capture, editor, save; Dockbar button: four actions, update, busy, refusal and skip keep the stored path"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-06",
       "app_first_added": "2026-11-06"
     },
