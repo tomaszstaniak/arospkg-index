@@ -34,3 +34,25 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["start"]
 note    = "archive unpacked to RAM:; stdc.library 0.51; Weather data and one Refresh, no alert, no provider task left; real Pi untested"
+
+[[test]]
+sha256  = "c44b262ac3338d6d59194694801c277227a4a3fb960e0d5a336da5dd54f3f7bd"
+date    = "2026-11-06"
+system  = "AROS AArch64 20261105"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM:, catalogue of this change; upgrade from 0.5.2 kept docks.config and WidgetState; Weather data; remove kept user files; real Pi untested"
+
+[[test]]
+sha256  = "c44b262ac3338d6d59194694801c277227a4a3fb960e0d5a336da5dd54f3f7bd"
+date    = "2026-11-06"
+system  = "AROS AArch64 20261105"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to RAM:, without SMP; Weather data, widget install with dock choice, action widget, restart; real Pi untested"
