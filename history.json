@@ -29,6 +29,14 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "aroscapture/aarch64/v1": {
+   "first_added": "2026-11-06",
+   "commit": "47cabbf92322"
+  },
+  "aroscapture/x86_64/v11": {
+   "first_added": "2026-11-06",
+   "commit": "47cabbf92322"
+  },
   "arospkg/aarch64/v1": {
    "first_added": "2026-10-04",
    "commit": "0873f1dcb633"
@@ -730,6 +738,10 @@
   "apotris": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "aroscapture": {
+   "first_added": "2026-11-06",
+   "commit": "47cabbf92322"
   },
   "arospkg": {
    "first_added": "2026-10-04",

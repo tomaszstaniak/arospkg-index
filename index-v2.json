@@ -512,6 +512,243 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "aroscapture",
+      "version": "0.1.0",
+      "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 789981,
+      "sha256": "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea",
+      "depends": [],
+      "recommends": [
+        {
+          "id": "dockbar",
+          "min_version": "0.6.0",
+          "reason": "Add to Dockbar puts an AROS Capture button on a dock: capture an area, the screen, the screen in 5 seconds, open the folder"
+        }
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "AROSCapture",
+      "icon": "AROSCapture.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-capture",
+      "license": "MIT; bundled parts keep their own licences, see NOTICES",
+      "post_install_notes": [
+        "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
+        "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
+        "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer."
+      ],
+      "launch": {
+        "executable": "AROSCapture",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-06",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261105",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove; real Pi untested"
+        },
+        {
+          "system": "AROS AArch64 20261105",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:, without SMP; area capture, editor, save; Dockbar button: four actions, update; real Pi untested"
+        }
+      ],
+      "first_added": "2026-11-06",
+      "app_first_added": "2026-11-06"
+    },
+    {
+      "id": "aroscapture",
+      "version": "0.1.0",
+      "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-x86_64-abiv11-pc.zip",
+      "size": 713410,
+      "sha256": "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9",
+      "depends": [],
+      "recommends": [
+        {
+          "id": "dockbar",
+          "min_version": "0.6.0",
+          "reason": "Add to Dockbar puts an AROS Capture button on a dock: capture an area, the screen, the screen in 5 seconds, open the folder"
+        }
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "AROSCapture",
+      "icon": "AROSCapture.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-capture",
+      "license": "MIT; bundled parts keep their own licences, see NOTICES",
+      "post_install_notes": [
+        "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
+        "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer."
+      ],
+      "launch": {
+        "executable": "AROSCapture",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-06",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:; area capture, editor, save; Dockbar button: four actions, update, busy, refusal and skip keep the stored path"
+        }
+      ],
+      "first_added": "2026-11-06",
+      "app_first_added": "2026-11-06"
+    },
+    {
       "id": "arospkg",
       "version": "0.7.3",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",

@@ -512,6 +512,243 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "aroscapture",
+      "version": "0.1.0",
+      "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 789981,
+      "sha256": "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea",
+      "depends": [],
+      "recommends": [
+        {
+          "id": "dockbar",
+          "min_version": "0.6.0",
+          "reason": "Add to Dockbar puts an AROS Capture button on a dock: capture an area, the screen, the screen in 5 seconds, open the folder"
+        }
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "AROSCapture",
+      "icon": "AROSCapture.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-capture",
+      "license": "MIT; bundled parts keep their own licences, see NOTICES",
+      "post_install_notes": [
+        "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
+        "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
+        "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer."
+      ],
+      "launch": {
+        "executable": "AROSCapture",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-06",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261105",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove; real Pi untested"
+        },
+        {
+          "system": "AROS AArch64 20261105",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:, without SMP; area capture, editor, save; Dockbar button: four actions, update; real Pi untested"
+        }
+      ],
+      "first_added": "2026-11-06",
+      "app_first_added": "2026-11-06"
+    },
+    {
+      "id": "aroscapture",
+      "version": "0.1.0",
+      "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.0/AROSCapture-0.1.0-aros-x86_64-abiv11-pc.zip",
+      "size": 713410,
+      "sha256": "2176688ec8c02b99140a0852c5f8f797a62c0c2b9a2b61e2f324dce63b667ef9",
+      "depends": [],
+      "recommends": [
+        {
+          "id": "dockbar",
+          "min_version": "0.6.0",
+          "reason": "Add to Dockbar puts an AROS Capture button on a dock: capture an area, the screen, the screen in 5 seconds, open the folder"
+        }
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "AROSCapture",
+      "icon": "AROSCapture.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-capture",
+      "license": "MIT; bundled parts keep their own licences, see NOTICES",
+      "post_install_notes": [
+        "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
+        "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer."
+      ],
+      "launch": {
+        "executable": "AROSCapture",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-06",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:; area capture, editor, save; Dockbar button: four actions, update, busy, refusal and skip keep the stored path"
+        }
+      ],
+      "first_added": "2026-11-06",
+      "app_first_added": "2026-11-06"
+    },
+    {
       "id": "arospkg",
       "version": "0.7.3",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
@@ -3148,14 +3385,14 @@
     },
     {
       "id": "dockbar",
-      "version": "0.5.2",
+      "version": "0.6.0",
       "summary": "Dock with live drawer panels, application groups, file-drop actions and Weather",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/workbench",
-      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-aarch64-abiv1-raspi.zip",
-      "size": 10508065,
-      "sha256": "fb057bf91732b32faeffa264657ef0b8abebab38b428ef7bd2a096fe041850f2",
+      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.0/Dockbar-0.6.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 10529814,
+      "sha256": "c44b262ac3338d6d59194694801c277227a4a3fb960e0d5a336da5dd54f3f7bd",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -3192,7 +3429,7 @@
       "subdir": "Dockbar",
       "icon": "Dockbar.info",
       "install": {},
-      "revision": 2,
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
@@ -3207,36 +3444,51 @@
         "working_directory": "."
       },
       "review": {
-        "status": "reviewed",
-        "suite": 3,
-        "date": "2026-11-05",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "sizes",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261105",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "upgrade",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:, catalogue of this change; upgrade from 0.5.2 kept docks.config and WidgetState; Weather data; remove kept user files; real Pi untested"
+        },
+        {
+          "system": "AROS AArch64 20261105",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:, without SMP; Weather data, widget install with dock choice, action widget, restart; real Pi untested"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
     {
       "id": "dockbar",
-      "version": "0.5.2",
+      "version": "0.6.0",
       "summary": "Dock with live drawer panels, application groups, file-drop actions and Weather",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/workbench",
-      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-x86_64-abiv1-pc.zip",
-      "size": 10381005,
-      "sha256": "8c8d095592a3688dde7802fbb12255dc594e6f2c5007a6060ce43d9b0339e858",
+      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.0/Dockbar-0.6.0-aros-x86_64-abiv1-pc.zip",
+      "size": 10414047,
+      "sha256": "ea2cfdc18f3eb25202abb3d02b45cb7c33d2322cccb22d1326c2f0c9a7bdd731",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -3266,9 +3518,7 @@
           "id": "cybergraphics.library"
         }
       ],
-      "installs_on": [
-        "mainline-x86_64"
-      ],
+      "installs_on": [],
       "runs_on": [
         "mainline-x86_64"
       ],
@@ -3277,7 +3527,7 @@
       "subdir": "Dockbar",
       "icon": "Dockbar.info",
       "install": {},
-      "revision": 2,
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
@@ -3292,21 +3542,7 @@
         "working_directory": "."
       },
       "review": {
-        "status": "reviewed",
-        "suite": 3,
-        "date": "2026-11-05",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "sizes",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [],
       "first_added": "2026-11-05",
@@ -3314,14 +3550,14 @@
     },
     {
       "id": "dockbar",
-      "version": "0.5.2",
+      "version": "0.6.0",
       "summary": "Dock with live drawer panels, application groups, file-drop actions and Weather",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/workbench",
-      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.5.2/Dockbar-0.5.2-aros-x86_64-abiv11-pc.zip",
-      "size": 8785416,
-      "sha256": "72e2f432ce79795c317ed18d9514e01c1764232c1d86e4da389b1b262fcfa08f",
+      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.0/Dockbar-0.6.0-aros-x86_64-abiv11-pc.zip",
+      "size": 8808676,
+      "sha256": "8b7de923fc8e2209b709ddeb89c42f2b2759beedde64f4f0e40164361c434709",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -3362,7 +3598,7 @@
       "subdir": "Dockbar",
       "icon": "Dockbar.info",
       "install": {},
-      "revision": 2,
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
@@ -3377,23 +3613,38 @@
         "working_directory": "."
       },
       "review": {
-        "status": "reviewed",
-        "suite": 3,
-        "date": "2026-11-05",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "sizes",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "upgrade",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.4 to RAM:, catalogue of this change; upgrade from 0.5.2 kept docks.config and WidgetState; widget install from another program; remove kept user files"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-06",
+          "result": "passed",
+          "checked": [
+            "start"
+          ],
+          "note": "archive unpacked to RAM:; two docks, Weather data, widget install with dock choice, action widget, busy and refusal answers, restart"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
