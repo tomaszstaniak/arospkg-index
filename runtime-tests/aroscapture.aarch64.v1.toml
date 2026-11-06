@@ -1,0 +1,25 @@
+# Runtime tests of aroscapture aarch64/v1: maintainer records, each for the
+# archive bytes named by its sha256. Source: maintainer test logs (apkg
+# install, start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea"
+date    = "2026-11-06"
+system  = "AROS AArch64 20261105"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.4 to RAM:, catalogue of this change; Shell capture; Add to Dockbar with dockbar 0.6.0 and one action; remove; real Pi untested"
+
+[[test]]
+sha256  = "bbfd47193801bea183fefcb04f829fcf81eff89e569072da27b4f9a3a80f87ea"
+date    = "2026-11-06"
+system  = "AROS AArch64 20261105"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to RAM:, without SMP; area capture, editor, save; Dockbar button: four actions, update; real Pi untested"

@@ -12,8 +12,8 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # the system libraries the editor opens (MUI, cybergraphics, datatypes for
 # PNG, iffparse for the clipboard).
-# runs_on: these archive bytes were unpacked and started on AROS One under
-# QEMU (2026-11-06); installs_on follows the apkg test.
+# installs_on, runs_on: apkg 0.7.4 installed these bytes on AROS One, and they
+# were unpacked and started there, under QEMU (runtime-tests/, 2026-11-06).
 
 status          = "approved"
 id              = "aroscapture"
@@ -33,7 +33,7 @@ depends         = []
 depends_checked = true
 subdir          = "AROSCapture"
 icon            = "AROSCapture.info"   # the drawer icon, beside AROSCapture/ at the archive root
-installs_on     = []
+installs_on     = ["aros-one"]
 runs_on         = ["aros-one"]
 does_not_run_on = []
 

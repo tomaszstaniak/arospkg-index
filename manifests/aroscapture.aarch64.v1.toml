@@ -12,7 +12,8 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # the system libraries the editor opens (MUI, cybergraphics, datatypes for
 # PNG, iffparse for the clipboard).
-# Tested under QEMU raspi3b (nightly 2026-11-05), not on a real Raspberry Pi.
+# apkg 0.7.4 installed these bytes, and they were unpacked and started, under
+# QEMU raspi3b (nightly 2026-11-05; runtime-tests/), not on a real Raspberry Pi.
 
 status          = "approved"
 id              = "aroscapture"
