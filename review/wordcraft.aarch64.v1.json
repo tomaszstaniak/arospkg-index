@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "wordcraft",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-07",
+ "sha256": "b836a581800564317b1f255911c8eb966cd3c2c8f209a59d057f8183a0e1cc28",
+ "size": 50940299,
+ "manifest_digest": "e1b741c750029a7b1210fb74b477c7eab161513b02169b58c8a9334e9f0a988b",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 107444560,
+  "unpacked": 180835046
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "40 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 107444560 bytes (WordCraft/WordCraft), 180835046 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

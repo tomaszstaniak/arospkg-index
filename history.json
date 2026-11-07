@@ -709,6 +709,14 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "wordcraft/aarch64/v1": {
+   "first_added": "2026-11-07",
+   "commit": "7adab035b56d"
+  },
+  "wordcraft/x86_64/v1": {
+   "first_added": "2026-11-07",
+   "commit": "7adab035b56d"
+  },
   "wordcraft/x86_64/v11": {
    "first_added": "2026-10-20",
    "commit": "93ac3ccf479d"

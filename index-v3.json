@@ -13855,15 +13855,18 @@
     },
     {
       "id": "wordcraft",
-      "version": "0.7.0-test7",
-      "summary": "Word processor for DOCX, ODT and RTF with PDF export (experimental, not optimised)",
-      "arch": "x86_64",
-      "abi": "v11",
+      "version": "0.16.0",
+      "summary": "Word processor for DOCX, ODT, RTF and more with PDF export",
+      "arch": "aarch64",
+      "abi": "v1",
       "category": "office/text",
-      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.7.0-test7/WordCraft-0.7.0-test7.x86_64-aros-v11.zip",
-      "size": 31503111,
-      "sha256": "7b118ca1bf1dba21a83879b8d951a8767bf200eccbe813e7e80aae9d20f500ba",
+      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.16.0/WordCraft-0.16.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 50940299,
+      "sha256": "b836a581800564317b1f255911c8eb966cd3c2c8f209a59d057f8183a0e1cc28",
       "depends": [],
+      "client_features": [
+        "large-members"
+      ],
       "requires_system": [
         {
           "type": "library",
@@ -13884,27 +13887,31 @@
         {
           "type": "library",
           "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
       "runs_on": [],
-      "does_not_run_on": [
-        "mainline-x86_64"
-      ],
+      "does_not_run_on": [],
       "kind": "app",
       "subdir": "WordCraft",
       "icon": "WordCraft.info",
       "install": {},
-      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-wordcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
-        "Typing lags behind, more in a large window. No printing: export to PDF instead.",
-        "Settings are kept in WordCraftData inside the program's drawer.",
-        "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong."
+        "Native Raspberry Pi build (nightly 2026-11-05); not for hosted Macaros. Tested in QEMU only.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
+        "Settings, dictionary, fonts and WordCraft.log are kept in WordCraftData in the program drawer; keep it when upgrading.",
+        "Clipboard text in the system character set or UTF-8; a picture on the clipboard is pasted with Ctrl+V."
       ],
       "launch": {
         "executable": "WordCraft",
@@ -13914,7 +13921,207 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-06",
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS Raspberry Pi nightly 2026-11-05",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU (raspi3b, TCG)",
+          "date": "2026-11-07",
+          "result": "passed",
+          "checked": [
+            "start",
+            "run"
+          ],
+          "note": "archive unpacked in the guest; --version, CLI docx/odt round trip byte-exact, editor window drawn 30 frames and closed cleanly; apkg install not exercised"
+        }
+      ],
+      "first_added": "2026-11-07",
+      "app_first_added": "2026-10-20"
+    },
+    {
+      "id": "wordcraft",
+      "version": "0.16.0",
+      "summary": "Word processor for DOCX, ODT, RTF and more with PDF export",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "office/text",
+      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.16.0/WordCraft-0.16.0-aros-x86_64-abiv1-pc.zip",
+      "size": 52286360,
+      "sha256": "d5ed2919ac27ebfe3bef9de2f0b982d5cf232ff56c6a82cf88f96a1ab1d70388",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "WordCraft",
+      "icon": "WordCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-wordcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Mainline x86_64 ABIv1, built against the nightly of 2026-11-05.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
+        "Settings, dictionary, fonts and WordCraft.log are kept in WordCraftData in the program drawer; keep it when upgrading.",
+        "Clipboard text in the system character set or UTF-8; a picture on the clipboard is pasted with Ctrl+V."
+      ],
+      "launch": {
+        "executable": "WordCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-05",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-07",
+          "result": "passed",
+          "checked": [
+            "start",
+            "run"
+          ],
+          "note": "archive unpacked in the guest; --version, CLI docx/odt round trip byte-exact, editor window drawn 30 frames and closed cleanly; apkg install not exercised"
+        }
+      ],
+      "first_added": "2026-11-07",
+      "app_first_added": "2026-10-20"
+    },
+    {
+      "id": "wordcraft",
+      "version": "0.16.0",
+      "summary": "Word processor for DOCX, ODT, RTF and more with PDF export",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "office/text",
+      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.16.0/WordCraft-0.16.0-aros-x86_64-abiv11-pc.zip",
+      "size": 58422882,
+      "sha256": "7a79223a9dcbd4c533d5037dcbee2bb3f3a317ebc79a3efd648938df702edbb2",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "WordCraft",
+      "icon": "WordCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-wordcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "AROS One 1.3 and other x86_64 ABIv11 systems.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
+        "Settings, dictionary, fonts and WordCraft.log are kept in WordCraftData in the program drawer; keep it when upgrading.",
+        "Clipboard text in the system character set or UTF-8; a picture on the clipboard is pasted with Ctrl+V."
+      ],
+      "launch": {
+        "executable": "WordCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
         "checked": [
           "metadata",
           "download",
@@ -13934,15 +14141,13 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-23",
+          "date": "2026-11-07",
           "result": "passed",
           "checked": [
-            "upgrade",
-            "verify",
-            "run",
-            "remove"
+            "start",
+            "run"
           ],
-          "note": "0.7.0-test7: 0.6.0 upgrade from test6 in PkgManager; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
+          "note": "archive unpacked in the guest; --version, CLI docx/odt round trip byte-exact, editor window drawn 30 frames and closed cleanly; apkg install not exercised"
         }
       ],
       "first_added": "2026-10-20",
