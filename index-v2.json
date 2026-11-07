@@ -8237,14 +8237,14 @@
     },
     {
       "id": "ominoarcade",
-      "version": "1.0",
+      "version": "1.2",
       "summary": "recover all the coins while avoiding the enemies",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/platform",
       "url": "https://archives.arosworld.org/share/game/platform/ominoarcade.x86_64-aros-v11.zip",
-      "size": 2510500,
-      "sha256": "813ddb7d313cd2e5278f51dd86391f08b825fe3c4e0148be5fbcad7f7697a47d",
+      "size": 2507512,
+      "sha256": "db7168e08678059438af8a757d9320e76865659d2ca480e52fa9c873a5dbc24e",
       "depends": [],
       "requires_system": [
         {
@@ -8266,26 +8266,40 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "OminoArcade1.0",
-      "icon": "OminoArcade1.0.info",
+      "subdir": "OminoArcade1.2",
+      "icon": "OminoArcade1.2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
           "system": "AROS One 1.3",
           "arch": "x86_64",
           "abi": "v11",
-          "machine": "QEMU (KVM)",
-          "date": "2026-09-29",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-07",
           "result": "passed",
           "checked": [
             "install",
             "start",
             "remove"
           ],
-          "note": "window open and process running after 15 s, stack 40960"
+          "note": "version 1.2: screen open and process running after 15 s, started from its drawer with Run; Esc quits"
         }
       ],
       "first_added": "2026-09-29",
@@ -8293,14 +8307,14 @@
     },
     {
       "id": "ominostage",
-      "version": "1.1",
-      "summary": "collect all the coins and avoid the enemies",
+      "version": "1.2",
+      "summary": "avoid the syringes and face the virus in the final levels",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/platform",
       "url": "https://archives.arosworld.org/share/game/platform/ominostage.x86_64-aros-v11.zip",
-      "size": 1645762,
-      "sha256": "2a60c078accba2e796d85dbd83640ef9f2c0537d6cf38e4693990039060bfccf",
+      "size": 1647803,
+      "sha256": "2178545481da5c30adca694ff6aef57e9eb391be1e674455cd6d723e8ddc01de",
       "depends": [],
       "requires_system": [
         {
@@ -8322,11 +8336,25 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "Omino1.1",
-      "icon": "Omino1.1.info",
+      "subdir": "Omino1.2",
+      "icon": "Omino1.2.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -8334,70 +8362,14 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-02",
+          "date": "2026-11-07",
           "result": "passed",
           "checked": [
             "install",
             "start",
             "remove"
           ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-30",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-29",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-25",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-20",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
+          "note": "version 1.2: screen open and process running after 15 s, started from its drawer with Run; Esc quits"
         }
       ],
       "first_added": "2026-09-19",
@@ -10969,14 +10941,14 @@
     },
     {
       "id": "shooterspace",
-      "version": "1.0",
+      "version": "1.1",
       "summary": "Avoid asteroids and deal with threatening UFOs",
       "arch": "x86_64",
       "abi": "v11",
       "category": "game/misc",
       "url": "https://archives.arosworld.org/share/game/misc/shooterspace.x86_64-aros-v11.zip",
-      "size": 1184697,
-      "sha256": "173a4f28870be7cc37c1865d0e9f58d6bec3a84df08123a5cc52461e6f9f0254",
+      "size": 1180044,
+      "sha256": "a770110edbe45c465fdf77676aabebd585f94343ffa1d0a4b8ba51f257db5647",
       "depends": [],
       "requires_system": [
         {
@@ -10998,11 +10970,25 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "ShooterSpace1.0",
-      "icon": "ShooterSpace1.0.info",
+      "subdir": "ShooterSpace1.1",
+      "icon": "ShooterSpace1.1.info",
       "install": {},
       "review": {
-        "status": "listed"
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
       },
       "runtime_tests": [
         {
@@ -11010,70 +10996,14 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-02",
+          "date": "2026-11-07",
           "result": "passed",
           "checked": [
             "install",
             "start",
             "remove"
           ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-30",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-29",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-25",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-09-20",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "remove"
-          ],
-          "note": "window open and process running after 15 s, started from its drawer with Run"
+          "note": "version 1.1: screen open and process running after 15 s, started from its drawer with Run; Esc quits"
         }
       ],
       "first_added": "2026-09-19",
