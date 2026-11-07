@@ -5,13 +5,13 @@
  "arch": "aarch64",
  "abi": "v1",
  "date": "2026-11-07",
- "sha256": "b836a581800564317b1f255911c8eb966cd3c2c8f209a59d057f8183a0e1cc28",
- "size": 50940299,
- "manifest_digest": "e1b741c750029a7b1210fb74b477c7eab161513b02169b58c8a9334e9f0a988b",
+ "sha256": "7aed16eec299d92e53e3caf4813b1593c6a3729bcfabd2fb008b0b52dbfa576d",
+ "size": 50940427,
+ "manifest_digest": "58986fc993931938442fdfe83ff6e889dc8eac92b7d1a93dc646a712edb295f5",
  "result": "passed",
  "sizes": {
   "largest_member": 107444560,
-  "unpacked": 180835046
+  "unpacked": 180835327
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 107444560 bytes (WordCraft/WordCraft), 180835046 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 107444560 bytes (WordCraft/WordCraft), 180835327 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",
