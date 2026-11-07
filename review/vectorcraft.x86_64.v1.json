@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "vectorcraft",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-07",
+ "sha256": "25c62a36160cc885b2de6892ba82ad9752e693db469bdda863699c1e36eee662",
+ "size": 59095105,
+ "manifest_digest": "dd529def35d37af127ffb4f8322cf01122cee80b73a86c0ddd19be49107880d2",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 106684168,
+  "unpacked": 180572710
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "65 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 106684168 bytes (VectorCraft/VectorCraft), 180572710 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

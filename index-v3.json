@@ -698,14 +698,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.3",
+      "version": "0.7.5",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.3/arospkg-0.7.3.aarch64-aros-raspi.zip",
-      "size": 1075168,
-      "sha256": "bf6b3feaa0031801b758b6c17a34fa0b01d35901bcdafb570ef632f596528d97",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.5/arospkg-0.7.5.aarch64-aros-raspi.zip",
+      "size": 1087464,
+      "sha256": "3dff377b31a94df5e761fd9b7bc6927bc57ae4af198a9d012afd609df97e811c",
       "depends": [],
       "requires_system": [
         {
@@ -729,7 +729,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.7.3.aarch64-aros-raspi",
+      "subdir": "arospkg-0.7.5.aarch64-aros-raspi",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -740,21 +740,7 @@
         "working_directory": "."
       },
       "review": {
-        "status": "reviewed",
-        "suite": 3,
-        "date": "2026-11-06",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "sizes",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [],
       "first_added": "2026-10-04",
@@ -762,14 +748,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.3",
+      "version": "0.7.5",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "i386",
       "abi": "v0",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.3/arospkg-0.7.3.i386-aros-v0.zip",
-      "size": 374199,
-      "sha256": "4df8993827fc970dcb8f339899a714f6705df6b68f94ac68f482b5e076b706ab",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.5/arospkg-0.7.5.i386-aros-v0.zip",
+      "size": 375043,
+      "sha256": "d4e952743e6bf4e7998a5e23218a7bd807140f66c0746cf73ee8466b4d1da346",
       "depends": [],
       "requires_system": [
         {
@@ -785,27 +771,13 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.7.3.i386-aros-v0",
+      "subdir": "arospkg-0.7.5.i386-aros-v0",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
       "license": "MIT",
       "review": {
-        "status": "reviewed",
-        "suite": 3,
-        "date": "2026-11-06",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "sizes",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [],
       "first_added": "2026-10-04",
@@ -813,14 +785,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.3",
+      "version": "0.7.5",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.3/arospkg-0.7.3.x86_64-aros-v11.zip",
-      "size": 996428,
-      "sha256": "88b075466bea40fff9d820dc4c978ef92d12e7a23c1858ffad8814d703030fc4",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.5/arospkg-0.7.5.x86_64-aros-v11.zip",
+      "size": 1008614,
+      "sha256": "9dd622906cd56570a5b15e8683da90083cf85999fc30473544153dd1dbeed9ac",
       "depends": [],
       "requires_system": [
         {
@@ -844,7 +816,7 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "arospkg-0.7.3.x86_64-aros-v11",
+      "subdir": "arospkg-0.7.5.x86_64-aros-v11",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -855,21 +827,7 @@
         "working_directory": "."
       },
       "review": {
-        "status": "reviewed",
-        "suite": 3,
-        "date": "2026-11-06",
-        "checked": [
-          "metadata",
-          "download",
-          "archive",
-          "sizes",
-          "paths",
-          "layout",
-          "cpu"
-        ],
-        "unchecked": [
-          "abi"
-        ]
+        "status": "listed"
       },
       "runtime_tests": [],
       "first_added": "2026-10-04",
@@ -13632,6 +13590,200 @@
       ],
       "first_added": "2026-09-29",
       "app_first_added": "2026-09-29"
+    },
+    {
+      "id": "vectorcraft",
+      "version": "0.17.0-510-g9997ff02-test3",
+      "summary": "Vector drawing program with SVG, PDF and EPS import and export (test release)",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.17.0-510-g9997ff02-test3/VectorCraft-0.17.0-510-g9997ff02-test3-aros-x86_64-abiv1-pc.zip",
+      "size": 59095105,
+      "sha256": "25c62a36160cc885b2de6892ba82ad9752e693db469bdda863699c1e36eee662",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "VectorCraft",
+      "icon": "VectorCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-vectorcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Test release: the CPU draws the whole window on every change, so the interface reacts slowly.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
+        "Settings and VectorCraft.log are kept in VectorCraftData in the program drawer; keep it when upgrading.",
+        "Mainline x86_64 ABIv1, built against AROS 9802c8c0 (2026-10-28). Shell start: Stack 16777216 first."
+      ],
+      "launch": {
+        "executable": "VectorCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 (9802c8c0, 2026-10-28)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "run",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.6.0 downloaded the archive from the release URL; window opened from its icon and closed cleanly; remove kept VectorCraftData"
+        }
+      ],
+      "first_added": "2026-11-07",
+      "app_first_added": "2026-11-07"
+    },
+    {
+      "id": "vectorcraft",
+      "version": "0.17.0-510-g9997ff02-test3",
+      "summary": "Vector drawing program with SVG, PDF and EPS import and export (test release)",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.17.0-510-g9997ff02-test3/VectorCraft-0.17.0-510-g9997ff02-test3-aros-x86_64-abiv11-pc.zip",
+      "size": 66260859,
+      "sha256": "16d6067f3ed95346a59808d0799ed6d65fc10129171c0980fd350df24f6af4ee",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "VectorCraft",
+      "icon": "VectorCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-vectorcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Test release: the CPU draws the whole window on every change, so the interface reacts slowly.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
+        "Settings and VectorCraft.log are kept in VectorCraftData in the program drawer; keep it when upgrading.",
+        "x86_64 ABIv11 (AROS One 1.3, ABIv11 2026.09). Shell start: Stack 16777216 first."
+      ],
+      "launch": {
+        "executable": "VectorCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-10-29",
+          "result": "passed",
+          "checked": [
+            "install",
+            "run",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.6.0 downloaded the archive from the release URL; window opened from its icon and closed cleanly; remove kept VectorCraftData"
+        }
+      ],
+      "first_added": "2026-11-07",
+      "app_first_added": "2026-11-07"
     },
     {
       "id": "wildmidi",

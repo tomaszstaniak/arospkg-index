@@ -693,6 +693,14 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "vectorcraft/x86_64/v1": {
+   "first_added": "2026-11-07",
+   "commit": "f309f5b9bac4"
+  },
+  "vectorcraft/x86_64/v11": {
+   "first_added": "2026-11-07",
+   "commit": "f309f5b9bac4"
+  },
   "wildmidi/i386/v0": {
    "first_added": "2026-10-03",
    "commit": "9c5cb008aded"
@@ -1190,6 +1198,10 @@
   "untarka": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "vectorcraft": {
+   "first_added": "2026-11-07",
+   "commit": "f309f5b9bac4"
   },
   "wildmidi": {
    "first_added": "2026-09-29",
