@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "burntime",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-07",
+ "sha256": "69fa9420bcc12c5c6abd20fba47f357be78801eaa568a57f7973279f82e6a4af",
+ "size": 3735098,
+ "manifest_digest": "6c9aa1935af86f1d34b148107bde3623275fb409833fbedbdb7c4977b6673599",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 10351384,
+  "unpacked": 10411060
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "14 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 10351384 bytes (Burntime/Burntime), 10411060 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

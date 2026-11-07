@@ -1966,6 +1966,72 @@
     {
       "id": "burntime",
       "version": "1.3",
+      "summary": "Burntime Remastered 1.3, Max Design's survival strategy game (Raspberry Pi; needs your own game data)",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "game/strategy",
+      "url": "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros1/Burntime-1.3-aros1-aros-aarch64-abiv1-raspi.apkg.zip",
+      "size": 3735098,
+      "sha256": "69fa9420bcc12c5c6abd20fba47f357be78801eaa568a57f7973279f82e6a4af",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Burntime",
+      "icon": "Burntime.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-burntime",
+      "license": "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later",
+      "post_install_notes": [
+        "AROS for Raspberry Pi (aarch64). Tried in QEMU's Raspberry Pi emulation, not on a physical Raspberry Pi.",
+        "Burntime needs burntime.pack made from your own copy of the game: see ReadMe in the drawer.",
+        "Put it in a data drawer of its own, e.g. Work:Burntime-Data, then:",
+        "MakeDir ENV:Burntime ENVARC:Burntime",
+        "SetEnv SAVE Burntime/Data Work:Burntime-Data",
+        "Start it from a Shell after Stack 2000000.",
+        "If AROS asks for a volume Burntime at start (AROS FAT issue 2076), copy the drawer from the plain .zip. The ReadMe's no-Pi-package note predates this package.",
+        "Problems: https://github.com/tomaszstaniak/aros-burntime/issues"
+      ],
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-07",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-11-07",
+      "app_first_added": "2026-11-05"
+    },
+    {
+      "id": "burntime",
+      "version": "1.3",
       "summary": "Burntime Remastered 1.3, Max Design's survival strategy game (needs your own game data)",
       "arch": "x86_64",
       "abi": "v1",

@@ -97,6 +97,10 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "burntime/aarch64/v1": {
+   "first_added": "2026-11-07",
+   "commit": "30bd75f50c17"
+  },
   "burntime/x86_64/v1": {
    "first_added": "2026-11-05",
    "commit": "ef3021b9da4c"
