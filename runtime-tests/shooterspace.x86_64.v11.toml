@@ -56,3 +56,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "remove"]
 note    = "window open and process running after 15 s, started from its drawer with Run"
+
+[[test]]
+sha256  = "a770110edbe45c465fdf77676aabebd585f94343ffa1d0a4b8ba51f257db5647"
+date    = "2026-11-07"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "version 1.1: screen open and process running after 15 s, started from its drawer with Run; Esc quits"
