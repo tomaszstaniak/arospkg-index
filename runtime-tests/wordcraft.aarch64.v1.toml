@@ -1,0 +1,14 @@
+# Runtime tests of wordcraft aarch64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (the release archive unpacked in the guest, the
+# programs started from a Shell), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "b836a581800564317b1f255911c8eb966cd3c2c8f209a59d057f8183a0e1cc28"
+date    = "2026-11-07"
+system  = "mainline AROS Raspberry Pi nightly 2026-11-05"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU (raspi3b, TCG)"
+result  = "passed"
+checked = ["start", "run"]
+note    = "archive unpacked in the guest; --version, CLI docx/odt round trip byte-exact, editor window drawn 30 frames and closed cleanly; apkg install not exercised"
