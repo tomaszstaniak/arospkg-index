@@ -12,3 +12,14 @@ machine = "QEMU (raspi3b, TCG)"
 result  = "passed"
 checked = ["start", "run"]
 note    = "archive unpacked in the guest; --version, CLI docx/odt round trip byte-exact, editor window drawn 30 frames and closed cleanly; apkg install not exercised"
+
+[[test]]
+sha256  = "7aed16eec299d92e53e3caf4813b1593c6a3729bcfabd2fb008b0b52dbfa576d"
+date    = "2026-11-07"
+system  = "mainline AROS Raspberry Pi nightly 2026-11-05"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU (raspi3b, TCG)"
+result  = "passed"
+checked = ["install", "start", "run", "verify", "remove"]
+note    = "apkg 0.7.5, public catalogue: requirements satisfied, installed, verify ok; --version, CLI docx/odt round trip byte-exact, editor 30 frames, exit 0, removed"
