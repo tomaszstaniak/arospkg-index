@@ -1,29 +1,30 @@
-# APPROVED 2026-09-20 for v0.1.
+# APPROVED 2026-11-07: version 1.1, which the author uploaded in place of 1.0
+# under the same URL (the readme, the archive page and the program's
+# version string agree). Only the program and the readme changed; the
+# drawer is now named after the new version.
 #
-# An asteroid avoidance game. Readme: written in C++, requires no installation.
-#
-# Installed, started and removed on AROS One 1.3 x86_64 in QEMU; see
-# docs/ A hash and a clean unpack do not qualify a
-# package -- it has to have run.
+# Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
+# with apkg 0.7.5. Started from its drawer with Run, stack 40960 bytes: its
+# screen was open and the process was running after 15 s; Esc closed it.
 
 status          = "approved"
 id              = "shooterspace"
-version         = "1.0"
+version         = "1.1"
 summary         = "Avoid asteroids and deal with threatening UFOs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "game/misc"
 url             = "https://archives.arosworld.org/share/game/misc/shooterspace.x86_64-aros-v11.zip"
-size            = 1184697
+size            = 1180044
 
-sha256          = "173a4f28870be7cc37c1865d0e9f58d6bec3a84df08123a5cc52461e6f9f0254"
+sha256          = "a770110edbe45c465fdf77676aabebd585f94343ffa1d0a4b8ba51f257db5647"
 
 depends         = []
 depends_checked = true     # no package in the index is needed to install this
 
 kind            = "app"
-subdir          = "ShooterSpace1.0"
-icon            = "ShooterSpace1.0.info"
+subdir          = "ShooterSpace1.1"
+icon            = "ShooterSpace1.1.info"
 
 installs_on     = ["aros-one"]
 runs_on         = ["aros-one"]

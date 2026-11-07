@@ -1,29 +1,29 @@
-# APPROVED 2026-09-29, from the bulk test of catalogue candidates.
+# APPROVED 2026-11-07: version 1.2, which the author uploaded in place of 1.0
+# under the same URL (the readme, the archive page and the program's
+# version string agree). Only the program and the readme changed; the
+# drawer is now named after the new version.
 #
 # Installed, started and removed on AROS One 1.3 x86_64 (ABIv11) under QEMU
-# with KVM, with apkg 0.3 (40c2ba93). Started from SYS:Batch/ominoarcade
-# with Run and input from NIL:, stack 40960 bytes: its window or screen was
-# open and the process was running after 15 s. Evidence.
-#  (batch c09).
+# with apkg 0.7.5. Started from its drawer with Run, stack 40960 bytes: its
+# screen was open and the process was running after 15 s; Esc closed it.
 
 status          = "approved"
 id              = "ominoarcade"
-version         = "1.0"
+version         = "1.2"
 summary         = "recover all the coins while avoiding the enemies"
 arch            = "x86_64"
 abi             = "v11"
 category        = "game/platform"
 url             = "https://archives.arosworld.org/share/game/platform/ominoarcade.x86_64-aros-v11.zip"
-size            = 2510500
-upload_date     = "20260903-18.13"
+size            = 2507512
 selected_by     = "only-candidate"
 
-sha256          = "813ddb7d313cd2e5278f51dd86391f08b825fe3c4e0148be5fbcad7f7697a47d"
+sha256          = "db7168e08678059438af8a757d9320e76865659d2ca480e52fa9c873a5dbc24e"
 depends         = []
 depends_checked = true
 kind            = "app"
-subdir          = "OminoArcade1.0"
-icon            = "OminoArcade1.0.info"
+subdir          = "OminoArcade1.2"
+icon            = "OminoArcade1.2.info"
 
 installs_on     = ["aros-one"]
 runs_on         = ["aros-one"]
