@@ -1,22 +1,23 @@
-# arospkg 0.7.3. PkgManager fixes link backgrounds after hover.
-# v11 and mainline GUI checked in QEMU; Pi and i386 compiled only.
+# arospkg 0.7.5. PkgManager shows web addresses inside its text.
+# Checked in QEMU: AROS 2026.09, AROS One 1.3, mainline x86_64 and Pi
+# (links, self-update from 0.7.4); i386 apkg install and remove.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.3"
+version         = "0.7.5"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.3/arospkg-0.7.3.x86_64-aros-v11.zip"
-size            = 996428
-sha256          = "88b075466bea40fff9d820dc4c978ef92d12e7a23c1858ffad8814d703030fc4"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.5/arospkg-0.7.5.x86_64-aros-v11.zip"
+size            = 1008614
+sha256          = "9dd622906cd56570a5b15e8683da90083cf85999fc30473544153dd1dbeed9ac"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.3.x86_64-aros-v11"
+subdir          = "arospkg-0.7.5.x86_64-aros-v11"
 installs_on     = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]
 
@@ -40,4 +41,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.3"
+revision   = "v0.7.5"
