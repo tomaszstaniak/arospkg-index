@@ -158,9 +158,11 @@ and reviewed, and both catalogue files are generated as a trial. A change
 to comments only reviews nothing; a pull request that edits `review/` or
 `history.json` fails. The check has no secrets and runs nothing from the
 pull request or the archive. After a merge, `.github/workflows/publish.yml`
-reviews the changed entries again, regenerates the catalogue and commits it
-with the review records and first publication dates; a failed run leaves the
-published files as they were. Run by hand with *review_all*, it reviews
+reviews the entries changed since the last published catalogue, regenerates
+the catalogue and commits it with the review records and first publication
+dates; a failed run leaves the published files as they were. The branch
+`published` marks that catalogue; only the workflow moves it, together with
+`main`, so merges in quick succession are all reviewed. Run by hand with *review_all*, it reviews
 every entry; one that no longer passes stays Listed.
 
 Submissions are checked automatically. Maintainers review the source and
