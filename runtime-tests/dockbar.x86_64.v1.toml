@@ -66,4 +66,4 @@ abi     = "v1"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start"]
-note    = "archive unpacked to a SYS: drawer with a space; Start with Wanderer on, off and replace with two installations, a copy in SYS:WBStartup, cold start from the start icon with NOCOMPOSE and LOG; no apkg run (no network on the test machine)"
+note    = "archive unpacked to a SYS: drawer; start icon on, off, replace with two installations and a copy; cold start with NOCOMPOSE; no apkg run (no network)"
