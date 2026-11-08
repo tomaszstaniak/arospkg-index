@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "folio",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-08",
+ "sha256": "34f76d23e360fc0bc7bebb3a2523d88e1bb51cb2cff997c58afeef0bd6059a56",
+ "size": 28559173,
+ "manifest_digest": "5f6af3fa220ec058b8be3d7c1a669e2f01c2dc8e3a575ac2e28ef1dfacd1a15f",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 40609672,
+  "unpacked": 40763053
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "21 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 40609672 bytes (Folio/Folio), 40763053 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

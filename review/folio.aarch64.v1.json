@@ -4,14 +4,14 @@
  "id": "folio",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-06",
- "sha256": "e06b76706f0c6bd5764625f30ca88e8838832d1893c8dfb11ac69af49a2130eb",
- "size": 28864013,
- "manifest_digest": "cd3eb23c9dc6ebd270bc635cd6d5b6b1e6b09528923c270e781e600d74dbf231",
+ "date": "2026-11-08",
+ "sha256": "bd1cd6306002a59965fe4983b991b8893e347d3a4d19f602cf4a179a05e11b16",
+ "size": 28873600,
+ "manifest_digest": "68f171ceb68ebefae8c60de154c942714d6d4d9d344169fb9d3623a56369b7a8",
  "result": "passed",
  "sizes": {
-  "largest_member": 41845168,
-  "unpacked": 41995721
+  "largest_member": 41875424,
+  "unpacked": 42028843
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 41845168 bytes (Folio/Folio), 41995721 bytes unpacked"
+   "detail": "largest member 41875424 bytes (Folio/Folio), 42028843 bytes unpacked"
   },
   {
    "name": "paths",

@@ -257,6 +257,10 @@
    "first_added": "2026-10-04",
    "commit": "ba3f786f5841"
   },
+  "folio/x86_64/v1": {
+   "first_added": "2026-11-08",
+   "commit": "a58a14ffafb6"
+  },
   "folio/x86_64/v11": {
    "first_added": "2026-09-26",
    "commit": "be18c1cd518e"
