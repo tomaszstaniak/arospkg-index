@@ -21,10 +21,9 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# runs_on: the program in these bytes was started on AROS One 1.3 under QEMU
-# in the 0.6.1 release tests, from an archive that differed only in the
-# program's S:User-Startup line check; installs_on is empty until an apkg test
-# of this archive (runtime-tests/).
+# runs_on: these bytes were unpacked and started on AROS One 1.3 under QEMU
+# in the 0.6.1 release tests; installs_on is empty until an apkg test of this
+# archive (runtime-tests/).
 
 status          = "approved"
 id              = "dockbar"
@@ -34,8 +33,8 @@ summary         = "Dock with application groups, drawer panels, action widgets a
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
 url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.1/Dockbar-0.6.1-aros-x86_64-abiv11-pc.zip"
-size            = 8817773
-sha256          = "e5c2d0a6bd6a12664034f31705db60fc49cfc230bf4747ec6551de22596b9c59"
+size            = 8822130
+sha256          = "82c3e8180b7af29a4e99209bd9f9c12c079b3e0b920dcebd9b75db1c67e1a6ec"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"

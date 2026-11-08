@@ -21,11 +21,11 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# The program in these bytes was started under QEMU raspi3b (nightly
-# 2026-11-05) in the 0.6.1 release tests, from an archive that differed only
-# in ReadMe and the program's S:User-Startup line check; an apkg test of this
-# archive follows publication (runtime-tests/). There is no system id for the
-# Pi in installs_on and runs_on.
+# An earlier 0.6.1 build was started under QEMU raspi3b (nightly
+# 2026-11-05) in the release tests; this archive differs from it in the start
+# icon rules (Start with Wanderer), which were tested on x86_64 from the same
+# source. An apkg test of this archive follows publication (runtime-tests/).
+# There is no system id for the Pi in installs_on and runs_on.
 
 status          = "approved"
 id              = "dockbar"
@@ -35,8 +35,8 @@ summary         = "Dock with application groups, drawer panels, action widgets a
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
 url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.1/Dockbar-0.6.1-aros-aarch64-abiv1-raspi.zip"
-size            = 10539999
-sha256          = "7e5f115d101cb0e489f1ebcfafad655a72d663c5a070e88a18046a29f6f300b6"
+size            = 10545214
+sha256          = "756d2f75dc959c8b054bb19898e8f4257bde100ee9e00bdcdf8b9b78a748324a"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
