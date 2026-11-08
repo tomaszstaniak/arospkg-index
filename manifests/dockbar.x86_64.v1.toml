@@ -1,6 +1,6 @@
-# Dockbar 0.6.0 for x86_64 mainline AROS (ABIv1), PC, with SVG icons.
+# Dockbar 0.6.1 for x86_64 mainline AROS (ABIv1), PC, with SVG icons.
 # Our own program, published by its author as an asset of the GitHub
-# release v0.6.0 (one source commit for all three archives).
+# release v0.6.1 (one source commit for all three archives).
 # It carries libs/svgicon.library, which Dockbar opens as
 # PROGDIR:libs/svgicon.library, and the Weather widget (Widgets/org.aros.weather).
 # replaces: dockbar-info-only (0.5.1, the same program without svgicon.library)
@@ -12,29 +12,31 @@
 # User data lives in the program drawer: PROGDIR:docks.config and
 # PROGDIR:WidgetState/. Neither is in the archive, so apkg keeps both on
 # upgrade and removal as files it did not install.
+# 0.6.1 adds Start with Wanderer: a project icon SYS:WBStartup/Dockbar.info
+# whose default tool is the program in this drawer (written only on the
+# user's request). apkg does not install or remove it.
 # 0.6.0 adds the message port Dockbar.Widgets: other programs (AROS Capture)
 # install their own widget into Dockbar's Widgets drawer. Those widgets are
 # user files to apkg (not in the archive) and stay on upgrade and removal.
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# runs_on: the programs in these bytes were started on a mainline nightly
-# (2026-11-05) under QEMU in the 0.6.0 release tests, from an archive that
-# differed only in ReadMe, Changes and application.json; installs_on is empty
+# runs_on: these bytes were unpacked and started on a mainline nightly
+# (2026-11-05) under QEMU in the 0.6.1 release tests; installs_on is empty
 # until an apkg test of this archive.
 # The Weather helper calls __stdc_set_taskexit (stdc.library 0.52) only when
 # the running stdc.library has it, so since 0.5.2 it does not need 0.52.
 
 status          = "approved"
 id              = "dockbar"
-version         = "0.6.0"
+version         = "0.6.1"
 revision        = 1
 summary         = "Dock with application groups, drawer panels, action widgets and Weather"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
-url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.0/Dockbar-0.6.0-aros-x86_64-abiv1-pc.zip"
-size            = 10414047
-sha256          = "ea2cfdc18f3eb25202abb3d02b45cb7c33d2322cccb22d1326c2f0c9a7bdd731"
+url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.1/Dockbar-0.6.1-aros-x86_64-abiv1-pc.zip"
+size            = 10426666
+sha256          = "c05f39d6fed1060f9909f34d8c7d345c5976ff6f2c2af712ce95cc0912dc14dc"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v1"
@@ -51,7 +53,9 @@ does_not_run_on = []
 post_install_notes = [
   "Replaces dockbar-info-only, which is not continued. On its first start Dockbar copies docks.config, dock.pins and WidgetState from that drawer.",
   "Your docks (docks.config) and Weather data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
-  "To start Dockbar with the system, see Installation in the ReadMe. Weather needs a running TCP/IP stack.",
+  "To start Dockbar with the system, tick Start with Wanderer in its Preferences. Do not copy the program into SYS:WBStartup.",
+  "A copy of Dockbar in SYS:WBStartup keeps starting the old version: quit it, start Dockbar from this drawer and choose Replace the copy.",
+  "Weather needs a running TCP/IP stack.",
   "With VMware SVGA graphics the docks can be invisible. Start Dockbar with --no-compose then.",
 ]
 
@@ -77,7 +81,7 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-dockbar"
-revision   = "v0.6.0"
+revision   = "v0.6.1"
 built_with = "mainline AROS x86_64 SDK (AROS 531307d8, 2026-11-01), GCC 10.5.0"
 
 [launch]
