@@ -1,6 +1,6 @@
-# Dockbar 0.6.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1), with SVG icons.
+# Dockbar 0.6.1 for AROS on Raspberry Pi (aarch64, mainline ABIv1), with SVG icons.
 # Our own program, published by its author as an asset of the GitHub
-# release v0.6.0 (one source commit for all three archives).
+# release v0.6.1 (one source commit for all three archives).
 # It carries libs/svgicon.library, which Dockbar opens as
 # PROGDIR:libs/svgicon.library, and the Weather widget (Widgets/org.aros.weather).
 # replaces: dockbar-info-only (0.5.1, the same program without svgicon.library)
@@ -12,26 +12,31 @@
 # User data lives in the program drawer: PROGDIR:docks.config and
 # PROGDIR:WidgetState/. Neither is in the archive, so apkg keeps both on
 # upgrade and removal as files it did not install.
+# 0.6.1 adds Start with Wanderer: a project icon SYS:WBStartup/Dockbar.info
+# whose default tool is the program in this drawer (written only on the
+# user's request). apkg does not install or remove it.
 # 0.6.0 adds the message port Dockbar.Widgets: other programs (AROS Capture)
 # install their own widget into Dockbar's Widgets drawer. Those widgets are
 # user files to apkg (not in the archive) and stay on upgrade and removal.
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# apkg 0.7.4 installed and upgraded these bytes, and they were unpacked and
-# started, under QEMU raspi3b (runtime-tests/, 2026-11-06); there is no system
-# id for the Pi in installs_on and runs_on.
+# The program in these bytes was started under QEMU raspi3b (nightly
+# 2026-11-05) in the 0.6.1 release tests, from an archive that differed only
+# in ReadMe and the program's S:User-Startup line check; an apkg test of this
+# archive follows publication (runtime-tests/). There is no system id for the
+# Pi in installs_on and runs_on.
 
 status          = "approved"
 id              = "dockbar"
-version         = "0.6.0"
+version         = "0.6.1"
 revision        = 1
 summary         = "Dock with application groups, drawer panels, action widgets and Weather"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
-url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.0/Dockbar-0.6.0-aros-aarch64-abiv1-raspi.zip"
-size            = 10529814
-sha256          = "c44b262ac3338d6d59194694801c277227a4a3fb960e0d5a336da5dd54f3f7bd"
+url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.1/Dockbar-0.6.1-aros-aarch64-abiv1-raspi.zip"
+size            = 10539999
+sha256          = "7e5f115d101cb0e489f1ebcfafad655a72d663c5a070e88a18046a29f6f300b6"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -49,7 +54,9 @@ post_install_notes = [
   "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
   "Replaces dockbar-info-only, which is not continued. On its first start Dockbar copies docks.config, dock.pins and WidgetState from that drawer.",
   "Your docks (docks.config) and Weather data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
-  "To start Dockbar with the system, see Installation in the ReadMe. Weather needs a running TCP/IP stack.",
+  "To start Dockbar with the system, tick Start with Wanderer in its Preferences. Do not copy the program into SYS:WBStartup.",
+  "A copy of Dockbar in SYS:WBStartup keeps starting the old version: quit it, start Dockbar from this drawer and choose Replace the copy.",
+  "Weather needs a running TCP/IP stack.",
 ]
 
 [[requires_system]]
@@ -74,7 +81,7 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-dockbar"
-revision   = "v0.6.0"
+revision   = "v0.6.1"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-02 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
