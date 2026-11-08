@@ -3,7 +3,7 @@
 # every later submission applies again.
 
 id              = "folio"
-version         = "0.5"
+version         = "0.6"
 revision        = 1
 summary         = "PDF reader with two-page spreads, search and highlighting"
 category        = "office/misc"
@@ -16,15 +16,14 @@ icon            = "Folio.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
-  "Native Raspberry Pi build; not validated on hosted Macaros.",
-  "This 0.5 binary has been compiled and linked, not run. See BUILD-REPORT.md.",
+  "Native Raspberry Pi build (nightly 2026-11-05); not for hosted Macaros. Tested in QEMU only.",
   "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
   "Opening external web links requires openurl.library.",
 ]
-sha256          = "e06b76706f0c6bd5764625f30ca88e8838832d1893c8dfb11ac69af49a2130eb"
-size            = 28864013
+sha256          = "bd1cd6306002a59965fe4983b991b8893e347d3a4d19f602cf4a179a05e11b16"
+size            = 28873600
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.5/Folio-0.5.aarch64-aros-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.6/Folio-0.6.aarch64-aros-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -56,8 +55,9 @@ id = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-foliopdf"
-revision = "v0.5"
-archive = "Folio-0.5-source.zip"
+revision = "v0.6"
+archive = "Folio-0.6-source.zip"
+built_with = "aarch64 Raspberry Pi ABIv1 (nightly 2026-11-05 SDK), Clang 20.1.0"
 
 [launch]
 executable = "Folio"
