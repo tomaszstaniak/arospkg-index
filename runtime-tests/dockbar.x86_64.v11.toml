@@ -56,3 +56,25 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start"]
 note    = "archive unpacked to RAM:; two docks, Weather data, widget install with dock choice, action widget, busy and refusal answers, restart"
+
+[[test]]
+sha256  = "82c3e8180b7af29a4e99209bd9f9c12c079b3e0b920dcebd9b75db1c67e1a6ec"
+date    = "2026-11-08"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["upgrade", "remove", "verify"]
+note    = "apkg 0.7.5, public catalogue: upgrade from 0.6.0 kept docks.config; installed Dockbar equals the release; remove kept docks.config"
+
+[[test]]
+sha256  = "82c3e8180b7af29a4e99209bd9f9c12c079b3e0b920dcebd9b75db1c67e1a6ec"
+date    = "2026-11-08"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to RAM: and to a SYS: drawer; Start with Wanderer icon, cold start of the drawer's program, Ctrl-C quit"

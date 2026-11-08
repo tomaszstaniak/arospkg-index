@@ -56,3 +56,14 @@ machine = "QEMU (TCG), live CD"
 result  = "passed"
 checked = ["start"]
 note    = "archive unpacked to RAM:; stdc.library 0.52; Weather city search, forecast and one Refresh, no Software Failure, no provider task left"
+
+[[test]]
+sha256  = "c05f39d6fed1060f9909f34d8c7d345c5976ff6f2c2af712ce95cc0912dc14dc"
+date    = "2026-11-08"
+system  = "mainline AROS x86_64 (nightly 2026-11-05)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start"]
+note    = "archive unpacked to a SYS: drawer; start icon on, off, replace with two installations and a copy; cold start with NOCOMPOSE; no apkg run (no network)"
