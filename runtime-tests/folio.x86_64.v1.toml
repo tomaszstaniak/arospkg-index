@@ -1,0 +1,14 @@
+# Runtime tests of folio x86_64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "34f76d23e360fc0bc7bebb3a2523d88e1bb51cb2cff997c58afeef0bd6059a56"
+date    = "2026-11-08"
+system  = "mainline AROS x86_64 nightly 2026-11-05"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.5: installed from a seeded cache, requirements satisfied, verify ok; icon, Wanderer, Shell starts; panel, zoom, both views, highlight saved; removed"

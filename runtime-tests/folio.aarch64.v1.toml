@@ -1,0 +1,14 @@
+# Runtime tests of folio aarch64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "bd1cd6306002a59965fe4983b991b8893e347d3a4d19f602cf4a179a05e11b16"
+date    = "2026-11-08"
+system  = "mainline AROS Raspberry Pi nightly 2026-11-05"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU (raspi3b, TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.5: 0.5 installed, upgraded to this archive (seeded cache); reading position and settings kept; icon, Wanderer, Shell starts; highlight saved; removed"
