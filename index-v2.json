@@ -4435,7 +4435,25 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS Raspberry Pi nightly 2026-11-05",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU (raspi3b, TCG)",
+          "date": "2026-11-08",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.5: 0.5 installed, upgraded to this archive (seeded cache); reading position and settings kept; icon, Wanderer, Shell starts; highlight saved; removed"
+        }
+      ],
       "first_added": "2026-10-04",
       "app_first_added": "2026-09-26"
     },
@@ -4599,7 +4617,24 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-05",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-08",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.5: installed from a seeded cache, requirements satisfied, verify ok; icon, Wanderer, Shell starts; panel, zoom, both views, highlight saved; removed"
+        }
+      ],
       "first_added": "2026-11-08",
       "app_first_added": "2026-09-26"
     },
@@ -4686,7 +4721,25 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-08",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.5: 0.5 installed, upgraded to this archive (seeded cache); reading position and settings kept; icon, Wanderer, Shell starts; highlight saved; removed"
+        }
+      ],
       "first_added": "2026-09-26",
       "app_first_added": "2026-09-26"
     },
