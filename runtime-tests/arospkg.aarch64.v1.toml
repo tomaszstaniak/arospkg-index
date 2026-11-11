@@ -1,0 +1,13 @@
+# Runtime tests of arospkg aarch64/v1 (Raspberry Pi): maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs, kept outside the catalogue repository.
+
+[[test]]
+sha256  = "f1784751dd7d1d962265a4305901dbacbffbb5b1ca1abeb5dd2c8e9948bfe907"
+date    = "2026-11-11"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "remove"]
+note    = "0.7.6: published 0.7.5 self-updated to it from GitHub and fetched this catalogue; then install, upgrade (in-use note), verify, remove of dockbar 0.6.1 to 0.6.2"

@@ -49,8 +49,8 @@ depends_checked = true
 replaces        = ["dockbar-info-only"]
 subdir          = "Dockbar"
 icon            = "Dockbar.info"   # the drawer icon, beside Dockbar/ at the archive root
-installs_on     = []
-runs_on         = []
+installs_on     = ["mainline-aarch64"]
+runs_on         = ["mainline-aarch64"]
 does_not_run_on = []
 
 post_install_notes = [
