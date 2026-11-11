@@ -4,14 +4,14 @@
  "id": "arospkg",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-11-06",
- "sha256": "4df8993827fc970dcb8f339899a714f6705df6b68f94ac68f482b5e076b706ab",
- "size": 374199,
- "manifest_digest": "647e8d797aabe46d20fe3b3bf0df8c1c8b14bb763edea570355d7d40d9b4b90a",
+ "date": "2026-11-11",
+ "sha256": "df107a232dddd957729c029ff53f084e4cde30b10fb3db73bf6a9d7bffd4f248",
+ "size": 375877,
+ "manifest_digest": "5721759d92b3db55c5baade0d5ffd3faf2d429d00fb5c8656d73a2493b8ec41a",
  "result": "passed",
  "sizes": {
-  "largest_member": 801052,
-  "unpacked": 848548
+  "largest_member": 804116,
+  "unpacked": 853773
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 801052 bytes (arospkg-0.7.3.i386-aros-v0/apkg), 848548 bytes unpacked"
+   "detail": "largest member 804116 bytes (arospkg-0.7.6.i386-aros-v0/apkg), 853773 bytes unpacked"
   },
   {
    "name": "paths",
