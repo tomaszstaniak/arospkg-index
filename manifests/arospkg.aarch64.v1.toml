@@ -20,7 +20,7 @@ license         = "MIT"
 depends         = []
 depends_checked = true
 subdir          = "arospkg-0.7.6.aarch64-aros-raspi"
-installs_on     = []
+installs_on     = ["mainline-aarch64"]
 does_not_run_on = []
 
 [[requires_system]]
