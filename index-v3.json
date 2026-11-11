@@ -725,7 +725,9 @@
           "id": "muimaster.library"
         }
       ],
-      "installs_on": [],
+      "installs_on": [
+        "mainline-aarch64"
+      ],
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
@@ -756,7 +758,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261110",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-11",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "verify",
+            "remove"
+          ],
+          "note": "0.7.6: published 0.7.5 self-updated to it from GitHub and fetched this catalogue; then install, upgrade (in-use note), verify, remove of dockbar 0.6.1 to 0.6.2"
+        }
+      ],
       "first_added": "2026-10-04",
       "app_first_added": "2026-10-04"
     },
@@ -3475,8 +3493,12 @@
           "id": "cybergraphics.library"
         }
       ],
-      "installs_on": [],
-      "runs_on": [],
+      "installs_on": [
+        "mainline-aarch64"
+      ],
+      "runs_on": [
+        "mainline-aarch64"
+      ],
       "does_not_run_on": [],
       "kind": "app",
       "subdir": "Dockbar",
@@ -3515,7 +3537,24 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261110",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-11",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, local index of the published archives, without SMP: upgrade of a running 0.6.1 printed the in-use note and kept WidgetState; 0.6.2 started after"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
@@ -3558,8 +3597,12 @@
           "id": "cybergraphics.library"
         }
       ],
-      "installs_on": [],
-      "runs_on": [],
+      "installs_on": [
+        "mainline-x86_64"
+      ],
+      "runs_on": [
+        "mainline-x86_64"
+      ],
       "does_not_run_on": [],
       "kind": "app",
       "subdir": "Dockbar",
@@ -3598,7 +3641,24 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 (nightly 2026-11-10)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-11",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, local index of the published archives: upgrade of a running 0.6.1 printed the in-use note and kept WidgetState; 0.6.2 started after; verify 64 ok"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },

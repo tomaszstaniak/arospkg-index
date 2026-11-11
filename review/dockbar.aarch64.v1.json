@@ -7,7 +7,7 @@
  "date": "2026-11-11",
  "sha256": "7afc2c188fe8631ea5a3fb37670fe7719d0e4d47904c82e06a3520638b9047ef",
  "size": 10545725,
- "manifest_digest": "773a5cf99161358f6b538df43b5a472d31f50d97afd1c01eaa9a5d1f6468b241",
+ "manifest_digest": "f56760844ef0262408823d31098bb74bde01b4c5e8e8a9dc323e3ce71877af40",
  "result": "passed",
  "sizes": {
   "largest_member": 10991424,
