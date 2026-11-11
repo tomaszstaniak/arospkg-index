@@ -836,7 +836,9 @@
           "id": "muimaster.library"
         }
       ],
-      "installs_on": [],
+      "installs_on": [
+        "aros-one"
+      ],
       "runs_on": [],
       "does_not_run_on": [
         "mainline-x86_64"
@@ -869,7 +871,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-11",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "verify",
+            "remove"
+          ],
+          "note": "0.7.6: published 0.7.5 self-updated to it from GitHub; it then ran update, upgrade dockbar 0.6.1 to 0.6.2 (in-use note), verify and remove from this catalogue"
+        }
+      ],
       "first_added": "2026-10-04",
       "app_first_added": "2026-10-04"
     },
@@ -3623,8 +3641,12 @@
           "id": "cybergraphics.library"
         }
       ],
-      "installs_on": [],
-      "runs_on": [],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
       "does_not_run_on": [],
       "kind": "app",
       "subdir": "Dockbar",
@@ -3663,7 +3685,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-11",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, public catalogue: upgrade of a running 0.6.1 kept docks.config, WidgetState and the Capture widget; widget action worked before and after restart"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
