@@ -1,23 +1,25 @@
-# arospkg 0.7.5. PkgManager shows web addresses inside its text.
-# Checked in QEMU: AROS 2026.09, AROS One 1.3, mainline x86_64 and Pi
-# (links, self-update from 0.7.4); i386 apkg install and remove.
+# arospkg 0.7.6. An upgrade or rollback keeps the drawers the installed
+# files did not fill (empty ones a program made for itself); apkg says when
+# the drawer being upgraded is in use; archive members whose path would not
+# fit are refused. installs_on is filled after an apkg test of these bytes
+# from the published catalogue (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.5"
+version         = "0.7.6"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "i386"
 abi             = "v0"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.5/arospkg-0.7.5.i386-aros-v0.zip"
-size            = 375043
-sha256          = "d4e952743e6bf4e7998a5e23218a7bd807140f66c0746cf73ee8466b4d1da346"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.6/arospkg-0.7.6.i386-aros-v0.zip"
+size            = 375877
+sha256          = "df107a232dddd957729c029ff53f084e4cde30b10fb3db73bf6a9d7bffd4f248"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.5.i386-aros-v0"
+subdir          = "arospkg-0.7.6.i386-aros-v0"
 installs_on     = []
 does_not_run_on = []
 
@@ -31,4 +33,4 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.5"
+revision   = "v0.7.6"
