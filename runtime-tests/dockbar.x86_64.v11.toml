@@ -78,3 +78,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start"]
 note    = "archive unpacked to RAM: and to a SYS: drawer; Start with Wanderer icon, cold start of the drawer's program, Ctrl-C quit"
+
+[[test]]
+sha256  = "4afd7672ee3fc9684aa2e0c6cc717dd33d436e4b6966894bc06443e53047fa4a"
+date    = "2026-11-11"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["upgrade", "start", "verify", "remove"]
+note    = "apkg 0.7.6, public catalogue: upgrade from a running 0.6.1 kept docks.config, WidgetState and the AROS Capture widget; widget action worked on the running 0.6.1 after the upgrade and on 0.6.2 started from the drawer; verify clean; remove kept user files"
