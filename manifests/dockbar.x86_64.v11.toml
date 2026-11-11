@@ -24,9 +24,9 @@
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
 # links) and bsdsocket.library (Weather data) are optional and not listed.
-# installs_on, runs_on: filled after an apkg test of these bytes from the
-# public catalogue under QEMU (runtime-tests/). The fix itself was tested on
-# AROS One from the same source before the release.
+# installs_on, runs_on: apkg 0.7.6 upgraded a running 0.6.1 to these bytes from
+# the public catalogue on AROS One 1.3 under QEMU (2026-11-11); the widget action
+# worked before and after, and after 0.6.2 was started (runtime-tests/).
 
 status          = "approved"
 id              = "dockbar"
@@ -47,8 +47,8 @@ depends_checked = true
 replaces        = ["dockbar-info-only"]
 subdir          = "Dockbar"
 icon            = "Dockbar.info"   # the drawer icon, beside Dockbar/ at the archive root
-installs_on     = []
-runs_on         = []
+installs_on     = ["aros-one"]
+runs_on         = ["aros-one"]
 does_not_run_on = []
 
 post_install_notes = [
