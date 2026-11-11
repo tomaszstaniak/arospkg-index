@@ -88,4 +88,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["upgrade", "start", "verify", "remove"]
-note    = "apkg 0.7.6, public catalogue: upgrade from a running 0.6.1 kept docks.config, WidgetState and the AROS Capture widget; widget action worked on the running 0.6.1 after the upgrade and on 0.6.2 started from the drawer; verify clean; remove kept user files"
+note    = "apkg 0.7.6, public catalogue: upgrade of a running 0.6.1 kept docks.config, WidgetState and the Capture widget; widget action worked before and after restart"

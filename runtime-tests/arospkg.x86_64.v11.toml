@@ -66,4 +66,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "remove"]
-note    = "0.7.6: published 0.7.5 self-updated to it from GitHub (apkg.old kept); it then ran update, upgrade dockbar 0.6.1 -> 0.6.2, verify and remove from this catalogue, with the in-use note while Dockbar ran"
+note    = "0.7.6: published 0.7.5 self-updated to it from GitHub; it then ran update, upgrade dockbar 0.6.1 to 0.6.2 (in-use note), verify and remove from this catalogue"
