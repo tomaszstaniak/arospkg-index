@@ -56,3 +56,14 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["start"]
 note    = "archive unpacked to RAM:, without SMP; Weather data, widget install with dock choice, action widget, restart; real Pi untested"
+
+[[test]]
+sha256  = "7afc2c188fe8631ea5a3fb37670fe7719d0e4d47904c82e06a3520638b9047ef"
+date    = "2026-11-11"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "upgrade", "start", "verify", "remove"]
+note    = "apkg 0.7.6, local index of the published archives, without SMP: upgrade of a running 0.6.1 printed the in-use note and kept WidgetState; 0.6.2 started after"
