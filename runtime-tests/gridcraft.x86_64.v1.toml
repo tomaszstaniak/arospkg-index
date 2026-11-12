@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.6, local index: installed, verify ok; edits and two saves, exit 0; started from the Workbench icon; removed, GridCraftData kept"
+
+[[test]]
+sha256  = "177f1dcd9013916ab3c92ab1dc76190c16fcfe107624347ff7fe7886688c175f"
+date    = "2026-11-12"
+system  = "mainline AROS x86_64 nightly 2026-11-10"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.6, local index: upgraded from 0.19.1, settings kept; verify ok; Ctrl+S, edit, close asks, Save writes and closes; removed"

@@ -12,3 +12,14 @@ machine = "QEMU raspi3b"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.6, local index: installed, verify ok; edits and two saves from the installed drawer, exit 0; removed. Emulator only, not Pi hardware"
+
+[[test]]
+sha256  = "eb173ccb8f9c01ba5cc3b865fa51e9f08a55f53a710742e1a71eaa455ad11656"
+date    = "2026-11-12"
+system  = "mainline AROS Raspberry Pi nightly 2026-11-10 (non-SMP)"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.6, local index: upgraded from 0.19.1; verify ok; edits and two background saves, exit 0; removed. Emulator only, not Pi hardware"
