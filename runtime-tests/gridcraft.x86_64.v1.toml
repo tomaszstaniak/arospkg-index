@@ -1,0 +1,14 @@
+# Runtime tests of gridcraft x86_64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "97fd99897937750cba0fbb9ba3c75c25d5a7236cd3ab59ea1509bb3e5003337f"
+date    = "2026-11-12"
+system  = "mainline AROS x86_64 nightly 2026-11-10"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.6, local index: installed, verify ok; edits and two saves, exit 0; started from the Workbench icon; removed, GridCraftData kept"
