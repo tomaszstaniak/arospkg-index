@@ -6026,9 +6026,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "office/spreadsheet",
-      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 24094678,
-      "sha256": "06936bdc03523c836662e7ea731d8eabe83992704ab40bc9e07364740a3303c5",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r1/GridCraft-0.19.1-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 24165868,
+      "sha256": "eb173ccb8f9c01ba5cc3b865fa51e9f08a55f53a710742e1a71eaa455ad11656",
       "depends": [],
       "requires_system": [
         {
@@ -6067,6 +6067,7 @@
       "subdir": "GridCraft",
       "icon": "GridCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-gridcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
@@ -6108,12 +6109,13 @@
           "result": "passed",
           "checked": [
             "install",
+            "upgrade",
             "verify",
             "start",
             "run",
             "remove"
           ],
-          "note": "apkg 0.7.6, local index: installed, verify ok; edits and two saves from the installed drawer, exit 0; removed. Emulator only, not Pi hardware"
+          "note": "apkg 0.7.6, local index: upgraded from 0.19.1; verify ok; edits and two background saves, exit 0; removed. Emulator only, not Pi hardware"
         }
       ],
       "first_added": "2026-11-12",
@@ -6126,9 +6128,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "office/spreadsheet",
-      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-x86_64-abiv1-pc.zip",
-      "size": 23934693,
-      "sha256": "97fd99897937750cba0fbb9ba3c75c25d5a7236cd3ab59ea1509bb3e5003337f",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r1/GridCraft-0.19.1-r1-aros-x86_64-abiv1-pc.zip",
+      "size": 23985659,
+      "sha256": "177f1dcd9013916ab3c92ab1dc76190c16fcfe107624347ff7fe7886688c175f",
       "depends": [],
       "requires_system": [
         {
@@ -6167,6 +6169,7 @@
       "subdir": "GridCraft",
       "icon": "GridCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-gridcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
@@ -6208,12 +6211,13 @@
           "result": "passed",
           "checked": [
             "install",
+            "upgrade",
             "verify",
             "start",
             "run",
             "remove"
           ],
-          "note": "apkg 0.7.6, local index: installed, verify ok; edits and two saves, exit 0; started from the Workbench icon; removed, GridCraftData kept"
+          "note": "apkg 0.7.6, local index: upgraded from 0.19.1, settings kept; verify ok; Ctrl+S, edit, close asks, Save writes and closes; removed"
         }
       ],
       "first_added": "2026-11-12",
@@ -6226,9 +6230,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "office/spreadsheet",
-      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-x86_64-abiv11-pc.zip",
-      "size": 27260819,
-      "sha256": "20e9e9d0cf411ed99ef36e27c1309ee60771113dfe624c40767c296cf9860121",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r1/GridCraft-0.19.1-r1-aros-x86_64-abiv11-pc.zip",
+      "size": 27295334,
+      "sha256": "955aa7696bb6359235bb13d7a7e7e45481fece55890ff2a03e995d3f9c1293f8",
       "depends": [],
       "requires_system": [
         {
@@ -6267,6 +6271,7 @@
       "subdir": "GridCraft",
       "icon": "GridCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-gridcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
@@ -6314,7 +6319,7 @@
             "run",
             "remove"
           ],
-          "note": "apkg 0.7.6, local index: upgraded from 0.8.0-test4, GridCraftData kept; verify ok; edits and two saves from the installed drawer; exit 0; removed"
+          "note": "apkg 0.7.6, local index: upgraded from 0.19.1, user file kept; verify ok; edits and two background saves from the installed drawer; exit 0; removed"
         }
       ],
       "first_added": "2026-10-20",

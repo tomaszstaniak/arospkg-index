@@ -5,13 +5,13 @@
  "arch": "aarch64",
  "abi": "v1",
  "date": "2026-11-12",
- "sha256": "06936bdc03523c836662e7ea731d8eabe83992704ab40bc9e07364740a3303c5",
- "size": 24094678,
- "manifest_digest": "4c4f0410d27c8d86f7636d2d529ac2b1b07df9698e7f43f7467015f1fdcbacc0",
+ "sha256": "eb173ccb8f9c01ba5cc3b865fa51e9f08a55f53a710742e1a71eaa455ad11656",
+ "size": 24165868,
+ "manifest_digest": "227a9605de236db3783c18a80eceb797e4d7a4db661aecca7c8e2a92d9b7e6a1",
  "result": "passed",
  "sizes": {
-  "largest_member": 52850760,
-  "unpacked": 88394980
+  "largest_member": 53265344,
+  "unpacked": 88821762
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 52850760 bytes (GridCraft/GridCraft), 88394980 bytes unpacked"
+   "detail": "largest member 53265344 bytes (GridCraft/GridCraft), 88821762 bytes unpacked"
   },
   {
    "name": "paths",
