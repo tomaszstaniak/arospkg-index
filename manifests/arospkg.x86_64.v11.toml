@@ -1,26 +1,26 @@
-# arospkg 0.7.6. An upgrade or rollback keeps the drawers the installed
-# files did not fill (empty ones a program made for itself); apkg says when
-# the drawer being upgraded is in use; archive members whose path would not
-# fit are refused. installs_on: the published 0.7.5 self-updated to these bytes
-# from GitHub on AROS One 1.3 (QEMU, 2026-11-11), which then updated, upgraded,
-# verified and removed dockbar from the public catalogue (runtime-tests/).
+# arospkg 0.7.7. An upgrade or rollback keeps the package drawer and
+# replaces its contents, so a Shell path or an assign to it keeps working
+# (Fastfetch was "object not found" after an upgrade until a reboot).
+# installs_on: the published 0.7.6 self-updated to these bytes from GitHub
+# on AROS One 1.3 (QEMU, 2026-11-12), which then updated, installed, ran,
+# verified and removed fastfetch from the public catalogue (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.6"
+version         = "0.7.7"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.6/arospkg-0.7.6.x86_64-aros-v11.zip"
-size            = 1010143
-sha256          = "a922c8855d73ef5cde1e5c17fdb685b72b06d236d4040e86e7bff4b313ee8936"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.x86_64-aros-v11.zip"
+size            = 1011492
+sha256          = "6b3650ffb7437b1bf0f778f9c5d69f3e09429512562fcaea0c06a5fdc8c270b1"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.6.x86_64-aros-v11"
+subdir          = "arospkg-0.7.7.x86_64-aros-v11"
 installs_on     = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]
 
@@ -44,4 +44,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.6"
+revision   = "v0.7.7"
