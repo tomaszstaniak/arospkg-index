@@ -4252,7 +4252,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261110",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6 from the public catalogue to RAM:; Pi note shown; verify 71 ok; rc 0; removed cleanly; real Pi untested"
+        }
+      ],
       "first_added": "2026-11-12",
       "app_first_added": "2026-10-29"
     },
@@ -4312,7 +4328,38 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6 with the public index-v3.json and published archive fetched on the host (no guest network); verify ok; rc 0"
+        },
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "start",
+            "upgrade",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, local index: upgrade from published r3 kept a user file; GPU checks and Limpet 0.9.0 picture preset, rc 0"
+        }
+      ],
       "first_added": "2026-10-29",
       "app_first_added": "2026-10-29"
     },
@@ -4368,7 +4415,39 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "2.70.0 r4: apkg 0.7.6 from the public catalogue to RAM:; verify 71 ok; GPU line shown, rc 0; removed cleanly"
+        },
+        {
+          "system": "AROS ABIv11 2026.09",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "upgrade",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, local index: upgrade from published r3 kept a user file in the drawer; GPU checks rc 0; removed, user file kept"
+        }
+      ],
       "first_added": "2026-10-29",
       "app_first_added": "2026-10-29"
     },
