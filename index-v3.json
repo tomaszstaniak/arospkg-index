@@ -6317,14 +6317,214 @@
     },
     {
       "id": "gridcraft",
-      "version": "0.8.0-test4",
-      "summary": "Spreadsheet for XLSX with formulas, charts and CSV/PDF export (experimental, not optimised)",
+      "version": "0.19.1",
+      "summary": "Spreadsheet for XLSX, ODS and CSV with formulas and PDF export",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "office/spreadsheet",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 24094678,
+      "sha256": "06936bdc03523c836662e7ea731d8eabe83992704ab40bc9e07364740a3303c5",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "GridCraft",
+      "icon": "GridCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-gridcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Native Raspberry Pi build (nightly 2026-11-10). Tested in an emulator only.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, recent files and GridCraft.log are kept in GridCraftData in the program drawer; keep it when upgrading.",
+        "No printing. Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "GridCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-12",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS Raspberry Pi nightly 2026-11-10 (non-SMP)",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, local index: installed, verify ok; edits and two saves from the installed drawer, exit 0; removed. Emulator only, not Pi hardware"
+        }
+      ],
+      "first_added": "2026-11-12",
+      "app_first_added": "2026-10-20"
+    },
+    {
+      "id": "gridcraft",
+      "version": "0.19.1",
+      "summary": "Spreadsheet for XLSX, ODS and CSV with formulas and PDF export",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "office/spreadsheet",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-x86_64-abiv1-pc.zip",
+      "size": 23934693,
+      "sha256": "97fd99897937750cba0fbb9ba3c75c25d5a7236cd3ab59ea1509bb3e5003337f",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "GridCraft",
+      "icon": "GridCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-gridcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, recent files and GridCraft.log are kept in GridCraftData in the program drawer; keep it when upgrading.",
+        "No printing. Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "GridCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-12",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.6, local index: installed, verify ok; edits and two saves, exit 0; started from the Workbench icon; removed, GridCraftData kept"
+        }
+      ],
+      "first_added": "2026-11-12",
+      "app_first_added": "2026-10-20"
+    },
+    {
+      "id": "gridcraft",
+      "version": "0.19.1",
+      "summary": "Spreadsheet for XLSX, ODS and CSV with formulas and PDF export",
       "arch": "x86_64",
       "abi": "v11",
       "category": "office/spreadsheet",
-      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.8.0-test4/GridCraft-0.8.0-test4.x86_64-aros-v11.zip",
-      "size": 14724164,
-      "sha256": "fbe42fb2cd639615c03483dd54889fe449e0c41dc3f016b7792dda5b06106dad",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-x86_64-abiv11-pc.zip",
+      "size": 27260819,
+      "sha256": "20e9e9d0cf411ed99ef36e27c1309ee60771113dfe624c40767c296cf9860121",
       "depends": [],
       "requires_system": [
         {
@@ -6346,27 +6546,31 @@
         {
           "type": "library",
           "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
       "runs_on": [],
-      "does_not_run_on": [
-        "mainline-x86_64"
-      ],
+      "does_not_run_on": [],
       "kind": "app",
       "subdir": "GridCraft",
       "icon": "GridCraft.info",
       "install": {},
-      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-gridcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
-        "Save before closing the window: the close gadget does not ask about unsaved changes.",
-        "Settings are kept in GridCraftData inside the program's drawer.",
-        "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong."
+        "AROS One 1.3 and other x86_64 ABIv11 systems.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, recent files and GridCraft.log are kept in GridCraftData in the program drawer; keep it when upgrading.",
+        "No printing. Updates come through the AROS package manager."
       ],
       "launch": {
         "executable": "GridCraft",
@@ -6376,7 +6580,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-06",
+        "date": "2026-11-12",
         "checked": [
           "metadata",
           "download",
@@ -6396,15 +6600,17 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-23",
+          "date": "2026-11-12",
           "result": "passed",
           "checked": [
+            "install",
             "upgrade",
             "verify",
+            "start",
             "run",
             "remove"
           ],
-          "note": "0.8.0-test4: 0.6.0 upgrade from test3; verify ok; run; removed; Shell and Workbench start, save, Recent after restart, Save As"
+          "note": "apkg 0.7.6, local index: upgraded from 0.8.0-test4, GridCraftData kept; verify ok; edits and two saves from the installed drawer; exit 0; removed"
         }
       ],
       "first_added": "2026-10-20",

@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "gridcraft",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-12",
+ "sha256": "97fd99897937750cba0fbb9ba3c75c25d5a7236cd3ab59ea1509bb3e5003337f",
+ "size": 23934693,
+ "manifest_digest": "32605933d872ffbc3c752d9e04ec188258bd7b24e70ab565a4545b36e4ecddff",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 50117400,
+  "unpacked": 84100387
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "37 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 50117400 bytes (GridCraft/GridCraft), 84100387 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
