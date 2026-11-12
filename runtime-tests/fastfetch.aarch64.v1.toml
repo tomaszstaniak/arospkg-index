@@ -1,0 +1,13 @@
+# Runtime tests of fastfetch aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs, kept outside the catalogue repository.
+
+[[test]]
+sha256  = "aea9135f2f22b471a1d7427a38c2df5dc37bd8548bef20f8a794374d188f366d"
+date    = "2026-11-12"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "verify", "remove"]
+note    = "apkg 0.7.6 from the public catalogue to RAM:; Pi note shown; verify 71 ok; rc 0; removed cleanly; real Pi untested"
