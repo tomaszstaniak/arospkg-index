@@ -698,14 +698,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.6",
+      "version": "0.7.7",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.6/arospkg-0.7.6.aarch64-aros-raspi.zip",
-      "size": 1089285,
-      "sha256": "f1784751dd7d1d962265a4305901dbacbffbb5b1ca1abeb5dd2c8e9948bfe907",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.aarch64-aros-raspi.zip",
+      "size": 1091999,
+      "sha256": "71a910a17eea7af18062a82d5a1e6dd28217373dc1e040cbbaac5235f06bafca",
       "depends": [],
       "requires_system": [
         {
@@ -731,7 +731,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.7.6.aarch64-aros-raspi",
+      "subdir": "arospkg-0.7.7.aarch64-aros-raspi",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -744,7 +744,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-11",
+        "date": "2026-11-12",
         "checked": [
           "metadata",
           "download",
@@ -764,15 +764,16 @@
           "arch": "aarch64",
           "abi": "v1",
           "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-11",
+          "date": "2026-11-12",
           "result": "passed",
           "checked": [
             "install",
+            "start",
             "upgrade",
             "verify",
             "remove"
           ],
-          "note": "0.7.6: published 0.7.5 self-updated to it from GitHub and fetched this catalogue; then install, upgrade (in-use note), verify, remove of dockbar 0.6.1 to 0.6.2"
+          "note": "0.7.7: 0.7.6 self-updated to it from GitHub; update, install fastfetch, verify, remove from this catalogue; upgrade suite 132 PASS (rc bytes); real Pi untested"
         }
       ],
       "first_added": "2026-10-04",
@@ -780,14 +781,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.6",
+      "version": "0.7.7",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "i386",
       "abi": "v0",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.6/arospkg-0.7.6.i386-aros-v0.zip",
-      "size": 375877,
-      "sha256": "df107a232dddd957729c029ff53f084e4cde30b10fb3db73bf6a9d7bffd4f248",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.i386-aros-v0.zip",
+      "size": 376323,
+      "sha256": "305f115918cdc3d3d562d27b69b62bb987f440a4f9e1627b96863f02be149b1b",
       "depends": [],
       "requires_system": [
         {
@@ -803,7 +804,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.7.6.i386-aros-v0",
+      "subdir": "arospkg-0.7.7.i386-aros-v0",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -811,7 +812,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-11",
+        "date": "2026-11-12",
         "checked": [
           "metadata",
           "download",
@@ -831,14 +832,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.7.6",
+      "version": "0.7.7",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.6/arospkg-0.7.6.x86_64-aros-v11.zip",
-      "size": 1010143,
-      "sha256": "a922c8855d73ef5cde1e5c17fdb685b72b06d236d4040e86e7bff4b313ee8936",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.x86_64-aros-v11.zip",
+      "size": 1011492,
+      "sha256": "6b3650ffb7437b1bf0f778f9c5d69f3e09429512562fcaea0c06a5fdc8c270b1",
       "depends": [],
       "requires_system": [
         {
@@ -862,7 +863,7 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "arospkg-0.7.6.x86_64-aros-v11",
+      "subdir": "arospkg-0.7.7.x86_64-aros-v11",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -875,7 +876,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-11",
+        "date": "2026-11-12",
         "checked": [
           "metadata",
           "download",
@@ -895,15 +896,29 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-11",
+          "date": "2026-11-12",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.7.7: published 0.7.6 self-updated to it from GitHub; it then ran update, install fastfetch (on the Shell path), verify and remove from this catalogue"
+        },
+        {
+          "system": "AROS ABIv11 2026.09",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-12",
           "result": "passed",
           "checked": [
             "install",
             "upgrade",
-            "verify",
             "remove"
           ],
-          "note": "0.7.6: published 0.7.5 self-updated to it from GitHub; it then ran update, upgrade dockbar 0.6.1 to 0.6.2 (in-use note), verify and remove from this catalogue"
+          "note": "0.7.7: fastfetch on the Shell path found after upgrade and rollback, tmp/ empty; upgrade suite 132 PASS on the same source before the version commit"
         }
       ],
       "first_added": "2026-10-04",
