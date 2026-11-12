@@ -67,3 +67,25 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "remove"]
 note    = "0.7.6: published 0.7.5 self-updated to it from GitHub; it then ran update, upgrade dockbar 0.6.1 to 0.6.2 (in-use note), verify and remove from this catalogue"
+
+[[test]]
+sha256  = "6b3650ffb7437b1bf0f778f9c5d69f3e09429512562fcaea0c06a5fdc8c270b1"
+date    = "2026-11-12"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "verify", "remove"]
+note    = "0.7.7: published 0.7.6 self-updated to it from GitHub; it then ran update, install fastfetch (on the Shell path), verify and remove from this catalogue"
+
+[[test]]
+sha256  = "6b3650ffb7437b1bf0f778f9c5d69f3e09429512562fcaea0c06a5fdc8c270b1"
+date    = "2026-11-12"
+system  = "AROS ABIv11 2026.09"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "remove"]
+note    = "0.7.7: fastfetch on the Shell path found after upgrade and rollback, tmp/ empty; upgrade suite 132 PASS on the same source before the version commit"

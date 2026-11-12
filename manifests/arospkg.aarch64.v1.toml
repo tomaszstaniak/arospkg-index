@@ -1,25 +1,26 @@
-# arospkg 0.7.6. An upgrade or rollback keeps the drawers the installed
-# files did not fill (empty ones a program made for itself); apkg says when
-# the drawer being upgraded is in use; archive members whose path would not
-# fit are refused. installs_on is filled after an apkg test of these bytes
-# from the published catalogue (runtime-tests/).
+# arospkg 0.7.7. An upgrade or rollback keeps the package drawer and
+# replaces its contents, so a Shell path or an assign to it keeps working
+# (Fastfetch was "object not found" after an upgrade until a reboot).
+# installs_on: the published 0.7.6 self-updated to 0.7.7 from GitHub on a
+# QEMU raspi3b (nightly 2026-11-10); these bytes then updated, installed,
+# ran, verified and removed fastfetch from the public catalogue (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.6"
+version         = "0.7.7"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.6/arospkg-0.7.6.aarch64-aros-raspi.zip"
-size            = 1089285
-sha256          = "f1784751dd7d1d962265a4305901dbacbffbb5b1ca1abeb5dd2c8e9948bfe907"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.aarch64-aros-raspi.zip"
+size            = 1091999
+sha256          = "71a910a17eea7af18062a82d5a1e6dd28217373dc1e040cbbaac5235f06bafca"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.6.aarch64-aros-raspi"
+subdir          = "arospkg-0.7.7.aarch64-aros-raspi"
 installs_on     = ["mainline-aarch64"]
 does_not_run_on = []
 
@@ -47,4 +48,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.6"
+revision   = "v0.7.7"

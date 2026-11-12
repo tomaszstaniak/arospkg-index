@@ -11,3 +11,14 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "remove"]
 note    = "0.7.6: published 0.7.5 self-updated to it from GitHub and fetched this catalogue; then install, upgrade (in-use note), verify, remove of dockbar 0.6.1 to 0.6.2"
+
+[[test]]
+sha256  = "71a910a17eea7af18062a82d5a1e6dd28217373dc1e040cbbaac5235f06bafca"
+date    = "2026-11-12"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "upgrade", "verify", "remove"]
+note    = "0.7.7: 0.7.6 self-updated to it from GitHub; update, install fastfetch, verify, remove from this catalogue; upgrade suite 132 PASS (rc bytes); real Pi untested"
