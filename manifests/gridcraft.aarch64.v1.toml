@@ -4,6 +4,7 @@
 
 id              = "gridcraft"
 version         = "0.19.1"
+revision        = 1
 summary         = "Spreadsheet for XLSX, ODS and CSV with formulas and PDF export"
 category        = "office/spreadsheet"
 license         = "MIT OR Apache-2.0"
@@ -21,10 +22,10 @@ post_install_notes = [
   "Settings, recent files and GridCraft.log are kept in GridCraftData in the program drawer; keep it when upgrading.",
   "No printing. Updates come through the AROS package manager.",
 ]
-sha256          = "06936bdc03523c836662e7ea731d8eabe83992704ab40bc9e07364740a3303c5"
-size            = 24094678
+sha256          = "eb173ccb8f9c01ba5cc3b865fa51e9f08a55f53a710742e1a71eaa455ad11656"
+size            = 24165868
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1/GridCraft-0.19.1-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r1/GridCraft-0.19.1-r1-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -56,8 +57,8 @@ id = "datatypes.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-gridcraft"
-revision = "v0.19.1"
-archive = "GridCraft-0.19.1-source.zip"
+revision = "v0.19.1-r1"
+archive = "GridCraft-0.19.1-r1-source.zip"
 built_with = "Raspberry Pi AArch64 ABIv1 (nightly 2026-11-10 SDK), Clang 20.1.0, Rust nightly 1.100 (rust-aros), egui 0.37 through egui-aros"
 
 [launch]
