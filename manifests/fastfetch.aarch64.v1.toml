@@ -1,0 +1,39 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/fastfetch.aarch64.v1.toml, which
+# every later submission applies again.
+
+id              = "fastfetch"
+version         = "2.70.0"
+revision        = 4
+summary         = "System information in the Shell, with the AROS logo"
+category        = "utility/misc"
+license         = "MIT"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "Fastfetch"
+depends         = []
+depends_checked = true
+post_install_notes = [
+  "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi.",
+]
+sha256          = "aea9135f2f22b471a1d7427a38c2df5dc37bd8548bef20f8a794374d188f366d"
+size            = 940297
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r4/Fastfetch-2.70.0-r4-aros-aarch64-abiv1-raspi.zip"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[launch]
+executable = "fastfetch"
+mode = "shell"
