@@ -2326,7 +2326,24 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi nightly 2026-11-10",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
+          "date": "2026-11-13",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index: installed, verify ok; opened a DWG, drew, Save As, exit 0; second start read the panel layout back; removed, CADCraftData kept"
+        }
+      ],
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13"
     },
@@ -2412,7 +2429,24 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-13",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index: installed, verify ok; opened a DWG, drew, Save As, exit 0; second start read the panel layout back; removed, CADCraftData kept"
+        }
+      ],
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13"
     },
@@ -2498,7 +2532,24 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3 (x86_64 ABIv11)",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-13",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, public catalogue: update, install (download), verify ok; opened a DWG, drew, Save As, exit 0; removed, CADCraftData kept"
+        }
+      ],
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13"
     },
