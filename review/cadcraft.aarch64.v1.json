@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "cadcraft",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-13",
+ "sha256": "c33b7869a5fe74afbb2c023138417445f7e70a5b84b3e63f883cd7a2f8cf614c",
+ "size": 37109973,
+ "manifest_digest": "7d7d02c0c795b5c09c9a1499aaa5aa87e7bdc477c0aa51c2b1d1f682e5b3b6ab",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 75004336,
+  "unpacked": 131095271
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "34 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 75004336 bytes (CADCraft/CADCraft), 131095271 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

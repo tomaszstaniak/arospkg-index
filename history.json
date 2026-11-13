@@ -113,6 +113,18 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "cadcraft/aarch64/v1": {
+   "first_added": "2026-11-13",
+   "commit": "cb5f49a41de0"
+  },
+  "cadcraft/x86_64/v1": {
+   "first_added": "2026-11-13",
+   "commit": "cb5f49a41de0"
+  },
+  "cadcraft/x86_64/v11": {
+   "first_added": "2026-11-13",
+   "commit": "cb5f49a41de0"
+  },
   "ccd2cue/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -822,6 +834,10 @@
   "cabextract": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "cadcraft": {
+   "first_added": "2026-11-13",
+   "commit": "cb5f49a41de0"
   },
   "ccd2cue": {
    "first_added": "2026-09-29",

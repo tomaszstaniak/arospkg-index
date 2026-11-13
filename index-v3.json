@@ -2245,6 +2245,264 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "cadcraft",
+      "version": "0.20.1",
+      "summary": "2D CAD drafting for DWG and DXF drawings with PDF and SVG export",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "graphics/cad",
+      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1/CADCraft-0.20.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 37109973,
+      "sha256": "c33b7869a5fe74afbb2c023138417445f7e70a5b84b3e63f883cd7a2f8cf614c",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "CADCraft",
+      "icon": "CADCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-cadcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Native Raspberry Pi build (nightly 2026-11-10). Tested in an emulator only.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, autosave files and CADCraft.log are kept in CADCraftData in the program drawer; keep it when upgrading.",
+        "Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "CADCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-13",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-11-13",
+      "app_first_added": "2026-11-13"
+    },
+    {
+      "id": "cadcraft",
+      "version": "0.20.1",
+      "summary": "2D CAD drafting for DWG and DXF drawings with PDF and SVG export",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "graphics/cad",
+      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1/CADCraft-0.20.1-aros-x86_64-abiv1-pc.zip",
+      "size": 38194936,
+      "sha256": "8cc243d0624db29f7de0d192c264698be62fdf28af10055ea21a2beae1f052fe",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "CADCraft",
+      "icon": "CADCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-cadcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, autosave files and CADCraft.log are kept in CADCraftData in the program drawer; keep it when upgrading.",
+        "Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "CADCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-13",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-11-13",
+      "app_first_added": "2026-11-13"
+    },
+    {
+      "id": "cadcraft",
+      "version": "0.20.1",
+      "summary": "2D CAD drafting for DWG and DXF drawings with PDF and SVG export",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "graphics/cad",
+      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1/CADCraft-0.20.1-aros-x86_64-abiv11-pc.zip",
+      "size": 43219001,
+      "sha256": "9f914f3415588483f6b4ed46cc8326d07d7e9289826f21dde64c8ca8b2efb5c6",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "CADCraft",
+      "icon": "CADCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-cadcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "AROS One 1.3 and other x86_64 ABIv11 systems.",
+        "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, autosave files and CADCraft.log are kept in CADCraftData in the program drawer; keep it when upgrading.",
+        "Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "CADCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-13",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-11-13",
+      "app_first_added": "2026-11-13"
+    },
+    {
       "id": "ccd2cue",
       "version": "0.1",
       "summary": "Converts CloneCD CCD to CUE format",
