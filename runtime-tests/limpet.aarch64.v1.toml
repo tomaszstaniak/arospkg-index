@@ -1,0 +1,13 @@
+# Runtime tests of limpet aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs, kept outside the catalogue repository.
+
+[[test]]
+sha256  = "20838cb2d3d3937bc6e1377ac93d188e5c4dd9ab55f308d412134bb055fa8bea"
+date    = "2026-11-13"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "verify"]
+note    = "0.10.0: apkg 0.7.8 from the public catalogue to RAM:; verify 33 ok; a Shell opened in its window; real Pi untested"
