@@ -1,0 +1,14 @@
+# Runtime tests of cadcraft aarch64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "c33b7869a5fe74afbb2c023138417445f7e70a5b84b3e63f883cd7a2f8cf614c"
+date    = "2026-11-13"
+system  = "AROS Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b (emulator, not Pi hardware)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: installed, verify ok; opened a DWG, drew, Save As, exit 0; second start read the panel layout back; removed, CADCraftData kept"

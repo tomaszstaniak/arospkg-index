@@ -1,0 +1,14 @@
+# Runtime tests of cadcraft x86_64/v11: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "9f914f3415588483f6b4ed46cc8326d07d7e9289826f21dde64c8ca8b2efb5c6"
+date    = "2026-11-13"
+system  = "AROS One 1.3 (x86_64 ABIv11)"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, public catalogue: update, install (download), verify ok; opened a DWG, drew, Save As, exit 0; removed, CADCraftData kept"
