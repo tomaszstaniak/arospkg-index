@@ -66,4 +66,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
-note    = "apkg 0.7.8, local index: upgraded from 0.19.1 revision 1, GridCraftData and a user file kept; verify ok; cell edits and two saves, exit 0; second start; removed"
+note    = "apkg 0.7.8, local index: upgraded from 0.19.1-r1, data and a user file kept; verify ok; cell edits, two saves, exit 0; second start; removed"

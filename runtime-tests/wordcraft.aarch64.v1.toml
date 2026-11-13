@@ -33,4 +33,4 @@ abi     = "v1"
 machine = "QEMU raspi3b (emulator, not Pi hardware)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
-note    = "apkg 0.7.8, local index: upgraded from 0.16.0 revision 1, WordCraftData and a user file kept; verify ok; typed, Save As, undo, redo, Save, exit 0; second start; removed"
+note    = "apkg 0.7.8, local index: upgraded from 0.16.0-r1, data and a user file kept; verify ok; typed, Save As, undo, redo, Save; second start; removed"
