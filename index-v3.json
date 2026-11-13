@@ -8368,7 +8368,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261110",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-13",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify"
+          ],
+          "note": "0.10.0: apkg 0.7.8 from the public catalogue to RAM:; verify 33 ok; a Shell opened in its window; real Pi untested"
+        }
+      ],
       "first_added": "2026-11-13",
       "app_first_added": "2026-10-03"
     },
