@@ -12,3 +12,14 @@ machine = "QEMU raspi3b (emulator, not Pi hardware)"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.8, local index: installed, verify ok; opened a DWG, drew, Save As, exit 0; second start read the panel layout back; removed, CADCraftData kept"
+
+[[test]]
+sha256  = "7bb93b7f20c440240f433f57db822b99d68a91e0d4d27ba71ba9fa46cce3be50"
+date    = "2026-11-13"
+system  = "AROS Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b (emulator, not Pi hardware)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.20.1, CADCraftData and a user file kept; verify ok; drew, zoomed, Save As, exit 0; second start; removed"

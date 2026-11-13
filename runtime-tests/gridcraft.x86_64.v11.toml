@@ -56,3 +56,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.6, local index: upgraded from 0.19.1, user file kept; verify ok; edits and two background saves from the installed drawer; exit 0; removed"
+
+[[test]]
+sha256  = "df2049cae48ae4aa1d3a37847971f620f0810221dc675ce314bdb97d7e829879"
+date    = "2026-11-13"
+system  = "AROS One 1.3 (ABIv11)"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.19.1 revision 1, GridCraftData and a user file kept; verify ok; cell edits and two saves, exit 0; second start; removed"

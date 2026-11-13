@@ -23,3 +23,14 @@ machine = "QEMU raspi3b"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.6, local index: upgraded from 0.19.1; verify ok; edits and two background saves, exit 0; removed. Emulator only, not Pi hardware"
+
+[[test]]
+sha256  = "50c275733a2d360381f777e238adec7bef609614d176a98418baaab4226ee835"
+date    = "2026-11-13"
+system  = "AROS Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b (emulator, not Pi hardware)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.19.1 revision 1, GridCraftData and a user file kept; verify ok; cell edits and two saves, exit 0; second start; removed"

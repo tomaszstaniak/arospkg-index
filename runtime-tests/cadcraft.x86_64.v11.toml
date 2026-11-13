@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.8, public catalogue: update, install (download), verify ok; opened a DWG, drew, Save As, exit 0; removed, CADCraftData kept"
+
+[[test]]
+sha256  = "114df78c42ea0e1d1fd03d1db024bfb3ab0fc929d409b2fcda0c5e43c20bd206"
+date    = "2026-11-13"
+system  = "AROS One 1.3 (ABIv11)"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.20.1, CADCraftData and a user file kept; verify ok; drew, zoomed, Save As, exit 0; second start; removed"

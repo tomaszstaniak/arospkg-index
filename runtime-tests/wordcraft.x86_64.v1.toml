@@ -23,3 +23,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "run", "verify", "remove"]
 note    = "apkg 0.7.5, public catalogue: requirements satisfied, installed, verify ok; --version, CLI docx/odt round trip byte-exact, editor 30 frames, exit 0, removed"
+
+[[test]]
+sha256  = "e44e734181bd461d4780aa4929b28a78b4336ce38358b980aa83052d1390c58b"
+date    = "2026-11-13"
+system  = "mainline AROS x86_64 nightly 2026-11-10"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.16.0 revision 1, WordCraftData and a user file kept; verify ok; typed, Save As, undo, redo, Save, exit 0; second start; removed"

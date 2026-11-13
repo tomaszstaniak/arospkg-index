@@ -23,3 +23,14 @@ machine = "QEMU (raspi3b, TCG)"
 result  = "passed"
 checked = ["install", "start", "run", "verify", "remove"]
 note    = "apkg 0.7.5, public catalogue: requirements satisfied, installed, verify ok; --version, CLI docx/odt round trip byte-exact, editor 30 frames, exit 0, removed"
+
+[[test]]
+sha256  = "cdb76d1f2ed4d44d46be22717c120f9117d5629512a8527fd117a36b67a6571f"
+date    = "2026-11-13"
+system  = "AROS Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b (emulator, not Pi hardware)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.16.0 revision 1, WordCraftData and a user file kept; verify ok; typed, Save As, undo, redo, Save, exit 0; second start; removed"

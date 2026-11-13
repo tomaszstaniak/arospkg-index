@@ -4,6 +4,7 @@
 
 id              = "cadcraft"
 version         = "0.20.1"
+revision        = 1
 summary         = "2D CAD drafting for DWG and DXF drawings with PDF and SVG export"
 category        = "graphics/cad"
 license         = "MIT OR Apache-2.0"
@@ -15,16 +16,16 @@ icon            = "CADCraft.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
-  "Native Raspberry Pi build (nightly 2026-11-10). Tested in an emulator only.",
-  "The CPU draws the whole window on every change, so the interface reacts with a delay on slow machines.",
+  "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+  "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
   "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
   "Settings, autosave files and CADCraft.log are kept in CADCraftData in the program drawer; keep it when upgrading.",
   "Updates come through the AROS package manager.",
 ]
-sha256          = "c33b7869a5fe74afbb2c023138417445f7e70a5b84b3e63f883cd7a2f8cf614c"
-size            = 37109973
+sha256          = "7bb93b7f20c440240f433f57db822b99d68a91e0d4d27ba71ba9fa46cce3be50"
+size            = 37132480
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1/CADCraft-0.20.1-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1-r1/CADCraft-0.20.1-r1-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -56,8 +57,8 @@ id = "datatypes.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-cadcraft"
-revision = "v0.20.1"
-archive = "CADCraft-0.20.1-source.zip"
+revision = "v0.20.1-r1"
+archive = "CADCraft-0.20.1-r1-source.zip"
 built_with = "Raspberry Pi AArch64 ABIv1 (nightly 2026-11-10 SDK), Clang 20.1.0, Rust nightly 1.100 (rust-aros), egui 0.37 through egui-aros"
 
 [launch]
