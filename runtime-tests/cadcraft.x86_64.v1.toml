@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.8, local index: installed, verify ok; opened a DWG, drew, Save As, exit 0; second start read the panel layout back; removed, CADCraftData kept"
+
+[[test]]
+sha256  = "d99f665abc83e01e9736c457786e55e09d49793adafcb4074207589493b3f9d4"
+date    = "2026-11-13"
+system  = "mainline AROS x86_64 nightly 2026-11-10"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.20.1, CADCraftData and a user file kept; verify ok; drew, zoomed, Save As, exit 0; second start; removed"
