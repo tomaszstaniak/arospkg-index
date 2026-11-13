@@ -417,6 +417,10 @@
    "first_added": "2026-10-24",
    "commit": "1dc15080d883"
   },
+  "limpet/aarch64/v1": {
+   "first_added": "2026-11-13",
+   "commit": "72255f64cbe0"
+  },
   "limpet/x86_64/v1": {
    "first_added": "2026-10-24",
    "commit": "4b6e9883cf0b"

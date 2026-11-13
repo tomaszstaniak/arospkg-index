@@ -7953,6 +7953,73 @@
       "id": "limpet",
       "version": "0.10.0",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "utility/shell",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 5250325,
+      "sha256": "20838cb2d3d3937bc6e1377ac93d188e5c4dd9ab55f308d412134bb055fa8bea",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "freetype2.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        }
+      ],
+      "installs_on": [
+        "mainline-aarch64"
+      ],
+      "runs_on": [
+        "mainline-aarch64"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Limpet",
+      "icon": "Limpet.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/limpet",
+      "license": "MIT",
+      "post_install_notes": [
+        "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi."
+      ],
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-13",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [],
+      "first_added": "2026-11-13",
+      "app_first_added": "2026-10-03"
+    },
+    {
+      "id": "limpet",
+      "version": "0.10.0",
+      "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",

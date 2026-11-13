@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "limpet",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-13",
+ "sha256": "20838cb2d3d3937bc6e1377ac93d188e5c4dd9ab55f308d412134bb055fa8bea",
+ "size": 5250325,
+ "manifest_digest": "930133b1ca26b8ff5bea1a4eb74fcd3a3d20ac53f1feb8f8a3afc3259bb2aef8",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 5321400,
+  "unpacked": 13413486
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "38 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 13413486 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
