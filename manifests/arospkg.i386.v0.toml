@@ -1,25 +1,26 @@
-# arospkg 0.7.7. An upgrade or rollback keeps the package drawer and
-# replaces its contents, so a Shell path or an assign to it keeps working
-# (Fastfetch was "object not found" after an upgrade until a reboot).
+# arospkg 0.7.8. apkg install refuses a package the catalogue has only for
+# another system and says which one it is for (it used to print "Installing",
+# install nothing and end without an error). 0.7.7: an upgrade or rollback
+# keeps the package drawer, so a Shell path or an assign to it keeps working.
 # installs_on is filled after an apkg test of these bytes from the
 # published catalogue (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.7"
+version         = "0.7.8"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "i386"
 abi             = "v0"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.i386-aros-v0.zip"
-size            = 376323
-sha256          = "305f115918cdc3d3d562d27b69b62bb987f440a4f9e1627b96863f02be149b1b"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.8/arospkg-0.7.8.i386-aros-v0.zip"
+size            = 376470
+sha256          = "e2d57bed60d77400e3c1eb3fa0f5c802f90e80281033e70145d2425abcd47343"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.7.i386-aros-v0"
+subdir          = "arospkg-0.7.8.i386-aros-v0"
 installs_on     = []
 does_not_run_on = []
 
@@ -33,4 +34,4 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.7"
+revision   = "v0.7.8"

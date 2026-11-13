@@ -1,27 +1,27 @@
-# arospkg 0.7.7. An upgrade or rollback keeps the package drawer and
-# replaces its contents, so a Shell path or an assign to it keeps working
-# (Fastfetch was "object not found" after an upgrade until a reboot).
-# installs_on: the published 0.7.6 self-updated to 0.7.7 from GitHub on a
-# QEMU raspi3b (nightly 2026-11-10); these bytes then updated, installed,
-# ran, verified and removed fastfetch from the public catalogue (runtime-tests/).
+# arospkg 0.7.8. apkg install refuses a package the catalogue has only for
+# another system and says which one it is for (it used to print "Installing",
+# install nothing and end without an error). 0.7.7: an upgrade or rollback
+# keeps the package drawer, so a Shell path or an assign to it keeps working.
+# installs_on is filled after an apkg test of these bytes on the Pi
+# (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.7.7"
+version         = "0.7.8"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.7/arospkg-0.7.7.aarch64-aros-raspi.zip"
-size            = 1091999
-sha256          = "71a910a17eea7af18062a82d5a1e6dd28217373dc1e040cbbaac5235f06bafca"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.7.8/arospkg-0.7.8.aarch64-aros-raspi.zip"
+size            = 1092049
+sha256          = "edcc207337fc13cf58bd563e3eb5b75543b57e564321af1c7df3c9757a5d7fd7"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.7.7.aarch64-aros-raspi"
-installs_on     = ["mainline-aarch64"]
+subdir          = "arospkg-0.7.8.aarch64-aros-raspi"
+installs_on     = []
 does_not_run_on = []
 
 [[requires_system]]
@@ -48,4 +48,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.7.7"
+revision   = "v0.7.8"
