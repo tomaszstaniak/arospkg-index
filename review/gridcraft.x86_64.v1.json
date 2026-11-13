@@ -4,14 +4,14 @@
  "id": "gridcraft",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-11-12",
- "sha256": "177f1dcd9013916ab3c92ab1dc76190c16fcfe107624347ff7fe7886688c175f",
- "size": 23985659,
- "manifest_digest": "e29f991265be9111003980ffb321bcde1ba4503478c8d61fc64722d8b94c66ec",
+ "date": "2026-11-13",
+ "sha256": "d6b0f082e796bf80fe917e5b7069d74b83f7c390653373d3a9ca9a7c7011b2ee",
+ "size": 24092664,
+ "manifest_digest": "21db39c5d2cfe889d2ead3cb58e61d52a8762b72e2e81e2e90d0e45d5735b05d",
  "result": "passed",
  "sizes": {
-  "largest_member": 50286792,
-  "unpacked": 84301065
+  "largest_member": 50461224,
+  "unpacked": 84542929
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 50286792 bytes (GridCraft/GridCraft), 84301065 bytes unpacked"
+   "detail": "largest member 50461224 bytes (GridCraft/GridCraft), 84542929 bytes unpacked"
   },
   {
    "name": "paths",
