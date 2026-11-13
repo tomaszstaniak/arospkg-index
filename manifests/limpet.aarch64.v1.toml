@@ -1,0 +1,58 @@
+# Limpet 0.10.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1): colour themes
+# (fifteen included; Ghostty, Kitty and iTerm2 colour files work as they are),
+# Preferences with pages for appearance, the Shell and the terminal.
+# Our own program, published by its author as an asset of the GitHub release
+# v0.10.0 (one source commit for all three archives). The experimental handler
+# is distributed separately. Release asset downloaded and SHA-256 checked.
+# Started under QEMU raspi3b (official nightly 20261110) from the unpacked
+# archive on 2026-11-13; an apkg test of this archive follows publication
+# (runtime-tests/). Runtime scope: limpet/doc/verification-0.10.0.md.
+# User data: ENVARC:Limpet (settings and the user's themes), outside the drawer.
+status          = "approved"
+id              = "limpet"
+version         = "0.10.0"
+revision        = 1
+summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
+arch            = "aarch64"
+abi             = "v1"
+category        = "utility/shell"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-aarch64-abiv1-raspi.zip"
+size            = 5250325
+sha256          = "20838cb2d3d3937bc6e1377ac93d188e5c4dd9ab55f308d412134bb055fa8bea"
+kind            = "app"
+license         = "MIT"
+
+depends         = []
+depends_checked = true
+subdir          = "Limpet"
+icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
+installs_on     = ["mainline-aarch64"]
+runs_on         = ["mainline-aarch64"]
+does_not_run_on = []
+
+post_install_notes = [
+  "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
+]
+
+# Libraries the binaries open that the system supplies. The system fonts
+# FONTS:TrueType/OpenSans-Regular.ttf and VeraMono.ttf are also used.
+[[requires_system]]
+type = "library"
+id   = "freetype2.library"
+
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/limpet"
+revision   = "v0.10.0"
+built_with = "AROS raspi-aarch64 SDK of 2026-08-22 (mainline ABIv1), Clang 20.1"
