@@ -210,3 +210,14 @@ machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "verify"]
 note = "0.10.1: apkg 0.7.8 upgraded 0.10.0 from the public catalogue (3 files replaced); verify 33/33; opened a Shell."
+
+[[test]]
+sha256 = "dc892ece121284c04f32f96a90628e92b83a550bce823adbf3eff9012d47dad3"
+date = "2026-11-14"
+system = "AROS One 1.3"
+arch = "x86_64"
+abi = "v11"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "start", "verify", "remove"]
+note = "0.11.0: apkg 0.7.8 installed from the public catalogue (archive downloaded in the guest); verify passed; Limpet and ssh 0.11.0 started; removed"
