@@ -66,4 +66,4 @@ abi = "v1"
 machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "verify", "remove"]
-note = "0.11.0: apkg 0.7.8 installed from the public catalogue (archive downloaded in the guest); verify passed; Limpet and ssh 0.11.0 started; removed. In an earlier boot verify gave no answer"
+note = "0.11.0: apkg 0.7.8 installed from the public catalogue; verify passed; Limpet and ssh started; removed. Verify hung in one earlier boot"
