@@ -1,0 +1,14 @@
+# Runtime tests of eza aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs, kept outside the
+# catalogue repository.
+
+[[test]]
+sha256 = "2b95016adacee8e59fa4c1a4bea13cee430e9aaccaf68d604322fc8bd91c2c33"
+date = "2026-11-14"
+system = "AROS AArch64 20261110"
+arch = "aarch64"
+abi = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result = "passed"
+checked = ["install", "start", "verify", "remove"]
+note = "0.23.5-r1: apkg 0.7.8 to RAM:, archive from GitHub: install, verify ok, listing in Limpet 0.10.1, remove; rc 0; real Pi untested"
