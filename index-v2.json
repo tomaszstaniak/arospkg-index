@@ -3727,6 +3727,86 @@
       "id": "eza",
       "version": "0.23.5",
       "summary": "A modern replacement for List and Dir: colours, icons, tree view, Git status",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "utility/shell",
+      "url": "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r1/Eza-0.23.5-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 8147532,
+      "sha256": "2b95016adacee8e59fa4c1a4bea13cee430e9aaccaf68d604322fc8bd91c2c33",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Eza",
+      "icon": "",
+      "install": {},
+      "revision": 1,
+      "license": "EUPL-1.2",
+      "post_install_notes": [
+        "eza lists files in Limpet 0.7.0 or later (apkg install limpet); the standard Shell window gets help and --version only.",
+        "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi."
+      ],
+      "launch": {
+        "executable": "eza",
+        "mode": "shell",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-14",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261110",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-14",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.23.5-r1: apkg 0.7.8 to RAM:, archive from GitHub: install, verify ok, listing in Limpet 0.10.1, remove; rc 0; real Pi untested"
+        }
+      ],
+      "first_added": "2026-11-14",
+      "app_first_added": "2026-11-14"
+    },
+    {
+      "id": "eza",
+      "version": "0.23.5",
+      "summary": "A modern replacement for List and Dir: colours, icons, tree view, Git status",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/shell",

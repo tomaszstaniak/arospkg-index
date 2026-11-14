@@ -221,6 +221,10 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "eza/aarch64/v1": {
+   "first_added": "2026-11-14",
+   "commit": "af89fe8eb92f"
+  },
   "eza/x86_64/v1": {
    "first_added": "2026-11-14",
    "commit": "3d17148a8afd"
