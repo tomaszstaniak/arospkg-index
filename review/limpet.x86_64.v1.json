@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v1",
  "date": "2026-11-14",
- "sha256": "9daa170e7934ed520c9a4281ef5af416b40a8c134dc1a607f76f8c9934c060da",
- "size": 5300674,
- "manifest_digest": "930daea5af086c5408e6899aa38833ad36b23afe52be73ce98de39154ff231c9",
+ "sha256": "358f2678c4c6e4bec0141c2303be813711150b05bd6f9589f2ca17fa880a531a",
+ "size": 5826576,
+ "manifest_digest": "4f1f8c97875940ec0bcc76d1fd55dc1b26bc8ceb06188ddde5c7c445a640c064",
  "result": "passed",
  "sizes": {
   "largest_member": 5321400,
-  "unpacked": 13369198
+  "unpacked": 14973608
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "38 members"
+   "detail": "43 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 13369198 bytes unpacked"
+   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 14973608 bytes unpacked"
   },
   {
    "name": "paths",
@@ -47,7 +47,7 @@
   {
    "name": "cpu",
    "result": "passed",
-   "detail": "2 ELF file(s) for x86_64"
+   "detail": "3 ELF file(s) for x86_64"
   }
  ],
  "unchecked": [

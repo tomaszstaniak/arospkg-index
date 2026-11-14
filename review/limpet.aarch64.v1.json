@@ -5,13 +5,13 @@
  "arch": "aarch64",
  "abi": "v1",
  "date": "2026-11-14",
- "sha256": "f93343818696df9ec340dd95b7ed06b0149e46f7ee6047d5eb42ec556edef53e",
- "size": 5250910,
- "manifest_digest": "a11510b558f43d4c3b718fec36978490307639f15749c6f46b5f62816f24ba7b",
+ "sha256": "abd898b725249377c0020258ba33d93b69598128bc1778ac3c418647996a11e4",
+ "size": 5801267,
+ "manifest_digest": "ca99e1a20ddac8457c83887ba02e0c3c1251d269f120935ea6af4fe51db3d0bf",
  "result": "passed",
  "sizes": {
   "largest_member": 5321400,
-  "unpacked": 13414782
+  "unpacked": 15155861
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "38 members"
+   "detail": "43 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 13414782 bytes unpacked"
+   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 15155861 bytes unpacked"
   },
   {
    "name": "paths",
@@ -47,7 +47,7 @@
   {
    "name": "cpu",
    "result": "passed",
-   "detail": "2 ELF file(s) for aarch64"
+   "detail": "3 ELF file(s) for aarch64"
   }
  ],
  "unchecked": [
