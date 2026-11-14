@@ -8624,14 +8624,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 5250325,
-      "sha256": "20838cb2d3d3937bc6e1377ac93d188e5c4dd9ab55f308d412134bb055fa8bea",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.1/Limpet-0.10.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 5250910,
+      "sha256": "f93343818696df9ec340dd95b7ed06b0149e46f7ee6047d5eb42ec556edef53e",
       "depends": [],
       "requires_system": [
         {
@@ -8671,7 +8671,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "checked": [
           "metadata",
           "download",
@@ -8685,35 +8685,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS AArch64 20261110",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-13",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "verify"
-          ],
-          "note": "0.10.0: apkg 0.7.8 from the public catalogue to RAM:; verify 33 ok; a Shell opened in its window; real Pi untested"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-13",
       "app_first_added": "2026-10-03"
     },
     {
       "id": "limpet",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-x86_64-abiv11-pc.zip",
-      "size": 5381549,
-      "sha256": "6bca6406ccab56d96c8e267029b164db47253dca42adf0b31fb794cda6bd5380",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.1/Limpet-0.10.1-aros-x86_64-abiv11-pc.zip",
+      "size": 5381838,
+      "sha256": "55e3ad7cc0cda9f5e467670f631d989bfa3f97be5dd98fe0e86354e54b92bf28",
       "depends": [],
       "requires_system": [
         {
@@ -8751,7 +8736,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "checked": [
           "metadata",
           "download",
@@ -8765,34 +8750,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-13",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start"
-          ],
-          "note": "0.10.0: apkg 0.7.7 upgraded 0.9.0 (13 added, 3 replaced, a user theme kept); verify 33/33; the upgraded copy opened a Shell."
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-10-03",
       "app_first_added": "2026-10-03"
     },
     {
       "id": "limpet",
-      "version": "0.10.0",
+      "version": "0.10.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-x86_64-abiv1-pc.zip",
-      "size": 5300326,
-      "sha256": "7800cb3cb803490ac98f86ae792cffd756528f061454591f7f11a1f1045aeeaf",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.1/Limpet-0.10.1-aros-x86_64-abiv1-pc.zip",
+      "size": 5300674,
+      "sha256": "9daa170e7934ed520c9a4281ef5af416b40a8c134dc1a607f76f8c9934c060da",
       "depends": [],
       "requires_system": [
         {
@@ -8829,7 +8800,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "checked": [
           "metadata",
           "download",
@@ -8843,20 +8814,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS mainline nightly 2026-11-10",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-13",
-          "result": "passed",
-          "checked": [
-            "start"
-          ],
-          "note": "0.10.0: unpacked archive; Shell, Dracula theme by name, font size 16. Not installed with apkg: the test machine had no name resolution."
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-10-24",
       "app_first_added": "2026-10-03"
     },
