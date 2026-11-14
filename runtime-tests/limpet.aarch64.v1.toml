@@ -22,3 +22,14 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["install", "start", "verify", "remove"]
 note    = "0.10.0: apkg 0.7.8 to the SD card; restart; remove kept settings and the user's theme; installed again; real Pi untested"
+
+[[test]]
+sha256  = "f93343818696df9ec340dd95b7ed06b0149e46f7ee6047d5eb42ec556edef53e"
+date    = "2026-11-14"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "remove"]
+note    = "0.10.1: apkg 0.7.8 upgraded 0.10.0 from the public catalogue on the SD card; Shell opened; removed; real Pi untested"

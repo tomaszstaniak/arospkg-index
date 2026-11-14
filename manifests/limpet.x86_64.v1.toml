@@ -20,7 +20,7 @@ depends         = []
 depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
-installs_on     = []
+installs_on     = ["mainline-x86_64"]   # apkg 0.7.8 install, upgrade, verify and remove 2026-11-14 (runtime-tests/)
 runs_on         = ["mainline-x86_64"]   # 0.10.1 run from the unpacked archive 2026-11-14
 does_not_run_on = ["aros-one"]          # ABIv1 binary; AROS One is ABIv11
 
