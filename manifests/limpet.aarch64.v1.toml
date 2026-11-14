@@ -1,24 +1,25 @@
-# Limpet 0.10.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1): colour themes
-# (fifteen included; Ghostty, Kitty and iTerm2 colour files work as they are),
-# Preferences with pages for appearance, the Shell and the terminal.
+# Limpet 0.10.1 for AROS on Raspberry Pi (aarch64, mainline ABIv1): maintenance
+# release of 0.10.0 (colour themes, Preferences in three pages). Mainline builds
+# that show transparent windows without a frame keep a solid background.
 # Our own program, published by its author as an asset of the GitHub release
-# v0.10.0 (one source commit for all three archives). The experimental handler
+# v0.10.1 (one source commit for all three archives). The experimental handler
 # is distributed separately. Release asset downloaded and SHA-256 checked.
 # Started under QEMU raspi3b (official nightly 20261110) from the unpacked
-# archive on 2026-11-13; an apkg test of this archive follows publication
-# (runtime-tests/). Runtime scope: limpet/doc/verification-0.10.0.md.
+# archive on 2026-11-14; 0.10.0 was installed, removed and installed again
+# with apkg on the SD card the same day (runtime-tests/).
+# Runtime scope: limpet/doc/verification-0.10.1.md.
 # User data: ENVARC:Limpet (settings and the user's themes), outside the drawer.
 status          = "approved"
 id              = "limpet"
-version         = "0.10.0"
+version         = "0.10.1"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-aarch64-abiv1-raspi.zip"
-size            = 5250325
-sha256          = "20838cb2d3d3937bc6e1377ac93d188e5c4dd9ab55f308d412134bb055fa8bea"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.1/Limpet-0.10.1-aros-aarch64-abiv1-raspi.zip"
+size            = 5250910
+sha256          = "f93343818696df9ec340dd95b7ed06b0149e46f7ee6047d5eb42ec556edef53e"
 kind            = "app"
 license         = "MIT"
 
@@ -54,5 +55,5 @@ id   = "stdcio.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.10.0"
+revision   = "v0.10.1"
 built_with = "AROS raspi-aarch64 SDK of 2026-08-22 (mainline ABIv1), Clang 20.1"

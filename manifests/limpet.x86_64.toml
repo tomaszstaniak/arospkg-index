@@ -1,18 +1,18 @@
-# Limpet 0.10.0: colour themes (fifteen included; Ghostty, Kitty and iTerm2 colour files work as they are),
-# Preferences with pages for appearance, the Shell and the terminal.
+# Limpet 0.10.1: maintenance release of 0.10.0 (colour themes, Preferences in three pages).
+# Mainline builds that show transparent windows without a frame keep a solid background.
 # Experimental handler is distributed separately. Release assets downloaded and SHA-256 checked.
-# Runtime scope: limpet/doc/verification-0.10.0.md.
+# Runtime scope: limpet/doc/verification-0.10.1.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.10.0"
+version         = "0.10.1"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.0/Limpet-0.10.0-aros-x86_64-abiv11-pc.zip"
-size            = 5381549
-sha256          = "6bca6406ccab56d96c8e267029b164db47253dca42adf0b31fb794cda6bd5380"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.1/Limpet-0.10.1-aros-x86_64-abiv11-pc.zip"
+size            = 5381838
+sha256          = "55e3ad7cc0cda9f5e467670f631d989bfa3f97be5dd98fe0e86354e54b92bf28"
 kind            = "app"
 
 depends         = []
@@ -44,5 +44,5 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.10.0"
+revision   = "v0.10.1"
 built_with = "abiv11-x86_64, GCC 10.5.0"
