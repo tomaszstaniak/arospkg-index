@@ -4422,6 +4422,21 @@
             "run"
           ],
           "note": "0.23.5-r1: executable run from RAM:; listings, tree, Git status to files (rc 0); icons in Limpet 0.10.1. Not yet installed with apkg."
+        },
+        {
+          "system": "AROS mainline nightly 2026-11-10",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-14",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.23.5-r1: apkg 0.7.8, host-fetched public index and archive: install, verify ok, listing in Limpet 0.10.1, remove; rc 0"
         }
       ],
       "first_added": "2026-11-14",
@@ -4499,6 +4514,21 @@
             "run"
           ],
           "note": "0.23.5-r1: executable run from RAM: in Limpet 0.10.1: long listing with icons and Git status, tree. Not yet installed with apkg."
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-14",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.23.5-r1: apkg 0.7.8 from the public catalogue: install, verify ok, listing with icons in Limpet 0.10.1, remove; rc 0"
         }
       ],
       "first_added": "2026-11-14",
