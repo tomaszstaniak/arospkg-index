@@ -7979,7 +7979,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS AArch64 20261110",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "rpi-1, QEMU raspi3b",
+          "date": "2026-11-14",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove"
+          ],
+          "note": "0.10.1: apkg 0.7.8 upgraded 0.10.0 from the public catalogue on the SD card; Shell opened; removed; real Pi untested"
+        }
+      ],
       "first_added": "2026-11-13",
       "app_first_added": "2026-10-03"
     },
@@ -8044,7 +8059,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-14",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify"
+          ],
+          "note": "0.10.1: apkg 0.7.8 upgraded 0.10.0 from the public catalogue (3 files replaced); verify 33/33; opened a Shell."
+        }
+      ],
       "first_added": "2026-10-03",
       "app_first_added": "2026-10-03"
     },
@@ -8077,7 +8107,9 @@
           "id": "stdcio.library"
         }
       ],
-      "installs_on": [],
+      "installs_on": [
+        "mainline-x86_64"
+      ],
       "runs_on": [
         "mainline-x86_64"
       ],
@@ -8108,7 +8140,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS mainline nightly 2026-11-10",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-14",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.10.1: apkg 0.7.8 upgraded 0.10.0 from host-fetched public index and archive; verify 33/33; Shell opened; removed"
+        }
+      ],
       "first_added": "2026-10-24",
       "app_first_added": "2026-10-03"
     },
