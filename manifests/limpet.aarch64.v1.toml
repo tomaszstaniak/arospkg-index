@@ -1,25 +1,17 @@
-# Limpet 0.10.1 for AROS on Raspberry Pi (aarch64, mainline ABIv1): maintenance
-# release of 0.10.0 (colour themes, Preferences in three pages). Mainline builds
-# that show transparent windows without a frame keep a solid background.
-# Our own program, published by its author as an asset of the GitHub release
-# v0.10.1 (one source commit for all three archives). The experimental handler
-# is distributed separately. Release asset downloaded and SHA-256 checked.
-# Started under QEMU raspi3b (official nightly 20261110) from the unpacked
-# archive on 2026-11-14; 0.10.0 was installed, removed and installed again
-# with apkg on the SD card the same day (runtime-tests/).
-# Runtime scope: limpet/doc/verification-0.10.1.md.
-# User data: ENVARC:Limpet (settings and the user's themes), outside the drawer.
+# Limpet 0.11.0: adds an SSH client (ssh in the drawer; libssh with the aros-crypto kit).
+# The terminal, its settings and the experimental handler (distributed separately) are unchanged.
+# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.11.0.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.10.1"
+version         = "0.11.0"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.10.1/Limpet-0.10.1-aros-aarch64-abiv1-raspi.zip"
-size            = 5250910
-sha256          = "f93343818696df9ec340dd95b7ed06b0149e46f7ee6047d5eb42ec556edef53e"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.11.0/Limpet-0.11.0-aros-aarch64-abiv1-raspi.zip"
+size            = 5801267
+sha256          = "abd898b725249377c0020258ba33d93b69598128bc1778ac3c418647996a11e4"
 kind            = "app"
 license         = "MIT"
 
@@ -28,7 +20,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["mainline-aarch64"]
-runs_on         = ["mainline-aarch64"]
+runs_on         = ["mainline-aarch64"]   # 0.11.0 run from the unpacked archive 2026-11-14
 does_not_run_on = []
 
 post_install_notes = [
@@ -55,5 +47,5 @@ id   = "stdcio.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.10.1"
+revision   = "v0.11.0"
 built_with = "AROS raspi-aarch64 SDK of 2026-08-22 (mainline ABIv1), Clang 20.1"
