@@ -34,3 +34,14 @@ machine = "QEMU (TCG)"
 result = "passed"
 checked = ["start"]
 note = "0.10.0: unpacked archive; Shell, Dracula theme by name, font size 16. Not installed with apkg: the test machine had no name resolution."
+
+[[test]]
+sha256 = "7800cb3cb803490ac98f86ae792cffd756528f061454591f7f11a1f1045aeeaf"
+date = "2026-11-14"
+system = "AROS mainline nightly 2026-11-10"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "start", "verify", "remove"]
+note = "0.10.0: apkg 0.7.8 upgraded 0.9.0 from host-fetched index and archive; restart; remove kept settings; installed again"
