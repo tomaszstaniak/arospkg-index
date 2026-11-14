@@ -11,4 +11,4 @@ abi = "v11"
 machine = "QEMU (TCG)"
 result = "passed"
 checked = ["start", "run"]
-note = "0.23.5-r1: this archive's executable run from RAM: in Limpet 0.10.1: long listing with icons and Git status, tree. Not yet installed with apkg."
+note = "0.23.5-r1: executable run from RAM: in Limpet 0.10.1: long listing with icons and Git status, tree. Not yet installed with apkg."
