@@ -1,0 +1,40 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/eza.aarch64.v1.toml, which
+# every later submission applies again.
+
+id              = "eza"
+version         = "0.23.5"
+revision        = 1
+summary         = "A modern replacement for List and Dir: colours, icons, tree view, Git status"
+category        = "utility/shell"
+license         = "EUPL-1.2"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "Eza"
+depends         = []
+depends_checked = true
+post_install_notes = [
+  "eza lists files in Limpet 0.7.0 or later (apkg install limpet); the standard Shell window gets help and --version only.",
+  "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi.",
+]
+sha256          = "2b95016adacee8e59fa4c1a4bea13cee430e9aaccaf68d604322fc8bd91c2c33"
+size            = 8147532
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r1/Eza-0.23.5-r1-aros-aarch64-abiv1-raspi.zip"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[launch]
+executable = "eza"
+mode = "shell"
