@@ -56,3 +56,14 @@ machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "verify", "remove"]
 note = "0.10.1: apkg 0.7.8 upgraded 0.10.0 from host-fetched public index and archive; verify 33/33; Shell opened; removed"
+
+[[test]]
+sha256 = "358f2678c4c6e4bec0141c2303be813711150b05bd6f9589f2ca17fa880a531a"
+date = "2026-11-14"
+system = "AROS mainline nightly 2026-11-13"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "start", "verify", "remove"]
+note = "0.11.0: apkg 0.7.8 installed from the public catalogue; verify passed; Limpet and ssh started; removed. Verify hung in one earlier boot"
