@@ -1,0 +1,90 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/pragtical.aarch64.v1.toml, which
+# every later submission applies again.
+
+id              = "pragtical"
+version         = "3.14.0"
+revision        = 2
+summary         = "Lightweight code editor: syntax highlighting, project tree, find in files"
+category        = "development/edit"
+license         = "MIT"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "Pragtical"
+icon            = "Pragtical.info"
+depends         = []
+depends_checked = true
+post_install_notes = [
+  "Start it from the pragtical icon, which sets the stack the editor needs.",
+  "From a Shell: Execute run-pragtical, or Stack 8000000 and then pragtical <file or drawer>.",
+  "Settings and added plugins are kept in the user drawer of the package.",
+]
+sha256          = "52b50144fcda742410baeae68829f3581d6e9bc76a4926891ab3d9fe8056971e"
+size            = 4145276
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros2/pragtical-3.14.0-aros2-aros-aarch64-abiv1-raspi.zip"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id = "gadtools.library"
+
+[[requires_system]]
+type = "library"
+id = "gl.library"
+
+[[requires_system]]
+type = "library"
+id = "icon.library"
+
+[[requires_system]]
+type = "library"
+id = "iffparse.library"
+
+[[requires_system]]
+type = "library"
+id = "keymap.library"
+
+[[requires_system]]
+type = "library"
+id = "lowlevel.library"
+
+[[requires_system]]
+type = "library"
+id = "muimaster.library"
+
+[[requires_system]]
+type = "library"
+id = "commodities.library"
+
+[[requires_system]]
+type = "library"
+id = "workbench.library"
+
+[[requires_system]]
+type = "library"
+id = "z1.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-pragtical"
+revision = "v3.14.0-aros2"
+
+[launch]
+executable = "pragtical"
+mode = "workbench"

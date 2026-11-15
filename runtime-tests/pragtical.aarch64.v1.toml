@@ -1,0 +1,13 @@
+# Runtime tests of pragtical aarch64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs, kept outside the catalogue repository.
+
+[[test]]
+sha256  = "52b50144fcda742410baeae68829f3581d6e9bc76a4926891ab3d9fe8056971e"
+date    = "2026-11-15"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b"
+result  = "passed"
+checked = ["start", "run"]
+note    = "3.14.0 revision 2: archive unpacked on the host and copied to RAM:, not installed with apkg; started with WBRun (icon stack) and from a Shell with a file; Polish keymap typing, copy and paste, save with bytes checked; quit; real Pi untested"
