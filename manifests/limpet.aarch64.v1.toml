@@ -1,17 +1,17 @@
-# Limpet 0.11.0: adds an SSH client (ssh in the drawer; libssh with the aros-crypto kit).
+# Limpet 0.12.1: adds scp, ssh-keygen and ssh-copy-id beside ssh (libssh with the aros-crypto kit).
 # The terminal, its settings and the experimental handler (distributed separately) are unchanged.
-# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.11.0.md.
+# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.12.1.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.11.0"
+version         = "0.12.1"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.11.0/Limpet-0.11.0-aros-aarch64-abiv1-raspi.zip"
-size            = 5801267
-sha256          = "abd898b725249377c0020258ba33d93b69598128bc1778ac3c418647996a11e4"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.1/Limpet-0.12.1-aros-aarch64-abiv1-raspi.zip"
+size            = 7372597
+sha256          = "d628248e01db484b90f9391eed66f4b62406b5ee64c125a4bf6bcdc3eb1a0b4c"
 kind            = "app"
 license         = "MIT"
 
@@ -20,7 +20,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["mainline-aarch64"]
-runs_on         = ["mainline-aarch64"]   # 0.11.0 run from the unpacked archive 2026-11-14
+runs_on         = ["mainline-aarch64"]   # 0.12.1 run from the unpacked archive 2026-11-15
 does_not_run_on = []
 
 post_install_notes = [
@@ -47,5 +47,5 @@ id   = "stdcio.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.11.0"
+revision   = "v0.12.1"
 built_with = "AROS raspi-aarch64 SDK of 2026-08-22 (mainline ABIv1), Clang 20.1"
