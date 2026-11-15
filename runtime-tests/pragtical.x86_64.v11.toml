@@ -10,4 +10,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start", "run"]
-note    = "3.14.0 revision 2: archive unpacked with UnZip to RAM:, not installed with apkg; started with WBRun (icon stack) and from a Shell with a file; Polish keymap typing, copy and paste, save with bytes checked; quit"
+note    = "3.14.0 r2: unpacked with UnZip, no apkg install; WBRun and Shell start; Polish typing, copy and paste, save checked; quit"
