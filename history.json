@@ -573,6 +573,18 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "pragtical/aarch64/v1": {
+   "first_added": "2026-11-15",
+   "commit": "eb95dfb4e3ed"
+  },
+  "pragtical/x86_64/v1": {
+   "first_added": "2026-11-15",
+   "commit": "eb95dfb4e3ed"
+  },
+  "pragtical/x86_64/v11": {
+   "first_added": "2026-11-15",
+   "commit": "eb95dfb4e3ed"
+  },
   "prboom-plus/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -1130,6 +1142,10 @@
   "potrace": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "pragtical": {
+   "first_added": "2026-11-15",
+   "commit": "eb95dfb4e3ed"
   },
   "prboom-plus": {
    "first_added": "2026-09-29",

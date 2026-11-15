@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "pragtical",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-15",
+ "sha256": "5b8ee515920cd684d8a78432349dbf3ea450d9cb320971a59ae1dc4acc7117f9",
+ "size": 4509447,
+ "manifest_digest": "c682ac4807de039847c8a633fa4839a12c65c83feae0c636365891876ac0c525",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 10483960,
+  "unpacked": 13873333
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "368 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 10483960 bytes (Pragtical/pragtical), 13873333 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
