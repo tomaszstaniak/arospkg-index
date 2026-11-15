@@ -8308,7 +8308,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-15",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.12.1: apkg 0.7.8 installed from the public catalogue; verify passed; Limpet started; ssh, scp, ssh-keygen report 0.12.1; removed"
+        }
+      ],
       "first_added": "2026-10-03",
       "app_first_added": "2026-10-03"
     },
@@ -8374,7 +8390,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS mainline nightly 2026-11-13",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-15",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.12.1: apkg 0.7.8 installed from the public catalogue; verify passed; Limpet started; ssh, scp, ssh-keygen report 0.12.1; removed"
+        }
+      ],
       "first_added": "2026-10-24",
       "app_first_added": "2026-10-03"
     },
