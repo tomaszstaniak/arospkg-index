@@ -1,0 +1,13 @@
+# Runtime tests of pragtical x86_64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs, kept outside the catalogue repository.
+
+[[test]]
+sha256  = "5b8ee515920cd684d8a78432349dbf3ea450d9cb320971a59ae1dc4acc7117f9"
+date    = "2026-11-15"
+system  = "mainline AROS x86_64 nightly 2026-11-13"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["start", "run"]
+note    = "3.14.0 r2: unpacked with UnZip, no apkg install; WBRun and Shell start; Polish typing, copy and paste, save checked; quit"
