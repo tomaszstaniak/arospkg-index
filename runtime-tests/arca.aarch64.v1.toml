@@ -1,0 +1,11 @@
+
+[[test]]
+sha256 = "be694c1e5bff1e5031e4265d0abd817aedb1e02c87259d9ef2bd58830e4e4bf8"
+date = "2026-11-16"
+system = "mainline AROS Raspberry Pi nightly 20261110 non-SMP, exec 51.16, stdc 0.53"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "start", "verify", "remove"]
+note = "apkg0.7.8 local ZIP: install,29-file verify,Workbench start/close,remove; user file kept. QEMU non-SMP; core tests also SMP. No physical hardware."
