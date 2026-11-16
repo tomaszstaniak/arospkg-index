@@ -4,7 +4,7 @@
 
 id              = "arca"
 version         = "0.1.1"
-revision        = 1
+revision        = 2
 summary         = "Pack, browse and extract archives with a native Zune interface"
 category        = "utility/archive"
 license         = "MIT; bundled libraries and helpers retain their own licences"
@@ -21,10 +21,10 @@ post_install_notes = [
   "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
   "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes.",
 ]
-sha256          = "be694c1e5bff1e5031e4265d0abd817aedb1e02c87259d9ef2bd58830e4e4bf8"
-size            = 2654403
+sha256          = "42654177e301609bff259d4e4160ee99e9d7b6ebe91fbaafa3bed63dc9161850"
+size            = 2654742
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -45,7 +45,7 @@ min_version = 19
 
 [source]
 repository = "https://github.com/tomaszstaniak/arca"
-revision = "v0.1.1"
+revision = "v0.1.1-r2"
 built_with = "Native AROS Raspberry Pi AArch64 ABIv1 SDK, Clang 20.1.0"
 
 [launch]

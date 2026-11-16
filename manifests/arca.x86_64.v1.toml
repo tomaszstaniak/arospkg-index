@@ -4,7 +4,7 @@
 
 id              = "arca"
 version         = "0.1.1"
-revision        = 1
+revision        = 2
 summary         = "Pack, browse and extract archives with a native Zune interface"
 category        = "utility/archive"
 license         = "MIT; bundled libraries and helpers retain their own licences"
@@ -21,10 +21,10 @@ post_install_notes = [
   "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
   "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes.",
 ]
-sha256          = "82eacc938f09212f5d4c1a9e58d037b0a4eef06ea8bdfc9415a9831225022c06"
-size            = 2248107
+sha256          = "4cef57769f53a90b2ee0a733c20b1b2b3d8697d85327cedacf162cfa49a86ad0"
+size            = 2264359
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-x86_64-abiv1-pc.zip"
+url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"
@@ -45,7 +45,7 @@ min_version = 19
 
 [source]
 repository = "https://github.com/tomaszstaniak/arca"
-revision = "v0.1.1"
+revision = "v0.1.1-r2"
 built_with = "AROS mainline x86_64 SDK, GCC 10.5.0"
 
 [launch]

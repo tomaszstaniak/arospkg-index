@@ -19,3 +19,14 @@ machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "verify", "remove"]
 note = "apkg0.7.8 local ZIP: upgrade0.1.0,29-file verify,Workbench start/close,remove; user file kept. Modified ReadMe protected; backed up before retry."
+
+[[test]]
+sha256 = "4e6c26675694235063d0fdc327b3b9b3700d021b5a0829b88347f25e3dc74fa0"
+date = "2026-11-16"
+system = "AROS One 1.3 x86_64 ABIv11, exec 51.8"
+arch = "x86_64"
+abi = "v11"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "upgrade", "verify", "remove"]
+note = "apkg 0.7.8: r1 to r2 upgrade, 29-file verify, run --check and remove passed; user file kept, ReadMe exact. Unchanged binaries retain prior runtime evidence."
