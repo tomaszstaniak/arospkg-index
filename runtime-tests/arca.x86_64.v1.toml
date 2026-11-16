@@ -1,0 +1,10 @@
+[[test]]
+sha256 = "9144a4bdb1ec16bb14bc43d7d57e53f2c3d287a659b40a53749359b31c7a38f0"
+date = "2026-11-16"
+system = "mainline AROS x86_64 nightly 20261115, exec 51.17"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "start", "verify", "remove"]
+note = "apkg 0.7.8 fetched public GitHub ZIP to RAM; 26 files verified; Workbench start/close; remove kept modified ReadMe and user file"
