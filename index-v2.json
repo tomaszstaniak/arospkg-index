@@ -519,6 +519,176 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "arca",
+      "version": "0.1.0",
+      "summary": "Pack, browse and extract archives with a native Zune interface",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "utility/archive",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.0/Arca-0.1.0-aros-x86_64-abiv1-pc.zip",
+      "size": 2231360,
+      "sha256": "9144a4bdb1ec16bb14bc43d7d57e53f2c3d287a659b40a53749359b31c7a38f0",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library",
+          "min_version": 19
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Arca",
+      "icon": "Arca.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/arca",
+      "license": "MIT; bundled libraries and helpers retain their own licences",
+      "post_install_notes": [
+        "Requires the system NList, NListview and NFloattext Zune classes.",
+        "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
+        "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes."
+      ],
+      "launch": {
+        "executable": "Arca",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-16",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 20261115, exec 51.17",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-16",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.8 fetched public GitHub ZIP to RAM; 26 files verified; Workbench start/close; remove kept modified ReadMe and user file"
+        }
+      ],
+      "first_added": "2026-11-16",
+      "app_first_added": "2026-11-16"
+    },
+    {
+      "id": "arca",
+      "version": "0.1.0",
+      "summary": "Pack, browse and extract archives with a native Zune interface",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "utility/archive",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.0/Arca-0.1.0-aros-x86_64-abiv11-pc.zip",
+      "size": 3585627,
+      "sha256": "84db9a6f7306296abf7e9eff171d09094071cf117d493486863e5f8fde57a21d",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library",
+          "min_version": 19
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Arca",
+      "icon": "Arca.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/arca",
+      "license": "MIT; bundled libraries and helpers retain their own licences",
+      "post_install_notes": [
+        "Requires the system NList, NListview and NFloattext Zune classes.",
+        "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
+        "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes."
+      ],
+      "launch": {
+        "executable": "Arca",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-16",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3 x86_64 ABIv11, exec 51.8",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-16",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.7.8 fetched public GitHub ZIP to RAM; 26 files verified; Workbench start/close; remove kept modified ReadMe and user file"
+        }
+      ],
+      "first_added": "2026-11-16",
+      "app_first_added": "2026-11-16"
+    },
+    {
       "id": "aroscapture",
       "version": "0.1.1",
       "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
@@ -10550,9 +10720,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros2/pragtical-3.14.0-aros2-aros-aarch64-abiv1-raspi.zip",
-      "size": 4145276,
-      "sha256": "52b50144fcda742410baeae68829f3581d6e9bc76a4926891ab3d9fe8056971e",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros3/pragtical-3.14.0-aros3-aros-aarch64-abiv1-raspi.zip",
+      "size": 4146211,
+      "sha256": "a7c78efd071431de447c78fbdd890c6b58c1464708e2cd4d7280490939bb90b9",
       "depends": [],
       "requires_system": [
         {
@@ -10619,7 +10789,7 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
@@ -10635,7 +10805,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-15",
+        "date": "2026-11-16",
         "checked": [
           "metadata",
           "download",
@@ -10655,13 +10825,13 @@
           "arch": "aarch64",
           "abi": "v1",
           "machine": "QEMU raspi3b",
-          "date": "2026-11-15",
+          "date": "2026-11-16",
           "result": "passed",
           "checked": [
             "start",
             "run"
           ],
-          "note": "3.14.0 r2: unpacked on the host, no apkg install; WBRun and Shell start; Polish typing, copy and paste, save checked; real Pi untested"
+          "note": "3.14.0 r3: copied from the host, no apkg install; Shell start; system window, iconify and restore, fullscreen, save; real Pi untested"
         }
       ],
       "first_added": "2026-11-15",
@@ -10674,9 +10844,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros2/pragtical-3.14.0-aros2-aros-x86_64-abiv1-pc.zip",
-      "size": 4509447,
-      "sha256": "5b8ee515920cd684d8a78432349dbf3ea450d9cb320971a59ae1dc4acc7117f9",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros3/pragtical-3.14.0-aros3-aros-x86_64-abiv1-pc.zip",
+      "size": 4510233,
+      "sha256": "4ccdc0b05eb3f6e41800c9431816fedb1918f8de6b6bdf2a74a0470b110be852",
       "depends": [],
       "requires_system": [
         {
@@ -10743,7 +10913,7 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
@@ -10759,7 +10929,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-15",
+        "date": "2026-11-16",
         "checked": [
           "metadata",
           "download",
@@ -10779,13 +10949,13 @@
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-15",
+          "date": "2026-11-16",
           "result": "passed",
           "checked": [
             "start",
             "run"
           ],
-          "note": "3.14.0 r2: unpacked with UnZip, no apkg install; WBRun and Shell start; Polish typing, copy and paste, save checked; quit"
+          "note": "3.14.0 r3: unpacked with UnZip, no apkg install; Shell start; system window, iconify and restore, fullscreen, save, close gadget"
         }
       ],
       "first_added": "2026-11-15",
@@ -10798,9 +10968,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros2/pragtical-3.14.0-aros2-aros-x86_64-abiv11-pc.zip",
-      "size": 4515767,
-      "sha256": "94b12a155dfb115845df7b20e4b4a669e430858e86a7a2864d51596b93655a14",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros3/pragtical-3.14.0-aros3-aros-x86_64-abiv11-pc.zip",
+      "size": 4516151,
+      "sha256": "eb2a8b9216c40839623d6dcdb905fd8e784922c641a92f4ad96f350dd3b15c28",
       "depends": [],
       "requires_system": [
         {
@@ -10867,7 +11037,7 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
@@ -10883,7 +11053,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-15",
+        "date": "2026-11-16",
         "checked": [
           "metadata",
           "download",
@@ -10903,13 +11073,13 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-15",
+          "date": "2026-11-16",
           "result": "passed",
           "checked": [
             "start",
             "run"
           ],
-          "note": "3.14.0 r2: unpacked with UnZip, no apkg install; WBRun and Shell start; Polish typing, copy and paste, save checked; quit"
+          "note": "3.14.0 r3: unpacked with UnZip, no apkg install; Shell start; system window, iconify and restore, fullscreen, save, close gadget"
         }
       ],
       "first_added": "2026-11-15",
