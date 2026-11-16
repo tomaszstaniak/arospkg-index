@@ -5,13 +5,13 @@
  "arch": "aarch64",
  "abi": "v1",
  "date": "2026-11-16",
- "sha256": "1025f2bacbffbdfc9fbcbca394fa2220b6fed62ff496c86942e1fbd061028e91",
- "size": 4146316,
- "manifest_digest": "bb2083e1d9d920cf909bd58242cff62a17d20e2f8852577080dee7a006b46938",
+ "sha256": "2811a36cc0d67aa7c0c2233ef705923c95676f98ad343be141b196641d1c95f5",
+ "size": 4146407,
+ "manifest_digest": "789e942fe3b4e8c6f85ee2d8ebd576d8a2e33c5ab4ed88f1cab7455ff6f97758",
  "result": "passed",
  "sizes": {
-  "largest_member": 11159952,
-  "unpacked": 14549537
+  "largest_member": 11159984,
+  "unpacked": 14549569
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 11159952 bytes (Pragtical/pragtical), 14549537 bytes unpacked"
+   "detail": "largest member 11159984 bytes (Pragtical/pragtical), 14549569 bytes unpacked"
   },
   {
    "name": "paths",
