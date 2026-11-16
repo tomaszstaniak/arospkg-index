@@ -8999,9 +8999,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros1/libresprite-1.3.99.20261114-aros1-aros-aarch64-abiv1-raspi.zip",
-      "size": 19597023,
-      "sha256": "ba1a5d92a2b01c654f23def0c0b44375a30ee6e28a84e904a988b27188c2467d",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-aarch64-abiv1-raspi.zip",
+      "size": 19597025,
+      "sha256": "0610ebf873eeaf0c6add05ea38b78ef4e477e7d1551557b402a2a0173dc873f3",
       "depends": [],
       "requires_system": [
         {
@@ -9030,7 +9030,7 @@
         },
         {
           "type": "library",
-          "id": "jpeg.library"
+          "id": "jfif.library"
         },
         {
           "type": "library",
@@ -9068,7 +9068,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -9097,21 +9097,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "mainline AROS Raspberry Pi nightly 2026-11-10, non-SMP",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "QEMU raspi3b (TCG)",
-          "date": "2026-11-16",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "1.3.99.20261114 r1: unpacked from the archive, no apkg install; --version, Shell start with a picture; permission prompts; quit; clean exit"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16"
     },
@@ -9122,9 +9108,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros1/libresprite-1.3.99.20261114-aros1-aros-x86_64-abiv1-pc.zip",
-      "size": 20035780,
-      "sha256": "08f633ea2fa0ace52cddd3536d20abffff9208ef4c4d83641f804c664591e68f",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-x86_64-abiv1-pc.zip",
+      "size": 20035781,
+      "sha256": "bf424a81d5afdf94cd8a8ca1e2cb0e0848fbe26c3c8334e0745751e907577512",
       "depends": [],
       "requires_system": [
         {
@@ -9153,7 +9139,7 @@
         },
         {
           "type": "library",
-          "id": "jpeg.library"
+          "id": "jfif.library"
         },
         {
           "type": "library",
@@ -9191,7 +9177,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -9220,21 +9206,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "mainline AROS x86_64 nightly 2026-11-13",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-16",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "1.3.99.20261114 r1: unpacked with UnZip, no apkg install; Workbench start from the program icon; script permission prompts; quit; clean exit"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16"
     },
@@ -9245,9 +9217,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros1/libresprite-1.3.99.20261114-aros1-aros-x86_64-abiv11-pc.zip",
-      "size": 19785594,
-      "sha256": "535e5adf9bf23cee3e82ba9a22cc2feef8a441168c68d80e7ba5a4d1fced483b",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-x86_64-abiv11-pc.zip",
+      "size": 19785595,
+      "sha256": "6ce01488e3595e3c9fccff0f5d8b7b73656a97c3f253009d2d8f0dcd9de6a5a5",
       "depends": [],
       "requires_system": [
         {
@@ -9284,7 +9256,7 @@
         },
         {
           "type": "library",
-          "id": "jpeg.library"
+          "id": "jfif.library"
         },
         {
           "type": "library",
@@ -9318,7 +9290,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -9347,21 +9319,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-16",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "1.3.99.20261114 r1: unpacked with UnZip, no apkg install; Shell start with a picture argument; picture opened; quit; clean exit"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16"
     },

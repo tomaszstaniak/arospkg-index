@@ -5,9 +5,9 @@
  "arch": "x86_64",
  "abi": "v11",
  "date": "2026-11-16",
- "sha256": "535e5adf9bf23cee3e82ba9a22cc2feef8a441168c68d80e7ba5a4d1fced483b",
- "size": 19785594,
- "manifest_digest": "15fb16c20c1c4d534615d1553eeb78b291ac2350500d4a0d92cd0e7e110a27bb",
+ "sha256": "6ce01488e3595e3c9fccff0f5d8b7b73656a97c3f253009d2d8f0dcd9de6a5a5",
+ "size": 19785595,
+ "manifest_digest": "12d5c4bdfc18b942d752ba469ab505215a811834e894b53da4ec5dd5c6afde0d",
  "result": "passed",
  "sizes": {
   "largest_member": 25252200,
