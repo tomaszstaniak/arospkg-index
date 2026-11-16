@@ -4,7 +4,7 @@
 
 id              = "pragtical"
 version         = "3.14.0"
-revision        = 3
+revision        = 4
 summary         = "Lightweight code editor: syntax highlighting, project tree, find in files"
 category        = "development/edit"
 license         = "MIT"
@@ -20,10 +20,10 @@ post_install_notes = [
   "From a Shell: Execute run-pragtical, or Stack 8000000 and then pragtical <file or drawer>.",
   "Settings and added plugins are kept in the user drawer of the package.",
 ]
-sha256          = "eb2a8b9216c40839623d6dcdb905fd8e784922c641a92f4ad96f350dd3b15c28"
-size            = 4516151
+sha256          = "b073622bf8873ccfc6b4b83fc40392145925731765b0069f202feceb86af0c74"
+size            = 4516300
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros3/pragtical-3.14.0-aros3-aros-x86_64-abiv11-pc.zip"
+url             = "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros4/pragtical-3.14.0-aros4-aros-x86_64-abiv11-pc.zip"
 
 [[requires_system]]
 type = "library"
@@ -83,7 +83,7 @@ id = "z1.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-pragtical"
-revision = "v3.14.0-aros3"
+revision = "v3.14.0-aros4"
 
 [launch]
 executable = "pragtical"
