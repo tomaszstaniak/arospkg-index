@@ -445,6 +445,18 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "libresprite/aarch64/v1": {
+   "first_added": "2026-11-16",
+   "commit": "75cb8f58c7e9"
+  },
+  "libresprite/x86_64/v1": {
+   "first_added": "2026-11-16",
+   "commit": "75cb8f58c7e9"
+  },
+  "libresprite/x86_64/v11": {
+   "first_added": "2026-11-16",
+   "commit": "75cb8f58c7e9"
+  },
   "lightcraft/x86_64/v1": {
    "first_added": "2026-10-24",
    "commit": "2a59a7412fad"
@@ -1066,6 +1078,10 @@
   "ledblur": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "libresprite": {
+   "first_added": "2026-11-16",
+   "commit": "75cb8f58c7e9"
   },
   "lightcraft": {
    "first_added": "2026-10-24",

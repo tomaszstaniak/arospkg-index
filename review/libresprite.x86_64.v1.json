@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "libresprite",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-16",
+ "sha256": "08f633ea2fa0ace52cddd3536d20abffff9208ef4c4d83641f804c664591e68f",
+ "size": 20035780,
+ "manifest_digest": "c47a687d164c4a4522d0dae147029209d7a7ff4aa9a75d9ab57901011e64ae00",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 27163848,
+  "unpacked": 51566700
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "175 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 27163848 bytes (LibreSprite/LibreSprite), 51566700 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

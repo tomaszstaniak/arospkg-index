@@ -8993,6 +8993,379 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "libresprite",
+      "version": "1.3.99.20261114",
+      "summary": "Pixel art editor and animated sprite tool",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros1/libresprite-1.3.99.20261114-aros1-aros-aarch64-abiv1-raspi.zip",
+      "size": 19597023,
+      "sha256": "ba1a5d92a2b01c654f23def0c0b44375a30ee6e28a84e904a988b27188c2467d",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "gadtools.library"
+        },
+        {
+          "type": "library",
+          "id": "icon.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "jpeg.library"
+        },
+        {
+          "type": "library",
+          "id": "keymap.library"
+        },
+        {
+          "type": "library",
+          "id": "png.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "workbench.library"
+        },
+        {
+          "type": "library",
+          "id": "z1.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LibreSprite",
+      "icon": "LibreSprite.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-libresprite",
+      "license": "GPL-2.0-only",
+      "post_install_notes": [
+        "Start it from the LibreSprite icon. Settings are kept in ENVARC:LibreSprite.",
+        "The GUI_RENDERER tool type in the icon chooses the drawing: AUTO, GPU (OpenGL) or CPU."
+      ],
+      "launch": {
+        "executable": "LibreSprite",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-16",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS Raspberry Pi nightly 2026-11-10, non-SMP",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b (TCG)",
+          "date": "2026-11-16",
+          "result": "passed",
+          "checked": [
+            "start",
+            "run"
+          ],
+          "note": "1.3.99.20261114 r1: unpacked from the archive, no apkg install; --version, Shell start with a picture; permission prompts; quit; clean exit"
+        }
+      ],
+      "first_added": "2026-11-16",
+      "app_first_added": "2026-11-16"
+    },
+    {
+      "id": "libresprite",
+      "version": "1.3.99.20261114",
+      "summary": "Pixel art editor and animated sprite tool",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros1/libresprite-1.3.99.20261114-aros1-aros-x86_64-abiv1-pc.zip",
+      "size": 20035780,
+      "sha256": "08f633ea2fa0ace52cddd3536d20abffff9208ef4c4d83641f804c664591e68f",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "gadtools.library"
+        },
+        {
+          "type": "library",
+          "id": "icon.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "jpeg.library"
+        },
+        {
+          "type": "library",
+          "id": "keymap.library"
+        },
+        {
+          "type": "library",
+          "id": "png.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "workbench.library"
+        },
+        {
+          "type": "library",
+          "id": "z1.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LibreSprite",
+      "icon": "LibreSprite.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-libresprite",
+      "license": "GPL-2.0-only",
+      "post_install_notes": [
+        "Start it from the LibreSprite icon. Settings are kept in ENVARC:LibreSprite.",
+        "The GUI_RENDERER tool type in the icon chooses the drawing: AUTO, GPU (OpenGL) or CPU."
+      ],
+      "launch": {
+        "executable": "LibreSprite",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-16",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-13",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-16",
+          "result": "passed",
+          "checked": [
+            "start",
+            "run"
+          ],
+          "note": "1.3.99.20261114 r1: unpacked with UnZip, no apkg install; Workbench start from the program icon; script permission prompts; quit; clean exit"
+        }
+      ],
+      "first_added": "2026-11-16",
+      "app_first_added": "2026-11-16"
+    },
+    {
+      "id": "libresprite",
+      "version": "1.3.99.20261114",
+      "summary": "Pixel art editor and animated sprite tool",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros1/libresprite-1.3.99.20261114-aros1-aros-x86_64-abiv11-pc.zip",
+      "size": 19785594,
+      "sha256": "535e5adf9bf23cee3e82ba9a22cc2feef8a441168c68d80e7ba5a4d1fced483b",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        },
+        {
+          "type": "library",
+          "id": "gadtools.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        },
+        {
+          "type": "library",
+          "id": "icon.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "jpeg.library"
+        },
+        {
+          "type": "library",
+          "id": "keymap.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "png.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "workbench.library"
+        },
+        {
+          "type": "library",
+          "id": "z1.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LibreSprite",
+      "icon": "LibreSprite.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-libresprite",
+      "license": "GPL-2.0-only",
+      "post_install_notes": [
+        "Start it from the LibreSprite icon. Settings are kept in ENVARC:LibreSprite.",
+        "The GUI_RENDERER tool type in the icon chooses the drawing: AUTO, GPU (OpenGL) or CPU."
+      ],
+      "launch": {
+        "executable": "LibreSprite",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-16",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-16",
+          "result": "passed",
+          "checked": [
+            "start",
+            "run"
+          ],
+          "note": "1.3.99.20261114 r1: unpacked with UnZip, no apkg install; Shell start with a picture argument; picture opened; quit; clean exit"
+        }
+      ],
+      "first_added": "2026-11-16",
+      "app_first_added": "2026-11-16"
+    },
+    {
       "id": "lightcraft",
       "version": "0.13.0",
       "summary": "Photo library and non-destructive RAW editor with CPU rendering",
