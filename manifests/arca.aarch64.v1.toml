@@ -1,0 +1,53 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/arca.aarch64.v1.toml, which
+# every later submission applies again.
+
+id              = "arca"
+version         = "0.1.1"
+revision        = 1
+summary         = "Pack, browse and extract archives with a native Zune interface"
+category        = "utility/archive"
+license         = "MIT; bundled libraries and helpers retain their own licences"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "Arca"
+icon            = "Arca.info"
+depends         = []
+depends_checked = true
+post_install_notes = [
+  "Requires mainline nightly 2026-11-06 or later (stdc.library 0.53).",
+  "Requires the system NList, NListview and NFloattext Zune classes.",
+  "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
+  "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes.",
+]
+sha256          = "be694c1e5bff1e5031e4265d0abd817aedb1e02c87259d9ef2bd58830e4e4bf8"
+size            = 2654403
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-aarch64-abiv1-raspi.zip"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id = "muimaster.library"
+min_version = 19
+
+[source]
+repository = "https://github.com/tomaszstaniak/arca"
+revision = "v0.1.1"
+built_with = "Native AROS Raspberry Pi AArch64 ABIv1 SDK, Clang 20.1.0"
+
+[launch]
+executable = "Arca"
+mode = "workbench"
