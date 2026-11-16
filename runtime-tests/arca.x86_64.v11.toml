@@ -18,4 +18,4 @@ abi = "v11"
 machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "verify", "remove"]
-note = "apkg 0.7.8 installed the exact 0.1.1 ZIP from a local cache; upgrade from 0.1.0, 29-file verify, Workbench start/close and remove passed. Modified ReadMe blocked upgrade; user backup retained outside the managed drawer before retry. New user file survived upgrade and removal."
+note = "apkg0.7.8 local ZIP: upgrade0.1.0,29-file verify,Workbench start/close,remove; user file kept. Modified ReadMe protected; backed up before retry."
