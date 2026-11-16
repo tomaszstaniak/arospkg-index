@@ -11,3 +11,14 @@ machine = "QEMU raspi3b"
 result  = "passed"
 checked = ["start", "run"]
 note    = "3.14.0 r2: unpacked on the host, no apkg install; WBRun and Shell start; Polish typing, copy and paste, save checked; real Pi untested"
+
+[[test]]
+sha256  = "a7c78efd071431de447c78fbdd890c6b58c1464708e2cd4d7280490939bb90b9"
+date    = "2026-11-16"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b"
+result  = "passed"
+checked = ["start", "run"]
+note    = "3.14.0 r3: copied from the host, no apkg install; Shell start; system window, iconify and restore, fullscreen, save; real Pi untested"
