@@ -21,4 +21,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start", "run"]
-note    = "1.3.99.20261114 r3: unpacked with UnZip, no apkg install; Shell start; script prompts, New File dialog, quit; font file deletable after exit (r2 left it in use)"
+note    = "1.3.99.20261114 r3: unpacked with UnZip, no apkg install; Shell start; start, prompts, New File, quit; font file deletable after exit"
