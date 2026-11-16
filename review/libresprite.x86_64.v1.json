@@ -5,13 +5,13 @@
  "arch": "x86_64",
  "abi": "v1",
  "date": "2026-11-16",
- "sha256": "bf424a81d5afdf94cd8a8ca1e2cb0e0848fbe26c3c8334e0745751e907577512",
- "size": 20035781,
- "manifest_digest": "c087dc64c4b10471a2661dcb7c4af0babcfdc3079b5593e79643297ab0109916",
+ "sha256": "4911118518360f637908b0e54d6a1a8761db0f60fcdf8f0e26ad1e6798dd1fb4",
+ "size": 20036243,
+ "manifest_digest": "db959215273d147b452febdcfe917b45b07a2cce19440129284a4bd0b52eb4c7",
  "result": "passed",
  "sizes": {
-  "largest_member": 27163848,
-  "unpacked": 51566700
+  "largest_member": 27167176,
+  "unpacked": 51570028
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 27163848 bytes (LibreSprite/LibreSprite), 51566700 bytes unpacked"
+   "detail": "largest member 27167176 bytes (LibreSprite/LibreSprite), 51570028 bytes unpacked"
   },
   {
    "name": "paths",

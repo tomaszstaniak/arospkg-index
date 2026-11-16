@@ -8372,9 +8372,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-aarch64-abiv1-raspi.zip",
-      "size": 19597025,
-      "sha256": "0610ebf873eeaf0c6add05ea38b78ef4e477e7d1551557b402a2a0173dc873f3",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros3/libresprite-1.3.99.20261114-aros3-aros-aarch64-abiv1-raspi.zip",
+      "size": 19599024,
+      "sha256": "ab11a7dd047b6637a60d44df158cb92d3b88e6ed3108c000fe784084b6361954",
       "depends": [],
       "requires_system": [
         {
@@ -8441,7 +8441,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -8481,9 +8481,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-x86_64-abiv1-pc.zip",
-      "size": 20035781,
-      "sha256": "bf424a81d5afdf94cd8a8ca1e2cb0e0848fbe26c3c8334e0745751e907577512",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros3/libresprite-1.3.99.20261114-aros3-aros-x86_64-abiv1-pc.zip",
+      "size": 20036243,
+      "sha256": "4911118518360f637908b0e54d6a1a8761db0f60fcdf8f0e26ad1e6798dd1fb4",
       "depends": [],
       "requires_system": [
         {
@@ -8550,7 +8550,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -8590,9 +8590,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-x86_64-abiv11-pc.zip",
-      "size": 19785595,
-      "sha256": "6ce01488e3595e3c9fccff0f5d8b7b73656a97c3f253009d2d8f0dcd9de6a5a5",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros3/libresprite-1.3.99.20261114-aros3-aros-x86_64-abiv11-pc.zip",
+      "size": 19787280,
+      "sha256": "7c08b895be45bd9f4d6538acb197da1cc96f748589cbc47c87fa062fa662ce89",
       "depends": [],
       "requires_system": [
         {
@@ -8663,7 +8663,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
