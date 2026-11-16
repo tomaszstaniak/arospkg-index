@@ -4,7 +4,7 @@
 
 id              = "libresprite"
 version         = "1.3.99.20261114"
-revision        = 2
+revision        = 3
 summary         = "Pixel art editor and animated sprite tool"
 category        = "graphics/edit"
 license         = "GPL-2.0-only"
@@ -19,10 +19,10 @@ post_install_notes = [
   "Start it from the LibreSprite icon. Settings are kept in ENVARC:LibreSprite.",
   "The GUI_RENDERER tool type in the icon chooses the drawing: AUTO, GPU (OpenGL) or CPU.",
 ]
-sha256          = "6ce01488e3595e3c9fccff0f5d8b7b73656a97c3f253009d2d8f0dcd9de6a5a5"
-size            = 19785595
+sha256          = "7c08b895be45bd9f4d6538acb197da1cc96f748589cbc47c87fa062fa662ce89"
+size            = 19787280
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros2/libresprite-1.3.99.20261114-aros2-aros-x86_64-abiv11-pc.zip"
+url             = "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros3/libresprite-1.3.99.20261114-aros3-aros-x86_64-abiv11-pc.zip"
 
 [[requires_system]]
 type = "library"
@@ -86,7 +86,7 @@ id = "z1.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-libresprite"
-revision = "v1.3.99.20261114-aros2"
+revision = "v1.3.99.20261114-aros3"
 
 [launch]
 executable = "LibreSprite"
