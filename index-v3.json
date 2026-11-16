@@ -520,14 +520,14 @@
     },
     {
       "id": "arca",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "summary": "Pack, browse and extract archives with a native Zune interface",
-      "arch": "x86_64",
+      "arch": "aarch64",
       "abi": "v1",
       "category": "utility/archive",
-      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.0/Arca-0.1.0-aros-x86_64-abiv1-pc.zip",
-      "size": 2231360,
-      "sha256": "9144a4bdb1ec16bb14bc43d7d57e53f2c3d287a659b40a53749359b31c7a38f0",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 2654403,
+      "sha256": "be694c1e5bff1e5031e4265d0abd817aedb1e02c87259d9ef2bd58830e4e4bf8",
       "depends": [],
       "requires_system": [
         {
@@ -559,6 +559,95 @@
       "source": "https://github.com/tomaszstaniak/arca",
       "license": "MIT; bundled libraries and helpers retain their own licences",
       "post_install_notes": [
+        "Requires mainline nightly 2026-11-06 or later (stdc.library 0.53).",
+        "Requires the system NList, NListview and NFloattext Zune classes.",
+        "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
+        "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes."
+      ],
+      "launch": {
+        "executable": "Arca",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-16",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS Raspberry Pi nightly 20261110 non-SMP, exec 51.16, stdc 0.53",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-16",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg0.7.8 local ZIP: install,29-file verify,Workbench start/close,remove; user file kept. QEMU non-SMP; core tests also SMP. No physical hardware."
+        }
+      ],
+      "first_added": "2026-11-16",
+      "app_first_added": "2026-11-16"
+    },
+    {
+      "id": "arca",
+      "version": "0.1.1",
+      "summary": "Pack, browse and extract archives with a native Zune interface",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "utility/archive",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-x86_64-abiv1-pc.zip",
+      "size": 2248107,
+      "sha256": "82eacc938f09212f5d4c1a9e58d037b0a4eef06ea8bdfc9415a9831225022c06",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library",
+          "min_version": 19
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Arca",
+      "icon": "Arca.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/arca",
+      "license": "MIT; bundled libraries and helpers retain their own licences",
+      "post_install_notes": [
+        "Requires mainline nightly 2026-11-06 or later (stdc.library 0.53).",
         "Requires the system NList, NListview and NFloattext Zune classes.",
         "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
         "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes."
@@ -599,7 +688,7 @@
             "verify",
             "remove"
           ],
-          "note": "apkg 0.7.8 fetched public GitHub ZIP to RAM; 26 files verified; Workbench start/close; remove kept modified ReadMe and user file"
+          "note": "apkg0.7.8 local ZIP: upgrade0.1.0,29-file verify,Workbench start/close,remove; user file kept. Modified ReadMe protected; backed up before retry."
         }
       ],
       "first_added": "2026-11-16",
@@ -607,14 +696,14 @@
     },
     {
       "id": "arca",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "summary": "Pack, browse and extract archives with a native Zune interface",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/archive",
-      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.0/Arca-0.1.0-aros-x86_64-abiv11-pc.zip",
-      "size": 3585627,
-      "sha256": "84db9a6f7306296abf7e9eff171d09094071cf117d493486863e5f8fde57a21d",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-x86_64-abiv11-pc.zip",
+      "size": 3602283,
+      "sha256": "62b8bebc855b2ec15d7e85e3bcd8a1c8cffaaa8b81d27e14e74c99f277801b23",
       "depends": [],
       "requires_system": [
         {
@@ -682,7 +771,7 @@
             "verify",
             "remove"
           ],
-          "note": "apkg 0.7.8 fetched public GitHub ZIP to RAM; 26 files verified; Workbench start/close; remove kept modified ReadMe and user file"
+          "note": "apkg0.7.8 local ZIP: upgrade0.1.0,29-file verify,Workbench start/close,remove; user file kept. Modified ReadMe protected; backed up before retry."
         }
       ],
       "first_added": "2026-11-16",

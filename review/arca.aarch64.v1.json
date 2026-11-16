@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "arca",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-16",
+ "sha256": "be694c1e5bff1e5031e4265d0abd817aedb1e02c87259d9ef2bd58830e4e4bf8",
+ "size": 2654403,
+ "manifest_digest": "6f4dcbee8f3a7bb4e93039e87dd9d784a373e7ca872ee0c2fbf16d55a1c52df6",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 2547648,
+  "unpacked": 7761503
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "35 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 2547648 bytes (Arca/unarc-7z), 7761503 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "4 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
