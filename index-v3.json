@@ -525,9 +525,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/archive",
-      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 2654403,
-      "sha256": "be694c1e5bff1e5031e4265d0abd817aedb1e02c87259d9ef2bd58830e4e4bf8",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-aarch64-abiv1-raspi.zip",
+      "size": 2654742,
+      "sha256": "42654177e301609bff259d4e4160ee99e9d7b6ebe91fbaafa3bed63dc9161850",
       "depends": [],
       "requires_system": [
         {
@@ -555,7 +555,7 @@
       "subdir": "Arca",
       "icon": "Arca.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/arca",
       "license": "MIT; bundled libraries and helpers retain their own licences",
       "post_install_notes": [
@@ -596,11 +596,11 @@
           "result": "passed",
           "checked": [
             "install",
-            "start",
+            "upgrade",
             "verify",
             "remove"
           ],
-          "note": "apkg0.7.8 local ZIP: install,29-file verify,Workbench start/close,remove; user file kept. QEMU non-SMP; core tests also SMP. No physical hardware."
+          "note": "apkg 0.7.8: r1 to r2 upgrade, 29-file verify, run --check and remove passed; user file kept, ReadMe exact. Unchanged binaries retain prior runtime evidence."
         }
       ],
       "first_added": "2026-11-16",
@@ -613,9 +613,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/archive",
-      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-x86_64-abiv1-pc.zip",
-      "size": 2248107,
-      "sha256": "82eacc938f09212f5d4c1a9e58d037b0a4eef06ea8bdfc9415a9831225022c06",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-x86_64-abiv1-pc.zip",
+      "size": 2264359,
+      "sha256": "4cef57769f53a90b2ee0a733c20b1b2b3d8697d85327cedacf162cfa49a86ad0",
       "depends": [],
       "requires_system": [
         {
@@ -643,7 +643,7 @@
       "subdir": "Arca",
       "icon": "Arca.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/arca",
       "license": "MIT; bundled libraries and helpers retain their own licences",
       "post_install_notes": [
@@ -676,7 +676,7 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 20261115, exec 51.17",
+          "system": "mainline AROS x86_64 nightly 20261116, exec 51.17",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
@@ -684,11 +684,11 @@
           "result": "passed",
           "checked": [
             "install",
-            "start",
+            "upgrade",
             "verify",
             "remove"
           ],
-          "note": "apkg0.7.8 local ZIP: upgrade0.1.0,29-file verify,Workbench start/close,remove; user file kept. Modified ReadMe protected; backed up before retry."
+          "note": "apkg 0.7.8: r1 to r2 upgrade, 29-file verify, run --check and remove passed; user file kept, ReadMe exact. Unchanged binaries retain prior runtime evidence."
         }
       ],
       "first_added": "2026-11-16",
@@ -701,9 +701,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/archive",
-      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1/Arca-0.1.1-aros-x86_64-abiv11-pc.zip",
-      "size": 3602283,
-      "sha256": "62b8bebc855b2ec15d7e85e3bcd8a1c8cffaaa8b81d27e14e74c99f277801b23",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-x86_64-abiv11-pc.zip",
+      "size": 3626626,
+      "sha256": "4e6c26675694235063d0fdc327b3b9b3700d021b5a0829b88347f25e3dc74fa0",
       "depends": [],
       "requires_system": [
         {
@@ -727,7 +727,7 @@
       "subdir": "Arca",
       "icon": "Arca.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/arca",
       "license": "MIT; bundled libraries and helpers retain their own licences",
       "post_install_notes": [
@@ -767,11 +767,11 @@
           "result": "passed",
           "checked": [
             "install",
-            "start",
+            "upgrade",
             "verify",
             "remove"
           ],
-          "note": "apkg0.7.8 local ZIP: upgrade0.1.0,29-file verify,Workbench start/close,remove; user file kept. Modified ReadMe protected; backed up before retry."
+          "note": "apkg 0.7.8: r1 to r2 upgrade, 29-file verify, run --check and remove passed; user file kept, ReadMe exact. Unchanged binaries retain prior runtime evidence."
         }
       ],
       "first_added": "2026-11-16",
