@@ -78,3 +78,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "start", "verify", "remove"]
 note    = "apkg 0.7.6, local index of the published archives: upgrade of a running 0.6.1 printed the in-use note and kept WidgetState; 0.6.2 started after; verify 64 ok"
+
+[[test]]
+sha256  = "9da2912b47dd4a88908905469b9a56740045a1da51c4feb897884f164bd444fa"
+date    = "2026-11-18"
+system  = "mainline AROS x86_64 (nightly 2026-11-13)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.8, local index; 0.6.2 installed, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started; both widgets added, data shown"

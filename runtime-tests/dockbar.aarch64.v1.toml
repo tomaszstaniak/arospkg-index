@@ -67,3 +67,14 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["install", "upgrade", "start", "verify", "remove"]
 note    = "apkg 0.7.6, local index of the published archives, without SMP: upgrade of a running 0.6.1 printed the in-use note and kept WidgetState; 0.6.2 started after"
+
+[[test]]
+sha256  = "67cdf74fc95b56684dd6d68ec257db621be30490d378a3989032b2e7ca860670"
+date    = "2026-11-18"
+system  = "AROS for Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.8, local index; 0.6.2 installed and run, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started"

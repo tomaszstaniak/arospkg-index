@@ -89,3 +89,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["upgrade", "start", "verify", "remove"]
 note    = "apkg 0.7.6, public catalogue: upgrade of a running 0.6.1 kept docks.config, WidgetState and the Capture widget; widget action worked before and after restart"
+
+[[test]]
+sha256  = "02f9b35be8f27f798108a95a34f1e3b7e384cafebdfbc2b32b9394e4ae81a27f"
+date    = "2026-11-18"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "upgrade", "remove", "verify"]
+note    = "apkg 0.7.8, local index; 0.6.2 installed and run, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started; test system without network"

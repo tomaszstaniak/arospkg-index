@@ -1,6 +1,6 @@
-# Dockbar 0.6.2 for AROS on Raspberry Pi (aarch64, mainline ABIv1), with SVG icons.
+# Dockbar 0.7.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1), with SVG icons.
 # Our own program, published by its author as an asset of the GitHub
-# release v0.6.2 (one source commit for all three archives).
+# release v0.7.0 (one source commit for all three archives).
 # It carries libs/svgicon.library, which Dockbar opens as
 # PROGDIR:libs/svgicon.library, and the Weather widget (Widgets/org.aros.weather).
 # replaces: dockbar-info-only (0.5.1, the same program without svgicon.library)
@@ -12,6 +12,8 @@
 # User data lives in the program drawer: PROGDIR:docks.config and
 # PROGDIR:WidgetState/. Neither is in the archive, so apkg keeps both on
 # upgrade and removal as files it did not install.
+# 0.7.0 adds the Currency widget (Widgets/org.aros.currency, exchange rates of
+# the European Central Bank) and cards a widget describes in its views.json.
 # 0.6.2 fixes "Could not launch provider" after an upgrade: Dockbar makes its
 # request drawer (WidgetState/.s-*) again when it is missing, as it was after
 # an apkg upgrade (before arospkg 0.7.6) while Dockbar ran.
@@ -23,23 +25,23 @@
 # user files to apkg (not in the archive) and stay on upgrade and removal.
 # requires_system: the C runtime libraries the binaries open at start, and
 # muimaster and cybergraphics, which Dockbar opens. openurl.library (About
-# links) and bsdsocket.library (Weather data) are optional and not listed.
-# An earlier 0.6.1 build was started under QEMU raspi3b (nightly
-# 2026-11-05) in the release tests; this archive is built from the same
-# source plus the request-drawer check, tested on x86_64. An apkg test of
-# this archive follows publication (runtime-tests/).
+# links) and bsdsocket.library (widget data) are optional and not listed.
+# installs_on, runs_on: apkg 0.7.8 installed 0.6.2 and upgraded it to these
+# bytes from a local index under QEMU raspi3b (nightly 2026-11-10, 2026-11-18);
+# 0.7.0 started from the upgraded drawer (runtime-tests/). The widgets were
+# opened on x86_64 only.
 # There is no system id for the Pi in installs_on and runs_on.
 
 status          = "approved"
 id              = "dockbar"
-version         = "0.6.2"
+version         = "0.7.0"
 revision        = 1
-summary         = "Dock with application groups, drawer panels, action widgets and Weather"
+summary         = "Dock with application groups, drawer panels, action widgets, Weather and Currency"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
-url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.6.2/Dockbar-0.6.2-aros-aarch64-abiv1-raspi.zip"
-size            = 10545725
-sha256          = "7afc2c188fe8631ea5a3fb37670fe7719d0e4d47904c82e06a3520638b9047ef"
+url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.7.0/Dockbar-0.7.0-aros-aarch64-abiv1-raspi.zip"
+size            = 13676475
+sha256          = "67cdf74fc95b56684dd6d68ec257db621be30490d378a3989032b2e7ca860670"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -56,10 +58,10 @@ does_not_run_on = []
 post_install_notes = [
   "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
   "Replaces dockbar-info-only, which is not continued. On its first start Dockbar copies docks.config, dock.pins and WidgetState from that drawer.",
-  "Your docks (docks.config) and Weather data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
+  "Your docks (docks.config) and widget data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
   "To start Dockbar with the system, tick Start with Wanderer in its Preferences. Do not copy the program into SYS:WBStartup.",
   "A copy of Dockbar in SYS:WBStartup keeps starting the old version: quit it, start Dockbar from this drawer and choose Replace the copy.",
-  "Weather needs a running TCP/IP stack.",
+  "Weather and Currency need a running TCP/IP stack.",
 ]
 
 [[requires_system]]
@@ -84,7 +86,7 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-dockbar"
-revision   = "v0.6.2"
+revision   = "v0.7.0"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-02 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
