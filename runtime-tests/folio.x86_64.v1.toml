@@ -22,4 +22,4 @@ abi = "v1"
 machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
-note = "0.6 to 0.7 through apkg with a seeded cache; extra user file preserved; Shell and icon-based Workbench startup, highlight/save/reopen and clean exit/remove. AUTO CPU; diagnostic softpipe GL scrolling, zoom, selection, search, resize and forced upload/frame failure fallback. Final archive member contents are byte-identical to the tested package; unchanged binary evidence reused after repacking. No physical GPU or network download test."
+note = "QEMU: 0.6 upgrade, verify, user file kept, Shell/Workbench, highlight/save/reopen, remove. Repacked archive has byte-identical tested members. No hardware GPU."
