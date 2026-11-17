@@ -88,4 +88,4 @@ abi     = "v1"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "upgrade", "remove", "verify"]
-note    = "apkg 0.7.8, local index; 0.6.2 installed and run, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started; from the archive both widgets added, data shown"
+note    = "apkg 0.7.8, local index; 0.6.2 installed, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started; both widgets added, data shown"
