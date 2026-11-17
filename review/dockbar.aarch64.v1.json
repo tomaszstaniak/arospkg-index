@@ -4,14 +4,14 @@
  "id": "dockbar",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-11",
- "sha256": "7afc2c188fe8631ea5a3fb37670fe7719d0e4d47904c82e06a3520638b9047ef",
- "size": 10545725,
- "manifest_digest": "f56760844ef0262408823d31098bb74bde01b4c5e8e8a9dc323e3ce71877af40",
+ "date": "2026-11-17",
+ "sha256": "67cdf74fc95b56684dd6d68ec257db621be30490d378a3989032b2e7ca860670",
+ "size": 13676475,
+ "manifest_digest": "ff729bd20a86ee704b65dca747ed715d0a2ad1caab573e5c02d72822a258733f",
  "result": "passed",
  "sizes": {
-  "largest_member": 10991424,
-  "unpacked": 22308768
+  "largest_member": 10991544,
+  "unpacked": 33618714
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "78 members"
+   "detail": "98 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 10991424 bytes (Dockbar/Widgets/org.aros.weather/bin/aarch64-raspi-v1/WeatherProvider), 22308768 bytes unpacked"
+   "detail": "largest member 10991544 bytes (Dockbar/Widgets/org.aros.weather/bin/aarch64-raspi-v1/WeatherProvider), 33618714 bytes unpacked"
   },
   {
    "name": "paths",
@@ -47,7 +47,7 @@
   {
    "name": "cpu",
    "result": "passed",
-   "detail": "3 ELF file(s) for aarch64"
+   "detail": "4 ELF file(s) for aarch64"
   }
  ],
  "unchecked": [
