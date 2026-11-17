@@ -3,7 +3,7 @@
 # every later submission applies again.
 
 id              = "folio"
-version         = "0.6"
+version         = "0.7"
 revision        = 1
 summary         = "PDF reader with two-page spreads, search and highlighting"
 category        = "office/misc"
@@ -20,10 +20,10 @@ post_install_notes = [
   "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
   "Opening external web links requires openurl.library.",
 ]
-sha256          = "34f76d23e360fc0bc7bebb3a2523d88e1bb51cb2cff997c58afeef0bd6059a56"
-size            = 28559173
+sha256          = "3c6de25a0fd245797d1cca0799fa64e537f7e6cd26848aea8c32cc50df2ab194"
+size            = 28566430
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.6/Folio-0.6.x86_64-aros-v1.zip"
+url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.7/Folio-0.7.x86_64-aros-v1.zip"
 
 [[requires_system]]
 type = "library"
@@ -55,8 +55,8 @@ id = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-foliopdf"
-revision = "v0.6"
-archive = "Folio-0.6-source.zip"
+revision = "v0.7"
+archive = "Folio-0.7-source.zip"
 built_with = "x86_64 mainline ABIv1 (nightly 2026-11-05 SDK), GCC 10.5.0"
 
 [launch]

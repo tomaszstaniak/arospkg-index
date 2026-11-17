@@ -67,3 +67,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.5: 0.5 installed, upgraded to this archive (seeded cache); reading position and settings kept; icon, Wanderer, Shell starts; highlight saved; removed"
+
+[[test]]
+sha256 = "0f6ebcd01a367f63691f888c2c539a1da1e6140f9f672f9b63056aa9990cfaf9"
+date = "2026-11-17"
+system = "AROS One 1.3, pool baseline v11-20260923"
+arch = "x86_64"
+abi = "v11"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note = "0.6 to 0.7 through apkg with a seeded cache; extra user file preserved; Shell and icon-based Workbench startup, highlight/save/reopen and clean exit/remove. AUTO CPU; diagnostic softpipe GL, panel hide/show and resize. Final archive member contents are byte-identical to the tested package; unchanged binary evidence reused after repacking. No physical GPU or network download test."

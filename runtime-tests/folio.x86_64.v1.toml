@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.5: installed from a seeded cache, requirements satisfied, verify ok; icon, Wanderer, Shell starts; panel, zoom, both views, highlight saved; removed"
+
+[[test]]
+sha256 = "3c6de25a0fd245797d1cca0799fa64e537f7e6cd26848aea8c32cc50df2ab194"
+date = "2026-11-17"
+system = "mainline AROS x86_64, pool baseline v1-20261113-network"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note = "0.6 to 0.7 through apkg with a seeded cache; extra user file preserved; Shell and icon-based Workbench startup, highlight/save/reopen and clean exit/remove. AUTO CPU; diagnostic softpipe GL scrolling, zoom, selection, search, resize and forced upload/frame failure fallback. Final archive member contents are byte-identical to the tested package; unchanged binary evidence reused after repacking. No physical GPU or network download test."

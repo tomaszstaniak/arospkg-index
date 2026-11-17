@@ -12,3 +12,14 @@ machine = "QEMU (raspi3b, TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.5: 0.5 installed, upgraded to this archive (seeded cache); reading position and settings kept; icon, Wanderer, Shell starts; highlight saved; removed"
+
+[[test]]
+sha256 = "c1fcbc66c5058637cefd986e1aaddec849bd3fa6309bbb497393b253ff339fd9"
+date = "2026-11-17"
+system = "AROS Raspberry Pi nightly 2026-11-10, non-SMP"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU (raspi3b, TCG)"
+result = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note = "0.6 to 0.7 through apkg with a seeded cache; extra user file preserved; Shell and icon-based Workbench startup, highlight/save/reopen and clean exit/remove. CPU rendering, navigation and Fit Page. Final archive member contents are byte-identical to the tested package; unchanged binary evidence reused after repacking. No physical GPU or network download test."

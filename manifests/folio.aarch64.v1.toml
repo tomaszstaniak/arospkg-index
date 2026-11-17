@@ -3,7 +3,7 @@
 # every later submission applies again.
 
 id              = "folio"
-version         = "0.6"
+version         = "0.7"
 revision        = 1
 summary         = "PDF reader with two-page spreads, search and highlighting"
 category        = "office/misc"
@@ -20,10 +20,10 @@ post_install_notes = [
   "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
   "Opening external web links requires openurl.library.",
 ]
-sha256          = "bd1cd6306002a59965fe4983b991b8893e347d3a4d19f602cf4a179a05e11b16"
-size            = 28873600
+sha256          = "c1fcbc66c5058637cefd986e1aaddec849bd3fa6309bbb497393b253ff339fd9"
+size            = 28885606
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.6/Folio-0.6.aarch64-aros-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.7/Folio-0.7.aarch64-aros-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -55,8 +55,8 @@ id = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-foliopdf"
-revision = "v0.6"
-archive = "Folio-0.6-source.zip"
+revision = "v0.7"
+archive = "Folio-0.7-source.zip"
 built_with = "aarch64 Raspberry Pi ABIv1 (nightly 2026-11-05 SDK), Clang 20.1.0"
 
 [launch]
