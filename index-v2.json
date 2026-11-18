@@ -8693,7 +8693,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-18",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "1.3.99.20261114 r4: apkg 0.7.8 install from the public catalogue, Shell start, prompts, quit, apkg remove left no files"
+        }
+      ],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16"
     },
