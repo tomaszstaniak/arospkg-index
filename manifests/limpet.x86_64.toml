@@ -1,17 +1,17 @@
-# Limpet 0.12.1: adds scp, ssh-keygen and ssh-copy-id beside ssh (libssh with the aros-crypto kit).
+# Limpet 0.12.2: the window is smart refresh with one layer, lighter to move; nothing else changed since 0.12.1.
 # The terminal, its settings and the experimental handler (distributed separately) are unchanged.
-# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.12.1.md.
+# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.12.2.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.12.1"
+version         = "0.12.2"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.1/Limpet-0.12.1-aros-x86_64-abiv11-pc.zip"
-size            = 7450511
-sha256          = "603953e0b00a1fb46152beecb346851f97cbb6cc71fef56af31397727a11f948"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.2/Limpet-0.12.2-aros-x86_64-abiv11-pc.zip"
+size            = 7450366
+sha256          = "b4d09f201ef97ab577a64cba71d03a8a7c64c6a4ad72fab3b7f318991541589c"
 kind            = "app"
 
 depends         = []
@@ -19,7 +19,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]   # 0.12.1 run from the unpacked archive 2026-11-15
+runs_on         = ["aros-one"]   # 0.12.2 run from the unpacked archive 2026-11-18
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # Libraries the binary opens that AROS One supplies. The system font
@@ -43,5 +43,5 @@ id   = "stdlib.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.12.1"
+revision   = "v0.12.2"
 built_with = "abiv11-x86_64, GCC 10.5.0"
