@@ -9510,14 +9510,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.12.1",
+      "version": "0.12.2",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.1/Limpet-0.12.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 7372597,
-      "sha256": "d628248e01db484b90f9391eed66f4b62406b5ee64c125a4bf6bcdc3eb1a0b4c",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.2/Limpet-0.12.2-aros-aarch64-abiv1-raspi.zip",
+      "size": 7372721,
+      "sha256": "92ee8d1ddc5d716413e1c76d39b1670acfe96743ac25ed7ae3f0414677cc098d",
       "depends": [],
       "requires_system": [
         {
@@ -9557,7 +9557,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-15",
+        "date": "2026-11-18",
         "checked": [
           "metadata",
           "download",
@@ -9577,14 +9577,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.12.1",
+      "version": "0.12.2",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.1/Limpet-0.12.1-aros-x86_64-abiv11-pc.zip",
-      "size": 7450511,
-      "sha256": "603953e0b00a1fb46152beecb346851f97cbb6cc71fef56af31397727a11f948",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.2/Limpet-0.12.2-aros-x86_64-abiv11-pc.zip",
+      "size": 7450366,
+      "sha256": "b4d09f201ef97ab577a64cba71d03a8a7c64c6a4ad72fab3b7f318991541589c",
       "depends": [],
       "requires_system": [
         {
@@ -9622,7 +9622,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-15",
+        "date": "2026-11-18",
         "checked": [
           "metadata",
           "download",
@@ -9642,15 +9642,13 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-15",
+          "date": "2026-11-18",
           "result": "passed",
           "checked": [
-            "install",
             "start",
-            "verify",
-            "remove"
+            "run"
           ],
-          "note": "0.12.1: apkg 0.7.8 installed from the public catalogue; verify passed; Limpet started; ssh, scp, ssh-keygen report 0.12.1; removed"
+          "note": "0.12.2: unpacked with UnZip, no apkg install; vmsvga 1920x1080, Opaque; listing, edge drags, 600 fast resizes, close"
         }
       ],
       "first_added": "2026-10-03",
@@ -9658,14 +9656,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.12.1",
+      "version": "0.12.2",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.1/Limpet-0.12.1-aros-x86_64-abiv1-pc.zip",
-      "size": 7320466,
-      "sha256": "cbfc324d62f6f62bdb55794223499d83f4b0b7f4edcd805f23bb5be350c0f953",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.2/Limpet-0.12.2-aros-x86_64-abiv1-pc.zip",
+      "size": 7320490,
+      "sha256": "73c4d24082a6b141a8eefab578588ad5653d8ac820d4b5e856a1ac300aaa8b95",
       "depends": [],
       "requires_system": [
         {
@@ -9704,7 +9702,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-15",
+        "date": "2026-11-18",
         "checked": [
           "metadata",
           "download",
@@ -9720,19 +9718,17 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS mainline nightly 2026-11-13",
+          "system": "mainline AROS x86_64 nightly 2026-11-13",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-15",
+          "date": "2026-11-18",
           "result": "passed",
           "checked": [
-            "install",
             "start",
-            "verify",
-            "remove"
+            "run"
           ],
-          "note": "0.12.1: apkg 0.7.8 installed from the public catalogue; verify passed; Limpet started; ssh, scp, ssh-keygen report 0.12.1; removed"
+          "note": "0.12.2: unpacked with UnZip, no apkg install; Limpet started, listing, Version reports 0.12.2, close"
         }
       ],
       "first_added": "2026-10-24",

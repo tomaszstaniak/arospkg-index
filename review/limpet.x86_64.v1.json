@@ -4,14 +4,14 @@
  "id": "limpet",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-11-15",
- "sha256": "cbfc324d62f6f62bdb55794223499d83f4b0b7f4edcd805f23bb5be350c0f953",
- "size": 7320466,
- "manifest_digest": "6c7c836b02adbd0cc097ff3d6c61d6808c09d9309c05fc2049ba397b3066e8bb",
+ "date": "2026-11-18",
+ "sha256": "73c4d24082a6b141a8eefab578588ad5653d8ac820d4b5e856a1ac300aaa8b95",
+ "size": 7320490,
+ "manifest_digest": "cd67df1e0e63c9cb24950d7f4deb1fdeb73c24b31470ba87f102fb9ff9b16dfb",
  "result": "passed",
  "sizes": {
   "largest_member": 5321400,
-  "unpacked": 19584564
+  "unpacked": 19584461
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 19584564 bytes unpacked"
+   "detail": "largest member 5321400 bytes (Limpet/Fonts/Unifont.otf), 19584461 bytes unpacked"
   },
   {
    "name": "paths",
