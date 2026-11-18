@@ -11171,9 +11171,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros6/pragtical-3.14.0-aros6-aros-aarch64-abiv1-raspi.zip",
-      "size": 4146366,
-      "sha256": "3d2c79ec8920b595793a9fb3f330fa08ea7c92b5a72c12de54ac565a3aeaf019",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros7/pragtical-3.14.0-aros7-aros-aarch64-abiv1-raspi.zip",
+      "size": 4146872,
+      "sha256": "3bf777e8c1130c258938aadc0de5b8c3aa608d15d973fbd8d6e5caaf59628370",
       "depends": [],
       "requires_system": [
         {
@@ -11240,7 +11240,7 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 6,
+      "revision": 7,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
@@ -11270,21 +11270,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS AArch64 20261110",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "QEMU raspi3b",
-          "date": "2026-11-18",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "3.14.0 r6: copied from the host, no apkg install; Shell start; window moved in steps, edit, save, close gadget; real Pi untested"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-15",
       "app_first_added": "2026-11-15"
     },
@@ -11295,9 +11281,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros6/pragtical-3.14.0-aros6-aros-x86_64-abiv1-pc.zip",
-      "size": 4510382,
-      "sha256": "60e3ce4025aacd5697360ce516820340305147d5bd416a030d83759595cc85d6",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros7/pragtical-3.14.0-aros7-aros-x86_64-abiv1-pc.zip",
+      "size": 4510695,
+      "sha256": "bb626a9d6d9096925de625f841ebf459b061966046c24009bcedc6e2010900b6",
       "depends": [],
       "requires_system": [
         {
@@ -11364,7 +11350,7 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 6,
+      "revision": 7,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
@@ -11406,7 +11392,7 @@
             "start",
             "run"
           ],
-          "note": "3.14.0 r6: unpacked with UnZip, no apkg install; Shell start; window moved in steps, edit, save, close gadget"
+          "note": "3.14.0 r7: unpacked with UnZip, no apkg install; Shell start; forced exit closes cleanly, edit, save, close gadget"
         }
       ],
       "first_added": "2026-11-15",
@@ -11419,9 +11405,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros6/pragtical-3.14.0-aros6-aros-x86_64-abiv11-pc.zip",
-      "size": 4516301,
-      "sha256": "9ee3debf3cb95163841bb41ea87bde5a4b9b1cded415da13871238488bd7c305",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros7/pragtical-3.14.0-aros7-aros-x86_64-abiv11-pc.zip",
+      "size": 4516455,
+      "sha256": "874698c02b59c97d0801a088de292da0e9754b0a4000190030d4481c89ef0c1a",
       "depends": [],
       "requires_system": [
         {
@@ -11488,7 +11474,7 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 6,
+      "revision": 7,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
@@ -11530,7 +11516,7 @@
             "start",
             "run"
           ],
-          "note": "3.14.0 r6: unpacked with UnZip, no apkg install; Shell start; window moved in steps with Opaque on, no trail; zoom, cover and uncover, save"
+          "note": "3.14.0 r7: unpacked with UnZip, no apkg install; vmsvga 1920x1080, Opaque; forced exit closes cleanly, 1500 fast resizes, edit, save"
         }
       ],
       "first_added": "2026-11-15",
