@@ -8713,6 +8713,303 @@
       "app_first_added": "2026-09-29"
     },
     {
+      "id": "jumpstart",
+      "version": "0.8.0",
+      "summary": "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "utility/workbench",
+      "url": "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.8.0/Jumpstart-0.8.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 4527130,
+      "sha256": "12a80f10feb4c49b980bb25d12bf9d6cdd3d649445c0f9420f068b21bf4fb639",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "freetype2.library"
+        }
+      ],
+      "installs_on": [
+        "mainline-aarch64"
+      ],
+      "runs_on": [
+        "mainline-aarch64"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Jumpstart",
+      "icon": "Jumpstart.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-launcher",
+      "license": "MIT; bundled parts keep their own licences, see ReadMe",
+      "post_install_notes": [
+        "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
+        "Start Jumpstart once from its icon; after that Ctrl+Alt+Space opens the panel. The first start also makes it start with the system.",
+        "Before removing the package, switch off Start with the system in its settings (General), or delete SYS:WBStartup/Jumpstart.info.",
+        "Settings, aliases and hotkeys are kept in ENVARC:Jumpstart, outside this drawer.",
+        "Currency answers need a running TCP/IP stack. Weather needs Dockbar's Weather widget."
+      ],
+      "launch": {
+        "executable": "Jumpstart",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-18",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS for Raspberry Pi nightly 2026-11-10",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-18",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "apkg 0.7.8, local index, root in RAM:; installed, started, panel opened by SHOW over ARexx; verify and removal not recorded (result files lost)"
+        }
+      ],
+      "first_added": "2026-11-18",
+      "app_first_added": "2026-11-18"
+    },
+    {
+      "id": "jumpstart",
+      "version": "0.8.0",
+      "summary": "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "utility/workbench",
+      "url": "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.8.0/Jumpstart-0.8.0-aros-x86_64-abiv1-pc.zip",
+      "size": 4304990,
+      "sha256": "6b32fbacdf1a8d6760f029edb6cf26fb9a4d49eefc9407de1adebdcb32879ac4",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "freetype2.library"
+        }
+      ],
+      "installs_on": [
+        "mainline-x86_64"
+      ],
+      "runs_on": [
+        "mainline-x86_64"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Jumpstart",
+      "icon": "Jumpstart.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-launcher",
+      "license": "MIT; bundled parts keep their own licences, see ReadMe",
+      "post_install_notes": [
+        "Needs a nightly from 2026-11-06 or later.",
+        "Start Jumpstart once from its icon; after that Ctrl+Alt+Space opens the panel. The first start also makes it start with the system.",
+        "Before removing the package, switch off Start with the system in its settings (General), or delete SYS:WBStartup/Jumpstart.info.",
+        "Settings, aliases and hotkeys are kept in ENVARC:Jumpstart, outside this drawer.",
+        "Currency answers need a running TCP/IP stack. Weather needs Dockbar's Weather widget."
+      ],
+      "launch": {
+        "executable": "Jumpstart",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-18",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 (nightly 2026-11-13)",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-18",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.8, local index, root in RAM:; 35 files verified; started, answered VERSION and SHOW over ARexx, QUIT; removed"
+        }
+      ],
+      "first_added": "2026-11-18",
+      "app_first_added": "2026-11-18"
+    },
+    {
+      "id": "jumpstart",
+      "version": "0.8.0",
+      "summary": "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history",
+      "arch": "x86_64",
+      "abi": "v11",
+      "category": "utility/workbench",
+      "url": "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.8.0/Jumpstart-0.8.0-aros-x86_64-abiv11-pc.zip",
+      "size": 2917459,
+      "sha256": "255068234a7a958438cbde42f4372ecdcd57699e0b55b8ef00fdf61485a31434",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "crt.library"
+        },
+        {
+          "type": "library",
+          "id": "stdlib.library"
+        },
+        {
+          "type": "library",
+          "id": "m.library"
+        },
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "freetype2.library"
+        }
+      ],
+      "installs_on": [
+        "aros-one"
+      ],
+      "runs_on": [
+        "aros-one"
+      ],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "Jumpstart",
+      "icon": "Jumpstart.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-launcher",
+      "license": "MIT; bundled parts keep their own licences, see ReadMe",
+      "post_install_notes": [
+        "Start Jumpstart once from its icon; after that Ctrl+Alt+Space opens the panel. The first start also makes it start with the system.",
+        "Before removing the package, switch off Start with the system in its settings (General), or delete SYS:WBStartup/Jumpstart.info.",
+        "Settings, aliases and hotkeys are kept in ENVARC:Jumpstart, outside this drawer.",
+        "Currency answers need a running TCP/IP stack. Weather needs Dockbar's Weather widget."
+      ],
+      "launch": {
+        "executable": "Jumpstart",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-18",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-18",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "remove",
+            "verify"
+          ],
+          "note": "apkg 0.7.8, local index, root in RAM:; 35 files verified; started, answered VERSION and SHOW over ARexx, QUIT; removed"
+        }
+      ],
+      "first_added": "2026-11-18",
+      "app_first_added": "2026-11-18"
+    },
+    {
       "id": "keen4",
       "version": "1.0",
       "summary": "Port of the famous DOS game Commander Keen IV.",

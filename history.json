@@ -429,6 +429,18 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "jumpstart/aarch64/v1": {
+   "first_added": "2026-11-18",
+   "commit": "2479e70e1d70"
+  },
+  "jumpstart/x86_64/v1": {
+   "first_added": "2026-11-18",
+   "commit": "2479e70e1d70"
+  },
+  "jumpstart/x86_64/v11": {
+   "first_added": "2026-11-18",
+   "commit": "2479e70e1d70"
+  },
   "keen4/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -1066,6 +1078,10 @@
   "isotools-gui": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "jumpstart": {
+   "first_added": "2026-11-18",
+   "commit": "2479e70e1d70"
   },
   "keen4": {
    "first_added": "2026-09-29",

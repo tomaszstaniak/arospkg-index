@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "jumpstart",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-18",
+ "sha256": "6b32fbacdf1a8d6760f029edb6cf26fb9a4d49eefc9407de1adebdcb32879ac4",
+ "size": 4304990,
+ "manifest_digest": "c48d58cbf5d19ecdc91d476d664d64715b54ce8b8bdaa0b77151032022905627",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 9556800,
+  "unpacked": 13844121
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "43 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 9556800 bytes (Jumpstart/Widgets/org.aros.currency/bin/x86_64-v1/CurrencyProvider), 13844121 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
