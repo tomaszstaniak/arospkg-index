@@ -10,5 +10,5 @@ arch    = "aarch64"
 abi     = "v1"
 machine = "QEMU raspi3b"
 result  = "passed"
-checked = ["install", "start", "remove", "verify"]
-note    = "apkg 0.7.8, local index, root in RAM:; 35 files verified; started, answered VERSION and SHOW over ARexx, QUIT; removed"
+checked = ["install", "start"]
+note    = "apkg 0.7.8, local index, root in RAM:; installed, started, panel opened by SHOW over ARexx; verify and removal not recorded (result files lost)"
