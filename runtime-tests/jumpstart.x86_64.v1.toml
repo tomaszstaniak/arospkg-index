@@ -1,0 +1,14 @@
+# Runtime tests of jumpstart x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "6b32fbacdf1a8d6760f029edb6cf26fb9a4d49eefc9407de1adebdcb32879ac4"
+date    = "2026-11-18"
+system  = "mainline AROS x86_64 (nightly 2026-11-13)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.8, local index, root in RAM:; 35 files verified; started, answered VERSION and SHOW over ARexx, QUIT; removed"

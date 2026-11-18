@@ -1,0 +1,14 @@
+# Runtime tests of jumpstart x86_64/v11: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "255068234a7a958438cbde42f4372ecdcd57699e0b55b8ef00fdf61485a31434"
+date    = "2026-11-18"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.8, local index, root in RAM:; 35 files verified; started, answered VERSION and SHOW over ARexx, QUIT; removed"

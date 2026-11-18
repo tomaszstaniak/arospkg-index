@@ -1,0 +1,14 @@
+# Runtime tests of jumpstart aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "12a80f10feb4c49b980bb25d12bf9d6cdd3d649445c0f9420f068b21bf4fb639"
+date    = "2026-11-18"
+system  = "AROS for Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start"]
+note    = "apkg 0.7.8, local index, root in RAM:; installed, started, panel opened by SHOW over ARexx; verify and removal not recorded (result files lost)"
