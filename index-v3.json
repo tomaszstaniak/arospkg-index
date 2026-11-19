@@ -9298,9 +9298,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros4/libresprite-1.3.99.20261114-aros4-aros-aarch64-abiv1-raspi.zip",
-      "size": 19598791,
-      "sha256": "1b2fd7886fe8e576a49dfc2cfa52ed640ed4ab6d7df2cc047fb1da461504b7ad",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros5/libresprite-1.3.99.20261114-aros5-aros-aarch64-abiv1-raspi.zip",
+      "size": 19598847,
+      "sha256": "69ad5a3ab11d666b0545f0046ab71b49673c3198b3b17a3ea1ffb1f14d4bbe6d",
       "depends": [],
       "requires_system": [
         {
@@ -9367,7 +9367,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 4,
+      "revision": 5,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -9382,7 +9382,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "checked": [
           "metadata",
           "download",
@@ -9407,9 +9407,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros4/libresprite-1.3.99.20261114-aros4-aros-x86_64-abiv1-pc.zip",
-      "size": 20036256,
-      "sha256": "cc07c29a4094f4e3def159eae1f6aba9f1aca35c16cd6de3aa90e4619ac4fb45",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros5/libresprite-1.3.99.20261114-aros5-aros-x86_64-abiv1-pc.zip",
+      "size": 20036468,
+      "sha256": "f884b7da0d2d906fa5aca9aa17dcbe19521a056f75aa478d28bd9a82120ff560",
       "depends": [],
       "requires_system": [
         {
@@ -9476,7 +9476,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 4,
+      "revision": 5,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -9491,7 +9491,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "checked": [
           "metadata",
           "download",
@@ -9516,9 +9516,9 @@
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros4/libresprite-1.3.99.20261114-aros4-aros-x86_64-abiv11-pc.zip",
-      "size": 19787628,
-      "sha256": "feb7cbc4d9ff49c1b4581484864cbdb9db9169e2fc4607e30a4c1ab73c9275f0",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros5/libresprite-1.3.99.20261114-aros5-aros-x86_64-abiv11-pc.zip",
+      "size": 19787705,
+      "sha256": "556d5574d56bfb9e31b5dd92dcd3a9cc6791848ae0f389c40e127fb5afdae159",
       "depends": [],
       "requires_system": [
         {
@@ -9589,7 +9589,7 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 4,
+      "revision": 5,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
@@ -9604,7 +9604,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "checked": [
           "metadata",
           "download",
@@ -9618,23 +9618,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-18",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "run",
-            "remove"
-          ],
-          "note": "1.3.99.20261114 r4: apkg 0.7.8 install from the public catalogue, Shell start, prompts, quit, apkg remove left no files"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16"
     },
