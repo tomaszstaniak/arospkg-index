@@ -1,0 +1,65 @@
+# Written by apkg-pack submit from the archive's .arospkg/manifest.toml.
+# Do not edit: a maintainer's change goes in overrides/deckcraft.aarch64.v1.toml, which
+# every later submission applies again.
+
+id              = "deckcraft"
+version         = "0.18.1"
+summary         = "Presentation program for PPTX with slide show and PDF export"
+category        = "office/presentation"
+license         = "MIT OR Apache-2.0"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "DeckCraft"
+icon            = "DeckCraft.info"
+depends         = []
+depends_checked = true
+post_install_notes = [
+  "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+  "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+  "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+  "Settings, AutoRecover data and DeckCraft.log are kept in DeckCraftData in the program drawer; keep it when upgrading.",
+  "Media plays without sound. No printing: export to PDF instead. Updates come through the AROS package manager.",
+]
+sha256          = "21b787aef758966cb33e311dde9d578e2e75a3ff83144e060dc4e69bc3566453"
+size            = 51642786
+status          = "approved"
+url             = "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.18.1/DeckCraft-0.18.1-aros-aarch64-abiv1-raspi.zip"
+
+[[requires_system]]
+type = "library"
+id = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id = "cybergraphics.library"
+
+[[requires_system]]
+type = "library"
+id = "iffparse.library"
+
+[[requires_system]]
+type = "library"
+id = "asl.library"
+
+[[requires_system]]
+type = "library"
+id = "datatypes.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-deckcraft"
+revision = "v0.18.1"
+archive = "DeckCraft-0.18.1-source.zip"
+built_with = "Raspberry Pi AArch64 ABIv1 (nightly 2026-11-10 SDK), Clang 20.1.0, Rust nightly 1.100 (rust-aros), egui 0.37 through egui-aros"
+
+[launch]
+executable = "DeckCraft"
+mode = "workbench"
