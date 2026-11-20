@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "deckcraft",
+ "arch": "aarch64",
+ "abi": "v1",
+ "date": "2026-11-20",
+ "sha256": "21b787aef758966cb33e311dde9d578e2e75a3ff83144e060dc4e69bc3566453",
+ "size": 51642786,
+ "manifest_digest": "7f929ab5060ae6f7e1b47e77b41e67b04ad562589bb9b92d8769288c6f3ca12f",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 86832560,
+  "unpacked": 157729890
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "53 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 86832560 bytes (DeckCraft/DeckCraft), 157729890 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for aarch64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
