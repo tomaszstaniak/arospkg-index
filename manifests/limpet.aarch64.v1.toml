@@ -1,17 +1,17 @@
-# Limpet 0.12.2: the window is smart refresh with one layer, lighter to move; nothing else changed since 0.12.1.
-# The terminal, its settings and the experimental handler (distributed separately) are unchanged.
-# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.12.2.md.
+# Limpet 0.13.0: a choice of prompts, TAB completion of a known command's keywords and drawer arguments,
+# the SSH programs on a stack of their own, Ctrl-C ends a wait for the server.
+# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.13.0.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.12.2"
+version         = "0.13.0"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.12.2/Limpet-0.12.2-aros-aarch64-abiv1-raspi.zip"
-size            = 7372721
-sha256          = "92ee8d1ddc5d716413e1c76d39b1670acfe96743ac25ed7ae3f0414677cc098d"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.0/Limpet-0.13.0-aros-aarch64-abiv1-raspi.zip"
+size            = 7383408
+sha256          = "c202e3c2a5d164d846b0fe8369c5c237869cd7a19389bee121ac6e375b577aa9"
 kind            = "app"
 license         = "MIT"
 
@@ -20,7 +20,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["mainline-aarch64"]
-runs_on         = ["mainline-aarch64"]   # 0.12.1 run from the unpacked archive 2026-11-15; 0.12.2 built, not run
+runs_on         = ["mainline-aarch64"]   # a 0.13.0 build of the same day run from its unpacked drawer 2026-11-21; the released archive not run again
 does_not_run_on = []
 
 post_install_notes = [
@@ -47,5 +47,5 @@ id   = "stdcio.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.12.2"
+revision   = "v0.13.0"
 built_with = "AROS raspi-aarch64 SDK of 2026-08-22 (mainline ABIv1), Clang 20.1"
