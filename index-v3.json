@@ -10132,6 +10132,21 @@
             "run"
           ],
           "note": "0.13.0: unpacked with UnZip; ssh key login, scp both ways, Ctrl-C on a silent server, coloured prompt, TAB keywords and drawers"
+        },
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-21",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.13.0: apkg 0.7.8 installed from the public catalogue; verify 43 as installed; Limpet started; Limpet and ssh report 0.13.0; removed"
         }
       ],
       "first_added": "2026-10-03",
@@ -10212,6 +10227,21 @@
             "run"
           ],
           "note": "0.13.0: unpacked with UnZip; ssh key login, scp both ways, Ctrl-C on a silent server, coloured prompt, TAB keywords and drawers"
+        },
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-15",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-21",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "verify",
+            "remove"
+          ],
+          "note": "0.13.0: apkg 0.7.8 installed from the public catalogue; verify ok; Limpet started; Limpet and ssh report 0.13.0; removed"
         }
       ],
       "first_added": "2026-10-24",
