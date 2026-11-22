@@ -24,6 +24,37 @@ We don't have to run your program before it is listed.
 
 Corrections to existing packages are welcome too. If you find a broken URL, an incorrect dependency or a compatibility problem, open an issue or a pull request. So are reports that you installed and started a listed package, with the system and the date.
 
+## The package description
+
+`apkg-pack init` writes the description for you and asks for what it cannot read from the drawer. This is a complete one, for a Shell program:
+
+```toml
+id              = "fastfetch"
+version         = "2.70.0"
+revision        = 4
+summary         = "System information in the Shell, with the AROS logo"
+category        = "utility/misc"
+license         = "MIT"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+subdir          = "Fastfetch"
+depends         = []
+depends_checked = true
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[launch]
+executable = "fastfetch"
+mode       = "shell"
+```
+
+`id`, `version`, `summary`, `kind`, `arch`, `abi` and `subdir` are always needed, and so is an answer about `depends` and `requires_system`, even when it is "none". `revision`, `category`, `license`, `icon`, `post_install_notes` and `[launch]` are optional. `submit` adds `url`, `size`, `sha256` and `status` when it measures the uploaded archive, and the result is the file in `manifests/`.
+
+The [metadata reference](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/metadata.md#the-fields-at-a-glance) describes every field and its limits. An archive that is already public and has no description inside can be listed with a hand-written manifest; the [packaging guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/packaging.md#4-the-manifest) has a complete example.
+
 ## Architecture and ABI support
 
 AROS has several incompatible binary targets:
