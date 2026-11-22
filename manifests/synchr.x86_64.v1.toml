@@ -41,7 +41,7 @@ post_install_notes = [
   "Start Synchr from its icon. The ReadMe in the drawer walks through connecting the first device.",
   "Needs a running TCP/IP stack. Use test folders first: deleting a file on one side deletes it on the other.",
   "Before removing the package, untick Start with the system in the window, or delete SYS:WBStartup/Synchr.info.",
-  "The drawer Data holds this computer's identity and the list of devices and folders. Copy it elsewhere first if you want to keep them.",
+  "Removing the package leaves the drawer Data with this computer's identity (key.pem, cert.pem) in place.",
   "In QEMU use the rtl8139 network card: with e1000 the system can stop during transfers.",
 ]
 
