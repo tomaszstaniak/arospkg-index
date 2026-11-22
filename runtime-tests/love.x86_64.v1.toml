@@ -11,4 +11,4 @@ abi = "v1"
 machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
-note = "12.0-aros3: apkg 0.7.8 downloaded the archive from its release URL and installed it; a test game started from a Shell and saved to Saves; verify ok (the save reported as not the package's); removed, the save kept"
+note = "12.0-aros3: apkg 0.7.8 downloaded and installed it; a game ran and saved; verify ok; removed, the save kept"
