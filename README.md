@@ -1,104 +1,61 @@
 # arospkg-index
 
-Software for AROS that [arospkg](https://github.com/tomaszstaniak/arospkg) can install. Pick a program in PkgManager or type `apkg install <id>`: the package manager downloads the archive from its author's site, checks it against the size and SHA-256 recorded here, and installs it.
+Package index for [arospkg](https://github.com/tomaszstaniak/arospkg), the AROS package manager.
 
-The catalogue lists 130 programs in 209 builds (counted on 2026-11-22) for ABIv11 distributions, mainline AROS x86_64, Raspberry Pi and i386.
+This repository contains package manifests and the indexes generated from them. It doesn't host any software. Each archive is downloaded from where its author published it, usually [AROS Archives](https://archives.arosworld.org/) or a GitHub release.
 
-If you write or port AROS software, your program belongs here. One command opens the pull request. Your archive stays where you publish it, on [AROS Archives](https://archives.arosworld.org), in a GitHub release or on any HTTPS host, and your source code can stay private. [How to add your program](#add-your-program).
+The index lists 130 programs (2026-11-22). AROS Archives holds far more than that, and the index grows as packages are submitted. If you write or port AROS software, you can add yours.
 
-## Add your program
+## Submitting a package
 
-You do not need to be part of this project. Nothing is uploaded here: the catalogue stores the URL, size and SHA-256 of your archive, and users download it from you.
+You don't need to be part of this project, and your source code can stay private. Pack your program with `apkg-pack` (Python 3.11 or later, on macOS, Linux or Windows), upload the ZIP wherever you publish your releases, then run:
 
-`apkg-pack` does the work. It runs on macOS, Linux or Windows with Python 3.11 or later:
-
-1. Put everything the user needs in one drawer, with the drawer icon beside it.
-2. `python3 apkg-pack.pyz init build/MyApp` reads the name, version, CPU and icon from the drawer and asks for the rest: the ABI, the licence and what the program needs from the system.
-3. `python3 apkg-pack.pyz build build/MyApp --output myapp.zip` writes a ZIP with the description inside it. Test that ZIP on AROS.
-4. Upload the ZIP unchanged, then submit its URL:
-
-```text
-python3 apkg-pack.pyz submit <download-url> --pr
+```sh
+python3 apkg-pack.pyz submit <archive-url> --pr
 ```
 
-`submit` downloads the archive, measures it and opens a pull request here from your GitHub account, through a fork when it needs one. It uses Git and the GitHub CLI for that. You do not copy any field by hand.
+This downloads the archive, measures its size and SHA-256 and opens a pull request here from your GitHub account. It needs Git and the GitHub CLI. If you don't use the GitHub CLI, `submit --index <clone of this repository> --dry-run` writes the same entry to a file, which you can attach to an issue.
 
-If you would rather not use the GitHub CLI, run `submit` with `--index <a clone of this repository> --dry-run`. It writes the same entry without opening anything, and you can attach that file to an issue here.
+The [authoring guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/authoring.md) explains how to install `apkg-pack` and describe a package.
 
-An archive that is already public and has no description inside it can be listed too, with a hand-written entry in `manifests/`. The [packaging guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/packaging.md#4-the-manifest) has a complete example.
+Pull requests are checked automatically. The CI downloads the archive, verifies its size and SHA-256, validates the manifest and the archive layout, and checks that the indexes can be regenerated. A maintainer reviews the submission before merging, and users see the package the next time they update their index.
 
-The [authoring guide](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/authoring.md) covers every step, including the download link for `apkg-pack`, the launch settings and notes shown after installation.
+We don't have to run your program before it is listed.
 
-### What happens to a submission
+Corrections to existing packages are welcome too. If you find a broken URL, an incorrect dependency or a compatibility problem, open an issue or a pull request. So are reports that you installed and started a listed package, with the system and the date.
 
-The pull request is checked automatically: the archive is downloaded and compared with the entry, its member names and layout are examined, and the CPU of its programs is read. A maintainer then reads the entry and merges it. The catalogue is regenerated after the merge, and users see the program the next time they update their index.
+## Architecture and ABI support
 
-We do not have to run your program before it is listed. If you or anyone else has installed and started it, that can be recorded separately as a runtime test.
+AROS has several incompatible binary targets:
 
-For the next release, change `version` in the description kept beside your drawer, build, upload under a new URL and submit again. A packaging fix of the same program version gets a higher `revision`.
-
-## Corrections and test reports
-
-A wrong hash, a moved URL, a missing requirement or a description that no longer fits: open an issue or a pull request. The same goes for a report that you installed and started a listed archive, with the system and the date. Those reports become records in `runtime-tests/`.
-
-## Supported systems
-
-A binary built for one AROS ABI does not run on another, however correctly it is installed. Every entry names its CPU and ABI, so a client can tell before downloading anything whether a package fits the machine.
-
-| `arch` | `abi` | System | Builds on 2026-11-22 |
+| `arch` | `abi` | System | Builds listed |
 |---|---|---|---|
 | `x86_64` | `v11` | ABIv11 distributions | 130 |
-| `x86_64` | `v1` | mainline AROS x86_64 | 18 |
+| `x86_64` | `v1` | Mainline AROS | 18 |
 | `aarch64` | `v1` | AROS on Raspberry Pi | 20 |
 | `i386` | `v0` | 32-bit ABIv0 distributions | 41 |
 
-AROS Archives marks ABIv11 files with a `-v11` suffix in the file name; an x86_64 file without it is built for mainline. arospkg 0.7.8 is the last client built for i386. The i386 entries stay in the catalogue.
+Every manifest names its target, so the package manager can check it before installation. An ABIv11 binary won't work on ABIv1, even if the archive extracts correctly.
 
-These numbers count published entries. They say nothing about how many of the programs have been started on each system; the runtime tests do.
+arospkg 0.7.8 is the last client built for i386. The i386 entries stay in the index.
 
-## What is in the repository
+## Repository structure
 
-| Path | Contents |
-|---|---|
-| `manifests/` | One file per approved build, `<id>.<arch>.<abi>.toml` (older ones `<id>.<arch>.toml`). Everything else is derived from these files. |
-| `overrides/` | A maintainer's deliberate corrections to an author's entry, under the manifest's file name. They are applied each time the catalogue is generated. |
-| `runtime-tests/` | Who installed and started which archive, on which system and when. Each record names the SHA-256 of the archive it was made with. |
-| `review/` | The result of the automatic review of each entry. The publish workflow writes it. |
-| `history.json` | The day each program and each build was first published. The publish workflow writes it. |
-| `index-v3.json` | The generated catalogue for apkg 0.6 and later, with every package. |
-| `index-v2.json` | The catalogue for apkg 0.4 and 0.5. It leaves out packages that use `depends`, `conflicts` or `replaces`, which those clients do not read and would install without what they need. |
-| `index.json` | The catalogue for clients up to 0.3.2. It keeps the packages it already lists up to date, within the 8192 JSON values those clients can read. |
+- `manifests/`: reviewed package manifests, one per package build.
+- `overrides/`: maintainer corrections to package metadata, where needed.
+- `runtime-tests/`: records of who installed and started which archive, on which system and when.
+- `review/` and `history.json`: results of the automatic review and first publication dates, written by the publish workflow.
+- `index-v3.json`: generated catalogue for apkg 0.6 and later.
+- `index-v2.json` and `index.json`: generated catalogues for older clients.
 
-The three catalogue files are generated from the manifests, and a client must be able to rebuild its view from the manifests alone.
+The indexes are generated from the manifests. Don't edit them, `review/` or `history.json` manually.
 
-## Listed, reviewed, runtime tested
+## Package verification
 
-These are three separate facts about one build and one archive.
+Before a package is added, its archive is downloaded and inspected: contents, dependencies, file size and SHA-256. The client checks every download against the recorded size and hash and refuses a file that doesn't match.
 
-A build is listed when its manifest is published with `status = "approved"`. Someone has measured the archive's size and SHA-256 and checked what it depends on.
+Being listed doesn't mean a package has been run. Where someone has installed and started an archive, `runtime-tests/` says on which system and when.
 
-A build is reviewed when the automatic review passed for exactly these bytes and this entry. The review covers the metadata, the size and SHA-256, whether the archive can be read, whether its member names are safe and cannot overwrite one another (also without regard to case), the drawer, icon and program the entry names, and the CPU of the programs. The ABI cannot be read from the files and is not guessed. Nobody installs or starts the program for the review, and nobody can declare the result: the workflow writes it into `review/`.
+Some packages need libraries that come with the system and not from another package. These are listed in `requires_system`; package dependencies use `depends`.
 
-A build is runtime tested when `runtime-tests/` has a record that someone installed and started that archive on a named system on a given date. A changed archive starts without any.
-
-The manifest fields `installs_on`, `runs_on` and `does_not_run_on` are older free-form claims, kept as they were. The [metadata reference](https://github.com/tomaszstaniak/arospkg/blob/main/docs/guide/metadata.md#listed-reviewed-and-runtime-tests) specifies all of these fields.
-
-## Dependencies and system requirements
-
-`depends` names other packages in this catalogue. `requires_system` names things the machine must already provide, such as a library that ships with the system. The two are separate fields because the failures differ: "no package in the catalogue provides X" can be fixed by publishing a package, and "this machine does not have X" cannot. The client reports which of the two it hit and refuses before downloading anything.
-
-The same archive can therefore be installable on one machine and refused on another that lacks a library.
-
-When the client cannot decide a requirement, it reports it as undetermined. The install proceeds, says so, and the doubt is written into the local registry.
-
-## Verification
-
-Every entry carries a `sha256` and a `size`, and the client refuses to install a download that does not match both. An entry without a hash cannot be installed at all.
-
-When a file changes under a published URL, its download no longer matches the entry and installing it fails. The new file is measured and reviewed, then published under a new `revision` (the same program version) or a new `version`. A published version and revision never get other bytes, and the old runtime tests stay with the old bytes. A file that cannot be reconciled is withdrawn with `excluded = "<reason>"`.
-
-## How pull requests are checked
-
-`.github/workflows/check.yml` runs on every pull request. It downloads each archive whose entry changed, within the client's limits, reviews it, and generates the catalogue files as a trial. A change to comments only reviews nothing. A pull request that edits `review/` or `history.json` fails. The check has no secrets and runs nothing from the pull request or the archive.
-
-After a merge, `.github/workflows/publish.yml` reviews the entries changed since the last published catalogue, regenerates the catalogue and commits it with the review records and first publication dates. A failed run leaves the published files as they were. The branch `published` marks that catalogue; only the workflow moves it, together with `main`, so merges in quick succession are all reviewed. Run by hand with *review_all*, the workflow reviews every entry, and one that no longer passes stays listed.
+The details are in [docs/verification.md](docs/verification.md).
