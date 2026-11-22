@@ -1,14 +1,14 @@
 # arospkg-index
 
-This is the software catalogue that [arospkg](https://github.com/tomaszstaniak/arospkg) reads. `apkg update` and the **Update index** button in PkgManager download it, and every program they offer to install is described here.
+Software for AROS that [arospkg](https://github.com/tomaszstaniak/arospkg) can install. Pick a program in PkgManager or type `apkg install <id>`: the package manager downloads the archive from its author's site, checks it against the size and SHA-256 recorded here, and installs it.
 
-The repository holds descriptions only. Each archive stays where its author published it, on [AROS Archives](https://archives.arosworld.org), in a GitHub release or on another HTTPS host, and is downloaded from there at install time.
+The catalogue lists 130 programs in 209 builds (counted on 2026-11-22) for ABIv11 distributions, mainline AROS x86_64, Raspberry Pi and i386.
 
-On 2026-11-22 the catalogue described 130 programs in 209 builds, and anyone who writes or ports AROS software can add theirs.
+If you write or port AROS software, your program belongs here. One command opens the pull request. Your archive stays where you publish it, on [AROS Archives](https://archives.arosworld.org), in a GitHub release or on any HTTPS host, and your source code can stay private. [How to add your program](#add-your-program).
 
 ## Add your program
 
-You do not need to be part of this project, and your source code can stay private. You keep hosting the archive yourself; the catalogue stores its URL, size and SHA-256.
+You do not need to be part of this project. Nothing is uploaded here: the catalogue stores the URL, size and SHA-256 of your archive, and users download it from you.
 
 `apkg-pack` does the work. It runs on macOS, Linux or Windows with Python 3.11 or later:
 
