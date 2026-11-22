@@ -745,6 +745,18 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "synchr/aarch64/v1": {
+   "first_added": "2026-11-22",
+   "commit": "f750ab420b44"
+  },
+  "synchr/x86_64/v1": {
+   "first_added": "2026-11-22",
+   "commit": "f750ab420b44"
+  },
+  "synchr/x86_64/v11": {
+   "first_added": "2026-11-22",
+   "commit": "f750ab420b44"
+  },
   "tbftss/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -1294,6 +1306,10 @@
   "super_trevor_land": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
+  },
+  "synchr": {
+   "first_added": "2026-11-22",
+   "commit": "f750ab420b44"
   },
   "tbftss": {
    "first_added": "2026-09-29",

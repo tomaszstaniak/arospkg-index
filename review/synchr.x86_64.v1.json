@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "synchr",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-22",
+ "sha256": "703cae5e45224c271c1a553ff813d86f6edc2c3cc1cc1999cbab43acf16e118b",
+ "size": 2240112,
+ "manifest_digest": "5dac70fb77cda202a2d693527b7ab104c8bac3db7c8e5e1594b55f9d26692288",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 8178496,
+  "unpacked": 8303381
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "9 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 8178496 bytes (Synchr/SynchrEngine), 8303381 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "2 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}
