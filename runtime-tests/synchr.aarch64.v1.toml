@@ -1,0 +1,14 @@
+# Runtime tests of synchr aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "cb9ca78de07ae3aee89818019b2f3b0356200740c1bd875a077904a42084ce8d"
+date    = "2026-11-22"
+system  = "AROS for Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.8, local index, root in RAM:; 8 files verified; window opened, quit with Right-Amiga+Q; removed (the identity Synchr made in Data was kept)"

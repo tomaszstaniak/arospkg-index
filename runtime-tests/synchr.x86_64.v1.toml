@@ -1,0 +1,14 @@
+# Runtime tests of synchr x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install,
+# start and remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "703cae5e45224c271c1a553ff813d86f6edc2c3cc1cc1999cbab43acf16e118b"
+date    = "2026-11-22"
+system  = "mainline AROS x86_64 (nightly 2026-11-18)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "remove", "verify"]
+note    = "apkg 0.7.8, local index, root in RAM:; 8 files verified; window opened, quit with Right-Amiga+Q; removed (the identity Synchr made in Data was kept)"
