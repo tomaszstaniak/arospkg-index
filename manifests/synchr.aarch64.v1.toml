@@ -1,0 +1,73 @@
+# Synchr 0.2 for the Raspberry Pi (AArch64, mainline ABIv1).
+# Our own program, published by its author as an asset of the GitHub release
+# v0.2 (one source commit for all three archives). First public release; the
+# archive is revision 1 of the 0.2 package (the ReadMe gained the support
+# links, the programs are those of 0.2).
+# Synchr keeps drawers in step with Syncthing folders: a Zune window
+# (Synchr) that starts and controls the engine (SynchrEngine).
+# User data: the drawer Data inside the program drawer (identity, devices
+# and folders, state, log). The window's Start with the system writes
+# SYS:WBStartup/Synchr.info; apkg does not install or remove it, hence the
+# note.
+# requires_system: the C runtime libraries and the libraries opened at start
+# (the binaries' automatic library lists, read with nm). muimaster.library,
+# icon.library, iffparse.library, rexxsyslib.library (control port) and
+# bsdsocket.library are opened by the programs themselves and not listed.
+
+status          = "approved"
+id              = "synchr"
+version         = "0.2"
+revision        = 1
+summary         = "Keeps drawers in step with Syncthing folders on your other computers"
+category        = "network/misc"
+license         = "MIT; bundled parts keep their own licences, see NOTICE.txt"
+url             = "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2/Synchr-0.2-r1-aros-aarch64-abiv1-raspi.zip"
+size            = 2501918
+sha256          = "cb9ca78de07ae3aee89818019b2f3b0356200740c1bd875a077904a42084ce8d"
+kind            = "app"
+arch            = "aarch64"
+abi             = "v1"
+
+depends         = []
+depends_checked = true
+subdir          = "Synchr"
+icon            = "Synchr.info"   # the drawer icon, beside Synchr/ at the archive root
+installs_on     = ["mainline-aarch64"]
+runs_on         = ["mainline-aarch64"]
+does_not_run_on = []
+
+post_install_notes = [
+  "Start Synchr from its icon. The ReadMe in the drawer walks through connecting the first device.",
+  "Needs a running TCP/IP stack. Use test folders first: deleting a file on one side deletes it on the other.",
+  "Before removing the package, untick Start with the system in the window, or delete SYS:WBStartup/Synchr.info.",
+  "The drawer Data holds this computer's identity and the list of devices and folders. Copy it elsewhere first if you want to keep them.",
+]
+
+[[requires_system]]
+type = "library"
+id   = "posixc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdc.library"
+
+[[requires_system]]
+type = "library"
+id   = "stdcio.library"
+
+[[requires_system]]
+type = "library"
+id   = "intuition.library"
+
+[[requires_system]]
+type = "library"
+id   = "utility.library"
+
+[source]
+repository = "https://github.com/tomaszstaniak/aros-synchr"
+revision   = "v0.2"
+built_with = "AROS raspi-aarch64 SDK of 2026-11-05 (mainline ABIv1), Clang 20.1.0"
+
+[launch]
+executable = "Synchr"
+mode       = "workbench"
