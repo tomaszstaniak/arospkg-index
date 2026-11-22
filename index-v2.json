@@ -9230,6 +9230,137 @@
       "app_first_added": "2026-10-03"
     },
     {
+      "id": "love",
+      "version": "12.0",
+      "summary": "LOVE (love2d): runs 2D games written in Lua for the LOVE framework",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "game/misc",
+      "url": "https://github.com/tomaszstaniak/aros-loeve/releases/download/v12.0-aros3/love-12.0-aros3-aros-x86_64-abiv1-pc.zip",
+      "size": 8034943,
+      "sha256": "0bda2d4501006cc6794304f23fdda8ce5ebc3a3e0834a35765fb30f3cacfe122",
+      "depends": [],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "gl.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "png.library"
+        },
+        {
+          "type": "library",
+          "id": "icon.library"
+        },
+        {
+          "type": "library",
+          "id": "workbench.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "keymap.library"
+        },
+        {
+          "type": "library",
+          "id": "lowlevel.library"
+        },
+        {
+          "type": "library",
+          "id": "gadtools.library"
+        },
+        {
+          "type": "library",
+          "id": "commodities.library"
+        },
+        {
+          "type": "library",
+          "id": "muimaster.library"
+        },
+        {
+          "type": "library",
+          "id": "openurl.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LOVE",
+      "icon": "LOVE.info",
+      "install": {},
+      "revision": 3,
+      "source": "https://github.com/tomaszstaniak/aros-loeve",
+      "license": "Zlib",
+      "post_install_notes": [
+        "Double-click the love icon and choose a game (.love file or drawer with main.lua), or from a Shell: Run love <game>.",
+        "love --icon <game> writes an icon that starts the game with a double click.",
+        "Saved games are kept in the Saves drawer of the package drawer."
+      ],
+      "launch": {
+        "executable": "love",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-22",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-18",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-22",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "12.0-aros3: apkg 0.7.8 downloaded and installed it; a game ran and saved; verify ok; removed, the save kept"
+        }
+      ],
+      "first_added": "2026-11-22",
+      "app_first_added": "2026-11-22"
+    },
+    {
       "id": "mcamiga",
       "version": "1.0",
       "summary": "File Manager",

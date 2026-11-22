@@ -1,0 +1,59 @@
+{
+ "schema": 1,
+ "suite": 3,
+ "id": "love",
+ "arch": "x86_64",
+ "abi": "v1",
+ "date": "2026-11-22",
+ "sha256": "0bda2d4501006cc6794304f23fdda8ce5ebc3a3e0834a35765fb30f3cacfe122",
+ "size": 8034943,
+ "manifest_digest": "8d24a0616e5941411f78697da0efba71abb11575957dd36d35e572925b0c2391",
+ "result": "passed",
+ "sizes": {
+  "largest_member": 27011448,
+  "unpacked": 27199902
+ },
+ "checks": [
+  {
+   "name": "metadata",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "download",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "archive",
+   "result": "passed",
+   "detail": "25 members"
+  },
+  {
+   "name": "sizes",
+   "result": "passed",
+   "detail": "largest member 27011448 bytes (LOVE/love), 27199902 bytes unpacked"
+  },
+  {
+   "name": "paths",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "layout",
+   "result": "passed",
+   "detail": ""
+  },
+  {
+   "name": "cpu",
+   "result": "passed",
+   "detail": "1 ELF file(s) for x86_64"
+  }
+ ],
+ "unchecked": [
+  {
+   "name": "abi",
+   "why": "ELF headers do not record the AROS ABI"
+  }
+ ]
+}

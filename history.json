@@ -497,6 +497,10 @@
    "first_added": "2026-10-03",
    "commit": "28b7ca438a0a"
   },
+  "love/x86_64/v1": {
+   "first_added": "2026-11-22",
+   "commit": "78ea1f1579ea"
+  },
   "mcamiga/x86_64/v11": {
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
@@ -1114,6 +1118,10 @@
   "limpet": {
    "first_added": "2026-10-03",
    "commit": "28b7ca438a0a"
+  },
+  "love": {
+   "first_added": "2026-11-22",
+   "commit": "78ea1f1579ea"
   },
   "mcamiga": {
    "first_added": "2026-09-29",
