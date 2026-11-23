@@ -1,0 +1,14 @@
+# Runtime tests of pdfcraft x86_64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "d20fd3edeebaee110cbd7ae3d3d917c2edd6d2da47fe9ac162540917995c3b42"
+date    = "2026-11-23"
+system  = "AROS mainline nightly 2026-11-18"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"

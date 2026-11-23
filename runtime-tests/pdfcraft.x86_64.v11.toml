@@ -23,3 +23,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "run", "verify", "remove"]
 note    = "0.9.0-test4: apkg 0.5.0 install from the catalogue to SYS:, apkg run from its icon, closed, verify ok, PkgManager listed it, removed"
+
+[[test]]
+sha256  = "c2623446ce541847f8add78b78da91aaa5ab8df2851d2f1a013817c5bd49b902"
+date    = "2026-11-23"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.9.0-test4, its settings taken over; verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
