@@ -13,7 +13,7 @@
 status          = "approved"
 id              = "micropolis"
 version         = "0.1.0-rc3"
-revision        = 1
+revision        = 2
 summary         = "Classic city-building simulation for AROS"
 arch            = "x86_64"
 abi             = "v11"
@@ -45,6 +45,12 @@ id   = "m.library"
 [[requires_system]]
 type = "library"
 id   = "stdlib.library"
+
+# Revision 2 adds only this table: the same archive, now with Run in apkg
+# and PkgManager.
+[launch]
+executable = "Micropolis"
+mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-micropolis"

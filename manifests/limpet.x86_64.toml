@@ -4,7 +4,7 @@
 status          = "approved"
 id              = "limpet"
 version         = "0.13.0"
-revision        = 1
+revision        = 2
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
@@ -40,6 +40,12 @@ id   = "m.library"
 [[requires_system]]
 type = "library"
 id   = "stdlib.library"
+
+# Revision 2 adds only this table: the same archive, now with Run in apkg
+# and PkgManager.
+[launch]
+executable = "Limpet"
+mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
