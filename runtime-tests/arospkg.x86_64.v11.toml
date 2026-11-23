@@ -132,4 +132,4 @@ abi     = "v11"
 machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["start", "verify", "remove"]
-note    = "0.8.2: update from this catalogue, verify and remove arca (installed by 0.8.1 in the same session); PkgManager showed the installed package's page with Open folder and Remove inside the window"
+note    = "0.8.2: update, verify and remove arca (installed by 0.8.1 just before); installed package page with Open folder and Remove inside the window"
