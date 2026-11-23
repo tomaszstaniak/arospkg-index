@@ -1,6 +1,10 @@
-# Jumpstart 0.8.0 for x86_64 AROS ABIv11 (ABIv11 distributions), PC.
+# Jumpstart 0.9.0 for x86_64 AROS ABIv11 (ABIv11 distributions), PC.
 # Our own program, published by its author as an asset of the GitHub release
-# v0.8.0 (one source commit for all three archives). First public release.
+# v0.9.0 (one source commit for all three archives).
+# 0.9.0 fixes the ARexx port left behind on exit, file rows that opened another
+# file, lost aliases after a failed save and an index replaced by an incomplete
+# walk; it adds pins, search in the whole clipboard text and a pause for the
+# history. Pins are kept with aliases in ENVARC:Jumpstart/shortcuts.
 # A keyboard launcher: a commodity with a hotkey that opens a search panel.
 # It carries the Currency widget (Widgets/org.aros.currency, with curl and
 # OpenSSL in its provider) and colour themes (Themes/).
@@ -15,14 +19,14 @@
 
 status          = "approved"
 id              = "jumpstart"
-version         = "0.8.0"
+version         = "0.9.0"
 revision        = 1
 summary         = "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see ReadMe"
-url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.8.0/Jumpstart-0.8.0-aros-x86_64-abiv11-pc.zip"
-size            = 2917459
-sha256          = "255068234a7a958438cbde42f4372ecdcd57699e0b55b8ef00fdf61485a31434"
+url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.9.0/Jumpstart-0.9.0-aros-x86_64-abiv11-pc.zip"
+size            = 2922039
+sha256          = "d8354e9801c4c12d230d6c8bae0a6786deed34741b2b9aa242651c2b5aef5276"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v11"
@@ -68,7 +72,7 @@ id   = "freetype2.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-launcher"
-revision   = "v0.8.0"
+revision   = "v0.9.0"
 built_with = "AROS ABIv11 2026.09 SDK, GCC 10.5.0"
 
 [launch]

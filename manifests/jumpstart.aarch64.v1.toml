@@ -1,6 +1,10 @@
-# Jumpstart 0.8.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1).
+# Jumpstart 0.9.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1).
 # Our own program, published by its author as an asset of the GitHub release
-# v0.8.0 (one source commit for all three archives). First public release.
+# v0.9.0 (one source commit for all three archives).
+# 0.9.0 fixes the ARexx port left behind on exit, file rows that opened another
+# file, lost aliases after a failed save and an index replaced by an incomplete
+# walk; it adds pins, search in the whole clipboard text and a pause for the
+# history. Pins are kept with aliases in ENVARC:Jumpstart/shortcuts.
 # A keyboard launcher: a commodity with a hotkey that opens a search panel.
 # It carries the Currency widget (Widgets/org.aros.currency, with curl and
 # OpenSSL in its provider) and colour themes (Themes/).
@@ -15,14 +19,14 @@
 
 status          = "approved"
 id              = "jumpstart"
-version         = "0.8.0"
+version         = "0.9.0"
 revision        = 1
 summary         = "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see ReadMe"
-url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.8.0/Jumpstart-0.8.0-aros-aarch64-abiv1-raspi.zip"
-size            = 4527130
-sha256          = "12a80f10feb4c49b980bb25d12bf9d6cdd3d649445c0f9420f068b21bf4fb639"
+url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.9.0/Jumpstart-0.9.0-aros-aarch64-abiv1-raspi.zip"
+size            = 4534500
+sha256          = "c1070602217f808f4d27ecd33d7835a63273a24eceb8433322148021863fcbd6"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -69,7 +73,7 @@ id   = "freetype2.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-launcher"
-revision   = "v0.8.0"
+revision   = "v0.9.0"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-10 (mainline ABIv1), Clang 20.1.0"
 
 [launch]

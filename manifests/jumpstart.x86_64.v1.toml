@@ -1,6 +1,10 @@
-# Jumpstart 0.8.0 for mainline AROS x86_64 (ABIv1), PC.
+# Jumpstart 0.9.0 for mainline AROS x86_64 (ABIv1), PC.
 # Our own program, published by its author as an asset of the GitHub release
-# v0.8.0 (one source commit for all three archives). First public release.
+# v0.9.0 (one source commit for all three archives).
+# 0.9.0 fixes the ARexx port left behind on exit, file rows that opened another
+# file, lost aliases after a failed save and an index replaced by an incomplete
+# walk; it adds pins, search in the whole clipboard text and a pause for the
+# history. Pins are kept with aliases in ENVARC:Jumpstart/shortcuts.
 # A keyboard launcher: a commodity with a hotkey that opens a search panel.
 # It carries the Currency widget (Widgets/org.aros.currency, with curl and
 # OpenSSL in its provider) and colour themes (Themes/).
@@ -15,14 +19,14 @@
 
 status          = "approved"
 id              = "jumpstart"
-version         = "0.8.0"
+version         = "0.9.0"
 revision        = 1
 summary         = "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see ReadMe"
-url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.8.0/Jumpstart-0.8.0-aros-x86_64-abiv1-pc.zip"
-size            = 4304990
-sha256          = "6b32fbacdf1a8d6760f029edb6cf26fb9a4d49eefc9407de1adebdcb32879ac4"
+url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.9.0/Jumpstart-0.9.0-aros-x86_64-abiv1-pc.zip"
+size            = 4311502
+sha256          = "9e7fa4fca99606089460b8d0be8a2f8945c4c1625f3997c3b98cf1c9b2c083ab"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v1"
@@ -69,7 +73,7 @@ id   = "freetype2.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-launcher"
-revision   = "v0.8.0"
+revision   = "v0.9.0"
 built_with = "official mainline AROS x86_64 SDK of 2026-11-10 (ABIv1), GCC 10.5.0"
 
 [launch]
