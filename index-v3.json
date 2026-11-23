@@ -1,6 +1,11 @@
 {
   "schema": 1,
   "source": "https://archives.arosworld.org/share/FULLINDEX.readme",
+  "media_bundle": {
+    "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/icons-b819197d.zip",
+    "sha256": "b819197d32bf81810bee90bb071fdb9fd1f29f36e6db568f5afb5af261fdd2aa",
+    "size": 617180
+  },
   "packages": [
     {
       "id": "ab3dhd",
@@ -70,7 +75,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ab3dhd/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ab3dhd/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "alac",
@@ -134,7 +155,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/alac/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/alac/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "alac",
@@ -204,7 +241,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/alac/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/alac/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "amiberry",
@@ -256,7 +309,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/amiberry/15517b89-icon.png",
+          "sha256": "15517b89bd2c0744a7bd194b3fad657c68f79fa6420574bab5a9fa7efd5e85ad",
+          "size": 4464,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/amiberry/3abed17b-icon-small.png",
+          "sha256": "3abed17b5607a7e40f7e2e68a77dc21581b6ea1019c1e835ac1c777dc6c85019",
+          "size": 1128,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "antiword",
@@ -320,7 +389,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/antiword/8c7756d7-icon.png",
+          "sha256": "8c7756d7a1232977f9416d97650bd3dd8539a30e084a47d3ca4f0e25f35c0688",
+          "size": 3524,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/antiword/1a118427-icon-small.png",
+          "sha256": "1a1184279873129dd15407a8866d6c6924123f1d654f00f5fd17e22a30e0849e",
+          "size": 1505,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "antiword",
@@ -446,7 +531,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/antiword/8c7756d7-icon.png",
+          "sha256": "8c7756d7a1232977f9416d97650bd3dd8539a30e084a47d3ca4f0e25f35c0688",
+          "size": 3524,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/antiword/1a118427-icon-small.png",
+          "sha256": "1a1184279873129dd15407a8866d6c6924123f1d654f00f5fd17e22a30e0849e",
+          "size": 1505,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "apotris",
@@ -516,7 +617,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/apotris/189c93d6-icon.png",
+          "sha256": "189c93d66e0d35ecb948006d873523a4ac9d5a1b84511920d0bf2e00d281b9a8",
+          "size": 4347,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/apotris/c75693af-icon-small.png",
+          "sha256": "c75693affc4a7b292758bdfd483ca3fdd62c958eeabf68471de90be8a5e83633",
+          "size": 1595,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "arca",
@@ -606,6 +723,20 @@
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/arca/5fc7331a-icon.png",
+          "sha256": "5fc7331a8b03259428f38bd4e97f7eeed5dbddbebac76e1bf319c2ed76d1dd59",
+          "size": 8596,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/arca/aaad60c6-icon-small.png",
+          "sha256": "aaad60c64f3555b34287f126b7f3401b09723cbb8047cc0b8d8b75d3a46c7510",
+          "size": 1693,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -723,6 +854,20 @@
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/arca/5fc7331a-icon.png",
+          "sha256": "5fc7331a8b03259428f38bd4e97f7eeed5dbddbebac76e1bf319c2ed76d1dd59",
+          "size": 8596,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/arca/aaad60c6-icon-small.png",
+          "sha256": "aaad60c64f3555b34287f126b7f3401b09723cbb8047cc0b8d8b75d3a46c7510",
+          "size": 1693,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -835,6 +980,20 @@
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/arca/5fc7331a-icon.png",
+          "sha256": "5fc7331a8b03259428f38bd4e97f7eeed5dbddbebac76e1bf319c2ed76d1dd59",
+          "size": 8596,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/arca/aaad60c6-icon-small.png",
+          "sha256": "aaad60c64f3555b34287f126b7f3401b09723cbb8047cc0b8d8b75d3a46c7510",
+          "size": 1693,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -950,7 +1109,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-06",
-      "app_first_added": "2026-11-06"
+      "app_first_added": "2026-11-06",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/aroscapture/04d922dc-icon.png",
+          "sha256": "04d922dcbc2de300be0155d92a1deb49fbf8f60571c1f174d3444052d750d01b",
+          "size": 2295,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/aroscapture/cbbc2f1f-icon-small.png",
+          "sha256": "cbbc2f1f2e87f7e8e29366cf0e6eb79bc7bb95a1bc4963a2cc36ca872f2459ab",
+          "size": 936,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "aroscapture",
@@ -1040,7 +1215,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-06",
-      "app_first_added": "2026-11-06"
+      "app_first_added": "2026-11-06",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/aroscapture/04d922dc-icon.png",
+          "sha256": "04d922dcbc2de300be0155d92a1deb49fbf8f60571c1f174d3444052d750d01b",
+          "size": 2295,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/aroscapture/cbbc2f1f-icon-small.png",
+          "sha256": "cbbc2f1f2e87f7e8e29366cf0e6eb79bc7bb95a1bc4963a2cc36ca872f2459ab",
+          "size": 936,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "arospkg",
@@ -1473,7 +1664,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/badapple/d8059f36-icon.png",
+          "sha256": "d8059f360c0848205c8008837e603d2693a92d228b949d1a51c77d6110d123fe",
+          "size": 2683,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/badapple/9f8ce80e-icon-small.png",
+          "sha256": "9f8ce80ede63045b1482ee9a00fbb350998452e454ccecd9650fbb651f8a44dd",
+          "size": 1223,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "badapple",
@@ -1543,7 +1750,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/badapple/d8059f36-icon.png",
+          "sha256": "d8059f360c0848205c8008837e603d2693a92d228b949d1a51c77d6110d123fe",
+          "size": 2683,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/badapple/9f8ce80e-icon-small.png",
+          "sha256": "9f8ce80ede63045b1482ee9a00fbb350998452e454ccecd9650fbb651f8a44dd",
+          "size": 1223,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "bin2iso",
@@ -1669,7 +1892,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/bin2iso/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/bin2iso/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "blips",
@@ -1799,7 +2038,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/blips/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/blips/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "boxer",
@@ -1897,7 +2152,23 @@
         }
       ],
       "first_added": "2026-11-04",
-      "app_first_added": "2026-10-19"
+      "app_first_added": "2026-10-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boxer/36e0adaa-icon.png",
+          "sha256": "36e0adaa482cda45053686eb1bb86663b7904e62f8a636c02398099a9366bd49",
+          "size": 1957,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boxer/efa49b67-icon-small.png",
+          "sha256": "efa49b6770bc2223e4a0c843105a7f1985b6afca8df6d2f0531b27fcc65dbe43",
+          "size": 1462,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "boxer",
@@ -2000,7 +2271,23 @@
         }
       ],
       "first_added": "2026-11-04",
-      "app_first_added": "2026-10-19"
+      "app_first_added": "2026-10-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boxer/36e0adaa-icon.png",
+          "sha256": "36e0adaa482cda45053686eb1bb86663b7904e62f8a636c02398099a9366bd49",
+          "size": 1957,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boxer/efa49b67-icon-small.png",
+          "sha256": "efa49b6770bc2223e4a0c843105a7f1985b6afca8df6d2f0531b27fcc65dbe43",
+          "size": 1462,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "boxer",
@@ -2127,7 +2414,23 @@
         }
       ],
       "first_added": "2026-10-19",
-      "app_first_added": "2026-10-19"
+      "app_first_added": "2026-10-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boxer/36e0adaa-icon.png",
+          "sha256": "36e0adaa482cda45053686eb1bb86663b7904e62f8a636c02398099a9366bd49",
+          "size": 1957,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boxer/efa49b67-icon-small.png",
+          "sha256": "efa49b6770bc2223e4a0c843105a7f1985b6afca8df6d2f0531b27fcc65dbe43",
+          "size": 1462,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "boy",
@@ -2195,7 +2498,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boy/71ff9f07-icon.png",
+          "sha256": "71ff9f0788814144e220ba6714000d41ba65bce22e44111e5ddfbb798108dd80",
+          "size": 3645,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boy/cca3a82c-icon-small.png",
+          "sha256": "cca3a82c16caa67e4b7c56eadbe6d74588d7556727d59cdcc56424a336a6fe68",
+          "size": 1491,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "boy",
@@ -2269,7 +2588,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boy/71ff9f07-icon.png",
+          "sha256": "71ff9f0788814144e220ba6714000d41ba65bce22e44111e5ddfbb798108dd80",
+          "size": 3645,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/boy/cca3a82c-icon-small.png",
+          "sha256": "cca3a82c16caa67e4b7c56eadbe6d74588d7556727d59cdcc56424a336a6fe68",
+          "size": 1491,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "breakhack",
@@ -2339,7 +2674,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/breakhack/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/breakhack/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "burntime",
@@ -2405,7 +2756,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-07",
-      "app_first_added": "2026-11-05"
+      "app_first_added": "2026-11-05",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/burntime/408f1362-icon.png",
+          "sha256": "408f136225f831ba442b1742b000ab84e25985819f0c260f344c965d5f3153f6",
+          "size": 463,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/burntime/37dccfb6-icon-small.png",
+          "sha256": "37dccfb6d35f2b8ba79e38b3446a3993b1b35046507f54dcb222016869b690e3",
+          "size": 673,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "burntime",
@@ -2470,7 +2837,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-05",
-      "app_first_added": "2026-11-05"
+      "app_first_added": "2026-11-05",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/burntime/408f1362-icon.png",
+          "sha256": "408f136225f831ba442b1742b000ab84e25985819f0c260f344c965d5f3153f6",
+          "size": 463,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/burntime/37dccfb6-icon-small.png",
+          "sha256": "37dccfb6d35f2b8ba79e38b3446a3993b1b35046507f54dcb222016869b690e3",
+          "size": 673,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "burntime",
@@ -2535,7 +2918,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-05",
-      "app_first_added": "2026-11-05"
+      "app_first_added": "2026-11-05",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/burntime/408f1362-icon.png",
+          "sha256": "408f136225f831ba442b1742b000ab84e25985819f0c260f344c965d5f3153f6",
+          "size": 463,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/burntime/37dccfb6-icon-small.png",
+          "sha256": "37dccfb6d35f2b8ba79e38b3446a3993b1b35046507f54dcb222016869b690e3",
+          "size": 673,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "cabextract",
@@ -2712,6 +3111,20 @@
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/cadcraft/15bad013-icon.png",
+          "sha256": "15bad013dfba3664d859ac7f437ba56ecadbb172bb07d0f21b319a4e71f8b9c1",
+          "size": 4393,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/cadcraft/50cb1be7-icon-small.png",
+          "sha256": "50cb1be73d5cc25be337130f5cce551c5c18c573277f18075ba06e960f2cc22e",
+          "size": 1534,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -2847,6 +3260,20 @@
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/cadcraft/15bad013-icon.png",
+          "sha256": "15bad013dfba3664d859ac7f437ba56ecadbb172bb07d0f21b319a4e71f8b9c1",
+          "size": 4393,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/cadcraft/50cb1be7-icon-small.png",
+          "sha256": "50cb1be73d5cc25be337130f5cce551c5c18c573277f18075ba06e960f2cc22e",
+          "size": 1534,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -2981,6 +3408,20 @@
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/cadcraft/15bad013-icon.png",
+          "sha256": "15bad013dfba3664d859ac7f437ba56ecadbb172bb07d0f21b319a4e71f8b9c1",
+          "size": 4393,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/cadcraft/50cb1be7-icon-small.png",
+          "sha256": "50cb1be73d5cc25be337130f5cce551c5c18c573277f18075ba06e960f2cc22e",
+          "size": 1534,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -3078,7 +3519,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ccd2cue/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ccd2cue/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "ccd2iso",
@@ -3204,7 +3661,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ccd2iso/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ccd2iso/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "davegnukem",
@@ -3278,7 +3751,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/davegnukem/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/davegnukem/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "daysleeper",
@@ -3346,7 +3835,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/daysleeper/4a4d1d31-icon.png",
+          "sha256": "4a4d1d319f0461e31a812ad740ecdde7c1090b3ca8607acb9d4fc6ebee53d031",
+          "size": 4128,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/daysleeper/c0267c6a-icon-small.png",
+          "sha256": "c0267c6ab5836a13c6e759a5fefebf13e60a5c1944018f815b1a8c2ac614f46e",
+          "size": 1567,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "daysleeper",
@@ -3416,7 +3921,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/daysleeper/4a4d1d31-icon.png",
+          "sha256": "4a4d1d319f0461e31a812ad740ecdde7c1090b3ca8607acb9d4fc6ebee53d031",
+          "size": 4128,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/daysleeper/c0267c6a-icon-small.png",
+          "sha256": "c0267c6ab5836a13c6e759a5fefebf13e60a5c1944018f815b1a8c2ac614f46e",
+          "size": 1567,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "deckcraft",
@@ -3521,6 +4042,20 @@
       "first_added": "2026-11-20",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/deckcraft/aedf669c-icon.png",
+          "sha256": "aedf669ca9b4a27d5d3d6f4d6857ef149be0e745804bc5f6316042adfad4b107",
+          "size": 2069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/deckcraft/caf7cf71-icon-small.png",
+          "sha256": "caf7cf71007e23e34f3806c7b5accc371a4d432452ff5b542672bda745325270",
+          "size": 1225,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -3654,6 +4189,20 @@
       "first_added": "2026-11-20",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/deckcraft/aedf669c-icon.png",
+          "sha256": "aedf669ca9b4a27d5d3d6f4d6857ef149be0e745804bc5f6316042adfad4b107",
+          "size": 2069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/deckcraft/caf7cf71-icon-small.png",
+          "sha256": "caf7cf71007e23e34f3806c7b5accc371a4d432452ff5b542672bda745325270",
+          "size": 1225,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -3787,6 +4336,20 @@
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/deckcraft/aedf669c-icon.png",
+          "sha256": "aedf669ca9b4a27d5d3d6f4d6857ef149be0e745804bc5f6316042adfad4b107",
+          "size": 2069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/deckcraft/caf7cf71-icon-small.png",
+          "sha256": "caf7cf71007e23e34f3806c7b5accc371a4d432452ff5b542672bda745325270",
+          "size": 1225,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -3884,7 +4447,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/delugem/535956ed-icon.png",
+          "sha256": "535956ed1444efbe43ab122f30d1d6558784a6e64669ad2433f333df4c72edd7",
+          "size": 4564,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/delugem/8236ccf9-icon-small.png",
+          "sha256": "8236ccf90f6e45fbdcd3a15028d1c16c9be150b7602f7e5ea0155cac52b89ddd",
+          "size": 1140,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "demac",
@@ -3954,7 +4533,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/demac/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/demac/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "demoeffects",
@@ -4028,7 +4623,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/demoeffects/236cb773-icon.png",
+          "sha256": "236cb773243e6ac76a935cd55627558d9fc7bec048b9193edb0290700a7a670b",
+          "size": 4355,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/demoeffects/d3392796-icon-small.png",
+          "sha256": "d3392796e8d2cb7f36c8493e9b9adcdcf722c4094e0df22c6fa412e35cdeb17a",
+          "size": 1606,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "devilutionx",
@@ -4098,7 +4709,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/devilutionx/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/devilutionx/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dirtree",
@@ -4185,7 +4812,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dirtree/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dirtree/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dirtree",
@@ -4307,7 +4950,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dirtree/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dirtree/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "diskusage",
@@ -4366,7 +5025,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/diskusage/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/diskusage/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "diskusage",
@@ -4502,7 +5177,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/diskusage/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/diskusage/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dockbar",
@@ -4606,7 +5297,23 @@
         }
       ],
       "first_added": "2026-11-05",
-      "app_first_added": "2026-11-05"
+      "app_first_added": "2026-11-05",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dockbar/a7836a41-icon.png",
+          "sha256": "a7836a41dd102cef7ea47cf22d6574ff6b72007263ff7f8eacbdd0eab911bcbd",
+          "size": 726,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dockbar/a957a527-icon-small.png",
+          "sha256": "a957a527dcd94855381dea46cad0fa5532390e0bf3291a9d954a52e49ceb58db",
+          "size": 736,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dockbar",
@@ -4710,7 +5417,23 @@
         }
       ],
       "first_added": "2026-11-05",
-      "app_first_added": "2026-11-05"
+      "app_first_added": "2026-11-05",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dockbar/a7836a41-icon.png",
+          "sha256": "a7836a41dd102cef7ea47cf22d6574ff6b72007263ff7f8eacbdd0eab911bcbd",
+          "size": 726,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dockbar/a957a527-icon-small.png",
+          "sha256": "a957a527dcd94855381dea46cad0fa5532390e0bf3291a9d954a52e49ceb58db",
+          "size": 736,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dockbar",
@@ -4814,7 +5537,23 @@
         }
       ],
       "first_added": "2026-11-05",
-      "app_first_added": "2026-11-05"
+      "app_first_added": "2026-11-05",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dockbar/a7836a41-icon.png",
+          "sha256": "a7836a41dd102cef7ea47cf22d6574ff6b72007263ff7f8eacbdd0eab911bcbd",
+          "size": 726,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dockbar/a957a527-icon-small.png",
+          "sha256": "a957a527dcd94855381dea46cad0fa5532390e0bf3291a9d954a52e49ceb58db",
+          "size": 736,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dosbox",
@@ -4890,7 +5629,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dosbox/f55d395d-icon.png",
+          "sha256": "f55d395d67ac33f113b1dd99cdf8dfdaac90de786f9b2a5529227a1ea0a0dcf7",
+          "size": 5050,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dosbox/5ec4ed68-icon-small.png",
+          "sha256": "5ec4ed680599a7ab0b793d72a215ec83cd0781caa7cc7645a5485398cb499667",
+          "size": 1196,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dosbox",
@@ -4964,7 +5719,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dosbox/f55d395d-icon.png",
+          "sha256": "f55d395d67ac33f113b1dd99cdf8dfdaac90de786f9b2a5529227a1ea0a0dcf7",
+          "size": 5050,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dosbox/5ec4ed68-icon-small.png",
+          "sha256": "5ec4ed680599a7ab0b793d72a215ec83cd0781caa7cc7645a5485398cb499667",
+          "size": 1196,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dose2",
@@ -5032,7 +5803,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dose2/10330880-icon.png",
+          "sha256": "10330880a35c7fb38df93646417e3c64dd75f1489e0840f7a3ea3b9c24fc2cfb",
+          "size": 4601,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dose2/0cb62554-icon-small.png",
+          "sha256": "0cb62554a0707a5a4d0f6dc46bd0eb7ead54ce098581bca20caf80b8e3751a1a",
+          "size": 1637,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "dose2",
@@ -5102,7 +5889,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dose2/10330880-icon.png",
+          "sha256": "10330880a35c7fb38df93646417e3c64dd75f1489e0840f7a3ea3b9c24fc2cfb",
+          "size": 4601,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/dose2/0cb62554-icon-small.png",
+          "sha256": "0cb62554a0707a5a4d0f6dc46bd0eb7ead54ce098581bca20caf80b8e3751a1a",
+          "size": 1637,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "eza",
@@ -5436,7 +6239,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fallout/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fallout/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "fallout2",
@@ -5506,7 +6325,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fallout2/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fallout2/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "fastfetch",
@@ -5832,7 +6667,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fheroes2/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fheroes2/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "fheroes2",
@@ -5902,7 +6753,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fheroes2/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/fheroes2/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "finder",
@@ -5970,7 +6837,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/finder/87bdcbf7-icon.png",
+          "sha256": "87bdcbf755b23f29baaa07dc0da4cce44410130d193754396cb52a338a06ef34",
+          "size": 4367,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/finder/9193edf4-icon-small.png",
+          "sha256": "9193edf41639950a80a2f0b6c3b68ce0745f5e944bc88cf6dbe603e2cc7424d1",
+          "size": 1571,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "finder",
@@ -6040,7 +6923,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/finder/87bdcbf7-icon.png",
+          "sha256": "87bdcbf755b23f29baaa07dc0da4cce44410130d193754396cb52a338a06ef34",
+          "size": 4367,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/finder/9193edf4-icon-small.png",
+          "sha256": "9193edf41639950a80a2f0b6c3b68ce0745f5e944bc88cf6dbe603e2cc7424d1",
+          "size": 1571,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "fireoftheapes",
@@ -6184,7 +7083,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/flx_play/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/flx_play/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "folio",
@@ -6286,6 +7201,20 @@
       "first_added": "2026-10-04",
       "app_first_added": "2026-09-26",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/728c9694-icon.png",
+          "sha256": "728c96942414191410b32eeb970ab8262b9b69c63df72595ee324d4f6b80eee1",
+          "size": 4417,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/27db3fd7-icon-small.png",
+          "sha256": "27db3fd79d3c43cafc4861acb675ab4e756d27174360f37661ca48132d6bd241",
+          "size": 1291,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -6422,6 +7351,20 @@
       "first_added": "2026-10-04",
       "app_first_added": "2026-09-26",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/728c9694-icon.png",
+          "sha256": "728c96942414191410b32eeb970ab8262b9b69c63df72595ee324d4f6b80eee1",
+          "size": 4417,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/27db3fd7-icon-small.png",
+          "sha256": "27db3fd79d3c43cafc4861acb675ab4e756d27174360f37661ca48132d6bd241",
+          "size": 1291,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -6576,6 +7519,20 @@
       "first_added": "2026-11-08",
       "app_first_added": "2026-09-26",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/728c9694-icon.png",
+          "sha256": "728c96942414191410b32eeb970ab8262b9b69c63df72595ee324d4f6b80eee1",
+          "size": 4417,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/27db3fd7-icon-small.png",
+          "sha256": "27db3fd79d3c43cafc4861acb675ab4e756d27174360f37661ca48132d6bd241",
+          "size": 1291,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -6735,6 +7692,20 @@
       "first_added": "2026-09-26",
       "app_first_added": "2026-09-26",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/728c9694-icon.png",
+          "sha256": "728c96942414191410b32eeb970ab8262b9b69c63df72595ee324d4f6b80eee1",
+          "size": 4417,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/folio/27db3fd7-icon-small.png",
+          "sha256": "27db3fd79d3c43cafc4861acb675ab4e756d27174360f37661ca48132d6bd241",
+          "size": 1291,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -6857,7 +7828,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ft2clone/778ac289-icon.png",
+          "sha256": "778ac2891802745f791582d4932a6e317ceb714a18cadc3239402df516467fc0",
+          "size": 4082,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ft2clone/17765dd2-icon-small.png",
+          "sha256": "17765dd25d2861c075a121a68630d362b95d578769a6417e09a508f9f75ab0f3",
+          "size": 1597,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "gicriptofilex",
@@ -6921,7 +7908,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gicriptofilex/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gicriptofilex/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "gicriptofilex",
@@ -6972,7 +7975,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gicriptofilex/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gicriptofilex/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "giddy3",
@@ -7040,7 +8059,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giddy3/0bfb5518-icon.png",
+          "sha256": "0bfb551817d56c2e3ac6c603e799c67412fc7f346e69394d30a3f51fbf92e7c3",
+          "size": 3277,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giddy3/07b2fd5f-icon-small.png",
+          "sha256": "07b2fd5f4fc68e461fc1e633420d00bfd7c3a201e8a7c9fb63a3420f9024f748",
+          "size": 1447,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "giddy3",
@@ -7114,7 +8149,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giddy3/0bfb5518-icon.png",
+          "sha256": "0bfb551817d56c2e3ac6c603e799c67412fc7f346e69394d30a3f51fbf92e7c3",
+          "size": 3277,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giddy3/07b2fd5f-icon-small.png",
+          "sha256": "07b2fd5f4fc68e461fc1e633420d00bfd7c3a201e8a7c9fb63a3420f9024f748",
+          "size": 1447,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "giocodel15",
@@ -7178,7 +8229,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giocodel15/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giocodel15/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "giocodel15",
@@ -7229,7 +8296,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giocodel15/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/giocodel15/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "gisplita",
@@ -7433,7 +8516,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gmore/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gmore/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "gmore",
@@ -7559,7 +8658,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gmore/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gmore/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "gnurobbo",
@@ -7633,7 +8748,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gnurobbo/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gnurobbo/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "grafx2",
@@ -7714,7 +8845,23 @@
         }
       ],
       "first_added": "2026-09-26",
-      "app_first_added": "2026-09-26"
+      "app_first_added": "2026-09-26",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/grafx2/c76b58c7-icon.png",
+          "sha256": "c76b58c7eb12d1cc91cb8f2b92a31c535b5fa814aba001933a364ed1f1fd4eaa",
+          "size": 1485,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/grafx2/a026c5ea-icon-small.png",
+          "sha256": "a026c5eaeeb26d2bef45030aa4486203431affe41da17c0cf00f28d274b30dcd",
+          "size": 1894,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "grep",
@@ -7845,7 +8992,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/grep/c94bd617-icon.png",
+          "sha256": "c94bd6170a4024de1406d2c8eb27b11d02bc180496f269bf61e814790890bc21",
+          "size": 4265,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/grep/11bb87d0-icon-small.png",
+          "sha256": "11bb87d0819f4ac40dd1ab8eca0531a29fc2b177a764177c3d6bfe89de95f028",
+          "size": 1700,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "gridcraft",
@@ -7949,6 +9112,20 @@
       "first_added": "2026-11-12",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gridcraft/51ceba9f-icon.png",
+          "sha256": "51ceba9fd63a68d5b371489e2cc69e679586a9771b30a6c17a551da5bfa0482d",
+          "size": 3071,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gridcraft/1407370c-icon-small.png",
+          "sha256": "1407370ca65731b29c5d807a6253ce02a2efa77fda01028b0aa99fffb65a70ce",
+          "size": 1552,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -8081,6 +9258,20 @@
       "first_added": "2026-11-12",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gridcraft/51ceba9f-icon.png",
+          "sha256": "51ceba9fd63a68d5b371489e2cc69e679586a9771b30a6c17a551da5bfa0482d",
+          "size": 3071,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gridcraft/1407370c-icon-small.png",
+          "sha256": "1407370ca65731b29c5d807a6253ce02a2efa77fda01028b0aa99fffb65a70ce",
+          "size": 1552,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -8212,6 +9403,20 @@
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gridcraft/51ceba9f-icon.png",
+          "sha256": "51ceba9fd63a68d5b371489e2cc69e679586a9771b30a6c17a551da5bfa0482d",
+          "size": 3071,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/gridcraft/1407370c-icon-small.png",
+          "sha256": "1407370ca65731b29c5d807a6253ce02a2efa77fda01028b0aa99fffb65a70ce",
+          "size": 1552,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -8309,7 +9514,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hexen2/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hexen2/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "hivelyreplay",
@@ -8451,7 +9672,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hocoslamfy/92db9e76-icon.png",
+          "sha256": "92db9e76d8c6938087e61b5e2ec687c814447f8b988e5ef3ed0ba3d92c25b32b",
+          "size": 4755,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hocoslamfy/0b08f7df-icon-small.png",
+          "sha256": "0b08f7df79fb2e407520e209b74b20b70425e291cfed41c8be4a458563ec7162",
+          "size": 1660,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "hocoslamfy",
@@ -8581,7 +9818,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hocoslamfy/92db9e76-icon.png",
+          "sha256": "92db9e76d8c6938087e61b5e2ec687c814447f8b988e5ef3ed0ba3d92c25b32b",
+          "size": 4755,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hocoslamfy/0b08f7df-icon-small.png",
+          "sha256": "0b08f7df79fb2e407520e209b74b20b70425e291cfed41c8be4a458563ec7162",
+          "size": 1660,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "hostile-takeover",
@@ -8723,7 +9976,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hydracastle/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hydracastle/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "hydracastle",
@@ -8797,7 +10066,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hydracastle/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/hydracastle/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "iconmake",
@@ -8869,7 +10154,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/iconmake/ad5a9c2a-icon.png",
+          "sha256": "ad5a9c2af4bab1cfffe0f8743cccadfa2595a3d66ccde101f87bb1a43d9c9b2b",
+          "size": 4408,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/iconmake/4d7e5c01-icon-small.png",
+          "sha256": "4d7e5c010359f49b590bf4cc08b53ad285a7c0ba882626e129e1ef198ee6c89c",
+          "size": 1611,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "iconmake",
@@ -8995,7 +10296,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/iconmake/ad5a9c2a-icon.png",
+          "sha256": "ad5a9c2af4bab1cfffe0f8743cccadfa2595a3d66ccde101f87bb1a43d9c9b2b",
+          "size": 4408,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/iconmake/4d7e5c01-icon-small.png",
+          "sha256": "4d7e5c010359f49b590bf4cc08b53ad285a7c0ba882626e129e1ef198ee6c89c",
+          "size": 1611,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "isomaker",
@@ -9111,7 +10428,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isomaker/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isomaker/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "isomaker-gui",
@@ -9181,7 +10514,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isomaker-gui/bddee927-icon.png",
+          "sha256": "bddee9272ff45041e76a616be2b7bab700f19aa77ee9e159fb88a081c18c4bca",
+          "size": 4453,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isomaker-gui/74bff34b-icon-small.png",
+          "sha256": "74bff34b2eb8679f9bb77de08551fa96a05b21210e779d7da50b1f2c3e3d3df5",
+          "size": 1634,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "isotool",
@@ -9249,7 +10598,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotool/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotool/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "isotool",
@@ -9365,7 +10730,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotool/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotool/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "isotools-gui",
@@ -9437,7 +10818,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotools-gui/9c16137c-icon.png",
+          "sha256": "9c16137c5113baa9ae067f9d188b3aa0a170688b28c8f82869e881fc33b5f0e2",
+          "size": 4424,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotools-gui/4b3bc3c1-icon-small.png",
+          "sha256": "4b3bc3c1789e0eb6be532225af4ec81db87c93a4b6342ad3d509971dc07213d0",
+          "size": 1613,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "isotools-gui",
@@ -9507,7 +10904,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotools-gui/9c16137c-icon.png",
+          "sha256": "9c16137c5113baa9ae067f9d188b3aa0a170688b28c8f82869e881fc33b5f0e2",
+          "size": 4424,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/isotools-gui/4b3bc3c1-icon-small.png",
+          "sha256": "4b3bc3c1789e0eb6be532225af4ec81db87c93a4b6342ad3d509971dc07213d0",
+          "size": 1613,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "jumpstart",
@@ -9949,7 +11362,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lbreakouthd/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lbreakouthd/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "ledblur",
@@ -10017,7 +11446,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ledblur/64a084d7-icon.png",
+          "sha256": "64a084d709b7027606a754f6d932eb668969547c7df660d36bf1b29c16c661cf",
+          "size": 3443,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ledblur/96fb4308-icon-small.png",
+          "sha256": "96fb4308a38529975ff5e603719e07cec3f5d5979d1af56dfaaedc0bed00da66",
+          "size": 1502,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "ledblur",
@@ -10091,7 +11536,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ledblur/64a084d7-icon.png",
+          "sha256": "64a084d709b7027606a754f6d932eb668969547c7df660d36bf1b29c16c661cf",
+          "size": 3443,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ledblur/96fb4308-icon-small.png",
+          "sha256": "96fb4308a38529975ff5e603719e07cec3f5d5979d1af56dfaaedc0bed00da66",
+          "size": 1502,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "libresprite",
@@ -10200,7 +11661,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-16",
-      "app_first_added": "2026-11-16"
+      "app_first_added": "2026-11-16",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/libresprite/d881ab3d-icon.png",
+          "sha256": "d881ab3dbce9820ff624b50f15fc103d206e10f1ff144717df42f40b2cce5535",
+          "size": 342,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/libresprite/5df012ec-icon-small.png",
+          "sha256": "5df012ec0521b5e52360a61bf6efd32be2d252fc055589e931aa233c2789b399",
+          "size": 1141,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "libresprite",
@@ -10309,7 +11786,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-16",
-      "app_first_added": "2026-11-16"
+      "app_first_added": "2026-11-16",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/libresprite/d881ab3d-icon.png",
+          "sha256": "d881ab3dbce9820ff624b50f15fc103d206e10f1ff144717df42f40b2cce5535",
+          "size": 342,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/libresprite/5df012ec-icon-small.png",
+          "sha256": "5df012ec0521b5e52360a61bf6efd32be2d252fc055589e931aa233c2789b399",
+          "size": 1141,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "libresprite",
@@ -10422,7 +11915,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-16",
-      "app_first_added": "2026-11-16"
+      "app_first_added": "2026-11-16",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/libresprite/d881ab3d-icon.png",
+          "sha256": "d881ab3dbce9820ff624b50f15fc103d206e10f1ff144717df42f40b2cce5535",
+          "size": 342,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/libresprite/5df012ec-icon-small.png",
+          "sha256": "5df012ec0521b5e52360a61bf6efd32be2d252fc055589e931aa233c2789b399",
+          "size": 1141,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "lightcraft",
@@ -10521,7 +12030,23 @@
         }
       ],
       "first_added": "2026-11-23",
-      "app_first_added": "2026-10-24"
+      "app_first_added": "2026-10-24",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/8c38413d-icon.png",
+          "sha256": "8c38413dde046ffa6c818ca74034eb2ae47d39ed2b93cfcce531cce5175cfae9",
+          "size": 6069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/3f5987e8-icon-small.png",
+          "sha256": "3f5987e845c67cc16a016c019c94eb14dfab7231bb2c38e53d1b0794fa855e58",
+          "size": 1696,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "lightcraft",
@@ -10622,7 +12147,23 @@
         }
       ],
       "first_added": "2026-10-24",
-      "app_first_added": "2026-10-24"
+      "app_first_added": "2026-10-24",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/8c38413d-icon.png",
+          "sha256": "8c38413dde046ffa6c818ca74034eb2ae47d39ed2b93cfcce531cce5175cfae9",
+          "size": 6069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/3f5987e8-icon-small.png",
+          "sha256": "3f5987e845c67cc16a016c019c94eb14dfab7231bb2c38e53d1b0794fa855e58",
+          "size": 1696,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "lightcraft",
@@ -10722,7 +12263,23 @@
         }
       ],
       "first_added": "2026-10-24",
-      "app_first_added": "2026-10-24"
+      "app_first_added": "2026-10-24",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/8c38413d-icon.png",
+          "sha256": "8c38413dde046ffa6c818ca74034eb2ae47d39ed2b93cfcce531cce5175cfae9",
+          "size": 6069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/3f5987e8-icon-small.png",
+          "sha256": "3f5987e845c67cc16a016c019c94eb14dfab7231bb2c38e53d1b0794fa855e58",
+          "size": 1696,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "limpet",
@@ -10789,7 +12346,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-11-13",
-      "app_first_added": "2026-10-03"
+      "app_first_added": "2026-10-03",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/limpet/1a6c1958-icon.png",
+          "sha256": "1a6c1958554e6b769a9a7b3d92852e55ab7c8eb73ec48abebad29b80b1f60633",
+          "size": 9266,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/limpet/b9bf3040-icon-small.png",
+          "sha256": "b9bf3040a4012e350a971e1230541e20f2fc174f7642f1d8bf83cf21ab91bfa8",
+          "size": 1762,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "limpet",
@@ -10883,7 +12456,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-10-03"
+      "app_first_added": "2026-10-03",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/limpet/1a6c1958-icon.png",
+          "sha256": "1a6c1958554e6b769a9a7b3d92852e55ab7c8eb73ec48abebad29b80b1f60633",
+          "size": 9266,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/limpet/b9bf3040-icon-small.png",
+          "sha256": "b9bf3040a4012e350a971e1230541e20f2fc174f7642f1d8bf83cf21ab91bfa8",
+          "size": 1762,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "limpet",
@@ -10978,7 +12567,23 @@
         }
       ],
       "first_added": "2026-10-24",
-      "app_first_added": "2026-10-03"
+      "app_first_added": "2026-10-03",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/limpet/1a6c1958-icon.png",
+          "sha256": "1a6c1958554e6b769a9a7b3d92852e55ab7c8eb73ec48abebad29b80b1f60633",
+          "size": 9266,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/limpet/b9bf3040-icon-small.png",
+          "sha256": "b9bf3040a4012e350a971e1230541e20f2fc174f7642f1d8bf83cf21ab91bfa8",
+          "size": 1762,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "love",
@@ -11109,7 +12714,23 @@
         }
       ],
       "first_added": "2026-11-22",
-      "app_first_added": "2026-11-22"
+      "app_first_added": "2026-11-22",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/ad6cdca0-icon.png",
+          "sha256": "ad6cdca0263a83e2c3976fa46b1f3a8181649d481e16a7e33703339a5d39ee6e",
+          "size": 4480,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/599f9266-icon-small.png",
+          "sha256": "599f9266a913ad81850246d647f6064988980c5d71588dde7a651b4b1dade2ca",
+          "size": 1463,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "mcamiga",
@@ -11454,7 +13075,23 @@
         }
       ],
       "first_added": "2026-09-25",
-      "app_first_added": "2026-09-25"
+      "app_first_added": "2026-09-25",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/micropolis/b725155d-icon.png",
+          "sha256": "b725155dfa27391de2e9a5f78ff7b9894b5d0f1cb3d7cc1062f2d3b1bce8958a",
+          "size": 4077,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/micropolis/8f2fc9fd-icon-small.png",
+          "sha256": "8f2fc9fd3881d4c6bb3d75c6c18da1a1c4146fc529bbb8f3a4d97edd03f2122e",
+          "size": 942,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "minislug",
@@ -11528,7 +13165,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/minislug/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/minislug/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "mplayer",
@@ -11598,7 +13251,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/mplayer/255c7862-icon.png",
+          "sha256": "255c78625a40bc8c6bfd1028d877ff3a1dae1774c534942a4b178835918b1be1",
+          "size": 3654,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/mplayer/bd9979fb-icon-small.png",
+          "sha256": "bd9979fb15224bc9f23c11f259c7bd2d39bfcdb456e6f360d28fd27af9619259",
+          "size": 1558,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "nano",
@@ -11814,7 +13483,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/nomarch/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/nomarch/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "ominoarcade",
@@ -11884,7 +13569,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ominoarcade/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ominoarcade/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "ominostage",
@@ -11954,7 +13655,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ominostage/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/ominostage/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "openloco",
@@ -12330,7 +14047,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/opentyrian/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/opentyrian/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "opentyrian",
@@ -12404,7 +14137,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/opentyrian/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/opentyrian/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "openxcom",
@@ -12583,6 +14332,20 @@
       "first_added": "2026-11-23",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/664425a5-icon.png",
+          "sha256": "664425a5a297df14861a9083a0accb4fa2d0fe6dc139d8537b84961d5638042c",
+          "size": 6440,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/c7de4e2e-icon-small.png",
+          "sha256": "c7de4e2e6417c86e721198002fe82a861c7850a3322be0ae24a8d2f670de41ec",
+          "size": 1875,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -12716,6 +14479,20 @@
       "first_added": "2026-11-23",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/664425a5-icon.png",
+          "sha256": "664425a5a297df14861a9083a0accb4fa2d0fe6dc139d8537b84961d5638042c",
+          "size": 6440,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/c7de4e2e-icon-small.png",
+          "sha256": "c7de4e2e6417c86e721198002fe82a861c7850a3322be0ae24a8d2f670de41ec",
+          "size": 1875,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -12849,6 +14626,20 @@
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/664425a5-icon.png",
+          "sha256": "664425a5a297df14861a9083a0accb4fa2d0fe6dc139d8537b84961d5638042c",
+          "size": 6440,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/c7de4e2e-icon-small.png",
+          "sha256": "c7de4e2e6417c86e721198002fe82a861c7850a3322be0ae24a8d2f670de41ec",
+          "size": 1875,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -12946,7 +14737,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pekkakana2/732e6e31-icon.png",
+          "sha256": "732e6e3199ff2c9018371c839957bf9e7d3071141b927d66128458062ae77009",
+          "size": 4691,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pekkakana2/03709a17-icon-small.png",
+          "sha256": "03709a1734efc647a86d571ac36b1e563ed792b6e5a5a64d5d96dc1ebf6dd5c6",
+          "size": 1663,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "photocraft",
@@ -13044,7 +14851,23 @@
         }
       ],
       "first_added": "2026-10-20",
-      "app_first_added": "2026-10-20"
+      "app_first_added": "2026-10-20",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/photocraft/51a73672-icon.png",
+          "sha256": "51a73672d95bda06e07d8215424322153a41738f4b7ea7c2b38de45689ad5489",
+          "size": 7234,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/photocraft/4f0f18c9-icon-small.png",
+          "sha256": "4f0f18c98ffa275c1616cc851baee963758b367f5bb76e150cc6227e3a7b77b2",
+          "size": 1942,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "pkg-54321",
@@ -13112,7 +14935,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-54321/0bfb5518-icon.png",
+          "sha256": "0bfb551817d56c2e3ac6c603e799c67412fc7f346e69394d30a3f51fbf92e7c3",
+          "size": 3277,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-54321/07b2fd5f-icon-small.png",
+          "sha256": "07b2fd5f4fc68e461fc1e633420d00bfd7c3a201e8a7c9fb63a3420f9024f748",
+          "size": 1447,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "pkg-54321",
@@ -13186,7 +15025,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-54321/0bfb5518-icon.png",
+          "sha256": "0bfb551817d56c2e3ac6c603e799c67412fc7f346e69394d30a3f51fbf92e7c3",
+          "size": 3277,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-54321/07b2fd5f-icon-small.png",
+          "sha256": "07b2fd5f4fc68e461fc1e633420d00bfd7c3a201e8a7c9fb63a3420f9024f748",
+          "size": 1447,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "pkg-7mezzoplus",
@@ -13250,7 +15105,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-7mezzoplus/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-7mezzoplus/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "pkg-7mezzoplus",
@@ -13301,7 +15172,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-7mezzoplus/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-7mezzoplus/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "pkg-7zdec",
@@ -13371,7 +15258,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-7zdec/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pkg-7zdec/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "planethively",
@@ -13435,7 +15338,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/planethively/e7a91ae2-icon.png",
+          "sha256": "e7a91ae28392503afd93c8efb21a599a33c9710320d3526c4c9657eedae9490d",
+          "size": 4275,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/planethively/5ddbf8c2-icon-small.png",
+          "sha256": "5ddbf8c27500233128c3394e3e67e8e063816a82c78155ffe0afe92e3a329bdd",
+          "size": 1609,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "planethively",
@@ -13509,7 +15428,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/planethively/e7a91ae2-icon.png",
+          "sha256": "e7a91ae28392503afd93c8efb21a599a33c9710320d3526c4c9657eedae9490d",
+          "size": 4275,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/planethively/5ddbf8c2-icon-small.png",
+          "sha256": "5ddbf8c27500233128c3394e3e67e8e063816a82c78155ffe0afe92e3a329bdd",
+          "size": 1609,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "potrace",
@@ -13573,7 +15508,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/potrace/3a68b201-icon.png",
+          "sha256": "3a68b2014a1c5ff12feb626217a5b183020a1519812852daf1cadcafb11cfd6e",
+          "size": 4445,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/potrace/f18149dd-icon-small.png",
+          "sha256": "f18149dd2b9394aec313579b57b372918eb747faf28e115d194bcb2d49eb6d8c",
+          "size": 1627,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "potrace",
@@ -13643,7 +15594,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/potrace/3a68b201-icon.png",
+          "sha256": "3a68b2014a1c5ff12feb626217a5b183020a1519812852daf1cadcafb11cfd6e",
+          "size": 4445,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/potrace/f18149dd-icon-small.png",
+          "sha256": "f18149dd2b9394aec313579b57b372918eb747faf28e115d194bcb2d49eb6d8c",
+          "size": 1627,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "pragtical",
@@ -13755,6 +15722,20 @@
       "first_added": "2026-11-15",
       "app_first_added": "2026-11-15",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pragtical/855c9b8e-icon.png",
+          "sha256": "855c9b8e63d695f9a4925a39bea1fb4b87b22ca5cf8d171749b6358247be4860",
+          "size": 3930,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pragtical/2b25cd00-icon-small.png",
+          "sha256": "2b25cd00552219effc83dd9a4165055a1d5b4346730d8c8a1d4ccc0b34b9483c",
+          "size": 1426,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -13908,6 +15889,20 @@
       "first_added": "2026-11-15",
       "app_first_added": "2026-11-15",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pragtical/855c9b8e-icon.png",
+          "sha256": "855c9b8e63d695f9a4925a39bea1fb4b87b22ca5cf8d171749b6358247be4860",
+          "size": 3930,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pragtical/2b25cd00-icon-small.png",
+          "sha256": "2b25cd00552219effc83dd9a4165055a1d5b4346730d8c8a1d4ccc0b34b9483c",
+          "size": 1426,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -14061,6 +16056,20 @@
       "first_added": "2026-11-15",
       "app_first_added": "2026-11-15",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pragtical/855c9b8e-icon.png",
+          "sha256": "855c9b8e63d695f9a4925a39bea1fb4b87b22ca5cf8d171749b6358247be4860",
+          "size": 3930,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pragtical/2b25cd00-icon-small.png",
+          "sha256": "2b25cd00552219effc83dd9a4165055a1d5b4346730d8c8a1d4ccc0b34b9483c",
+          "size": 1426,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -14158,7 +16167,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/prboom-plus/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/prboom-plus/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "protrekkr",
@@ -14232,7 +16257,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/protrekkr/58a67fd0-icon.png",
+          "sha256": "58a67fd0e26ae62aa651fc9f11d64aff38f87e3e133fab99d357904568b4f32d",
+          "size": 3604,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/protrekkr/2eda61c8-icon-small.png",
+          "sha256": "2eda61c83dc312fa9d2603c4f82642d27d27f86927d6c1180df16b7b4e2bc7a9",
+          "size": 1442,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "qlview",
@@ -14296,7 +16337,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/qlview/de578575-icon.png",
+          "sha256": "de5785750411fc1a9bd0d182b881e0e8a08c4c1f54731e3e2a2fa003e05a032a",
+          "size": 4540,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/qlview/7da926f6-icon-small.png",
+          "sha256": "7da926f60d6e94a66208117e4a15bb7518cae82008384d3e2d5749bc58e83f29",
+          "size": 1625,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "qlview",
@@ -14366,7 +16423,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/qlview/de578575-icon.png",
+          "sha256": "de5785750411fc1a9bd0d182b881e0e8a08c4c1f54731e3e2a2fa003e05a032a",
+          "size": 4540,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/qlview/7da926f6-icon-small.png",
+          "sha256": "7da926f60d6e94a66208117e4a15bb7518cae82008384d3e2d5749bc58e83f29",
+          "size": 1625,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "rescode",
@@ -14430,7 +16503,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rescode/e6d65012-icon.png",
+          "sha256": "e6d650128154bd23852fb9d2d9902e16facb25fc13fd18c4dee8c50b27cec42f",
+          "size": 4363,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rescode/f111d0fc-icon-small.png",
+          "sha256": "f111d0fc435f6e29752a85da702427a0e67e226606cb3be1c4b1a03294e5e9c9",
+          "size": 1559,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "rescode",
@@ -14556,7 +16645,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rescode/e6d65012-icon.png",
+          "sha256": "e6d650128154bd23852fb9d2d9902e16facb25fc13fd18c4dee8c50b27cec42f",
+          "size": 4363,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rescode/f111d0fc-icon-small.png",
+          "sha256": "f111d0fc435f6e29752a85da702427a0e67e226606cb3be1c4b1a03294e5e9c9",
+          "size": 1559,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "residualvm",
@@ -14630,7 +16735,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/residualvm/f55d395d-icon.png",
+          "sha256": "f55d395d67ac33f113b1dd99cdf8dfdaac90de786f9b2a5529227a1ea0a0dcf7",
+          "size": 5050,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/residualvm/5ec4ed68-icon-small.png",
+          "sha256": "5ec4ed680599a7ab0b793d72a215ec83cd0781caa7cc7645a5485398cb499667",
+          "size": 1196,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "rtf-riddle",
@@ -14694,7 +16815,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rtf-riddle/09cd8e16-icon.png",
+          "sha256": "09cd8e16320df151f6934f8e248776e1df0e0ea977b7c6c58e87f14e5b0f633b",
+          "size": 3768,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rtf-riddle/a594f6e8-icon-small.png",
+          "sha256": "a594f6e84b878bfc55bcb77b80a1b3d73ed7db8f1e2023e9ac95714a3d748d25",
+          "size": 1603,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "rtf-riddle",
@@ -14764,7 +16901,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rtf-riddle/09cd8e16-icon.png",
+          "sha256": "09cd8e16320df151f6934f8e248776e1df0e0ea977b7c6c58e87f14e5b0f633b",
+          "size": 3768,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/rtf-riddle/a594f6e8-icon-small.png",
+          "sha256": "a594f6e84b878bfc55bcb77b80a1b3d73ed7db8f1e2023e9ac95714a3d748d25",
+          "size": 1603,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "scopagame",
@@ -14815,7 +16968,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/scopagame/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/scopagame/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "screentest",
@@ -14879,7 +17048,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/screentest/92c9cecb-icon.png",
+          "sha256": "92c9cecb6d5a70230261a4536cc2652a44764a988605f48eeb3d75952993cd0b",
+          "size": 3530,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/screentest/a949865c-icon-small.png",
+          "sha256": "a949865ca9237ed77a83e18d5cfaa2c30dd5d1b5d56533a9f097039510fdc62c",
+          "size": 1421,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "screentest",
@@ -15019,7 +17204,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/screentest/92c9cecb-icon.png",
+          "sha256": "92c9cecb6d5a70230261a4536cc2652a44764a988605f48eeb3d75952993cd0b",
+          "size": 3530,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/screentest/a949865c-icon-small.png",
+          "sha256": "a949865ca9237ed77a83e18d5cfaa2c30dd5d1b5d56533a9f097039510fdc62c",
+          "size": 1421,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "sdllopan",
@@ -15163,7 +17364,23 @@
         }
       ],
       "first_added": "2026-09-12",
-      "app_first_added": "2026-09-12"
+      "app_first_added": "2026-09-12",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sdllopan/06b5c0a3-icon.png",
+          "sha256": "06b5c0a3e619dabc15c5b9fb8ec7432a91ecd9f5b1cdeef09f8a990941af945e",
+          "size": 3039,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sdllopan/a073ec18-icon-small.png",
+          "sha256": "a073ec1846a11a59e23f65e1a05a6af3894f5cf2edc28fb04754e7f7aaa99bf5",
+          "size": 1135,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "sdlpop",
@@ -15294,7 +17511,23 @@
         }
       ],
       "first_added": "2026-09-10",
-      "app_first_added": "2026-09-10"
+      "app_first_added": "2026-09-10",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sdlpop/54d5c4dd-icon.png",
+          "sha256": "54d5c4ddc46ec7d4635e8ad1a9a537da653cd2bbea0125eb9dd44b571492cb08",
+          "size": 4413,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sdlpop/632c852b-icon-small.png",
+          "sha256": "632c852ba85c5fca451c6234e43792a82bc3a2418f19ee9634a0f63fdf42da05",
+          "size": 1590,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "sfsobject",
@@ -15364,7 +17597,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sfsobject/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sfsobject/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "shooterspace",
@@ -15434,7 +17683,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/shooterspace/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/shooterspace/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "siddump",
@@ -15498,7 +17763,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/siddump/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/siddump/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "siddump",
@@ -15568,7 +17849,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/siddump/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/siddump/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "skandalfoclock",
@@ -15832,7 +18129,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sokobangp2x/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sokobangp2x/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "soliton",
@@ -15972,7 +18285,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/soliton/79b227b5-icon.png",
+          "sha256": "79b227b5fbc8c090030709046688a149cd82954d9e0e02d2ab08db1eb24b2c0a",
+          "size": 4828,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/soliton/fc89be3d-icon-small.png",
+          "sha256": "fc89be3d03b187158d55d7a043120ce705ffd0ac498855bc77c263e799efa55c",
+          "size": 1683,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "sploiner",
@@ -16036,7 +18365,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sploiner/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sploiner/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "sploiner",
@@ -16106,7 +18451,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sploiner/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/sploiner/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "stercus",
@@ -16180,7 +18541,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/stercus/256f3706-icon.png",
+          "sha256": "256f3706ba909b0bce0661e79826cac87d46e6092f8c3e2dbefcc4eb54859e59",
+          "size": 4705,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/stercus/08e47fd7-icon-small.png",
+          "sha256": "08e47fd782f594ffb712a8817e9409c35d0adb414764129a3e3dd45849b49196",
+          "size": 1631,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "stratagus",
@@ -16250,7 +18627,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/stratagus/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/stratagus/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "super-haxagon",
@@ -16320,7 +18713,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/super-haxagon/dcee2668-icon.png",
+          "sha256": "dcee26688a9b06f4e80b01bbbbc3691bd858fcdaf621905ef703266a85e8813f",
+          "size": 5207,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/super-haxagon/3ce758d7-icon-small.png",
+          "sha256": "3ce758d73d50167e64c5531f4b1e60d75268031c23020e60d4262e2e58e5a5b3",
+          "size": 1208,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "super_trevor_land",
@@ -16487,6 +18896,20 @@
       "first_added": "2026-11-22",
       "app_first_added": "2026-11-22",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/synchr/f2e24eed-icon.png",
+          "sha256": "f2e24eedf47497bc56cd03d50d3f9740fa3f485e19ee32c02cb5f1d4d433fdd2",
+          "size": 1694,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/synchr/b8425371-icon-small.png",
+          "sha256": "b8425371eba9619da19e8380aeefeab09e92051add6a7e0ba6afe22fce15d0d0",
+          "size": 1206,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -16613,6 +19036,20 @@
       "first_added": "2026-11-22",
       "app_first_added": "2026-11-22",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/synchr/f2e24eed-icon.png",
+          "sha256": "f2e24eedf47497bc56cd03d50d3f9740fa3f485e19ee32c02cb5f1d4d433fdd2",
+          "size": 1694,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/synchr/b8425371-icon-small.png",
+          "sha256": "b8425371eba9619da19e8380aeefeab09e92051add6a7e0ba6afe22fce15d0d0",
+          "size": 1206,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -16734,6 +19171,20 @@
       "first_added": "2026-11-22",
       "app_first_added": "2026-11-22",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/synchr/f2e24eed-icon.png",
+          "sha256": "f2e24eedf47497bc56cd03d50d3f9740fa3f485e19ee32c02cb5f1d4d433fdd2",
+          "size": 1694,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/synchr/b8425371-icon-small.png",
+          "sha256": "b8425371eba9619da19e8380aeefeab09e92051add6a7e0ba6afe22fce15d0d0",
+          "size": 1206,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -16831,7 +19282,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tbftss/dcee2668-icon.png",
+          "sha256": "dcee26688a9b06f4e80b01bbbbc3691bd858fcdaf621905ef703266a85e8813f",
+          "size": 5207,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tbftss/3ce758d7-icon-small.png",
+          "sha256": "3ce758d73d50167e64c5531f4b1e60d75268031c23020e60d4262e2e58e5a5b3",
+          "size": 1208,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "tiltnroll",
@@ -16905,7 +19372,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tiltnroll/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tiltnroll/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "timeless",
@@ -16973,7 +19456,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/timeless/7a05b679-icon.png",
+          "sha256": "7a05b679762c972fc59c8ec0209166a5cfccfa089366f99c8f6ac0bc4a2f54b2",
+          "size": 4428,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/timeless/1736b351-icon-small.png",
+          "sha256": "1736b35129725a08d2350dc0ab0e7106d6e17c11bf7254b699116766505dc723",
+          "size": 1671,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "timeless",
@@ -17047,7 +19546,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/timeless/7a05b679-icon.png",
+          "sha256": "7a05b679762c972fc59c8ec0209166a5cfccfa089366f99c8f6ac0bc4a2f54b2",
+          "size": 4428,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/timeless/1736b351-icon-small.png",
+          "sha256": "1736b35129725a08d2350dc0ab0e7106d6e17c11bf7254b699116766505dc723",
+          "size": 1671,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "tinysid",
@@ -17187,7 +19702,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tinysid/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tinysid/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "tinytris",
@@ -17261,7 +19792,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tinytris/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tinytris/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "tressette",
@@ -17329,7 +19876,23 @@
         }
       ],
       "first_added": "2026-10-03",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tressette/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tressette/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "tressette",
@@ -17380,7 +19943,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tressette/284f6a82-icon.png",
+          "sha256": "284f6a8209a5380456b2629f774011a37e3e91ddb37b3068b1115fd6bcf13e38",
+          "size": 3587,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/tressette/b0abc0da-icon-small.png",
+          "sha256": "b0abc0da008b74dc8b3440fb8644c71396462e5f7ffddef4258aa1aa5a0d8d9c",
+          "size": 1356,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "unlzx",
@@ -17506,7 +20085,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/unlzx/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/unlzx/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "unrar",
@@ -17576,7 +20171,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/unrar/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/unrar/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "unshield",
@@ -17763,7 +20374,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/untangle/ccfc9f47-icon.png",
+          "sha256": "ccfc9f47aadc0a748398b196fcc79234015fa7773ff5765fd2aae4816991d9b0",
+          "size": 4545,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/untangle/1231fde6-icon-small.png",
+          "sha256": "1231fde63d723f4efe52d834ed9ec1acd8927a91d7dbc5168545877aea2df54a",
+          "size": 1298,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "untarka",
@@ -17833,7 +20460,23 @@
         }
       ],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/untarka/0ebb5aef-icon.png",
+          "sha256": "0ebb5aefa09e59cbcd92876db3e9c25c50f2a7bb96e9bed7f56b7024b8fb652e",
+          "size": 3897,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/untarka/85c4017a-icon-small.png",
+          "sha256": "85c4017ac5ac23bbe14fd74ce9be3e4f66b4f613e9ce5615de58a62753bc7621",
+          "size": 1584,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "vectorcraft",
@@ -17932,6 +20575,20 @@
       "first_added": "2026-11-07",
       "app_first_added": "2026-11-07",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/15c15a65-icon.png",
+          "sha256": "15c15a6539ea4c4dce0f2290da3f73146e4b459e998f8e0483b5d590479bcbbd",
+          "size": 6480,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/70f72fdc-icon-small.png",
+          "sha256": "70f72fdcb19537486cc53a0a33aa1fbb19adb94544749c8421b0b043eb5e6319",
+          "size": 1760,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -18058,6 +20715,20 @@
       "first_added": "2026-11-07",
       "app_first_added": "2026-11-07",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/15c15a65-icon.png",
+          "sha256": "15c15a6539ea4c4dce0f2290da3f73146e4b459e998f8e0483b5d590479bcbbd",
+          "size": 6480,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/70f72fdc-icon-small.png",
+          "sha256": "70f72fdcb19537486cc53a0a33aa1fbb19adb94544749c8421b0b043eb5e6319",
+          "size": 1760,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -18329,6 +21000,20 @@
       "first_added": "2026-11-07",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/wordcraft/846483b5-icon.png",
+          "sha256": "846483b5830d0a257396e37658787d4ec8c3312146c3986434883ca05f0c473a",
+          "size": 1937,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/wordcraft/cdf4f16b-icon-small.png",
+          "sha256": "cdf4f16bc6330b8c640e2c5e89982d815e559de6e26b20936f10e2c1c63b2081",
+          "size": 1396,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -18463,6 +21148,20 @@
       "first_added": "2026-11-07",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/wordcraft/846483b5-icon.png",
+          "sha256": "846483b5830d0a257396e37658787d4ec8c3312146c3986434883ca05f0c473a",
+          "size": 1937,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/wordcraft/cdf4f16b-icon-small.png",
+          "sha256": "cdf4f16bc6330b8c640e2c5e89982d815e559de6e26b20936f10e2c1c63b2081",
+          "size": 1396,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -18596,6 +21295,20 @@
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20",
       "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/wordcraft/846483b5-icon.png",
+          "sha256": "846483b5830d0a257396e37658787d4ec8c3312146c3986434883ca05f0c473a",
+          "size": 1937,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/wordcraft/cdf4f16b-icon-small.png",
+          "sha256": "cdf4f16bc6330b8c640e2c5e89982d815e559de6e26b20936f10e2c1c63b2081",
+          "size": 1396,
+          "width": 24,
+          "height": 24
+        },
         "gallery": [
           {
             "type": "screenshot",
@@ -18679,7 +21392,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/xrick/c4f44b9c-icon.png",
+          "sha256": "c4f44b9c6c620a6cd98d4da29c7bb7876db27656046ef9eeaa75f415bd2648e4",
+          "size": 3254,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/xrick/d484b024-icon-small.png",
+          "sha256": "d484b0242ef60a43697e7e665dde3a585f67ab8bb44d1ab3bf4fdd1fc90ba61a",
+          "size": 1449,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "zaphod",
@@ -18861,7 +21590,23 @@
       },
       "runtime_tests": [],
       "first_added": "2026-09-29",
-      "app_first_added": "2026-09-29"
+      "app_first_added": "2026-09-29",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/zgloom/db9c4757-icon.png",
+          "sha256": "db9c4757f374d9d5f417969271e95db06e84de179e5a032cfe3dbc0a0e899685",
+          "size": 3699,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/zgloom/b9984fd9-icon-small.png",
+          "sha256": "b9984fd90d7da1392508d021183301eb153dc7f20a5d2bdc3f8d7645e9b2571d",
+          "size": 1575,
+          "width": 24,
+          "height": 24
+        }
+      }
     },
     {
       "id": "zunecalc",
@@ -18983,7 +21728,23 @@
         }
       ],
       "first_added": "2026-09-19",
-      "app_first_added": "2026-09-19"
+      "app_first_added": "2026-09-19",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/zunecalc/3d301fe2-icon.png",
+          "sha256": "3d301fe2199bdf530caab35788ebbe7ef2038eae2064d257783027225455f273",
+          "size": 3979,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/zunecalc/7fea1fdf-icon-small.png",
+          "sha256": "7fea1fdfd4ee772e80702bcfce02e12c9c8f8f5fa6b37b2edb7bcef73c8dbea4",
+          "size": 1600,
+          "width": 24,
+          "height": 24
+        }
+      }
     }
   ]
 }
