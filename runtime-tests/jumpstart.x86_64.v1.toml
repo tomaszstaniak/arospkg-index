@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "remove", "verify"]
 note    = "apkg 0.7.8, local index, root in RAM:; 35 files verified; started, answered VERSION and SHOW over ARexx, QUIT; removed"
+
+[[test]]
+sha256  = "9e7fa4fca99606089460b8d0be8a2f8945c4c1625f3997c3b98cf1c9b2c083ab"
+date    = "2026-11-23"
+system  = "mainline AROS x86_64 (nightly 2026-11-13)"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "start", "remove", "verify"]
+note    = "apkg 0.7.8, local index: 0.8.0 upgraded to these bytes, 35 files verified; started, VERSION and QUIT over ARexx, started again, VERSION; removed"
