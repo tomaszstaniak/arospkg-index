@@ -1,0 +1,14 @@
+# Runtime tests of pdfcraft aarch64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs (apkg install, start and remove runs), kept outside
+# the catalogue repository.
+
+[[test]]
+sha256  = "d22008465bf9693b53a7b9dce7b341551548ad3ae12b5d187509be6afa495f7a"
+date    = "2026-11-23"
+system  = "AROS Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b (emulator, not Pi hardware)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"

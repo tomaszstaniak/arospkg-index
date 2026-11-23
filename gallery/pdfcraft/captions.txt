@@ -1,0 +1,1 @@
+PdfCraft 0.22.0 on AROS One with a two-page document
