@@ -1,27 +1,28 @@
-# arospkg 0.8.0. A new PkgManager window: views and categories in a list on
+# arospkg 0.8.1 (the row's button stays inside a list that got narrower).
+# 0.8.0: a new PkgManager window: views and categories in a list on
 # the left, a button in every row (Install, Run or Upgrade), a page for each
 # package, a menu. Pictures of packages (icons, screenshots) from the media
 # drawer of the package root. The demonstration of 0.5.0 to 0.7.8 is removed.
-# installs_on: the published 0.7.8 self-updated to these bytes from GitHub
-# on AROS One (QEMU, 2026-11-23), which then updated, installed, verified and
-# removed arca from the public catalogue (runtime-tests/).
+# installs_on: these bytes updated the catalogue and installed, verified and
+# removed arca on AROS One (QEMU, 2026-11-23); PkgManager installed arca from
+# a row in a narrowed window (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.8.0"
+version         = "0.8.1"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.0/arospkg-0.8.0.x86_64-aros-v11.zip"
-size            = 953612
-sha256          = "8818e0012fa98edab510d91dbe04d65ce823f487c0c7396710df8808b7a505c9"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.1/arospkg-0.8.1.x86_64-aros-v11.zip"
+size            = 953715
+sha256          = "8e8e8ccf5cf4e0d470d62d8cd83f57cf0f5b2bd35a22e1730771ab46e0cee083"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.8.0.x86_64-aros-v11"
+subdir          = "arospkg-0.8.1.x86_64-aros-v11"
 installs_on     = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]
 
@@ -53,4 +54,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.8.0"
+revision   = "v0.8.1"

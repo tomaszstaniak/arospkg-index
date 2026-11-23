@@ -9,11 +9,18 @@
 # never forced: if main has moved, it is refused, both refs stay, and the step
 # runs again on the new main (tools/publish_index.py), so an older run cannot
 # replace a newer catalogue and no merge is left unreviewed.
+#
+# Pictures (icons taken from the archives, screenshots from gallery/) are
+# made in the same step and pushed to the branch `media` before the
+# catalogue that names them. Every file there has the start of its SHA-256
+# in its name, so that branch only gains files and is never forced either.
+# Icons are read from the archives a run downloads: the changed ones, or all
+# of them when it is started by hand with review_all.
 name: publish
 on:
   push:
     branches: [main]
-    paths: ["manifests/**", "overrides/**", "runtime-tests/**"]
+    paths: ["manifests/**", "overrides/**", "runtime-tests/**", "gallery/**"]
   workflow_dispatch:
     inputs:
       base:
@@ -33,7 +40,8 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # A run started by hand with review_all downloads every archive.
+    timeout-minutes: 90
     steps:
       # No credentials stay in the checkout while archives are read: the
       # token is used only by the push at the end.
@@ -46,13 +54,16 @@ jobs:
           # A test copy of this repository sets TOOLS_REPO/TOOLS_REF to test tools;
           # here they are unset and the pinned arospkg commit is used.
           repository: ${{ vars.TOOLS_REPO || 'tomaszstaniak/arospkg' }}
-          ref: ${{ vars.TOOLS_REF || '0688c3fa0a4dacb03e1f74eb32a697d80d505b5a' }}
+          ref: ${{ vars.TOOLS_REF || 'e62b5b3cb68ccc3e823761b888165c6fc3f19e3e' }}
           path: .tools
           persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: sudo apt-get install -y lhasa
+      # One version: another Pillow may pack the same picture into other
+      # bytes, and every changed file is a new name on the media branch.
+      - run: pip install pillow==13.0.0
       - name: Review, generate and publish the catalogue
         env:
           # Blank unless given by hand: then the branch `published` is the base.
@@ -61,5 +72,8 @@ jobs:
           # Used only by the push; publish_index.py keeps it from the check,
           # which reads the archives.
           TOKEN: ${{ github.token }}
+          # Where the branch `media` is served; publish_index.py makes and
+          # pushes the pictures when this is set.
+          MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/media/
         run: python3 .tools/tools/publish_index.py . --remote "https://github.com/${GITHUB_REPOSITORY}.git"
              --start "$GITHUB_SHA" ${BASE_REF:+--base "$BASE_REF"} --cache "$RUNNER_TEMP/archives" $REVIEW_ALL

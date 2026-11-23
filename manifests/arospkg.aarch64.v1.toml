@@ -1,27 +1,28 @@
-# arospkg 0.8.0. A new PkgManager window: views and categories in a list on
+# arospkg 0.8.1 (the row's button stays inside a list that got narrower).
+# 0.8.0: a new PkgManager window: views and categories in a list on
 # the left, a button in every row (Install, Run or Upgrade), a page for each
 # package, a menu. Pictures of packages (icons, screenshots) from the media
 # drawer of the package root. The demonstration of 0.5.0 to 0.7.8 is removed.
-# installs_on: these bytes updated the catalogue and installed, verified and
-# removed arca on the Pi (QEMU raspi3b, 2026-11-23; runtime-tests/).
+# installs_on is filled after an apkg test of these bytes on the Pi
+# (runtime-tests/); 0.8.0 was run there on 2026-11-23.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.8.0"
+version         = "0.8.1"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.0/arospkg-0.8.0.aarch64-aros-raspi.zip"
-size            = 1041693
-sha256          = "99993b2e1d82d6ae6dc0870df4473691341afff1d227354197f23e70a0c26b66"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.1/arospkg-0.8.1.aarch64-aros-raspi.zip"
+size            = 1041771
+sha256          = "17a782ec5094ce3f37be38228987199bc2606632e4b2cb75ea973c46da5ffba8"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.8.0.aarch64-aros-raspi"
-installs_on     = ["mainline-aarch64"]
+subdir          = "arospkg-0.8.1.aarch64-aros-raspi"
+installs_on     = []
 does_not_run_on = []
 
 [[requires_system]]
@@ -56,4 +57,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.8.0"
+revision   = "v0.8.1"

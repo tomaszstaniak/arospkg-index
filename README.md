@@ -24,6 +24,22 @@ We don't have to run your program before it is listed.
 
 Corrections to existing packages are welcome too. If you find a broken URL, an incorrect dependency or a compatibility problem, open an issue or a pull request. So are reports that you installed and started a listed package, with the system and the date.
 
+## Screenshots
+
+A package can have up to six screenshots. They belong to the application, not to one build of it, and live here as `gallery/<id>/1.png`, `2.png` and so on, with an optional `captions.txt` whose line N is the caption of `N.png`. `submit` puts them in place:
+
+```sh
+python3 apkg-pack.pyz submit <archive-url> --pr --screenshot main.png --caption "The main window"
+```
+
+`--screenshot` needs an apkg-pack newer than 0.2.0. Until it is released, add the files to `gallery/<id>/` in a pull request by hand.
+
+Repeat `--screenshot` and `--caption` for more; the screenshots you give replace the ones the application had. Each is a PNG of at most 1280 x 800 pixels and 512 KiB, showing the program running on AROS; a caption is plain ASCII of at most 120 characters, without `"` or `\`. The check on the pull request applies these rules.
+
+Icons need nothing from you. When the icon of the program that `[launch]` names, or else the drawer icon, is a PNG icon, the catalogue takes it from the archive.
+
+After a merge the pictures are scaled and published on the branch `media`, and `index-v3.json` names them.
+
 ## The package description
 
 `apkg-pack init` writes the description for you and asks for what it cannot read from the drawer. This is a complete one, for a Shell program:
@@ -75,6 +91,7 @@ arospkg 0.7.8 is the last client built for i386. The i386 entries stay in the in
 - `manifests/`: reviewed package manifests, one per package build.
 - `overrides/`: maintainer corrections to package metadata, where needed.
 - `runtime-tests/`: records of who installed and started which archive, on which system and when.
+- `gallery/`: screenshots, in one drawer per application id.
 - `review/` and `history.json`: results of the automatic review and first publication dates, written by the publish workflow.
 - `index-v3.json`: generated catalogue for apkg 0.6 and later.
 - `index-v2.json` and `index.json`: generated catalogues for older clients.
