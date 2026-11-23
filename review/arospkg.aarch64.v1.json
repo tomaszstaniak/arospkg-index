@@ -4,14 +4,14 @@
  "id": "arospkg",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-13",
- "sha256": "edcc207337fc13cf58bd563e3eb5b75543b57e564321af1c7df3c9757a5d7fd7",
- "size": 1092049,
- "manifest_digest": "0364714fab8bbf1e2096e7b050c7cd1b0ed241e4ef1dab16718ffee8d1a9e563",
+ "date": "2026-11-23",
+ "sha256": "99993b2e1d82d6ae6dc0870df4473691341afff1d227354197f23e70a0c26b66",
+ "size": 1041693,
+ "manifest_digest": "f3cba694452b762caa644f1478e8fdcdcb2b3568c8e51c7038c0899ed17dea0b",
  "result": "passed",
  "sizes": {
-  "largest_member": 1664272,
-  "unpacked": 3296480
+  "largest_member": 1717664,
+  "unpacked": 3306580
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "29 members"
+   "detail": "13 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 1664272 bytes (arospkg-0.7.8.aarch64-aros-raspi/PkgManager), 3296480 bytes unpacked"
+   "detail": "largest member 1717664 bytes (arospkg-0.8.0.aarch64-aros-raspi/PkgManager), 3306580 bytes unpacked"
   },
   {
    "name": "paths",
