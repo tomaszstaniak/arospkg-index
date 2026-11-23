@@ -1,0 +1,14 @@
+# Runtime tests of lightcraft x86_64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, upgrade, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "d128c65f3021d845dc613a1faa86f8d0f6c7dc184ec51349b43df15a37a88d21"
+date    = "2026-11-23"
+system  = "mainline AROS x86_64 nightly 2026-11-18"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index: upgraded from 0.13.0, a user file kept; verify ok; import, edit and export; two starts, exit 0; removed"
