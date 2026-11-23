@@ -1979,7 +1979,7 @@
     {
       "id": "limpet",
       "version": "0.13.0",
-      "revision": 1,
+      "revision": 2,
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "category": "utility/shell",
       "arch": "x86_64",
@@ -2076,7 +2076,7 @@
     {
       "id": "micropolis",
       "version": "0.1.0-rc3",
-      "revision": 1,
+      "revision": 2,
       "summary": "Classic city-building simulation for AROS",
       "category": "game/strategy",
       "arch": "x86_64",

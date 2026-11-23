@@ -2723,7 +2723,7 @@
       "subdir": "Burntime",
       "icon": "Burntime.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-burntime",
       "license": "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later",
       "post_install_notes": [
@@ -2736,6 +2736,11 @@
         "If AROS asks for a volume Burntime at start (AROS FAT issue 2076), copy the drawer from the plain .zip. The ReadMe's no-Pi-package note predates this package.",
         "Problems: https://github.com/tomaszstaniak/aros-burntime/issues"
       ],
+      "launch": {
+        "executable": "Burntime",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
@@ -2807,7 +2812,7 @@
       "subdir": "Burntime",
       "icon": "Burntime.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-burntime",
       "license": "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later",
       "post_install_notes": [
@@ -2817,6 +2822,11 @@
         "SetEnv SAVE Burntime/Data Work:Burntime-Data",
         "Start it from a Shell after Stack 2000000."
       ],
+      "launch": {
+        "executable": "Burntime",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
@@ -2888,7 +2898,7 @@
       "subdir": "Burntime",
       "icon": "Burntime.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-burntime",
       "license": "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later",
       "post_install_notes": [
@@ -2898,6 +2908,11 @@
         "SetEnv SAVE Burntime/Data Work:Burntime-Data",
         "Start it from a Shell after Stack 2000000."
       ],
+      "launch": {
+        "executable": "Burntime",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
@@ -12320,12 +12335,17 @@
       "subdir": "Limpet",
       "icon": "Limpet.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/limpet",
       "license": "MIT",
       "post_install_notes": [
         "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi."
       ],
+      "launch": {
+        "executable": "Limpet",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
@@ -12405,8 +12425,13 @@
       "subdir": "Limpet",
       "icon": "Limpet.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/limpet",
+      "launch": {
+        "executable": "Limpet",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
@@ -12515,9 +12540,14 @@
       "subdir": "Limpet",
       "icon": "Limpet.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/limpet",
       "license": "MIT",
+      "launch": {
+        "executable": "Limpet",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
@@ -12968,8 +12998,13 @@
       "subdir": "Micropolis",
       "icon": "Micropolis.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-micropolis",
+      "launch": {
+        "executable": "Micropolis",
+        "mode": "workbench",
+        "working_directory": "."
+      },
       "review": {
         "status": "reviewed",
         "suite": 3,
