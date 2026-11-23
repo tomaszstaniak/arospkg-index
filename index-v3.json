@@ -11115,14 +11115,14 @@
     },
     {
       "id": "lightcraft",
-      "version": "0.13.0",
-      "summary": "Photo library and non-destructive RAW editor with CPU rendering",
-      "arch": "x86_64",
+      "version": "0.21.1",
+      "summary": "Photo library and non-destructive RAW developer",
+      "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0/LightCraft-0.13.0.x86_64-aros-v1.zip",
-      "size": 36614384,
-      "sha256": "cc246af5392bdf3ae7ffe262626935ac14dba601fc315be0f6ce60680b38e122",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1/LightCraft-0.21.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 47226989,
+      "sha256": "a39e45d33a9630f45eac31aa40ddb15df1bfbf4bc9daec854321d3fc014bc96d",
       "depends": [],
       "client_features": [
         "large-members"
@@ -11130,8 +11130,7 @@
       "requires_system": [
         {
           "type": "library",
-          "id": "fd.library",
-          "min_version": 51
+          "id": "stdc.library"
         },
         {
           "type": "library",
@@ -11139,7 +11138,7 @@
         },
         {
           "type": "library",
-          "id": "stdc.library"
+          "id": "stdcio.library"
         },
         {
           "type": "library",
@@ -11148,6 +11147,10 @@
         {
           "type": "library",
           "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
         }
       ],
       "installs_on": [],
@@ -11160,11 +11163,11 @@
       "source": "https://github.com/tomaszstaniak/aros-lightcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Requires fd.library 51, posixc.library 0.41 and matching stdc/AROSTCP components. System libraries are not installed by this package.",
-        "CPU interface and image processing. GPU backends are not included.",
-        "Keep LightCraftData when upgrading; it contains edits and settings.",
-        "Optional inference and HEIF are disabled. See README.md for feature details.",
-        "Native keyboard and clipboard conversion is limited to Latin-1."
+        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, the default library and LightCraft.log are kept in LightCraftData in the program drawer; keep it when upgrading.",
+        "Develop and export run on the CPU. Not built in: AI Denoise, AI masks, HEIC/HEIF import. Use a library in one LightCraft at a time."
       ],
       "launch": {
         "executable": "LightCraft",
@@ -11188,7 +11191,141 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi nightly 2026-11-10",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
+          "date": "2026-11-23",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index, emulator: install, verify ok; import, edit and export; library reopened, exit 0; removed"
+        }
+      ],
+      "first_added": "2026-11-23",
+      "app_first_added": "2026-10-24",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/8c38413d-icon.png",
+          "sha256": "8c38413dde046ffa6c818ca74034eb2ae47d39ed2b93cfcce531cce5175cfae9",
+          "size": 6069,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/lightcraft/3f5987e8-icon-small.png",
+          "sha256": "3f5987e845c67cc16a016c019c94eb14dfab7231bb2c38e53d1b0794fa855e58",
+          "size": 1696,
+          "width": 24,
+          "height": 24
+        }
+      }
+    },
+    {
+      "id": "lightcraft",
+      "version": "0.21.1",
+      "summary": "Photo library and non-destructive RAW developer",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1/LightCraft-0.21.1-aros-x86_64-abiv1-pc.zip",
+      "size": 45125272,
+      "sha256": "d128c65f3021d845dc613a1faa86f8d0f6c7dc184ec51349b43df15a37a88d21",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "LightCraft",
+      "icon": "LightCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-lightcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, the default library and LightCraft.log are kept in LightCraftData in the program drawer; keep it when upgrading.",
+        "Develop and export run on the CPU. Not built in: AI Denoise, AI masks, HEIC/HEIF import. Use a library in one LightCraft at a time."
+      ],
+      "launch": {
+        "executable": "LightCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-23",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-18",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-23",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index: upgraded from 0.13.0, a user file kept; verify ok; import, edit and export; two starts, exit 0; removed"
+        }
+      ],
       "first_added": "2026-10-24",
       "app_first_added": "2026-10-24",
       "media": {
@@ -11210,15 +11347,18 @@
     },
     {
       "id": "lightcraft",
-      "version": "0.13.0",
-      "summary": "Photo library and non-destructive RAW editor with CPU rendering",
+      "version": "0.21.1",
+      "summary": "Photo library and non-destructive RAW developer",
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0/LightCraft-0.13.0.x86_64-aros-v11.zip",
-      "size": 40066186,
-      "sha256": "6e98d248fe7edd058d7b0aae3e9c257fb3642134b1aeee1585f5e37585a78481",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1/LightCraft-0.21.1-aros-x86_64-abiv11-pc.zip",
+      "size": 51250888,
+      "sha256": "acfb63920f33d9e3fa134e84bfe93d7c79f6f66581a142a06920438cd9363e7e",
       "depends": [],
+      "client_features": [
+        "large-members"
+      ],
       "requires_system": [
         {
           "type": "library",
@@ -11239,6 +11379,10 @@
         {
           "type": "library",
           "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
         }
       ],
       "installs_on": [],
@@ -11251,10 +11395,11 @@
       "source": "https://github.com/tomaszstaniak/aros-lightcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "CPU interface and image processing. GPU backends are not included.",
-        "Edits and settings are kept in LightCraftData inside the program drawer. Keep it when upgrading.",
-        "Neural denoise, SAM, HEIF, MCP stdio and model downloads are unavailable.",
-        "Native keyboard and clipboard conversion is limited to Latin-1."
+        "x86_64 ABIv11 distributions; tested on AROS One 1.3.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, the default library and LightCraft.log are kept in LightCraftData in the program drawer; keep it when upgrading.",
+        "Develop and export run on the CPU. Not built in: AI Denoise, AI masks, HEIC/HEIF import. Use a library in one LightCraft at a time."
       ],
       "launch": {
         "executable": "LightCraft",
@@ -11278,7 +11423,25 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS One 1.3",
+          "arch": "x86_64",
+          "abi": "v11",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-23",
+          "result": "passed",
+          "checked": [
+            "install",
+            "upgrade",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index: upgraded from 0.13.0 with an edited library and a user file, both kept; verify ok; library reopened twice, exit 0; removed"
+        }
+      ],
       "first_added": "2026-10-24",
       "app_first_added": "2026-10-24",
       "media": {

@@ -477,6 +477,10 @@
    "first_added": "2026-11-16",
    "commit": "75cb8f58c7e9"
   },
+  "lightcraft/aarch64/v1": {
+   "first_added": "2026-11-23",
+   "commit": "3015198d080c"
+  },
   "lightcraft/x86_64/v1": {
    "first_added": "2026-10-24",
    "commit": "2a59a7412fad"
