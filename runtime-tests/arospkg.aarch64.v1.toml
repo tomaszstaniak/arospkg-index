@@ -22,3 +22,14 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["install", "start", "upgrade", "verify", "remove"]
 note    = "0.7.7: 0.7.6 self-updated to it from GitHub; update, install fastfetch, verify, remove from this catalogue; upgrade suite 132 PASS (rc bytes); real Pi untested"
+
+[[test]]
+sha256  = "99993b2e1d82d6ae6dc0870df4473691341afff1d227354197f23e70a0c26b66"
+date    = "2026-11-23"
+system  = "AROS AArch64 20261110"
+arch    = "aarch64"
+abi     = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result  = "passed"
+checked = ["install", "start", "verify", "remove"]
+note    = "0.8.0: update, install arca, verify, remove from this catalogue; PkgManager window listed it; first catalogue fetch broke, second passed; real Pi untested"
