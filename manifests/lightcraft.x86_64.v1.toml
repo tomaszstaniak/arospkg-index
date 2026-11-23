@@ -3,8 +3,8 @@
 # every later submission applies again.
 
 id              = "lightcraft"
-version         = "0.13.0"
-summary         = "Photo library and non-destructive RAW editor with CPU rendering"
+version         = "0.21.1"
+summary         = "Photo library and non-destructive RAW developer"
 category        = "graphics/edit"
 license         = "MIT OR Apache-2.0"
 kind            = "app"
@@ -15,21 +15,21 @@ icon            = "LightCraft.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
-  "Requires fd.library 51, posixc.library 0.41 and matching stdc/AROSTCP components. System libraries are not installed by this package.",
-  "CPU interface and image processing. GPU backends are not included.",
-  "Keep LightCraftData when upgrading; it contains edits and settings.",
-  "Optional inference and HEIF are disabled. See README.md for feature details.",
-  "Native keyboard and clipboard conversion is limited to Latin-1.",
+  "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+  "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
+  "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+  "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+  "Settings, the default library and LightCraft.log are kept in LightCraftData in the program drawer; keep it when upgrading.",
+  "Develop and export run on the CPU. Not built in: AI Denoise, AI masks, HEIC/HEIF import. Use a library in one LightCraft at a time.",
 ]
-sha256          = "cc246af5392bdf3ae7ffe262626935ac14dba601fc315be0f6ce60680b38e122"
-size            = 36614384
+sha256          = "d128c65f3021d845dc613a1faa86f8d0f6c7dc184ec51349b43df15a37a88d21"
+size            = 45125272
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.13.0/LightCraft-0.13.0.x86_64-aros-v1.zip"
+url             = "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1/LightCraft-0.21.1-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"
-id = "fd.library"
-min_version = 51
+id = "stdc.library"
 
 [[requires_system]]
 type = "library"
@@ -37,7 +37,7 @@ id = "posixc.library"
 
 [[requires_system]]
 type = "library"
-id = "stdc.library"
+id = "stdcio.library"
 
 [[requires_system]]
 type = "library"
@@ -47,10 +47,15 @@ id = "cybergraphics.library"
 type = "library"
 id = "iffparse.library"
 
+[[requires_system]]
+type = "library"
+id = "asl.library"
+
 [source]
 repository = "https://github.com/tomaszstaniak/aros-lightcraft"
-revision = "v0.13.0"
-built_with = "x86_64 ABIv1, GCC 10.5.0, Rust 1.99.0-nightly official compiler with AROS std, -nix"
+revision = "v0.21.1"
+archive = "LightCraft-0.21.1-source.zip"
+built_with = "x86_64 mainline ABIv1 (nightly 2026-11-10 SDK), GCC 10.5.0, Rust nightly 1.100 (rust-aros), egui 0.37 through egui-aros"
 
 [launch]
 executable = "LightCraft"

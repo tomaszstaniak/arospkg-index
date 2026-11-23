@@ -1,0 +1,14 @@
+# Runtime tests of lightcraft aarch64/v1: maintainer records, each for the archive
+# bytes named by its sha256. Source: maintainer test logs (apkg install, upgrade, start and
+# remove runs), kept outside the catalogue repository.
+
+[[test]]
+sha256  = "a39e45d33a9630f45eac31aa40ddb15df1bfbf4bc9daec854321d3fc014bc96d"
+date    = "2026-11-23"
+system  = "AROS Raspberry Pi nightly 2026-11-10"
+arch    = "aarch64"
+abi     = "v1"
+machine = "QEMU raspi3b (emulator, not Pi hardware)"
+result  = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note    = "apkg 0.7.8, local index, emulator: install, verify ok; import, edit and export; library reopened, exit 0; removed"
