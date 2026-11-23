@@ -577,6 +577,14 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "pdfcraft/aarch64/v1": {
+   "first_added": "2026-11-23",
+   "commit": "d2340f5b3bac"
+  },
+  "pdfcraft/x86_64/v1": {
+   "first_added": "2026-11-23",
+   "commit": "d2340f5b3bac"
+  },
   "pdfcraft/x86_64/v11": {
    "first_added": "2026-10-20",
    "commit": "93ac3ccf479d"

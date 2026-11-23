@@ -2,9 +2,9 @@
   "schema": 1,
   "source": "https://archives.arosworld.org/share/FULLINDEX.readme",
   "media_bundle": {
-    "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/icons-3972af58.zip",
-    "sha256": "3972af58019012be23259e42dfd4d5f1f77f5621b12691f218dc88bc39ea2a66",
-    "size": 525915
+    "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/icons-5d5c3bb6.zip",
+    "sha256": "5d5c3bb6bdadda917ca389280a65795466de8a144fb649b7d719f9dc4f276eaf",
+    "size": 525986
   },
   "packages": [
     {
@@ -13411,15 +13411,311 @@
     },
     {
       "id": "pdfcraft",
-      "version": "0.9.0-test4",
-      "summary": "PDF viewer and editor: search, rotate, save (experimental, not optimised)",
+      "version": "0.22.0",
+      "summary": "PDF viewer and editor: annotate, fill forms, organise pages, sign, export",
+      "arch": "aarch64",
+      "abi": "v1",
+      "category": "office/misc",
+      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0/PdfCraft-0.22.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 60368041,
+      "sha256": "d22008465bf9693b53a7b9dce7b341551548ad3ae12b5d187509be6afa495f7a",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "PdfCraft",
+      "icon": "PdfCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-pdfcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, AutoRecover data and PdfCraft.log are kept in PdfCraftData in the program drawer; keep it when upgrading.",
+        "No printing and no OCR. Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "PdfCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-23",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi nightly 2026-11-10",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
+          "date": "2026-11-23",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
+        }
+      ],
+      "first_added": "2026-11-23",
+      "app_first_added": "2026-10-20",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/664425a5-icon.png",
+          "sha256": "664425a5a297df14861a9083a0accb4fa2d0fe6dc139d8537b84961d5638042c",
+          "size": 6440,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/c7de4e2e-icon-small.png",
+          "sha256": "c7de4e2e6417c86e721198002fe82a861c7850a3322be0ae24a8d2f670de41ec",
+          "size": 1875,
+          "width": 24,
+          "height": 24
+        },
+        "gallery": [
+          {
+            "type": "screenshot",
+            "caption": "PdfCraft 0.22.0 on AROS One with a two-page document",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/31abb4d6-1-full.png",
+              "sha256": "31abb4d68b6045bd8888c6f88b40c48b19d72c350e68d7b7effc6a2fe850e01f",
+              "size": 64661,
+              "width": 900,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/59f78b51-1-view.png",
+              "sha256": "59f78b5111cbfa353114c6841fedcfb70e852533f7fb28abc164f18059949946",
+              "size": 68420,
+              "width": 600,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/7dea7b39-1-thumb.png",
+              "sha256": "7dea7b391b435f489d51305ed97b1f56c83fdeb8b40d79c2ea44417edeea12dd",
+              "size": 9566,
+              "width": 150,
+              "height": 100
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pdfcraft",
+      "version": "0.22.0",
+      "summary": "PDF viewer and editor: annotate, fill forms, organise pages, sign, export",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "office/misc",
+      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0/PdfCraft-0.22.0-aros-x86_64-abiv1-pc.zip",
+      "size": 57605946,
+      "sha256": "d20fd3edeebaee110cbd7ae3d3d917c2edd6d2da47fe9ac162540917995c3b42",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "PdfCraft",
+      "icon": "PdfCraft.info",
+      "install": {},
+      "source": "https://github.com/tomaszstaniak/aros-pdfcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, AutoRecover data and PdfCraft.log are kept in PdfCraftData in the program drawer; keep it when upgrading.",
+        "No printing and no OCR. Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "PdfCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-23",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS mainline nightly 2026-11-18",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-23",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
+        }
+      ],
+      "first_added": "2026-11-23",
+      "app_first_added": "2026-10-20",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/664425a5-icon.png",
+          "sha256": "664425a5a297df14861a9083a0accb4fa2d0fe6dc139d8537b84961d5638042c",
+          "size": 6440,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/c7de4e2e-icon-small.png",
+          "sha256": "c7de4e2e6417c86e721198002fe82a861c7850a3322be0ae24a8d2f670de41ec",
+          "size": 1875,
+          "width": 24,
+          "height": 24
+        },
+        "gallery": [
+          {
+            "type": "screenshot",
+            "caption": "PdfCraft 0.22.0 on AROS One with a two-page document",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/31abb4d6-1-full.png",
+              "sha256": "31abb4d68b6045bd8888c6f88b40c48b19d72c350e68d7b7effc6a2fe850e01f",
+              "size": 64661,
+              "width": 900,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/59f78b51-1-view.png",
+              "sha256": "59f78b5111cbfa353114c6841fedcfb70e852533f7fb28abc164f18059949946",
+              "size": 68420,
+              "width": 600,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/7dea7b39-1-thumb.png",
+              "sha256": "7dea7b391b435f489d51305ed97b1f56c83fdeb8b40d79c2ea44417edeea12dd",
+              "size": 9566,
+              "width": 150,
+              "height": 100
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "pdfcraft",
+      "version": "0.22.0",
+      "summary": "PDF viewer and editor: annotate, fill forms, organise pages, sign, export",
       "arch": "x86_64",
       "abi": "v11",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.9.0-test4/PdfCraft-0.9.0-test4.x86_64-aros-v11.zip",
-      "size": 36681261,
-      "sha256": "1d06e9e8ff5ebbadab1d1276c0b263a8f58e54608ec34acb96d8fa95e6904f10",
+      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0/PdfCraft-0.22.0-aros-x86_64-abiv11-pc.zip",
+      "size": 64590166,
+      "sha256": "c2623446ce541847f8add78b78da91aaa5ab8df2851d2f1a013817c5bd49b902",
       "depends": [],
+      "client_features": [
+        "large-members"
+      ],
       "requires_system": [
         {
           "type": "library",
@@ -13440,27 +13736,31 @@
         {
           "type": "library",
           "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
         }
       ],
-      "installs_on": [
-        "aros-one"
-      ],
+      "installs_on": [],
       "runs_on": [],
-      "does_not_run_on": [
-        "mainline-x86_64"
-      ],
+      "does_not_run_on": [],
       "kind": "app",
       "subdir": "PdfCraft",
       "icon": "PdfCraft.info",
       "install": {},
-      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-pdfcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Experimental and not optimised: the interface is drawn by the CPU and reacts slowly. Use a test installation.",
-        "Double-click the PdfCraft icon; from a Shell run Stack 4000000 first. OCR and printing are not available.",
-        "Test 4 fixes a crash after closing PdfCraft started from Workbench. README.txt in the drawer explains logging.",
-        "x86_64 ABIv11 only; letters typed with a non-Latin-1 keymap come out wrong."
+        "x86_64 ABIv11 distributions; tested on AROS One 1.3.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, AutoRecover data and PdfCraft.log are kept in PdfCraftData in the program drawer; keep it when upgrading.",
+        "No printing and no OCR. Updates come through the AROS package manager."
       ],
       "launch": {
         "executable": "PdfCraft",
@@ -13490,34 +13790,63 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-22",
+          "date": "2026-11-23",
           "result": "passed",
           "checked": [
             "install",
-            "run",
+            "upgrade",
             "verify",
+            "start",
+            "run",
             "remove"
           ],
-          "note": "0.9.0-test4: apkg 0.5.0 install from the catalogue to SYS:, apkg run from its icon, closed, verify ok, PkgManager listed it, removed"
+          "note": "apkg 0.7.8, local index: upgraded from 0.9.0-test4, its settings taken over; verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
         }
       ],
       "first_added": "2026-10-20",
       "app_first_added": "2026-10-20",
       "media": {
         "icon": {
-          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/f32a0e12-icon.png",
-          "sha256": "f32a0e12e495676eda39bc9cd468e3c4996dffc976f31fd56558acba7d098ab1",
-          "size": 6368,
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/664425a5-icon.png",
+          "sha256": "664425a5a297df14861a9083a0accb4fa2d0fe6dc139d8537b84961d5638042c",
+          "size": 6440,
           "width": 64,
           "height": 64
         },
         "icon_small": {
-          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/39da6443-icon-small.png",
-          "sha256": "39da644359999243e1e2ae126b748d1f669077278619e3fd33fd2a932380aad2",
-          "size": 1876,
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/c7de4e2e-icon-small.png",
+          "sha256": "c7de4e2e6417c86e721198002fe82a861c7850a3322be0ae24a8d2f670de41ec",
+          "size": 1875,
           "width": 24,
           "height": 24
-        }
+        },
+        "gallery": [
+          {
+            "type": "screenshot",
+            "caption": "PdfCraft 0.22.0 on AROS One with a two-page document",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/31abb4d6-1-full.png",
+              "sha256": "31abb4d68b6045bd8888c6f88b40c48b19d72c350e68d7b7effc6a2fe850e01f",
+              "size": 64661,
+              "width": 900,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/59f78b51-1-view.png",
+              "sha256": "59f78b5111cbfa353114c6841fedcfb70e852533f7fb28abc164f18059949946",
+              "size": 68420,
+              "width": 600,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/pdfcraft/7dea7b39-1-thumb.png",
+              "sha256": "7dea7b391b435f489d51305ed97b1f56c83fdeb8b40d79c2ea44417edeea12dd",
+              "size": 9566,
+              "width": 150,
+              "height": 100
+            }
+          }
+        ]
       }
     },
     {
