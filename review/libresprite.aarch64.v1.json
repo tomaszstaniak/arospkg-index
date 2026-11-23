@@ -4,7 +4,7 @@
  "id": "libresprite",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-19",
+ "date": "2026-11-23",
  "sha256": "69ad5a3ab11d666b0545f0046ab71b49673c3198b3b17a3ea1ffb1f14d4bbe6d",
  "size": 19598847,
  "manifest_digest": "366661dbe471a2ea397d16a33b1ac945b54e60d6a6f1097b0728fe36f7506288",

@@ -4,7 +4,7 @@
  "id": "deckcraft",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-20",
+ "date": "2026-11-23",
  "sha256": "21b787aef758966cb33e311dde9d578e2e75a3ff83144e060dc4e69bc3566453",
  "size": 51642786,
  "manifest_digest": "7f929ab5060ae6f7e1b47e77b41e67b04ad562589bb9b92d8769288c6f3ca12f",

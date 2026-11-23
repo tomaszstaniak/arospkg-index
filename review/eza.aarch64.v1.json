@@ -4,7 +4,7 @@
  "id": "eza",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-14",
+ "date": "2026-11-23",
  "sha256": "2b95016adacee8e59fa4c1a4bea13cee430e9aaccaf68d604322fc8bd91c2c33",
  "size": 8147532,
  "manifest_digest": "24b12707d077289875d029bf5f88b0e5d3c9962b6dd06f457eabbc32fc93e6e4",

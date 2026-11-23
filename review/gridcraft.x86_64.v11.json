@@ -4,7 +4,7 @@
  "id": "gridcraft",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-11-13",
+ "date": "2026-11-23",
  "sha256": "df2049cae48ae4aa1d3a37847971f620f0810221dc675ce314bdb97d7e829879",
  "size": 27429123,
  "manifest_digest": "7206f6e7685258867e045d3c38e912aae5a3c7e4fd1f991f25f224eef74ba23a",

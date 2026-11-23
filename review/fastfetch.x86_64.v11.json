@@ -4,7 +4,7 @@
  "id": "fastfetch",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-11-12",
+ "date": "2026-11-23",
  "sha256": "4a7f670d25a8eb877fa549249aa9760d151c2f14d17d87ca7bb02efaa4935b11",
  "size": 950233,
  "manifest_digest": "dd645133fedfc3b536a73527bd55f01d9f1e8775ad25cebd43e1ba90ea960972",

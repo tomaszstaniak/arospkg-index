@@ -4,7 +4,7 @@
  "id": "synchr",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "sha256": "cb9ca78de07ae3aee89818019b2f3b0356200740c1bd875a077904a42084ce8d",
  "size": 2501918,
  "manifest_digest": "64d3f3964c0b5b25f1e81fbd8e5f33686851b2a87563269fdcb69d6df6013cc7",

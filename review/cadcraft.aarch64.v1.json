@@ -4,7 +4,7 @@
  "id": "cadcraft",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-13",
+ "date": "2026-11-23",
  "sha256": "7bb93b7f20c440240f433f57db822b99d68a91e0d4d27ba71ba9fa46cce3be50",
  "size": 37132480,
  "manifest_digest": "57960ba75e25fa683bffc006b18de5269dcc49e11d0fd396987e7835cd57ae13",

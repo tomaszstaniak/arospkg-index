@@ -4,7 +4,7 @@
  "id": "dockbar",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-17",
+ "date": "2026-11-23",
  "sha256": "67cdf74fc95b56684dd6d68ec257db621be30490d378a3989032b2e7ca860670",
  "size": 13676475,
  "manifest_digest": "ff729bd20a86ee704b65dca747ed715d0a2ad1caab573e5c02d72822a258733f",

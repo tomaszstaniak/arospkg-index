@@ -4,7 +4,7 @@
  "id": "potrace",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-11-06",
+ "date": "2026-11-23",
  "sha256": "45d1652507892809b002f6f2331f277c697c50ad51b2c59bd3fdfef852f3d1d4",
  "size": 1006164,
  "manifest_digest": "3c90147f9e4ef69d0377c2c4c00d283c89e2c62c96bdc0945bc764d58ce3a62c",

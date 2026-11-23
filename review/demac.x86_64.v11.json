@@ -4,7 +4,7 @@
  "id": "demac",
  "arch": "x86_64",
  "abi": "v11",
- "date": "2026-11-06",
+ "date": "2026-11-23",
  "sha256": "304c4f49fb68c04592a9863c2c68d56cff605576fe80342a660c71343e907d01",
  "size": 110298,
  "manifest_digest": "523b8088ef3077645210e415b5fce0d649a968319cf3b94caee6346a2042b169",

@@ -4,7 +4,7 @@
  "id": "folio",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-17",
+ "date": "2026-11-23",
  "sha256": "c1fcbc66c5058637cefd986e1aaddec849bd3fa6309bbb497393b253ff339fd9",
  "size": 28885606,
  "manifest_digest": "f56dd714c2773ef6ee40c9a128a801cf533be0dde7b69566b2e942cdffbe0e19",

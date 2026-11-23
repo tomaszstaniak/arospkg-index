@@ -4,7 +4,7 @@
  "id": "dosbox",
  "arch": "i386",
  "abi": "v0",
- "date": "2026-11-06",
+ "date": "2026-11-23",
  "sha256": "8bc8bea1b54290fef553ff12d890cc626d788b2dc05087f7b6df03293e6a2306",
  "size": 1713180,
  "manifest_digest": "71d5b4ecb2fac4ec84548325ba5ae77eb6302ba28490cfa18078d3d47b16b752",

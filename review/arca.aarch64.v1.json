@@ -4,7 +4,7 @@
  "id": "arca",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-16",
+ "date": "2026-11-23",
  "sha256": "42654177e301609bff259d4e4160ee99e9d7b6ebe91fbaafa3bed63dc9161850",
  "size": 2654742,
  "manifest_digest": "60b163fa1718d7fcf53a9f85799ae1c4ff88c1e74c4a4cf3a27a25690d38335d",

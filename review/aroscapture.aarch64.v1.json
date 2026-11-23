@@ -4,7 +4,7 @@
  "id": "aroscapture",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-06",
+ "date": "2026-11-23",
  "sha256": "ed8077cf7874fd7255a1095c5909c4e0d28b83fb7984e2403c664f0168ce3935",
  "size": 787362,
  "manifest_digest": "8f52ffb7c50638453db2a00ec912e9055a22fabed18b26bd4d6acff748f84695",

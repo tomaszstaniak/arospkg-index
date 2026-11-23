@@ -4,7 +4,7 @@
  "id": "burntime",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-07",
+ "date": "2026-11-23",
  "sha256": "69fa9420bcc12c5c6abd20fba47f357be78801eaa568a57f7973279f82e6a4af",
  "size": 3735098,
  "manifest_digest": "6c9aa1935af86f1d34b148107bde3623275fb409833fbedbdb7c4977b6673599",
