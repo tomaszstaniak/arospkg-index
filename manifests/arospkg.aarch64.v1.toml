@@ -1,30 +1,32 @@
-# arospkg 0.8.2 (PkgManager no longer fails on the Raspberry Pi when its list
-# has icons; the buttons of a package's page stay inside the window).
+# arospkg 0.8.3 (PkgManager: "Installed only" beside the list's name narrows
+# the chosen view or category to what is installed).
+# 0.8.2: PkgManager no longer fails on the Raspberry Pi when its list has
+# icons; the buttons of a package's page stay inside the window.
 # 0.8.1: the row's button stays inside a list that got narrower.
 # 0.8.0: a new PkgManager window: views and categories in a list on
 # the left, a button in every row (Install, Run or Upgrade), a page for each
 # package, a menu. Pictures of packages (icons, screenshots) from the media
 # drawer of the package root. The demonstration of 0.5.0 to 0.7.8 is removed.
-# installs_on stays empty: these bytes ran on the Pi (QEMU raspi3b, 2026-11-23)
+# installs_on stays empty: these bytes ran on the Pi (QEMU raspi3b, 2026-11-24)
 # from a drawer (apkg searched the catalogue, PkgManager showed its list with
-# icons and a package's page), but installed nothing through apkg there.
+# icons and Installed only), but installed nothing through apkg there.
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.8.2"
+version         = "0.8.3"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.2/arospkg-0.8.2.aarch64-aros-raspi.zip"
-size            = 1044259
-sha256          = "1905ccb854b07379f5f6bbfd6818fa234ffc420f2d0dd05894edb24a52ae341a"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.3/arospkg-0.8.3.aarch64-aros-raspi.zip"
+size            = 1044344
+sha256          = "24ca39c57561407fab852c6b0da5c00ad24a8aedf6aebdb77e530cc97bd72039"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.8.2.aarch64-aros-raspi"
+subdir          = "arospkg-0.8.3.aarch64-aros-raspi"
 installs_on     = []
 does_not_run_on = []
 
@@ -60,4 +62,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.8.2"
+revision   = "v0.8.3"
