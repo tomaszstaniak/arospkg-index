@@ -1,30 +1,32 @@
-# arospkg 0.8.2 (PkgManager no longer fails on the Raspberry Pi when its list
-# has icons; the buttons of a package's page stay inside the window).
+# arospkg 0.8.3 (PkgManager: "Installed only" beside the list's name narrows
+# the chosen view or category to what is installed).
+# 0.8.2: PkgManager no longer fails on the Raspberry Pi when its list has
+# icons; the buttons of a package's page stay inside the window.
 # 0.8.1: the row's button stays inside a list that got narrower.
 # 0.8.0: a new PkgManager window: views and categories in a list on
 # the left, a button in every row (Install, Run or Upgrade), a page for each
 # package, a menu. Pictures of packages (icons, screenshots) from the media
 # drawer of the package root. The demonstration of 0.5.0 to 0.7.8 is removed.
-# installs_on: these bytes updated the catalogue, verified and removed arca
-# on AROS One (QEMU, 2026-11-23); PkgManager showed the page of the installed
-# arca with its buttons inside the window (runtime-tests/).
+# installs_on: these bytes updated the catalogue, installed micropolis and
+# limpet and verified limpet on AROS One (QEMU, 2026-11-24); PkgManager listed
+# the installed game with Installed only (runtime-tests/).
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.8.2"
+version         = "0.8.3"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.2/arospkg-0.8.2.x86_64-aros-v11.zip"
-size            = 953883
-sha256          = "927b4b1eb6514afce9c4c59203c4d5dfb9d62450c0647faeacfad9cdf6255dc8"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.3/arospkg-0.8.3.x86_64-aros-v11.zip"
+size            = 954371
+sha256          = "fa93164929c378f372f0e1dc4f6d3e5981479303da8d27c64662d7cfffb128b3"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.8.2.x86_64-aros-v11"
+subdir          = "arospkg-0.8.3.x86_64-aros-v11"
 installs_on     = ["aros-one"]
 does_not_run_on = ["mainline-x86_64"]
 
@@ -56,4 +58,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.8.2"
+revision   = "v0.8.3"
