@@ -5916,9 +5916,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r1/Eza-0.23.5-r1-aros-aarch64-abiv1-raspi.zip",
+      "url": "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r2/Eza-0.23.5-r2-aros-aarch64-abiv1-raspi.zip",
       "size": 8147532,
-      "sha256": "2b95016adacee8e59fa4c1a4bea13cee430e9aaccaf68d604322fc8bd91c2c33",
+      "sha256": "a23fc9c0ca51241f49776eee7b4d5003cdc6a68c84ba6ba75b923b931c832c14",
       "depends": [],
       "requires_system": [
         {
@@ -5941,10 +5941,11 @@
       "subdir": "Eza",
       "icon": "",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "license": "EUPL-1.2",
       "post_install_notes": [
         "eza lists files in Limpet 0.7.0 or later (apkg install limpet); the standard Shell window gets help and --version only.",
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 1 from the project page.",
         "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi."
       ],
       "launch": {
@@ -5955,7 +5956,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -5971,19 +5972,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS AArch64 20261110",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-14",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
             "verify",
-            "remove"
+            "run"
           ],
-          "note": "0.23.5-r1: apkg 0.7.8 to RAM:, archive from GitHub: install, verify ok, listing in Limpet 0.10.1, remove; rc 0; real Pi untested"
+          "note": "0.23.5-r2: installed from a local index by apkg 0.8.4; verify ok; eza --version from a Shell"
         }
       ],
       "first_added": "2026-11-14",
@@ -6339,9 +6339,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/misc",
-      "url": "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r4/Fastfetch-2.70.0-r4-aros-aarch64-abiv1-raspi.zip",
-      "size": 940297,
-      "sha256": "aea9135f2f22b471a1d7427a38c2df5dc37bd8548bef20f8a794374d188f366d",
+      "url": "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r5/Fastfetch-2.70.0-r5-aros-aarch64-abiv1-raspi.zip",
+      "size": 942534,
+      "sha256": "f96ab58acaf32a42839852efa12614c303f1d94d35f391b19b31e036fc99f26d",
       "depends": [],
       "requires_system": [
         {
@@ -6364,9 +6364,10 @@
       "subdir": "Fastfetch",
       "icon": "",
       "install": {},
-      "revision": 4,
+      "revision": 5,
       "license": "MIT",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 4 from the project page.",
         "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi."
       ],
       "launch": {
@@ -6377,7 +6378,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -6393,19 +6394,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS AArch64 20261110",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-12",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
             "verify",
-            "remove"
+            "run"
           ],
-          "note": "apkg 0.7.6 from the public catalogue to RAM:; Pi note shown; verify 71 ok; rc 0; removed cleanly; real Pi untested"
+          "note": "2.70.0-r5: installed from a local index by apkg 0.8.4; verify ok; OS, kernel and memory lines from a Shell"
         }
       ],
       "first_added": "2026-11-12",
@@ -7084,9 +7084,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.7/Folio-0.7.aarch64-aros-raspi.zip",
-      "size": 28885606,
-      "sha256": "c1fcbc66c5058637cefd986e1aaddec849bd3fa6309bbb497393b253ff339fd9",
+      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.7-r2/Folio-0.7.aarch64-aros-raspi.zip",
+      "size": 28885862,
+      "sha256": "927a2b535aba94d5af63a0f6120d96ba5fc9ed41c00e42ee31e5ce20a30f1ab8",
       "depends": [],
       "requires_system": [
         {
@@ -7125,11 +7125,12 @@
       "subdir": "Folio",
       "icon": "Folio.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-foliopdf",
       "license": "AGPL-3.0-or-later",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-05); not for hosted Macaros. Tested in QEMU only.",
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Folio 0.7 revision 1 from the project page.",
+        "Native Raspberry Pi build; not for hosted Macaros. Not run on nightly 2026-11-24.",
         "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
         "Opening external web links requires openurl.library."
       ],
@@ -7141,7 +7142,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -7157,21 +7158,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS Raspberry Pi nightly 2026-11-10, non-SMP",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "QEMU (raspi3b, TCG)",
-          "date": "2026-11-17",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "QEMU: 0.6 upgrade, verify, user file kept, Shell/Workbench, highlight/save/reopen, remove. Repacked archive has byte-identical tested members. No hardware GPU."
+          "note": "0.7 revision 2: installed from a local index by apkg 0.8.4; verify ok; window opened from Workbench; no document opened"
         }
       ],
       "first_added": "2026-10-04",
@@ -18926,9 +18924,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "network/misc",
-      "url": "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2/Synchr-0.2-r1-aros-aarch64-abiv1-raspi.zip",
-      "size": 2501918,
-      "sha256": "cb9ca78de07ae3aee89818019b2f3b0356200740c1bd875a077904a42084ce8d",
+      "url": "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2-r2/Synchr-0.2-r2-aros-aarch64-abiv1-raspi.zip",
+      "size": 2502292,
+      "sha256": "b14e9076b7fe399e9e9829df48d02b36de1f2836d27d6ef97855740133c09289",
       "depends": [],
       "requires_system": [
         {
@@ -18963,10 +18961,11 @@
       "subdir": "Synchr",
       "icon": "Synchr.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-synchr",
       "license": "MIT; bundled parts keep their own licences, see NOTICE.txt",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Synchr 0.2 revision 1 from the project page.",
         "Start Synchr from its icon. The ReadMe in the drawer walks through connecting the first device.",
         "Needs a running TCP/IP stack. Use test folders first: deleting a file on one side deletes it on the other.",
         "Before removing the package, untick Start with the system in the window, or delete SYS:WBStartup/Synchr.info.",
@@ -18980,7 +18979,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -18996,19 +18995,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS for Raspberry Pi nightly 2026-11-10",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
           "machine": "QEMU raspi3b",
-          "date": "2026-11-22",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
-            "remove",
-            "verify"
+            "verify",
+            "start"
           ],
-          "note": "apkg 0.7.8, local index, root in RAM:; 8 files verified; window opened, quit with Right-Amiga+Q; removed (the identity Synchr made in Data was kept)"
+          "note": "0.2 revision 2: installed from a local index by apkg 0.8.4; verify ok; window from Workbench, engine made its device identity"
         }
       ],
       "first_added": "2026-11-22",

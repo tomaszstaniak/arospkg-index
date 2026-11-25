@@ -4,14 +4,14 @@
  "id": "synchr",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "cb9ca78de07ae3aee89818019b2f3b0356200740c1bd875a077904a42084ce8d",
- "size": 2501918,
- "manifest_digest": "64d3f3964c0b5b25f1e81fbd8e5f33686851b2a87563269fdcb69d6df6013cc7",
+ "date": "2026-11-25",
+ "sha256": "b14e9076b7fe399e9e9829df48d02b36de1f2836d27d6ef97855740133c09289",
+ "size": 2502292,
+ "manifest_digest": "603bb17c688e6fd30aa8592ada078e11292593d48382544bfe1b5289ed370f0d",
  "result": "passed",
  "sizes": {
-  "largest_member": 9764280,
-  "unpacked": 9930803
+  "largest_member": 9765400,
+  "unpacked": 9932711
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 9764280 bytes (Synchr/SynchrEngine), 9930803 bytes unpacked"
+   "detail": "largest member 9765400 bytes (Synchr/SynchrEngine), 9932711 bytes unpacked"
   },
   {
    "name": "paths",
