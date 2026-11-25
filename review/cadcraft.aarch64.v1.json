@@ -4,14 +4,14 @@
  "id": "cadcraft",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "7bb93b7f20c440240f433f57db822b99d68a91e0d4d27ba71ba9fa46cce3be50",
- "size": 37132480,
- "manifest_digest": "57960ba75e25fa683bffc006b18de5269dcc49e11d0fd396987e7835cd57ae13",
+ "date": "2026-11-25",
+ "sha256": "608397278f02c087b6068ec4e61a234fc48df792b3165876d13c85e08172a4a7",
+ "size": 37131852,
+ "manifest_digest": "5c7051cd3940e31cbd7a10d5b9f2e2729d9a630d27a93afb9f150b87ecc6d2a6",
  "result": "passed",
  "sizes": {
-  "largest_member": 75064568,
-  "unpacked": 131155777
+  "largest_member": 75059880,
+  "unpacked": 131155127
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 75064568 bytes (CADCraft/CADCraft), 131155777 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 75059880 bytes (CADCraft/CADCraft), 131155127 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",

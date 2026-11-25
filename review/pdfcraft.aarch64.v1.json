@@ -4,14 +4,14 @@
  "id": "pdfcraft",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "d22008465bf9693b53a7b9dce7b341551548ad3ae12b5d187509be6afa495f7a",
- "size": 60368041,
- "manifest_digest": "dfcb81fc6ece508bba39c1fe22a8bd53f6aa804687ce5092f73202b062dfea1a",
+ "date": "2026-11-25",
+ "sha256": "b2d80f5d333dcc2461adb1733a06518eadb9173b08c2be88aa675f9651112ae3",
+ "size": 60356123,
+ "manifest_digest": "ae3abfaed5bf73d68dc1772db5fc3bee37bdb1b3d98f1511e099b0e939151da2",
  "result": "passed",
  "sizes": {
-  "largest_member": 99159984,
-  "unpacked": 186384767
+  "largest_member": 99148064,
+  "unpacked": 186361524
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 99159984 bytes (PdfCraft/PdfCraft), 186384767 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 99148064 bytes (PdfCraft/PdfCraft), 186361524 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",

@@ -4,14 +4,14 @@
  "id": "wordcraft",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "cdb76d1f2ed4d44d46be22717c120f9117d5629512a8527fd117a36b67a6571f",
- "size": 51191185,
- "manifest_digest": "7a5c89c49e5d6214536473f4b2a39c6462d67d4dcbc77631147bd9b3b00309e1",
+ "date": "2026-11-25",
+ "sha256": "15bba7c93f625055059c3c801f51725a905da9d1e6c93640df1eba84d586280f",
+ "size": 51209917,
+ "manifest_digest": "bea72cebe715a920e2d3409ddf50190527ced6c197ee0b14082769574ca2a836",
  "result": "passed",
  "sizes": {
-  "largest_member": 108166544,
-  "unpacked": 181944067
+  "largest_member": 108206432,
+  "unpacked": 182010641
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 108166544 bytes (WordCraft/WordCraft), 181944067 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 108206432 bytes (WordCraft/WordCraft), 182010641 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",

@@ -1235,14 +1235,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.8.3",
+      "version": "0.8.4",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.3/arospkg-0.8.3.aarch64-aros-raspi.zip",
-      "size": 1044344,
-      "sha256": "24ca39c57561407fab852c6b0da5c00ad24a8aedf6aebdb77e530cc97bd72039",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.4/arospkg-0.8.4.aarch64-aros-raspi.zip",
+      "size": 1047352,
+      "sha256": "d9cbf1bdbe892f86c43ba4cf706963871f3b742a282ed278a054100206e9b37e",
       "depends": [],
       "requires_system": [
         {
@@ -1274,7 +1274,7 @@
       "runs_on": [],
       "does_not_run_on": [],
       "kind": "app",
-      "subdir": "arospkg-0.8.3.aarch64-aros-raspi",
+      "subdir": "arospkg-0.8.4.aarch64-aros-raspi",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -1287,7 +1287,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -1301,7 +1301,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "run"
+          ],
+          "note": "0.8.4: from RAM: with a local index installed and verified limpet, wordcraft and gridcraft; no bus fault; PkgManager not started"
+        }
+      ],
       "first_added": "2026-10-04",
       "app_first_added": "2026-10-04"
     },
@@ -1358,14 +1371,14 @@
     },
     {
       "id": "arospkg",
-      "version": "0.8.3",
+      "version": "0.8.4",
       "summary": "Package manager for AROS: find, install, start, update and remove programs",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/system",
-      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.3/arospkg-0.8.3.x86_64-aros-v11.zip",
-      "size": 954371,
-      "sha256": "fa93164929c378f372f0e1dc4f6d3e5981479303da8d27c64662d7cfffb128b3",
+      "url": "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.4/arospkg-0.8.4.x86_64-aros-v11.zip",
+      "size": 954563,
+      "sha256": "ca5624f34f7fbd9999b705a9558296a9022855adbefb24b18b684d4f8b7be530",
       "depends": [],
       "requires_system": [
         {
@@ -1397,7 +1410,7 @@
         "mainline-x86_64"
       ],
       "kind": "app",
-      "subdir": "arospkg-0.8.3.x86_64-aros-v11",
+      "subdir": "arospkg-0.8.4.x86_64-aros-v11",
       "icon": "",
       "install": {},
       "source": "https://github.com/tomaszstaniak/arospkg",
@@ -1410,7 +1423,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-24",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -1430,13 +1443,12 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-24",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
-            "start",
-            "verify"
+            "run"
           ],
-          "note": "0.8.3: update, install micropolis and limpet, verify limpet; PkgManager with Installed only listed the installed game, closed cleanly"
+          "note": "0.8.4: from RAM: updated the public catalogue, installed, verified and listed zunecalc; PkgManager not started"
         }
       ],
       "first_added": "2026-10-04",
@@ -3026,9 +3038,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/cad",
-      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1-r1/CADCraft-0.20.1-r1-aros-aarch64-abiv1-raspi.zip",
-      "size": 37132480,
-      "sha256": "7bb93b7f20c440240f433f57db822b99d68a91e0d4d27ba71ba9fa46cce3be50",
+      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1-r2/CADCraft-0.20.1-r2-aros-aarch64-abiv1-raspi.zip",
+      "size": 37131852,
+      "sha256": "608397278f02c087b6068ec4e61a234fc48df792b3165876d13c85e08172a4a7",
       "depends": [],
       "client_features": [
         "large-members"
@@ -3070,11 +3082,11 @@
       "subdir": "CADCraft",
       "icon": "CADCraft.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-cadcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later (earlier: CADCraft 0.20.1-r1 from the project page). Tested in an emulator only.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
         "Settings, autosave files and CADCraft.log are kept in CADCraftData in the program drawer; keep it when upgrading.",
@@ -3088,7 +3100,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -3102,25 +3114,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS Raspberry Pi nightly 2026-11-10",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
-          "date": "2026-11-13",
-          "result": "passed",
-          "checked": [
-            "install",
-            "upgrade",
-            "verify",
-            "start",
-            "run",
-            "remove"
-          ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.20.1, CADCraftData and a user file kept; verify ok; drew, zoomed, Save As, exit 0; second start; removed"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-13",
       "app_first_added": "2026-11-13",
       "media": {
@@ -3956,9 +3950,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "office/presentation",
-      "url": "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.18.1/DeckCraft-0.18.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 51642786,
-      "sha256": "21b787aef758966cb33e311dde9d578e2e75a3ff83144e060dc4e69bc3566453",
+      "url": "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.18.1-r1/DeckCraft-0.18.1-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 51656597,
+      "sha256": "7fd6e93255b5eceabdacefbe1a49a59d155f49fb1b895d9810a3438f35a74a70",
       "depends": [],
       "client_features": [
         "large-members"
@@ -4000,10 +3994,11 @@
       "subdir": "DeckCraft",
       "icon": "DeckCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-deckcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later (earlier: DeckCraft 0.18.1 from the project page). Tested in an emulator only.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
         "Settings, AutoRecover data and DeckCraft.log are kept in DeckCraftData in the program drawer; keep it when upgrading.",
@@ -4017,7 +4012,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -4031,24 +4026,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS Raspberry Pi nightly 2026-11-10",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
-          "date": "2026-11-20",
-          "result": "passed",
-          "checked": [
-            "install",
-            "verify",
-            "start",
-            "run",
-            "remove"
-          ],
-          "note": "apkg 0.7.8, local index: installed, verify ok; new slide, Save As, undo, redo, Save, exit 0; second start; removed"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-20",
       "app_first_added": "2026-10-20",
       "media": {
@@ -8997,9 +8975,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "office/spreadsheet",
-      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r2/GridCraft-0.19.1-r2-aros-aarch64-abiv1-raspi.zip",
-      "size": 24296396,
-      "sha256": "50c275733a2d360381f777e238adec7bef609614d176a98418baaab4226ee835",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r3/GridCraft-0.19.1-r3-aros-aarch64-abiv1-raspi.zip",
+      "size": 24290692,
+      "sha256": "659506afc9a6ff76ba18b5d2cc99648d483ad508b9b17b8a28ed8784717a6bf0",
       "depends": [],
       "requires_system": [
         {
@@ -9038,11 +9016,11 @@
       "subdir": "GridCraft",
       "icon": "GridCraft.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-gridcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later (earlier: GridCraft 0.19.1-r2 from the project page). Tested in an emulator only.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
         "Settings, recent files and GridCraft.log are kept in GridCraftData in the program drawer; keep it when upgrading.",
@@ -9056,7 +9034,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -9072,21 +9050,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS Raspberry Pi nightly 2026-11-10",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
-          "date": "2026-11-13",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "run"
           ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.19.1-r1, data and a user file kept; verify ok; cell edits, two saves, exit 0; second start; removed"
+          "note": "0.19.1-r3: installed from a local index by apkg 0.8.4; verify ok; command-line program ran; window not opened"
         }
       ],
       "first_added": "2026-11-12",
@@ -11933,9 +11908,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1/LightCraft-0.21.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 47226989,
-      "sha256": "a39e45d33a9630f45eac31aa40ddb15df1bfbf4bc9daec854321d3fc014bc96d",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1-r1/LightCraft-0.21.1-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 47227205,
+      "sha256": "58780c48f801ee9dc557e1ef8a82c46b08912137ddca71a37435a05e03b9f051",
       "depends": [],
       "client_features": [
         "large-members"
@@ -11973,10 +11948,11 @@
       "subdir": "LightCraft",
       "icon": "LightCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-lightcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later (earlier: LightCraft 0.21.1 from the project page). Tested in an emulator only.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
         "Settings, the default library and LightCraft.log are kept in LightCraftData in the program drawer; keep it when upgrading.",
@@ -11990,7 +11966,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -12004,24 +11980,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS Raspberry Pi nightly 2026-11-10",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
-          "date": "2026-11-23",
-          "result": "passed",
-          "checked": [
-            "install",
-            "verify",
-            "start",
-            "run",
-            "remove"
-          ],
-          "note": "apkg 0.7.8, local index, emulator: install, verify ok; import, edit and export; library reopened, exit 0; removed"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-23",
       "app_first_added": "2026-10-24",
       "media": {
@@ -12274,14 +12233,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.13.0",
+      "version": "0.13.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.0/Limpet-0.13.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 7383408,
-      "sha256": "c202e3c2a5d164d846b0fe8369c5c237869cd7a19389bee121ac6e375b577aa9",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.1/Limpet-0.13.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 7391253,
+      "sha256": "fc670a619a5d41460530cce7cb1740def83ff41c23d72d31de7d364261246cb9",
       "depends": [],
       "requires_system": [
         {
@@ -12312,10 +12271,11 @@
       "subdir": "Limpet",
       "icon": "Limpet.info",
       "install": {},
-      "revision": 2,
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/limpet",
       "license": "MIT",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Limpet 0.13.0 from the project page.",
         "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi."
       ],
       "launch": {
@@ -12326,7 +12286,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -12340,7 +12300,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start"
+          ],
+          "note": "0.13.1: installed from a local index by apkg 0.8.4; verify ok; started from Workbench; ssh not run"
+        }
+      ],
       "first_added": "2026-11-13",
       "app_first_added": "2026-10-03",
       "media": {
@@ -14380,9 +14355,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0/PdfCraft-0.22.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 60368041,
-      "sha256": "d22008465bf9693b53a7b9dce7b341551548ad3ae12b5d187509be6afa495f7a",
+      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0-r1/PdfCraft-0.22.0-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 60356123,
+      "sha256": "b2d80f5d333dcc2461adb1733a06518eadb9173b08c2be88aa675f9651112ae3",
       "depends": [],
       "client_features": [
         "large-members"
@@ -14424,10 +14399,11 @@
       "subdir": "PdfCraft",
       "icon": "PdfCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-pdfcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later (earlier: PdfCraft 0.22.0 from the project page). Tested in an emulator only.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
         "Settings, AutoRecover data and PdfCraft.log are kept in PdfCraftData in the program drawer; keep it when upgrading.",
@@ -14441,7 +14417,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -14455,24 +14431,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS Raspberry Pi nightly 2026-11-10",
-          "arch": "aarch64",
-          "abi": "v1",
-          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
-          "date": "2026-11-23",
-          "result": "passed",
-          "checked": [
-            "install",
-            "verify",
-            "start",
-            "run",
-            "remove"
-          ],
-          "note": "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-11-23",
       "app_first_added": "2026-10-20",
       "media": {
@@ -21048,9 +21007,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "office/text",
-      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.18.1/WordCraft-0.18.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 51191185,
-      "sha256": "cdb76d1f2ed4d44d46be22717c120f9117d5629512a8527fd117a36b67a6571f",
+      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.18.1-r1/WordCraft-0.18.1-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 51209917,
+      "sha256": "15bba7c93f625055059c3c801f51725a905da9d1e6c93640df1eba84d586280f",
       "depends": [],
       "client_features": [
         "large-members"
@@ -21092,10 +21051,11 @@
       "subdir": "WordCraft",
       "icon": "WordCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-wordcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Native Raspberry Pi build (nightly 2026-11-10); needs a nightly from 2026-11-06 or later. Tested in an emulator only.",
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later (earlier: WordCraft 0.18.1 from the project page). Tested in an emulator only.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
         "Settings, dictionary, fonts and WordCraft.log are kept in WordCraftData in the program drawer; keep it when upgrading.",
@@ -21109,7 +21069,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -21125,21 +21085,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS Raspberry Pi nightly 2026-11-10",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "QEMU raspi3b (emulator, not Pi hardware)",
-          "date": "2026-11-13",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.16.0-r1, data and a user file kept; verify ok; typed, Save As, undo, redo, Save; second start; removed"
+          "note": "0.18.1-r1: installed from a local index by apkg 0.8.4; verify ok; command-line program ran; window opened from Workbench"
         }
       ],
       "first_added": "2026-11-07",
