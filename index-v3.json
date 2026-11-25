@@ -12765,9 +12765,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "game/misc",
-      "url": "https://github.com/tomaszstaniak/aros-loeve/releases/download/v12.0-aros3/love-12.0-aros3-aros-x86_64-abiv1-pc.zip",
-      "size": 8034943,
-      "sha256": "0bda2d4501006cc6794304f23fdda8ce5ebc3a3e0834a35765fb30f3cacfe122",
+      "url": "https://github.com/tomaszstaniak/aros-loeve/releases/download/v12.0-aros4/love-12.0-aros4-aros-x86_64-abiv1-pc.zip",
+      "size": 8054778,
+      "sha256": "bc09302b96f6023c787ad344bebfdf4edf3333b46a51182353b773e3d1e1606d",
       "depends": [],
       "requires_system": [
         {
@@ -12838,10 +12838,11 @@
       "subdir": "LOVE",
       "icon": "LOVE.info",
       "install": {},
-      "revision": 3,
+      "revision": 4,
       "source": "https://github.com/tomaszstaniak/aros-loeve",
       "license": "Zlib",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 3 from the project page.",
         "Double-click the love icon and choose a game (.love file or drawer with main.lua), or from a Shell: Run love <game>.",
         "love --icon <game> writes an icon that starts the game with a double click.",
         "Saved games are kept in the Saves drawer of the package drawer."
@@ -12854,7 +12855,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -12870,20 +12871,17 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-18",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-22",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
-            "install",
-            "verify",
             "start",
-            "run",
-            "remove"
+            "run"
           ],
-          "note": "12.0-aros3: apkg 0.7.8 downloaded and installed it; a game ran and saved; verify ok; removed, the save kept"
+          "note": "12.0-aros4: package files unpacked by hand on the live system; games ran from a Shell and from the Workbench requester; apkg install not run"
         }
       ],
       "first_added": "2026-11-22",
