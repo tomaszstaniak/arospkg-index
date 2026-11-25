@@ -1,5 +1,7 @@
-# arospkg 0.8.3 (PkgManager: "Installed only" beside the list's name narrows
-# the chosen view or category to what is installed).
+# arospkg 0.8.4 (built with the SDK of the Pi nightly 2026-11-24: 0.8.3 stopped
+# with a bus fault on that nightly; needs a nightly of 2026-11-24 or later).
+# 0.8.3: PkgManager: "Installed only" beside the list's name narrows
+# the chosen view or category to what is installed.
 # 0.8.2: PkgManager no longer fails on the Raspberry Pi when its list has
 # icons; the buttons of a package's page stay inside the window.
 # 0.8.1: the row's button stays inside a list that got narrower.
@@ -13,20 +15,20 @@
 
 status          = "approved"
 id              = "arospkg"
-version         = "0.8.3"
+version         = "0.8.4"
 summary         = "Package manager for AROS: find, install, start, update and remove programs"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/system"
-url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.3/arospkg-0.8.3.aarch64-aros-raspi.zip"
-size            = 1044344
-sha256          = "24ca39c57561407fab852c6b0da5c00ad24a8aedf6aebdb77e530cc97bd72039"
+url             = "https://github.com/tomaszstaniak/arospkg/releases/download/v0.8.4/arospkg-0.8.4.aarch64-aros-raspi.zip"
+size            = 1047352
+sha256          = "d9cbf1bdbe892f86c43ba4cf706963871f3b742a282ed278a054100206e9b37e"
 kind            = "app"
 license         = "MIT"
 
 depends         = []
 depends_checked = true
-subdir          = "arospkg-0.8.3.aarch64-aros-raspi"
+subdir          = "arospkg-0.8.4.aarch64-aros-raspi"
 installs_on     = []
 does_not_run_on = []
 
@@ -62,4 +64,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/arospkg"
-revision   = "v0.8.3"
+revision   = "v0.8.4"
