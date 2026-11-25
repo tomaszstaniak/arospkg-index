@@ -7435,9 +7435,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.7/Folio-0.7.x86_64-aros-v1.zip",
-      "size": 28566430,
-      "sha256": "3c6de25a0fd245797d1cca0799fa64e537f7e6cd26848aea8c32cc50df2ab194",
+      "url": "https://github.com/tomaszstaniak/aros-foliopdf/releases/download/v0.7-r2/Folio-0.7.x86_64-aros-v1.zip",
+      "size": 28566592,
+      "sha256": "8631f02345f4714c766fb80528d2da5ce0893c8bb20f333e098828a51feb7f4d",
       "depends": [],
       "requires_system": [
         {
@@ -7476,11 +7476,11 @@
       "subdir": "Folio",
       "icon": "Folio.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-foliopdf",
       "license": "AGPL-3.0-or-later",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly of 2026-11-05.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use Folio 0.7 revision 1 from the project page.",
         "Launch from the Folio icon, which sets an 8 MiB stack. Shell: Stack 8388608.",
         "Opening external web links requires openurl.library."
       ],
@@ -7492,7 +7492,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -7508,21 +7508,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64, pool baseline v1-20261113-network",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-17",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "QEMU: 0.6 upgrade, verify, user file kept, Shell/Workbench, highlight/save/reopen, remove. Repacked archive has byte-identical tested members. No hardware GPU."
+          "note": "0.7 revision 2: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document opened"
         }
       ],
       "first_added": "2026-11-08",
@@ -11692,9 +11689,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros5/libresprite-1.3.99.20261114-aros5-aros-x86_64-abiv1-pc.zip",
-      "size": 20036468,
-      "sha256": "f884b7da0d2d906fa5aca9aa17dcbe19521a056f75aa478d28bd9a82120ff560",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros6/libresprite-1.3.99.20261114-aros6-aros-x86_64-abiv1-pc.zip",
+      "size": 20052535,
+      "sha256": "ca570e1a54eaf7f0cb08da5b9e46cce0898bb505648643261a4913bdd7e19a34",
       "depends": [],
       "requires_system": [
         {
@@ -11761,10 +11758,11 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 5,
+      "revision": 6,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use 1.3.99.20261114-aros5 from the project page.",
         "Start it from the LibreSprite icon. Settings are kept in ENVARC:LibreSprite.",
         "The GUI_RENDERER tool type in the icon chooses the drawing: AUTO, GPU (OpenGL) or CPU."
       ],
@@ -11776,7 +11774,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -11790,7 +11788,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start"
+          ],
+          "note": "aros6: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no drawing"
+        }
+      ],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16",
       "media": {
@@ -15928,9 +15941,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros7/pragtical-3.14.0-aros7-aros-x86_64-abiv1-pc.zip",
-      "size": 4510695,
-      "sha256": "bb626a9d6d9096925de625f841ebf459b061966046c24009bcedc6e2010900b6",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros8/pragtical-3.14.0-aros8-aros-x86_64-abiv1-pc.zip",
+      "size": 3851468,
+      "sha256": "caa29c3dd4242eec851aabf2951ed602ce0039dbfde6f608bb98b2201b3acc2d",
       "depends": [],
       "requires_system": [
         {
@@ -15997,10 +16010,11 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 7,
+      "revision": 8,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use 3.14.0-aros7 from the project page.",
         "Start it from the pragtical icon, which sets the stack the editor needs.",
         "From a Shell: Execute run-pragtical, or Stack 8000000 and then pragtical <file or drawer>.",
         "Settings and added plugins are kept in the user drawer of the package."
@@ -16013,7 +16027,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -16029,17 +16043,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-13",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-18",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
-            "start",
-            "run"
+            "install",
+            "verify",
+            "start"
           ],
-          "note": "3.14.0 r7: unpacked with UnZip, no apkg install; Shell start; forced exit closes cleanly, edit, save, close gadget"
+          "note": "3.14.0-aros8: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no editing"
         }
       ],
       "first_added": "2026-11-15",
@@ -19102,9 +19117,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "network/misc",
-      "url": "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2/Synchr-0.2-r1-aros-x86_64-abiv1-pc.zip",
-      "size": 2240112,
-      "sha256": "703cae5e45224c271c1a553ff813d86f6edc2c3cc1cc1999cbab43acf16e118b",
+      "url": "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2-r2/Synchr-0.2-r2-aros-x86_64-abiv1-pc.zip",
+      "size": 2240174,
+      "sha256": "a0ac9591b5582e0fb67ad3d569ae22a376af24950e0ad4faca28b401b52fd599",
       "depends": [],
       "requires_system": [
         {
@@ -19139,10 +19154,11 @@
       "subdir": "Synchr",
       "icon": "Synchr.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-synchr",
       "license": "MIT; bundled parts keep their own licences, see NOTICE.txt",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Synchr 0.2 revision 1 from the project page.",
         "Needs a nightly from 2026-11-06 or later.",
         "Start Synchr from its icon. The ReadMe in the drawer walks through connecting the first device.",
         "Needs a running TCP/IP stack. Use test folders first: deleting a file on one side deletes it on the other.",
@@ -19158,7 +19174,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -19174,19 +19190,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 (nightly 2026-11-18)",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-22",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
-            "remove",
-            "verify"
+            "verify",
+            "start"
           ],
-          "note": "apkg 0.7.8, local index, root in RAM:; 8 files verified; window opened, quit with Right-Amiga+Q; removed (the identity Synchr made in Data was kept)"
+          "note": "0.2 revision 2: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; engine not run (no network)"
         }
       ],
       "first_added": "2026-11-22",
