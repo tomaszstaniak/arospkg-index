@@ -30,3 +30,14 @@ machine = "rpi-1, QEMU raspi3b"
 result = "passed"
 checked = ["install", "start"]
 note = "apkg0.4 cached install/verify254; silent CPU intro/menu and FRIENDLY input passed. Real Pi, GL, audio/network and clean quit unverified."
+
+[[test]]
+sha256 = "87edc4f5736a4262e95eae2a2f5051f6ff30b040f80ecd176d639f387c3d4d3a"
+date = "2026-11-25"
+system = "AROS AArch64 nightly 20261124"
+arch = "aarch64"
+abi = "v1"
+machine = "rpi-1, QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "apkg 0.8.4 install and verify; native import of two Amiga disks; silent intro, menu, keys into FRIENDLY. No match, audio or network run."
