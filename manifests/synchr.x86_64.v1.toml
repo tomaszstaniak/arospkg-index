@@ -3,6 +3,7 @@
 # v0.2 (one source commit for all three archives). First public release; the
 # archive is revision 1 of the 0.2 package (the ReadMe gained the support
 # links, the programs are those of 0.2).
+# Revision 2: the programs of 0.2 rebuilt with the SDK of nightly 2026-11-24.
 # Synchr keeps drawers in step with Syncthing folders: a Zune window
 # (Synchr) that starts and controls the engine (SynchrEngine).
 # User data: the drawer Data inside the program drawer (identity, devices
@@ -17,13 +18,13 @@
 status          = "approved"
 id              = "synchr"
 version         = "0.2"
-revision        = 1
+revision        = 2
 summary         = "Keeps drawers in step with Syncthing folders on your other computers"
 category        = "network/misc"
 license         = "MIT; bundled parts keep their own licences, see NOTICE.txt"
-url             = "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2/Synchr-0.2-r1-aros-x86_64-abiv1-pc.zip"
-size            = 2240112
-sha256          = "703cae5e45224c271c1a553ff813d86f6edc2c3cc1cc1999cbab43acf16e118b"
+url             = "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2-r2/Synchr-0.2-r2-aros-x86_64-abiv1-pc.zip"
+size            = 2240174
+sha256          = "a0ac9591b5582e0fb67ad3d569ae22a376af24950e0ad4faca28b401b52fd599"
 kind            = "app"
 arch            = "x86_64"
 abi             = "v1"
@@ -37,6 +38,7 @@ runs_on         = ["mainline-x86_64"]
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Synchr 0.2 revision 1 from the project page.",
   "Needs a nightly from 2026-11-06 or later.",
   "Start Synchr from its icon. The ReadMe in the drawer walks through connecting the first device.",
   "Needs a running TCP/IP stack. Use test folders first: deleting a file on one side deletes it on the other.",

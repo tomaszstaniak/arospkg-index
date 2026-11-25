@@ -22,3 +22,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "run", "remove"]
 note    = "1.3.99.20261114 r3: apkg 0.7.8 install from the public catalogue into RAM:, Shell start, script prompts, quit, apkg remove"
+
+[[test]]
+sha256 = "ca570e1a54eaf7f0cb08da5b9e46cce0898bb505648643261a4913bdd7e19a34"
+date = "2026-11-25"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "verify", "start"]
+note = "aros6: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no drawing"

@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "remove", "verify"]
 note    = "apkg 0.7.8, local index, root in RAM:; 8 files verified; window opened, quit with Right-Amiga+Q; removed (the identity Synchr made in Data was kept)"
+
+[[test]]
+sha256 = "a0ac9591b5582e0fb67ad3d569ae22a376af24950e0ad4faca28b401b52fd599"
+date = "2026-11-25"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "verify", "start"]
+note = "0.2 revision 2: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; engine not run (no network)"
