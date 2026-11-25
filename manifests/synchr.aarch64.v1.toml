@@ -1,3 +1,4 @@
+# Revision 2: the programs of 0.2 rebuilt with the SDK of the Pi nightly 2026-11-24.
 # Synchr 0.2 for the Raspberry Pi (AArch64, mainline ABIv1).
 # Our own program, published by its author as an asset of the GitHub release
 # v0.2 (one source commit for all three archives). First public release; the
@@ -17,13 +18,13 @@
 status          = "approved"
 id              = "synchr"
 version         = "0.2"
-revision        = 1
+revision        = 2
 summary         = "Keeps drawers in step with Syncthing folders on your other computers"
 category        = "network/misc"
 license         = "MIT; bundled parts keep their own licences, see NOTICE.txt"
-url             = "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2/Synchr-0.2-r1-aros-aarch64-abiv1-raspi.zip"
-size            = 2501918
-sha256          = "cb9ca78de07ae3aee89818019b2f3b0356200740c1bd875a077904a42084ce8d"
+url             = "https://github.com/tomaszstaniak/aros-synchr/releases/download/v0.2-r2/Synchr-0.2-r2-aros-aarch64-abiv1-raspi.zip"
+size            = 2502292
+sha256          = "b14e9076b7fe399e9e9829df48d02b36de1f2836d27d6ef97855740133c09289"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -37,6 +38,7 @@ runs_on         = ["mainline-aarch64"]
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Synchr 0.2 revision 1 from the project page.",
   "Start Synchr from its icon. The ReadMe in the drawer walks through connecting the first device.",
   "Needs a running TCP/IP stack. Use test folders first: deleting a file on one side deletes it on the other.",
   "Before removing the package, untick Start with the system in the window, or delete SYS:WBStartup/Synchr.info.",
@@ -65,7 +67,7 @@ id   = "utility.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-synchr"
-revision   = "v0.2"
+revision   = "v0.2-r2"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-05 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
