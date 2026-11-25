@@ -1,3 +1,5 @@
+# 0.7.1: Dockbar 0.7.0, its widgets and svgicon.library rebuilt with the SDK of the
+# Pi nightly 2026-11-24. The text below describes 0.7.0.
 # Dockbar 0.7.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1), with SVG icons.
 # Our own program, published by its author as an asset of the GitHub
 # release v0.7.0 (one source commit for all three archives).
@@ -34,14 +36,14 @@
 
 status          = "approved"
 id              = "dockbar"
-version         = "0.7.0"
+version         = "0.7.1"
 revision        = 1
 summary         = "Dock with application groups, drawer panels, action widgets, Weather and Currency"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
-url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.7.0/Dockbar-0.7.0-aros-aarch64-abiv1-raspi.zip"
-size            = 13676475
-sha256          = "67cdf74fc95b56684dd6d68ec257db621be30490d378a3989032b2e7ca860670"
+url             = "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.7.1/Dockbar-0.7.1-aros-aarch64-abiv1-raspi.zip"
+size            = 13695903
+sha256          = "f6f6b5d9ac520bdf56c93568a1fac3345b48d5febf9dff9c1a56c85807ea88ec"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -56,6 +58,7 @@ runs_on         = ["mainline-aarch64"]
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Dockbar 0.7.0 from the project page.",
   "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
   "Replaces dockbar-info-only, which is not continued. On its first start Dockbar copies docks.config, dock.pins and WidgetState from that drawer.",
   "Your docks (docks.config) and widget data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
@@ -86,7 +89,7 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-dockbar"
-revision   = "v0.7.0"
+revision   = "v0.7.1"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-02 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
