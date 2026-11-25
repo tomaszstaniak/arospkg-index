@@ -4,6 +4,7 @@
 
 id              = "pdfcraft"
 version         = "0.22.0"
+revision        = 1
 summary         = "PDF viewer and editor: annotate, fill forms, organise pages, sign, export"
 category        = "office/misc"
 license         = "MIT OR Apache-2.0"
@@ -15,17 +16,17 @@ icon            = "PdfCraft.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
-  "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+  "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use PdfCraft 0.22.0 from the project page.",
   "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
   "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
   "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
   "Settings, AutoRecover data and PdfCraft.log are kept in PdfCraftData in the program drawer; keep it when upgrading.",
   "No printing and no OCR. Updates come through the AROS package manager.",
 ]
-sha256          = "d20fd3edeebaee110cbd7ae3d3d917c2edd6d2da47fe9ac162540917995c3b42"
-size            = 57605946
+sha256          = "321c95828c7fed1c3c1985bfcccda3e116a289b073cb9faca4a5fa16edf24a49"
+size            = 57596329
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0/PdfCraft-0.22.0-aros-x86_64-abiv1-pc.zip"
+url             = "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0-r1/PdfCraft-0.22.0-r1-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"
@@ -57,9 +58,9 @@ id = "datatypes.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-pdfcraft"
-revision = "v0.22.0"
-archive = "PdfCraft-0.22.0-source.zip"
-built_with = "x86_64 mainline ABIv1 (nightly 2026-11-10 SDK), GCC 10.5.0, Rust nightly 1.100 (rust-aros), egui 0.37 through egui-aros"
+revision = "v0.22.0-r1"
+archive = "PdfCraft-0.22.0-r1-source.zip"
+built_with = "x86_64 mainline ABIv1 (nightly 2026-11-24 SDK), GCC 10.5.0, Rust nightly 1.100 (rust-aros), egui 0.37 through egui-aros"
 
 [launch]
 executable = "PdfCraft"

@@ -12,3 +12,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
+
+[[test]]
+sha256 = "321c95828c7fed1c3c1985bfcccda3e116a289b073cb9faca4a5fa16edf24a49"
+date = "2026-11-25"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "verify", "start"]
+note = "0.22.0-r1: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"

@@ -34,3 +34,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "verify", "start", "run", "remove"]
 note    = "apkg 0.7.8, local index: upgraded from 0.19.1-r1, data and a user file kept; verify ok; cell edits, two saves, exit 0; second start; removed"
+
+[[test]]
+sha256 = "264f342e3f17d3b6e08bf4e7a9caee3abe20cb153a4a84a71eb19e39a6ec2a55"
+date = "2026-11-25"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "verify", "start"]
+note = "0.19.1-r3: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
