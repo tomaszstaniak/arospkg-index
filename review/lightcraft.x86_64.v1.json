@@ -4,14 +4,14 @@
  "id": "lightcraft",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "d128c65f3021d845dc613a1faa86f8d0f6c7dc184ec51349b43df15a37a88d21",
- "size": 45125272,
- "manifest_digest": "92136d9e786928d9a57e7bd9f667ac2a1f367c4cda24cec3b6af9acf0b00dbbd",
+ "date": "2026-11-25",
+ "sha256": "f5e06f585d2d26dd2bec4937eb7adc6811f9c765f42cf50cd3138106bb20907b",
+ "size": 45123930,
+ "manifest_digest": "aa28929b4c6be8701403cf903ff529350f9196e49ddbaf00b1a28428e3e0d576",
  "result": "passed",
  "sizes": {
-  "largest_member": 69043880,
-  "unpacked": 142116574
+  "largest_member": 69055568,
+  "unpacked": 142140317
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 69043880 bytes (LightCraft/LightCraft), 142116574 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 69055568 bytes (LightCraft/LightCraft), 142140317 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",

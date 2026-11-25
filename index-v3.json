@@ -3174,9 +3174,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/cad",
-      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1-r1/CADCraft-0.20.1-r1-aros-x86_64-abiv1-pc.zip",
-      "size": 38212984,
-      "sha256": "d99f665abc83e01e9736c457786e55e09d49793adafcb4074207589493b3f9d4",
+      "url": "https://github.com/tomaszstaniak/aros-cadcraft/releases/download/v0.20.1-r2/CADCraft-0.20.1-r2-aros-x86_64-abiv1-pc.zip",
+      "size": 38220075,
+      "sha256": "617514d8b5fc40e81608666cc857a4cf14af5ab9bb54dbb21db29cb19f5fca85",
       "depends": [],
       "client_features": [
         "large-members"
@@ -3218,11 +3218,11 @@
       "subdir": "CADCraft",
       "icon": "CADCraft.info",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-cadcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use CADCraft 0.20.1-r1 from the project page.",
         "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
@@ -3237,7 +3237,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -3253,21 +3253,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-13",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.20.1, CADCraftData and a user file kept; verify ok; drew, zoomed, Save As, exit 0; second start; removed"
+          "note": "0.20.1-r2: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
         }
       ],
       "first_added": "2026-11-13",
@@ -4105,9 +4102,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "office/presentation",
-      "url": "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.18.1/DeckCraft-0.18.1-aros-x86_64-abiv1-pc.zip",
-      "size": 52552505,
-      "sha256": "d9aa623b8fe05c839bc7614e9d3373568d5581cbb625cac09ff0b4398fc46b6f",
+      "url": "https://github.com/tomaszstaniak/aros-deckcraft/releases/download/v0.18.1-r1/DeckCraft-0.18.1-r1-aros-x86_64-abiv1-pc.zip",
+      "size": 52555142,
+      "sha256": "e2a8573794b6b1a566a8a7ca9ea707893b901b8ab8ca35e3733a85c6d34db1b8",
       "depends": [],
       "client_features": [
         "large-members"
@@ -4149,10 +4146,11 @@
       "subdir": "DeckCraft",
       "icon": "DeckCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-deckcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use DeckCraft 0.18.1 from the project page.",
         "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
@@ -4167,7 +4165,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -4183,20 +4181,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-15",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-20",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: installed, verify ok; new slide, Save As, undo, redo, Save, exit 0; second start; removed"
+          "note": "0.18.1-r1: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
         }
       ],
       "first_added": "2026-11-20",
@@ -9175,9 +9171,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "office/spreadsheet",
-      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r2/GridCraft-0.19.1-r2-aros-x86_64-abiv1-pc.zip",
-      "size": 24092664,
-      "sha256": "d6b0f082e796bf80fe917e5b7069d74b83f7c390653373d3a9ca9a7c7011b2ee",
+      "url": "https://github.com/tomaszstaniak/aros-gridcraft/releases/download/v0.19.1-r3/GridCraft-0.19.1-r3-aros-x86_64-abiv1-pc.zip",
+      "size": 24098952,
+      "sha256": "264f342e3f17d3b6e08bf4e7a9caee3abe20cb153a4a84a71eb19e39a6ec2a55",
       "depends": [],
       "requires_system": [
         {
@@ -9216,11 +9212,11 @@
       "subdir": "GridCraft",
       "icon": "GridCraft.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-gridcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use GridCraft 0.19.1-r2 from the project page.",
         "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
@@ -9235,7 +9231,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -9251,21 +9247,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-13",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.19.1-r1, data and a user file kept; verify ok; cell edits, two saves, exit 0; second start; removed"
+          "note": "0.19.1-r3: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
         }
       ],
       "first_added": "2026-11-12",
@@ -12068,9 +12061,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1/LightCraft-0.21.1-aros-x86_64-abiv1-pc.zip",
-      "size": 45125272,
-      "sha256": "d128c65f3021d845dc613a1faa86f8d0f6c7dc184ec51349b43df15a37a88d21",
+      "url": "https://github.com/tomaszstaniak/aros-lightcraft/releases/download/v0.21.1-r1/LightCraft-0.21.1-r1-aros-x86_64-abiv1-pc.zip",
+      "size": 45123930,
+      "sha256": "f5e06f585d2d26dd2bec4937eb7adc6811f9c765f42cf50cd3138106bb20907b",
       "depends": [],
       "client_features": [
         "large-members"
@@ -12108,10 +12101,11 @@
       "subdir": "LightCraft",
       "icon": "LightCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-lightcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use LightCraft 0.21.1 from the project page.",
         "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
@@ -12126,7 +12120,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -12142,21 +12136,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-18",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-23",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.13.0, a user file kept; verify ok; import, edit and export; two starts, exit 0; removed"
+          "note": "0.21.1-r1: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
         }
       ],
       "first_added": "2026-10-24",
@@ -12499,14 +12490,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.13.0",
+      "version": "0.13.1",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.0/Limpet-0.13.0-aros-x86_64-abiv1-pc.zip",
-      "size": 7331542,
-      "sha256": "bf507fd70703b0842ff628e201bc23c4dd7ec7c6ca564eaab9e7f3ed3b462da5",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.1/Limpet-0.13.1-aros-x86_64-abiv1-pc.zip",
+      "size": 7334604,
+      "sha256": "54ec6cb8f0d02190681ad1f06d9bbe76e22618e382dbe6e9b179a1fcf7d696f9",
       "depends": [],
       "requires_system": [
         {
@@ -12539,9 +12530,12 @@
       "subdir": "Limpet",
       "icon": "Limpet.info",
       "install": {},
-      "revision": 2,
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/limpet",
       "license": "MIT",
+      "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Limpet 0.13.0 from the project page."
+      ],
       "launch": {
         "executable": "Limpet",
         "mode": "workbench",
@@ -12550,7 +12544,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -12566,32 +12560,19 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-15",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-21",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "0.13.0: unpacked with UnZip; ssh key login, scp both ways, Ctrl-C on a silent server, coloured prompt, TAB keywords and drawers"
-        },
-        {
-          "system": "mainline AROS x86_64 nightly 2026-11-15",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-21",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
             "verify",
-            "remove"
+            "start",
+            "run"
           ],
-          "note": "0.13.0: apkg 0.7.8 installed from the public catalogue; verify ok; Limpet started; Limpet and ssh report 0.13.0; removed"
+          "note": "0.13.1: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; started from Workbench, commands ran; ssh not run"
         }
       ],
       "first_added": "2026-10-24",
@@ -14558,9 +14539,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "office/misc",
-      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0/PdfCraft-0.22.0-aros-x86_64-abiv1-pc.zip",
-      "size": 57605946,
-      "sha256": "d20fd3edeebaee110cbd7ae3d3d917c2edd6d2da47fe9ac162540917995c3b42",
+      "url": "https://github.com/tomaszstaniak/aros-pdfcraft/releases/download/v0.22.0-r1/PdfCraft-0.22.0-r1-aros-x86_64-abiv1-pc.zip",
+      "size": 57596329,
+      "sha256": "321c95828c7fed1c3c1985bfcccda3e116a289b073cb9faca4a5fa16edf24a49",
       "depends": [],
       "client_features": [
         "large-members"
@@ -14602,10 +14583,11 @@
       "subdir": "PdfCraft",
       "icon": "PdfCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-pdfcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use PdfCraft 0.22.0 from the project page.",
         "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
@@ -14620,7 +14602,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -14636,20 +14618,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS mainline nightly 2026-11-18",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-23",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: installed, verify ok; rotate, Save As, undo, redo, Save, exit 0; second start; removed"
+          "note": "0.22.0-r1: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
         }
       ],
       "first_added": "2026-11-23",
@@ -21226,9 +21206,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "office/text",
-      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.18.1/WordCraft-0.18.1-aros-x86_64-abiv1-pc.zip",
-      "size": 52455199,
-      "sha256": "e44e734181bd461d4780aa4929b28a78b4336ce38358b980aa83052d1390c58b",
+      "url": "https://github.com/tomaszstaniak/aros-wordcraft/releases/download/v0.18.1-r1/WordCraft-0.18.1-r1-aros-x86_64-abiv1-pc.zip",
+      "size": 52472041,
+      "sha256": "a485d9fda292ea9bc747c6a0944d3e077a041bff81e0833210d94e271a589ad4",
       "depends": [],
       "client_features": [
         "large-members"
@@ -21270,10 +21250,11 @@
       "subdir": "WordCraft",
       "icon": "WordCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-wordcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Mainline x86_64 ABIv1, built against the nightly 2026-11-10; needs a nightly from 2026-11-06 or later.",
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); for earlier nightlies use WordCraft 0.18.1 from the project page.",
         "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
         "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
         "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
@@ -21288,7 +21269,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -21304,21 +21285,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 nightly 2026-11-10",
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-13",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "start",
-            "run",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index: upgraded from 0.16.0-r1, data and a user file kept; verify ok; typed, Save As, undo, redo, Save; second start; removed"
+          "note": "0.18.1-r1: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; window opened from Workbench; no document work"
         }
       ],
       "first_added": "2026-11-07",
