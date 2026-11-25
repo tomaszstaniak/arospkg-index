@@ -4,14 +4,14 @@
  "id": "openloco",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309",
- "size": 16707990,
- "manifest_digest": "dca0509dc98f49e353d6267eee00c25dabe62a9cdd86bac8267ebd53fa66e065",
+ "date": "2026-11-25",
+ "sha256": "dcb88d0575cca45babda9f23b8cdf254d495c0cbcc828b2f8b9ad63593bc57bc",
+ "size": 12550298,
+ "manifest_digest": "d6205c497a9c3915aaed406b576412e1494752edb71bfb821232a916dad0c5ae",
  "result": "passed",
  "sizes": {
-  "largest_member": 14759432,
-  "unpacked": 44528621
+  "largest_member": 14763328,
+  "unpacked": 35545004
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "278 members"
+   "detail": "230 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 14759432 bytes (OpenLoco/OpenLoco), 44528621 bytes unpacked"
+   "detail": "largest member 14763328 bytes (OpenLoco/OpenLoco), 35545004 bytes unpacked"
   },
   {
    "name": "paths",

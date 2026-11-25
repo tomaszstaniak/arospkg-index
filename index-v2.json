@@ -779,14 +779,14 @@
     },
     {
       "id": "aroscapture",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "summary": "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands",
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.1/AROSCapture-0.1.1-aros-aarch64-abiv1-raspi.zip",
-      "size": 787362,
-      "sha256": "ed8077cf7874fd7255a1095c5909c4e0d28b83fb7984e2403c664f0168ce3935",
+      "url": "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.2/AROSCapture-0.1.2-aros-aarch64-abiv1-raspi.zip",
+      "size": 790776,
+      "sha256": "317838b62d189b9016144ed0a42d495b550ec9fdcd34ba7532bf7cc2705563d8",
       "depends": [],
       "recommends": [
         {
@@ -836,6 +836,7 @@
       "source": "https://github.com/tomaszstaniak/aros-capture",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use AROS Capture 0.1.1 from the project page.",
         "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
         "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer."
       ],
@@ -847,7 +848,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -861,7 +862,23 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run"
+          ],
+          "note": "0.1.2: apkg 0.8.4 installed it from a local index; verify ok; from Workbench the whole screen captured and the editor opened; nothing saved"
+        }
+      ],
       "first_added": "2026-11-06",
       "app_first_added": "2026-11-06"
     },
@@ -10359,9 +10376,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "game/strategy",
-      "url": "https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1-raspi/openloco.aarch64-aros-raspi.zip",
-      "size": 16707990,
-      "sha256": "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309",
+      "url": "https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1-raspi-r2/openloco.aarch64-aros-raspi.zip",
+      "size": 12550298,
+      "sha256": "dcb88d0575cca45babda9f23b8cdf254d495c0cbcc828b2f8b9ad63593bc57bc",
       "depends": [],
       "requires_system": [
         {
@@ -10388,10 +10405,11 @@
       "subdir": "OpenLoco",
       "icon": "",
       "install": {},
-      "revision": 1,
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-openloco",
       "license": "MIT",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use the first build (v0.1.0-rc1-raspi) from the project page.",
         "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
         "The Locomotion game data is not included: you need your own copy of Chris Sawyer's Locomotion. README.md in the drawer says how to point the game at it.",
         "Start the game from a Shell inside the OpenLoco drawer with: execute Run-OpenLoco (it sets the 1 MB stack the game needs).",
@@ -10400,7 +10418,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -10416,17 +10434,17 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS AArch64 20261029",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-04",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
-            "start",
-            "run"
+            "install",
+            "start"
           ],
-          "note": "Not via apkg: zip unpacked on the host, drawer copied to SD. Run-OpenLoco, track, stations, train, save, reboot, load. No sound (VOID); real Pi untested"
+          "note": "second build: apkg 0.8.4 installed it from a local index; Run-OpenLoco printed the version and asked for the game data; no game run"
         }
       ],
       "first_added": "2026-11-04",
