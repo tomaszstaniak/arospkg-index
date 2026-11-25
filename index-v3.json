@@ -20655,14 +20655,14 @@
     },
     {
       "id": "vectorcraft",
-      "version": "0.17.0-510-g9997ff02-test3",
+      "version": "0.17.0-510-g9997ff02-test4",
       "summary": "Vector drawing program with SVG, PDF and EPS import and export (test release)",
       "arch": "x86_64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.17.0-510-g9997ff02-test3/VectorCraft-0.17.0-510-g9997ff02-test3-aros-x86_64-abiv1-pc.zip",
-      "size": 59095105,
-      "sha256": "25c62a36160cc885b2de6892ba82ad9752e693db469bdda863699c1e36eee662",
+      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.17.0-510-g9997ff02-test4/VectorCraft-0.17.0-510-g9997ff02-test4-aros-x86_64-abiv1-pc.zip",
+      "size": 59101933,
+      "sha256": "3008286bfd60cd110fdd1d68bd88ad454d1a8d1a87c2952bd1d87d5a02a306b5",
       "depends": [],
       "client_features": [
         "large-members"
@@ -20706,7 +20706,7 @@
         "Test release: the CPU draws the whole window on every change, so the interface reacts slowly.",
         "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
         "Settings and VectorCraft.log are kept in VectorCraftData in the program drawer; keep it when upgrading.",
-        "Mainline x86_64 ABIv1, built against AROS 9802c8c0 (2026-10-28). Shell start: Stack 16777216 first."
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use test 3 from the project page. Shell start: Stack 16777216 first."
       ],
       "launch": {
         "executable": "VectorCraft",
@@ -20716,7 +20716,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -20732,19 +20732,18 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS x86_64 (9802c8c0, 2026-10-28)",
+          "system": "mainline AROS x86_64 nightly 20261124",
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-29",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
             "run",
-            "verify",
-            "remove"
+            "verify"
           ],
-          "note": "apkg 0.6.0 downloaded the archive from the release URL; window opened from its icon and closed cleanly; remove kept VectorCraftData"
+          "note": "apkg 0.8.4 install and verify from a pre-placed cache; window opened from Workbench, a new document made; remove not run"
         }
       ],
       "first_added": "2026-11-07",

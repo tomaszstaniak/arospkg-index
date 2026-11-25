@@ -4,14 +4,14 @@
  "id": "vectorcraft",
  "arch": "x86_64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "25c62a36160cc885b2de6892ba82ad9752e693db469bdda863699c1e36eee662",
- "size": 59095105,
- "manifest_digest": "dd529def35d37af127ffb4f8322cf01122cee80b73a86c0ddd19be49107880d2",
+ "date": "2026-11-25",
+ "sha256": "3008286bfd60cd110fdd1d68bd88ad454d1a8d1a87c2952bd1d87d5a02a306b5",
+ "size": 59101933,
+ "manifest_digest": "0b4b026a2e8a2085c9590d46fc1298ec02a7e21aa6fab1e66ecd6862df66adcc",
  "result": "passed",
  "sizes": {
-  "largest_member": 106684168,
-  "unpacked": 180572710
+  "largest_member": 106694704,
+  "unpacked": 180589279
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 106684168 bytes (VectorCraft/VectorCraft), 180572710 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
+   "detail": "largest member 106694704 bytes (VectorCraft/VectorCraft), 180589279 bytes unpacked; over 64 MiB, which clients before 0.6 refuse"
   },
   {
    "name": "paths",
