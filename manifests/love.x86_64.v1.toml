@@ -4,7 +4,7 @@
 
 id              = "love"
 version         = "12.0"
-revision        = 3
+revision        = 4
 summary         = "LOVE (love2d): runs 2D games written in Lua for the LOVE framework"
 category        = "game/misc"
 license         = "Zlib"
@@ -16,14 +16,15 @@ icon            = "LOVE.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 3 from the project page.",
   "Double-click the love icon and choose a game (.love file or drawer with main.lua), or from a Shell: Run love <game>.",
   "love --icon <game> writes an icon that starts the game with a double click.",
   "Saved games are kept in the Saves drawer of the package drawer.",
 ]
-sha256          = "0bda2d4501006cc6794304f23fdda8ce5ebc3a3e0834a35765fb30f3cacfe122"
-size            = 8034943
+sha256          = "bc09302b96f6023c787ad344bebfdf4edf3333b46a51182353b773e3d1e1606d"
+size            = 8054778
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-loeve/releases/download/v12.0-aros3/love-12.0-aros3-aros-x86_64-abiv1-pc.zip"
+url             = "https://github.com/tomaszstaniak/aros-loeve/releases/download/v12.0-aros4/love-12.0-aros4-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"
@@ -87,7 +88,7 @@ id = "openurl.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-loeve"
-revision = "v12.0-aros3"
+revision = "v12.0-aros4"
 
 [launch]
 executable = "love"
