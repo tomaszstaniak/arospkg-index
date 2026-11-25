@@ -89,3 +89,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "start", "upgrade", "remove", "verify"]
 note    = "apkg 0.7.8, local index; 0.6.2 installed, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started; both widgets added, data shown"
+
+[[test]]
+sha256 = "8550681d7a8c1f3d4229e3b515a84ec56711d7c394c92dac2af4ebab2e7a1087"
+date = "2026-11-25"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "verify", "start"]
+note = "0.7.1: apkg 0.8.4 installed it from a local index; verify ok; dock with icons and clock from Workbench; widgets not run (no network)"

@@ -23,3 +23,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "start", "remove", "verify"]
 note    = "apkg 0.7.8, local index: 0.8.0 upgraded to these bytes, 35 files verified; started, VERSION and QUIT over ARexx, started again, VERSION; removed"
+
+[[test]]
+sha256 = "3426d042a6292e9e01517e27da586a0f20cdf5ba16600d7c303300934fcc8f1e"
+date = "2026-11-25"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "verify", "start"]
+note = "0.10.0: apkg 0.8.4 installed it from a local index; verify ok; panel on the hotkey, typing; widgets and clipboard pictures not run"
