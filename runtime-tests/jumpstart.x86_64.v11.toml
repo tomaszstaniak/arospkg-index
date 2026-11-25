@@ -23,3 +23,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "upgrade", "start", "remove", "verify"]
 note    = "apkg 0.7.8, local index: 0.8.0 upgraded to these bytes, 35 files verified; started, VERSION and QUIT over ARexx, started again, VERSION; removed"
+
+[[test]]
+sha256  = "c3d42ddf6cb6f8306512a4bdac40b6960b4d1563c682169bb45fdd15df26b04f"
+date    = "2026-11-25"
+system  = "AROS One 1.3"
+arch    = "x86_64"
+abi     = "v11"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "upgrade", "start", "remove", "verify"]
+note    = "apkg 0.8.3, local index: 0.9.0 upgraded to these bytes, 35 files verified; started; an earlier clipboard picture restored and read back equal; removed"
