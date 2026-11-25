@@ -1,3 +1,4 @@
+# Revision 2: the same OpenLoco rebuilt with the SDK of the Pi nightly 2026-11-24.
 # OpenLoco for AROS 0.1.0-rc1, Raspberry Pi build. Our own port, published by
 # its author as the GitHub PRERELEASE v0.1.0-rc1-raspi (port revision 25b633b,
 # the same upstream OpenLoco 7f8c90cf as the x86_64 rc1).
@@ -19,13 +20,13 @@
 status          = "approved"
 id              = "openloco"
 version         = "0.1.0-rc1"
-revision        = 1
+revision        = 2
 summary         = "Open-source re-implementation of Chris Sawyer's Locomotion (experimental Raspberry Pi build)"
 category        = "game/strategy"
 license         = "MIT"
-url             = "https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1-raspi/openloco.aarch64-aros-raspi.zip"
-size            = 16707990
-sha256          = "2fb8038e7fe79dc64f00d8507d295b594726390dffc919d250915a52901b6309"
+url             = "https://github.com/tomaszstaniak/aros-openloco/releases/download/v0.1.0-rc1-raspi-r2/openloco.aarch64-aros-raspi.zip"
+size            = 12550298
+sha256          = "dcb88d0575cca45babda9f23b8cdf254d495c0cbcc828b2f8b9ad63593bc57bc"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -39,6 +40,7 @@ runs_on         = []
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use the first build (v0.1.0-rc1-raspi) from the project page.",
   "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
   "The Locomotion game data is not included: you need your own copy of Chris Sawyer's Locomotion. README.md in the drawer says how to point the game at it.",
   "Start the game from a Shell inside the OpenLoco drawer with: execute Run-OpenLoco (it sets the 1 MB stack the game needs).",
@@ -67,5 +69,5 @@ id   = "cybergraphics.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-openloco"
-revision   = "v0.1.0-rc1-raspi"
+revision   = "v0.1.0-rc1-raspi-r2"
 built_with = "aros-aarch64-abiv1-raspi, Clang 20.1.0, SDK of the Raspberry Pi nightly 20261029, libc++ 20.1.0; upstream OpenLoco 7f8c90cf"
