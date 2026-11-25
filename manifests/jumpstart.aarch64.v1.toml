@@ -1,3 +1,5 @@
+# 0.10.0 (pictures in the clipboard history; the time of the last index refresh),
+# built with the SDK of the Pi nightly 2026-11-24. The text below describes 0.9.0.
 # Jumpstart 0.9.0 for AROS on Raspberry Pi (aarch64, mainline ABIv1).
 # Our own program, published by its author as an asset of the GitHub release
 # v0.9.0 (one source commit for all three archives).
@@ -19,14 +21,14 @@
 
 status          = "approved"
 id              = "jumpstart"
-version         = "0.9.0"
+version         = "0.10.0"
 revision        = 1
 summary         = "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history"
 category        = "utility/workbench"
 license         = "MIT; bundled parts keep their own licences, see ReadMe"
-url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.9.0/Jumpstart-0.9.0-aros-aarch64-abiv1-raspi.zip"
-size            = 4534500
-sha256          = "c1070602217f808f4d27ecd33d7835a63273a24eceb8433322148021863fcbd6"
+url             = "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.10.0/Jumpstart-0.10.0-aros-aarch64-abiv1-raspi.zip"
+size            = 4555917
+sha256          = "6bd127e6a2c460b2f7cef1a3bc2735b9b7f568e7931e8d6bb64de64c130cc564"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -40,6 +42,7 @@ runs_on         = ["mainline-aarch64"]
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Jumpstart 0.9.0 from the project page.",
   "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
   "Start Jumpstart once from its icon; after that Ctrl+Alt+Space opens the panel. The first start also makes it start with the system.",
   "Before removing the package, switch off Start with the system in its settings (General), or delete SYS:WBStartup/Jumpstart.info.",
@@ -73,7 +76,7 @@ id   = "freetype2.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-launcher"
-revision   = "v0.9.0"
+revision   = "v0.10.0"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-10 (mainline ABIv1), Clang 20.1.0"
 
 [launch]
