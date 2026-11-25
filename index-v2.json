@@ -2342,9 +2342,9 @@
       "arch": "x86_64",
       "abi": "v1",
       "category": "game/strategy",
-      "url": "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros1/Burntime-1.3-aros1-aros-x86_64-abiv1-pc.apkg.zip",
-      "size": 3724120,
-      "sha256": "b4083d70a1cc9b95c84d4af922978662f0a803a5612137a1bbd7f64b274e0bc5",
+      "url": "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros3/Burntime-1.3-aros3-aros-x86_64-abiv1-pc.apkg.zip",
+      "size": 3724692,
+      "sha256": "23809f35049780cb2b4807f42bcf52490a31dcbca570e6e69088dc512a929695",
       "depends": [],
       "requires_system": [
         {
@@ -2369,10 +2369,11 @@
       "subdir": "Burntime",
       "icon": "Burntime.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-burntime",
       "license": "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Burntime 1.3 port release 1 from the project page.",
         "Burntime needs burntime.pack made from your own copy of the game: see ReadMe in the drawer.",
         "Put it in a data drawer of its own, e.g. Work:Burntime-Data, then:",
         "MakeDir ENV:Burntime ENVARC:Burntime",
@@ -2387,7 +2388,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -2401,7 +2402,22 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-24",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start"
+          ],
+          "note": "1.3-aros3: apkg 0.8.4 installed it from a local index; verify ok; started from the icon with a data pack up to the menu; no game played"
+        }
+      ],
       "first_added": "2026-11-05",
       "app_first_added": "2026-11-05"
     },
