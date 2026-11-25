@@ -8600,9 +8600,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros5/libresprite-1.3.99.20261114-aros5-aros-aarch64-abiv1-raspi.zip",
-      "size": 19598847,
-      "sha256": "69ad5a3ab11d666b0545f0046ab71b49673c3198b3b17a3ea1ffb1f14d4bbe6d",
+      "url": "https://github.com/tomaszstaniak/aros-libresprite/releases/download/v1.3.99.20261114-aros6/libresprite-1.3.99.20261114-aros6-aros-aarch64-abiv1-raspi.zip",
+      "size": 19611064,
+      "sha256": "97db461dc5d771e04a52e1d625ef3f568bcb7e943bdae5878ef4bc8f0d5fc51e",
       "depends": [],
       "requires_system": [
         {
@@ -8669,10 +8669,11 @@
       "subdir": "LibreSprite",
       "icon": "LibreSprite.info",
       "install": {},
-      "revision": 5,
+      "revision": 6,
       "source": "https://github.com/tomaszstaniak/aros-libresprite",
       "license": "GPL-2.0-only",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use 1.3.99.20261114-aros5 from the project page.",
         "Start it from the LibreSprite icon. Settings are kept in ENVARC:LibreSprite.",
         "The GUI_RENDERER tool type in the icon chooses the drawing: AUTO, GPU (OpenGL) or CPU."
       ],
@@ -8684,7 +8685,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -8698,7 +8699,21 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "aros6: installed from a local index by apkg 0.8.4; window opened from Workbench; verify not run; no drawing"
+        }
+      ],
       "first_added": "2026-11-16",
       "app_first_added": "2026-11-16"
     },
@@ -11525,9 +11540,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "development/edit",
-      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros7/pragtical-3.14.0-aros7-aros-aarch64-abiv1-raspi.zip",
-      "size": 4146872,
-      "sha256": "3bf777e8c1130c258938aadc0de5b8c3aa608d15d973fbd8d6e5caaf59628370",
+      "url": "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros8/pragtical-3.14.0-aros8-aros-aarch64-abiv1-raspi.zip",
+      "size": 4146912,
+      "sha256": "dee0a584e4e98ce49aa679e66e45474bac63b7b436d81e36e4035b93c6f44986",
       "depends": [],
       "requires_system": [
         {
@@ -11594,10 +11609,11 @@
       "subdir": "Pragtical",
       "icon": "Pragtical.info",
       "install": {},
-      "revision": 7,
+      "revision": 8,
       "source": "https://github.com/tomaszstaniak/aros-pragtical",
       "license": "MIT",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use 3.14.0-aros7 from the project page.",
         "Start it from the pragtical icon, which sets the stack the editor needs.",
         "From a Shell: Execute run-pragtical, or Stack 8000000 and then pragtical <file or drawer>.",
         "Settings and added plugins are kept in the user drawer of the package."
@@ -11610,7 +11626,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -11624,7 +11640,21 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "3.14.0-aros8: installed from a local index by apkg 0.8.4; window opened from Workbench; verify not run; no editing"
+        }
+      ],
       "first_added": "2026-11-15",
       "app_first_added": "2026-11-15"
     },
