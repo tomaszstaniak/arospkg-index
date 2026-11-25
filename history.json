@@ -501,6 +501,10 @@
    "first_added": "2026-10-03",
    "commit": "28b7ca438a0a"
   },
+  "love/aarch64/v1": {
+   "first_added": "2026-11-25",
+   "commit": "654e19eb2f54"
+  },
   "love/x86_64/v1": {
    "first_added": "2026-11-22",
    "commit": "78ea1f1579ea"
