@@ -4,14 +4,14 @@
  "id": "arca",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "42654177e301609bff259d4e4160ee99e9d7b6ebe91fbaafa3bed63dc9161850",
- "size": 2654742,
- "manifest_digest": "60b163fa1718d7fcf53a9f85799ae1c4ff88c1e74c4a4cf3a27a25690d38335d",
+ "date": "2026-11-25",
+ "sha256": "6e6079aacd807acb30bb61db21acd2de8cf3ba2d108347fae9968d4997951795",
+ "size": 2654444,
+ "manifest_digest": "8cef5a8cc93a3c3f1d6adbe4db4c8ee99cd586d2ba978d8cc1ad3c9936bcdeae",
  "result": "passed",
  "sizes": {
   "largest_member": 2547648,
-  "unpacked": 7761356
+  "unpacked": 7761458
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 2547648 bytes (Arca/unarc-7z), 7761356 bytes unpacked"
+   "detail": "largest member 2547648 bytes (Arca/unarc-7z), 7761458 bytes unpacked"
   },
   {
    "name": "paths",

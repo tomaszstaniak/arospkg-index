@@ -520,14 +520,14 @@
     },
     {
       "id": "arca",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "summary": "Pack, browse and extract archives with a native Zune interface",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/archive",
-      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-aarch64-abiv1-raspi.zip",
-      "size": 2654742,
-      "sha256": "42654177e301609bff259d4e4160ee99e9d7b6ebe91fbaafa3bed63dc9161850",
+      "url": "https://github.com/tomaszstaniak/arca/releases/download/v0.1.2/Arca-0.1.2-aros-aarch64-abiv1-raspi.zip",
+      "size": 2654444,
+      "sha256": "6e6079aacd807acb30bb61db21acd2de8cf3ba2d108347fae9968d4997951795",
       "depends": [],
       "requires_system": [
         {
@@ -555,11 +555,11 @@
       "subdir": "Arca",
       "icon": "Arca.info",
       "install": {},
-      "revision": 2,
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/arca",
       "license": "MIT; bundled libraries and helpers retain their own licences",
       "post_install_notes": [
-        "Requires mainline nightly 2026-11-06 or later (stdc.library 0.53).",
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Arca 0.1.1 from the project page.",
         "Requires the system NList, NListview and NFloattext Zune classes.",
         "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
         "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes."
@@ -572,7 +572,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -588,19 +588,19 @@
       },
       "runtime_tests": [
         {
-          "system": "mainline AROS Raspberry Pi nightly 20261110 non-SMP, exec 51.16, stdc 0.53",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-16",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "verify",
-            "remove"
+            "start",
+            "run"
           ],
-          "note": "apkg 0.7.8: r1 to r2 upgrade, 29-file verify, run --check and remove passed; user file kept, ReadMe exact. Unchanged binaries retain prior runtime evidence."
+          "note": "0.1.2: apkg 0.8.4 installed it from a local index; verify ok; LhA and 7z packed and listed from a Shell; window opened from Workbench"
         }
       ],
       "first_added": "2026-11-16",
@@ -1726,14 +1726,14 @@
     },
     {
       "id": "boxer",
-      "version": "0.2.0-preview1",
+      "version": "0.2.0-preview2",
       "summary": "DOS game front end with Boxer's DOSBox core: import, gameboxes, covers (experimental preview)",
       "arch": "aarch64",
       "abi": "v1",
       "category": "emulation/computer",
-      "url": "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.2.0-preview1/Boxer-0.2.0-preview1-aros-aarch64-abiv1-raspi.zip",
-      "size": 13636452,
-      "sha256": "3727bddf77e38d4673b46a34528075cdf12d222dc4da31628178b1fb80234ea4",
+      "url": "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.2.0-preview2/Boxer-0.2.0-preview2-aros-aarch64-abiv1-raspi.zip",
+      "size": 18779403,
+      "sha256": "4b7c5883d1d7450053f77a2f4a4a52ca384f4d19d9a94db03e132a94b21c4fda",
       "depends": [],
       "requires_system": [
         {
@@ -1789,7 +1789,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -1805,18 +1805,17 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS AArch64 20261029",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
-          "machine": "rpi-1, QEMU raspi3b",
-          "date": "2026-11-04",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
-            "remove"
+            "start"
           ],
-          "note": "apkg 0.7.3 to RAM:pk, S:/ENVARC: on RAM:, hash verified; Install-Assign; welcome window; removed. Disk install, reboot, sound, real Pi untested"
+          "note": "0.2.0-preview2: apkg 0.8.4 installed it from a local index; started from Workbench up to the first-run question; no game run"
         }
       ],
       "first_added": "2026-11-04",
@@ -2271,9 +2270,9 @@
       "arch": "aarch64",
       "abi": "v1",
       "category": "game/strategy",
-      "url": "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros1/Burntime-1.3-aros1-aros-aarch64-abiv1-raspi.apkg.zip",
-      "size": 3735098,
-      "sha256": "69fa9420bcc12c5c6abd20fba47f357be78801eaa568a57f7973279f82e6a4af",
+      "url": "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros3/Burntime-1.3-aros3-aros-aarch64-abiv1-raspi.apkg.zip",
+      "size": 3736555,
+      "sha256": "8c4e5d075de0fac1571edbd42eed71b718f9e92178b9619419c3a242855a1b08",
       "depends": [],
       "requires_system": [
         {
@@ -2296,11 +2295,11 @@
       "subdir": "Burntime",
       "icon": "Burntime.info",
       "install": {},
-      "revision": 2,
+      "revision": 3,
       "source": "https://github.com/tomaszstaniak/aros-burntime",
       "license": "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later",
       "post_install_notes": [
-        "AROS for Raspberry Pi (aarch64). Tried in QEMU's Raspberry Pi emulation, not on a physical Raspberry Pi.",
+        "Raspberry Pi, nightly 2026-11-24 or later (earlier nightlies: port release 1 from the project page). Tried in QEMU only, not on a physical Pi.",
         "Burntime needs burntime.pack made from your own copy of the game: see ReadMe in the drawer.",
         "Put it in a data drawer of its own, e.g. Work:Burntime-Data, then:",
         "MakeDir ENV:Burntime ENVARC:Burntime",
@@ -2317,7 +2316,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -2331,7 +2330,21 @@
           "abi"
         ]
       },
-      "runtime_tests": [],
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
+          "date": "2026-11-25",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start"
+          ],
+          "note": "1.3-aros3: apkg 0.8.4 installed it from a local index; started from the icon with a data pack up to the menu; no game played"
+        }
+      ],
       "first_added": "2026-11-07",
       "app_first_added": "2026-11-05"
     },

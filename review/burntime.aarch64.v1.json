@@ -4,14 +4,14 @@
  "id": "burntime",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "69fa9420bcc12c5c6abd20fba47f357be78801eaa568a57f7973279f82e6a4af",
- "size": 3735098,
- "manifest_digest": "bbdd004c85804ae9fc7a48e71ff738c2121aea207fc857be4a2a9118efa4ecb4",
+ "date": "2026-11-25",
+ "sha256": "8c4e5d075de0fac1571edbd42eed71b718f9e92178b9619419c3a242855a1b08",
+ "size": 3736555,
+ "manifest_digest": "99fc7d234e1989e61c2f9b62ae1c8866c205e0512c8a2636a059d2d35288f9d5",
  "result": "passed",
  "sizes": {
-  "largest_member": 10351384,
-  "unpacked": 10411060
+  "largest_member": 10355576,
+  "unpacked": 10415376
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 10351384 bytes (Burntime/Burntime), 10411060 bytes unpacked"
+   "detail": "largest member 10355576 bytes (Burntime/Burntime), 10415376 bytes unpacked"
   },
   {
    "name": "paths",
