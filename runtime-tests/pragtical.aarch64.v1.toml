@@ -44,3 +44,14 @@ machine = "QEMU raspi3b"
 result  = "passed"
 checked = ["start", "run"]
 note    = "3.14.0 r6: copied from the host, no apkg install; Shell start; window moved in steps, edit, save, close gadget; real Pi untested"
+
+[[test]]
+sha256 = "dee0a584e4e98ce49aa679e66e45474bac63b7b436d81e36e4035b93c6f44986"
+date = "2026-11-25"
+system = "AROS Raspberry Pi AArch64 nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "3.14.0-aros8: installed from a local index by apkg 0.8.4; window opened from Workbench; verify not run; no editing"

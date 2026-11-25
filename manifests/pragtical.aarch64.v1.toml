@@ -4,7 +4,7 @@
 
 id              = "pragtical"
 version         = "3.14.0"
-revision        = 7
+revision        = 8
 summary         = "Lightweight code editor: syntax highlighting, project tree, find in files"
 category        = "development/edit"
 license         = "MIT"
@@ -16,14 +16,15 @@ icon            = "Pragtical.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use 3.14.0-aros7 from the project page.",
   "Start it from the pragtical icon, which sets the stack the editor needs.",
   "From a Shell: Execute run-pragtical, or Stack 8000000 and then pragtical <file or drawer>.",
   "Settings and added plugins are kept in the user drawer of the package.",
 ]
-sha256          = "3bf777e8c1130c258938aadc0de5b8c3aa608d15d973fbd8d6e5caaf59628370"
-size            = 4146872
+sha256          = "dee0a584e4e98ce49aa679e66e45474bac63b7b436d81e36e4035b93c6f44986"
+size            = 4146912
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros7/pragtical-3.14.0-aros7-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-pragtical/releases/download/v3.14.0-aros8/pragtical-3.14.0-aros8-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -83,7 +84,7 @@ id = "z1.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-pragtical"
-revision = "v3.14.0-aros7"
+revision = "v3.14.0-aros8"
 
 [launch]
 executable = "pragtical"

@@ -11,3 +11,14 @@ machine = "QEMU raspi3b (TCG)"
 result  = "passed"
 checked = ["start", "run"]
 note    = "1.3.99.20261114 r1: unpacked from the archive, no apkg install; --version, Shell start with a picture; permission prompts; quit; clean exit"
+
+[[test]]
+sha256 = "97db461dc5d771e04a52e1d625ef3f568bcb7e943bdae5878ef4bc8f0d5fc51e"
+date = "2026-11-25"
+system = "AROS Raspberry Pi AArch64 nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "aros6: installed from a local index by apkg 0.8.4; window opened from Workbench; verify not run; no drawing"
