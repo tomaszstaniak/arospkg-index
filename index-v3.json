@@ -5213,14 +5213,14 @@
     },
     {
       "id": "dockbar",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "summary": "Dock with application groups, drawer panels, action widgets, Weather and Currency",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/workbench",
-      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.7.0/Dockbar-0.7.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 13676475,
-      "sha256": "67cdf74fc95b56684dd6d68ec257db621be30490d378a3989032b2e7ca860670",
+      "url": "https://github.com/tomaszstaniak/aros-dockbar/releases/download/v0.7.1/Dockbar-0.7.1-aros-aarch64-abiv1-raspi.zip",
+      "size": 13695903,
+      "sha256": "f6f6b5d9ac520bdf56c93568a1fac3345b48d5febf9dff9c1a56c85807ea88ec",
       "depends": [],
       "replaces": [
         "dockbar-info-only"
@@ -5265,6 +5265,7 @@
       "source": "https://github.com/tomaszstaniak/aros-dockbar",
       "license": "MIT; bundled parts keep their own licences, see NOTICES",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Dockbar 0.7.0 from the project page.",
         "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
         "Replaces dockbar-info-only, which is not continued. On its first start Dockbar copies docks.config, dock.pins and WidgetState from that drawer.",
         "Your docks (docks.config) and widget data (WidgetState) are kept in this drawer. apkg keeps them on upgrade and removal.",
@@ -5280,7 +5281,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -5296,20 +5297,17 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS for Raspberry Pi nightly 2026-11-10",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
           "machine": "QEMU raspi3b",
-          "date": "2026-11-18",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "start",
-            "upgrade",
-            "remove",
-            "verify"
+            "start"
           ],
-          "note": "apkg 0.7.8, local index; 0.6.2 installed and run, upgraded to these bytes, verify ok, WidgetState kept, 0.7.0 started"
+          "note": "0.7.1: apkg 0.8.4 installed it from a local index; dock with icons and clock from Workbench; widgets not opened"
         }
       ],
       "first_added": "2026-11-05",
@@ -10902,14 +10900,14 @@
     },
     {
       "id": "jumpstart",
-      "version": "0.9.0",
+      "version": "0.10.0",
       "summary": "Keyboard launcher: programs, files, windows, calculator, currencies, packages, clipboard history",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/workbench",
-      "url": "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.9.0/Jumpstart-0.9.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 4534500,
-      "sha256": "c1070602217f808f4d27ecd33d7835a63273a24eceb8433322148021863fcbd6",
+      "url": "https://github.com/tomaszstaniak/aros-launcher/releases/download/v0.10.0/Jumpstart-0.10.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 4555917,
+      "sha256": "6bd127e6a2c460b2f7cef1a3bc2735b9b7f568e7931e8d6bb64de64c130cc564",
       "depends": [],
       "requires_system": [
         {
@@ -10952,6 +10950,7 @@
       "source": "https://github.com/tomaszstaniak/aros-launcher",
       "license": "MIT; bundled parts keep their own licences, see ReadMe",
       "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Jumpstart 0.9.0 from the project page.",
         "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
         "Start Jumpstart once from its icon; after that Ctrl+Alt+Space opens the panel. The first start also makes it start with the system.",
         "Before removing the package, switch off Start with the system in its settings (General), or delete SYS:WBStartup/Jumpstart.info.",
@@ -10966,7 +10965,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-25",
         "checked": [
           "metadata",
           "download",
@@ -10982,20 +10981,18 @@
       },
       "runtime_tests": [
         {
-          "system": "AROS for Raspberry Pi nightly 2026-11-10",
+          "system": "AROS Raspberry Pi AArch64 nightly 2026-11-24",
           "arch": "aarch64",
           "abi": "v1",
           "machine": "QEMU raspi3b",
-          "date": "2026-11-23",
+          "date": "2026-11-25",
           "result": "passed",
           "checked": [
             "install",
-            "upgrade",
             "start",
-            "remove",
-            "verify"
+            "run"
           ],
-          "note": "apkg 0.7.8, local index: 0.8.0 upgraded to these bytes, 35 files verified; started, VERSION and QUIT over ARexx, started again, VERSION; removed"
+          "note": "0.10.0: apkg 0.8.4 installed it from a local index; panel on the hotkey; a currency query answered with the rates of the day over HTTPS"
         }
       ],
       "first_added": "2026-11-18",

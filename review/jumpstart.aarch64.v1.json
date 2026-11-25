@@ -4,14 +4,14 @@
  "id": "jumpstart",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-23",
- "sha256": "c1070602217f808f4d27ecd33d7835a63273a24eceb8433322148021863fcbd6",
- "size": 4534500,
- "manifest_digest": "f2dd225c5246a626f32427ee90781c86a05de8c2705ce99b1f1522e123944361",
+ "date": "2026-11-25",
+ "sha256": "6bd127e6a2c460b2f7cef1a3bc2735b9b7f568e7931e8d6bb64de64c130cc564",
+ "size": 4555917,
+ "manifest_digest": "af9433c5ada279b4ff742f5bbd78fafaa6629d4c18698c8403e1b2d535a45812",
  "result": "passed",
  "sizes": {
-  "largest_member": 10967688,
-  "unpacked": 15525408
+  "largest_member": 10968360,
+  "unpacked": 15565342
  },
  "checks": [
   {
@@ -32,7 +32,7 @@
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 10967688 bytes (Jumpstart/Widgets/org.aros.currency/bin/aarch64-raspi-v1/CurrencyProvider), 15525408 bytes unpacked"
+   "detail": "largest member 10968360 bytes (Jumpstart/Widgets/org.aros.currency/bin/aarch64-raspi-v1/CurrencyProvider), 15565342 bytes unpacked"
   },
   {
    "name": "paths",
