@@ -3,8 +3,8 @@
 # every later submission applies again.
 
 id              = "arca"
-version         = "0.1.1"
-revision        = 2
+version         = "0.1.2"
+revision        = 1
 summary         = "Pack, browse and extract archives with a native Zune interface"
 category        = "utility/archive"
 license         = "MIT; bundled libraries and helpers retain their own licences"
@@ -16,15 +16,15 @@ icon            = "Arca.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
-  "Requires mainline nightly 2026-11-06 or later (stdc.library 0.53).",
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Arca 0.1.1 from the project page.",
   "Requires the system NList, NListview and NFloattext Zune classes.",
   "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
   "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes.",
 ]
-sha256          = "4cef57769f53a90b2ee0a733c20b1b2b3d8697d85327cedacf162cfa49a86ad0"
-size            = 2264359
+sha256          = "c34554545bbf04cca8ac4b6f4b62acd574f65c33eb9dc57579fc54e63a734253"
+size            = 2264140
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-x86_64-abiv1-pc.zip"
+url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.2/Arca-0.1.2-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"
@@ -45,7 +45,7 @@ min_version = 19
 
 [source]
 repository = "https://github.com/tomaszstaniak/arca"
-revision = "v0.1.1-r2"
+revision = "v0.1.2"
 built_with = "AROS mainline x86_64 SDK, GCC 10.5.0"
 
 [launch]
