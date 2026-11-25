@@ -1,3 +1,5 @@
+# 0.2.0 preview 2: preview 1 rebuilt with the SDK of the Pi nightly 2026-11-24. The
+# text below describes preview 1.
 # Boxer for AROS 0.2.0 preview 1, Raspberry Pi build. Our own port, published by
 # its author as an asset of the same GitHub release as the x86_64 builds
 # (prerelease, tag v0.2.0-preview1, one source commit for all three).
@@ -18,14 +20,14 @@
 
 status          = "approved"
 id              = "boxer"
-version         = "0.2.0-preview1"
+version         = "0.2.0-preview2"
 revision        = 1
 summary         = "DOS game front end with Boxer's DOSBox core: import, gameboxes, covers (experimental preview)"
 category        = "emulation/computer"
 license         = "GPL-2.0"
-url             = "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.2.0-preview1/Boxer-0.2.0-preview1-aros-aarch64-abiv1-raspi.zip"
-size            = 13636452
-sha256          = "3727bddf77e38d4673b46a34528075cdf12d222dc4da31628178b1fb80234ea4"
+url             = "https://github.com/tomaszstaniak/aros-boxerapp/releases/download/v0.2.0-preview2/Boxer-0.2.0-preview2-aros-aarch64-abiv1-raspi.zip"
+size            = 18779403
+sha256          = "4b7c5883d1d7450053f77a2f4a4a52ca384f4d19d9a94db03e132a94b21c4fda"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -39,6 +41,7 @@ runs_on         = []
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Boxer 0.2.0 preview 1 from the project page.",
   "Experimental Raspberry Pi build, tried only under QEMU. Sound and speed on a real Raspberry Pi are untested.",
   "Use a test installation of AROS. A hung game session can crash AROS.",
   "Boxer can crash while you choose the folder of a game to import.",
@@ -76,7 +79,7 @@ id   = "diskfont.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-boxerapp"
-revision   = "v0.2.0-preview1"
+revision   = "v0.2.0-preview2"
 built_with = "AROS for Raspberry Pi nightly 20261029 SDK, Clang 20.1.0, libc++ 20.1.0 with the AROS patches"
 
 [launch]

@@ -1,0 +1,10 @@
+[[test]]
+sha256 = "8c4e5d075de0fac1571edbd42eed71b718f9e92178b9619419c3a242855a1b08"
+date = "2026-11-25"
+system = "AROS Raspberry Pi AArch64 nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "1.3-aros3: apkg 0.8.4 installed it from a local index; started from the icon with a data pack up to the menu; no game played"

@@ -1,20 +1,21 @@
+# Port release 3: port release 1 rebuilt with the SDK of the Pi nightly 2026-11-24.
 # Burntime Remastered 1.3 for AROS, port release 1, native AROS on the Raspberry Pi (aarch64, ABIv1).
 # A port of Jakob Harder's Burntime Remastered 1.3, rewritten in Rust; published by its author
-# as a GitHub release asset (tag v1.3-aros1). The program is the one in the release's
-# Burntime-1.3-aros1-aros-aarch64-abiv1-raspi.zip; this APKG adds only its manifest.
+# as a GitHub release asset (tag v1.3-aros3). The program is the one in the release's
+# Burntime-1.3-aros3-aros-aarch64-abiv1-raspi.zip; this APKG adds only its manifest.
 # Tried in QEMU (raspi3b) with the raspi-aarch64 nightly 20261029, not on a physical Raspberry Pi.
 # No game data: the user makes burntime.pack from their own copy of the game (ReadMe in the drawer).
 
 status          = "approved"
 id              = "burntime"
 version         = "1.3"
-revision        = 2
+revision        = 3
 summary         = "Burntime Remastered 1.3, Max Design's survival strategy game (Raspberry Pi; needs your own game data)"
 category        = "game/strategy"
 license         = "MIT; libraries: Zlib, BSD-3-Clause, LGPL-2.1-or-later"
-url             = "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros1/Burntime-1.3-aros1-aros-aarch64-abiv1-raspi.apkg.zip"
-size            = 3735098
-sha256          = "69fa9420bcc12c5c6abd20fba47f357be78801eaa568a57f7973279f82e6a4af"
+url             = "https://github.com/tomaszstaniak/aros-burntime/releases/download/v1.3-aros3/Burntime-1.3-aros3-aros-aarch64-abiv1-raspi.apkg.zip"
+size            = 3736555
+sha256          = "8c4e5d075de0fac1571edbd42eed71b718f9e92178b9619419c3a242855a1b08"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -28,6 +29,7 @@ runs_on         = []
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Burntime 1.3 port release 1 from the project page.",
   "AROS for Raspberry Pi (aarch64). Tried in QEMU's Raspberry Pi emulation, not on a physical Raspberry Pi.",
   "Burntime needs burntime.pack made from your own copy of the game: see ReadMe in the drawer.",
   "Put it in a data drawer of its own, e.g. Work:Burntime-Data, then:",
@@ -58,4 +60,4 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-burntime"
-revision   = "v1.3-aros1"
+revision   = "v1.3-aros3"
