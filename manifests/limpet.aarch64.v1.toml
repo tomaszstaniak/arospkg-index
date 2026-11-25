@@ -1,17 +1,16 @@
-# Limpet 0.13.0: a choice of prompts, TAB completion of a known command's keywords and drawer arguments,
-# the SSH programs on a stack of their own, Ctrl-C ends a wait for the server.
-# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.13.0.md.
+# Limpet 0.13.1: Limpet 0.13.0 rebuilt for nightly builds from 2026-11-24 on (the SDK of that nightly).
+# Release asset downloaded and SHA-256 checked.
 status          = "approved"
 id              = "limpet"
-version         = "0.13.0"
-revision        = 2
+version         = "0.13.1"
+revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "aarch64"
 abi             = "v1"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.0/Limpet-0.13.0-aros-aarch64-abiv1-raspi.zip"
-size            = 7383408
-sha256          = "c202e3c2a5d164d846b0fe8369c5c237869cd7a19389bee121ac6e375b577aa9"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.13.1/Limpet-0.13.1-aros-aarch64-abiv1-raspi.zip"
+size            = 7391253
+sha256          = "fc670a619a5d41460530cce7cb1740def83ff41c23d72d31de7d364261246cb9"
 kind            = "app"
 license         = "MIT"
 
@@ -20,10 +19,11 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["mainline-aarch64"]
-runs_on         = ["mainline-aarch64"]   # a 0.13.0 build of the same day run from its unpacked drawer 2026-11-21; the released archive not run again
+runs_on         = ["mainline-aarch64"]   # 0.13.1 installed by apkg 0.8.4 and started from Workbench on the Pi nightly 2026-11-24 (QEMU), 2026-11-25
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Limpet 0.13.0 from the project page.",
   "Raspberry Pi build, tested only under QEMU (raspi3b), not on a real Raspberry Pi.",
 ]
 
@@ -53,5 +53,5 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.13.0"
+revision   = "v0.13.1"
 built_with = "AROS raspi-aarch64 SDK of 2026-08-22 (mainline ABIv1), Clang 20.1"
