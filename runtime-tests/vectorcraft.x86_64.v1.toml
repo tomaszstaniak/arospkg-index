@@ -13,3 +13,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "run", "verify", "remove"]
 note    = "apkg 0.6.0 downloaded the archive from the release URL; window opened from its icon and closed cleanly; remove kept VectorCraftData"
+
+[[test]]
+sha256  = "3008286bfd60cd110fdd1d68bd88ad454d1a8d1a87c2952bd1d87d5a02a306b5"
+date    = "2026-11-25"
+system  = "mainline AROS x86_64 nightly 20261124"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "run", "verify"]
+note    = "apkg 0.8.4 install and verify from a pre-placed cache; window opened from Workbench, a new document made; remove not run"
