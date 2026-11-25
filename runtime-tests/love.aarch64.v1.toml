@@ -1,0 +1,13 @@
+# Runtime tests of love aarch64/v1: maintainer records, each for the archive bytes named by
+# its sha256. Source: maintainer test logs, kept outside the catalogue repository.
+
+[[test]]
+sha256 = "b11d68548ad59e54655280132798b1a1f23e3009104cbf5fae92da4083487a82"
+date = "2026-11-25"
+system = "AROS for Raspberry Pi nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["start", "run"]
+note = "12.0-aros4: package files from RAM:; a game with a thread, Mr. Rescue with saves, Workbench start; sound not tried (emulator)"
