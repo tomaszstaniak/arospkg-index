@@ -3,8 +3,8 @@
 # every later submission applies again.
 
 id              = "arca"
-version         = "0.1.1"
-revision        = 2
+version         = "0.1.2"
+revision        = 1
 summary         = "Pack, browse and extract archives with a native Zune interface"
 category        = "utility/archive"
 license         = "MIT; bundled libraries and helpers retain their own licences"
@@ -16,15 +16,15 @@ icon            = "Arca.info"
 depends         = []
 depends_checked = true
 post_install_notes = [
-  "Requires mainline nightly 2026-11-06 or later (stdc.library 0.53).",
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use Arca 0.1.1 from the project page.",
   "Requires the system NList, NListview and NFloattext Zune classes.",
   "Keep unarc-7z and unarc-lha beside Arca. Preferences are stored in ENVARC:Arca.prefs.",
   "Older SFS versions cannot seek inside archive files larger than 2 GB; use smaller archives or split volumes.",
 ]
-sha256          = "42654177e301609bff259d4e4160ee99e9d7b6ebe91fbaafa3bed63dc9161850"
-size            = 2654742
+sha256          = "6e6079aacd807acb30bb61db21acd2de8cf3ba2d108347fae9968d4997951795"
+size            = 2654444
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.1-r2/Arca-0.1.1-r2-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/arca/releases/download/v0.1.2/Arca-0.1.2-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"
@@ -45,7 +45,7 @@ min_version = 19
 
 [source]
 repository = "https://github.com/tomaszstaniak/arca"
-revision = "v0.1.1-r2"
+revision = "v0.1.2"
 built_with = "Native AROS Raspberry Pi AArch64 ABIv1 SDK, Clang 20.1.0"
 
 [launch]
