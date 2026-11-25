@@ -12,3 +12,14 @@ machine = "rpi-1, QEMU raspi3b"
 result  = "passed"
 checked = ["start", "run"]
 note    = "Not via apkg: zip unpacked on the host, drawer copied to SD. Run-OpenLoco, track, stations, train, save, reboot, load. No sound (VOID); real Pi untested"
+
+[[test]]
+sha256 = "dcb88d0575cca45babda9f23b8cdf254d495c0cbcc828b2f8b9ad63593bc57bc"
+date = "2026-11-25"
+system = "AROS Raspberry Pi AArch64 nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["install", "start"]
+note = "second build: apkg 0.8.4 installed it from a local index; Run-OpenLoco printed the version and asked for the game data; no game run"

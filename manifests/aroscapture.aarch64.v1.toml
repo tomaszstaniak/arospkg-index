@@ -1,13 +1,14 @@
+# 0.1.2: AROS Capture 0.1.1 rebuilt with the SDK of the Pi nightly 2026-11-24.
 status          = "approved"
 id              = "aroscapture"
-version         = "0.1.1"
+version         = "0.1.2"
 revision        = 1
 summary         = "Screenshot tool: area capture, markup editor, PNG, clipboard, drag to drawers, Shell commands"
 category        = "graphics/edit"
 license         = "MIT; bundled parts keep their own licences, see NOTICES"
-url             = "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.1/AROSCapture-0.1.1-aros-aarch64-abiv1-raspi.zip"
-size            = 787362
-sha256          = "ed8077cf7874fd7255a1095c5909c4e0d28b83fb7984e2403c664f0168ce3935"
+url             = "https://github.com/tomaszstaniak/aros-capture/releases/download/v0.1.2/AROSCapture-0.1.2-aros-aarch64-abiv1-raspi.zip"
+size            = 790776
+sha256          = "317838b62d189b9016144ed0a42d495b550ec9fdcd34ba7532bf7cc2705563d8"
 kind            = "app"
 arch            = "aarch64"
 abi             = "v1"
@@ -21,6 +22,7 @@ runs_on         = []
 does_not_run_on = []
 
 post_install_notes = [
+  "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use AROS Capture 0.1.1 from the project page.",
   "Captures are saved to SYS:Pictures/Captures unless you choose another folder in Settings.",
   "For a Dockbar button: start Dockbar 0.6.0 or newer, then double-click Add to Dockbar in this drawer.",
 ]
@@ -60,7 +62,7 @@ id   = "iffparse.library"
 
 [source]
 repository = "https://github.com/tomaszstaniak/aros-capture"
-revision   = "v0.1.1"
+revision   = "v0.1.2"
 built_with = "AROS raspi-aarch64 SDK of 2026-11-05 (mainline ABIv1), Clang 20.1.1"
 
 [launch]
