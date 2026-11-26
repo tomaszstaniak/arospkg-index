@@ -12727,6 +12727,22 @@
           "arch": "aarch64",
           "abi": "v1",
           "machine": "QEMU raspi3b",
+          "date": "2026-11-26",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "12.0-aros4: apkg 0.8.4 installed it from the public catalogue; Mr. Rescue ran and saved; verify ok; removed, the saves kept; sound not tried"
+        },
+        {
+          "system": "AROS for Raspberry Pi nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
           "date": "2026-11-25",
           "result": "passed",
           "checked": [
@@ -12752,7 +12768,109 @@
           "size": 1463,
           "width": 24,
           "height": 24
-        }
+        },
+        "gallery": [
+          {
+            "type": "screenshot",
+            "caption": "Mr. Rescue (Tangram Games, CC BY-SA 3.0) running in a window",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/0506a350-1-full.png",
+              "sha256": "0506a3501f38503a36e39e4f3113fbb27dc73e3392edcae26729cdd164ca76ab",
+              "size": 89586,
+              "width": 800,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/138c4ff6-1-view.png",
+              "sha256": "138c4ff641ffc8c06bf74c56fa7a4ff37499585d97cb6d994bd15dbb21333b72",
+              "size": 129627,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/dd20077a-1-thumb.png",
+              "sha256": "dd20077abc34ad6bf6fc1229ba634e7a3786aa3a0af2f230f6616f8c0f9dc134",
+              "size": 15692,
+              "width": 133,
+              "height": 100
+            }
+          },
+          {
+            "type": "screenshot",
+            "caption": "The menu of Mr. Rescue",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/882fdf9d-2-full.png",
+              "sha256": "882fdf9d43edfa0d2a779d199a6ea18d5b2fd167734165b411128a2a25c7009e",
+              "size": 85838,
+              "width": 800,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/873ca4bf-2-view.png",
+              "sha256": "873ca4bfb387b0dabcfad39cc134c4d9c9ddb1163522b7861d60387d7bcd000f",
+              "size": 116649,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/57d03e0b-2-thumb.png",
+              "sha256": "57d03e0b2da9d906a171a9a9c0a3ae664f07f5310d3c56017d5cf734b36ebcb0",
+              "size": 17107,
+              "width": 133,
+              "height": 100
+            }
+          },
+          {
+            "type": "screenshot",
+            "caption": "Started from Workbench, LOVE asks for a game: a .love file or a drawer with main.lua",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/b56df354-3-full.png",
+              "sha256": "b56df35421f4cadcaeb959972504520a985ae9e53c535adebb0df91ac949395c",
+              "size": 109440,
+              "width": 800,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/57004b2d-3-view.png",
+              "sha256": "57004b2d439b16805db2377eeb8c750a65707de53c33913a390bb64caf10ae88",
+              "size": 123146,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/e4751891-3-thumb.png",
+              "sha256": "e4751891fa32834317ab5b0890d2616da60c00e639d6afd3c1740517e1e1e472",
+              "size": 14100,
+              "width": 133,
+              "height": 100
+            }
+          },
+          {
+            "type": "screenshot",
+            "caption": "Mr. Rescue on a Raspberry Pi",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/c5f302f0-4-full.png",
+              "sha256": "c5f302f0310e94a62f7ceecc479c3c82ed628d78adba786ccc995d75dd3e4c47",
+              "size": 62026,
+              "width": 1024,
+              "height": 768
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/a41727fd-4-view.png",
+              "sha256": "a41727fdbcd998ce7fbd115bfc729b4bbac43ea7d97012f665220678d28c7a29",
+              "size": 145078,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/2cf3bdde-4-thumb.png",
+              "sha256": "2cf3bddea4e2daf1cb81fbad5e39ec21a3476671fa38b990154e3b080bcde671",
+              "size": 15356,
+              "width": 133,
+              "height": 100
+            }
+          }
+        ]
       }
     },
     {
@@ -12868,6 +12986,35 @@
       },
       "runtime_tests": [
         {
+          "system": "mainline AROS x86_64 nightly 2026-11-25",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-26",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "12.0-aros4: apkg 0.8.4 installed it; games ran from a Shell and from the Workbench requester and saved; verify ok; removed, the saves kept"
+        },
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-18",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-26",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "verify"
+          ],
+          "note": "12.0-aros4: apkg 0.8.3 upgraded revision 3 from the public catalogue, a save file kept; the program itself needs a later nightly and was not started"
+        },
+        {
           "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
           "abi": "v1",
@@ -12897,7 +13044,109 @@
           "size": 1463,
           "width": 24,
           "height": 24
-        }
+        },
+        "gallery": [
+          {
+            "type": "screenshot",
+            "caption": "Mr. Rescue (Tangram Games, CC BY-SA 3.0) running in a window",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/0506a350-1-full.png",
+              "sha256": "0506a3501f38503a36e39e4f3113fbb27dc73e3392edcae26729cdd164ca76ab",
+              "size": 89586,
+              "width": 800,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/138c4ff6-1-view.png",
+              "sha256": "138c4ff641ffc8c06bf74c56fa7a4ff37499585d97cb6d994bd15dbb21333b72",
+              "size": 129627,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/dd20077a-1-thumb.png",
+              "sha256": "dd20077abc34ad6bf6fc1229ba634e7a3786aa3a0af2f230f6616f8c0f9dc134",
+              "size": 15692,
+              "width": 133,
+              "height": 100
+            }
+          },
+          {
+            "type": "screenshot",
+            "caption": "The menu of Mr. Rescue",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/882fdf9d-2-full.png",
+              "sha256": "882fdf9d43edfa0d2a779d199a6ea18d5b2fd167734165b411128a2a25c7009e",
+              "size": 85838,
+              "width": 800,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/873ca4bf-2-view.png",
+              "sha256": "873ca4bfb387b0dabcfad39cc134c4d9c9ddb1163522b7861d60387d7bcd000f",
+              "size": 116649,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/57d03e0b-2-thumb.png",
+              "sha256": "57d03e0b2da9d906a171a9a9c0a3ae664f07f5310d3c56017d5cf734b36ebcb0",
+              "size": 17107,
+              "width": 133,
+              "height": 100
+            }
+          },
+          {
+            "type": "screenshot",
+            "caption": "Started from Workbench, LOVE asks for a game: a .love file or a drawer with main.lua",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/b56df354-3-full.png",
+              "sha256": "b56df35421f4cadcaeb959972504520a985ae9e53c535adebb0df91ac949395c",
+              "size": 109440,
+              "width": 800,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/57004b2d-3-view.png",
+              "sha256": "57004b2d439b16805db2377eeb8c750a65707de53c33913a390bb64caf10ae88",
+              "size": 123146,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/e4751891-3-thumb.png",
+              "sha256": "e4751891fa32834317ab5b0890d2616da60c00e639d6afd3c1740517e1e1e472",
+              "size": 14100,
+              "width": 133,
+              "height": 100
+            }
+          },
+          {
+            "type": "screenshot",
+            "caption": "Mr. Rescue on a Raspberry Pi",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/c5f302f0-4-full.png",
+              "sha256": "c5f302f0310e94a62f7ceecc479c3c82ed628d78adba786ccc995d75dd3e4c47",
+              "size": 62026,
+              "width": 1024,
+              "height": 768
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/a41727fd-4-view.png",
+              "sha256": "a41727fdbcd998ce7fbd115bfc729b4bbac43ea7d97012f665220678d28c7a29",
+              "size": 145078,
+              "width": 533,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/love/2cf3bdde-4-thumb.png",
+              "sha256": "2cf3bddea4e2daf1cb81fbad5e39ec21a3476671fa38b990154e3b080bcde671",
+              "size": 15356,
+              "width": 133,
+              "height": 100
+            }
+          }
+        ]
       }
     },
     {

@@ -9378,6 +9378,22 @@
           "arch": "aarch64",
           "abi": "v1",
           "machine": "QEMU raspi3b",
+          "date": "2026-11-26",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "12.0-aros4: apkg 0.8.4 installed it from the public catalogue; Mr. Rescue ran and saved; verify ok; removed, the saves kept; sound not tried"
+        },
+        {
+          "system": "AROS for Raspberry Pi nightly 2026-11-24",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b",
           "date": "2026-11-25",
           "result": "passed",
           "checked": [
@@ -9502,6 +9518,35 @@
         ]
       },
       "runtime_tests": [
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-25",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-26",
+          "result": "passed",
+          "checked": [
+            "install",
+            "verify",
+            "start",
+            "run",
+            "remove"
+          ],
+          "note": "12.0-aros4: apkg 0.8.4 installed it; games ran from a Shell and from the Workbench requester and saved; verify ok; removed, the saves kept"
+        },
+        {
+          "system": "mainline AROS x86_64 nightly 2026-11-18",
+          "arch": "x86_64",
+          "abi": "v1",
+          "machine": "QEMU (TCG)",
+          "date": "2026-11-26",
+          "result": "passed",
+          "checked": [
+            "upgrade",
+            "verify"
+          ],
+          "note": "12.0-aros4: apkg 0.8.3 upgraded revision 3 from the public catalogue, a save file kept; the program itself needs a later nightly and was not started"
+        },
         {
           "system": "mainline AROS x86_64 nightly 2026-11-24",
           "arch": "x86_64",
