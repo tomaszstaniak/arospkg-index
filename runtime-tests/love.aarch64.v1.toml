@@ -11,3 +11,14 @@ machine = "QEMU raspi3b"
 result = "passed"
 checked = ["start", "run"]
 note = "12.0-aros4: package files from RAM:; a game with a thread, Mr. Rescue with saves, Workbench start; sound not tried (emulator)"
+
+[[test]]
+sha256 = "b11d68548ad59e54655280132798b1a1f23e3009104cbf5fae92da4083487a82"
+date = "2026-11-26"
+system = "AROS for Raspberry Pi nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["install", "verify", "start", "run", "remove"]
+note = "12.0-aros4: apkg 0.8.4 installed it from the public catalogue; Mr. Rescue ran and saved; verify ok; removed, the saves kept; sound not tried"
