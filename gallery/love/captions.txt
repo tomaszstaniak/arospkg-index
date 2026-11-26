@@ -1,0 +1,4 @@
+Mr. Rescue (Tangram Games, CC BY-SA 3.0) running in a window
+The menu of Mr. Rescue
+Started from Workbench, LOVE asks for a game: a .love file or a drawer with main.lua
+Mr. Rescue on a Raspberry Pi
