@@ -44,3 +44,14 @@ machine = "QEMU raspi3b"
 result = "passed"
 checked = ["install", "verify", "start"]
 note = "0.13.1: installed from a local index by apkg 0.8.4; verify ok; started from Workbench; ssh not run"
+
+[[test]]
+sha256 = "0691b1973bd8ec856f22c8b0b9a724843c1d0a8e22837763ba7526a7eff980ff"
+date = "2026-11-28"
+system = "AROS Raspberry Pi nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["start", "run"]
+note = "0.14.0: unpacked with UnZip, not through apkg; TAB completed eza and Fastfetch options from their Completions files; both ran in the window"

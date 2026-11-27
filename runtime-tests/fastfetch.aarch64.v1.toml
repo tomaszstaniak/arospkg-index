@@ -22,3 +22,14 @@ machine = "QEMU raspi3b"
 result = "passed"
 checked = ["install", "verify", "run"]
 note = "2.70.0-r5: installed from a local index by apkg 0.8.4; verify ok; OS, kernel and memory lines from a Shell"
+
+[[test]]
+sha256 = "6ba2d65967bf3918442968de7f55b2be92e7559b2ac9d2bcecc1040d4479f53f"
+date = "2026-11-28"
+system = "AROS Raspberry Pi nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["start", "run"]
+note = "2.70.0-r6: unpacked with UnZip, not through apkg; Limpet 0.14.0 completed options from Completions/fastfetch; -c aros-compact ran in Limpet"

@@ -34,3 +34,14 @@ machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "verify", "run"]
 note = "0.23.5-r2: installed from a local index by apkg 0.8.3 rebuilt for this nightly; verify ok; eza --version from a Shell; no listing in Limpet"
+
+[[test]]
+sha256 = "3d8f500e592c6f880985321215a84f96c599475f4d95164d12d2ea7f1fef6f5a"
+date = "2026-11-28"
+system = "mainline AROS x86_64 nightly 2026-11-24"
+arch = "x86_64"
+abi = "v1"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["start", "run"]
+note = "0.23.5-r3: unpacked with UnZip, not through apkg; Limpet 0.14.0 completed options from Completions/eza; a --sort listing ran in Limpet"

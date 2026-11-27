@@ -4,7 +4,7 @@
 
 id              = "fastfetch"
 version         = "2.70.0"
-revision        = 5
+revision        = 6
 summary         = "System information in the Shell, with the AROS logo"
 category        = "utility/misc"
 license         = "MIT"
@@ -18,10 +18,10 @@ post_install_notes = [
   "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 4 from the project page.",
   "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi.",
 ]
-sha256          = "f96ab58acaf32a42839852efa12614c303f1d94d35f391b19b31e036fc99f26d"
-size            = 942534
+sha256          = "6ba2d65967bf3918442968de7f55b2be92e7559b2ac9d2bcecc1040d4479f53f"
+size            = 944107
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r5/Fastfetch-2.70.0-r5-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r6/Fastfetch-2.70.0-r6-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"
