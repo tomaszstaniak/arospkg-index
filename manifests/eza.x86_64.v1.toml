@@ -4,7 +4,7 @@
 
 id              = "eza"
 version         = "0.23.5"
-revision        = 2
+revision        = 3
 summary         = "A modern replacement for List and Dir: colours, icons, tree view, Git status"
 category        = "utility/shell"
 license         = "EUPL-1.2"
@@ -18,10 +18,10 @@ post_install_notes = [
   "eza lists files in Limpet 0.7.0 or later (apkg install limpet); the standard Shell window gets help and --version only.",
   "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 1 from the project page.",
 ]
-sha256          = "8a20f6e31b07f5d6c997bf0caf172773a8a65207897c2717c1c6f885bcda26b1"
-size            = 8092641
+sha256          = "3d8f500e592c6f880985321215a84f96c599475f4d95164d12d2ea7f1fef6f5a"
+size            = 8093684
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r2/Eza-0.23.5-r2-aros-x86_64-abiv1-pc.zip"
+url             = "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r3/Eza-0.23.5-r3-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"

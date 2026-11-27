@@ -23,3 +23,14 @@ machine = "QEMU raspi3b"
 result = "passed"
 checked = ["install", "verify", "run"]
 note = "0.23.5-r2: installed from a local index by apkg 0.8.4; verify ok; eza --version from a Shell"
+
+[[test]]
+sha256 = "aea5da394739c562c3a24aef71d3afcbfc60046b00e858b600a5b088c68bf1fb"
+date = "2026-11-28"
+system = "AROS Raspberry Pi nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["start", "run"]
+note = "0.23.5-r3: unpacked with UnZip, not through apkg; Limpet 0.14.0 completed options from Completions/eza; a --sort listing ran in Limpet"

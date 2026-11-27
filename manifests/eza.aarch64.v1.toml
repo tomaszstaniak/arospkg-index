@@ -4,7 +4,7 @@
 
 id              = "eza"
 version         = "0.23.5"
-revision        = 2
+revision        = 3
 summary         = "A modern replacement for List and Dir: colours, icons, tree view, Git status"
 category        = "utility/shell"
 license         = "EUPL-1.2"
@@ -19,10 +19,10 @@ post_install_notes = [
   "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 1 from the project page.",
   "Native Raspberry Pi build (mainline ABIv1); not for PomAROS. Tested under QEMU (raspi3b), not on a real Raspberry Pi.",
 ]
-sha256          = "a23fc9c0ca51241f49776eee7b4d5003cdc6a68c84ba6ba75b923b931c832c14"
-size            = 8147532
+sha256          = "aea5da394739c562c3a24aef71d3afcbfc60046b00e858b600a5b088c68bf1fb"
+size            = 8148577
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r2/Eza-0.23.5-r2-aros-aarch64-abiv1-raspi.zip"
+url             = "https://github.com/tomaszstaniak/aros-eza/releases/download/v0.23.5-r3/Eza-0.23.5-r3-aros-aarch64-abiv1-raspi.zip"
 
 [[requires_system]]
 type = "library"

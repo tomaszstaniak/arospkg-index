@@ -4,7 +4,7 @@
 
 id              = "fastfetch"
 version         = "2.70.0"
-revision        = 5
+revision        = 6
 summary         = "System information in the Shell, with the AROS logo"
 category        = "utility/misc"
 license         = "MIT"
@@ -17,10 +17,10 @@ depends_checked = true
 post_install_notes = [
   "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use revision 4 from the project page.",
 ]
-sha256          = "921be2b0edfcbffa806d17ec71123c1903d6fd11141a240580dc8434dd0f78f5"
-size            = 948749
+sha256          = "b1447c807138756ef6b37aaf00feb9e8c1d511158c38379a671d3ca63e1e4781"
+size            = 950321
 status          = "approved"
-url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r5/Fastfetch-2.70.0-r5-aros-x86_64-abiv1-pc.zip"
+url             = "https://github.com/tomaszstaniak/aros-fastfetch/releases/download/v2.70.0-r6/Fastfetch-2.70.0-r6-aros-x86_64-abiv1-pc.zip"
 
 [[requires_system]]
 type = "library"
