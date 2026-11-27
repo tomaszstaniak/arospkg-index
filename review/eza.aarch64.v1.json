@@ -4,14 +4,14 @@
  "id": "eza",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-25",
- "sha256": "a23fc9c0ca51241f49776eee7b4d5003cdc6a68c84ba6ba75b923b931c832c14",
- "size": 8147532,
- "manifest_digest": "2889cbd3b98f3b56a59a2294d117d970ac93808ce67cef7a2214abb2eea50f7a",
+ "date": "2026-11-27",
+ "sha256": "aea5da394739c562c3a24aef71d3afcbfc60046b00e858b600a5b088c68bf1fb",
+ "size": 8148577,
+ "manifest_digest": "6fa4cdba3f5fb559b65a3c99987158bb71c126254c910e194c1aa9ecb9a70d49",
  "result": "passed",
  "sizes": {
   "largest_member": 5965752,
-  "unpacked": 21025004
+  "unpacked": 21027086
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "1209 members"
+   "detail": "1211 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 5965752 bytes (Eza/eza), 21025004 bytes unpacked"
+   "detail": "largest member 5965752 bytes (Eza/eza), 21027086 bytes unpacked"
   },
   {
    "name": "paths",

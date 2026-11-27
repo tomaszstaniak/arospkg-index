@@ -4,14 +4,14 @@
  "id": "fastfetch",
  "arch": "aarch64",
  "abi": "v1",
- "date": "2026-11-25",
- "sha256": "f96ab58acaf32a42839852efa12614c303f1d94d35f391b19b31e036fc99f26d",
- "size": 942534,
- "manifest_digest": "fdf67d2a072ce4975561398761b796fb99a2d507dbadcdb551b98426e310a829",
+ "date": "2026-11-27",
+ "sha256": "6ba2d65967bf3918442968de7f55b2be92e7559b2ac9d2bcecc1040d4479f53f",
+ "size": 944107,
+ "manifest_digest": "f7182082f2bc45e13d65a79f0d25a34fa7b64f9fef613b944d0c66a45297c6b9",
  "result": "passed",
  "sizes": {
   "largest_member": 2734464,
-  "unpacked": 3240646
+  "unpacked": 3246039
  },
  "checks": [
   {
@@ -27,12 +27,12 @@
   {
    "name": "archive",
    "result": "passed",
-   "detail": "83 members"
+   "detail": "85 members"
   },
   {
    "name": "sizes",
    "result": "passed",
-   "detail": "largest member 2734464 bytes (Fastfetch/fastfetch), 3240646 bytes unpacked"
+   "detail": "largest member 2734464 bytes (Fastfetch/fastfetch), 3246039 bytes unpacked"
   },
   {
    "name": "paths",
