@@ -8976,14 +8976,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.14.0",
+      "version": "0.15.0",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "aarch64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.14.0/Limpet-0.14.0-aros-aarch64-abiv1-raspi.zip",
-      "size": 7395981,
-      "sha256": "0691b1973bd8ec856f22c8b0b9a724843c1d0a8e22837763ba7526a7eff980ff",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.15.0/Limpet-0.15.0-aros-aarch64-abiv1-raspi.zip",
+      "size": 7508924,
+      "sha256": "92fc25a5025813e5c26c58a8eff688f111300239ebb134dc7c45a853e6ab1fe5",
       "depends": [],
       "requires_system": [
         {
@@ -9029,7 +9029,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "checked": [
           "metadata",
           "download",
@@ -9055,7 +9055,7 @@
             "start",
             "run"
           ],
-          "note": "0.14.0: unpacked with UnZip, not through apkg; TAB completed eza and Fastfetch options from their Completions files; both ran in the window"
+          "note": "0.15.0: archive files copied, not through apkg; LimpetLearn learned eza, Fastfetch and Copy; TAB completed from a learned definition"
         }
       ],
       "first_added": "2026-11-13",
@@ -9063,14 +9063,14 @@
     },
     {
       "id": "limpet",
-      "version": "0.14.0",
+      "version": "0.15.0",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v11",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.14.0/Limpet-0.14.0-aros-x86_64-abiv11-pc.zip",
-      "size": 7462036,
-      "sha256": "67a1c29c3fa011e8a98e8cb203812fcd59adbb5b8b53acd3f3abd70e35afa4db",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.15.0/Limpet-0.15.0-aros-x86_64-abiv11-pc.zip",
+      "size": 7570465,
+      "sha256": "65bf8439e440b2191c30162bbe0f39fb7a9a3520f2b06affa15b5fe4fbd9e1e8",
       "depends": [],
       "requires_system": [
         {
@@ -9113,7 +9113,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "checked": [
           "metadata",
           "download",
@@ -9127,48 +9127,20 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-28",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "0.14.0: unpacked with UnZip, not through apkg; TAB completed eza and Fastfetch options from their Completions files; both ran in the window"
-        },
-        {
-          "system": "AROS One 1.3",
-          "arch": "x86_64",
-          "abi": "v11",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-28",
-          "result": "passed",
-          "checked": [
-            "install",
-            "start",
-            "run"
-          ],
-          "note": "0.14.0: apkg 0.8.4 installed from the public catalogue into a RAM root; Limpet started; TAB completed eza and Fastfetch options"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-10-03",
       "app_first_added": "2026-10-03"
     },
     {
       "id": "limpet",
-      "version": "0.14.0",
+      "version": "0.15.0",
       "summary": "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow",
       "arch": "x86_64",
       "abi": "v1",
       "category": "utility/shell",
-      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.14.0/Limpet-0.14.0-aros-x86_64-abiv1-pc.zip",
-      "size": 7338716,
-      "sha256": "1b0398dd77c7c87a83a6ca873a86fe1574206e62f71d0db5df44cce31026c24c",
+      "url": "https://github.com/tomaszstaniak/limpet/releases/download/v0.15.0/Limpet-0.15.0-aros-x86_64-abiv1-pc.zip",
+      "size": 7447060,
+      "sha256": "446466c64d974b22cbfa3fd8e54c44d6c2e492a6a452ba34a31a3ef6b7aa62bb",
       "depends": [],
       "requires_system": [
         {
@@ -9215,7 +9187,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "checked": [
           "metadata",
           "download",
@@ -9229,21 +9201,7 @@
           "abi"
         ]
       },
-      "runtime_tests": [
-        {
-          "system": "mainline AROS x86_64 nightly 2026-11-24",
-          "arch": "x86_64",
-          "abi": "v1",
-          "machine": "QEMU (TCG)",
-          "date": "2026-11-28",
-          "result": "passed",
-          "checked": [
-            "start",
-            "run"
-          ],
-          "note": "0.14.0: unpacked with UnZip, not through apkg; TAB completed eza and Fastfetch options from their Completions files; both ran in the window"
-        }
-      ],
+      "runtime_tests": [],
       "first_added": "2026-10-24",
       "app_first_added": "2026-10-03"
     },
