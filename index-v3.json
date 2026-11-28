@@ -20881,14 +20881,14 @@
     },
     {
       "id": "vectorcraft",
-      "version": "0.17.0-510-g9997ff02-test4",
-      "summary": "Vector drawing program with SVG, PDF and EPS import and export (test release)",
-      "arch": "x86_64",
+      "version": "0.24.1",
+      "summary": "Vector drawing program with SVG, PDF and EPS import and export",
+      "arch": "aarch64",
       "abi": "v1",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.17.0-510-g9997ff02-test4/VectorCraft-0.17.0-510-g9997ff02-test4-aros-x86_64-abiv1-pc.zip",
-      "size": 59101933,
-      "sha256": "3008286bfd60cd110fdd1d68bd88ad454d1a8d1a87c2952bd1d87d5a02a306b5",
+      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.24.1-r1/VectorCraft-0.24.1-r1-aros-aarch64-abiv1-raspi.zip",
+      "size": 61949023,
+      "sha256": "279d95d9f35a1d043600810d6a98fce16c8b28a03c1313e422bb16236840c472",
       "depends": [],
       "client_features": [
         "large-members"
@@ -20896,11 +20896,11 @@
       "requires_system": [
         {
           "type": "library",
-          "id": "posixc.library"
+          "id": "stdc.library"
         },
         {
           "type": "library",
-          "id": "stdc.library"
+          "id": "posixc.library"
         },
         {
           "type": "library",
@@ -20917,6 +20917,10 @@
         {
           "type": "library",
           "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
         }
       ],
       "installs_on": [],
@@ -20926,13 +20930,15 @@
       "subdir": "VectorCraft",
       "icon": "VectorCraft.info",
       "install": {},
+      "revision": 1,
       "source": "https://github.com/tomaszstaniak/aros-vectorcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Test release: the CPU draws the whole window on every change, so the interface reacts slowly.",
-        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
-        "Settings and VectorCraft.log are kept in VectorCraftData in the program drawer; keep it when upgrading.",
-        "Needs an AROS nightly of 2026-11-24 or later; for earlier nightlies use test 3 from the project page. Shell start: Stack 16777216 first."
+        "Raspberry Pi build; needs a nightly of 2026-11-24 or later. Tested in an emulator only.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, libraries, Data Recovery and the logs are kept in VectorCraftData in the program drawer; keep it when upgrading.",
+        "File > Print saves a PDF; the clipboard carries text only. Updates come through the AROS package manager."
       ],
       "launch": {
         "executable": "VectorCraft",
@@ -20942,7 +20948,155 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-25",
+        "date": "2026-11-28",
+        "checked": [
+          "metadata",
+          "download",
+          "archive",
+          "sizes",
+          "paths",
+          "layout",
+          "cpu"
+        ],
+        "unchecked": [
+          "abi"
+        ]
+      },
+      "runtime_tests": [
+        {
+          "system": "AROS Raspberry Pi nightly 20261124 (non-SMP)",
+          "arch": "aarch64",
+          "abi": "v1",
+          "machine": "QEMU raspi3b (TCG)",
+          "date": "2026-11-28",
+          "result": "passed",
+          "checked": [
+            "install",
+            "start",
+            "run",
+            "verify",
+            "remove"
+          ],
+          "note": "apkg 0.8.4, local index: verify ok; new shape, Save As through the requester, undo, redo, Save, read back by the CLI; second start; removed"
+        }
+      ],
+      "first_added": "2026-11-28",
+      "app_first_added": "2026-11-07",
+      "media": {
+        "icon": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/15c15a65-icon.png",
+          "sha256": "15c15a6539ea4c4dce0f2290da3f73146e4b459e998f8e0483b5d590479bcbbd",
+          "size": 6480,
+          "width": 64,
+          "height": 64
+        },
+        "icon_small": {
+          "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/70f72fdc-icon-small.png",
+          "sha256": "70f72fdcb19537486cc53a0a33aa1fbb19adb94544749c8421b0b043eb5e6319",
+          "size": 1760,
+          "width": 24,
+          "height": 24
+        },
+        "gallery": [
+          {
+            "type": "screenshot",
+            "caption": "VectorCraft 0.24.1 on AROS One 1.3: a drawing with a new rectangle selected",
+            "full": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/622d5eca-1-full.png",
+              "sha256": "622d5eca86f1a4b266fae903c88058a1f06b165a6143beb99b7cb03b2b88e1ac",
+              "size": 112998,
+              "width": 900,
+              "height": 600
+            },
+            "view": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/f6f9aa98-1-view.png",
+              "sha256": "f6f9aa98b20e6049923605de6445bfc980048a88fa84efa5cfecb35e9b7b420c",
+              "size": 102960,
+              "width": 600,
+              "height": 400
+            },
+            "thumb": {
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/fb2e0332-1-thumb.png",
+              "sha256": "fb2e03323851591055aa4ce6e420e3f67bb3dae69b5a7b868d5ea4990be3c212",
+              "size": 15791,
+              "width": 150,
+              "height": 100
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "vectorcraft",
+      "version": "0.24.1",
+      "summary": "Vector drawing program with SVG, PDF and EPS import and export",
+      "arch": "x86_64",
+      "abi": "v1",
+      "category": "graphics/edit",
+      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.24.1-r1/VectorCraft-0.24.1-r1-aros-x86_64-abiv1-pc.zip",
+      "size": 60251432,
+      "sha256": "7c6e7e6b83b7e5ccc60f73ed9a1a93756cc13f71ea377c1f95d243ad327c0042",
+      "depends": [],
+      "client_features": [
+        "large-members"
+      ],
+      "requires_system": [
+        {
+          "type": "library",
+          "id": "stdc.library"
+        },
+        {
+          "type": "library",
+          "id": "posixc.library"
+        },
+        {
+          "type": "library",
+          "id": "stdcio.library"
+        },
+        {
+          "type": "library",
+          "id": "cybergraphics.library"
+        },
+        {
+          "type": "library",
+          "id": "iffparse.library"
+        },
+        {
+          "type": "library",
+          "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
+        }
+      ],
+      "installs_on": [],
+      "runs_on": [],
+      "does_not_run_on": [],
+      "kind": "app",
+      "subdir": "VectorCraft",
+      "icon": "VectorCraft.info",
+      "install": {},
+      "revision": 1,
+      "source": "https://github.com/tomaszstaniak/aros-vectorcraft",
+      "license": "MIT OR Apache-2.0",
+      "post_install_notes": [
+        "Needs an AROS nightly of 2026-11-24 or later (built against it); earlier nightlies are not supported.",
+        "On mainline x86_64 AUTO uses CPU: a program that opened OpenGL leaves its log file in use after it ends. GPU turns OpenGL on.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, libraries, Data Recovery and the logs are kept in VectorCraftData in the program drawer; keep it when upgrading.",
+        "File > Print saves a PDF; the clipboard carries text only. Updates come through the AROS package manager."
+      ],
+      "launch": {
+        "executable": "VectorCraft",
+        "mode": "workbench",
+        "working_directory": "."
+      },
+      "review": {
+        "status": "reviewed",
+        "suite": 3,
+        "date": "2026-11-28",
         "checked": [
           "metadata",
           "download",
@@ -20962,14 +21116,16 @@
           "arch": "x86_64",
           "abi": "v1",
           "machine": "QEMU (TCG)",
-          "date": "2026-11-25",
+          "date": "2026-11-28",
           "result": "passed",
           "checked": [
             "install",
+            "start",
             "run",
-            "verify"
+            "verify",
+            "remove"
           ],
-          "note": "apkg 0.8.4 install and verify from a pre-placed cache; window opened from Workbench, a new document made; remove not run"
+          "note": "apkg 0.8.4, local index: verify ok; new shape, Save As through the requester, undo, redo, Save, read back by the CLI; second start; removed"
         }
       ],
       "first_added": "2026-11-07",
@@ -20992,26 +21148,26 @@
         "gallery": [
           {
             "type": "screenshot",
-            "caption": "The welcome screen",
+            "caption": "VectorCraft 0.24.1 on AROS One 1.3: a drawing with a new rectangle selected",
             "full": {
-              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/a7e7d137-1-full.png",
-              "sha256": "a7e7d137e0f7688ad02675458dd3a83e85446483f0fd464a6a9ece97ce887cb3",
-              "size": 53485,
-              "width": 800,
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/622d5eca-1-full.png",
+              "sha256": "622d5eca86f1a4b266fae903c88058a1f06b165a6143beb99b7cb03b2b88e1ac",
+              "size": 112998,
+              "width": 900,
               "height": 600
             },
             "view": {
-              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/ff7817d6-1-view.png",
-              "sha256": "ff7817d62df413066167902c7a2ea9d3a3c16e82e83a5fd5fa427b2c839bad2f",
-              "size": 65797,
-              "width": 533,
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/f6f9aa98-1-view.png",
+              "sha256": "f6f9aa98b20e6049923605de6445bfc980048a88fa84efa5cfecb35e9b7b420c",
+              "size": 102960,
+              "width": 600,
               "height": 400
             },
             "thumb": {
-              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/aa57ec4f-1-thumb.png",
-              "sha256": "aa57ec4ffc89b5f3a5e76a330118e547d9ba8439d5ce8b121511f8c279f260d8",
-              "size": 9794,
-              "width": 133,
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/fb2e0332-1-thumb.png",
+              "sha256": "fb2e03323851591055aa4ce6e420e3f67bb3dae69b5a7b868d5ea4990be3c212",
+              "size": 15791,
+              "width": 150,
               "height": 100
             }
           }
@@ -21020,14 +21176,14 @@
     },
     {
       "id": "vectorcraft",
-      "version": "0.17.0-510-g9997ff02-test3",
-      "summary": "Vector drawing program with SVG, PDF and EPS import and export (test release)",
+      "version": "0.24.1",
+      "summary": "Vector drawing program with SVG, PDF and EPS import and export",
       "arch": "x86_64",
       "abi": "v11",
       "category": "graphics/edit",
-      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.17.0-510-g9997ff02-test3/VectorCraft-0.17.0-510-g9997ff02-test3-aros-x86_64-abiv11-pc.zip",
-      "size": 66260859,
-      "sha256": "16d6067f3ed95346a59808d0799ed6d65fc10129171c0980fd350df24f6af4ee",
+      "url": "https://github.com/tomaszstaniak/aros-vectorcraft/releases/download/v0.24.1-r2/VectorCraft-0.24.1-r2-aros-x86_64-abiv11-pc.zip",
+      "size": 59355118,
+      "sha256": "e2031f7d5cd4fee8220cf1efd994114e9234514d00d0dfedb64dd7a357149500",
       "depends": [],
       "client_features": [
         "large-members"
@@ -21056,6 +21212,10 @@
         {
           "type": "library",
           "id": "asl.library"
+        },
+        {
+          "type": "library",
+          "id": "datatypes.library"
         }
       ],
       "installs_on": [],
@@ -21065,13 +21225,15 @@
       "subdir": "VectorCraft",
       "icon": "VectorCraft.info",
       "install": {},
+      "revision": 2,
       "source": "https://github.com/tomaszstaniak/aros-vectorcraft",
       "license": "MIT OR Apache-2.0",
       "post_install_notes": [
-        "Test release: the CPU draws the whole window on every change, so the interface reacts slowly.",
-        "GUI_RENDERER ToolType: CPU (default), AUTO or GPU. With Mesa software OpenGL, AUTO uses CPU and GPU is slower.",
-        "Settings and VectorCraft.log are kept in VectorCraftData in the program drawer; keep it when upgrading.",
-        "x86_64 ABIv11 (AROS One 1.3, ABIv11 2026.09). Shell start: Stack 16777216 first."
+        "x86_64 ABIv11 distributions; tested on AROS One 1.3.",
+        "The CPU renderer redraws only the parts of the window that changed; scrolling, zooming and other changes of the whole window are slower on slow machines.",
+        "GUI_RENDERER ToolType: AUTO (default), CPU or GPU. AUTO uses OpenGL only when it is not Mesa software OpenGL.",
+        "Settings, libraries, Data Recovery and the logs are kept in VectorCraftData in the program drawer; keep it when upgrading.",
+        "File > Print saves a PDF; the clipboard carries text only. Updates come through the AROS package manager."
       ],
       "launch": {
         "executable": "VectorCraft",
@@ -21081,7 +21243,7 @@
       "review": {
         "status": "reviewed",
         "suite": 3,
-        "date": "2026-11-23",
+        "date": "2026-11-28",
         "checked": [
           "metadata",
           "download",
@@ -21101,15 +21263,16 @@
           "arch": "x86_64",
           "abi": "v11",
           "machine": "QEMU (TCG)",
-          "date": "2026-10-29",
+          "date": "2026-11-28",
           "result": "passed",
           "checked": [
             "install",
+            "start",
             "run",
             "verify",
             "remove"
           ],
-          "note": "apkg 0.6.0 downloaded the archive from the release URL; window opened from its icon and closed cleanly; remove kept VectorCraftData"
+          "note": "apkg 0.8.4, local index: from test 3 by remove and install with VectorCraftData moved back, settings kept; edit, Save As, Save; removed"
         }
       ],
       "first_added": "2026-11-07",
@@ -21132,26 +21295,26 @@
         "gallery": [
           {
             "type": "screenshot",
-            "caption": "The welcome screen",
+            "caption": "VectorCraft 0.24.1 on AROS One 1.3: a drawing with a new rectangle selected",
             "full": {
-              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/a7e7d137-1-full.png",
-              "sha256": "a7e7d137e0f7688ad02675458dd3a83e85446483f0fd464a6a9ece97ce887cb3",
-              "size": 53485,
-              "width": 800,
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/622d5eca-1-full.png",
+              "sha256": "622d5eca86f1a4b266fae903c88058a1f06b165a6143beb99b7cb03b2b88e1ac",
+              "size": 112998,
+              "width": 900,
               "height": 600
             },
             "view": {
-              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/ff7817d6-1-view.png",
-              "sha256": "ff7817d62df413066167902c7a2ea9d3a3c16e82e83a5fd5fa427b2c839bad2f",
-              "size": 65797,
-              "width": 533,
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/f6f9aa98-1-view.png",
+              "sha256": "f6f9aa98b20e6049923605de6445bfc980048a88fa84efa5cfecb35e9b7b420c",
+              "size": 102960,
+              "width": 600,
               "height": 400
             },
             "thumb": {
-              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/aa57ec4f-1-thumb.png",
-              "sha256": "aa57ec4ffc89b5f3a5e76a330118e547d9ba8439d5ce8b121511f8c279f260d8",
-              "size": 9794,
-              "width": 133,
+              "url": "https://raw.githubusercontent.com/tomaszstaniak/arospkg-index/media/vectorcraft/fb2e0332-1-thumb.png",
+              "sha256": "fb2e03323851591055aa4ce6e420e3f67bb3dae69b5a7b868d5ea4990be3c212",
+              "size": 15791,
+              "width": 150,
               "height": 100
             }
           }

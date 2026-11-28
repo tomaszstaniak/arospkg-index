@@ -825,6 +825,10 @@
    "first_added": "2026-09-29",
    "commit": "baa0a498f774"
   },
+  "vectorcraft/aarch64/v1": {
+   "first_added": "2026-11-28",
+   "commit": "8e1f373d5f2c"
+  },
   "vectorcraft/x86_64/v1": {
    "first_added": "2026-11-07",
    "commit": "f309f5b9bac4"
