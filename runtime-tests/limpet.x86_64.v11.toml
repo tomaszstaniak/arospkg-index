@@ -287,3 +287,14 @@ machine = "QEMU (TCG)"
 result = "passed"
 checked = ["install", "start", "run"]
 note = "0.14.0: apkg 0.8.4 installed from the public catalogue into a RAM root; Limpet started; TAB completed eza and Fastfetch options"
+
+[[test]]
+sha256 = "65bf8439e440b2191c30162bbe0f39fb7a9a3520f2b06affa15b5fe4fbd9e1e8"
+date = "2026-11-28"
+system = "AROS One 1.3"
+arch = "x86_64"
+abi = "v11"
+machine = "QEMU (TCG)"
+result = "passed"
+checked = ["install", "start", "run"]
+note = "0.15.0: apkg 0.8.4 installed from the public catalogue into a RAM root; LimpetLearn learned eza and Wait; TAB completed from the definition"

@@ -19,7 +19,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]   # 0.15.0 source run before packaging, 2026-11-28
+runs_on         = ["aros-one"]   # 0.15.0 installed by apkg and run, 2026-11-28 (runtime-tests/)
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # Libraries the binary opens that AROS One supplies. The system font

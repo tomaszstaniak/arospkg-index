@@ -22,7 +22,7 @@ post_install_notes = [
 ]
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
-installs_on     = ["mainline-x86_64"]   # apkg install and verify of 0.13.1 on nightly 2026-11-24, 2026-11-25 (runtime-tests/)
+installs_on     = ["mainline-x86_64"]   # apkg upgrade to 0.15.0 and verify on nightly 2026-11-24, 2026-11-28 (runtime-tests/)
 runs_on         = ["mainline-x86_64"]   # 0.15.0 run on nightly 2026-11-24, 2026-11-28 (runtime-tests/)
 does_not_run_on = ["aros-one"]          # ABIv1 binary; AROS One is ABIv11
 
