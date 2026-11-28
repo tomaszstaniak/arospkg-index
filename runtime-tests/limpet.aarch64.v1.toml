@@ -55,3 +55,14 @@ machine = "QEMU raspi3b"
 result = "passed"
 checked = ["start", "run"]
 note = "0.14.0: unpacked with UnZip, not through apkg; TAB completed eza and Fastfetch options from their Completions files; both ran in the window"
+
+[[test]]
+sha256 = "92fc25a5025813e5c26c58a8eff688f111300239ebb134dc7c45a853e6ab1fe5"
+date = "2026-11-28"
+system = "AROS Raspberry Pi nightly 2026-11-24"
+arch = "aarch64"
+abi = "v1"
+machine = "QEMU raspi3b"
+result = "passed"
+checked = ["start", "run"]
+note = "0.15.0: archive files copied, not through apkg; LimpetLearn learned eza, Fastfetch and Copy; TAB completed from a learned definition"

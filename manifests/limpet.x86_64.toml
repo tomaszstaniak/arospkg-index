@@ -1,17 +1,17 @@
-# Limpet 0.14.0: TAB completion of the options of Unix-style programs; programs and apkg packages
-# bring their own definitions (Completions/<command>), as eza 0.23.5 revision 3 and Fastfetch 2.70.0 revision 6 do.
-# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.14.0.md.
+# Limpet 0.15.0: LimpetLearn writes a TAB completion definition from a program's --help or an AmigaDOS
+# command's template; definitions can hold the options of single subcommands.
+# Release assets downloaded and SHA-256 checked. Runtime scope: limpet/doc/verification-0.15.0.md.
 status          = "approved"
 id              = "limpet"
-version         = "0.14.0"
+version         = "0.15.0"
 revision        = 1
 summary         = "Terminal for the AROS Shell: Unicode, colour, scrollback, reflow"
 arch            = "x86_64"
 abi             = "v11"
 category        = "utility/shell"
-url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.14.0/Limpet-0.14.0-aros-x86_64-abiv11-pc.zip"
-size            = 7462036
-sha256          = "67a1c29c3fa011e8a98e8cb203812fcd59adbb5b8b53acd3f3abd70e35afa4db"
+url             = "https://github.com/tomaszstaniak/limpet/releases/download/v0.15.0/Limpet-0.15.0-aros-x86_64-abiv11-pc.zip"
+size            = 7570465
+sha256          = "65bf8439e440b2191c30162bbe0f39fb7a9a3520f2b06affa15b5fe4fbd9e1e8"
 kind            = "app"
 
 depends         = []
@@ -19,7 +19,7 @@ depends_checked = true
 subdir          = "Limpet"
 icon            = "Limpet.info"   # the drawer icon, beside Limpet/ at the archive root
 installs_on     = ["aros-one"]
-runs_on         = ["aros-one"]   # 0.14.0 run from the unpacked archive 2026-11-28
+runs_on         = ["aros-one"]   # 0.15.0 source run before packaging, 2026-11-28
 does_not_run_on = ["mainline-x86_64"] # ABIv11 binary; mainline is ABIv1
 
 # Libraries the binary opens that AROS One supplies. The system font
@@ -49,5 +49,5 @@ mode       = "workbench"
 
 [source]
 repository = "https://github.com/tomaszstaniak/limpet"
-revision   = "v0.14.0"
+revision   = "v0.15.0"
 built_with = "abiv11-x86_64, GCC 10.5.0"
