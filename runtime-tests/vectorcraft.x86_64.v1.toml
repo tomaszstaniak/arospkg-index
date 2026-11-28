@@ -24,3 +24,14 @@ machine = "QEMU (TCG)"
 result  = "passed"
 checked = ["install", "run", "verify"]
 note    = "apkg 0.8.4 install and verify from a pre-placed cache; window opened from Workbench, a new document made; remove not run"
+
+[[test]]
+sha256  = "7c6e7e6b83b7e5ccc60f73ed9a1a93756cc13f71ea377c1f95d243ad327c0042"
+date    = "2026-11-28"
+system  = "mainline AROS x86_64 nightly 20261124"
+arch    = "x86_64"
+abi     = "v1"
+machine = "QEMU (TCG)"
+result  = "passed"
+checked = ["install", "start", "run", "verify", "remove"]
+note    = "apkg 0.8.4, local index: verify ok; new shape, Save As through the requester, undo, redo, Save, read back by the CLI; second start; removed"
